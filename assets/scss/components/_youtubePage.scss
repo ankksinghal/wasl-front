@@ -1,12 +1,15 @@
 .youtube-page{
     margin: 109px 0 113px;  
     .main-heading{
-        p{
+        h2{
             font-size: 34px;
             color: #1C190E;
             font-style: normal;
             font-weight: 500;
             line-height: 33px;
+            @include respond(phone_land) {
+                font-size: 24px;
+            }
         }
     }  
     .subscribeBtn-div{
@@ -17,6 +20,12 @@
         height: 54.67px;
         margin-top: 49px;
         position: relative;
+        @include respond(phone_land) {
+            margin-top: 15px;
+        }
+        @include respond(tab) {
+            margin-top: 25px;
+        }
         .subscribe-first{
             display: flex;
             justify-content: space-between;
@@ -82,8 +91,15 @@
         margin-top: 30px;
         display: flex;
         justify-content: space-between;
+        @include respond(phone_land) {
+           flex-direction: column;
+           gap: 20px;
+        }
         .img-div{
             width: 32%;
+            @include respond(phone_land) {
+                width: 100%;
+            }
             img{
                 width:100%;
                 height:100%;
