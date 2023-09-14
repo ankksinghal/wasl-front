@@ -1,0 +1,313 @@
+.banner-section{
+    position: relative;
+    .banner-img{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .right-box{
+        width: 88px;
+        height: 88px;
+        background: $bannerBoxColor;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        @include respond(tab_land) {
+            width: 68px;
+            height: 68px;
+        }
+    }
+    .right-content-box{
+        background: $bannerBoxColor;
+        position: absolute;
+        top: 88px;
+        right:88px;
+        padding: 65px 46px;
+        @include respond(tab_land) {
+            top: 68px;
+            right: 68px;
+            padding: 35px 36px;
+        }
+
+        h2{
+            font-size: $font41;
+            color: #2B2A28;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            @include respond(tab_land) {
+                font-size: calc($font41 - 15px);
+            }
+        }
+        p{
+            font-size: $font24;
+            color: $bannerTextColor;
+            padding-top: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @include respond(tab_land) {
+                font-size: calc($font24 - 5px);
+            }
+        }
+    }
+    .search-section{
+        background: $bannerBoxColor;
+        padding:16px 32px;
+        margin-top: -150px;
+        z-index: 2;
+        border-radius: 16px;
+        border: 1px solid #E4E4DC;
+        box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.06);
+        position: absolute;
+        max-width: calc(1140px - 66px);
+        @include respond(tab_land) {
+            max-width: unset;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        h3{
+            font-size: $font22;
+            font-weight: 500;
+            line-height: 33px;
+            color: #1C190E;
+        }
+        .form-section{
+            margin-top: 11px;
+            form, .form-sec {
+                display: flex;
+            }
+            input[type="text"] {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border: 2px solid $black;
+                height: 57px;
+                padding: 0 24px;
+                background: transparent;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                flex: 1;
+                background: #EDEDE8;
+            }
+            button{
+                padding: 0 34px;
+                height: 61px;
+                color: $white;
+                background: $black;
+                font-size: $font18;
+                font-weight: 500;
+                border-radius: 0px 8px 8px 0px;
+                border: none;
+                text-transform: uppercase;
+            }
+
+        }
+        .filter-section{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .advanced-filters {
+                display: flex;
+                gap: 10px;
+                background: none;
+                border: none;
+                padding: 11px;
+                cursor: pointer;
+                position: relative;
+                font-size: 18px;
+                font-weight: 500;
+                align-items: center;
+                text-transform: uppercase;
+                color: #2B2A28;
+                img{
+                    width: 16px;
+                    height: 16px;
+                }
+                .drop-dw {
+                    width: 30px;
+                    height: 30px;
+                    position: absolute;
+                    right: -25px;
+                    top: 4px;
+                }
+                &.rotate {
+                    .drop-dw {
+                        transform: rotate(180deg); 
+                    }
+                }
+            }
+            .advanced-filters-box {
+                height: 0;
+                width: 100%;
+                overflow: hidden;
+                &.view {
+                    height: auto;
+                    padding: 20px;
+                    overflow: visible;
+                }
+            }
+            .form-view {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 36px;
+                .form-cols {width: 48%;
+                    display: flex;
+                    flex-direction: column;
+                    label {
+                        color: #2B2A28;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                        margin-top: 0px;
+                        margin-bottom: 5px;
+                    }
+                    .form-ctrl {
+                        background: #fff;
+                        border-radius: 8px;
+                        border: 1px solid #ccc;
+                        height: 52px;
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: #2B2A28;
+                        padding: 0 10px;
+                        appearance: none;
+                        &.dropdown {
+                            background:#fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+                            background-size: 25px 25px !important;
+                        }
+                        &.search {
+                            padding-left: 45px;
+                            background:#fff url(../images/search_icon.png) no-repeat left 10px top 15px;
+                            background-size: 25px 25px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include respond(tab_land) {
+        .container{
+            @include respond(tab_land) {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+.properties-view {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin-top: 15px !important;
+}
+
+
+
+.range-slider{
+    display: flex;
+    position: relative;
+    .price-input {
+        width: 100%;
+        display: flex;
+        margin: 15px 0 0;
+        gap: 15px;
+        justify-content: space-between;
+        .field{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 15%;
+            span {
+                font-size: 12px;
+                opacity: 0.7;
+            }
+            input{
+                width: 100%;
+                line-height: 45px;
+                outline: none;
+                font-size: 16px;
+                text-align: center;
+                border: none;
+                background: none;
+                border-bottom: 1px solid #999;
+                text-align: left;
+                -moz-appearance: textfield;
+            }
+            input[type="number"]::-webkit-outer-spin-button,
+            input[type="number"]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+            }
+        }
+        .middel-range {
+            width: 100%;
+            height: 50px;
+        }
+    }
+}
+.slider-mid {
+    width: 60%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    .slider{
+    height: 7px;
+    position: relative;
+    background: #fff;
+    border-radius: 40px;
+    border: 1px solid #ccc;
+    }
+    .slider .progress{
+    height: 100%;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+    border-radius: 5px;
+    background: #17A2B8;
+    }
+    .range-input{
+    position: relative;
+    }
+    .range-input input{
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -8px;
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    }
+    input[type="range"]::-webkit-slider-thumb{
+    height: 20px;
+    width: 20px;
+    border-radius: 6px;
+    background: #17A2B8;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+    input[type="range"]::-moz-range-thumb{
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #17A2B8;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.05);
+    }
+}
+
+
+
+

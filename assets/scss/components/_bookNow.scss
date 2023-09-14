@@ -1,0 +1,56 @@
+.bookNow{
+    position: relative;
+    margin: 60px 0px;
+    overflow: hidden;
+    .bookNow-img{
+        img{
+            width: 100%;
+        }
+    }
+    .container {
+        position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    }
+    .left-content{
+        background: #E4E4DC;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    left: -40%;
+    padding-left: 40%;
+        h2{
+            font-size: $font31;
+            text-align: left;
+            max-width: 600px;
+            color: #2B2A28;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+        }
+    }
+    .right-content{
+        background: #2B2A28;
+        width: 74%;
+        position: absolute;
+        bottom: 0;
+        height: 25%;
+        right: -34%;
+        a{
+            font-size: $font20;
+            text-align: center;
+            font-weight: 500;
+            color: $white;
+            cursor: pointer;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

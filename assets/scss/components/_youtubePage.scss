@@ -1,0 +1,94 @@
+.youtube-page{
+    margin: 109px 0 113px;  
+    .main-heading{
+        p{
+            font-size: 34px;
+            color: #1C190E;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 33px;
+        }
+    }  
+    .subscribeBtn-div{
+        width: 390px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 54.67px;
+        margin-top: 49px;
+        position: relative;
+        .subscribe-first{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .icon-div{
+                width: 55px;
+                height: 38.85px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #FF0000;
+                border-radius: 10px;
+                img{
+                    width: 14.25px;
+                    height: 16px;
+                }
+            }
+            .sub-text{
+                margin-left: 17.48px;
+                p{
+                    font-weight: 700;
+                    font-size: 19.68px;
+                    line-height: 23.06px;
+                    margin-bottom: 7px;
+                    color: #4C4C4C;
+                }
+            }
+            .sub-text::after{
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 54px;
+                left: 226px;
+                top:0px;
+                background-color: #2E3238;
+                margin-right: 21px;
+            }
+        }
+        .subscribe-btn{
+            a{
+                background-color: #636363;
+                color: #ffffff;
+                padding: 11px 22px;
+                border-radius: 8px;
+                gap: 10.93px;
+                font-size: 15.31px;
+                font-weight: 400;
+                line-height: 17.94px;
+                font-family: 'Roboto';  
+                border: none;
+            }
+        }
+    }
+    .video-count{
+        color: #9CA0AC;
+        font-size: 17.49px;
+        line-height: 20.5px;
+        font-weight: 400;
+        font-family: 'Roboto';
+
+    }
+    .content-div{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        .img-div{
+            width: 32%;
+            img{
+                width:100%;
+                height:100%;
+                border-radius: 16px;
+            }
+        }
+    }
+}

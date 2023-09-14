@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'bliss_proregular';
+    src: url('../blisspro-fonts/blisspro-webfont.woff2') format('woff2'),
+         url('../blisspro-fonts/blisspro-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    @include respond(tab_land) {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+a { text-decoration: none;}
+button{    
+    cursor: pointer;
+}
+
+.button-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px 0 16px;
+    a {
+        background: #2B2A28;
+        color: #FFFFFF;
+        font-size: 1em;
+        border-radius: 8px;
+        padding: 13px 35px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,95 @@
+.residential{
+    background: #fafaf8;
+    padding: 36px 0px;
+    margin-top: 105px;
+    h2{
+        font-size: $font34;
+        text-align: center;
+        font-weight: 500;
+        line-height: 33px;
+        font-style: normal;
+        color: #1C190E;
+    }
+    p{
+        font-size: $font18;
+        text-align: center;
+        color: $logoName;
+        margin: 10px 0px;
+        line-height: 27px;
+        font-weight: 400;
+    }
+    .owl-carousel {
+        margin: 42px auto 0;
+        width: 91%;
+        .item{
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            figure{
+                overflow: hidden;
+                position: relative;
+                border-radius: 16px;
+                figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(255, 255, 255, 0.75);
+                    color: #3C3C3C;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    text-align: center;
+                    line-height: 25px;
+                    padding: 14px 0;
+                }
+            }
+        }
+        .owl-nav {
+            button {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 64px;
+                height: 64px;
+                background:url(../images/arrow-light.svg) no-repeat center center;
+                padding: 0;
+                border-radius: 0;
+                font-size: 0;
+                &.owl-prev {
+                    left: -73px;
+                    transform: rotate(180deg);
+                }
+                &.owl-next {
+                    right: -73px;
+                }
+            }
+        }
+        .owl-dots {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 27px;
+            .owl-dot {
+                span {
+                    width: 15px;
+                    height: 15px;
+                    background: #fff;
+                    opacity: 1;
+                    box-shadow: 0 0 5px #bdbdbd;
+                    display: block;
+                    border-radius: 50px;
+                    transition: all 0.4s ease-in-out;
+                }
+                &.active span {
+                    background: #2B2A28;
+                    width: 55px;
+                }
+            }
+        }
+    }
+}

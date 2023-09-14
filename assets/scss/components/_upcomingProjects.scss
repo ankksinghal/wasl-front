@@ -1,0 +1,85 @@
+.upcoming-projects{
+    display: flex;
+    margin-top: 189px;
+    margin-bottom: 50px;
+    align-items: center;
+    gap: 51px;
+    @include respond(tab_land) {
+        gap: 40px;
+    }
+    .left-section{
+        display: flex;
+        gap: 32px;
+        position: relative;
+        left: 64px;
+        @include respond(tab_land) {
+            gap: 16px;
+        }
+        &::before{
+            position: absolute;
+            left: -64px;
+            top: -64px;
+            content: "";
+            height: 241px;
+            width: 241px;
+            background-color: #EDEDE8;
+            border-radius: 24px;
+            z-index: -1;
+            @include respond(tab_land) {
+                height: 201px;
+                width: 201px;
+            }
+        }
+        .img-box{
+            width: 269px;
+            max-height: 434px;
+            @include respond(tab_land) {
+                width: 209px;
+                max-height: 374px;
+            }
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+            p{
+                font-size: $font21;
+                margin-top: 10px;
+                text-align: center;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 33px;
+                color: #000;
+            }
+        }
+    }
+    .right-section{
+        margin-left: 64px;
+        .content-section{
+            h2{
+                font-size: $font44;
+                font-weight: 500;
+                color: #1C190E;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 33px;
+            }
+            p{
+                font-size: $font18;
+                padding: 24px 0px 37px;
+                line-height: 27px;
+                color: $logoName;
+                letter-spacing: 1px;
+                font-style: normal;
+                font-weight: 400;
+            }
+            a, .link{
+                background: $black;
+                color: $white;
+                font-size: $font16;
+                border-radius: 8px;
+                padding: 13px 35px;
+                font-weight: 500;
+            }
+        }
+    }
+}
