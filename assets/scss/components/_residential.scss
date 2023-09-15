@@ -87,6 +87,15 @@
                         right: -63px;
                     }
                 }
+
+                @include respond(phone) {
+                    &.owl-prev {
+                        left: -53px;
+                    }
+                    &.owl-next {
+                        right: -53px;
+                    }
+                }
             }
         }
         .owl-dots {
