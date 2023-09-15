@@ -43,7 +43,7 @@ $(document).ready(function() {
   });
    // Toggle the mobile menu when the menu button is clicked
    $(".mobile-menu").click(function () {
-    $(".right-section").slideToggle();
+    $("#responsive-nav").slideToggle();
   });
   
   $("#advanced-filters").click(function(){

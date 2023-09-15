@@ -1,5 +1,14 @@
 .freehold{
     margin: 78px 0px 93px;
+    @include respond(tab_land) {
+        margin: 80px 0;
+    }
+    @include respond(tab) {
+        margin: 50px 0;
+    }
+    @include respond(phone_land) {
+        margin: 50px 0;
+    }
     .content-box{
         display: flex;
         align-items: center;
@@ -130,6 +139,7 @@
         display: none;
         @include respond(tab) {
             display: flex;
+            padding-bottom: 0;
         }
     }
 }

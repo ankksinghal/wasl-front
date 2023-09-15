@@ -1,7 +1,16 @@
 .bookNow{
     position: relative;
     margin: 60px 0px;
-    overflow: hidden;
+    overflow: hidden; 
+    @include respond(tab_land) {
+        margin: 80px 0;
+    } 
+    @include respond(tab) {
+        margin: 50px 0;
+    } 
+    @include respond(phone_land) {
+        margin: 50px 0;
+    } 
     img.bookNow-img{
         width: 100%;
         @include respond(phone_land) {
