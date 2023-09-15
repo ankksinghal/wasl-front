@@ -4,6 +4,10 @@
         img{
             width: 100%;
             height: auto;
+            @include respond(tab) {
+                height: 224px;
+                object-fit: cover;
+            }
         }
     }
     .right-box{
@@ -24,10 +28,16 @@
         top: 88px;
         right:88px;
         padding: 65px 46px;
+        @include respond(desk) {
+            padding: 35px;
+        }
         @include respond(tab_land) {
             top: 68px;
             right: 68px;
             padding: 35px 36px;
+        }
+        @include respond(tab) {
+            padding: 15px 30px;
         }
 
         h2{
@@ -39,6 +49,8 @@
             @include respond(tab_land) {
                 font-size: calc($font41 - 15px);
             }
+            @include respond(tab) {
+                font-size: 20px;         }
         }
         p{
             font-size: $font24;
@@ -66,17 +78,29 @@
             max-width: unset;
             margin-left: 15px;
             margin-right: 15px;
+            margin-top:-70px;
+        }
+        @include respond(tab) {
+            margin:15px;
+            position: static;
         }
         h3{
             font-size: $font22;
             font-weight: 500;
             line-height: 33px;
             color: #1C190E;
+            @include respond(tab) {
+                text-align: center;
+            }
         }
         .form-section{
             margin-top: 11px;
             form, .form-sec {
                 display: flex;
+                @include respond(tab) {
+                    display: block;
+                    text-align: center;
+                }
             }
             input[type="text"] {
                 border-top-left-radius: 8px;
@@ -90,6 +114,12 @@
                 font-weight: 400;
                 flex: 1;
                 background: #EDEDE8;
+                @include respond(tab) {
+                    margin-bottom: 10px;
+                }  
+                @include respond(phone) {
+                     height: 45px;
+                }  
             }
             button{
                 padding: 0 34px;
@@ -101,6 +131,13 @@
                 border-radius: 0px 8px 8px 0px;
                 border: none;
                 text-transform: uppercase;
+                @include respond(tab) {
+                    font-size: 1rem;
+                    border-radius: 8px;
+                }
+                @include respond(phone) {
+                    height: 45px;
+               }  
             }
 
         }
@@ -123,6 +160,9 @@
                 align-items: center;
                 text-transform: uppercase;
                 color: #2B2A28;
+                @include respond(tab) {
+                    font-size: 14px;
+                }
                 img{
                     width: 16px;
                     height: 16px;
@@ -155,9 +195,16 @@
                 justify-content: space-between;
                 flex-wrap: wrap;
                 gap: 36px;
+                @include respond(tab) {
+                   display: block;
+                }
                 .form-cols {width: 48%;
                     display: flex;
                     flex-direction: column;
+                    @include respond(tab) {
+                        margin-bottom: 10px;
+                        width: 100%;
+                     }
                     label {
                         color: #2B2A28;
                         font-size: 16px;

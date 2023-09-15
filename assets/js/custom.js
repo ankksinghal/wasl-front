@@ -41,7 +41,10 @@ $(document).ready(function() {
           }
       }  
   });
-  
+   // Toggle the mobile menu when the menu button is clicked
+   $(".mobile-menu").click(function () {
+    $(".right-section").slideToggle();
+  });
   
   $("#advanced-filters").click(function(){
       $("#advanced-filters-box").toggleClass("view");
