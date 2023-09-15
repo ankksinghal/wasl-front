@@ -1996,45 +1996,52 @@ footer .copyright-section p {
 }
 
 .forgot-page {
+  display: flex;
+  justify-content: center;
   padding-top: 98px;
   padding-bottom: 119px;
 }
-.forgot-page .container {
+.forgot-page .fp-container {
   max-width: 1140px;
   width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-}
-.forgot-page .container .main-login {
-  display: flex;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 991px) {
-  .forgot-page .container .main-login {
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container {
     flex-direction: column;
     justify-content: center;
   }
 }
 @media screen and (max-width: 1399px) {
-  .forgot-page .container .main-login {
+  .forgot-page .fp-container {
     justify-content: space-around;
   }
 }
-.forgot-page .container .main-login .left-section {
+.forgot-page .fp-container .left-section {
   min-height: 100%;
-  width: 100%;
+  width: 50%;
+  max-width: 630px;
+}
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container .left-section {
+    width: 100%;
+    max-width: 90% !important;
+  }
 }
 @media screen and (max-width: 991px) {
-  .forgot-page .container .main-login .left-section {
+  .forgot-page .fp-container .left-section {
+    max-width: 390px;
     min-height: auto;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 100px;
   }
 }
-.forgot-page .container .main-login .left-section .img-box {
+.forgot-page .fp-container .left-section .img-box {
   position: relative;
   max-height: 585px;
   max-width: 630px;
@@ -2042,25 +2049,31 @@ footer .copyright-section p {
   height: 100%;
   border-radius: 16px;
 }
-.forgot-page .container .main-login .left-section .img-box img {
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container .left-section .img-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.forgot-page .fp-container .left-section .img-box img {
   max-width: 86.6%;
   margin-left: 13.4%;
   margin-top: 12%;
   margin-bottom: 14.9%;
   height: auto;
 }
-.forgot-page .container .main-login .left-section .img-box::before {
+.forgot-page .fp-container .left-section .img-box::before {
   position: absolute;
   left: 0;
   top: 0;
   content: "";
-  height: 241px;
+  height: 41.1%;
   width: 44%;
   background-color: #EDEDE8;
   border-radius: 16px;
   z-index: -1;
 }
-.forgot-page .container .main-login .left-section .img-box::after {
+.forgot-page .fp-container .left-section .img-box::after {
   position: absolute;
   content: "";
   left: 40px;
@@ -2071,7 +2084,7 @@ footer .copyright-section p {
   border-radius: 16px;
   z-index: -1;
 }
-.forgot-page .container .main-login .right-section {
+.forgot-page .fp-container .right-section {
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -2080,33 +2093,44 @@ footer .copyright-section p {
   width: 100%;
   max-width: 397px;
   margin-top: 40px !important;
+  width: 50%;
 }
-.forgot-page .container .main-login .right-section .form {
+@media screen and (max-width: 991px) {
+  .forgot-page .fp-container .right-section {
+    max-width: 330px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container .right-section {
+    width: 100%;
+  }
+}
+.forgot-page .fp-container .right-section .form {
   width: 100%;
 }
-.forgot-page .container .main-login .right-section .form .form-heading {
+.forgot-page .fp-container .right-section .form .form-heading {
   font-weight: 700;
   font-size: 30px;
   line-height: 35.82px;
   color: #2B2A28;
   margin-bottom: 6px;
 }
-.forgot-page .container .main-login .right-section .form p {
+.forgot-page .fp-container .right-section .form p {
   margin-bottom: 32px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #2B2A28;
 }
-.forgot-page .container .main-login .right-section .form label {
+.forgot-page .fp-container .right-section .form label {
   color: #2B2A28;
   font-size: 14px;
   line-height: 21px;
 }
-.forgot-page .container .main-login .right-section .form .or-div {
+.forgot-page .fp-container .right-section .form .or-div {
   margin: 18px 0 18px;
 }
-.forgot-page .container .main-login .right-section .form .or-div fieldset.title {
+.forgot-page .fp-container .right-section .form .or-div fieldset.title {
   border-top: 1px solid #EFEFEF;
   border-bottom: none;
   border-left: none;
@@ -2114,7 +2138,7 @@ footer .copyright-section p {
   display: block;
   text-align: center;
 }
-.forgot-page .container .main-login .right-section .form .or-div fieldset.title legend {
+.forgot-page .fp-container .right-section .form .or-div fieldset.title legend {
   padding: 5px 30px;
   font-weight: 400;
   font-size: 13px;
@@ -2123,12 +2147,12 @@ footer .copyright-section p {
   text-align: center;
   color: #8E8E93;
 }
-.forgot-page .container .main-login .right-section .form .fp-input-box {
+.forgot-page .fp-container .right-section .form .fp-input-box {
   position: relative;
   margin-top: 10px;
   display: flex;
 }
-.forgot-page .container .main-login .right-section .form .fp-input-box input {
+.forgot-page .fp-container .right-section .form .fp-input-box input {
   border: 1px solid #8D8D87;
   border-radius: 8px;
   height: 55px;
@@ -2136,40 +2160,40 @@ footer .copyright-section p {
   width: 100%;
   opacity: 50%;
 }
-.forgot-page .container .main-login .right-section .form .fp-input-box input::placeholder {
+.forgot-page .fp-container .right-section .form .fp-input-box input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
 }
-.forgot-page .container .main-login .right-section .form .fp-input-box img {
+.forgot-page .fp-container .right-section .form .fp-input-box img {
   position: absolute;
   left: 19.69px;
   top: 19.68px;
 }
-.forgot-page .container .main-login .right-section .form .fp-box {
+.forgot-page .fp-container .right-section .form .fp-box {
   margin: 18px 0 18px;
   text-align: right;
 }
-.forgot-page .container .main-login .right-section .form .fp-box ul {
+.forgot-page .fp-container .right-section .form .fp-box ul {
   display: flex;
   justify-content: end;
   gap: 8px;
 }
-.forgot-page .container .main-login .right-section .form .fp-box ul li a {
+.forgot-page .fp-container .right-section .form .fp-box ul li a {
   font-weight: 400;
   font-size: 13px;
   line-height: 19.5px;
   color: #2B2A28 !important;
   text-align: right;
 }
-.forgot-page .container .main-login .right-section .form .form-btns {
+.forgot-page .fp-container .right-section .form .form-btns {
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 18px;
 }
-.forgot-page .container .main-login .right-section .form .form-btns a {
+.forgot-page .fp-container .right-section .form .form-btns a {
   text-decoration: none;
   border-radius: 8px;
   background-color: #1C190E;
@@ -2185,19 +2209,19 @@ footer .copyright-section p {
   justify-content: center;
   gap: 10px;
 }
-.forgot-page .container .main-login .right-section .form .form-btns .bg-white {
+.forgot-page .fp-container .right-section .form .form-btns .bg-white {
   background-color: white;
   color: #2B2A28;
   border: 1px solid #2B2A28;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div {
+.forgot-page .fp-container .right-section .loginBtns-div {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   width: 434px;
   gap: 10px;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div .signIn-btn {
+.forgot-page .fp-container .right-section .loginBtns-div .signIn-btn {
   border-radius: 8px;
   background-color: #1C190E;
   padding: 16px 18px;
@@ -2207,7 +2231,7 @@ footer .copyright-section p {
   text-align: center;
   color: #ffffff;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div .uae-btn {
+.forgot-page .fp-container .right-section .loginBtns-div .uae-btn {
   border-radius: 8px;
   border: 1px solid Olive #2B2A28;
   background-color: #ffffff;
@@ -2217,14 +2241,14 @@ footer .copyright-section p {
   justify-content: center;
   gap: 9px;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div .uae-btn p {
+.forgot-page .fp-container .right-section .loginBtns-div .uae-btn p {
   font-weight: 500;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
   font-family: "Poppins";
 }
-.forgot-page .container .main-login .right-section .last-p {
+.forgot-page .fp-container .right-section .last-p {
   margin-top: 18px;
   text-align: center;
   font-weight: 400;
@@ -2232,10 +2256,10 @@ footer .copyright-section p {
   line-height: 24px;
   color: #2B2A28;
 }
-.forgot-page .container .main-login .right-section .last-p strong {
+.forgot-page .fp-container .right-section .last-p strong {
   margin-left: 5px;
 }
-.forgot-page .container .main-login .right-section .last-p strong a {
+.forgot-page .fp-container .right-section .last-p strong a {
   font-weight: 700;
   font-size: 16px;
   line-height: 19.1px;
@@ -2248,41 +2272,47 @@ footer .copyright-section p {
   padding-top: 98px;
   padding-bottom: 119px;
 }
-.forgot-page .container {
+.forgot-page .fp-container {
   max-width: 1140px;
   width: 100%;
+  height: 100%;
   display: flex;
-  justify-content: center;
-}
-.forgot-page .container .main-login {
-  display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 991px) {
-  .forgot-page .container .main-login {
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container {
     flex-direction: column;
     justify-content: center;
   }
 }
 @media screen and (max-width: 1399px) {
-  .forgot-page .container .main-login {
+  .forgot-page .fp-container {
     justify-content: space-around;
   }
 }
-.forgot-page .container .main-login .left-section {
+.forgot-page .fp-container .left-section {
   min-height: 100%;
-  width: 100%;
+  width: 50%;
+  max-width: 630px;
+}
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container .left-section {
+    width: 100%;
+    max-width: 90% !important;
+  }
 }
 @media screen and (max-width: 991px) {
-  .forgot-page .container .main-login .left-section {
+  .forgot-page .fp-container .left-section {
+    max-width: 390px;
     min-height: auto;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 100px;
   }
 }
-.forgot-page .container .main-login .left-section .img-box {
+.forgot-page .fp-container .left-section .img-box {
   position: relative;
   max-height: 585px;
   max-width: 630px;
@@ -2290,25 +2320,31 @@ footer .copyright-section p {
   height: 100%;
   border-radius: 16px;
 }
-.forgot-page .container .main-login .left-section .img-box img {
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container .left-section .img-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.forgot-page .fp-container .left-section .img-box img {
   max-width: 86.6%;
   margin-left: 13.4%;
   margin-top: 12%;
   margin-bottom: 14.9%;
   height: auto;
 }
-.forgot-page .container .main-login .left-section .img-box::before {
+.forgot-page .fp-container .left-section .img-box::before {
   position: absolute;
   left: 0;
   top: 0;
   content: "";
-  height: 241px;
+  height: 41.1%;
   width: 44%;
   background-color: #EDEDE8;
   border-radius: 16px;
   z-index: -1;
 }
-.forgot-page .container .main-login .left-section .img-box::after {
+.forgot-page .fp-container .left-section .img-box::after {
   position: absolute;
   content: "";
   left: 40px;
@@ -2319,38 +2355,48 @@ footer .copyright-section p {
   border-radius: 16px;
   z-index: -1;
 }
-.forgot-page .container .main-login .right-section {
+.forgot-page .fp-container .right-section {
   padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   max-width: 397px;
   margin-top: -47px !important;
 }
-.forgot-page .container .main-login .right-section .form {
+@media screen and (max-width: 991px) {
+  .forgot-page .fp-container .right-section {
+    max-width: 330px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .forgot-page .fp-container .right-section {
+    width: 100%;
+  }
+}
+.forgot-page .fp-container .right-section .form {
   width: 100%;
 }
-.forgot-page .container .main-login .right-section .form h2 {
+.forgot-page .fp-container .right-section .form h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 35.82px;
   color: #2B2A28;
   margin-bottom: 32px;
 }
-.forgot-page .container .main-login .right-section .form label {
+.forgot-page .fp-container .right-section .form label {
   color: #2B2A28;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.1px;
 }
-.forgot-page .container .main-login .right-section .form .input-box {
+.forgot-page .fp-container .right-section .form .input-box {
   position: relative;
   margin: 10px 0 30px 0;
   display: flex;
 }
-.forgot-page .container .main-login .right-section .form .input-box input {
+.forgot-page .fp-container .right-section .form .input-box input {
   border: 1px solid #8D8D87;
   border-radius: 8px;
   height: 57px;
@@ -2358,47 +2404,47 @@ footer .copyright-section p {
   width: 100%;
   opacity: 50%;
 }
-.forgot-page .container .main-login .right-section .form .input-box input::placeholder {
+.forgot-page .fp-container .right-section .form .input-box input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
   opacity: 70%;
 }
-.forgot-page .container .main-login .right-section .form .input-box img {
+.forgot-page .fp-container .right-section .form .input-box img {
   position: absolute;
   left: 19.69px;
   top: 19.68px;
 }
-.forgot-page .container .main-login .right-section .form .fp-box {
+.forgot-page .fp-container .right-section .form .fp-box {
   margin-bottom: 30px;
   text-align: right;
 }
-.forgot-page .container .main-login .right-section .form .fp-box ul {
+.forgot-page .fp-container .right-section .form .fp-box ul {
   display: flex;
   justify-content: end;
   gap: 8px;
 }
-.forgot-page .container .main-login .right-section .form .fp-box ul li a {
+.forgot-page .fp-container .right-section .form .fp-box ul li a {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
   text-align: right;
 }
-.forgot-page .container .main-login .right-section .form .fp-box ul li hr {
+.forgot-page .fp-container .right-section .form .fp-box ul li hr {
   border: none;
   border-left: 1px solid #8D8D87;
   height: 15px;
   margin: 3px 0px;
 }
-.forgot-page .container .main-login .right-section .form .form-btns {
+.forgot-page .fp-container .right-section .form .form-btns {
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 18px;
 }
-.forgot-page .container .main-login .right-section .form .form-btns a {
+.forgot-page .fp-container .right-section .form .form-btns a {
   text-decoration: none;
   border-radius: 8px;
   background-color: #1C190E;
@@ -2414,19 +2460,19 @@ footer .copyright-section p {
   justify-content: center;
   gap: 10px;
 }
-.forgot-page .container .main-login .right-section .form .form-btns .bg-white {
+.forgot-page .fp-container .right-section .form .form-btns .bg-white {
   background-color: white;
   color: #2B2A28;
   border: 1px solid #2B2A28;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div {
+.forgot-page .fp-container .right-section .loginBtns-div {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   width: 434px;
   gap: 10px;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div .signIn-btn {
+.forgot-page .fp-container .right-section .loginBtns-div .signIn-btn {
   border-radius: 8px;
   background-color: #1C190E;
   padding: 16px 18px;
@@ -2436,7 +2482,7 @@ footer .copyright-section p {
   text-align: center;
   color: #ffffff;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div .uae-btn {
+.forgot-page .fp-container .right-section .loginBtns-div .uae-btn {
   border-radius: 8px;
   border: 1px solid Olive #2B2A28;
   background-color: #ffffff;
@@ -2446,14 +2492,14 @@ footer .copyright-section p {
   justify-content: center;
   gap: 9px;
 }
-.forgot-page .container .main-login .right-section .loginBtns-div .uae-btn p {
+.forgot-page .fp-container .right-section .loginBtns-div .uae-btn p {
   font-weight: 500;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
   font-family: "Poppins";
 }
-.forgot-page .container .main-login .right-section .last-p {
+.forgot-page .fp-container .right-section .last-p {
   margin-top: 18px;
   text-align: center;
   font-weight: 400;
@@ -2461,10 +2507,227 @@ footer .copyright-section p {
   line-height: 24px;
   color: #2B2A28;
 }
-.forgot-page .container .main-login .right-section .last-p strong {
+.forgot-page .fp-container .right-section .last-p strong {
   margin-left: 5px;
 }
-.forgot-page .container .main-login .right-section .last-p strong a {
+.forgot-page .fp-container .right-section .last-p strong a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.1px;
+  text-decoration: none;
+  color: #2B2A28;
+  border-bottom: 1px solid #2B2A28;
+}
+
+.sign-in-section {
+  display: flex;
+  justify-content: center;
+  padding-top: 98px;
+  padding-bottom: 119px;
+}
+.sign-in-section .signin-panel {
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .sign-in-section .signin-panel {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .sign-in-section .signin-panel {
+    justify-content: space-around;
+  }
+}
+.sign-in-section .signin-panel .left {
+  padding: 0 10px;
+  max-width: 526px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .sign-in-section .signin-panel .left {
+    width: 100%;
+    max-width: 90% !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  .sign-in-section .signin-panel .left {
+    max-width: 400px;
+  }
+}
+.sign-in-section .signin-panel .left .img-box {
+  position: relative;
+  max-height: 537px;
+  width: 100%;
+  max-width: 526px;
+  height: 100%;
+  border-radius: 16px;
+}
+.sign-in-section .signin-panel .left .img-box img {
+  max-width: 84%;
+  width: 100%;
+  margin-left: 7.2%;
+  margin-top: 8.1%;
+  margin-bottom: 8.5%;
+  margin-right: 8.7%;
+  height: auto;
+}
+.sign-in-section .signin-panel .left .img-box::before {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  content: "";
+  height: 37%;
+  width: 44%;
+  background-color: #EDEDE8;
+  border-radius: 16px;
+  z-index: -1;
+}
+.sign-in-section .signin-panel .left .img-box::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  bottom: 0px;
+  height: 23%;
+  width: 32%;
+  background-color: #EDEDE8;
+  border-radius: 16px;
+  z-index: -1;
+}
+@media screen and (max-width: 991px) {
+  .sign-in-section .signin-panel .left .img-box::after {
+    bottom: 130px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .sign-in-section .signin-panel .left .img-box::after {
+    bottom: 0px;
+  }
+}
+.sign-in-section .signin-panel .right {
+  padding: 10px;
+  max-width: 397px;
+  margin-top: 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  .sign-in-section .signin-panel .right {
+    max-width: 330px;
+  }
+}
+.sign-in-section .signin-panel .right .signin-form {
+  max-width: 397px;
+  width: 100%;
+  text-align: left;
+  color: #6b6a69;
+}
+.sign-in-section .signin-panel .right .signin-form form h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.82px;
+  color: #2B2A28;
+  margin-bottom: 32px;
+}
+.sign-in-section .signin-panel .right .signin-form form label {
+  color: #2B2A28;
+  font-size: 16px;
+  line-height: 19.1px;
+}
+.sign-in-section .signin-panel .right .signin-form form .input-box {
+  position: relative;
+  margin: 10px 0 30px 0;
+  display: flex;
+}
+.sign-in-section .signin-panel .right .signin-form form .input-box input {
+  border: 1px solid #c6c7c3;
+  border-radius: 8px;
+  height: 57px;
+  padding-left: 45px;
+  width: 100%;
+}
+.sign-in-section .signin-panel .right .signin-form form .input-box input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.1px;
+}
+.sign-in-section .signin-panel .right .signin-form form .input-box img {
+  position: absolute;
+  left: 19.69px;
+  top: 19.68px;
+}
+.sign-in-section .signin-panel .right .signin-form form ul {
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  gap: 8px;
+}
+.sign-in-section .signin-panel .right .signin-form form ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.1px;
+  color: #2B2A28;
+  text-align: right;
+}
+.sign-in-section .signin-panel .right .signin-form form ul li hr {
+  border: none;
+  border-left: 1px solid #8D8D87;
+  height: 15px;
+  margin: 3px 0px;
+}
+.sign-in-section .signin-panel .right .signin-form form .form-btns {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 30px;
+}
+.sign-in-section .signin-panel .right .signin-form form .form-btns a {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #1C190E;
+  height: 54px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.1px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.sign-in-section .signin-panel .right .signin-form form .form-btns .bg-white {
+  background-color: white;
+  color: #2B2A28;
+  outline: 1px solid #2B2A28;
+}
+.sign-in-section .signin-panel .right .signin-form form .signup-link {
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2B2A28;
+}
+.sign-in-section .signin-panel .right .signin-form form .signup-link strong {
+  margin-left: 5px;
+}
+.sign-in-section .signin-panel .right .signin-form form .signup-link strong a {
   font-weight: 700;
   font-size: 16px;
   line-height: 19.1px;
