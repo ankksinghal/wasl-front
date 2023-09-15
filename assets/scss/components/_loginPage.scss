@@ -132,6 +132,7 @@
                     label {
                         color: #2B2A28;
                         font-size: 16px;
+                        line-height: 19.1px;
                     }
                     .input-box {
                         position: relative;
@@ -140,7 +141,8 @@
                         input{
                             border: 1px solid #8D8D87;
                             border-radius: 8px;
-                            padding: 16px 18px 16px 50px;   
+                            height: 57px;
+                            padding-left: 45px;
                             width: 100%; 
                             opacity: 50%;              
                         }
@@ -154,7 +156,7 @@
                             img{
                                 position: absolute;
                                 left: 19.69px;
-                                top: 14.68px;
+                                top: 19.68px;
                             }
                     }
                     .fp-box {
