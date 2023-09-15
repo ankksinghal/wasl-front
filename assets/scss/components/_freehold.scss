@@ -7,6 +7,9 @@
         margin-bottom: 32px;
         .left-section{
             max-width: 789px;
+            @include respond(tab) {
+                max-width: unset;
+            }
             h2{
                 font-size: $font34;
                 margin-bottom: 15px;
@@ -27,6 +30,10 @@
 
         }
         .right-section{
+            @include respond(tab) {
+                min-width: 150px;
+                text-align: right;
+            }
             a{
                 color: $white;
                 background: $black;
@@ -35,6 +42,11 @@
                 border-radius: 8px;
                 font-weight: 500;
             }
+            @include respond(tab) {
+                &.no-mob {
+                    display: none;
+                }
+            }
         }
     }
     .freehold-card-section{
@@ -42,21 +54,38 @@
         flex-wrap: wrap;
         gap: 24px;
         justify-content: space-between;
+        @include respond(tab) {
+            flex-direction: column;
+        }
         .card{
             display: flex;
             gap: 24px;
             flex: 1;
-            max-width: 45.8%;
+            width: 50%;
             background: $white;
             border-radius: 8px;
             border: 1px dashed #F6F6F6;
             box-shadow: 10px 32px 72px 0px rgba(51, 51, 51, 0.08);
             padding: 16px;
+            @include respond(tab_land) {
+                gap: 15px;
+            }
+            @include respond(tab) {
+                width: calc(100% - 32px);
+            }
             img.proj-img {
                 border-radius: 8px;
                 overflow: hidden;
                 width: 265px;
                 height: 190px;
+                @include respond(tab_land) {
+                    width: 195px;
+                    height: 140px;
+                }
+                @include respond(phone_land) {
+                    width: 135px;
+                    height: 140px;
+                }
             }
             .card-text {
                 flex: 1;
@@ -74,6 +103,9 @@
             }
             .card-body{
                 margin: 5px 0px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
                 span{
                     color: $black;
                     font-size: $font16;
@@ -92,6 +124,12 @@
                 gap: 10px;
                 margin-top: auto;
             }
+        }
+    }
+    .on-mob {
+        display: none;
+        @include respond(tab) {
+            display: flex;
         }
     }
 }

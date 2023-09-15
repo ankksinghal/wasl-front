@@ -1,29 +1,27 @@
 // For Responsive css for multipal device
 @mixin respond($device) {
   @if $device == phone {
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 575px) {
       @content;
     }
-  } 
-  @else if $device == phone_land {
-    @media screen and (min-width: 381px) and (max-width: 768px) {
+  } @else if $device == phone_land {
+    @media screen and (max-width: 767px) {
       @content;
     }
-  }
-  @else if $device == tab {
-    @media screen and (max-width: 768px) {
+  } @else if $device == tab {
+    @media screen and (max-width: 991px) {
       @content;
     }
   } @else if $device == tab_land {
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1170px) {
       @content;
     }
   } @else if $device == desk {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1399px) {
       @content;
     }
   } @else if $device == desk_lg {
-    @media screen and (min-width: 1201px) {
+    @media screen and (min-width: 1400px) {
       @content;
     }
   }

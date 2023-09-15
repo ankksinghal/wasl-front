@@ -1,5 +1,8 @@
 .commercial{
     margin: 36px 0 0;
+    @include respond(tab_land) {
+        overflow: hidden;
+    }       
     & > .container {
         border-bottom: 1px solid #E8E8E8;
         padding-bottom: 36px;
@@ -23,6 +26,9 @@
     .owl-carousel {
         margin: 42px auto 0;
         width: 91%;
+        @include respond(tab_land) {
+            width: 82%;
+        } 
         .item{
             img{
                 display: block;
@@ -67,6 +73,14 @@
                 }
                 &.owl-next {
                     right: -73px;
+                }
+                @include respond(tab_land) {
+                    &.owl-prev {
+                        left: -63px;
+                    }
+                    &.owl-next {
+                        right: -63px;
+                    }
                 }
             }
         }

@@ -28,6 +28,7 @@ footer{
                      display: block;
                      img{
                          width: 68px;
+                         height: auto;
                      }
                      span{ 
                        font-size: 9.14px;
@@ -161,7 +162,8 @@ footer{
                 align-items: center;
                 justify-content: center;
                 @include respond(tab_land) {
-                   display: block;
+                    flex-wrap: wrap;
+                    gap: 10px;
                 }
                 li{
                      margin-right: 15px;
