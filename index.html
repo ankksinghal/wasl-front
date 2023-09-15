@@ -236,7 +236,7 @@
                                     </div>
                                     <button type="submit">Search</button>
                                 </form>
-                                <!-- <div class="filter-section">
+                                <div class="filter-section">
                                     <div id="advanced-filters-box" class="advanced-filters-box">
                                         <form>
                                             <div class="form-view">
@@ -262,7 +262,7 @@
                                             </div>
                                         </form>
                                     </div>
-                                </div> -->
+                                </div>
                             </div>
                             <div class="form-section tabContent" style="display: none;">
                                 <form class="form-sec">
@@ -728,20 +728,6 @@
         <script src="./assets/js/owl.carousel.js"></script>
         <script src="./assets/js/range-slider.js"></script>
         <script src="./assets/js/custom.js"></script>
-        <script type="text/javascript" language="javascript">
-            $(function(){  
-                var tab = $('.tab-list .tabButton'),
-                content= $('.tabsContent .tabContent');
-                tab.filter(':first').addClass("active");
-                content.filter(':first').addClass("active").show();
-                tab.click(function () { 
-                    var indis = $(this).index();
-                    tab.removeClass('active').eq(indis).addClass("active");
-                    content.removeClass("active").hide().eq(indis).addClass("active").show();
-                    return false;
-                })
-            });
-        </script>
     </body>
 </html>
 
