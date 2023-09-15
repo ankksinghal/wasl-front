@@ -290,8 +290,7 @@ header .left-section .logo-name {
 @media screen and (max-width: 991px) {
   .banner-section .banner-img img {
     height: 224px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .banner-section .right-box {
@@ -552,9 +551,7 @@ header .left-section .logo-name {
   font-weight: 500;
   color: #2B2A28;
   padding: 0 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .banner-section .search-section .filter-section .form-view .form-cols .form-ctrl.dropdown {
   background: #fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
@@ -1726,4 +1723,8 @@ footer .copyright-section p {
   color: #FFFFFF;
   font-size: 0.875em;
   padding: 16px 0px;
+}
+
+.search-banner-section img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
