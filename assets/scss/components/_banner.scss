@@ -83,6 +83,7 @@
         @include respond(tab) {
             margin:15px;
             position: static;
+            padding: 16px;
         }
         h3{
             font-size: $font22;
@@ -97,9 +98,10 @@
             margin-top: 11px;
             form, .form-sec {
                 display: flex;
-                @include respond(tab) {
+                @include respond(phone) {
                     display: block;
                     text-align: center;
+                    margin-bottom: 10px;
                 }
             }
             input[type="text"] {
@@ -118,7 +120,11 @@
                     margin-bottom: 10px;
                 }  
                 @include respond(phone) {
-                     height: 45px;
+                     height: 49px;
+                     padding: 0 10px;
+                     width: calc(100% - 20px);
+                     border-radius: 8px;
+                     text-align: center;
                 }  
             }
             button{
@@ -133,10 +139,11 @@
                 text-transform: uppercase;
                 @include respond(tab) {
                     font-size: 1rem;
-                    border-radius: 8px;
                 }
                 @include respond(phone) {
-                    height: 45px;
+                    height: 53px;
+                    padding: 0 15px;
+                    border-radius: 8px;
                }  
             }
 

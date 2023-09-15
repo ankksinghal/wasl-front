@@ -5,14 +5,14 @@ header{
         justify-content: space-between;
         align-items: center;
         padding: 0;
-        @include respond(tab) {
+        @include respond(phone_land) {
             padding: 0 15px;
         }
         .right-section{
-            @include respond(tab) {
+            @include respond(phone_land) {
                 display: none;
                 position: absolute;
-                top: 85px;
+                top: 75px;
                 padding:15px 0;
                 background: #2B2A28;
                 width: 100%;
@@ -26,19 +26,19 @@ header{
                 align-items: center;
                 justify-content: end;
                 padding-bottom: 4px;
-                @include respond(tab) {
+                @include respond(phone_land) {
                    display: block;
                 }
                 .top-nav-section{
                     ul{
                         display: flex;
-                        @include respond(tab) {
+                        @include respond(phone_land) {
                             display: block;
                          }
                         li{
                             border-left: 1.5px solid $Primary;
                             padding: 0 12px;
-                            @include respond(tab) {
+                            @include respond(phone_land) {
                                 padding: 0 15px 15px;
                                 color:#fff;
                              }
@@ -48,7 +48,7 @@ header{
                                 font-weight: 400;
                                 line-height: 20px;
                                 font-style: normal;
-                                @include respond(tab) {
+                                @include respond(phone_land) {
                                     color:#fff;
                                  }
                             }
@@ -64,7 +64,7 @@ header{
                                 border-left: none;
                                 cursor: pointer;
                                 img{
-                                    @include respond(tab) {
+                                    @include respond(phone_land) {
                                         filter: brightness(0) invert(1);
                                      }
                                  }
@@ -75,12 +75,12 @@ header{
                 .sm-section{
                     display: flex;
                     gap: 4px;
-                    @include respond(tab) {
+                    @include respond(phone_land) {
                         padding: 0 15px 15px;
                     }
                     a {
                         display: flex;
-                        @include respond(tab) {
+                        @include respond(phone_land) {
                             margin-right: 10px;                        }
                     }
                     img{
@@ -97,12 +97,12 @@ header{
                     display: flex;
                     border-top: 2px solid $headerBorder;
                     justify-content: flex-end;
-                    @include respond(tab) {
+                    @include respond(phone_land) {
                        display: block;
                     }
                     li{
                         padding: 16px 0;
-                        @include respond(tab) {
+                        @include respond(phone_land) {
                            padding: 10px 10px;
                          }
                         a{
@@ -117,7 +117,7 @@ header{
                             @include respond(tab_land) {
                                 padding: 10px 8px;
                             }
-                            @include respond(tab) {
+                            @include respond(phone_land) {
                                 color: #fff;
                             }
                         }
@@ -125,6 +125,11 @@ header{
                     }
                 }
             }
+        }
+    }
+    @include respond(phone_land) {
+        #responsive-nav {
+            flex-direction: column-reverse;
         }
     }
     .left-section {
@@ -155,7 +160,7 @@ header{
     }
    
 }
-@include respond(tab) {
+@include respond(phone_land) {
     .mobile-menu{
         span{
             display: block;

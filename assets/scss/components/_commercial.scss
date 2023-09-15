@@ -2,6 +2,7 @@
     margin: 36px 0 0;
     @include respond(tab_land) {
         overflow: hidden;
+        margin: 50px 0 0;
     }       
     & > .container {
         border-bottom: 1px solid #E8E8E8;
@@ -80,6 +81,14 @@
                     }
                     &.owl-next {
                         right: -63px;
+                    }
+                }
+                @include respond(phone) {
+                    &.owl-prev {
+                        left: -53px;
+                    }
+                    &.owl-next {
+                        right: -53px;
                     }
                 }
             }

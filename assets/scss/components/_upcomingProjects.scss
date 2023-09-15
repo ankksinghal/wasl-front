@@ -6,10 +6,15 @@
     gap: 51px;
     @include respond(tab_land) {
         gap: 40px;
+        margin-top: 240px;
     }
     @include respond(tab) {
         flex-direction: column-reverse;
         overflow: hidden;
+        margin-top: 50px; 
+    }
+    @include respond(phone_land) {
+        margin-top: 50px; 
     }
     .left-section{
         display: flex;
@@ -25,7 +30,7 @@
         @include respond(tab) {
             margin-left: 0;
             gap: 32px;
-            margin-bottom: 40px;
+            margin-bottom: 0;
             margin-left: 0;
             position: relative;
             // left: 0;
@@ -38,6 +43,7 @@
             }
         }
         @include respond(phone_land) {
+            margin-bottom: 40px;
             .on-mob {
             left: unset;
             }
@@ -60,6 +66,7 @@
         @include respond(phone_land) {
             flex-direction: column;
             left: 5px;
+            margin-bottom: 0;
         }
         .img-box{
             width: 269px;

@@ -3,7 +3,14 @@
     padding: 36px 0px;
     margin-top: 105px;
     @include respond(tab_land) {
+        margin-top: 80px;
+    } 
+    @include respond(tab) {
+        margin-top: 50px;
+    } 
+    @include respond(phone_land) {
         overflow: hidden;
+        margin-top: 50px;
     }   
     h2{
         font-size: $font34;
@@ -78,6 +85,15 @@
                     }
                     &.owl-next {
                         right: -63px;
+                    }
+                }
+
+                @include respond(phone) {
+                    &.owl-prev {
+                        left: -53px;
+                    }
+                    &.owl-next {
+                        right: -53px;
                     }
                 }
             }
