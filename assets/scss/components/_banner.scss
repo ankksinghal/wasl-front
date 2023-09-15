@@ -66,7 +66,7 @@
     }
     .search-section{
         background: $bannerBoxColor;
-        padding:16px 32px;
+        padding:16px;
         margin-top: -150px;
         z-index: 2;
         border-radius: 16px;
@@ -95,27 +95,27 @@
             }
         }
         .form-section{
-            margin-top: 11px;
-            form, .form-sec {
+            .form-sec {
                 display: flex;
+                width: 100%;
                 @include respond(phone) {
                     display: block;
                     text-align: center;
                     margin-bottom: 10px;
                 }
             }
-            input[type="text"] {
+            .form-raper {
                 border-top-left-radius: 8px;
                 border-bottom-left-radius: 8px;
-                border: 2px solid $black;
-                height: 57px;
-                padding: 0 24px;
-                background: transparent;
+                border: 1px solid #c7c6c2;
+                height: 60px;
+                padding: 0;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
                 flex: 1;
-                background: #EDEDE8;
+                background: #edede8;
+                display: flex;
                 @include respond(tab) {
                     margin-bottom: 10px;
                 }  
@@ -159,7 +159,7 @@
                 gap: 10px;
                 background: none;
                 border: none;
-                padding: 11px;
+                padding: 13px;
                 cursor: pointer;
                 position: relative;
                 font-size: 18px;
@@ -179,7 +179,7 @@
                     height: 30px;
                     position: absolute;
                     right: -25px;
-                    top: 4px;
+                    top: 8px;
                 }
                 &.rotate {
                     .drop-dw {
@@ -194,6 +194,7 @@
                 &.view {
                     height: auto;
                     padding: 20px;
+                    padding-top: 35px;
                     overflow: visible;
                 }
             }
@@ -205,7 +206,7 @@
                 @include respond(tab) {
                    display: block;
                 }
-                .form-cols {width: 48%;
+                .form-cols { width: 48%;
                     display: flex;
                     flex-direction: column;
                     @include respond(tab) {
@@ -214,19 +215,25 @@
                      }
                     label {
                         color: #2B2A28;
-                        font-size: 16px;
+                        font-size: 18px;
                         font-style: normal;
-                        font-weight: 600;
+                        font-weight: 500;
                         line-height: normal;
                         margin-top: 0px;
                         margin-bottom: 5px;
+                        &.properties-view {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            margin-top: 15px;
+                        }
                     }
                     .form-ctrl {
                         background: #fff;
                         border-radius: 8px;
                         border: 1px solid #ccc;
                         height: 52px;
-                        font-size: 15px;
+                        font-size: 18px;
                         font-weight: 500;
                         color: #2B2A28;
                         padding: 0 10px;
@@ -254,13 +261,85 @@
         }
     }
 }
-.properties-view {
+
+
+.tab-list {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    margin-top: 15px !important;
+    align-items: flex-start;
+    margin-left: 16px;
+    a {
+        display: flex;
+        height: 45px;
+        padding: 0 18px;
+        color: #1C190E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        border-radius: 8px 8px 0px 0px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        &.active {
+            background: #F1F1EE;
+        }
+    }
+}
+
+.tabContent {display: none;}
+
+.advance-search {
+    border-radius: 16px;
+    background: #F1F1EE;
+    padding: 16px;
+    padding-bottom: 0;
+}
+
+.form-cols-out {
+    width: 20%;
+    &.search {width: 30%;}
+    .form-control {
+        border: none;
+        border-right: 1px solid #c7c6c2;
+        height: 60px;
+        padding: 0;
+        appearance: none;
+        color: #4E4E4E;
+        font-size: 18px;
+        font-weight: 400;
+
+        &::placeholder {
+            color: #4E4E4E;
+            opacity: 1;
+        }
+        &:-ms-input-placeholder {
+            color: #4E4E4E;
+        }
+        &::-ms-input-placeholder { 
+            color: #4E4E4E;
+        }
+
+        &:focus-visible,
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+        &.dropdown {
+            background: url(../images/arrow_bottom_down.png) no-repeat right 10px top 19px;
+            background-size: 25px 25px !important;
+            width: 100%;
+            padding: 0 45px 0 10px;
+        }
+        &.search {
+            padding-left: 55px;
+            padding-right: 10px;
+            background: url(../images/search_icon.png) no-repeat left 20px top 19px;
+            background-size: 22px 22px !important;
+            width: calc(100% - 66px);
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
 }
 
 
@@ -326,7 +405,7 @@
     right: 25%;
     position: absolute;
     border-radius: 5px;
-    background: #17A2B8;
+    background: #70beab;
     }
     .range-input{
     position: relative;
@@ -345,7 +424,7 @@
     height: 20px;
     width: 20px;
     border-radius: 6px;
-    background: #17A2B8;
+    background: #70beab;
     pointer-events: auto;
     -webkit-appearance: none;
     box-shadow: 0 0 6px rgba(0,0,0,0.05);
@@ -361,7 +440,3 @@
     box-shadow: 0 0 6px rgba(0,0,0,0.05);
     }
 }
-
-
-
-
