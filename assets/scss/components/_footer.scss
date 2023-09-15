@@ -97,13 +97,13 @@ footer{
              @include respond(tab) {
                 display: block;
             }
-            @include respond(phone_land) {
+            @include respond(tab) {
                 display: flex;
                 flex-wrap: wrap;
                 text-align: left;
             }
              .footer-menu{
-                @include respond(phone_land) {
+                @include respond(tab) {
                     flex-grow: 1;
                     margin-bottom: 15px;
                 }
@@ -133,9 +133,11 @@ footer{
                 }
              }
              .footer-image-section{
-                @include respond(phone_land) {
+                @include respond(tab) {
                     width: 100%;
-                    display: block;
+                    display: flex;
+                    gap: 20px;
+                    justify-content: center;
                 }
                 img{
                      display: block;
@@ -146,15 +148,15 @@ footer{
                         margin: 0 auto;
                         display: block;
                      }
-                     @include respond(phone_land) {
-                        margin: 0 0 15px;
+                     @include respond(tab) {
+                        margin: 0;
                         display: block;
                      }
                 }
              }
         }
         .footer-pages-wrap{
-            @include respond(phone_land) {
+            @include respond(tab) {
                text-align: left;
             }
             ul{
