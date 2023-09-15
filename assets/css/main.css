@@ -100,12 +100,12 @@ header .header-section {
   align-items: center;
   padding: 0;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section {
     padding: 0 15px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section {
     display: none;
     position: absolute;
@@ -124,7 +124,7 @@ header .header-section .right-section .right-top-section {
   justify-content: end;
   padding-bottom: 4px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section {
     display: block;
   }
@@ -132,7 +132,7 @@ header .header-section .right-section .right-top-section {
 header .header-section .right-section .right-top-section .top-nav-section ul {
   display: flex;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .top-nav-section ul {
     display: block;
   }
@@ -141,7 +141,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
   border-left: 1.5px solid #1C190E;
   padding: 0 12px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .top-nav-section ul li {
     padding: 0 15px 15px;
     color: #fff;
@@ -154,7 +154,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
   line-height: 20px;
   font-style: normal;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .top-nav-section ul li a {
     color: #fff;
   }
@@ -169,7 +169,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li.
   border-left: none;
   cursor: pointer;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .top-nav-section ul li.language img {
     filter: brightness(0) invert(1);
   }
@@ -178,7 +178,7 @@ header .header-section .right-section .right-top-section .sm-section {
   display: flex;
   gap: 4px;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .sm-section {
     padding: 0 15px 15px;
   }
@@ -186,7 +186,7 @@ header .header-section .right-section .right-top-section .sm-section {
 header .header-section .right-section .right-top-section .sm-section a {
   display: flex;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .sm-section a {
     margin-right: 10px;
   }
@@ -201,7 +201,7 @@ header .header-section .right-bottom-section nav ul {
   border-top: 2px solid #DCCCC0;
   justify-content: flex-end;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-bottom-section nav ul {
     display: block;
   }
@@ -209,7 +209,7 @@ header .header-section .right-bottom-section nav ul {
 header .header-section .right-bottom-section nav ul li {
   padding: 16px 0;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-bottom-section nav ul li {
     padding: 10px 10px;
   }
@@ -229,7 +229,7 @@ header .header-section .right-bottom-section nav ul li a {
     padding: 10px 8px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header .header-section .right-bottom-section nav ul li a {
     color: #fff;
   }
@@ -237,7 +237,7 @@ header .header-section .right-bottom-section nav ul li a {
 header .header-section .right-bottom-section nav ul li:last-child a {
   padding-right: 0;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   header #responsive-nav {
     flex-direction: column-reverse;
   }
@@ -271,7 +271,7 @@ header .left-section .logo-name {
   }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .mobile-menu span {
     display: block;
     background-color: #2B2A28;
@@ -1400,11 +1400,7 @@ header .left-section .logo-name {
 @media screen and (max-width: 767px) {
   .youtube-page .subscribeBtn-div {
     margin-top: 5px;
-  }
-}
-@media screen and (max-width: 575px) {
-  .youtube-page .subscribeBtn-div {
-    width: auto;
+    width: 100%;
   }
 }
 .youtube-page .subscribeBtn-div .subscribe-first {
