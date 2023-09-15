@@ -47,7 +47,21 @@ $(document).ready(function() {
   });
   
   $("#advanced-filters").click(function(){
-      $("#advanced-filters-box").toggleClass("view");
-      $("#advanced-filters").toggleClass("rotate");
+    $(".advanced-filters-box").toggleClass("view");
+    $("#advanced-filters").toggleClass("rotate");
   });
+
+  $(function(){  
+    var tab = $('.tab-list .tabButton'),
+    content= $('.tabsContent .tabContent');
+    tab.filter(':first').addClass("active");
+    content.filter(':first').addClass("active").show();
+    tab.click(function () { 
+        var indis = $(this).index();
+        tab.removeClass('active').eq(indis).addClass("active");
+        content.removeClass("active").hide().eq(indis).addClass("active").show();
+        return false;
+    })
+  });
+
 });
