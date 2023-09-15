@@ -23,6 +23,11 @@
                             </span>
                         </a>
                     </div>
+                    <div class="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                   </div>
                     <div class="right-section">
                             <div class="right-top-section">
                                 <div class="top-nav-section">
@@ -184,28 +189,6 @@
                                     </div>
                                     <div class="form-cols">
                                         <label>Area</label>
-                                        <!-- <div class="range-slider">
-                                            <div class="price-input">
-                                              <div class="field">
-                                                <span>Min AED</span>
-                                                <input readonly type="number" class="input-min" value="2500">
-                                              </div>
-
-                                              <div class="field">
-                                                <span>Max AED</span>
-                                                <input readonly type="number" class="input-max" value="7500">
-                                              </div>
-                                            </div>
-                                            <div class="slider-mid">
-                                                <div class="slider">
-                                                  <div class="progress"></div>
-                                                </div>
-                                                <div class="range-input">
-                                                  <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                                  <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                                                </div>
-                                              </div>
-                                        </div> -->
                                     </div>
                                     <div class="form-cols">
                                         <label>Offer</label>
@@ -221,7 +204,7 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+        <!-- <section class="container">
              <div class="upcoming-projects">
                 <div class="left-section">
                     <div class="img-box">
@@ -241,8 +224,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="residential">
+        </section> -->
+        <!-- <section class="residential">
             <div class="container">
                 <h2>Our Residential</h2>
                 <p>With over 47,000 residential units, Wasl properties offers a wide range of options for anyone looking to rent a home in Dubai.</p>
@@ -324,8 +307,8 @@
                     <a href="#">View All</a>
                 </div>
             </div>
-        </section>
-        <section class="commercial">
+        </section> -->
+        <!-- <section class="commercial">
             <div class="container">
                 <h2>Our Commercial</h2>
                 <p>Whatever your commercial needs are, Wasl properties has perfect space in the ideal location for you.</p>
@@ -407,8 +390,8 @@
                     <a href="#">View All</a>
                 </div>
             </div>
-        </section>
-        <section class="freehold">
+        </section> -->
+        <!-- <section class="freehold">
             <div class="container">
                 <div class="content-box">
                     <div class="left-section">
@@ -498,7 +481,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- <section class="bookNow">
             <div class="bookNow-img">
                 <img src="./assets/images/Maskgroup.png" alt="" />
@@ -512,7 +495,7 @@
                 </div>
             </div>
         </section> -->
-        <section class="youtube-page">
+        <!-- <section class="youtube-page">
             <div class="container">
             <div class="main-heading">
                 <p>For more updates, follow us on YouTube.</p>
@@ -543,7 +526,7 @@
                 </div>
             </div>
         </div>
-        </section>
+        </section> -->
         <footer>
                 <div class="footer-section">
                     <div class="footer-border-wrap">
@@ -664,7 +647,10 @@
                 autoplayHoverPause: true
             });
             
-            
+             // Toggle the mobile menu when the menu button is clicked
+             $(".mobile-menu").click(function () {
+                  $(".right-section").slideToggle();
+                });
             $("#advanced-filters").click(function(){
                 $("#advanced-filters-box").toggleClass("view");
                 $("#advanced-filters").toggleClass("rotate");
