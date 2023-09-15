@@ -7,13 +7,40 @@
     @include respond(tab_land) {
         gap: 40px;
     }
+    @include respond(tab) {
+        flex-direction: column-reverse;
+        overflow: hidden;
+    }
     .left-section{
         display: flex;
         gap: 32px;
         position: relative;
         left: 64px;
+        .on-mob {
+            display: none;
+        }
         @include respond(tab_land) {
             gap: 16px;
+        }
+        @include respond(tab) {
+            margin-left: 0;
+            gap: 32px;
+            margin-bottom: 40px;
+            margin-left: 0;
+            position: relative;
+            // left: 0;
+            flex-wrap: wrap;
+            .on-mob {
+                display: flex;
+                flex-basis: 100%;
+                position: relative;
+                left: -10%;
+            }
+        }
+        @include respond(phone_land) {
+            .on-mob {
+            left: unset;
+            }
         }
         &::before{
             position: absolute;
@@ -23,19 +50,24 @@
             height: 241px;
             width: 241px;
             background-color: #EDEDE8;
-            border-radius: 24px;
+            border-radius: 16px;
             z-index: -1;
             @include respond(tab_land) {
                 height: 201px;
                 width: 201px;
             }
         }
+        @include respond(phone_land) {
+            flex-direction: column;
+            left: 5px;
+        }
         .img-box{
             width: 269px;
-            max-height: 434px;
             @include respond(tab_land) {
                 width: 209px;
-                max-height: 374px;
+            }
+            @include respond(tab) {
+                width: 269px;
             }
             img{
                 max-width: 100%;
@@ -54,7 +86,16 @@
     }
     .right-section{
         margin-left: 64px;
+        @include respond(tab_land) {
+            margin-left: 54px;
+        }
+        @include respond(tab) {
+            margin-left: 0;
+        }
         .content-section{
+            @include respond(tab) {
+                margin-bottom: 15px;
+            }
             h2{
                 font-size: $font44;
                 font-weight: 500;
@@ -62,6 +103,9 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 33px;
+                @include respond(phone_land) {
+                    font-size: 32px;
+                }
             }
             p{
                 font-size: $font18;
@@ -79,6 +123,10 @@
                 border-radius: 8px;
                 padding: 13px 35px;
                 font-weight: 500;
+                display: inline-block;
+                @include respond(tab) {
+                    display: none;
+                }
             }
         }
     }

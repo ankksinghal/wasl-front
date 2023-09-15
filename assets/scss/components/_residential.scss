@@ -2,6 +2,9 @@
     background: #fafaf8;
     padding: 36px 0px;
     margin-top: 105px;
+    @include respond(tab_land) {
+        overflow: hidden;
+    }   
     h2{
         font-size: $font34;
         text-align: center;
@@ -21,6 +24,9 @@
     .owl-carousel {
         margin: 42px auto 0;
         width: 91%;
+        @include respond(tab_land) {
+            width: 82%;
+        } 
         .item{
             img{
                 display: block;
@@ -65,6 +71,14 @@
                 }
                 &.owl-next {
                     right: -73px;
+                }
+                @include respond(tab_land) {
+                    &.owl-prev {
+                        left: -63px;
+                    }
+                    &.owl-next {
+                        right: -63px;
+                    }
                 }
             }
         }

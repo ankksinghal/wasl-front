@@ -2,6 +2,9 @@ footer{
     background: #E4E4DC;
     .footer-section{
         padding: 18px 0px 25px;
+         @include respond(tab){
+            text-align: center;
+         }
         .footer-border-wrap{
             border-bottom: 1px solid #BC8A553D;
         }
@@ -9,15 +12,23 @@ footer{
             display: flex;
             justify-content: space-between;
             padding-bottom: 20px;
+            @include respond(tab) {
+                display: block;
+            }
             .left-section{
                 display: flex;
                 align-items: center;
+                @include respond(tab) {
+                    margin-bottom: 15px;
+                    justify-content: space-between;
+                }
                 a.footer-logo{
                      display: inline-block;
                      margin-right: 70px;
                      display: block;
                      img{
                          width: 68px;
+                         height: auto;
                      }
                      span{ 
                        font-size: 9.14px;
@@ -51,6 +62,12 @@ footer{
                  width:218px;
                  color: #555555;
                  padding-right: 75px;
+                 @include respond(tab) {
+                    width: 100%;
+                    padding-right: 0;
+                    box-sizing: border-box;
+                    height: 37px;
+                 }
                }   
                button{
                 background: #2B2A28;
@@ -74,13 +91,31 @@ footer{
              display: flex;
              justify-content: space-between;
              margin:25px 0 50px;
+             @include respond(tab_land) {
+                margin:25px 0;
+            }
+             @include respond(tab) {
+                display: block;
+            }
+            @include respond(phone_land) {
+                display: flex;
+                flex-wrap: wrap;
+                text-align: left;
+            }
              .footer-menu{
+                @include respond(phone_land) {
+                    flex-grow: 1;
+                    margin-bottom: 15px;
+                }
                 h3{
                      text-transform: uppercase;
                      margin-bottom: 25px;
                      font-size: 18px;
                      font-weight: 500;
                      color: #2B2A28;
+                     @include respond(tab_land) {
+                        font-size:14px;
+                    }
                 }
                 ul{
                     li{
@@ -90,27 +125,56 @@ footer{
                             font-size: 16px;
                             line-height: 20px;
                             color: #2B2A28;
+                            @include respond(tab_land) {
+                                font-size:14px;
+                            }
                         }
                     }
                 }
              }
              .footer-image-section{
+                @include respond(phone_land) {
+                    width: 100%;
+                    display: block;
+                }
                 img{
                      display: block;
                      height: 80px;
                      width:80px;
                      margin-bottom: 5px;
+                     @include respond(phone) {
+                        margin: 0 auto;
+                        display: block;
+                     }
+                     @include respond(phone_land) {
+                        margin: 0 0 15px;
+                        display: block;
+                     }
                 }
              }
         }
         .footer-pages-wrap{
+            @include respond(phone_land) {
+               text-align: left;
+            }
             ul{
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                @include respond(tab_land) {
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
                 li{
-                     display: inline-block;
                      margin-right: 15px;
+                     @include respond(tab_land) {
+                        margin:0 5px 5px 0;
+                        display: inline-block;
+                     }
+                     @include respond(tab) {
+                        display: block;
+                        margin: 0 0 10px;
+                     }
                      &:last-child{
                         a{
                             border: none;
@@ -122,7 +186,9 @@ footer{
                       color:#2B2A28;
                       padding-right:5px;
                       border-right:1px solid #2B2A28;
-
+                      @include respond(tab) {
+                        border: none;
+                     }
                     }
                 }
             }
