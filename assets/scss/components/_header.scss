@@ -63,6 +63,11 @@ header{
                                 align-items: center;
                                 border-left: none;
                                 cursor: pointer;
+                                img{
+                                    @include respond(tab) {
+                                        filter: brightness(0) invert(1);
+                                     }
+                                 }
                             }
                         }
                     }
