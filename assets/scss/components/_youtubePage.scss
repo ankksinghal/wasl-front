@@ -37,9 +37,7 @@
         }
         @include respond(phone_land) {
             margin-top: 5px;
-        }
-        @include respond(phone) {
-            width: auto;
+            width: 100%;
         }
         .subscribe-first{
             display: flex;
