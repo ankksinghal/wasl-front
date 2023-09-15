@@ -169,6 +169,11 @@ header .header-section .right-section .right-top-section .top-nav-section ul li.
   border-left: none;
   cursor: pointer;
 }
+@media screen and (max-width: 991px) {
+  header .header-section .right-section .right-top-section .top-nav-section ul li.language img {
+    filter: brightness(0) invert(1);
+  }
+}
 header .header-section .right-section .right-top-section .sm-section {
   display: flex;
   gap: 4px;
