@@ -1,0 +1,90 @@
+.form {
+    width: 100%;
+    h2{
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 35.82px;
+        color:#2B2A28;
+        margin-bottom: 32px;
+    }
+    label {
+        color: #2B2A28;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.1px;
+    }
+    .input-box {
+        position: relative;
+        margin: 10px 0 30px 0;
+        display: flex;
+            input{
+                border: 1px solid #c6c7c3;
+                border-radius: 8px;
+                height: 57px;
+                padding-left: 45px;
+                width: 100%;     
+            }
+            input::placeholder{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19.1px;
+                color:#2B2A28;
+            }
+            img{
+                position: absolute;
+                left: 19.69px;
+                top: 19.68px;
+            }
+    }
+    .fp-box {
+        margin-bottom: 30px;
+        text-align: right;
+
+        ul{
+            display: flex;
+            justify-content: end;
+            gap: 8px;
+            li{
+                     a{
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19.1px;
+                        color:#2B2A28;
+                        text-align: right;
+                    }
+                
+            }
+        }
+    }
+    .form-btns {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+
+        a {
+            text-decoration: none;
+            border-radius: 8px;
+            background-color:#1C190E;
+            // padding: 16px 18px;
+            height: 54px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.1px;
+            text-align: center;
+            color:#ffffff;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            gap: 10px;
+        }
+
+        .bg-white {
+            background-color: white;
+            color: #2B2A28;
+            border: 1px solid #2B2A28;
+        }
+    }
+}

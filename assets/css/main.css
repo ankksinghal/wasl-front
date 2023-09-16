@@ -101,6 +101,7 @@ button {
   font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .check-box input {
@@ -137,6 +138,8 @@ button {
   height: 9px;
   border: solid white;
   border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -668,16 +671,10 @@ header .left-section .logo-name {
   border-right: 1px solid #c7c6c2;
   height: 60px;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   color: #4E4E4E;
   font-size: 18px;
   font-weight: 400;
-}
-.form-cols-out .form-control::-moz-placeholder {
-  color: #4E4E4E;
-  opacity: 1;
 }
 .form-cols-out .form-control::placeholder {
   color: #4E4E4E;
@@ -2223,7 +2220,6 @@ footer .copyright-section p {
   justify-content: center;
   width: 100%;
   max-width: 397px;
-  margin-top: 40px !important;
   width: 50%;
 }
 @media screen and (max-width: 991px) {
@@ -2236,14 +2232,7 @@ footer .copyright-section p {
     width: 100%;
   }
 }
-.forgot-page .fp-container .right-section .form {
-  width: 100%;
-}
 .forgot-page .fp-container .right-section .form .form-heading {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35.82px;
-  color: #2B2A28;
   margin-bottom: 6px;
 }
 .forgot-page .fp-container .right-section .form p {
@@ -2252,11 +2241,6 @@ footer .copyright-section p {
   font-size: 16px;
   line-height: 24px;
   color: #2B2A28;
-}
-.forgot-page .fp-container .right-section .form label {
-  color: #2B2A28;
-  font-size: 14px;
-  line-height: 21px;
 }
 .forgot-page .fp-container .right-section .form .or-div {
   margin: 18px 0 18px;
@@ -2278,125 +2262,8 @@ footer .copyright-section p {
   text-align: center;
   color: #8E8E93;
 }
-.forgot-page .fp-container .right-section .form .fp-input-box {
-  position: relative;
-  margin-top: 10px;
-  display: flex;
-}
-.forgot-page .fp-container .right-section .form .fp-input-box input {
-  border: 1px solid #8D8D87;
-  border-radius: 8px;
-  height: 55px;
-  padding-left: 45px;
-  width: 100%;
-  opacity: 50%;
-}
-.forgot-page .fp-container .right-section .form .fp-input-box input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.forgot-page .fp-container .right-section .form .fp-input-box img {
-  position: absolute;
-  left: 19.69px;
-  top: 19.68px;
-}
-.forgot-page .fp-container .right-section .form .fp-box {
-  margin: 18px 0 18px;
-  text-align: right;
-}
-.forgot-page .fp-container .right-section .form .fp-box ul {
-  display: flex;
-  justify-content: end;
-  gap: 8px;
-}
-.forgot-page .fp-container .right-section .form .fp-box ul li a {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 19.5px;
-  color: #2B2A28 !important;
-  text-align: right;
-}
-.forgot-page .fp-container .right-section .form .form-btns {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 18px;
-}
-.forgot-page .fp-container .right-section .form .form-btns a {
-  text-decoration: none;
-  border-radius: 8px;
-  background-color: #1C190E;
-  height: 54px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19.1px;
-  text-align: center;
-  color: #ffffff;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.forgot-page .fp-container .right-section .form .form-btns .bg-white {
-  background-color: white;
-  color: #2B2A28;
-  border: 1px solid #2B2A28;
-}
-.forgot-page .fp-container .right-section .loginBtns-div {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  width: 434px;
-  gap: 10px;
-}
-.forgot-page .fp-container .right-section .loginBtns-div .signIn-btn {
-  border-radius: 8px;
-  background-color: #1C190E;
-  padding: 16px 18px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19.1px;
-  text-align: center;
-  color: #ffffff;
-}
-.forgot-page .fp-container .right-section .loginBtns-div .uae-btn {
-  border-radius: 8px;
-  border: 1px solid Olive #2B2A28;
-  background-color: #ffffff;
-  padding: 16px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-}
-.forgot-page .fp-container .right-section .loginBtns-div .uae-btn p {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19.1px;
-  color: #2B2A28;
-  font-family: "Poppins";
-}
-.forgot-page .fp-container .right-section .last-p {
-  margin-top: 18px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #2B2A28;
-}
-.forgot-page .fp-container .right-section .last-p strong {
-  margin-left: 5px;
-}
-.forgot-page .fp-container .right-section .last-p strong a {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19.1px;
-  text-decoration: none;
-  color: #2B2A28;
-  border-bottom: 1px solid #2B2A28;
+.forgot-page .fp-container .right-section .form .fp-labels {
+  margin-bottom: 10px;
 }
 
 .forgot-page {
@@ -2506,148 +2373,8 @@ footer .copyright-section p {
     width: 100%;
   }
 }
-.forgot-page .fp-container .right-section .form {
-  width: 100%;
-}
-.forgot-page .fp-container .right-section .form h2 {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 35.82px;
-  color: #2B2A28;
-  margin-bottom: 32px;
-}
-.forgot-page .fp-container .right-section .form label {
-  color: #2B2A28;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19.1px;
-}
-.forgot-page .fp-container .right-section .form .input-box {
-  position: relative;
-  margin: 10px 0 30px 0;
-  display: flex;
-}
-.forgot-page .fp-container .right-section .form .input-box input {
-  border: 1px solid #8D8D87;
-  border-radius: 8px;
-  height: 57px;
-  padding-left: 45px;
-  width: 100%;
-  opacity: 50%;
-}
-.forgot-page .fp-container .right-section .form .input-box input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.1px;
-  color: #2B2A28;
-  opacity: 70%;
-}
-.forgot-page .fp-container .right-section .form .input-box img {
-  position: absolute;
-  left: 19.69px;
-  top: 19.68px;
-}
-.forgot-page .fp-container .right-section .form .fp-box {
-  margin-bottom: 30px;
-  text-align: right;
-}
-.forgot-page .fp-container .right-section .form .fp-box ul {
-  display: flex;
-  justify-content: end;
-  gap: 8px;
-}
-.forgot-page .fp-container .right-section .form .fp-box ul li a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.1px;
-  color: #2B2A28;
-  text-align: right;
-}
-.forgot-page .fp-container .right-section .form .fp-box ul li hr {
-  border: none;
-  border-left: 1px solid #8D8D87;
-  height: 15px;
-  margin: 3px 0px;
-}
-.forgot-page .fp-container .right-section .form .form-btns {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 18px;
-}
-.forgot-page .fp-container .right-section .form .form-btns a {
-  text-decoration: none;
-  border-radius: 8px;
-  background-color: #1C190E;
-  height: 54px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19.1px;
-  text-align: center;
-  color: #ffffff;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-}
-.forgot-page .fp-container .right-section .form .form-btns .bg-white {
-  background-color: white;
-  color: #2B2A28;
-  border: 1px solid #2B2A28;
-}
-.forgot-page .fp-container .right-section .loginBtns-div {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  width: 434px;
-  gap: 10px;
-}
-.forgot-page .fp-container .right-section .loginBtns-div .signIn-btn {
-  border-radius: 8px;
-  background-color: #1C190E;
-  padding: 16px 18px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19.1px;
-  text-align: center;
-  color: #ffffff;
-}
-.forgot-page .fp-container .right-section .loginBtns-div .uae-btn {
-  border-radius: 8px;
-  border: 1px solid Olive #2B2A28;
-  background-color: #ffffff;
-  padding: 16px 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 9px;
-}
-.forgot-page .fp-container .right-section .loginBtns-div .uae-btn p {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19.1px;
-  color: #2B2A28;
-  font-family: "Poppins";
-}
-.forgot-page .fp-container .right-section .last-p {
-  margin-top: 18px;
-  text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #2B2A28;
-}
-.forgot-page .fp-container .right-section .last-p strong {
-  margin-left: 5px;
-}
-.forgot-page .fp-container .right-section .last-p strong a {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19.1px;
-  text-decoration: none;
-  color: #2B2A28;
-  border-bottom: 1px solid #2B2A28;
+.forgot-page .fp-container .right-section .form .input-box .inputs-css {
+  font-size: 14px !important;
 }
 
 .sign-in-section {
@@ -2758,73 +2485,101 @@ footer .copyright-section p {
     max-width: 330px;
   }
 }
-.sign-in-section .signin-panel .right .signin-form {
+.sign-in-section .signin-panel .right .form {
   max-width: 397px;
   width: 100%;
   text-align: left;
   color: #6b6a69;
 }
-.sign-in-section .signin-panel .right .signin-form form h2 {
+.sign-in-section .signin-panel .right .form .fp-box ul li hr {
+  border: none;
+  border-left: 1px solid #8D8D87;
+  height: 15px;
+  margin: 3px 0px;
+}
+.sign-in-section .signin-panel .right .form .signup-link {
+  margin-top: 18px;
+  text-align: center;
+  font-weight: 400;
+  display: block;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2B2A28;
+}
+.sign-in-section .signin-panel .right .form .signup-link strong {
+  margin-left: 5px;
+}
+.sign-in-section .signin-panel .right .form .signup-link strong a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.1px;
+  text-decoration: none;
+  color: #2B2A28;
+  border-bottom: 1px solid #2B2A28;
+}
+
+.form {
+  width: 100%;
+}
+.form h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 35.82px;
   color: #2B2A28;
   margin-bottom: 32px;
 }
-.sign-in-section .signin-panel .right .signin-form form label {
+.form label {
   color: #2B2A28;
   font-size: 16px;
+  font-weight: 400;
   line-height: 19.1px;
 }
-.sign-in-section .signin-panel .right .signin-form form .input-box {
+.form .input-box {
   position: relative;
   margin: 10px 0 30px 0;
   display: flex;
 }
-.sign-in-section .signin-panel .right .signin-form form .input-box input {
+.form .input-box input {
   border: 1px solid #c6c7c3;
   border-radius: 8px;
   height: 57px;
   padding-left: 45px;
   width: 100%;
 }
-.sign-in-section .signin-panel .right .signin-form form .input-box input::placeholder {
+.form .input-box input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.1px;
+  color: #2B2A28;
 }
-.sign-in-section .signin-panel .right .signin-form form .input-box img {
+.form .input-box img {
   position: absolute;
   left: 19.69px;
   top: 19.68px;
 }
-.sign-in-section .signin-panel .right .signin-form form ul {
+.form .fp-box {
+  margin-bottom: 30px;
+  text-align: right;
+}
+.form .fp-box ul {
   display: flex;
   justify-content: end;
-  text-align: right;
   gap: 8px;
 }
-.sign-in-section .signin-panel .right .signin-form form ul li a {
+.form .fp-box ul li a {
   font-weight: 400;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
   text-align: right;
 }
-.sign-in-section .signin-panel .right .signin-form form ul li hr {
-  border: none;
-  border-left: 1px solid #8D8D87;
-  height: 15px;
-  margin: 3px 0px;
-}
-.sign-in-section .signin-panel .right .signin-form form .form-btns {
+.form .form-btns {
   display: flex;
   width: 100%;
   flex-direction: column;
   gap: 18px;
-  margin-top: 30px;
 }
-.sign-in-section .signin-panel .right .signin-form form .form-btns a {
+.form .form-btns a {
   text-decoration: none;
   border-radius: 8px;
   background-color: #1C190E;
@@ -2838,31 +2593,11 @@ footer .copyright-section p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
   cursor: pointer;
+  gap: 10px;
 }
-.sign-in-section .signin-panel .right .signin-form form .form-btns .bg-white {
+.form .form-btns .bg-white {
   background-color: white;
   color: #2B2A28;
-  outline: 1px solid #2B2A28;
-}
-.sign-in-section .signin-panel .right .signin-form form .signup-link {
-  margin-top: 18px;
-  text-align: center;
-  font-weight: 400;
-  display: block;
-  font-size: 16px;
-  line-height: 24px;
-  color: #2B2A28;
-}
-.sign-in-section .signin-panel .right .signin-form form .signup-link strong {
-  margin-left: 5px;
-}
-.sign-in-section .signin-panel .right .signin-form form .signup-link strong a {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19.1px;
-  text-decoration: none;
-  color: #2B2A28;
-  border-bottom: 1px solid #2B2A28;
+  border: 1px solid #2B2A28;
 }/*# sourceMappingURL=main.css.map */

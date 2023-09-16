@@ -95,121 +95,155 @@
             align-items: center;
             justify-content: center;
             width: 100%;
-            .signin-form {
+            .form {
                 max-width: 397px;
                 width: 100%;
                 text-align: left;
                 color: #6b6a69;
-                form {
-                    h2{
-                        font-weight: 700;
-                        font-size: 30px;
-                        line-height: 35.82px;
-                        color:#2B2A28;
-                        margin-bottom: 32px;
-                    }
-                    label {
-                        color: #2B2A28;
-                        font-size: 16px;
-                        line-height: 19.1px;
-                    }
-                    .input-box {
-                        position: relative;
-                        margin: 10px 0 30px 0;
-                        display: flex;
-                        input{
-                            border: 1px solid #c6c7c3;
-                            border-radius: 8px;
-                            height: 57px;
-                            padding-left: 45px;
-                            width: 100%; 
-                        }
-                        input::placeholder{
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 19.1px;
-                        }
-                            img{
-                                position: absolute;
-                                left: 19.69px;
-                                top: 19.68px;
-                            }
-                    }
+                .fp-box{
                     ul{
-                        display: flex;
-                        justify-content: end;
-                        text-align: right;
-                        gap: 8px;
+
                         li{
-                            a{
-                            font-weight: 400;
-                            font-size: 16px;
-                            line-height: 19.1px;
-                            color:#2B2A28;
-                            text-align: right;
-                        }
-                        hr{
-                            border: none;
-                            border-left: 1px solid#8D8D87;
-                            height: 15px;
-                            margin: 3px 0px;
-                        }
-                        }
-                    }
-                    .form-btns {
-                        display: flex;
-                        width: 100%;
-                        flex-direction: column;
-                        gap: 18px;
-                        margin-top: 30px;
-
-                        a {
-                            text-decoration: none;
-                            border-radius: 8px;
-                            background-color:#1C190E;
-                            height: 54px;
-                            font-weight: 500;
-                            font-size: 16px;
-                            line-height: 19.1px;
-                            text-align: center;
-                            color:#ffffff;
-                            width: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            gap: 10px;
-                            cursor: pointer;
-                        }
-        
-                        .bg-white {
-                            background-color: white;
-                            color: #2B2A28;
-                            outline: 1px solid #2B2A28;
-                            
-                        }
-                    }
-
-                    .signup-link{
-                        margin-top: 18px;
-                        text-align: center;
-                        font-weight: 400;
-                        display: block;
-                        font-size: 16px;
-                        line-height: 24px;
-                        color:#2B2A28;
-                        strong{
-                            margin-left: 5px;
-                            a{
-                                font-weight: 700;
-                                font-size: 16px;
-                                line-height: 19.1px;   
-                                text-decoration: none;
-                                color:#2B2A28;
-                                border-bottom: 1px solid #2B2A28;
-                            }
+                            hr{
+                                border: none;
+                                border-left: 1px solid#8D8D87;
+                                height: 15px;
+                                margin: 3px 0px;
+                                       }
                         }
                     }
                 }
+                .signup-link{
+                             margin-top: 18px;
+                             text-align: center;
+                             font-weight: 400;
+                             display: block;
+                             font-size: 16px;
+                             line-height: 24px;
+                             color:#2B2A28;
+                             strong{
+                                 margin-left: 5px;
+                                 a{
+                                     font-weight: 700;
+                                     font-size: 16px;
+                                     line-height: 19.1px;   
+                                     text-decoration: none;
+                                     color:#2B2A28;
+                                     border-bottom: 1px solid #2B2A28;
+                                }
+                            }
+                      }
+                // form {
+                //     h2{
+                //         font-weight: 700;
+                //         font-size: 30px;
+                //         line-height: 35.82px;
+                //         color:#2B2A28;
+                //         margin-bottom: 32px;
+                //     }
+                //     label {
+                //         color: #2B2A28;
+                //         font-size: 16px;
+                //         font-weight: 400;
+                //         line-height: 19.1px;
+                //     }
+                //     .input-box {
+                //         position: relative;
+                //         margin: 10px 0 30px 0;
+                //         display: flex;
+                //         input{
+                //             border: 1px solid #c6c7c3;
+                //             border-radius: 8px;
+                //             height: 57px;
+                //             padding-left: 45px;
+                //             width: 100%; 
+                //         }
+                //         input::placeholder{
+                //             font-weight: 400;
+                //             font-size: 16px;
+                //             line-height: 19.1px;
+                //         }
+                //             img{
+                //                 position: absolute;
+                //                 left: 19.69px;
+                //                 top: 19.68px;
+                //             }
+                //     }
+                //     ul{
+                //         display: flex;
+                //         justify-content: end;
+                //         text-align: right;
+                //         gap: 8px;
+                //         li{
+                //             a{
+                //             font-weight: 400;
+                //             font-size: 16px;
+                //             line-height: 19.1px;
+                //             color:#2B2A28;
+                //             text-align: right;
+                //         }
+                //         hr{
+                //             border: none;
+                //             border-left: 1px solid#8D8D87;
+                //             height: 15px;
+                //             margin: 3px 0px;
+                //         }
+                //         }
+                //     }
+                //     .form-btns {
+                //         display: flex;
+                //         width: 100%;
+                //         flex-direction: column;
+                //         gap: 18px;
+                //         margin-top: 30px;
+
+                //         a {
+                //             text-decoration: none;
+                //             border-radius: 8px;
+                //             background-color:#1C190E;
+                //             height: 54px;
+                //             font-weight: 500;
+                //             font-size: 16px;
+                //             line-height: 19.1px;
+                //             text-align: center;
+                //             color:#ffffff;
+                //             width: 100%;
+                //             display: flex;
+                //             align-items: center;
+                //             justify-content: center;
+                //             gap: 10px;
+                //             cursor: pointer;
+                //         }
+        
+                //         .bg-white {
+                //             background-color: white;
+                //             color: #2B2A28;
+                //             outline: 1px solid #2B2A28;
+                            
+                //         }
+                //     }
+
+                //     .signup-link{
+                //         margin-top: 18px;
+                //         text-align: center;
+                //         font-weight: 400;
+                //         display: block;
+                //         font-size: 16px;
+                //         line-height: 24px;
+                //         color:#2B2A28;
+                //         strong{
+                //             margin-left: 5px;
+                //             a{
+                //                 font-weight: 700;
+                //                 font-size: 16px;
+                //                 line-height: 19.1px;   
+                //                 text-decoration: none;
+                //                 color:#2B2A28;
+                //                 border-bottom: 1px solid #2B2A28;
+                //             }
+                //         }
+                //     }
+                // }
             }
         }
     }

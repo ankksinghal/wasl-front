@@ -1,0 +1,84 @@
+.form {
+  width: 100%;
+}
+.form h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.82px;
+  color: #2B2A28;
+  margin-bottom: 32px;
+}
+.form label {
+  color: #2B2A28;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.1px;
+}
+.form .input-box {
+  position: relative;
+  margin: 10px 0 30px 0;
+  display: flex;
+}
+.form .input-box input {
+  border: 1px solid #8D8D87;
+  border-radius: 8px;
+  height: 57px;
+  padding-left: 45px;
+  width: 100%;
+  opacity: 50%;
+}
+.form .input-box input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.1px;
+  color: #2B2A28;
+  opacity: 70%;
+}
+.form .input-box img {
+  position: absolute;
+  left: 19.69px;
+  top: 19.68px;
+}
+.form .fp-box {
+  margin-bottom: 30px;
+  text-align: right;
+}
+.form .fp-box ul {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+.form .fp-box ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.1px;
+  color: #2B2A28;
+  text-align: right;
+}
+.form .form-btns {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 18px;
+}
+.form .form-btns a {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #1C190E;
+  height: 54px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.1px;
+  text-align: center;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.form .form-btns .bg-white {
+  background-color: white;
+  color: #2B2A28;
+  border: 1px solid #2B2A28;
+}/*# sourceMappingURL=form.css.map */
