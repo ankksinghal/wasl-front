@@ -72,7 +72,6 @@ $(document).ready(function() {
 
   $('.tab-links a').on('click', function(e) {
     e.preventDefault();
-    console.log("Aaaaaaaaaaaaaa");
     var target = $(this).attr('href');
 
     $('.tab-content').hide();
