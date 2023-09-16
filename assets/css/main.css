@@ -413,6 +413,9 @@ header .left-section .logo-name {
     font-size: calc(1.5em - 5px);
   }
 }
+.banner-section .container {
+  position: relative;
+}
 .banner-section .search-section {
   background: #E4E4DC;
   padding: 16px;
@@ -422,7 +425,8 @@ header .left-section .logo-name {
   border: 1px solid #E4E4DC;
   box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.06);
   position: absolute;
-  max-width: 1074px;
+  left: 0;
+  right: 0;
 }
 @media screen and (max-width: 1170px) {
   .banner-section .search-section {
@@ -664,7 +668,7 @@ header .left-section .logo-name {
   width: 20%;
 }
 .form-cols-out.search {
-  width: 30%;
+  width: 38%;
 }
 .form-cols-out .form-control {
   border: none;
