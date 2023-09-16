@@ -47,7 +47,39 @@ $(document).ready(function() {
   });
   
   $("#advanced-filters").click(function(){
-      $("#advanced-filters-box").toggleClass("view");
-      $("#advanced-filters").toggleClass("rotate");
+    $(".advanced-filters-box").toggleClass("view");
+    $("#advanced-filters").toggleClass("rotate");
   });
+
+  $(function(){  
+    var tab = $('.tab-list .tabButton'),
+    content= $('.tabsContent .tabContent');
+    tab.filter(':first').addClass("active");
+    content.filter(':first').addClass("active").show();
+    tab.click(function () { 
+        var indis = $(this).index();
+        tab.removeClass('active').eq(indis).addClass("active");
+        content.removeClass("active").hide().eq(indis).addClass("active").show();
+        return false;
+    })
+  });
+
+  // Search page tab
+
+  $('.tab-content').hide(); // Hide all tab content initially
+  $('.tab-content:first').show(); // Show the first tab content by default
+  $('.tab-links li:first').addClass('active'); // Make the first tab active by default
+
+  $('.tab-links a').on('click', function(e) {
+    e.preventDefault();
+    console.log("Aaaaaaaaaaaaaa");
+    var target = $(this).attr('href');
+
+    $('.tab-content').hide();
+    $(target).show();
+
+    $('.tab-links li').removeClass('active');
+    $(this).parent('li').addClass('active');
+  });
+
 });

@@ -1,0 +1,21 @@
+.search-tab-section{
+     background: $color1;
+     padding: 5px 0 0;
+     .tab-links{
+         li{
+             display: inline-block;
+            
+             border-radius: 8px 8px 0 0;
+             &.active{
+                background-color: $white;
+                font-weight: $fontweight2;
+             }
+             a{
+                color: $black;
+                padding: 15px;
+                display: block;
+                font-size: $font16;
+             }
+         }
+     }
+}

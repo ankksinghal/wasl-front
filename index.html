@@ -121,83 +121,184 @@
             </div>
             <div class="container">
                 <div class="search-section">
-                    <h3>Find a Property</h3>
-                    <div class="form-section">
-                        <form class="form-sec">
-                            <input type="text" placeholder="Search a property by location"  />
-                            <button type="submit">Search</button>
-                        </form>
+                    <div class="tab-list">
+                        <a href="javascript:void(0);" class="tabButton">
+                            <img src="./assets/images/home.svg" width="16" height="16" alt="Home">
+                            Residential</a>
+                        <a href="javascript:void(0);" class="tabButton">
+                            <img src="./assets/images/factory.svg" width="16" height="16" alt="factory">
+                            Commercial</a>
+                        <a href="javascript:void(0);" class="tabButton">
+                            <img src="./assets/images/retail.svg" width="16" height="16" alt="retail">
+                            Retail</a>
                     </div>
-                    <div class="filter-section">
-                        
-                        <button id="advanced-filters" type="button" class="advanced-filters"><img src="./assets/images/filter.png" alt="" /> Advanced Filters
-                            <img src="./assets/images/arrow_bottom_down.png" alt="drop" class="drop-dw">
-                        </button>
-                        <div id="advanced-filters-box" class="advanced-filters-box">
-                            <form>
-                                <div class="form-view">
-                                    <div class="form-cols">
-                                        <label>Select Property Type</label>
-                                        <select class="form-ctrl dropdown">
-                                            <option>Select</option>
-                                            <option>2bhk</option>
-                                            <option>3bhk</option>
-                                            <option>4bhk</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-cols">
-                                        <label>Select Property Type</label>
-                                        <input class="form-ctrl search" />
-                                    </div>
-                                    <div class="form-cols">
-                                        <label>Community</label>
-                                        <select class="form-ctrl dropdown">
-                                            <option>Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-cols">
-                                        <label>Bedrooms</label>
-                                        <select class="form-ctrl dropdown">
-                                            <option>Select</option>
-                                        </select>
-                                    </div>
-                                    <div class="form-cols">
-                                        <label>Price Range</label>
-                                        <div class="range-slider">
-                                            <div class="price-input">
-                                              <div class="field">
-                                                <span>Min AED</span>
-                                                <input readonly type="number" class="input-min" value="2500">
-                                              </div>
-
-                                              <div class="field">
-                                                <span>Max AED</span>
-                                                <input readonly type="number" class="input-max" value="7500">
-                                              </div>
-                                            </div>
-                                            <div class="slider-mid">
-                                                <div class="slider">
-                                                  <div class="progress"></div>
-                                                </div>
-                                                <div class="range-input">
-                                                  <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                                  <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                                                </div>
-                                            </div>
+                    <div class="advance-search">
+                        <div class="tabsContent">
+                            <div class="form-section tabContent">
+                                <form class="form-sec">
+                                    <div class="form-raper">
+                                        <div class="form-cols-out search">
+                                            <input class="form-control search" placeholder="Search by location or common" />
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Type</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Location</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Bedrooms</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Community</option>
+                                            </select>
                                         </div>
                                     </div>
-                                    <div class="form-cols">
-                                        <label>Area</label>
-                                    </div>
-                                    <div class="form-cols">
-                                        <label>Offer</label>
-                                        <label class="properties-view">
-                                            <input type="checkbox" name="vehicle2" value="">
-                                            Show me properties with Offers
-                                        </label>
+                                    <button type="submit">Search</button>
+                                </form>
+                                <div class="filter-section">
+                                    <div id="advanced-filters-box" class="advanced-filters-box">
+                                        <form>
+                                            <div class="form-view">
+                                                <div class="form-cols">
+                                                    <label>Price Range</label>
+                                                    <div class="range-slider">
+                                                        <div class="price-input">
+                                                          <div class="field">
+                                                            <span>Min AED</span>
+                                                            <input readonly type="number" class="input-min" value="2500">
+                                                          </div>
+            
+                                                          <div class="field">
+                                                            <span>Max AED</span>
+                                                            <input readonly type="number" class="input-max" value="7500">
+                                                          </div>
+                                                        </div>
+                                                        <div class="slider-mid">
+                                                            <div class="slider">
+                                                              <div class="progress"></div>
+                                                            </div>
+                                                            <div class="range-input">
+                                                              <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                                              <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-cols">
+                                                    <label>Area</label>
+                                                </div>
+                                                <div class="form-cols">
+                                                    <label>Offer</label>
+                                                    <label class="check-box properties-view">Show me properties with Offers
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="form-section tabContent" style="display: none;">
+                                <form class="form-sec">
+                                    <div class="form-raper">
+                                        <div class="form-cols-out search">
+                                            <input class="form-control search" placeholder="Search by property" />
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Type</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Location</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Bedrooms</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Community</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit">Search</button>
+                                </form>
+                                <div class="filter-section">
+                                    <div id="advanced-filters-box" class="advanced-filters-box">
+                                        <form>
+                                            <div class="form-view">
+                                                <div class="form-cols">
+                                                    <label>Unit Type</label>
+                                                    <select class="form-ctrl dropdown">
+                                                        <option>Select</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-cols">
+                                                    <label>Building</label>
+                                                    <select class="form-ctrl dropdown">
+                                                        <option>Select</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-cols">
+                                                    <label>Offer</label>
+                                                    <label class="check-box properties-view">Show me properties with Offers
+                                                        <input type="checkbox" checked="checked">
+                                                        <span class="checkmark"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-section tabContent" style="display: none;">
+                                <form class="form-sec">
+                                    <div class="form-raper">
+                                        <div class="form-cols-out search">
+                                            <input class="form-control search" placeholder="Search by project" />
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Type</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Location</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Bedrooms</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-cols-out">
+                                            <select class="form-control dropdown">
+                                                <option>Community</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <button type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="filter-section">
+                            <button id="advanced-filters" type="button" class="advanced-filters"><img src="./assets/images/filter.png" alt="" /> Advanced Filters
+                                <img src="./assets/images/arrow_bottom_down.png" alt="drop" class="drop-dw">
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -623,10 +724,10 @@
                 <p>© 2023 Wasl All Right Reserved</p>
             </div>
         </footer>
-    <script src="./assets/js/jquery-1.9.1.min.js"></script> 
-    <script src="./assets/js/owl.carousel.js"></script>
-    <script src="./assets/js/range-slider.js"></script>
-    <script src="./assets/js/custom.js"></script>
+        <script src="./assets/js/jquery-1.9.1.min.js"></script> 
+        <script src="./assets/js/owl.carousel.js"></script>
+        <script src="./assets/js/range-slider.js"></script>
+        <script src="./assets/js/custom.js"></script>
     </body>
 </html>
 
