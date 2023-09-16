@@ -4,7 +4,7 @@
      margin: 0 0 80px;
 }
 .all-available-units-section{
-    padding: 25px 0;
+    padding: 30px 0 34px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,16 +22,18 @@
          }
     }
     .all-available-units-right{ 
+        display: flex;
+        gap: 8px;
         a{
             display: inline-block;
             height: 40px;
-            margin-left: 8px;
             width: 40px;
             border-radius: 10px;
             border: 1px solid $color1;
             vertical-align: middle;
-            line-height: 45px;
+            line-height: 43px;
             text-align: center;
+            box-sizing: border-box;
             &.active{
                 background-color: $darkBlack;
             }
@@ -44,11 +46,11 @@
 .select-bedroom-section-wrap{
     border: 1px solid $color1;
     border-radius: 8px;
-    padding: 18px 15px;
-    margin-bottom: 15px;
+    padding: 15px 16px;
+    margin-bottom: 21px;
     h3{
         color: $darkBlack;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
         font-size: $font18;
         font-weight: $fontweight2;
      }
@@ -70,13 +72,14 @@
 // Section 3
 .all-units-wrapper{
     display: flex;
+    gap: 31px;
     .left-side-bar-filters{
-        margin-right: 25px;
+        width: 264px;
         .upper-filter-section,.bottom-filter-section{
             background-color: $color1;
             border-radius: 16px;
             padding: 16px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             h3{
                 font-weight: $fontweight2;
                 font-size: $font18;
@@ -86,9 +89,12 @@
         .upper-filter-section{
              h3{
                 color:$darkBlack;
-                margin-bottom: 15px;
+                margin-bottom: 16px;
              }
             .form-view{
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
                 .range-slider .price-input{
                     align-items: center;
                     span{
@@ -113,12 +119,11 @@
                     }
                 }
                  .form-cols{
-                    margin-bottom:16px;
                     .form-ctrl {
                         background: $white;
                         border-radius: 8px;
                         border: 1px solid #ccc;
-                        height: 52px;
+                        height: 48px;
                         font-size: $font16;
                         font-weight: 400;
                         color: $black;
@@ -136,6 +141,7 @@
                         color: $color2;
                         font-size: $font16;
                         margin-bottom: 10px;
+                        font-weight: $fontweight5;
                     }
                  }
                  .submit{
@@ -148,7 +154,8 @@
                     font-size: $font15;
                     cursor: pointer;
                     border: none;
-                    padding:15px 0;
+                    padding:12px 0;
+                    box-sizing: border-box;
                  }
             }
         }
@@ -179,6 +186,9 @@
                             &.contact-text-dark{
                                 color: $color3;
                                 font-weight: $fontweight2;
+                                a {
+                                    color: $color3; 
+                                }
                             }
                         }
                     }
@@ -201,9 +211,7 @@
                 border: 1px solid $color1;
                 border-radius: 16px;
                 padding:16px;
-                flex:1;
                 img.feature-image{
-                    //  width: 380px;
                     margin: 0 0 16px;
                 }
                 h3{
@@ -215,7 +223,7 @@
                 .card-details{
                     display: flex;
                     align-items: center;
-                    margin-bottom: 15px;
+                    margin-bottom: 16px;
                     img{
                          margin-right: 5px;
                     }
@@ -251,28 +259,39 @@
 
 // pagination CSS
 .search-result-pagination{
-    margin:25px 0;
+    margin:16px 0;
     ul{
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 10px;
         li{
              a{
                  height: 44px;
                  width: 44px;
                  font-size: $font16;
                  font-weight: $fontweight4;
-                 margin-right: 10px;
                  line-height: 44px;
                  text-align: center;
                  color: $black;
                  border-radius: 10px;
                  border: 1px solid $color1;
-                 display: inline-block;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 box-sizing: border-box;
+                 &:hover {
+                    background: #f8f8f8;
+                 }
                  &.active{
                     color: $white;
                     background-color: $black;
                  }
+             }
+             &.left-arrow {
+                img {
+                    transform: rotate(180deg);
+                }
              }
         }
      }
