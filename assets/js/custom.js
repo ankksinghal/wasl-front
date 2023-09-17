@@ -64,4 +64,21 @@ $(document).ready(function() {
     })
   });
 
+  // Search page tab
+
+  $('.tab-content').hide(); // Hide all tab content initially
+  $('.tab-content:first').show(); // Show the first tab content by default
+  $('.tab-links li:first').addClass('active'); // Make the first tab active by default
+
+  $('.tab-links a').on('click', function(e) {
+    e.preventDefault();
+    var target = $(this).attr('href');
+
+    $('.tab-content').hide();
+    $(target).show();
+
+    $('.tab-links li').removeClass('active');
+    $(this).parent('li').addClass('active');
+  });
+
 });
