@@ -2542,6 +2542,7 @@ footer .copyright-section p {
   display: flex;
 }
 .form .input-box input {
+  position: relative;
   border: 1px solid #c6c7c3;
   border-radius: 8px;
   height: 57px;
@@ -2555,13 +2556,15 @@ footer .copyright-section p {
   line-height: 19.1px;
   color: #2B2A28;
 }
-.form .input-box img {
+.form .input-box .left-icon {
   position: absolute;
   left: 19.69px;
   top: 19.68px;
 }
-.form .input-box img.eye-icon {
-  left: 355px;
+.form .input-box .right-icon {
+  position: absolute;
+  right: 10px;
+  top: 19.68px;
 }
 .form .form-dropdown {
   display: flex;

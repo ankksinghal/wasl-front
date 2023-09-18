@@ -38,6 +38,7 @@
         margin: 10px 0 16px 0;
         display: flex;
             input{
+                position: relative;
                 border: 1px solid #c6c7c3;
                 border-radius: 8px;
                 height: 57px;
@@ -51,13 +52,16 @@
                 line-height: 19.1px;
                 color:#2B2A28;
             }
-            img{
+            .left-icon{
                 position: absolute;
                 left: 19.69px;
                 top: 19.68px;
-                &.eye-icon{
-                    left: 355px;
-                }
+               
+            }
+            .right-icon{
+                position: absolute;
+                right: 10px;
+                top: 19.68px;
             }
     }
     .form-dropdown{
