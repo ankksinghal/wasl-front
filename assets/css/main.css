@@ -2327,7 +2327,6 @@ footer .copyright-section p {
   border-bottom: 1px solid #EFEFEF;
 }
 .property-details .property-inner .property-ul {
-  max-width: 1072px;
   width: 100%;
   margin-top: 16px;
   display: flex;
@@ -2366,8 +2365,7 @@ footer .copyright-section p {
   margin-bottom: 20px;
 }
 .property-details .property-inner .property-info p.location-info {
-  max-width: 1050px;
-  width: 100%;
+  width: 93.11%;
 }
 .property-details .property-inner .img-content img {
   width: 100% !important;
