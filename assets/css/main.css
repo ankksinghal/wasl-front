@@ -2220,7 +2220,7 @@ footer .copyright-section p {
   width: 100%;
 }
 .village-building .village-banner .left-section ul li .span-text {
-  font-weight: 500 !important;
+  font-weight: 500;
 }
 .village-building .village-banner .left-section .sqft {
   display: flex;
