@@ -2246,26 +2246,6 @@ footer .copyright-section p {
   line-height: 24px;
   color: #2B2A28;
 }
-.forgot-page .container .right-section .form .or-div {
-  margin: 18px 0 18px;
-}
-.forgot-page .container .right-section .form .or-div fieldset.title {
-  border-top: 1px solid #EFEFEF;
-  border-bottom: none;
-  border-left: none;
-  border-right: none;
-  display: block;
-  text-align: center;
-}
-.forgot-page .container .right-section .form .or-div fieldset.title legend {
-  padding: 5px 30px;
-  font-weight: 400;
-  font-size: 13px;
-  font-family: "Poppins";
-  line-height: 19.05px;
-  text-align: center;
-  color: #8E8E93;
-}
 .forgot-page .container .right-section .form .fp-labels {
   margin-bottom: 10px;
 }
@@ -2532,6 +2512,24 @@ footer .copyright-section p {
   color: #2B2A28;
   margin-bottom: 32px;
 }
+.form .form-radioBtns {
+  display: flex;
+  margin-left: 0px;
+  margin-bottom: 16px;
+  gap: 24px;
+}
+.form .form-radioBtns input {
+  margin: 0px;
+}
+.form .form-radioBtns label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16.2px;
+  color: #1C190E;
+}
+.form .form-radioBtns .asterisk {
+  color: #A85B57;
+}
 .form label {
   color: #2B2A28;
   font-size: 16px;
@@ -2540,7 +2538,7 @@ footer .copyright-section p {
 }
 .form .input-box {
   position: relative;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 16px 0;
   display: flex;
 }
 .form .input-box input {
@@ -2548,6 +2546,7 @@ footer .copyright-section p {
   border-radius: 8px;
   height: 57px;
   padding-left: 45px;
+  padding-right: 45px;
   width: 100%;
 }
 .form .input-box input::placeholder {
@@ -2560,6 +2559,37 @@ footer .copyright-section p {
   position: absolute;
   left: 19.69px;
   top: 19.68px;
+}
+.form .input-box img.eye-icon {
+  left: 355px;
+}
+.form .form-dropdown {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.form .form-dropdown select {
+  border: 1px solid #c6c7c3;
+  border-radius: 8px;
+  height: 57px;
+  width: 100%;
+  padding-left: 18px;
+  padding-right: 25px;
+  background-color: #ffffff;
+  appearance: none;
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.1px;
+  color: #2B2A28;
+}
+.form .form-dropdown select.dropdown {
+  background: #fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+  background-size: 25px 25px !important;
+  color: #3A3A3C !important;
+}
+.form .form-dropdown .asterisk {
+  color: #A85B57;
 }
 .form .fp-box {
   margin-bottom: 30px;
@@ -2604,6 +2634,10 @@ footer .copyright-section p {
   background-color: white;
   color: #2B2A28;
   border: 1px solid #2B2A28;
+}
+.form .form-btns .login-otp {
+  background-color: #E4E4DC;
+  color: #2B2A28;
 }
 
 .search-banner-section {
