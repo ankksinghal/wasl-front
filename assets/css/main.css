@@ -2185,29 +2185,29 @@ footer .copyright-section p {
   transform: rotate(180deg);
 }
 
-.village-building .container {
+.village-building .village-banner {
   display: flex;
   justify-content: space-between;
   margin-top: 29px;
   margin-bottom: 33px;
 }
-.village-building .container .left-section {
+.village-building .village-banner .left-section {
   display: flex;
   flex-direction: column;
   gap: 14px;
 }
-.village-building .container .left-section .village-heading {
+.village-building .village-banner .left-section .village-heading {
   font-weight: 500;
   font-size: 1.875em;
   line-height: 35.82px;
   color: #2B2A28;
 }
-.village-building .container .left-section ul {
+.village-building .village-banner .left-section ul {
   display: flex;
   gap: 12px;
   align-items: center;
 }
-.village-building .container .left-section ul li {
+.village-building .village-banner .left-section ul li {
   align-items: center;
   gap: 4px;
   font-size: 1em;
@@ -2215,60 +2215,60 @@ footer .copyright-section p {
   line-height: 24px;
   color: #2B2A28;
 }
-.village-building .container .left-section ul li img {
+.village-building .village-banner .left-section ul li img {
   max-width: 12px;
   width: 100%;
 }
-.village-building .container .left-section ul li .span-text {
+.village-building .village-banner .left-section ul li .span-text {
   font-weight: 500 !important;
 }
-.village-building .container .left-section .sqft {
+.village-building .village-banner .left-section .sqft {
   display: flex;
   gap: 4px;
 }
-.village-building .container .left-section .sqft img {
+.village-building .village-banner .left-section .sqft img {
   max-width: 12px;
   width: 100%;
 }
-.village-building .container .left-section .sqft p {
+.village-building .village-banner .left-section .sqft p {
   font-size: 1em;
   font-weight: 400;
   line-height: 24px;
   color: #2B2A28;
   gap: 4px;
 }
-.village-building .container .right-section {
+.village-building .village-banner .right-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.village-building .container .right-section .btn-links {
+.village-building .village-banner .right-section .btn-links {
   margin-top: 10px;
   display: flex;
   justify-content: flex-end;
 }
-.village-building .container .right-section .btn-links a {
+.village-building .village-banner .right-section .btn-links a {
   padding: 16px 18px;
   border-radius: 8px;
   max-width: 115px;
   width: 100%;
   text-align: center;
 }
-.village-building .container .right-section .btn-links a.rent-link {
+.village-building .village-banner .right-section .btn-links a.rent-link {
   background-color: #2B2A28;
   color: #FFFFFF;
   font-size: 0.938em;
   font-weight: 700;
   margin-right: 8px;
 }
-.village-building .container .right-section .btn-links a.enquire-link {
+.village-building .village-banner .right-section .btn-links a.enquire-link {
   border: 1px solid #2B2A28;
   color: #2B2A28;
   background-color: #FFFFFF;
   font-weight: 700;
   font-size: 0.938em;
 }
-.village-building .container .right-section .right-text {
+.village-building .village-banner .right-section .right-text {
   font-weight: 500;
   font-size: 1.875em;
   line-height: 35.82px;
@@ -2278,49 +2278,47 @@ footer .copyright-section p {
 .photos-section {
   margin-bottom: 47px;
 }
-.photos-section .container {
+.photos-section .photos-area {
   display: flex;
+  height: 550px;
   justify-content: space-between;
-  gap: 6px;
-  padding: 0px 12px 0px 8px;
 }
-.photos-section .container .left-side {
-  width: 570px;
-  height: 553px;
+.photos-section .photos-area .left-side {
+  width: 49.84%;
+  height: 100%;
 }
-.photos-section .container .left-side img {
+.photos-section .photos-area .left-side img {
   width: 100%;
   height: 100%;
 }
-.photos-section .container .right-side .upper-side {
+.photos-section .photos-area .right-side {
+  width: 49.47%;
+  height: 100%;
+}
+.photos-section .photos-area .right-side .upper-side {
+  height: 272px;
   margin-bottom: 7px;
 }
-.photos-section .container .right-side .upper-side img {
-  max-width: 564px;
+.photos-section .photos-area .right-side .upper-side img {
   width: 100%;
-  max-height: 272px;
   height: 100%;
 }
-.photos-section .container .right-side .lower-side {
+.photos-section .photos-area .right-side .lower-side {
   display: flex;
   gap: 8px;
-  max-height: 271px;
+  height: 271px;
 }
-.photos-section .container .right-side .lower-side img {
-  max-width: 279px;
+.photos-section .photos-area .right-side .lower-side img {
   height: 100%;
-  width: 100%;
 }
 
-.property-details .container {
+.property-details .property-inner {
   padding: 24px;
-  max-width: 1120px;
-  width: 100%;
   border: 1px solid #E4E4DC;
   border-radius: 16px;
   margin-bottom: 20px;
 }
-.property-details .container .property-heading {
+.property-details .property-inner .property-heading {
   font-weight: 500;
   font-size: 1.25em;
   line-height: 23.88px;
@@ -2328,14 +2326,14 @@ footer .copyright-section p {
   padding-bottom: 12px;
   border-bottom: 1px solid #EFEFEF;
 }
-.property-details .container .property-ul {
+.property-details .property-inner .property-ul {
   max-width: 1072px;
   width: 100%;
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
 }
-.property-details .container .property-ul li {
+.property-details .property-inner .property-ul li {
   width: 25%;
   margin-bottom: 20px;
   gap: 10px;
@@ -2346,31 +2344,31 @@ footer .copyright-section p {
   display: flex;
   align-items: center;
 }
-.property-details .container .property-ul li img {
+.property-details .property-inner .property-ul li img {
   width: 20px;
   height: 20px;
   border-radius: 6px;
 }
-.property-details .container .property-ul li.access-li {
+.property-details .property-inner .property-ul li.access-li {
   width: 100%;
 }
-.property-details .container .property-ul li.access-li2 {
+.property-details .property-inner .property-ul li.access-li2 {
   width: 75%;
 }
-.property-details .container .property-info {
+.property-details .property-inner .property-info {
   margin-top: 16px;
 }
-.property-details .container .property-info p {
+.property-details .property-inner .property-info p {
   font-weight: 400;
   font-size: 1em;
   line-height: 26px;
   color: #2B2A28;
   margin-bottom: 20px;
 }
-.property-details .container .property-info p.location-info {
+.property-details .property-inner .property-info p.location-info {
   max-width: 1050px;
   width: 100%;
 }
-.property-details .container .img-content img {
+.property-details .property-inner .img-content img {
   width: 100% !important;
 }/*# sourceMappingURL=main.css.map */
