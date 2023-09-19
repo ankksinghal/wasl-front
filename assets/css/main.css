@@ -166,7 +166,7 @@ header .header-section {
     background: #2B2A28;
     width: 100%;
     left: 0;
-    z-index: 1;
+    z-index: 3;
   }
 }
 header .header-section .right-section .right-top-section {
@@ -209,6 +209,9 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
 @media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .top-nav-section ul li a {
     color: #fff;
+  }
+  header .header-section .right-section .right-top-section .top-nav-section ul li a.search-icon {
+    filter: brightness(0) invert(1);
   }
 }
 header .header-section .right-section .right-top-section .top-nav-section ul li.wasl a span {
