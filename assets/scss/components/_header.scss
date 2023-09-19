@@ -17,7 +17,7 @@ header{
                 background: #2B2A28;
                 width: 100%;
                 left: 0;
-                z-index: 1;
+                z-index: 3;
             }
            
             .right-top-section{
@@ -49,6 +49,9 @@ header{
                                 line-height: 20px;
                                 font-style: normal;
                                 @include respond(phone_land) {
+                                    &.search-icon{
+                                        filter:brightness(0) invert(1);
+                                    }
                                     color:#fff;
                                  }
                             }
@@ -70,23 +73,6 @@ header{
                                  }
                             }
                         }
-                    }
-                }
-                .sm-section{
-                    display: flex;
-                    gap: 4px;
-                    @include respond(phone_land) {
-                        padding: 0 15px 15px;
-                    }
-                    a {
-                        display: flex;
-                        @include respond(phone_land) {
-                            margin-right: 10px;                        }
-                    }
-                    img{
-                        width: 25px;
-                        height: 25px;
-                        float: left;
                     }
                 }
             }
@@ -170,4 +156,8 @@ header{
             margin-bottom: 6px;
         }
     }
+}
+
+.search-input-section{
+     display: none;
 }
