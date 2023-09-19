@@ -1,4 +1,22 @@
 $(document).ready(function() {
+
+  var owl = $('#home-slider');
+  owl.owlCarousel({
+      items: 1,
+      loop: true,
+      margin: 39,
+      nav:false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      animateOut: 'fadeOut', 
+      animateIn: 'fadeIn',
+  });
+
+  // search Click
+  $(".search-icon").click(function() {
+    $(".search-input-section").toggle(); // Toggle the visibility of the section
+});
   var owl = $('#owl-residential');
   owl.owlCarousel({
       items: 3,

@@ -72,23 +72,6 @@ header{
                         }
                     }
                 }
-                .sm-section{
-                    display: flex;
-                    gap: 4px;
-                    @include respond(phone_land) {
-                        padding: 0 15px 15px;
-                    }
-                    a {
-                        display: flex;
-                        @include respond(phone_land) {
-                            margin-right: 10px;                        }
-                    }
-                    img{
-                        width: 25px;
-                        height: 25px;
-                        float: left;
-                    }
-                }
             }
         }
         .right-bottom-section{
@@ -170,4 +153,8 @@ header{
             margin-bottom: 6px;
         }
     }
+}
+
+.search-input-section{
+     display: none;
 }
