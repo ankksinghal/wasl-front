@@ -1,0 +1,37 @@
+.floating-button-wrap{
+     position: fixed;
+     right: 52px;
+     top:40%;
+     align-items: center;
+     z-index: 2;
+     ul{
+        display: flex;
+        align-items: center;
+        li{
+            a{
+                 display: block;
+                 height: 52px;
+                 width: 52px;
+                 margin-left:6px;
+                 border-radius: 12px;
+                 text-align: center;
+                 line-height: 52px;
+                 box-shadow: 0px 4px 14px 0px #00000021;
+                 &.whatsapp{
+                    background-color:#29A71A;
+                 }
+                 &.emoji{
+                    background: #2B2A28;
+                 }
+                 &.reply{
+                    background: linear-gradient(0deg, #E4E4DC, #E4E4DC),
+                    linear-gradient(0deg, #DDDDD3, #DDDDD3);
+                    border: 1px solid #DDDDD3;
+                }
+                 img{
+                     vertical-align: middle;
+                 }
+            }
+        }
+     }
+}
