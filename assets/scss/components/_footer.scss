@@ -8,47 +8,6 @@ footer{
         .footer-border-wrap{
             border-bottom: 1px solid #BC8A553D;
         }
-        .upper-footer-section{
-            display: flex;
-            justify-content: space-between;
-            padding-bottom: 20px;
-            @include respond(tab) {
-                display: block;
-            }
-            .left-section{
-                display: flex;
-                align-items: center;
-                @include respond(tab) {
-                    margin-bottom: 15px;
-                    justify-content: space-between;
-                }
-                a.footer-logo{
-                     display: inline-block;
-                     margin-right: 70px;
-                     display: block;
-                     img{
-                         width: 68px;
-                         height: auto;
-                     }
-                     span{ 
-                       font-size: 9.14px;
-                       line-height: 13.67px;
-                       color: #8D8D87;
-                       display: block;
-                     }
-                }
-                p{
-                    font-size: 16px;
-                    line-height: 22px;
-                    text-transform: uppercase;
-                    color: #2B2A28;
-                    font-weight: 700;
-                    a{
-                        color: #2B2A28;
-                    }
-                }
-            }
-        }
         .right-section{
             .form-section{
                 position: relative;
@@ -88,9 +47,11 @@ footer{
             }
         }
         .footer-below-section{
-             display: flex;
-             justify-content: space-between;
-             margin:25px 0 50px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:space-around;
+            border-bottom: 1px solid #BC8A553D;
+             margin:25px 0;
              @include respond(tab_land) {
                 margin:25px 0;
             }
@@ -103,8 +64,11 @@ footer{
                 text-align: left;
             }
              .footer-menu{
-                @include respond(tab) {
-                    flex-grow: 1;
+                flex-basis: calc(100% / 5);
+                margin-bottom: 25px;
+                gap: 16px;
+                @include respond(phone_land) {
+                    flex-basis: calc(100% / 2);
                     margin-bottom: 15px;
                 }
                 h3{
@@ -132,43 +96,21 @@ footer{
                     }
                 }
              }
-             .footer-image-section{
-                @include respond(tab) {
-                    width: 100%;
-                    display: flex;
-                    gap: 20px;
-                    justify-content: center;
-                }
-                img{
-                     display: block;
-                     height: 80px;
-                     width:80px;
-                     margin-bottom: 5px;
-                     @include respond(phone) {
-                        margin: 0 auto;
-                        display: block;
-                     }
-                     @include respond(tab) {
-                        margin: 0;
-                        display: block;
-                     }
-                }
-             }
         }
         .footer-pages-wrap{
+            padding-bottom: 17px;
+            border-bottom: 1px solid #BC8A553D;
             @include respond(tab) {
                text-align: left;
             }
             ul{
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 @include respond(tab_land) {
                     flex-wrap: wrap;
                     gap: 10px;
                 }
                 li{
-                     margin-right: 15px;
+                     margin:0 5px 5px 0;
+                     display: inline-block;
                      @include respond(tab_land) {
                         margin:0 5px 5px 0;
                         display: inline-block;
@@ -193,6 +135,32 @@ footer{
                      }
                     }
                 }
+            }
+        }
+        .sm-section{
+            display: flex;
+            gap: 4px;
+            padding-top: 17px;
+            align-items: center;
+            span{
+                font-size: $font16;
+                color: $black;
+                display: inline-block;
+                margin-right: 5px;
+            }
+            @include respond(phone_land) {
+                padding: 0 15px 15px;
+            }
+            a {
+                display: flex;
+                @include respond(phone_land) {
+                    margin-right: 10px;                       
+                }
+            }
+            img{
+                width: 25px;
+                height: 25px;
+                float: left;
             }
         }
     }
