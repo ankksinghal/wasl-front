@@ -57,7 +57,7 @@
                     content: "";
                     height: 37%;
                     width: 44%;
-                    background-color: #EDEDE8;
+                    background-color: $color10;
                     border-radius: 16px;
                     z-index: -1;
                 }
@@ -68,7 +68,7 @@
                     bottom: 0px;
                     height: 23%;
                     width: 32%;
-                    background-color: #EDEDE8;
+                    background-color: $color10;
                     border-radius: 16px;
                     z-index: -1;
                     @include respond(tab) {
@@ -98,14 +98,14 @@
                 max-width: 397px;
                 width: 100%;
                 text-align: left;
-                color: #6b6a69;
+                color: $color11;
                 .fp-box{
                     ul{
 
                         li{
                             hr{
                                 border: none;
-                                border-left: 1px solid#8D8D87;
+                                border-left: 1px solid $logoName;
                                 height: 15px;
                                 margin: 3px 0px;
                                        }
@@ -115,20 +115,20 @@
                 .signup-link{
                              margin-top: 18px;
                              text-align: center;
-                             font-weight: 400;
+                             font-weight: $fontweight5;
                              display: block;
-                             font-size: 16px;
+                             font-size: $font16;
                              line-height: 24px;
-                             color:#2B2A28;
+                             color: $black;
                              strong{
                                  margin-left: 5px;
                                  a{
-                                     font-weight: 700;
-                                     font-size: 16px;
+                                     font-weight: $fontweight3;
+                                     font-size: $font16;
                                      line-height: 19.1px;   
                                      text-decoration: none;
-                                     color:#2B2A28;
-                                     border-bottom: 1px solid #2B2A28;
+                                     color: $black;
+                                     border-bottom: 1px solid $black;
                                 }
                             }
                       }

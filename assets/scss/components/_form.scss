@@ -1,10 +1,10 @@
 .form {
     width: 100%;
     h2{
-        font-weight: 700;
-        font-size: 30px;
+        font-weight: $fontweight3;
+        font-size: $font30;
         line-height: 35.82px;
-        color:#2B2A28;
+        color:$black;
         margin-bottom: 32px;
     }
     .form-radioBtns{
@@ -16,21 +16,21 @@
             margin: 0px;
         }
         label{
-            font-weight: 400;
-            font-size: 16px;
+            font-weight: $fontweight5;
+            font-size: $font16;
             line-height: 16.2px;
-            color: #1C190E;
+            color: $Primary;
         }
       
         .asterisk{
-            color: #A85B57;
+            color: $color5;
         }
 
     }
     label {
-        color: #2B2A28;
-        font-size: 16px;
-        font-weight: 400;
+        color: $black;
+        font-size: $font16;
+        font-weight: $fontweight5;
         line-height: 19.1px;
     }
     .input-box {
@@ -39,18 +39,17 @@
         display: flex;
             input{
                 position: relative;
-                border: 1px solid #c6c7c3;
+                border: 1px solid $color6;
                 border-radius: 8px;
                 height: 57px;
-                padding-left: 45px;
-                padding-right: 45px;
+                padding: 0px 45px;
                 width: 100%;     
             }
             input::placeholder{
-                font-weight: 400;
-                font-size: 16px;
+                font-weight: $fontweight5;
+                font-size: $font16;
                 line-height: 19.1px;
-                color:#2B2A28;
+                color:$black;
             }
             .left-icon{
                 position: absolute;
@@ -69,27 +68,27 @@
         flex-direction: column;
         margin-bottom: 16px;
         select{
-            border: 1px solid #c6c7c3;
+            border: 1px solid $color6;
             border-radius: 8px;
             height: 57px;
             width: 100%;  
             padding-left: 18px;
             padding-right: 25px;
-            background-color: #ffffff;
+            background-color: $white;
             appearance: none;
             position: relative;
-            font-weight: 400;
-            font-size: 16px;
+            font-weight: $fontweight5;
+            font-size: $font16;
             line-height: 19.1px;
-            color: #2B2A28;
+            color: $black;
             &.dropdown{
-                background:#fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+                background:$white url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
                 background-size: 25px 25px !important;
-                color: #3A3A3C !important;
+                color: $color3 !important;
             }
         }
         .asterisk{
-            color: #A85B57;
+            color: $color5;
         }
     }
     .fp-box {
@@ -102,10 +101,10 @@
             gap: 8px;
             li{
                      a{
-                        font-weight: 400;
-                        font-size: 16px;
+                        font-weight: $fontweight5;
+                        font-size: $font16;
                         line-height: 19.1px;
-                        color:#2B2A28;
+                        color:$black;
                         text-align: right;
                     }
                 
@@ -121,14 +120,13 @@
         a {
             text-decoration: none;
             border-radius: 8px;
-            background-color:#1C190E;
-            // padding: 16px 18px;
+            background-color:$Primary;
             height: 54px;
-            font-weight: 500;
-            font-size: 16px;
+            font-weight: $fontweight2;
+            font-size: $font16;
             line-height: 19.1px;
             text-align: center;
-            color:#ffffff;
+            color: $white;
             width: 100%;
             display: flex;
             align-items: center;
@@ -138,13 +136,13 @@
         }
 
         .bg-white {
-            background-color: white;
-            color: #2B2A28;
-            border: 1px solid #2B2A28;
+            background-color: $white;
+            color: $black;
+            border: 1px solid $black;
         }
         .login-otp{
-            background-color: #E4E4DC;
-            color: #2B2A28;
+            background-color: $color1;
+            color: $black;
         }
     }
 }
@@ -240,10 +238,7 @@
             .newForm-radios{
                 margin-bottom: 7px;
                 margin-left: 0px;
-                input{
-                    margin: 0px;
-                    
-                }
+                
                 label{
                     font-weight: $fontweight5;
                     font-size: $font16;
