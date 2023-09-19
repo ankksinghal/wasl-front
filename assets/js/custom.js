@@ -9,24 +9,12 @@ $(document).ready(function() {
       autoplay: true,
       autoplayTimeout: 3000,
       autoplayHoverPause: true,
-      animateOut: 'fadeOut', // Set the fade-out animation
-      animateIn: 'fadeIn', // Set the fade-in animation
-      // responsive: {
-      //     0: {
-      //       items: 1
-      //     },
-      //     600: {
-      //       items: 2
-      //     },
-      //     1000: {
-      //       items: 1
-      //     }
-      // }
+      animateOut: 'fadeOut', 
+      animateIn: 'fadeIn',
   });
 
   // search Click
   $(".search-icon").click(function() {
-    console.log("Aaaaaaaaaaaaaaaaaaaaa");
     $(".search-input-section").toggle(); // Toggle the visibility of the section
 });
   var owl = $('#owl-residential');
