@@ -1,0 +1,56 @@
+.lease-validate{
+    padding: 45px 0px 233px;
+    display: flex;
+    justify-content: space-between;
+
+    .lease-imgBox {
+        position: relative;
+        max-height: 789px;
+        width:45.26%;
+        height: 100%;
+        border-radius: 16px;
+        img {
+            max-width: calc(84%);
+            width: 100%;
+            margin-left: 7.2%;
+            margin-top: 8.1%;
+            margin-bottom: 8.5%;
+            margin-right: 8.7%;
+            height: auto;
+        }
+        &::before{
+            position: absolute;
+            right: 0px;
+            top: 0;
+            content: "";
+            height: 23.70%;
+            width: 45%;
+            background-color: #EDEDE8;
+            border-radius: 16px;
+            z-index: -1;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0px;
+            bottom: 0px;
+            height: 16%;
+            width: 32%;
+            background-color: #EDEDE8;
+            border-radius: 16px;
+            z-index: -1;
+            @include respond(tab) {
+                bottom: 130px;
+            }
+            @include respond(phone_land) {
+                bottom: 0px;
+            }
+        }
+
+    }
+    .lease-formBox{
+        width: 52.6%;
+     
+
+    }
+}
