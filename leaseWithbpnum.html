@@ -121,8 +121,10 @@
                             Register to Continue
                         </h2>
                         <div class="form-check">
-                            <input type="checkbox" id="business-check" class="business-check" value="business">
-                            <label for="business-check">Already have Business Partner Number with you?                            <span>On filling this option, you will be able to see your contracts in the app.</span>
+                            <label for="business-check" class="checkbox properties-view">Already have Business Partner Number with you?   
+                                <span>On filling this option, you will be able to see your contracts in the app.</span>
+                                <input type="checkbox" id="business-check" class="business-check" value="business" checked="checked">
+                                <span class="checkmark"></span>
                             </label>
                         </div>
                         <div class="newForm-inputs">
@@ -161,13 +163,15 @@
                                 <span class="captch-text">EZABA <img src="./assets/images/reload.svg" alt="reload"></span>
                             </div>
                         </div>
-                        <div class="agree-check">
-                            <input type="checkbox" id="agree-check" name="agree-check">
-                            <label for="agree-check">I Agree to the <a href="#">Terms & Conditions & Privacy Policy</a>.</label>
+                        <div class="agree-check"> 
+                            <label for="agree-check" class="checkbox properties-view">I Agree to the <a href="#">Terms & Conditions & Privacy Policy</a>.
+                                <input type="checkbox" id="agree-check" name="agree-check">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                         <div class="newForm-btns">
                             <a href="#">Validate</a>
-                            <h2><span>OR</span></h2>
+                            <div class="or-text"><span>OR</span></div>
                             <a href="#" class="bg-white"><img src="./assets/images/thumbUAE.svg" alt="thumb">Sign up with UAE PASS</a>
                         </div>
                     </form>

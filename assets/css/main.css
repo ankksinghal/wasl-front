@@ -2366,6 +2366,7 @@ footer .copyright-section p {
   padding: 45px 0px 233px;
   display: flex;
   justify-content: space-between;
+  gap: 49px;
 }
 .lease-validate .lease-imgBox {
   position: relative;
@@ -2431,19 +2432,14 @@ footer .copyright-section p {
 }
 .newForm .form-check {
   margin-bottom: 39px;
-  display: flex;
-}
-.newForm .form-check input {
-  width: 22.75px;
-  height: 22.75px;
-  cursor: pointer;
+  position: relative;
 }
 .newForm .form-check label {
   font-weight: 400;
   font-size: 1em;
   line-height: 22.4px;
   color: #2B2A28;
-  margin-left: 7.19px;
+  margin-left: 29px;
 }
 .newForm .form-check label span {
   display: block;
@@ -2451,6 +2447,45 @@ footer .copyright-section p {
   font-size: 1em;
   line-height: 22.4px;
   color: #8D8D87;
+}
+.newForm .form-check label.properties-view {
+  display: flex;
+  flex-direction: column;
+}
+.newForm .form-check label.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.newForm .form-check label.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #8c8d87;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.newForm .form-check label.checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.newForm .form-check label.checkbox input:checked ~ .checkmark {
+  background-color: #000;
 }
 .newForm .newForm-inputs {
   display: flex;
@@ -2482,6 +2517,7 @@ footer .copyright-section p {
   line-height: 19.2px;
   color: #1C190E;
   margin-right: 24px;
+  margin-left: 4px;
 }
 .newForm .newForm-inputs .newForm-innerBox .newForm-radios label .asterstrik {
   color: #A85B57;
@@ -2514,23 +2550,55 @@ footer .copyright-section p {
 .newForm .agree-check {
   display: flex;
   align-items: center;
-  gap: 4px;
-}
-.newForm .agree-check input {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
+  position: relative;
 }
 .newForm .agree-check label {
   font-weight: 400;
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
+  margin-left: 29px;
+  margin-top: 5px;
 }
 .newForm .agree-check label a {
   font-weight: 500;
   color: #2B2A28;
   border-bottom: 1px solid #2B2A28;
+}
+.newForm .agree-check label.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.newForm .agree-check label.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #8c8d87;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.newForm .agree-check label.checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.newForm .agree-check label.checkbox input:checked ~ .checkmark {
+  background-color: #000;
 }
 .newForm .newForm-btns {
   display: flex;
@@ -2560,7 +2628,7 @@ footer .copyright-section p {
   color: #2B2A28;
   border: 1px solid #2B2A28;
 }
-.newForm .newForm-btns h2 {
+.newForm .newForm-btns .or-text {
   width: 100%;
   text-align: center;
   border-bottom: 1px solid #EFEFEF;
@@ -2570,15 +2638,16 @@ footer .copyright-section p {
   font-size: 0.8125em;
   color: #8E8E93;
 }
-.newForm .newForm-btns h2 span {
+.newForm .newForm-btns .or-text span {
   background: #FFFFFF;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .lease-withBPNum {
   padding: 45px 0px 233px;
   display: flex;
   justify-content: space-between;
+  gap: 49px;
 }
 .lease-withBPNum .withBP-imgBox {
   position: relative;
@@ -2675,6 +2744,7 @@ footer .copyright-section p {
   padding: 45px 0px 233px;
   display: flex;
   justify-content: space-between;
+  gap: 49px;
 }
 .lease-withoutBPNum .withoutBP-imgBox {
   position: relative;
