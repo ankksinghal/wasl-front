@@ -2599,6 +2599,231 @@ footer .copyright-section p {
   color: #2B2A28;
 }
 
+.newForm {
+  width: 100%;
+}
+.newForm .newForm-heading {
+  font-weight: 700;
+  font-size: 1.875em;
+  line-height: 35.82px;
+  color: #2B2A28;
+  margin-bottom: 19px;
+}
+.newForm .form-check {
+  margin-bottom: 39px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.newForm .form-check label {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 22.4px;
+  color: #2B2A28;
+  margin-left: 32px;
+}
+.newForm .form-check label span {
+  display: block;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 22.4px;
+  color: #8D8D87;
+}
+.newForm .form-check label.properties-view {
+  display: flex;
+  flex-direction: column;
+}
+.newForm .form-check label.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.newForm .form-check label.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #8c8d87;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.newForm .form-check label.checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.newForm .form-check label.checkbox input:checked ~ .checkmark {
+  background-color: #000;
+}
+.newForm .newForm-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.newForm .newForm-inputs .newForm-innerBox {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+}
+.newForm .newForm-inputs .newForm-innerBox label {
+  margin-bottom: 10px;
+}
+.newForm .newForm-inputs .newForm-innerBox label .asterstrik {
+  color: #A85B57;
+}
+.newForm .newForm-inputs .newForm-innerBox .newForm-radios {
+  margin-bottom: 7px;
+  margin-left: 0px;
+}
+.newForm .newForm-inputs .newForm-innerBox .newForm-radios input {
+  margin: 0px;
+}
+.newForm .newForm-inputs .newForm-innerBox .newForm-radios label {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19.2px;
+  color: #1C190E;
+  margin-right: 24px;
+  margin-left: 4px;
+}
+.newForm .newForm-inputs .newForm-innerBox .newForm-radios label .asterstrik {
+  color: #A85B57;
+}
+.newForm .newForm-inputs .newForm-innerBox .normal-newInput {
+  border: 1px solid #c6c7c3;
+  border-radius: 8px;
+  height: 55px;
+  padding: 0px 18px;
+}
+.newForm .newForm-inputs .newForm-innerBox .normal-newInput::placeholder {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19.1px;
+  color: #2B2A28;
+}
+.newForm .newForm-inputs .newForm-innerBox.select-box select {
+  background-color: #FFFFFF;
+  appearance: none;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19.1px;
+  color: #2B2A28;
+}
+.newForm .newForm-inputs .newForm-innerBox.select-box select.select-normalInput {
+  background: url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+  color: #3A3A3C;
+  background-size: 25px 25px;
+}
+.newForm .agree-check {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.newForm .agree-check label {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19.1px;
+  color: #2B2A28;
+  margin-left: 32px;
+  margin-top: 5px;
+}
+.newForm .agree-check label a {
+  font-weight: 500;
+  color: #2B2A28;
+  border-bottom: 1px solid #2B2A28;
+}
+.newForm .agree-check label.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.newForm .agree-check label.checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid #8c8d87;
+  background-color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.newForm .agree-check label.checkbox .checkmark::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 7px;
+  top: 3px;
+  width: 3px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.newForm .agree-check label.checkbox input:checked ~ .checkmark {
+  background-color: #000;
+}
+.newForm .newForm-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  margin-top: 19px;
+}
+.newForm .newForm-btns a {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: #1C190E;
+  height: 54px;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 19.1px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 10px;
+}
+.newForm .newForm-btns .bg-white {
+  background-color: #FFFFFF;
+  color: #2B2A28;
+  border: 1px solid #2B2A28;
+}
+.newForm .newForm-btns .or-text {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #EFEFEF;
+  line-height: 0.1em;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.8125em;
+  color: #8E8E93;
+}
+.newForm .newForm-btns .or-text span {
+  background: #FFFFFF;
+  padding: 0 20px;
+}
+
 .search-banner-section {
   position: relative;
   display: flex;
@@ -3204,229 +3429,6 @@ footer .copyright-section p {
 }
 .lease-validate .lease-formBox {
   width: 52.6%;
-}
-
-.newForm {
-  width: 100%;
-}
-.newForm .newForm-heading {
-  font-weight: 700;
-  font-size: 1.875em;
-  line-height: 35.82px;
-  color: #2B2A28;
-  margin-bottom: 19px;
-}
-.newForm .form-check {
-  margin-bottom: 39px;
-  position: relative;
-}
-.newForm .form-check label {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 22.4px;
-  color: #2B2A28;
-  margin-left: 29px;
-}
-.newForm .form-check label span {
-  display: block;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 22.4px;
-  color: #8D8D87;
-}
-.newForm .form-check label.properties-view {
-  display: flex;
-  flex-direction: column;
-}
-.newForm .form-check label.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.newForm .form-check label.checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border: 2px solid #8c8d87;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.newForm .form-check label.checkbox .checkmark::after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 7px;
-  top: 3px;
-  width: 3px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.newForm .form-check label.checkbox input:checked ~ .checkmark {
-  background-color: #000;
-}
-.newForm .newForm-inputs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-.newForm .newForm-inputs .newForm-innerBox {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
-}
-.newForm .newForm-inputs .newForm-innerBox label {
-  margin-bottom: 10px;
-}
-.newForm .newForm-inputs .newForm-innerBox label .asterstrik {
-  color: #A85B57;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios {
-  margin-bottom: 7px;
-  margin-left: 0px;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios input {
-  margin: 0px;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios label {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.2px;
-  color: #1C190E;
-  margin-right: 24px;
-  margin-left: 4px;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios label .asterstrik {
-  color: #A85B57;
-}
-.newForm .newForm-inputs .newForm-innerBox .normal-newInput {
-  border: 1px solid #c6c7c3;
-  border-radius: 8px;
-  height: 55px;
-  padding: 0px 18px;
-}
-.newForm .newForm-inputs .newForm-innerBox .normal-newInput::placeholder {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.newForm .newForm-inputs .newForm-innerBox.select-box select {
-  background-color: #FFFFFF;
-  appearance: none;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.newForm .newForm-inputs .newForm-innerBox.select-box select.select-normalInput {
-  background: url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
-  color: #3A3A3C;
-  background-size: 25px 25px;
-}
-.newForm .agree-check {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.newForm .agree-check label {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-  margin-left: 29px;
-  margin-top: 5px;
-}
-.newForm .agree-check label a {
-  font-weight: 500;
-  color: #2B2A28;
-  border-bottom: 1px solid #2B2A28;
-}
-.newForm .agree-check label.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.newForm .agree-check label.checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border: 2px solid #8c8d87;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.newForm .agree-check label.checkbox .checkmark::after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 7px;
-  top: 3px;
-  width: 3px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.newForm .agree-check label.checkbox input:checked ~ .checkmark {
-  background-color: #000;
-}
-.newForm .newForm-btns {
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  margin-top: 19px;
-}
-.newForm .newForm-btns a {
-  text-decoration: none;
-  border-radius: 8px;
-  background-color: #1C190E;
-  height: 54px;
-  font-weight: 500;
-  font-size: 1em;
-  line-height: 19.1px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 10px;
-}
-.newForm .newForm-btns .bg-white {
-  background-color: #FFFFFF;
-  color: #2B2A28;
-  border: 1px solid #2B2A28;
-}
-.newForm .newForm-btns .or-text {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #EFEFEF;
-  line-height: 0.1em;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 0.8125em;
-  color: #8E8E93;
-}
-.newForm .newForm-btns .or-text span {
-  background: #FFFFFF;
-  padding: 0 20px;
 }
 
 .lease-withBPNum {

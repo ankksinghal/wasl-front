@@ -148,3 +148,243 @@
         }
     }
 }
+
+
+// newForm for regestration pages..
+
+.newForm{
+    width: 100%;
+    .newForm-heading{
+        font-weight: $fontweight3;
+        font-size: $font30;
+        line-height: 35.82px;
+        color: $black;
+        margin-bottom: 19px;
+    }
+    .form-check{
+        margin-bottom: 39px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        label {
+            font-weight: $fontweight5;
+            font-size: $font16;
+            line-height: 22.4px;
+            color: $black;
+            margin-left: 32px;
+            span{
+                display: block;
+                font-weight: $fontweight5;
+                font-size: $font16;
+                line-height: 22.4px;
+                color: $logoName;
+                     }
+            &.properties-view {
+                display: flex;
+                flex-direction: column;
+            }
+            &.checkbox input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            &.checkbox .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border: 2px solid $color9;
+                background-color: $white;
+                cursor: pointer;
+                border-radius: 6px;
+            }  
+            &.checkbox .checkmark::after{
+                content: "";
+                position: absolute;
+                display: block;
+                left: 7px;
+                top: 3px;
+                width: 3px;
+                height: 9px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &.checkbox input:checked ~ .checkmark {
+                background-color: $darkBlack;
+            }
+     
+        }
+
+    }
+    .newForm-inputs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+        .newForm-innerBox{
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            label{
+                margin-bottom: 10px;
+                .asterstrik{
+                    color: $color5;
+                }
+            }
+            .newForm-radios{
+                margin-bottom: 7px;
+                margin-left: 0px;
+                input{
+                    margin: 0px;
+                    
+                }
+                label{
+                    font-weight: $fontweight5;
+                    font-size: $font16;
+                    line-height: 19.2px;
+                    color:$Primary;
+                    margin-right: 24px;
+                    margin-left: 4px;
+                    .asterstrik{
+                        color: $color5;
+                    }
+                }
+              
+                
+            }
+            .normal-newInput{
+                border: 1px solid $color6;
+                border-radius: 8px;
+                height: 55px;
+                padding: 0px 18px;
+            }
+            .normal-newInput::placeholder{
+                font-weight: $fontweight5;
+                font-size: $font16;
+                line-height: 19.1px;
+                color: $black;
+            }
+            &.select-box{
+                select{
+                    background-color: $white; 
+                    appearance: none;
+                    font-weight: $fontweight5;
+                    font-size: $font16;
+                    line-height: 19.1px;
+                    color: $black;
+                    &.select-normalInput{               
+                        background: url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+                        color: $color3;
+                        background-size: 25px 25px;
+                    }
+                }
+            }
+           
+        }
+    }
+    .agree-check{
+        display: flex;
+        align-items: center;
+        position: relative;
+        label{
+            font-weight: $fontweight5;
+            font-size: $font16;
+            line-height: 19.1px;
+            color: $black;
+            margin-left: 32px;
+            margin-top: 5px;
+            a{
+                font-weight: $fontweight2;
+                color: $black;
+                border-bottom: 1px solid $black;
+            }
+            &.properties-view {
+               
+            }
+            &.checkbox input{
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            &.checkbox .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 20px;
+                width: 20px;
+                border: 2px solid $color9;
+                background-color: $white;
+
+                cursor: pointer;
+                border-radius: 6px;
+            }  
+            &.checkbox .checkmark::after{
+                content: "";
+                position: absolute;
+                display: block;
+                left: 7px;
+                top: 3px;
+                width: 3px;
+                height: 9px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+            &.checkbox input:checked ~ .checkmark {
+                background-color: $darkBlack;
+            }
+        }
+    }
+    .newForm-btns{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+        margin-top: 19px;
+        a{
+            text-decoration: none;
+            border-radius: 8px;
+            background-color:#1C190E;
+            height: 54px;
+            font-weight: $fontweight2;
+            font-size: $font16;
+            line-height: 19.1px;
+            text-align: center;
+            color: $white;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            gap: 10px;
+        }
+        .bg-white {
+            background-color: $white;
+            color: $black;
+            border: 1px solid $black;
+        }
+        .or-text{
+            width: 100%; 
+            text-align: center; 
+            border-bottom: 1px solid $color4; 
+            line-height: 0.1em;
+            font-family: 'Poppins';
+            font-weight: $fontweight5;
+            font-size: $font13;
+            color: $color7;
+            span{
+                background: $white; 
+                padding:0 20px; 
+            }
+        }
+    }
+}
