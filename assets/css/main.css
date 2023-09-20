@@ -3762,7 +3762,7 @@ footer .copyright-section p {
 @media screen and (max-width: 767px) {
   .loginOtp-1 .loginotp-main .left-section {
     width: 100%;
-    max-width: 90% !important;
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -3887,7 +3887,7 @@ footer .copyright-section p {
 @media screen and (max-width: 767px) {
   .loginOtp-2 .loginotp-main .left-section {
     width: 100%;
-    max-width: 90% !important;
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 991px) {
@@ -4061,7 +4061,7 @@ footer .copyright-section p {
 @media screen and (max-width: 767px) {
   .loginOtp-4 .loginotp-main .left-section {
     width: 100%;
-    max-width: 90% !important;
+    max-width: 90%;
   }
 }
 @media screen and (max-width: 991px) {

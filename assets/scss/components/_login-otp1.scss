@@ -22,7 +22,7 @@
             min-height: 46.14%;
             @include respond(phone_land) {
                 width: 100%;
-                max-width: 90% !important;
+                max-width: 90%;
             }
             @include respond(tab) {
                 max-width: 390px;
@@ -88,7 +88,6 @@
             align-items: center;
             justify-content: center;
             width: 34.82%;
-            // margin-top: 40px !important;
             @include respond(tab) {
                 max-width: 330px;
             }
