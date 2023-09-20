@@ -88,4 +88,16 @@ button{
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
     }
+    &.new-checkbox {
+        margin-bottom: 39px;
+        samp {
+            color: #8D8D87;
+            line-height: 24px;
+            strong {
+                font-weight: 600;
+                display: block;
+                color: #1C190E;
+            }
+        }
+    }
   }
