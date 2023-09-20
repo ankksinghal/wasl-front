@@ -1,0 +1,89 @@
+.sign-in-section {
+  text-align: center;
+}
+.sign-in-section .container {
+  max-width: 1140px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.sign-in-section .container .signin-panel {
+  max-width: 1140px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sign-in-section .container .signin-panel .left {
+  flex: 1;
+}
+.sign-in-section .container .signin-panel .right {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 397px;
+}
+.sign-in-section .container .signin-panel .right .signin-form {
+  width: 100%;
+}
+.sign-in-section .container .signin-panel .right .signin-form form h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35.82px;
+  color: #2B2A28;
+  margin-bottom: 32px;
+}
+.sign-in-section .container .signin-panel .right .signin-form form label {
+  color: #2B2A28;
+  font-size: 16px;
+  line-height: 19.1px;
+}
+.sign-in-section .container .signin-panel .right .signin-form form .input-box {
+  position: relative;
+  margin: 10px 0 30px 0;
+  display: flex;
+}
+.sign-in-section .container .signin-panel .right .signin-form form .input-box input {
+  border: 1px solid #8D8D87;
+  border-radius: 8px;
+  height: 57px;
+  padding-left: 45px;
+  width: 100%;
+  opacity: 50%;
+}
+.sign-in-section .container .signin-panel .right .signin-form form .input-box input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.1px;
+  color: #2B2A28;
+}
+.sign-in-section .container .signin-panel .right .signin-form form .input-box img {
+  position: absolute;
+  left: 19.69px;
+  top: 19.68px;
+}
+.sign-in-section .container .signin-panel .right .signin-form form ul {
+  display: flex;
+  justify-content: end;
+  text-align: right;
+  gap: 8px;
+}
+.sign-in-section .container .signin-panel .right .signin-form form ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.1px;
+  color: #2B2A28;
+  text-align: right;
+}
+.sign-in-section .container .signin-panel .right .signin-form form ul li hr {
+  border: none;
+  border-left: 1px solid #8D8D87;
+  height: 15px;
+  margin: 3px 0px;
+}/*# sourceMappingURL=signin.css.map */
