@@ -1,201 +1,353 @@
-.village-building{
-    .village-banner{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 29px;
-        margin-bottom: 33px;
-        .left-section{
+.search-banner-section{
+    .wasl-text{
+        @media only screen and (min-width: 320px) and (max-width: 515px){
+            font-size: $font18;
+         }
+         @media only screen and (max-width: 319px){
+            font-size: $font15;
+            line-height: 30px;
+         }
+    }
+}
+.container{
+    .village-building{
+        @include respond(tab_land) {
+            padding: 0px 30px;
+            
+        }
+        .village-banner{
             display: flex;
-            flex-direction: column;
-            gap: 14px;
-            .village-heading{
-                font-weight: $fontweight2;
-                font-size: $font30;
-                line-height: 35.82px;
-                color: $black;
+            justify-content: space-between;
+            margin-top: 29px;
+            margin-bottom: 33px;
+            @include respond(phone_land) {
+                flex-direction: column;
+                gap: 30px; 
+                justify-content: center;      
+                align-items: center;  
             }
-            ul{
+            .left-section{
                 display: flex;
-                gap: 12px;
-                align-items: center;
-                li{ 
-                    align-items: center;
-                    gap: 4px;
-                    font-size: $font16;
-                    font-weight: $fontweight5;
-                    line-height: 24px;
+                flex-direction: column;
+                gap: 14px;
+                @include respond(phone_land) {
+                   text-align: center;  
+                }
+                .village-heading{
+                    font-weight: $fontweight2;
+                    font-size: $font30;
+                    line-height: 35.82px;
                     color: $black;
-                   
-
+                    @media only screen and (min-width: 320px) and (max-width: 515px){
+                        font-size: $font21;
+                        line-height: 30px;
+                     }
+                     @media only screen and (max-width: 319px){
+                        font-size: $font18;
+                        line-height: 30px;
+                     }
+                }
+                ul{
+                    display: flex;
+                    gap: 12px;
+                    align-items: center;
+                    @include respond(phone_land) {
+                        text-align: center;  
+                     }
+                     @media only screen and (min-width: 320px) and (max-width: 515px){
+                        flex-direction: column;
+                     }
+                     @media only screen and (max-width: 319px){
+                        flex-direction: column;
+                     }
+                    li{ 
+                        align-items: center;
+                        gap: 4px;
+                        font-size: $font16;
+                        font-weight: $fontweight5;
+                        line-height: 24px;
+                        color: $black;
+                        @media only screen and (min-width: 768px) and (max-width: 880px){
+                            font-size: $font12;
+                        }
+                        @include respond(phone) {
+                            font-size: $font12;
+                         }
+                         @media only screen and (min-width: 320px) and (max-width: 515px){
+                            font-size: $font12;
+                            line-height: 10px;
+                         }
+                       
+    
+                        img{
+                            max-width: 12px;
+                            width: 100%;
+                            @media only screen and (min-width: 320px) and (max-width: 515px){
+                                max-width: 9px;
+                                width: 100%;
+                             }
+                        }
+                        .span-text{
+                            font-weight: $fontweight2;
+                        }
+    
+                    }
+                }
+                .sqft{
+                    display: flex;
+                    gap: 4px;
+                    @include respond(phone_land) {
+                        display: flex;
+                        justify-content: center;
+                    }
+                    @media only screen and (min-width: 320px) and (max-width: 515px){
+                        margin-top: -10px;
+                     }
                     img{
                         max-width: 12px;
                         width: 100%;
+                        @media only screen and (min-width: 320px) and (max-width: 515px){
+                            max-width: 9px;
+                            width: 100%;
+                         }
                     }
-                    .span-text{
-                        font-weight: $fontweight2;
+                    span{
+                        font-size: $font16;
+                        font-weight: $fontweight5;
+                        line-height: 24px;
+                        color: $black;
+                        gap: 4px;
+                        .span-text{
+                            font-size: $font16;
+                            font-weight: $fontweight2;
+                            line-height: 24px;
+                            color: $black;
+                        }
+                        @media only screen and (min-width: 768px) and (max-width: 880px){
+                            font-size: $font12;
+                        }
+                        @include respond(phone) {
+                            font-size: $font12;
+                         }
+                         @media only screen and (min-width: 320px) and (max-width: 515px){
+                            font-size: $font12;
+                            line-height: 10px;
+                         }
+                     
                     }
-
                 }
             }
-            .sqft{
+            .right-section{
                 display: flex;
-                gap: 4px;
-                img{
-                    max-width: 12px;
-                    width: 100%;
+                flex-direction: column;
+                justify-content: space-between;
+                @include respond(phone_land) {
+                    align-items: center;
+                    gap: 10px;
                 }
-                p{
-                    font-size: $font16;
-                    font-weight: $fontweight5;
-                    line-height: 24px;
+                .btn-links{
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: flex-end;
+                    @include respond(phone_land) {
+                        width: 100%;
+                        justify-content: center;
+                    }
+                   
+                    a{
+                        padding: 16px 18px;
+                        border-radius: 8px;
+                        max-width: 115px;
+                        width: 100%;
+                        text-align: center;
+                       
+                        &.rent-link{
+                            background-color: $black;
+                            color: $white;
+                            font-size: $font15;
+                            font-weight: $fontweight3;
+                            margin-right: 8px;
+                            @media only screen and (max-width: 319px){
+                                font-size: $font12;
+                            }
+                        }
+                        &.enquire-link{
+                            border: 1px solid $black;
+                            color: $black;
+                            background-color: $white;
+                            font-weight: $fontweight3;
+                            font-size: $font15;
+    
+    
+                        }
+                        
+                    }
+                   
+                }
+                .right-text{
+                    font-weight: $fontweight2;
+                    font-size: $font30;
+                    line-height: 35.82px;
                     color: $black;
-                    gap: 4px;
-                 
+                    @include respond(phone) {
+                        font-size: $font27;
+                     }
+                     @media only screen and (max-width: 319px){
+                        font-size: $font24;
+                    }
                 }
             }
         }
-        .right-section{
+    }
+    
+    .photos-section{
+        margin-bottom: 47px;
+        @include respond(tab_land) {
+            padding: 0px 30px;
+            
+        }
+        @include respond(phone) {
+            margin-bottom: 230px;
+            
+        }
+        @media only screen and (min-width: 320px) and (max-width: 515px){
+            margin-bottom: 120px;
+         }
+         @media only screen and (max-width: 319px){
+            margin-bottom: 30px;
+         }
+        .photos-area{
             display: flex;
-            flex-direction: column;
+            height: 550px;
             justify-content: space-between;
-            .btn-links{
-                margin-top: 10px;
-                display: flex;
-                justify-content: flex-end;
-                a{
-                    padding: 16px 18px;
-                    border-radius: 8px;
-                    max-width: 115px;
+            @include respond(phone) {
+                flex-direction: column;
+                gap: 7px;
+            }
+            .left-side{
+                width: 49.84%;
+                height: 100%;
+                @include respond(phone) {
                     width: 100%;
-                    text-align: center;
-                    &.rent-link{
-                        background-color: $black;
-                        color: $white;
-                        font-size: $font15;
-                        font-weight: $fontweight3;
-                        margin-right: 8px;
+                    height: auto;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .right-side{
+                width: 49.47%;
+                height: 100%;
+                @include respond(phone) {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    gap: 7px;
+                }
+                .upper-side{ 
+                    height: 272px;
+                    margin-bottom: 7px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        @include respond(phone) {
+                            width: 100%;
+                        }
                     }
-                    &.enquire-link{
-                        border: 1px solid $black;
-                        color: $black;
-                        background-color: $white;
-                        font-weight: $fontweight3;
-                        font-size: $font15;
-
-
+                }
+                .lower-side{
+                    display:flex;
+                    gap:8px;
+                    height: 271px;
+                    img{
+                        width: 49.47%;
+                        height: 100%;
+                        @include respond(phone) {
+                            width: 48%;
+                        }
                     }
-                    
+                }
+            }
+        }
+    }
+    
+    .property-details{
+        @include respond(tab_land) {
+            padding: 0px 30px;
+            
+        }
+        
+        .property-inner{
+            padding: 24px;
+            border: 1px solid $color1;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            .property-heading{
+                font-weight: $fontweight2;
+                font-size: $font20;
+                line-height: 23.88px;
+                color:$color2;
+                padding-bottom: 12px;
+                border-bottom: 1px solid $color4;
+            }
+            .property-ul{
+                width: 100%;
+                margin-top: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                li{
+                    width: 25%;
+                    margin-bottom: 20px;
+                    gap: 10px;
+                    font-weight: $fontweight5;
+                    font-size: $font16;
+                    line-height: 24px;
+                    color:$color3;
+                    display: flex;
+                    align-items: center;
+                    @media only screen and (min-width: 768px) and (max-width: 919px){
+                        width: 30%;
+                    }
+                    @include respond(phone_land) {
+                        width: 50%;
+                    }
+                    @include respond(phone) {
+                        width: 100%;
+                    }
+                    img{
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 6px;
+                    }
+                    &.access-li{
+                        width: 100%;
+                    }
+                    &.access-li2{
+                        width: 75%;
+                    }
+                }
+            }
+            .property-info{
+                margin-top: 16px;
+                p{
+                    font-weight: $fontweight5;
+                    font-size: $font16;
+                    line-height: 26px;
+                    color: $black;
+                    margin-bottom: 20px;
+                    &.location-info{
+                        width: 93.11%;
+                    }
+                }
+                
+            }
+            .img-content{
+                img{
+                    width:100% !important;
                 }
                
             }
-            .right-text{
-                font-weight: $fontweight2;
-                font-size: $font30;
-                line-height: 35.82px;
-                color: $black;
-            }
-        }
-    }
-}
-
-.photos-section{
-    margin-bottom: 47px;
-    .photos-area{
-        display: flex;
-        height: 550px;
-        justify-content: space-between;
-        .left-side{
-            width: 49.84%;
-            height: 100%;
-            img{
-                width: 100%;
-                height: 100%;
-            }
-        }
-        .right-side{
-            width: 49.47%;
-            height: 100%;
-            .upper-side{ 
-                height: 272px;
-                margin-bottom: 7px;
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-            .lower-side{
-                display:flex;
-                gap:8px;
-                height: 271px;
-                img{
-                    height: 100%;
-                }
-            }
-        }
-    }
-}
-
-.property-details{
-    .property-inner{
-        padding: 24px;
-        border: 1px solid $color1;
-        border-radius: 16px;
-        margin-bottom: 20px;
-        .property-heading{
-            font-weight: $fontweight2;
-            font-size: $font20;
-            line-height: 23.88px;
-            color:$color2;
-            padding-bottom: 12px;
-            border-bottom: 1px solid $color4;
-        }
-        .property-ul{
-            width: 100%;
-            margin-top: 16px;
-            display: flex;
-            flex-wrap: wrap;
-            li{
-                width: 25%;
-                margin-bottom: 20px;
-                gap: 10px;
-                font-weight: $fontweight5;
-                font-size: $font16;
-                line-height: 24px;
-                color:$color3;
-                display: flex;
-                align-items: center;
-                img{
-                    width: 20px;
-                    height: 20px;
-                    border-radius: 6px;
-                }
-                &.access-li{
-                    width: 100%;
-                }
-                &.access-li2{
-                    width: 75%;
-                }
-            }
-        }
-        .property-info{
-            margin-top: 16px;
-            p{
-                font-weight: $fontweight5;
-                font-size: $font16;
-                line-height: 26px;
-                color: $black;
-                margin-bottom: 20px;
-                &.location-info{
-                    width: 93.11%;
-                }
-            }
-            
-        }
-        .img-content{
-            img{
-                width:100% !important;
-            }
-           
         }
     }
 }
