@@ -7,6 +7,14 @@
         color:$black;
         margin-bottom: 32px;
     }
+    .oneTime-p{
+        margin-bottom: 32px;
+        font-weight: $fontweight5;
+        font-size: $font16;
+        line-height: 24px;
+        color: $black;
+    }
+
     .form-radioBtns{
         display: flex;
         margin-left: 0px;
@@ -33,6 +41,20 @@
         font-weight: $fontweight5;
         line-height: 19.1px;
     }
+    .or-text{
+        width: 100%; 
+        text-align: center; 
+        border-bottom: 1px solid $color4; 
+        line-height: 0.1em;
+        font-family: 'Poppins';
+        font-weight: $fontweight5;
+        font-size: $font13;
+        color: $color7;
+        span{
+            background: $white; 
+            padding:0 20px; 
+        }
+    }
     .input-box {
         position: relative;
         margin: 10px 0 16px 0;
@@ -50,6 +72,7 @@
                 font-size: $font16;
                 line-height: 19.1px;
                 color:$black;
+                opacity: 70%;
             }
             .left-icon{
                 position: absolute;
@@ -62,6 +85,58 @@
                 right: 10px;
                 top: 19.68px;
             }
+    }
+    .otp-box{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32px;
+        .enter-otp{
+            margin-bottom: 10px;
+            font-weight: $fontweight5;
+            font-size: $font16;
+            line-height: 19.2px;
+            color: $Primary;
+            .asterisk{
+                color: $color5;
+                font-weight: $fontweight5;
+                font-size: $font16;
+                line-height: 19.2px;
+            }
+        }
+        .otp-innerBox{
+            display: flex;
+            gap: 16px;
+            .count-otp{
+                width: 51px;
+                height: 51px;
+                border: 1px solid $color6;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: $fontweight5;
+                font-size: $font16;
+                line-height: 19.2px;
+                color: $logoName;
+            }
+        }
+    }
+    .resend-otp{
+        margin-bottom: 32px;
+        span{
+            font-weight: $fontweight5;
+            font-size: $font16;
+            line-height: 19.2px;
+            color: $logoName;
+            a{
+                margin-left: 8px;
+                font-weight: $fontweight3;
+                font-size: $font16;
+                line-height: 19.2px;
+                color: $darkBlack;
+                border-bottom: 1px solid $darkBlack;
+            }
+        }
     }
     .form-dropdown{
         display: flex;

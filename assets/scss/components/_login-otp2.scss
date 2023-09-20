@@ -1,0 +1,165 @@
+
+.loginOtp-2{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 98px;
+    padding-bottom: 119px;
+    .loginotp-main {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include respond(phone_land) {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        @include respond(desk) {
+            justify-content: space-around;
+        }
+        .left-section{
+            min-height: 46.14%;
+            @include respond(phone_land) {
+                width: 100%;
+                max-width: 90% !important;
+            }
+            @include respond(tab) {
+                max-width: 390px;
+                min-height: auto;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 100px;
+               }
+               
+               .img-box{
+                position: relative;
+                max-height: 537px;
+                height: 100%;
+                border-radius: 16px;
+                @include respond(phone_land) {
+                    width: 100%;
+                    max-width: 100%;
+                }
+                img{
+                    max-width: calc(84%);
+                    width: 100%;
+                    margin-left: 7.2%;
+                    margin-top: 8.1%;
+                    margin-bottom: 8.5%;
+                    margin-right: 8.7%;
+                    height: auto;
+                }
+                &::before{
+                    position: absolute;
+                    right: 0px;
+                    top: 0;
+                    content: "";
+                    height: 37%;
+                    width: 44%;
+                    background-color: $color10;
+                    border-radius: 16px;
+                    z-index: -1;
+                }
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        left: 0px;
+                        bottom: 0px;
+                        height: 23%;
+                        width: 32%;
+                        background-color: $color10;
+                        border-radius: 16px;
+                        z-index: -1;
+                        @include respond(tab) {
+                            bottom: 130px;
+                        }
+                        @include respond(phone_land) {
+                            bottom: 0px;
+                        }
+                        }
+            }
+        }
+        
+        .right-section{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 34.82%;
+            // margin-top: 40px !important;
+            @include respond(tab) {
+                max-width: 330px;
+            }
+            @include respond(phone_land) {
+                width: 100%;
+            }
+            .form{
+                .form-heading{
+                    margin-bottom: 32px;
+                }
+                .otp-box{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 32px;
+                    .enter-otp{
+                        margin-bottom: 10px;
+                        font-weight: $fontweight5;
+                        font-size: $font16;
+                        line-height: 19.2px;
+                        color: $Primary;
+                        .asterisk{
+                            color: $color5;
+                            font-weight: $fontweight5;
+                            font-size: $font16;
+                            line-height: 19.2px;
+                        }
+                    }
+                    .otp-innerBox{
+                        display: flex;
+                        gap: 16px;
+                        .count-otp{
+                            width: 51px;
+                            height: 51px;
+                            border: 1px solid $color6;
+                            border-radius: 8px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight: $fontweight5;
+                            font-size: $font16;
+                            line-height: 19.2px;
+                            color: $logoName;
+                        }
+                    }
+                }
+
+                .resend-otp{
+                    margin-bottom: 32px;
+                    span{
+                        font-weight: $fontweight5;
+                        font-size: $font16;
+                        line-height: 19.2px;
+                        color: $logoName;
+                        a{
+                            margin-left: 8px;
+                            font-weight: $fontweight3;
+                            font-size: $font16;
+                            line-height: 19.2px;
+                            color: $darkBlack;
+                            border-bottom: 1px solid $darkBlack;
+                        }
+                    }
+                }
+             
+                .fp-labels{
+                    margin-bottom: 10px;
+                }
+                .form-btns{
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
