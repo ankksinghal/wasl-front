@@ -3210,6 +3210,11 @@ footer .copyright-section p {
   transform: rotate(180deg);
 }
 
+@media only screen and (max-width: 1144px) {
+  .search-banner-section .wasl-text {
+    padding: 0px 10px;
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 515px) {
   .search-banner-section .wasl-text {
     font-size: 1.125em;
