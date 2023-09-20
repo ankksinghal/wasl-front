@@ -13,10 +13,19 @@ $(document).ready(function() {
       animateIn: 'fadeIn',
   });
 
-  // search Click
-  $(".search-icon").click(function() {
-    $(".search-input-section").toggle(); // Toggle the visibility of the section
-});
+  $('.search-icon').click(function () {
+    $(this).hide();
+    $('.search-input-section').toggle();
+    $('.search-input-section input').focus(); // Focus on the input field when shown
+  });
+  // Close search input when clicking outside
+  $(document).on('click', function (event) {
+    if (!$(event.target).closest('.test').length) {
+        $('.search-input-section').hide();
+        $('.search-icon').show();
+    }
+  });
+
   var owl = $('#owl-residential');
   owl.owlCarousel({
       items: 3,

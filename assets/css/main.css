@@ -101,6 +101,7 @@ button {
   font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .check-box input {
@@ -137,6 +138,8 @@ button {
   height: 9px;
   border: solid white;
   border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -168,6 +171,7 @@ header .header-section {
 }
 header .header-section .right-section .right-top-section {
   display: flex;
+  position: relative;
   gap: 3px;
   align-items: center;
   justify-content: end;
@@ -312,6 +316,27 @@ header .left-section .logo-name {
 }
 .search-input-section {
   display: none;
+  position: relative;
+}
+.search-input-section input {
+  border-radius: 4px;
+  border: 1px solid #E4E4DC;
+  height: 21px;
+}
+.search-input-section.active {
+  display: block;
+}
+.search-input-section .search-input {
+  position: absolute;
+  right: 0px;
+  background-color: transparent;
+  top: 1px;
+  padding: 0 10px;
+  border: none;
+}
+
+.search-icon.active {
+  display: none;
 }
 
 .banner-section {
@@ -324,8 +349,7 @@ header .left-section .logo-name {
 @media screen and (max-width: 991px) {
   .banner-section .banner-img img {
     height: 224px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .banner-section .right-box {
@@ -606,9 +630,7 @@ header .left-section .logo-name {
   font-weight: 500;
   color: #2B2A28;
   padding: 0 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
 }
 .search-section .filter-section .form-view .form-cols .form-ctrl.dropdown {
   background: #fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
@@ -665,16 +687,10 @@ header .left-section .logo-name {
   border-right: 1px solid #c7c6c2;
   height: 60px;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   color: #4E4E4E;
   font-size: 18px;
   font-weight: 400;
-}
-.form-cols-out .form-control::-moz-placeholder {
-  color: #4E4E4E;
-  opacity: 1;
 }
 .form-cols-out .form-control::placeholder {
   color: #4E4E4E;
@@ -2453,7 +2469,7 @@ footer .copyright-section p {
   text-align: center;
   font-weight: 400;
   display: block;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 24px;
   color: #2B2A28;
 }
@@ -2462,7 +2478,7 @@ footer .copyright-section p {
 }
 .sign-in-section .signin-panel .right .form .signup-link strong a {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 19.1px;
   text-decoration: none;
   color: #2B2A28;
@@ -2474,7 +2490,7 @@ footer .copyright-section p {
 }
 .form h2 {
   font-weight: 700;
-  font-size: 30px;
+  font-size: 1.875em;
   line-height: 35.82px;
   color: #2B2A28;
   margin-bottom: 32px;
@@ -2490,7 +2506,7 @@ footer .copyright-section p {
 }
 .form .form-radioBtns label {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 16.2px;
   color: #1C190E;
 }
@@ -2499,7 +2515,7 @@ footer .copyright-section p {
 }
 .form label {
   color: #2B2A28;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   line-height: 19.1px;
 }
@@ -2513,13 +2529,12 @@ footer .copyright-section p {
   border: 1px solid #c6c7c3;
   border-radius: 8px;
   height: 57px;
-  padding-left: 45px;
-  padding-right: 45px;
+  padding: 0px 45px;
   width: 100%;
 }
 .form .input-box input::placeholder {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
 }
@@ -2545,16 +2560,16 @@ footer .copyright-section p {
   width: 100%;
   padding-left: 18px;
   padding-right: 25px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   appearance: none;
   position: relative;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
 }
 .form .form-dropdown select.dropdown {
-  background: #fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
   background-size: 25px 25px !important;
   color: #3A3A3C !important;
 }
@@ -2572,7 +2587,7 @@ footer .copyright-section p {
 }
 .form .fp-box ul li a {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
   text-align: right;
@@ -2589,10 +2604,10 @@ footer .copyright-section p {
   background-color: #1C190E;
   height: 54px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 19.1px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
   display: flex;
   align-items: center;
@@ -2601,7 +2616,7 @@ footer .copyright-section p {
   gap: 10px;
 }
 .form .form-btns .bg-white {
-  background-color: white;
+  background-color: #FFFFFF;
   color: #2B2A28;
   border: 1px solid #2B2A28;
 }
@@ -2699,9 +2714,6 @@ footer .copyright-section p {
 .newForm .newForm-inputs .newForm-innerBox .newForm-radios {
   margin-bottom: 7px;
   margin-left: 0px;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios input {
-  margin: 0px;
 }
 .newForm .newForm-inputs .newForm-innerBox .newForm-radios label {
   font-weight: 400;
@@ -3050,9 +3062,7 @@ footer .copyright-section p {
   font-weight: 400;
   color: #2B2A28;
   padding: 0 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   opacity: 70%;
   width: 100%;
 }
