@@ -167,7 +167,7 @@
                         &.password {
                             background-image: url("../images/password.svg");
                             padding-right: 45px;
-                        }     
+                        }    
                         &.number {
                             background-image: url("../images/mob.svg");
                             padding-right: 45px;
@@ -183,6 +183,13 @@
                         font-size: 16px;
                         line-height: 19.1px;
                         color:#2B2A28;
+                    }
+                    .hidden-eye{
+                        position: absolute;
+                        right: 19.5px;
+                        top: 18px;
+                        width: 22.5px;
+                        height: 18px;
                     }
                     .error {
                         color: #EF3D3D;

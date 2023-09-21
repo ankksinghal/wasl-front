@@ -2880,6 +2880,13 @@ body.modal {
   line-height: 19.1px;
   color: #2B2A28;
 }
+.login-page .main-login .right-section .form .input-box .hidden-eye {
+  position: absolute;
+  right: 19.5px;
+  top: 18px;
+  width: 22.5px;
+  height: 18px;
+}
 .login-page .main-login .right-section .form .input-box .error {
   color: #EF3D3D;
   display: flex;
