@@ -78,6 +78,11 @@ $(document).ready(function() {
     $("#advanced-filters").toggleClass("rotate");
   });
 
+  $("#quicklinks").click(function(){
+    $("#footer-below-section").toggleClass("view");
+    $("#quicklinks").toggleClass("rotate");
+  });
+
   $(function(){  
     var tab = $('.tab-list .tabButton'),
     content= $('.tabsContent .tabContent');

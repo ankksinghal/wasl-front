@@ -14,7 +14,8 @@
         margin-top: 50px; 
     }
     @include respond(phone_land) {
-        margin-top: 50px; 
+        margin-top: 26px; 
+        gap: unset;
     }
     .left-section{
         display: flex;
@@ -42,12 +43,6 @@
                 left: -10%;
             }
         }
-        @include respond(phone_land) {
-            margin-bottom: 40px;
-            .on-mob {
-            left: unset;
-            }
-        }
         &::before{
             position: absolute;
             left: -64px;
@@ -62,11 +57,18 @@
                 height: 201px;
                 width: 201px;
             }
+            @include respond(phone_land) {
+                content:unset;
+            }
         }
         @include respond(phone_land) {
-            flex-direction: column;
-            left: 5px;
+            left: 0;
             margin-bottom: 0;
+            gap: 18px;
+            flex-wrap: nowrap;
+            .on-mob {
+                left: unset;
+            }
         }
         .img-box{
             width: 269px;
@@ -75,6 +77,9 @@
             }
             @include respond(tab) {
                 width: 269px;
+            }
+            @include respond(phone_land) {
+                width: 50%;
             }
             img{
                 max-width: 100%;
@@ -88,6 +93,11 @@
                 font-weight: 300;
                 line-height: 33px;
                 color: #000;
+                @include respond(phone_land) {
+                    font-size: $font14;
+                    line-height: inherit;
+                    margin-top: 5px;
+                }
             }
         }
     }
@@ -103,6 +113,9 @@
             @include respond(tab) {
                 margin-bottom: 15px;
             }
+            @include respond(phone_land) {
+                margin-bottom: 0;
+            }
             h2{
                 font-size: $font44;
                 font-weight: 500;
@@ -111,7 +124,8 @@
                 font-weight: 500;
                 line-height: 33px;
                 @include respond(phone_land) {
-                    font-size: 32px;
+                    font-size: 20px;
+                    text-align: center;
                 }
             }
             p{
@@ -122,6 +136,13 @@
                 letter-spacing: 1px;
                 font-style: normal;
                 font-weight: 400;
+                @include respond(phone_land) {
+                    text-align: center;
+                    padding-top: 9px;
+                    padding-bottom: 14px;
+                    font-size: 14px;
+                    line-height: normal;
+                }
             }
             a, .link{
                 background: $black;
