@@ -65,7 +65,7 @@ footer{
                 margin-bottom: 16px;
                 gap: 16px;
                 @include respond(phone_land) {
-                    flex-basis: calc(100% / 2);
+                    flex-basis: 100%;
                     margin-bottom: 15px;
                 }
                 &.mt-2 { margin-top: 24px;}
@@ -75,9 +75,6 @@ footer{
                      font-size: 18px;
                      font-weight: 500;
                      color: #2B2A28;
-                     @include respond(tab_land) {
-                        font-size:14px;
-                    }
                 }
                 ul{
                     display: flex;

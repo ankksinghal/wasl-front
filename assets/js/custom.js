@@ -83,8 +83,17 @@ $(document).ready(function() {
   });
    // Toggle the mobile menu when the menu button is clicked
    $(".mobile-menu").click(function () {
-    $("#responsive-nav").slideToggle();
-  });
+    $("#responsive-nav").addClass('slide');
+    $(".overlay").addClass('slide');
+    $("body").addClass('slide');
+    });
+    $(".close-nav").click(function () {
+      $("#responsive-nav").removeClass('slide');
+      $(".overlay").removeClass('slide');
+      $("body").removeClass('slide');
+    });
+
+
   
   $("#advanced-filters").click(function(){
     $(".advanced-filters-box").toggleClass("view");
