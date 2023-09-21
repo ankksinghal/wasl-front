@@ -12,17 +12,19 @@
 @import "./components/bookNow";
 @import "./components/youtubePage";
 @import "./components/footer";
-@import "./components/loginPage";
-@import "./components/forgotPassword";
-@import "./components/resetPassword";
-@import "./components/signin";
-@import "./components/form";
+@import "./components/floating";
 @import "./components/searchbanner";
 @import "./components/searchtab";
-@import "./components/floating";
 @import "./components/allunits";
+
+@import "./components/loginPage";
+
+
+// @import "./components/forgotPassword";
+// @import "./components/resetPassword";
+@import "./components/signin";
+@import "./components/form";
 @import "./components/searchweb-detail";
 @import "./components/leaseValidateRegister";
-// @import "./components/newForm";
 @import "./components/leaseWithbpnum";
 @import "./components/leaseWithoutbpnum";
