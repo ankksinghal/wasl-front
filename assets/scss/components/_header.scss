@@ -83,6 +83,9 @@ header{
                             @include respond(phone_land) {
                                 padding: 0 12px 0;
                                 margin-bottom: 12px;
+                                &.test{
+                                     display: none;
+                                }
                              }
                             a{
                                 color: #1C190E;
