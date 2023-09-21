@@ -8,10 +8,9 @@
 .container{
     max-width: 1140px;
     margin: 0 auto;
-    // @include respond(desk) {
-    //     margin-left: 15px;
-    //     margin-right: 15px;
-    // }
+    @include respond(desk) {
+        padding:0 15px;
+    }
 }
 
 a { text-decoration: none;}
