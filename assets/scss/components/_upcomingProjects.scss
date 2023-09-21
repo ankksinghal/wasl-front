@@ -65,7 +65,6 @@
             left: 0;
             margin-bottom: 0;
             gap: 18px;
-            flex-wrap: nowrap;
             .on-mob {
                 left: unset;
             }
@@ -80,6 +79,7 @@
             }
             @include respond(phone_land) {
                 width: 50%;
+                flex: 1;
             }
             img{
                 max-width: 100%;
