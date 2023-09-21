@@ -13,6 +13,19 @@ $(document).ready(function() {
       animateIn: 'fadeIn',
   });
 
+
+  // Search Filter
+  $(".search-filter").click(function () {
+    $(".left-side-bar-filters, body").addClass('modal');
+  });
+
+  $(".close-icon").click(function () {
+    $(".left-side-bar-filters, body").removeClass('modal');
+  });
+
+  
+  
+
   $('.search-icon').click(function () {
     $(this).hide();
     $('.search-input-section').toggle();
