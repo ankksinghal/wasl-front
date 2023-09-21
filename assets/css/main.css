@@ -241,6 +241,9 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
     padding: 0 12px 0;
     margin-bottom: 12px;
   }
+  header .header-section .right-section .right-top-section .top-nav-section ul li.test {
+    display: none;
+  }
 }
 header .header-section .right-section .right-top-section .top-nav-section ul li a {
   color: #1C190E;
