@@ -2,6 +2,9 @@
 // First Section
 .tab-content{
      margin: 0 0 80px;
+     @include respond(phone_land) {
+        margin: 0 0 40px;
+    }
 }
 .all-available-units-section{
     padding: 30px 0 34px;
@@ -394,6 +397,10 @@
                  align-items: center;
                  justify-content: center;
                  box-sizing: border-box;
+                 @include respond(phone_land) {
+                    height: 30px;
+                    width: 30px;
+                }
                  &:hover {
                     background: #f8f8f8;
                  }

@@ -2924,7 +2924,7 @@ footer .copyright-section p {
 }
 @media screen and (max-width: 767px) {
   .search-tab-section .tab-links li a {
-    font-size: 0.875em;
+    font-size: 0.75em;
   }
 }
 
@@ -2967,6 +2967,11 @@ footer .copyright-section p {
 
 .tab-content {
   margin: 0 0 80px;
+}
+@media screen and (max-width: 767px) {
+  .tab-content {
+    margin: 0 0 40px;
+  }
 }
 
 .all-available-units-section {
@@ -3369,6 +3374,12 @@ footer .copyright-section p {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .search-result-pagination ul li a {
+    height: 30px;
+    width: 30px;
+  }
 }
 .search-result-pagination ul li a:hover {
   background: #f8f8f8;

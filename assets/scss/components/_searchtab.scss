@@ -22,7 +22,7 @@
                 display: block;
                 font-size: $font16;
                 @include respond(phone_land) {
-                    font-size: $font14;
+                    font-size: $font12;
                 }
              }
          }
