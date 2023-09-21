@@ -9,8 +9,7 @@
     max-width: 1140px;
     margin: 0 auto;
     @include respond(desk) {
-        margin-left: 15px;
-        margin-right: 15px;
+        padding:0 15px;
     }
 }
 

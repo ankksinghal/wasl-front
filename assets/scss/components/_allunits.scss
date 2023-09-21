@@ -8,12 +8,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include respond(phone_land) {
+        padding: 16px 0;
+    }
     .all-available-units-left{
          h3{
             color: $darkBlack;
             margin-bottom: 10px;
             font-size: $font22;
             font-weight: $fontweight2;
+            @include respond(phone_land) {
+                font-size: $font16;
+                margin-bottom: 4px;
+            }
          }
          span{
             color: $black;
@@ -31,9 +38,29 @@
             border-radius: 10px;
             border: 1px solid $color1;
             vertical-align: middle;
-            line-height: 43px;
+            line-height: 34px;
             text-align: center;
             box-sizing: border-box;
+            &.search-filter{
+                font-size: $font14;
+                color: $black;
+                width:75px;
+                display: none;
+                @include respond(phone_land) {
+                   display: block;
+                }
+                img{
+                    margin-right: 3px;
+                }
+            }
+            img{
+                vertical-align: middle;
+            }
+            @include respond(phone_land) {
+                height: 34px;
+                width: 34px;
+                line-height: 30px;
+            }
             &.active{
                 background-color: $darkBlack;
             }
@@ -48,21 +75,37 @@
     border-radius: 8px;
     padding: 15px 16px;
     margin-bottom: 21px;
+    @include respond(phone_land) {
+        padding: 15px 16px 0;
+    }
     h3{
         color: $darkBlack;
         margin-bottom: 12px;
         font-size: $font18;
         font-weight: $fontweight2;
+        @include respond(phone_land) {
+            font-size: $font14;
+        }
      }
      ul{
          display: flex;
          align-items: center;
          justify-content: space-between;
+         @include respond(phone_land) {
+            display: block;
+        }
          li{
+            @include respond(tab) {
+                display: inline-block;
+                margin:0 12px 12px 0;
+            }
             a{
                 color: $black;
                 font-size: $font14;
                 text-decoration: underline;
+                @include respond(phone_land) {
+                    font-size: $font12;
+                }
             }
          }
      }
@@ -75,6 +118,19 @@
     gap: 31px;
     .left-side-bar-filters{
         width: 264px;
+            @include respond(phone_land) {
+                display: none;
+                &.modal{
+                    display: block;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.5);
+                    top:0;
+                    left:0;
+                }
+        }
+       
         .upper-filter-section,.bottom-filter-section{
             background-color: $color1;
             border-radius: 16px;
@@ -87,6 +143,24 @@
             }
         }
         .upper-filter-section{
+            .filter-title-wrap{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .close-icon{
+                     display: none;
+                     margin-top: -10px;
+                     @include respond(phone_land) {
+                        display: block;
+                  }
+                }
+            }
+            @include respond(phone_land) {
+                  width: 264px;
+                  margin:52px auto;
+                  overflow: scroll;
+                  height: 85%;
+            }
              h3{
                 color:$darkBlack;
                 margin-bottom: 16px;
@@ -160,6 +234,10 @@
             }
         }
         .bottom-filter-section{
+            @include respond(phone_land) {
+                  display: none;
+            }
+            
             h3{
                color:$color2;
             }
@@ -207,18 +285,54 @@
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
+            @include respond(tab_land) {
+                gap: 10px;
+                justify-content: space-between;
+            }
             .all-units-cards{
                 border: 1px solid $color1;
                 border-radius: 16px;
                 padding:16px;
+                .card-details-wrap{
+                    @include respond(phone_land) {
+                        display: flex;
+                        flex-wrap: wrap;
+                        .card-details{
+                             width: 50%;
+                             position: relative;
+                             margin-bottom: 40px;
+                             span{
+                                 i{
+                                    position: absolute;
+                                    left: 0;
+                                    top:25px;
+                                 }
+                             }
+                        }
+                    }
+                }
+                @include respond(tab_land) {
+                    width: 44%;
+                    padding: 10px;
+                }
+                @include respond(phone) {
+                    width: 100%;
+                    padding: 10px;
+                }
                 img.feature-image{
                     margin: 0 0 16px;
+                    @include respond(tab_land) {
+                        width: 100%;
+                    }
                 }
                 h3{
                     font-size: $font18;
                     color: $black;
                     font-weight: $fontweight2;
                     margin-bottom: 10px;
+                    @include respond(tab) {
+                        font-size: $font16;
+                    }
                 }
                 .card-details{
                     display: flex;
@@ -294,5 +408,13 @@
                 }
              }
         }
+     }
+}
+
+
+//  Add Class Body CSS
+body{
+     &.modal{
+        overflow: hidden;
      }
 }
