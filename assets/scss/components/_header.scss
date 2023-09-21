@@ -1,18 +1,18 @@
 header{
     padding: 10px 0px 5px;
+    @include respond(phone_land) {
+        padding: 10px 0px;
+    }
     .header-section{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0;
-        @include respond(phone_land) {
-            padding: 0 15px;
-        }
         .right-section{
             @include respond(phone_land) {
                 display: none;
                 position: absolute;
-                top: 75px;
+                top: 58px;
                 padding:15px 0;
                 background: #2B2A28;
                 width: 100%;
@@ -129,8 +129,11 @@ header{
                 height: 42px;
                 @include respond(tab_land) {
                     width:70px;
-                    height: 32px;
+                    height: auto;
                 }
+            }
+            @include respond(tab_land) {
+                gap: 0px;
             }
         }
         .logo-name{
@@ -142,6 +145,7 @@ header{
             line-height: 22.841px;
             @include respond(tab_land) {
                font-size: 0.6em;
+               line-height: normal;
             }
         }
     }
@@ -149,12 +153,15 @@ header{
 }
 @include respond(phone_land) {
     .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
         span{
             display: block;
             background-color:#2B2A28;
             width: 30px;
             height: 3px;
-            margin-bottom: 6px;
+            border-radius: 40px;
         }
     }
 }
@@ -169,6 +176,9 @@ header{
         height: 21px;
         &:focus:focus-visible{
             outline: none;
+        }
+        @include respond(tab) {
+            width: 100%;
         }
      }
      &.active{
