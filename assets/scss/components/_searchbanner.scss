@@ -5,6 +5,10 @@
      img{
          width: 100%;
          height: auto;
+         @include respond(tab) {
+            height: 150px;
+            object-fit: cover;
+        }
      }
      .banner-cont {
         position: absolute;
