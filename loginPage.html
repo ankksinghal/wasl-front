@@ -134,15 +134,25 @@
                     <div class="or-text"><span>OR</span></div>
                     <div class="input-box">
                       <label for="userId">User Name</label>
-                      <input type="text" id="userId" placeholder="Enter User Name" autocomplete="off" class="email" />
+                      <input type="text" id="userId" placeholder="Enter User Name" autocomplete="off" class="email error" />
                       <p class="error">
                         <img src="./assets/images/carbon_warning.svg" alt="">
                         Username not found</p>
                     </div>
                     <div class="input-box mb-12">
-                      <label for="password">Password <span>*</span> <img src="./assets/images/info-egular.svg" width="16" height="16" alt=""></label>
+                      <label for="password">Password <span>*</span> 
+                      <span class="tooltip">
+                        <img src="./assets/images/info-egular.svg" width="16" height="16" alt="">
+                        <ul class="pop-over">
+                          <li>At least one lower case letter (a-z)</li>
+                          <li>At least one upper case letter (A-Z)</li>
+                          <li>At least one numeral (0-9)</li>
+                          <li>At least one symbol minimum 8 characters</li>
+                        </ul>
+                      </span>
+                      </label>
                       <div style="position: relative;">
-                        <input id="password" type="password" placeholder="Enter Password" autocomplete="off" class="password"/>
+                        <input id="password" type="password" placeholder="Enter Password" autocomplete="off" class="password error"/>
                         <button type="button" class="password-showhide">
                           <span class="show-password">Show</span>
                           <span class="hide-password">hide</span>

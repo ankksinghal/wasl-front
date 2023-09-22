@@ -2756,7 +2756,7 @@ body.modal {
 }
 
 .login-page {
-  margin-top: 33px;
+  margin-top: 43px;
   margin-bottom: 92px;
 }
 @media screen and (max-width: 991px) {
@@ -2769,6 +2769,7 @@ body.modal {
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 @media screen and (max-width: 767px) {
   .login-page .main-login {
@@ -2789,10 +2790,6 @@ body.modal {
 .login-page .main-login .left-section {
   display: flex;
   flex-direction: column;
-  margin-top: 48px;
-}
-.login-page .main-login .left-section.pt-17 {
-  padding-top: 17px;
 }
 @media screen and (max-width: 991px) {
   .login-page .main-login .left-section {
@@ -2894,7 +2891,6 @@ body.modal {
 .login-page .main-login .right-section.big-form {
   max-width: 560px;
   justify-content: flex-start;
-  margin-top: 45px;
 }
 @media screen and (max-width: 1170px) {
   .login-page .main-login .right-section.big-form {
@@ -2950,6 +2946,7 @@ body.modal {
   height: 57px;
   padding-left: 15px;
   width: 100%;
+  opacity: 0.7;
   background-repeat: no-repeat;
   background-size: 22px auto;
   background-position: top 18px left 12px;
@@ -2988,6 +2985,9 @@ body.modal {
 }
 .login-page .main-login .right-section .form .input-box input[type=text]:read-only, .login-page .main-login .right-section .form .input-box input[type=email]:read-only, .login-page .main-login .right-section .form .input-box input[type=password]:read-only, .login-page .main-login .right-section .form .input-box input[type=number]:read-only {
   background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
+}
+.login-page .main-login .right-section .form .input-box input[type=text].error, .login-page .main-login .right-section .form .input-box input[type=email].error, .login-page .main-login .right-section .form .input-box input[type=password].error, .login-page .main-login .right-section .form .input-box input[type=number].error {
+  border-color: #EF3D3D;
 }
 .login-page .main-login .right-section .form .input-box input.otp-input {
   width: 51px;
@@ -3037,6 +3037,11 @@ body.modal {
   border: 1px solid #8D8D87;
   border-radius: 8px;
   height: 57px;
+  opacity: 0.7;
+}
+.login-page .main-login .right-section .form .select-box select:focus {
+  outline: none;
+  box-shadow: none;
 }
 .login-page .main-login .right-section .form .select-box.mb-0 {
   margin-bottom: 0;
@@ -3163,14 +3168,6 @@ body.modal {
   color: #2B2A28;
   border-bottom: 1px solid #2B2A28;
 }
-.login-page .main-login .right-section.forgot {
-  margin-top: -50px;
-}
-@media screen and (max-width: 991px) {
-  .login-page .main-login .right-section.forgot {
-    margin-top: 0px;
-  }
-}
 .login-page .main-login .right-section.forgot h2 {
   margin-bottom: 6px;
 }
@@ -3207,10 +3204,6 @@ body.modal {
   line-height: 19.1px;
   color: #2B2A28;
   font-family: "Poppins";
-}
-.login-page .main-login .right-section.uitype_up {
-  justify-content: start;
-  margin-top: 55px;
 }
 .login-page .linking-view {
   margin: 10px 0 35px 0;
@@ -3273,7 +3266,7 @@ body.modal {
     transform: rotate(360deg);
   }
 }
-.login-page .error {
+.login-page p.error {
   color: #EF3D3D;
   display: flex;
   gap: 5px;
@@ -3282,7 +3275,7 @@ body.modal {
   font-weight: 700;
   line-height: 120%;
 }
-.login-page .error img {
+.login-page p.error img {
   width: 12px;
   height: 12px;
 }
@@ -3412,6 +3405,53 @@ body.modal {
   margin-bottom: 1rem;
 }
 .cs_modal.show {
+  display: flex;
+}
+
+span.tooltip {
+  position: relative;
+}
+span.tooltip .pop-over {
+  position: absolute;
+  border-radius: 8px;
+  border: 1px solid #E4E4DC;
+  background: #FFF;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  padding: 4px 8px 4px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+  min-width: 250px;
+  top: -160%;
+  left: 30px;
+  list-style-type: disc;
+  list-style-position: inside;
+  display: none;
+}
+span.tooltip .pop-over li {
+  padding-left: 15px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px;
+  color: #2B2A28;
+}
+span.tooltip .pop-over:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid #ccc;
+  position: absolute;
+  left: -15px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+span.tooltip:hover .pop-over {
   display: flex;
 }
 
