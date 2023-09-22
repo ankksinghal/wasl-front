@@ -1,6 +1,6 @@
 
 .login-page{
-    margin-top: 33px;
+    margin-top: 43px;
     margin-bottom: 92px;
     @include respond(tab) {
         margin-bottom: 40px;
@@ -10,6 +10,7 @@
         width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
+        align-items: flex-start;
         @include respond(phone_land) {
             flex-direction: column;
             justify-content: center;
@@ -23,8 +24,6 @@
         .left-section{
             display: flex;
             flex-direction: column;
-            margin-top: 48px;
-            &.pt-17 { padding-top: 17px;}
             @include respond(tab) {
                 display: none;
             }
@@ -124,7 +123,6 @@
             &.big-form {
                 max-width: 560px;
                 justify-content:flex-start;
-                margin-top: 45px;
                 @include respond(tab_land) {
                     max-width: 397px;
                 }
@@ -176,7 +174,7 @@
                         height: 57px;
                         padding-left: 15px;
                         width: 100%; 
-                        // opacity: 50%; 
+                        opacity: 0.7; 
                         background-repeat: no-repeat;
                         background-size: 22px auto;  
                         background-position: top 18px left 12px;
@@ -214,7 +212,10 @@
                         }  
                         &:read-only {
                             background: #E4E4DC url('../images/rightSign.svg') right 10px top 20px no-repeat;
-                        }          
+                        }
+                        &.error {
+                            border-color: #EF3D3D;
+                        }       
                         
                     }
                     input.otp-input{  
@@ -267,6 +268,11 @@
                         border: 1px solid #8D8D87;
                         border-radius: 8px;
                         height: 57px;
+                        opacity: 0.7;
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        } 
                     }
                     &.mb-0 {
                         margin-bottom: 0;
@@ -402,10 +408,6 @@
                 }
             }
             &.forgot {
-                margin-top: -50px;
-                @include respond(tab) {
-                    margin-top: 0px;
-                }
               h2 {
                 margin-bottom: 6px;
               }
@@ -445,11 +447,6 @@
                         }
                     }
                     
-            }
-            &.uitype_up{
-                justify-content: start;
-                margin-top: 55px;
-
             }
              
         }
@@ -514,7 +511,7 @@
             }
         }
     }
-    .error {
+    p.error {
         color: #EF3D3D;
         display: flex;
         gap: 5px;
@@ -653,5 +650,52 @@
     }
     &.show{
         display: flex; 
+    }
+}
+
+span.tooltip {
+    position: relative;
+    .pop-over {
+        position: absolute;
+        border-radius: 8px;
+        border: 1px solid #E4E4DC;
+        background: #FFF;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+        z-index: 99;
+        padding: 4px 8px 4px 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+        min-width: 250px;
+        top: -160%;
+        left: 30px;
+        list-style-type: disc;
+        list-style-position: inside;
+        display: none;
+        li {
+            padding-left: 15px;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            color: #2B2A28;
+        }
+        &:before {
+            content: "";
+            width: 0; 
+            height: 0; 
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent; 
+            border-right:15px solid #ccc; 
+            position: absolute;
+            left: -15px;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+    }
+    &:hover .pop-over {
+        display: flex;
     }
 }
