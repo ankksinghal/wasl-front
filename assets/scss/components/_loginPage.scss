@@ -155,7 +155,7 @@
                     &.mb-12 {
                         margin-bottom: 12px;
                     }
-                    input{
+                    input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
                         border: 1px solid #8D8D87;
                         border-radius: 8px;
                         height: 57px;
@@ -392,7 +392,7 @@
         }
     }
     .linking-view {
-        margin-bottom: 0;
+        margin:10px 0 35px 0;
         samp { 
             line-height: 24px;
             a {

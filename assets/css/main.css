@@ -2408,7 +2408,7 @@ footer .copyright-section p {
 .login-page .main-login .right-section .form .input-box.mb-12 {
   margin-bottom: 12px;
 }
-.login-page .main-login .right-section .form .input-box input {
+.login-page .main-login .right-section .form .input-box input[type=text], .login-page .main-login .right-section .form .input-box input[type=email], .login-page .main-login .right-section .form .input-box input[type=password], .login-page .main-login .right-section .form .input-box input[type=number] {
   border: 1px solid #8D8D87;
   border-radius: 8px;
   height: 57px;
@@ -2422,35 +2422,35 @@ footer .copyright-section p {
   padding-right: 15px;
   font-size: 16px;
 }
-.login-page .main-login .right-section .form .input-box input.email {
+.login-page .main-login .right-section .form .input-box input[type=text].email, .login-page .main-login .right-section .form .input-box input[type=email].email, .login-page .main-login .right-section .form .input-box input[type=password].email, .login-page .main-login .right-section .form .input-box input[type=number].email {
   background-image: url("../images/mail.svg");
   padding-left: 45px;
 }
-.login-page .main-login .right-section .form .input-box input.password {
+.login-page .main-login .right-section .form .input-box input[type=text].password, .login-page .main-login .right-section .form .input-box input[type=email].password, .login-page .main-login .right-section .form .input-box input[type=password].password, .login-page .main-login .right-section .form .input-box input[type=number].password {
   background-image: url("../images/password.svg");
   padding-left: 45px;
   padding-right: 45px;
 }
-.login-page .main-login .right-section .form .input-box input.number {
+.login-page .main-login .right-section .form .input-box input[type=text].number, .login-page .main-login .right-section .form .input-box input[type=email].number, .login-page .main-login .right-section .form .input-box input[type=password].number, .login-page .main-login .right-section .form .input-box input[type=number].number {
   background-image: url("../images/mob.svg");
   padding-right: 45px;
   padding-left: 45px;
 }
-.login-page .main-login .right-section .form .input-box input.number-icons {
+.login-page .main-login .right-section .form .input-box input[type=text].number-icons, .login-page .main-login .right-section .form .input-box input[type=email].number-icons, .login-page .main-login .right-section .form .input-box input[type=password].number-icons, .login-page .main-login .right-section .form .input-box input[type=number].number-icons {
   background-image: url("../images/mob.svg");
   padding-left: 45px;
 }
-.login-page .main-login .right-section .form .input-box input.padding15 {
+.login-page .main-login .right-section .form .input-box input[type=text].padding15, .login-page .main-login .right-section .form .input-box input[type=email].padding15, .login-page .main-login .right-section .form .input-box input[type=password].padding15, .login-page .main-login .right-section .form .input-box input[type=number].padding15 {
   padding-left: 15px;
   padding-right: 15px;
 }
-.login-page .main-login .right-section .form .input-box input.padding15.captcha {
+.login-page .main-login .right-section .form .input-box input[type=text].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=email].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=password].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=number].padding15.captcha {
   padding-right: 120px;
 }
-.login-page .main-login .right-section .form .input-box input:-moz-read-only {
+.login-page .main-login .right-section .form .input-box input[type=text]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=email]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=password]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=number]:-moz-read-only {
   background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
 }
-.login-page .main-login .right-section .form .input-box input:read-only {
+.login-page .main-login .right-section .form .input-box input[type=text]:read-only, .login-page .main-login .right-section .form .input-box input[type=email]:read-only, .login-page .main-login .right-section .form .input-box input[type=password]:read-only, .login-page .main-login .right-section .form .input-box input[type=number]:read-only {
   background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
 }
 .login-page .main-login .right-section .form .input-box input::-moz-placeholder {
@@ -2646,7 +2646,7 @@ footer .copyright-section p {
   font-family: "Poppins";
 }
 .login-page .linking-view {
-  margin-bottom: 0;
+  margin: 10px 0 35px 0;
 }
 .login-page .linking-view samp {
   line-height: 24px;
