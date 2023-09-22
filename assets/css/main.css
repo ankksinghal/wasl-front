@@ -2397,10 +2397,13 @@ footer .copyright-section p {
 }
 .login-page .main-login .right-section .form .input-box {
   position: relative;
-  margin: 10px 0 0px 0;
+  margin: 0px 0 30px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+.login-page .main-login .right-section .form .input-box.mb-12 {
+  margin-bottom: 12px;
 }
 .login-page .main-login .right-section .form .input-box input {
   border: 1px solid #8D8D87;
@@ -2501,6 +2504,11 @@ footer .copyright-section p {
   height: 15px;
   margin: 3px 0px;
 }
+.login-page .main-login .right-section .form .form-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 .login-page .main-login .right-section .form .button-style {
   text-decoration: none;
   border-radius: 8px;
@@ -2519,7 +2527,6 @@ footer .copyright-section p {
   cursor: pointer;
   border: none;
   box-sizing: border-box;
-  margin-top: 30px;
   transition: all 0.4s ease-in-out;
 }
 .login-page .main-login .right-section .form .button-style:hover {
@@ -2554,7 +2561,7 @@ footer .copyright-section p {
   font-size: 0.8125em;
   color: #8E8E93;
   display: inline-block;
-  margin: 30px 0 0;
+  margin: 20px 0;
 }
 .login-page .main-login .right-section .or-text span {
   background: #FFFFFF;
