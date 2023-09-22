@@ -91,8 +91,17 @@ button {
   font-weight: 500;
 }
 
+.inline-view {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.inline-view .radio {
+  margin: 0;
+}
+
 /* The check-box */
-.check-box {
+.check-box, .radio {
   display: block;
   position: relative;
   padding-left: 35px;
@@ -103,14 +112,14 @@ button {
   -moz-user-select: none;
   user-select: none;
 }
-.check-box input {
+.check-box input, .radio input {
   position: absolute;
   opacity: 0;
   cursor: pointer;
   height: 0;
   width: 0;
 }
-.check-box .checkmark {
+.check-box .checkmark, .check-box .radiomark, .radio .checkmark, .radio .radiomark {
   position: absolute;
   top: 0;
   left: 0;
@@ -119,18 +128,31 @@ button {
   border: 2px solid #ccc;
   border-radius: 6px;
 }
-.check-box input:checked ~ .checkmark {
+.check-box.sm-radio, .radio.sm-radio {
+  padding-left: 25px;
+}
+.check-box.sm-radio .radiomark, .radio.sm-radio .radiomark {
+  height: 16px;
+  width: 16px;
+}
+.check-box .radiomark, .radio .radiomark {
+  border-radius: 50px;
+}
+.check-box input:checked ~ .checkmark, .radio input:checked ~ .checkmark {
   background-color: #2B2A28;
 }
-.check-box .checkmark:after {
+.check-box input:checked ~ .radiomark, .radio input:checked ~ .radiomark {
+  border-color: #2B2A28;
+}
+.check-box .checkmark:after, .check-box .radiomark:after, .radio .checkmark:after, .radio .radiomark:after {
   content: "";
   position: absolute;
   display: none;
 }
-.check-box input:checked ~ .checkmark:after {
+.check-box input:checked ~ .checkmark:after, .check-box input:checked ~ .radiomark:after, .radio input:checked ~ .checkmark:after, .radio input:checked ~ .radiomark:after {
   display: block;
 }
-.check-box .checkmark:after {
+.check-box .checkmark:after, .check-box .radiomark:after, .radio .checkmark:after, .radio .radiomark:after {
   left: 7px;
   top: 3px;
   width: 3px;
@@ -139,14 +161,32 @@ button {
   border-width: 0 3px 3px 0;
   transform: rotate(45deg);
 }
-.check-box.new-checkbox {
+.check-box .radiomark:after, .radio .radiomark:after {
+  border: none;
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50px;
+  left: 4px;
+  top: 4px;
+}
+.check-box.sm-radio .radiomark:after, .radio.sm-radio .radiomark:after {
+  border: none;
+  width: 8px;
+  height: 8px;
+  background: #000;
+  border-radius: 50px;
+  left: 4px;
+  top: 4px;
+}
+.check-box.new-checkbox, .radio.new-checkbox {
   margin-bottom: 39px;
 }
-.check-box.new-checkbox samp {
+.check-box.new-checkbox samp, .radio.new-checkbox samp {
   color: #8D8D87;
   line-height: 24px;
 }
-.check-box.new-checkbox samp strong {
+.check-box.new-checkbox samp strong, .radio.new-checkbox samp strong {
   font-weight: 600;
   display: block;
   color: #1C190E;
@@ -154,6 +194,7 @@ button {
 
 header {
   padding: 10px 0px 5px;
+  border-bottom: 1px solid #e3e3e3;
 }
 header .header-section {
   display: flex;
@@ -2327,9 +2368,10 @@ footer .copyright-section p {
 .login-page .main-login .right-section.big-form .form-row {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 .login-page .main-login .right-section.big-form .form-row .form-col {
-  flex: 1;
+  flex: 48%;
 }
 .login-page .main-login .right-section .form {
   width: 100%;
@@ -2355,7 +2397,7 @@ footer .copyright-section p {
 }
 .login-page .main-login .right-section .form .input-box {
   position: relative;
-  margin: 10px 0 30px 0;
+  margin: 10px 0 0px 0;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -2389,6 +2431,15 @@ footer .copyright-section p {
   padding-left: 15px;
   padding-right: 15px;
 }
+.login-page .main-login .right-section .form .input-box input.padding15.captcha {
+  padding-right: 120px;
+}
+.login-page .main-login .right-section .form .input-box input:-moz-read-only {
+  background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
+}
+.login-page .main-login .right-section .form .input-box input:read-only {
+  background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
+}
 .login-page .main-login .right-section .form .input-box input::-moz-placeholder {
   font-weight: 400;
   font-size: 16px;
@@ -2401,21 +2452,32 @@ footer .copyright-section p {
   line-height: 19.1px;
   color: #2B2A28;
 }
-.login-page .main-login .right-section .form .input-box .error {
-  color: #EF3D3D;
-  display: flex;
-  gap: 5px;
-  font-size: 12px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 120%;
-}
-.login-page .main-login .right-section .form .input-box .error img {
-  width: 12px;
-  height: 12px;
-}
 .login-page .main-login .right-section .form .input-box.mb-0 {
   margin-bottom: 0;
+}
+.login-page .main-login .right-section .form .select-box {
+  position: relative;
+  margin: 10px 0 0px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-page .main-login .right-section .form .select-box select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19.1px;
+  color: #2B2A28;
+  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+  color: #3A3A3C;
+  background-size: 25px 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #8D8D87;
+  border-radius: 8px;
+  height: 57px;
 }
 .login-page .main-login .right-section .form .fp-box {
   margin-bottom: 30px;
@@ -2457,16 +2519,30 @@ footer .copyright-section p {
   cursor: pointer;
   border: none;
   box-sizing: border-box;
+  margin-top: 30px;
+  transition: all 0.4s ease-in-out;
+}
+.login-page .main-login .right-section .form .button-style:hover {
+  background-color: #575757;
+  border-color: #2f2e2e;
 }
 .login-page .main-login .right-section .form .button-style.bg-gray {
   background-color: #E4E4DC;
   color: #2B2A28;
   border: 1px solid #E4E4DC;
 }
+.login-page .main-login .right-section .form .button-style.bg-gray:hover {
+  background-color: #EDEDE8;
+  border-color: #EDEDE8;
+}
 .login-page .main-login .right-section .form .button-style.bg-white {
   background-color: white;
   color: #2B2A28;
   border: 1px solid #2B2A28;
+}
+.login-page .main-login .right-section .form .button-style.bg-white:hover {
+  background-color: #EDEDE8;
+  border-color: #EDEDE8;
 }
 .login-page .main-login .right-section .or-text {
   width: 100%;
@@ -2478,7 +2554,7 @@ footer .copyright-section p {
   font-size: 0.8125em;
   color: #8E8E93;
   display: inline-block;
-  margin: 30px 0;
+  margin: 30px 0 0;
 }
 .login-page .main-login .right-section .or-text span {
   background: #FFFFFF;
@@ -2552,520 +2628,66 @@ footer .copyright-section p {
   color: #2B2A28;
   font-family: "Poppins";
 }
-
-.sign-in-section {
+.login-page .linking-view {
+  margin-bottom: 0;
+}
+.login-page .linking-view samp {
+  line-height: 24px;
+}
+.login-page .linking-view samp a {
+  text-decoration: underline;
+  color: inherit;
+}
+.login-page .captch-text {
+  position: absolute;
+  right: 0px !important;
+  top: 0;
+  background-color: #1C190E;
+  color: #FFFFFF;
+  border-radius: 0px 13px 13px 0px;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 16.8px;
+  height: 57px;
+  min-width: 100px;
+  text-align: center;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-top: 98px;
-  padding-bottom: 119px;
+  gap: 7.5px;
 }
-.sign-in-section .signin-panel {
-  max-width: 1140px;
+.login-page .captch-text button {
+  width: 21.25px;
+  height: 22.92px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.login-page .captch-text button img {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-@media screen and (max-width: 767px) {
-  .sign-in-section .signin-panel {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 1399px) {
-  .sign-in-section .signin-panel {
-    justify-content: space-around;
-  }
-}
-.sign-in-section .signin-panel .left {
-  padding: 0 10px;
-  max-width: 526px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-@media screen and (max-width: 767px) {
-  .sign-in-section .signin-panel .left {
-    width: 100%;
-    max-width: 90% !important;
-  }
-}
-@media screen and (max-width: 991px) {
-  .sign-in-section .signin-panel .left {
-    max-width: 400px;
-  }
-}
-.sign-in-section .signin-panel .left .img-box {
-  position: relative;
-  max-height: 537px;
-  width: 100%;
-  max-width: 526px;
-  height: 100%;
-  border-radius: 16px;
-}
-.sign-in-section .signin-panel .left .img-box img {
-  max-width: 84%;
-  width: 100%;
-  margin-left: 7.2%;
-  margin-top: 8.1%;
-  margin-bottom: 8.5%;
-  margin-right: 8.7%;
   height: auto;
 }
-.sign-in-section .signin-panel .left .img-box::before {
-  position: absolute;
-  right: 0px;
-  top: 0;
-  content: "";
-  height: 37%;
-  width: 44%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
+.login-page .captch-text button.run img {
+  animation: spin 2s linear infinite;
 }
-.sign-in-section .signin-panel .left .img-box::after {
-  position: absolute;
-  content: "";
-  left: 0px;
-  bottom: 0px;
-  height: 23%;
-  width: 32%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
-}
-@media screen and (max-width: 991px) {
-  .sign-in-section .signin-panel .left .img-box::after {
-    bottom: 130px;
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
   }
 }
-@media screen and (max-width: 767px) {
-  .sign-in-section .signin-panel .left .img-box::after {
-    bottom: 0px;
-  }
-}
-.sign-in-section .signin-panel .right {
-  padding: 10px;
-  max-width: 397px;
-  margin-top: 44px;
+.login-page .error {
+  color: #EF3D3D;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-@media screen and (max-width: 991px) {
-  .sign-in-section .signin-panel .right {
-    max-width: 330px;
-  }
-}
-.sign-in-section .signin-panel .right .form {
-  max-width: 397px;
-  width: 100%;
-  text-align: left;
-  color: #6b6a69;
-}
-.sign-in-section .signin-panel .right .form .fp-box ul li hr {
-  border: none;
-  border-left: 1px solid #8D8D87;
-  height: 15px;
-  margin: 3px 0px;
-}
-.sign-in-section .signin-panel .right .form .signup-link {
-  margin-top: 18px;
-  text-align: center;
-  font-weight: 400;
-  display: block;
-  font-size: 1em;
-  line-height: 24px;
-  color: #2B2A28;
-}
-.sign-in-section .signin-panel .right .form .signup-link strong {
-  margin-left: 5px;
-}
-.sign-in-section .signin-panel .right .form .signup-link strong a {
+  gap: 5px;
+  font-size: 12px;
+  font-style: italic;
   font-weight: 700;
-  font-size: 1em;
-  line-height: 19.1px;
-  text-decoration: none;
-  color: #2B2A28;
-  border-bottom: 1px solid #2B2A28;
+  line-height: 120%;
 }
-
-.form {
-  width: 100%;
-}
-.form h2 {
-  font-weight: 700;
-  font-size: 1.875em;
-  line-height: 35.82px;
-  color: #2B2A28;
-  margin-bottom: 32px;
-}
-.form .form-radioBtns {
-  display: flex;
-  margin-left: 0px;
-  margin-bottom: 16px;
-  gap: 24px;
-}
-.form .form-radioBtns input {
-  margin: 0px;
-}
-.form .form-radioBtns label {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 16.2px;
-  color: #1C190E;
-}
-.form .form-radioBtns .asterisk {
-  color: #A85B57;
-}
-.form label {
-  color: #2B2A28;
-  font-size: 1em;
-  font-weight: 400;
-  line-height: 19.1px;
-}
-.form .input-box {
-  position: relative;
-  margin: 10px 0 16px 0;
-  display: flex;
-}
-.form .input-box input {
-  position: relative;
-  border: 1px solid #c6c7c3;
-  border-radius: 8px;
-  height: 57px;
-  padding: 0px 45px;
-  width: 100%;
-}
-.form .input-box input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.form .input-box input::placeholder {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.form .input-box .left-icon {
-  position: absolute;
-  left: 19.69px;
-  top: 19.68px;
-}
-.form .input-box .right-icon {
-  position: absolute;
-  right: 10px;
-  top: 19.68px;
-}
-.form .form-dropdown {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
-}
-.form .form-dropdown select {
-  border: 1px solid #c6c7c3;
-  border-radius: 8px;
-  height: 57px;
-  width: 100%;
-  padding-left: 18px;
-  padding-right: 25px;
-  background-color: #FFFFFF;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  position: relative;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.form .form-dropdown select.dropdown {
-  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
-  background-size: 25px 25px !important;
-  color: #3A3A3C !important;
-}
-.form .form-dropdown .asterisk {
-  color: #A85B57;
-}
-.form .fp-box {
-  margin-bottom: 30px;
-  text-align: right;
-}
-.form .fp-box ul {
-  display: flex;
-  justify-content: end;
-  gap: 8px;
-}
-.form .fp-box ul li a {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-  text-align: right;
-}
-.form .form-btns {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  gap: 18px;
-}
-.form .form-btns a {
-  text-decoration: none;
-  border-radius: 8px;
-  background-color: #1C190E;
-  height: 54px;
-  font-weight: 500;
-  font-size: 1em;
-  line-height: 19.1px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 10px;
-}
-.form .form-btns .bg-white {
-  background-color: #FFFFFF;
-  color: #2B2A28;
-  border: 1px solid #2B2A28;
-}
-.form .form-btns .login-otp {
-  background-color: #E4E4DC;
-  color: #2B2A28;
-}
-
-.newForm {
-  width: 100%;
-}
-.newForm .newForm-heading {
-  font-weight: 700;
-  font-size: 1.875em;
-  line-height: 35.82px;
-  color: #2B2A28;
-  margin-bottom: 19px;
-}
-.newForm .form-check {
-  margin-bottom: 39px;
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.newForm .form-check label {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 22.4px;
-  color: #2B2A28;
-  margin-left: 32px;
-}
-.newForm .form-check label span {
-  display: block;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 22.4px;
-  color: #8D8D87;
-}
-.newForm .form-check label.properties-view {
-  display: flex;
-  flex-direction: column;
-}
-.newForm .form-check label.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.newForm .form-check label.checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border: 2px solid #8c8d87;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.newForm .form-check label.checkbox .checkmark::after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 7px;
-  top: 3px;
-  width: 3px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-.newForm .form-check label.checkbox input:checked ~ .checkmark {
-  background-color: #000;
-}
-.newForm .newForm-inputs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-.newForm .newForm-inputs .newForm-innerBox {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
-}
-.newForm .newForm-inputs .newForm-innerBox label {
-  margin-bottom: 10px;
-}
-.newForm .newForm-inputs .newForm-innerBox label .asterstrik {
-  color: #A85B57;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios {
-  margin-bottom: 7px;
-  margin-left: 0px;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios label {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.2px;
-  color: #1C190E;
-  margin-right: 24px;
-  margin-left: 4px;
-}
-.newForm .newForm-inputs .newForm-innerBox .newForm-radios label .asterstrik {
-  color: #A85B57;
-}
-.newForm .newForm-inputs .newForm-innerBox .normal-newInput {
-  border: 1px solid #c6c7c3;
-  border-radius: 8px;
-  height: 55px;
-  padding: 0px 18px;
-}
-.newForm .newForm-inputs .newForm-innerBox .normal-newInput::-moz-placeholder {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.newForm .newForm-inputs .newForm-innerBox .normal-newInput::placeholder {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.newForm .newForm-inputs .newForm-innerBox.select-box select {
-  background-color: #FFFFFF;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-}
-.newForm .newForm-inputs .newForm-innerBox.select-box select.select-normalInput {
-  background: url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
-  color: #3A3A3C;
-  background-size: 25px 25px;
-}
-.newForm .agree-check {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.newForm .agree-check label {
-  font-weight: 400;
-  font-size: 1em;
-  line-height: 19.1px;
-  color: #2B2A28;
-  margin-left: 32px;
-  margin-top: 5px;
-}
-.newForm .agree-check label a {
-  font-weight: 500;
-  color: #2B2A28;
-  border-bottom: 1px solid #2B2A28;
-}
-.newForm .agree-check label.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.newForm .agree-check label.checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border: 2px solid #8c8d87;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.newForm .agree-check label.checkbox .checkmark::after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 7px;
-  top: 3px;
-  width: 3px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-.newForm .agree-check label.checkbox input:checked ~ .checkmark {
-  background-color: #000;
-}
-.newForm .newForm-btns {
-  display: flex;
-  flex-direction: column;
-  gap: 19px;
-  margin-top: 19px;
-}
-.newForm .newForm-btns a {
-  text-decoration: none;
-  border-radius: 8px;
-  background-color: #1C190E;
-  height: 54px;
-  font-weight: 500;
-  font-size: 1em;
-  line-height: 19.1px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 10px;
-}
-.newForm .newForm-btns .bg-white {
-  background-color: #FFFFFF;
-  color: #2B2A28;
-  border: 1px solid #2B2A28;
-}
-.newForm .newForm-btns .or-text {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #EFEFEF;
-  line-height: 0.1em;
-  font-family: "Poppins";
-  font-weight: 400;
-  font-size: 0.8125em;
-  color: #8E8E93;
-}
-.newForm .newForm-btns .or-text span {
-  background: #FFFFFF;
-  padding: 0 20px;
+.login-page .error img {
+  width: 12px;
+  height: 12px;
 }
 
 .village-building .village-banner {
@@ -3252,261 +2874,4 @@ footer .copyright-section p {
 }
 .property-details .property-inner .img-content img {
   width: 100% !important;
-}
-
-.lease-validate {
-  padding: 45px 0px 233px;
-  display: flex;
-  justify-content: space-between;
-  gap: 49px;
-}
-.lease-validate .lease-imgBox {
-  position: relative;
-  max-height: 789px;
-  width: 45.26%;
-  height: 100%;
-  border-radius: 16px;
-}
-.lease-validate .lease-imgBox img {
-  max-width: 84%;
-  width: 100%;
-  margin-left: 7.2%;
-  margin-top: 8.1%;
-  margin-bottom: 8.5%;
-  margin-right: 8.7%;
-  height: auto;
-}
-.lease-validate .lease-imgBox::before {
-  position: absolute;
-  right: 0px;
-  top: 0;
-  content: "";
-  height: 23.7%;
-  width: 45%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
-}
-.lease-validate .lease-imgBox::after {
-  position: absolute;
-  content: "";
-  left: 0px;
-  bottom: 0px;
-  height: 16%;
-  width: 32%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
-}
-@media screen and (max-width: 991px) {
-  .lease-validate .lease-imgBox::after {
-    bottom: 130px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .lease-validate .lease-imgBox::after {
-    bottom: 0px;
-  }
-}
-.lease-validate .lease-formBox {
-  width: 52.6%;
-}
-
-.lease-withBPNum {
-  padding: 45px 0px 233px;
-  display: flex;
-  justify-content: space-between;
-  gap: 49px;
-}
-.lease-withBPNum .withBP-imgBox {
-  position: relative;
-  max-height: 789px;
-  height: 100%;
-  width: 45.26%;
-  border-radius: 16px;
-}
-.lease-withBPNum .withBP-imgBox img {
-  max-width: 84%;
-  width: 100%;
-  margin-left: 7.2%;
-  margin-top: 8.1%;
-  margin-bottom: 8.5%;
-  margin-right: 8.7%;
-  height: auto;
-}
-.lease-withBPNum .withBP-imgBox::before {
-  position: absolute;
-  right: 0px;
-  top: 0;
-  content: "";
-  height: 23.7%;
-  width: 45%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
-}
-.lease-withBPNum .withBP-imgBox::after {
-  position: absolute;
-  content: "";
-  left: 0px;
-  bottom: 0px;
-  height: 16%;
-  width: 32%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
-}
-@media screen and (max-width: 991px) {
-  .lease-withBPNum .withBP-imgBox::after {
-    bottom: 130px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .lease-withBPNum .withBP-imgBox::after {
-    bottom: 0px;
-  }
-}
-.lease-withBPNum .withBP-formBox {
-  width: 52.6%;
-}
-.lease-withBPNum .withBP-formBox .newForm .newForm-inputs .newForm-innerBox {
-  margin-bottom: 19px;
-  position: relative;
-}
-.lease-withBPNum .withBP-formBox .newForm .newForm-inputs .newForm-innerBox .extra-color {
-  background-color: #E4E4DC;
-}
-.lease-withBPNum .withBP-formBox .newForm .newForm-inputs .newForm-innerBox .rightSign-icon {
-  position: absolute;
-  right: 18px;
-  top: 50px;
-  width: 16px;
-  height: 11px;
-}
-.lease-withBPNum .withBP-formBox .newForm .newForm-inputs .newForm-innerBox .extra-reload {
-  border-radius: 8px 13px 13px 8px;
-}
-.lease-withBPNum .withBP-formBox .newForm .newForm-inputs .newForm-innerBox .captch-text {
-  position: absolute;
-  right: 0px !important;
-  top: 27px;
-  background-color: #1C190E;
-  color: #FFFFFF;
-  border-radius: 0px 13px 13px 0px;
-  font-weight: 400;
-  font-size: 0.875em;
-  line-height: 16.8px;
-  height: 55px;
-  width: 94.56px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7.5px;
-}
-.lease-withBPNum .withBP-formBox .newForm .newForm-inputs .newForm-innerBox .captch-text img {
-  width: 21.25px;
-  height: 22.92px;
-}
-
-.lease-withoutBPNum {
-  padding: 45px 0px 233px;
-  display: flex;
-  justify-content: space-between;
-  gap: 49px;
-}
-.lease-withoutBPNum .withoutBP-imgBox {
-  position: relative;
-  max-height: 789px;
-  height: 100%;
-  width: 45.26%;
-  border-radius: 16px;
-}
-.lease-withoutBPNum .withoutBP-imgBox img {
-  max-width: 84%;
-  width: 100%;
-  margin-left: 7.2%;
-  margin-top: 8.1%;
-  margin-bottom: 8.5%;
-  margin-right: 8.7%;
-  height: auto;
-}
-.lease-withoutBPNum .withoutBP-imgBox::before {
-  position: absolute;
-  right: 0px;
-  top: 0;
-  content: "";
-  height: 23.7%;
-  width: 45%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
-}
-.lease-withoutBPNum .withoutBP-imgBox::after {
-  position: absolute;
-  content: "";
-  left: 0px;
-  bottom: 0px;
-  height: 16%;
-  width: 32%;
-  background-color: #EDEDE8;
-  border-radius: 16px;
-  z-index: -1;
-}
-@media screen and (max-width: 991px) {
-  .lease-withoutBPNum .withoutBP-imgBox::after {
-    bottom: 130px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .lease-withoutBPNum .withoutBP-imgBox::after {
-    bottom: 0px;
-  }
-}
-.lease-withoutBPNum .withoutBP-formBox {
-  width: 52.6%;
-}
-.lease-withoutBPNum .withoutBP-formBox .newForm .newForm-inputs .newForm-innerBox {
-  margin-bottom: 19px;
-  position: relative;
-}
-.lease-withoutBPNum .withoutBP-formBox .newForm .newForm-inputs .newForm-innerBox .split-text {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.lease-withoutBPNum .withoutBP-formBox .newForm .newForm-inputs .newForm-innerBox .split-text span {
-  font-weight: 400;
-  font-size: 0.75em;
-  line-height: 14.4px;
-  color: #A79F92;
-}
-.lease-withoutBPNum .withoutBP-formBox .newForm .newForm-inputs .newForm-innerBox .split-text img {
-  width: 13px;
-  height: 13px;
-}
-.lease-withoutBPNum .withoutBP-formBox .newForm .newForm-inputs .newForm-innerBox .extra-reload {
-  border-radius: 8px 13px 13px 8px;
-}
-.lease-withoutBPNum .withoutBP-formBox .newForm .newForm-inputs .newForm-innerBox .captch-text {
-  position: absolute;
-  right: 0px !important;
-  top: 27px;
-  background-color: #1C190E;
-  color: #FFFFFF;
-  border-radius: 0px 13px 13px 0px;
-  font-weight: 400;
-  font-size: 0.875em;
-  line-height: 16.8px;
-  height: 55px;
-  width: 94.56px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 7.5px;
-}
-.lease-withoutBPNum .withoutBP-formBox .newForm .newForm-inputs .newForm-innerBox .captch-text img {
-  width: 21.25px;
-  height: 22.92px;
 }/*# sourceMappingURL=main.css.map */

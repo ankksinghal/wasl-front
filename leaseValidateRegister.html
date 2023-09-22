@@ -128,7 +128,6 @@
                             <input type="checkbox" checked="checked">
                             <span class="checkmark"></span>
                       </label>
-
                       <div class="form-row">
                         <div class="form-col">
                             <label for="password">Tenant Number <span>*</span></label>
@@ -140,7 +139,21 @@
                             </div>
                         </div>
                         <div class="form-col">
-                            <label for="userId">Email <span>*</span></label>
+                            <!-- <label for="userId">Email <span>*</span></label> -->
+
+                            <div class="inline-view">
+                                <label class="radio sm-radio">
+                                    <samp>Email <span>*</span></samp>
+                                        <input type="radio" name="aa">
+                                        <span class="radiomark"></span>
+                                  </label>
+                                  <label class="radio sm-radio">
+                                    <samp>Mobile <span>*</span></samp>
+                                        <input type="radio" name="aa">
+                                        <span class="radiomark"></span>
+                                  </label>
+                            </div>
+
                             <div class="input-box mb-0">
                               <input type="text" id="userId" placeholder="Enter Email" class="padding15" />
                               <!-- <p class="error">

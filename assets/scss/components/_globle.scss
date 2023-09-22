@@ -35,8 +35,18 @@ button{
     }
 }
 
+
+.inline-view {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    .radio {
+        margin: 0;
+    }
+}
+
 /* The check-box */
-.check-box {
+.check-box, .radio {
     display: block;
     position: relative;
     padding-left: 35px;
@@ -47,6 +57,7 @@ button{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    // margin: 0 !important;
     input {
         position: absolute;
         opacity: 0;
@@ -54,7 +65,7 @@ button{
         height: 0;
         width: 0;
     }
-    .checkmark {
+    .checkmark, .radiomark {
         position: absolute;
         top: 0;
         left: 0;
@@ -63,21 +74,34 @@ button{
         border: 2px solid #ccc;
         border-radius: 6px;
     }
-    // &:hover input ~ .checkmark {
+    &.sm-radio {
+        padding-left: 25px;
+        .radiomark {
+            height: 16px;
+            width: 16px;
+        }
+    }
+    .radiomark {
+        border-radius: 50px;
+    }
+    // &:hover input ~ .checkmark, &:hover input ~ .radiomark {
     //     background-color: #ccc;
     // }
     input:checked ~ .checkmark {
         background-color: #2B2A28;
     }
-    .checkmark:after {
+    input:checked ~ .radiomark {
+        border-color: #2B2A28;
+    }
+    .checkmark:after, .radiomark:after {
         content: "";
         position: absolute;
         display: none;
     }
-    input:checked ~ .checkmark:after {
+    input:checked ~ .checkmark:after, input:checked ~ .radiomark:after {
         display: block;
     }
-    .checkmark:after {
+    .checkmark:after, .radiomark:after {
         left: 7px;
         top: 3px;
         width: 3px;
@@ -87,6 +111,26 @@ button{
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
+    }
+    .radiomark:after {
+        border: none;
+        width: 12px;
+        height: 12px;
+        background: #000;
+        border-radius: 50px;
+        left: 4px;
+        top: 4px;
+    }
+    &.sm-radio {
+        .radiomark:after {
+            border: none;
+            width: 8px;
+            height: 8px;
+            background: #000;
+            border-radius: 50px;
+            left: 4px;
+            top: 4px;
+        }
     }
     &.new-checkbox {
         margin-bottom: 39px;
