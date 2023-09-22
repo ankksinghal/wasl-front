@@ -7,13 +7,16 @@
         margin: 50px 0;
     }
     @include respond(phone_land) {
-        margin: 50px 0;
+        margin: 21px 0;
     }
     .content-box{
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 32px;
+        @include respond(phone_land) {
+            margin-bottom: 26px;
+        }
         .left-section{
             max-width: 789px;
             @include respond(tab) {
@@ -26,6 +29,11 @@
                 line-height: 33px;
                 font-style: normal;
                 color: #1C190E;
+                @include respond(phone_land) {
+                    font-size: $font20;
+                    text-align: center;
+                    margin: 0;
+                }
             }
             p{
                 font-size: $font18;
@@ -35,6 +43,13 @@
                 font-style: normal;
                 font-weight: 400;
                 line-height: 26.857px;
+                @include respond(phone_land) {
+                    font-size: $font14;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px;
+                    text-align: center;
+                }
             }
 
         }
