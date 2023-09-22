@@ -2361,6 +2361,11 @@ footer .copyright-section p {
   border-radius: 16px;
   overflow: hidden;
 }
+@media screen and (max-width: 1170px) {
+  .login-page .main-login .left-section .img-box-1 {
+    max-width: 442px;
+  }
+}
 .login-page .main-login .left-section .img-box-1 img {
   width: 100%;
   height: auto;
@@ -2406,6 +2411,11 @@ footer .copyright-section p {
   max-width: 560px;
   justify-content: flex-start;
   margin-top: 45px;
+}
+@media screen and (max-width: 1170px) {
+  .login-page .main-login .right-section.big-form {
+    max-width: 397px;
+  }
 }
 .login-page .main-login .right-section.big-form .form-row {
   display: flex;
@@ -2647,6 +2657,11 @@ footer .copyright-section p {
 }
 .login-page .main-login .right-section.forgot {
   margin-top: -50px;
+}
+@media screen and (max-width: 991px) {
+  .login-page .main-login .right-section.forgot {
+    margin-top: 0px;
+  }
 }
 .login-page .main-login .right-section.forgot h2 {
   margin-bottom: 6px;

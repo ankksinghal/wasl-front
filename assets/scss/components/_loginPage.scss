@@ -76,6 +76,9 @@
                 // max-height: 434px;
                 border-radius: 16px;
                 overflow: hidden;
+                @include respond(tab_land) {
+                    max-width:442px; 
+                }
                 img {
                     width: 100%;
                     height: auto;
@@ -122,6 +125,9 @@
                 max-width: 560px;
                 justify-content:flex-start;
                 margin-top: 45px;
+                @include respond(tab_land) {
+                    max-width: 397px;
+                }
                 .form-row {
                     display: flex;
                     gap: 20px;
@@ -357,6 +363,9 @@
             }
             &.forgot {
                 margin-top: -50px;
+                @include respond(tab) {
+                    margin-top: 0px;
+                }
               h2 {
                 margin-bottom: 6px;
               }
