@@ -3748,4 +3748,196 @@ body.modal {
 .container .property-details .property-inner .img-content img {
   width: 100%;
   height: 263px;
+}
+
+.enquiry-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-top: 34px;
+}
+.enquiry-form div {
+  display: flex;
+  flex-direction: column;
+}
+.enquiry-form div input, .enquiry-form div select {
+  margin-top: 10px;
+}
+.enquiry-form div input[type=radio] {
+  accent-color: #000;
+  cursor: pointer;
+}
+.enquiry-form div .label-astric {
+  display: flex;
+  flex-direction: row;
+}
+.enquiry-form div .mobile-number {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.enquiry-form div .mobile-number #mobile-prefix {
+  width: 34px;
+}
+.enquiry-form div .mobile-number #area-code {
+  width: 119px;
+}
+.enquiry-form div .mobile-number #mobile-number {
+  flex: auto;
+}
+.enquiry-form div .form-label {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #2B2A28;
+}
+.enquiry-form div .main-radios {
+  display: flex;
+  flex-direction: row;
+}
+.enquiry-form div .main-radios .radio-buttons {
+  width: 50%;
+}
+.enquiry-form div .main-radios .radio-buttons .extra-label {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19.2px;
+  color: #1C190E;
+}
+.enquiry-form div .main-radios .radio-buttons .extra-label .astric {
+  color: #A85B57;
+}
+.enquiry-form div .main-radios .radio-buttons .valid-radios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-top: 16px;
+}
+.enquiry-form div .main-radios .radio-buttons .valid-radios .inner-radios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.enquiry-form div .main-radios .radio-buttons .valid-radios .inner-radios label {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 0.875em;
+  color: #1C190E;
+  line-height: 16.8px;
+}
+.enquiry-form div select {
+  appearance: none;
+  background-color: #FFFFFF;
+}
+.enquiry-form div select.select-value {
+  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+  background-size: 25px 25px;
+  color: #3A3A3C;
+}
+.enquiry-form div select.select-size {
+  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right -3px top 10px;
+  background-size: 25px 25px;
+  padding-left: 10px;
+  color: #3A3A3C;
+}
+
+.link-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  margin-bottom: 237px;
+}
+.link-section .captcha {
+  width: 502px;
+  height: 88px;
+  border: 1px solid #8D8D87;
+  border-radius: 8px;
+  padding: 0px 16px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.link-section .captcha .inner-captcha {
+  display: flex;
+  align-items: center;
+}
+.link-section .captcha .inner-captcha label {
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 28px;
+  color: #1C190E;
+  margin-left: 13px;
+}
+.link-section .captcha .inner-captcha input[type=checkbox] {
+  accent-color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+.link-section .agree-check {
+  position: relative;
+}
+.link-section .agree-check input[type=checkbox] {
+  accent-color: #000;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 2px solid #8D8D87;
+}
+.link-section .agree-check label {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 19.1px;
+  color: #2B2A28;
+}
+.link-section .agree-check label a {
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 19.1px;
+  color: #2B2A28;
+  border-bottom: 1px solid #2B2A28;
+}
+.link-section .btns {
+  display: flex;
+  margin-top: 24px;
+  gap: 10px;
+}
+.link-section .btns a {
+  padding: 16px 18px;
+  width: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 24px;
+}
+.link-section .btns a.continue-btn {
+  background-color: #1C190E;
+  color: #FFFFFF;
+}
+.link-section .btns a.cancel-btn {
+  background-color: #FFFFFF;
+  color: #2B2A28;
+  border: 1px solid #2B2A28;
+}
+
+.form-input {
+  border: 1px solid #c6c7c3;
+  padding: 16px 18px;
+  border-radius: 8px;
+}
+.form-input::placeholder {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #2B2A28;
+  opacity: 70%;
 }/*# sourceMappingURL=main.css.map */
