@@ -130,6 +130,9 @@
                     color:#2B2A28;
                     margin-bottom: 20px;
                     line-height: normal;
+                    &.mb-32 {
+                        margin-bottom: 32px;
+                    }
                 }
                 label {
                     color: #2B2A28;

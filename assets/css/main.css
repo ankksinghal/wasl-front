@@ -2383,6 +2383,9 @@ footer .copyright-section p {
   margin-bottom: 20px;
   line-height: normal;
 }
+.login-page .main-login .right-section .form h2.mb-32 {
+  margin-bottom: 32px;
+}
 .login-page .main-login .right-section .form label {
   color: #2B2A28;
   font-size: 16px;
