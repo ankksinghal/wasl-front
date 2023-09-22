@@ -128,46 +128,41 @@
           </div>
           <div class="right-section">
             <div class="form">
-                <h2>Login to Continue</h2>
-                <form id="login-form">
-                    <a class="button-style bg-white"><img src="./assets/images/thumb.png" alt="thumb" /><span>Sign in with UAE PASS</span></a>
-                    <div class="or-text"><span>OR</span></div>
-                    <div class="input-box">
-                      <label for="userId">User Name</label>
-                      <input type="text" id="userId" placeholder="Enter User Name" autocomplete="off" class="email" />
-                      <p class="error">
-                        <img src="./assets/images/carbon_warning.svg" alt="">
-                        Username not found</p>
-                    </div>
-                    <div class="input-box mb-12">
-                      <label for="password">Password <span>*</span> <img src="./assets/images/info-egular.svg" width="16" height="16" alt=""></label>
-                      <div style="position: relative;">
-                        <input id="password" type="password" placeholder="Enter Password" autocomplete="off" class="password"/>
-                        <button type="button" class="password-showhide">
-                          <span class="show-password">Show</span>
-                          <span class="hide-password">hide</span>
-                        </button>
-                      </div>
-                      <p class="error">
-                      <img src="./assets/images/carbon_warning.svg" alt="">
-                      Incorrect Password</p>
+                <h2>login With OTP</h2>
+                <p class="disc m-24">You have multiple accounts with WASL. Please select one tenant number.</p>
+                <form id="login-form">  
+                  <div class="input-box">
+                    <label for="mobileNumber">PERSONAL</label>
+                    <label class="radio radio-box-view">
+                      <samp>
+                        <span>Tenant Number: <strong>0019763</strong><br></span>
+                        <span>Full Name: <strong>Adam Holmes</strong></span>
+                      </samp>
+                          <input type="radio" checked name="type">
+                          <span class="radiomark"></span>
+                    </label>
+                    <!-- <p class="error">
+                    <img src="./assets/images/carbon_warning.svg" alt="">
+                    This field is required</p> -->
+                  </div> 
+                  <div class="input-box">
+                    <label for="mobileNumber">CORPORATE</label>
+                    <label class="radio radio-box-view">
+                      <samp>
+                        <span>Tenant Number: <strong>0019763</strong><br></span>
+                        <span>Full Name: <strong>Adam Holmes</strong></span>
+                      </samp>
+                          <input type="radio" checked name="type">
+                          <span class="radiomark"></span>
+                    </label>
+                    <!-- <p class="error">
+                    <img src="./assets/images/carbon_warning.svg" alt="">
+                    This field is required</p> -->
                   </div>
-                    <div class="fp-box">
-                    <ul>
-                        <li class="forgot-li"><a href="#">Forgot Password</a></li>
-                        <li>
-                        <hr />
-                        </li>
-                        <li><a href="#">Forgot User Name</a></li>
-                    </ul>
-                    </div>
                     <div class="form-btns">
-                    <button type="submit" class="button-style">Login</button>
-                    <button type="button" class="button-style bg-gray"><span>Login with OTP</span></button>
+                      <button type="submit" class="button-style">Continue</button>
                     </div>
                 </form>
-                <span class="last-p">Don't you have an account?<strong><a href="#">Register now</a></strong>
-                </span>
             </div>
           </div>
         </div>
@@ -178,6 +173,5 @@
     <script src="./assets/js/jquery-1.9.1.min.js"></script>
     <script src="./assets/js/owl.carousel.js"></script>
     <script src="./assets/js/range-slider.js"></script>
-    <script src="./assets/js/custom.js"></script>
   </body>
 </html>

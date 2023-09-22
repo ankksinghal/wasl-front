@@ -191,6 +191,33 @@ button {
   display: block;
   color: #1C190E;
 }
+.check-box.radio-box-view, .radio.radio-box-view {
+  border-radius: 16px;
+  border: 1.5px solid #8BB8AA;
+  background: #E4E4DC;
+  padding: 24px 26px 24px 70px;
+  margin-bottom: 0;
+}
+.check-box.radio-box-view samp, .radio.radio-box-view samp {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.check-box.radio-box-view samp span, .radio.radio-box-view samp span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  color: #1C190E !important;
+}
+.check-box.radio-box-view samp span strong, .radio.radio-box-view samp span strong {
+  font-weight: 600;
+}
+.check-box.radio-box-view span.radiomark, .radio.radio-box-view span.radiomark {
+  margin: auto 0 auto 26px;
+  top: 0;
+  bottom: 0;
+  border-color: #000;
+}
 
 header {
   padding: 10px 0px 5px;
@@ -2248,6 +2275,11 @@ footer .copyright-section p {
   margin-top: 33px;
   margin-bottom: 92px;
 }
+@media screen and (max-width: 991px) {
+  .login-page {
+    margin-bottom: 40px;
+  }
+}
 .login-page .main-login {
   display: flex;
   width: 100%;
@@ -2265,6 +2297,11 @@ footer .copyright-section p {
     justify-content: space-around;
   }
 }
+@media screen and (max-width: 991px) {
+  .login-page .main-login {
+    align-items: center;
+  }
+}
 .login-page .main-login .left-section {
   display: flex;
   flex-direction: column;
@@ -2272,6 +2309,11 @@ footer .copyright-section p {
 }
 .login-page .main-login .left-section.pt-17 {
   padding-top: 17px;
+}
+@media screen and (max-width: 991px) {
+  .login-page .main-login .left-section {
+    display: none;
+  }
 }
 .login-page .main-login .left-section .img-box {
   position: relative;
@@ -2409,18 +2451,21 @@ footer .copyright-section p {
   margin-bottom: 12px;
 }
 .login-page .main-login .right-section .form .input-box input[type=text], .login-page .main-login .right-section .form .input-box input[type=email], .login-page .main-login .right-section .form .input-box input[type=password], .login-page .main-login .right-section .form .input-box input[type=number] {
-  border: 1px solid #8D8D87;
+  border: 1px solid #c2c2c2;
   border-radius: 8px;
   height: 57px;
   padding-left: 15px;
   width: 100%;
-  opacity: 50%;
   background-repeat: no-repeat;
   background-size: 22px auto;
   background-position: top 18px left 12px;
   box-sizing: border-box;
   padding-right: 15px;
   font-size: 16px;
+}
+.login-page .main-login .right-section .form .input-box input[type=text]:focus, .login-page .main-login .right-section .form .input-box input[type=email]:focus, .login-page .main-login .right-section .form .input-box input[type=password]:focus, .login-page .main-login .right-section .form .input-box input[type=number]:focus {
+  outline: none;
+  box-shadow: none;
 }
 .login-page .main-login .right-section .form .input-box input[type=text].email, .login-page .main-login .right-section .form .input-box input[type=email].email, .login-page .main-login .right-section .form .input-box input[type=password].email, .login-page .main-login .right-section .form .input-box input[type=number].email {
   background-image: url("../images/mail.svg");
@@ -2491,6 +2536,9 @@ footer .copyright-section p {
   border: 1px solid #8D8D87;
   border-radius: 8px;
   height: 57px;
+}
+.login-page .main-login .right-section .form .select-box.mb-0 {
+  margin-bottom: 0;
 }
 .login-page .main-login .right-section .form .fp-box {
   margin-bottom: 30px;
@@ -2603,14 +2651,6 @@ footer .copyright-section p {
 .login-page .main-login .right-section.forgot h2 {
   margin-bottom: 6px;
 }
-.login-page .main-login .right-section.forgot .disc {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  color: #2B2A28;
-  margin-bottom: 32px;
-}
 .login-page .main-login .right-section .loginBtns-div {
   margin-top: 30px;
   display: flex;
@@ -2705,6 +2745,58 @@ footer .copyright-section p {
 .login-page .error img {
   width: 12px;
   height: 12px;
+}
+.login-page .disc {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2B2A28;
+  margin-bottom: 32px;
+}
+.login-page .m-24 {
+  margin: 24px 0;
+}
+
+.confirm-password-showhide,
+.password-showhide {
+  position: absolute;
+  top: 14px;
+  bottom: 0;
+  right: 11px;
+  display: inline-block;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.confirm-password-showhide .show-password, .confirm-password-showhide .hide-password,
+.password-showhide .show-password,
+.password-showhide .hide-password {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 28px auto;
+  font-size: 0;
+}
+.confirm-password-showhide .show-password,
+.password-showhide .show-password {
+  background-image: url("../images/hide-password.svg");
+}
+.confirm-password-showhide .hide-password,
+.password-showhide .hide-password {
+  background-image: url("../images/show-password.svg");
+  display: none;
 }
 
 .village-building .village-banner {

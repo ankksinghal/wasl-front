@@ -2,6 +2,9 @@
 .login-page{
     margin-top: 33px;
     margin-bottom: 92px;
+    @include respond(tab) {
+        margin-bottom: 40px;
+    }
     .main-login{
         display: flex;
         width: 100%;
@@ -14,11 +17,17 @@
         @include respond(desk) {
             justify-content: space-around;
         }
+        @include respond(tab) {
+            align-items: center;
+        }
         .left-section{
             display: flex;
             flex-direction: column;
             margin-top: 48px;
             &.pt-17 { padding-top: 17px;}
+            @include respond(tab) {
+                display: none;
+            }
             .img-box {
                 position: relative;
                 max-width:442px;
@@ -156,18 +165,22 @@
                         margin-bottom: 12px;
                     }
                     input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
-                        border: 1px solid #8D8D87;
+                        border: 1px solid #c2c2c2;
                         border-radius: 8px;
                         height: 57px;
                         padding-left: 15px;
                         width: 100%; 
-                        opacity: 50%; 
+                        // opacity: 50%; 
                         background-repeat: no-repeat;
                         background-size: 22px auto;  
                         background-position: top 18px left 12px;
                         box-sizing: border-box;
                         padding-right: 15px;
                         font-size: 16px;
+                        &:focus {
+                            outline: none;
+                            box-shadow: none;
+                        }
                         &.email {
                             background-image: url("../images/mail.svg");
                             padding-left: 45px;
@@ -227,6 +240,9 @@
                         border: 1px solid #8D8D87;
                         border-radius: 8px;
                         height: 57px;
+                    }
+                    &.mb-0 {
+                        margin-bottom: 0;
                     }
                 }
                 .fp-box {
@@ -343,15 +359,7 @@
                 margin-top: -50px;
               h2 {
                 margin-bottom: 6px;
-              } 
-              .disc {
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
-                color: #2B2A28;
-                margin-bottom: 32px;
-              } 
+              }
             }
 
             .loginBtns-div{
@@ -463,5 +471,54 @@
             width: 12px;
             height: 12px;
         }
+    }
+
+    .disc {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        color: #2B2A28;
+        margin-bottom: 32px;
+      } 
+    .m-24 {
+        margin: 24px 0;
+    }
+}
+
+.confirm-password-showhide,
+.password-showhide {
+    position: absolute;
+    top: 14px;
+    bottom: 0;
+    right: 11px;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    .show-password, .hide-password {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 28px auto;
+        font-size: 0;
+    }
+    .show-password {
+        background-image: url("../images/hide-password.svg");
+    }
+    .hide-password {
+        background-image: url("../images/show-password.svg");
+        display: none;
     }
 }

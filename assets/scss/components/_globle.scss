@@ -144,4 +144,31 @@ button{
             }
         }
     }
-  }
+    &.radio-box-view {
+        border-radius: 16px;
+        border: 1.5px solid #8BB8AA;
+        background: #E4E4DC;
+        padding: 24px 26px 24px 70px;
+        margin-bottom: 0;
+        samp {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            span {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                color: #1C190E !important;
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+        span.radiomark {
+            margin: auto 0 auto 26px;
+            top: 0;
+            bottom: 0;
+            border-color: #000;
+        }
+    }
+}

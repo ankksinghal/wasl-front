@@ -174,7 +174,14 @@
                             <div class="form-col">
                                 <div class="input-box mb-0">
                                     <label for="password">Password <span>*</span></label>
-                                    <input type="text" id="password" placeholder="Enter Password" class="padding15" />
+                                    <!-- <input type="password" id="password" placeholder="Enter Password" class="padding15" /> -->
+                                    <div style="position: relative;">
+                                        <input id="password" type="password" placeholder="Enter Password" autocomplete="off" class="padding15"/>
+                                        <button type="button" class="password-showhide">
+                                            <span class="show-password">Show</span>
+                                            <span class="hide-password">hide</span>
+                                        </button>
+                                    </div>
                                     <!-- <p class="error">
                                         <img src="./assets/images/carbon_warning.svg" alt="">
                                         Username not found</p> -->
@@ -184,7 +191,14 @@
                             <div class="form-col">
                                 <div class="input-box mb-0">
                                     <label for="cpassword">Confirm Password <span>*</span></label>
-                                    <input type="password" id="cpassword" placeholder="Enter Password" class="padding15" />
+                                    <!-- <input type="password" id="cpassword" placeholder="Enter Password" class="padding15" /> -->
+                                    <div style="position: relative;">
+                                        <input id="confirmPassword" type="password" placeholder="Enter Password Again" autocomplete="off" class="padding15"/>
+                                        <button type="button" class="confirm-password-showhide">
+                                            <span class="show-password">Show</span>
+                                            <span class="hide-password">hide</span>
+                                        </button>
+                                    </div>
                                     <!-- <p class="error">
                                         <img src="./assets/images/carbon_warning.svg" alt="">
                                         Username not found</p> -->
