@@ -13,10 +13,32 @@ $(document).ready(function() {
       animateIn: 'fadeIn',
   });
 
-  // search Click
-  $(".search-icon").click(function() {
-    $(".search-input-section").toggle(); // Toggle the visibility of the section
-});
+
+  // Search Filter
+  $(".search-filter").click(function () {
+    $(".left-side-bar-filters, body").addClass('modal');
+  });
+
+  $(".close-icon").click(function () {
+    $(".left-side-bar-filters, body").removeClass('modal');
+  });
+
+  
+  
+
+  $('.search-icon').click(function () {
+    $(this).hide();
+    $('.search-input-section').toggle();
+    $('.search-input-section input').focus(); // Focus on the input field when shown
+  });
+  // Close search input when clicking outside
+  $(document).on('click', function (event) {
+    if (!$(event.target).closest('.test').length) {
+        $('.search-input-section').hide();
+        $('.search-icon').show();
+    }
+  });
+
   var owl = $('#owl-residential');
   owl.owlCarousel({
       items: 3,
@@ -61,12 +83,26 @@ $(document).ready(function() {
   });
    // Toggle the mobile menu when the menu button is clicked
    $(".mobile-menu").click(function () {
-    $("#responsive-nav").slideToggle();
-  });
+    $("#responsive-nav").addClass('slide');
+    $(".overlay").addClass('slide');
+    $("body").addClass('slide');
+    });
+    $(".close-nav").click(function () {
+      $("#responsive-nav").removeClass('slide');
+      $(".overlay").removeClass('slide');
+      $("body").removeClass('slide');
+    });
+
+
   
   $("#advanced-filters").click(function(){
     $(".advanced-filters-box").toggleClass("view");
     $("#advanced-filters").toggleClass("rotate");
+  });
+
+  $("#quicklinks").click(function(){
+    $("#footer-below-section").toggleClass("view");
+    $("#quicklinks").toggleClass("rotate");
   });
 
   $(function(){  
