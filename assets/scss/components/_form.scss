@@ -162,14 +162,17 @@
     .form-check{
         margin-bottom: 39px;
         display: flex;
-        align-items: center;
-        position: relative;
+        input[type="checkbox"]{
+            accent-color: $darkBlack;
+            width: 22.75px;
+            height: 22.75px;
+        }
         label {
             font-weight: $fontweight5;
             font-size: $font16;
             line-height: 22.4px;
             color: $black;
-            margin-left: 32px;
+            margin-left: 9.82px;
             span{
                 display: block;
                 font-weight: $fontweight5;
@@ -177,45 +180,6 @@
                 line-height: 22.4px;
                 color: $logoName;
                      }
-            &.properties-view {
-                display: flex;
-                flex-direction: column;
-            }
-            &.checkbox input{
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-            }
-            &.checkbox .checkmark {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 20px;
-                width: 20px;
-                border: 2px solid $color9;
-                background-color: $white;
-                cursor: pointer;
-                border-radius: 6px;
-            }  
-            &.checkbox .checkmark::after{
-                content: "";
-                position: absolute;
-                display: block;
-                left: 7px;
-                top: 3px;
-                width: 3px;
-                height: 9px;
-                border: solid white;
-                border-width: 0 3px 3px 0;
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-            &.checkbox input:checked ~ .checkmark {
-                background-color: $darkBlack;
-            }
      
         }
 
@@ -238,7 +202,9 @@
             .newForm-radios{
                 margin-bottom: 7px;
                 margin-left: 0px;
-                
+                input[type="radio"]{
+                    accent-color: $darkBlack;
+                }
                 label{
                     font-weight: $fontweight5;
                     font-size: $font16;
@@ -286,58 +252,27 @@
     .agree-check{
         display: flex;
         align-items: center;
-        position: relative;
+        input[type="checkbox"]{
+            accent-color: $darkBlack;
+            width: 18px;
+            height: 18px;
+            border: 1.8px solid $logoName;
+            border-radius: 2px;
+        }
         label{
             font-weight: $fontweight5;
             font-size: $font16;
             line-height: 19.1px;
             color: $black;
-            margin-left: 32px;
             margin-top: 5px;
+            margin-left: 4px;
+    
             a{
                 font-weight: $fontweight2;
                 color: $black;
                 border-bottom: 1px solid $black;
             }
-            &.properties-view {
-               
-            }
-            &.checkbox input{
-                position: absolute;
-                opacity: 0;
-                cursor: pointer;
-                height: 0;
-                width: 0;
-            }
-            &.checkbox .checkmark {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 20px;
-                width: 20px;
-                border: 2px solid $color9;
-                background-color: $white;
-
-                cursor: pointer;
-                border-radius: 6px;
-            }  
-            &.checkbox .checkmark::after{
-                content: "";
-                position: absolute;
-                display: block;
-                left: 7px;
-                top: 3px;
-                width: 3px;
-                height: 9px;
-                border: solid white;
-                border-width: 0 3px 3px 0;
-                -webkit-transform: rotate(45deg);
-                -ms-transform: rotate(45deg);
-                transform: rotate(45deg);
-            }
-            &.checkbox input:checked ~ .checkmark {
-                background-color: $darkBlack;
-            }
+           
         }
     }
     .newForm-btns{

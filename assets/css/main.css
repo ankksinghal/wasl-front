@@ -2928,15 +2928,18 @@ footer .copyright-section p {
 .newForm .form-check {
   margin-bottom: 39px;
   display: flex;
-  align-items: center;
-  position: relative;
+}
+.newForm .form-check input[type=checkbox] {
+  accent-color: #000;
+  width: 22.75px;
+  height: 22.75px;
 }
 .newForm .form-check label {
   font-weight: 400;
   font-size: 1em;
   line-height: 22.4px;
   color: #2B2A28;
-  margin-left: 32px;
+  margin-left: 9.82px;
 }
 .newForm .form-check label span {
   display: block;
@@ -2944,45 +2947,6 @@ footer .copyright-section p {
   font-size: 1em;
   line-height: 22.4px;
   color: #8D8D87;
-}
-.newForm .form-check label.properties-view {
-  display: flex;
-  flex-direction: column;
-}
-.newForm .form-check label.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.newForm .form-check label.checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border: 2px solid #8c8d87;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.newForm .form-check label.checkbox .checkmark::after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 7px;
-  top: 3px;
-  width: 3px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.newForm .form-check label.checkbox input:checked ~ .checkmark {
-  background-color: #000;
 }
 .newForm .newForm-inputs {
   display: flex;
@@ -3004,6 +2968,9 @@ footer .copyright-section p {
 .newForm .newForm-inputs .newForm-innerBox .newForm-radios {
   margin-bottom: 7px;
   margin-left: 0px;
+}
+.newForm .newForm-inputs .newForm-innerBox .newForm-radios input[type=radio] {
+  accent-color: #000;
 }
 .newForm .newForm-inputs .newForm-innerBox .newForm-radios label {
   font-weight: 400;
@@ -3044,55 +3011,26 @@ footer .copyright-section p {
 .newForm .agree-check {
   display: flex;
   align-items: center;
-  position: relative;
+}
+.newForm .agree-check input[type=checkbox] {
+  accent-color: #000;
+  width: 18px;
+  height: 18px;
+  border: 1.8px solid #8D8D87;
+  border-radius: 2px;
 }
 .newForm .agree-check label {
   font-weight: 400;
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
-  margin-left: 32px;
   margin-top: 5px;
+  margin-left: 4px;
 }
 .newForm .agree-check label a {
   font-weight: 500;
   color: #2B2A28;
   border-bottom: 1px solid #2B2A28;
-}
-.newForm .agree-check label.checkbox input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-.newForm .agree-check label.checkbox .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 20px;
-  width: 20px;
-  border: 2px solid #8c8d87;
-  background-color: #FFFFFF;
-  cursor: pointer;
-  border-radius: 6px;
-}
-.newForm .agree-check label.checkbox .checkmark::after {
-  content: "";
-  position: absolute;
-  display: block;
-  left: 7px;
-  top: 3px;
-  width: 3px;
-  height: 9px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-.newForm .agree-check label.checkbox input:checked ~ .checkmark {
-  background-color: #000;
 }
 .newForm .newForm-btns {
   display: flex;
