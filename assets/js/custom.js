@@ -98,5 +98,13 @@ $(document).ready(function() {
     $('.tab-links li').removeClass('active');
     $(this).parent('li').addClass('active');
   });
+// Modal script
 
-});
+  $("[data-csModal]").on('click', function(){
+    let modalId = $(this).attr('data-csModal'); 
+    $('#'+modalId+'').addClass('show');        
+  });
+  $(".cs_modal_close").on('click', function(){
+    $('.cs_modal').removeClass('show');        
+  });
+}); 
