@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
+        <div class="overlay">
+        </div>
         <header>
             <div class="container">
                 <div class="header-section">
@@ -29,7 +31,16 @@
                         <span></span>
                    </div>
                     <div class="right-section" id="responsive-nav">
+                            
                             <div class="right-top-section">
+                                <div class="mobile-search">
+                                     <a href="#" class="close-nav"><img src="assets/images/closeN.svg" alt=""/></a>
+                                     <span>Navigation</span>
+                                     <form>
+                                        <input type="text" placeholder=""  />
+                                        <button class="search-input" type="search"><img src="assets/images/search-icon.svg" alt="" /> </button>
+                                    </form>
+                                </div>
                                 <div class="top-nav-section">
                                     <ul>
                                         <li class="language">
@@ -37,53 +48,41 @@
                                             <img src="./assets/images/globe.svg" width="16" height="16" alt="">
                                         </li>
                                         <li class="wasl">
+                                            <a href="#"> Media Centre </a>
+                                        </li>
+                                        <li class="wasl">
                                             <a href="#"> <span>Wasl</span> apps </a>
+                                        </li>
+                                        <li class="wasl">
+                                            <a href="#"> E-Services </a>
+                                        </li>
+                                        <li class="wasl">
+                                            <a href="tel:8009275"> 800-9275 </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Get in Touch</a>
                                         </li>
                                         <li>
                                             <a href="#"> Login </a>
                                         </li>
-                                        <li>
-                                            <a href="#"> Upcoming Projects</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Current Projects </a>
+                                       
+                                        <li class="test">
+                                            <div class="search-input-section">
+                                                <form>
+                                                    <input type="text" placeholder="Search"  />
+                                                    <button class="search-input" type="search"><img src="assets/images/search-icon.svg" alt="" /> </button>
+                                                </form>
+                                            </div>
+                                            <a class="search-icon" href="#"><img src="assets/images/search-icon.svg" alt="" /> </a>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="sm-section">
-                                        <a href="#" target="_blank">
-                                            <img src="./assets/images/facebook.png" alt="fb" />
-
-                                        </a>
-                                        <a href="#" target="_blank">
-                                        <img src="./assets/images/twitter.png" alt="tw" />
-
-                                        </a>
-                                        <a href="#" target="_blank">
-                                        <img src="./assets/images/instagram.png" alt="" />
-
-                                        </a>
-                                        <a href="#" target="_blank">
-                                        <img src="./assets/images/youtube.png" alt="" />
-
-                                        </a>
-                                        <a href="#" target="_blank">
-                                        <img src="./assets/images/linkedin.png" alt="" />
-
-                                        </a>
-                                        <a href="#" target="_blank">
-                                        <img src="./assets/images/tiktok.png" alt="" />
-                                        </a>
                                 </div>
                             </div>
                             <div class="right-bottom-section">
                                 <nav>
                                     <ul>
                                         <li>
-                                            <a href="#">About Us </a>
-                                        </li>
-                                        <li>
-                                            <a href="#"> Projects </a>
+                                            <a href="#">Home </a>
                                         </li>
                                         <li>
                                             <a href="#"> Renting </a>
@@ -92,16 +91,19 @@
                                             <a href="#"> Buying </a>
                                         </li>
                                         <li>
-                                            <a href="#"> Corporate </a>
+                                            <a href="#"> Lands </a>
                                         </li>
                                         <li>
-                                            <a href="#"> Owners Services </a>
+                                            <a href="#"> Our Communities </a>
                                         </li>
                                         <li>
-                                            <a href="#">Media Centre  </a>
+                                            <a href="#"> Retail </a>
                                         </li>
                                         <li>
-                                            <a href="#"> Contact Us </a>
+                                            <a href="#"> Hospitality & Leisure </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">About Wasl  </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -110,200 +112,229 @@
                 </div>
             </div>
         </header>
-        <section class="banner-section">
-            <div class="banner-img">
-                <img src="./assets/images/banner-bg.png" width="1441" height="586"  alt="banner" />
-            </div>
-            <div class="right-box"></div>
-            <div class="right-content-box">
-                <h2>Leasing now Wasl Village</h2>
-                <p>Open House at building E34</p>
-            </div>
-            <div class="container">
-                <div class="search-section">
-                    <div class="tab-list">
-                        <a href="javascript:void(0);" class="tabButton">
-                            <img src="./assets/images/home.svg" width="16" height="16" alt="Home">
-                            Residential</a>
-                        <a href="javascript:void(0);" class="tabButton">
-                            <img src="./assets/images/factory.svg" width="16" height="16" alt="factory">
-                            Commercial</a>
-                        <a href="javascript:void(0);" class="tabButton">
-                            <img src="./assets/images/retail.svg" width="16" height="16" alt="retail">
-                            Retail</a>
-                    </div>
-                    <div class="advance-search">
-                        <div class="tabsContent">
-                            <div class="form-section tabContent">
-                                <form class="form-sec">
-                                    <div class="form-raper">
-                                        <div class="form-cols-out search">
-                                            <input class="form-control search" placeholder="Search by location or common" />
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Type</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Location</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Bedrooms</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Community</option>
-                                            </select>
-                                        </div>
+        <section class="floating-button-wrap">
+             <ul>
+                <li><a class="whatsapp" href="#"><img src="assets/images/whatsapp.svg" alt=""></a></li>
+                <li><a class="emoji" href="#"><img src="assets/images/emoji-1.svg" alt=""></a></li>
+                <li><a class="reply" href="#"><img src="assets/images/reply.svg" alt=""></a></li>
+             </ul>
+        </section>
+        <div id="home-slider" class="owl-carousel">
+            <section class="item banner-section">
+                <div class="banner-img">
+                    <img src="./assets/images/banner-bg.png" width="1441" height="586"  alt="banner" />
+                </div>
+                <div class="right-box"></div>
+                <div class="right-content-box">
+                    <h2>Renting now Wasl Village</h2>
+                    <p>Open House at building E34</p>
+                </div>
+            </section>
+            <section class="item banner-section">
+                <div class="banner-img">
+                    <img src="./assets/images/banner-bg.png" width="1441" height="586"  alt="banner" />
+                </div>
+                <div class="right-box"></div>
+                <div class="right-content-box">
+                    <h2>Renting now Wasl Village</h2>
+                    <p>Open House at building E34</p>
+                </div>
+            </section>
+            <section class="item banner-section">
+                <div class="banner-img">
+                    <img src="./assets/images/Banner.png" width="1441" height="586"  alt="banner" />
+                </div>
+                <div class="right-box"></div>
+                <div class="right-content-box">
+                    <h2>Renting now Wasl Village</h2>
+                    <p>Open House at building E34</p>
+                </div>
+            </section>
+        </div>
+        <div class="container global-search">
+            <div class="search-section">
+                <div class="tab-list">
+                    <a href="javascript:void(0);" class="tabButton">
+                        <img src="./assets/images/home.svg" width="16" height="16" alt="Home">
+                        Residential</a>
+                    <a href="javascript:void(0);" class="tabButton">
+                        <img src="./assets/images/factory.svg" width="16" height="16" alt="factory">
+                        Commercial</a>
+                    <a href="javascript:void(0);" class="tabButton">
+                        <img src="./assets/images/retail.svg" width="16" height="16" alt="retail">
+                        Retail</a>
+                </div>
+                <div class="advance-search">
+                    <div class="tabsContent">
+                        <div class="form-section tabContent">
+                            <form class="form-sec">
+                                <div class="form-raper">
+                                    <div class="form-cols-out search">
+                                        <input class="form-control search" placeholder="Search by location or common" />
                                     </div>
-                                    <button type="submit">Search</button>
-                                </form>
-                                <div class="filter-section">
-                                    <div id="advanced-filters-box" class="advanced-filters-box">
-                                        <form>
-                                            <div class="form-view">
-                                                <div class="form-cols">
-                                                    <label>Price Range</label>
-                                                    <div class="range-slider">
-                                                        <div class="price-input">
-                                                          <div class="field">
-                                                            <span>Min AED</span>
-                                                            <input readonly type="number" class="input-min" value="2500">
-                                                          </div>
-            
-                                                          <div class="field">
-                                                            <span>Max AED</span>
-                                                            <input readonly type="number" class="input-max" value="7500">
-                                                          </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Type</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Location</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Bedrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Community</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit">Search</button>
+                            </form>
+                            <div class="filter-section">
+                                <div id="advanced-filters-box" class="advanced-filters-box">
+                                    <form>
+                                        <div class="form-view">
+                                            <div class="form-cols">
+                                                <label>Price Range</label>
+                                                <div class="range-slider">
+                                                    <div class="price-input">
+                                                      <div class="field">
+                                                        <span>Min AED</span>
+                                                        <input readonly type="number" class="input-min" value="2500">
+                                                      </div>
+        
+                                                      <div class="field">
+                                                        <span>Max AED</span>
+                                                        <input readonly type="number" class="input-max" value="7500">
+                                                      </div>
+                                                    </div>
+                                                    <div class="slider-mid">
+                                                        <div class="slider">
+                                                          <div class="progress"></div>
                                                         </div>
-                                                        <div class="slider-mid">
-                                                            <div class="slider">
-                                                              <div class="progress"></div>
-                                                            </div>
-                                                            <div class="range-input">
-                                                              <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
-                                                              <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
-                                                            </div>
+                                                        <div class="range-input">
+                                                          <input type="range" class="range-min" min="0" max="10000" value="2500" step="100">
+                                                          <input type="range" class="range-max" min="0" max="10000" value="7500" step="100">
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-cols">
-                                                    <label>Area</label>
-                                                </div>
-                                                <div class="form-cols">
-                                                    <label>Offer</label>
-                                                    <label class="check-box properties-view">Show me properties with Offers
-                                                        <input type="checkbox" checked="checked">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </div>
                                             </div>
-                                        </form>
-                                    </div>
+                                            <div class="form-cols">
+                                                <label>Area</label>
+                                            </div>
+                                            <div class="form-cols">
+                                                <label>Offer</label>
+                                                <label class="check-box properties-view">Show me properties with Offers
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                            <div class="form-section tabContent" style="display: none;">
-                                <form class="form-sec">
-                                    <div class="form-raper">
-                                        <div class="form-cols-out search">
-                                            <input class="form-control search" placeholder="Search by property" />
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Type</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Location</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Bedrooms</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Community</option>
-                                            </select>
-                                        </div>
+                        </div>
+                        <div class="form-section tabContent" style="display: none;">
+                            <form class="form-sec">
+                                <div class="form-raper">
+                                    <div class="form-cols-out search">
+                                        <input class="form-control search" placeholder="Search by property" />
                                     </div>
-                                    <button type="submit">Search</button>
-                                </form>
-                                <div class="filter-section">
-                                    <div id="advanced-filters-box" class="advanced-filters-box">
-                                        <form>
-                                            <div class="form-view">
-                                                <div class="form-cols">
-                                                    <label>Unit Type</label>
-                                                    <select class="form-ctrl dropdown">
-                                                        <option>Select</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-cols">
-                                                    <label>Building</label>
-                                                    <select class="form-ctrl dropdown">
-                                                        <option>Select</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-cols">
-                                                    <label>Offer</label>
-                                                    <label class="check-box properties-view">Show me properties with Offers
-                                                        <input type="checkbox" checked="checked">
-                                                        <span class="checkmark"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </form>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Type</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Location</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Bedrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Community</option>
+                                        </select>
                                     </div>
                                 </div>
+                                <button type="submit">Search</button>
+                            </form>
+                            <div class="filter-section">
+                                <div id="advanced-filters-box" class="advanced-filters-box">
+                                    <form>
+                                        <div class="form-view">
+                                            <div class="form-cols">
+                                                <label>Unit Type</label>
+                                                <select class="form-ctrl dropdown">
+                                                    <option>Select</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-cols">
+                                                <label>Building</label>
+                                                <select class="form-ctrl dropdown">
+                                                    <option>Select</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-cols">
+                                                <label>Offer</label>
+                                                <label class="check-box properties-view">Show me properties with Offers
+                                                    <input type="checkbox" checked="checked">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="form-section tabContent" style="display: none;">
-                                <form class="form-sec">
-                                    <div class="form-raper">
-                                        <div class="form-cols-out search">
-                                            <input class="form-control search" placeholder="Search by project" />
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Type</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Location</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Bedrooms</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-cols-out">
-                                            <select class="form-control dropdown">
-                                                <option>Community</option>
-                                            </select>
-                                        </div>
+                        </div>
+                        <div class="form-section tabContent" style="display: none;">
+                            <form class="form-sec">
+                                <div class="form-raper">
+                                    <div class="form-cols-out search">
+                                        <input class="form-control search" placeholder="Search by project" />
                                     </div>
-                                    <button type="submit">Search</button>
-                                </form>
-                            </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Type</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Location</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Bedrooms</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-cols-out">
+                                        <select class="form-control dropdown">
+                                            <option>Community</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit">Search</button>
+                            </form>
                         </div>
-                        <div class="filter-section">
-                            <button id="advanced-filters" type="button" class="advanced-filters"><img src="./assets/images/filter.png" alt="" /> Advanced Filters
-                                <img src="./assets/images/arrow_bottom_down.png" alt="drop" class="drop-dw">
-                            </button>
-                        </div>
+                    </div>
+                    <div class="filter-section">
+                        <button id="advanced-filters" type="button" class="advanced-filters"><img src="./assets/images/filter.png" alt="" /> Advanced Filters
+                            <img src="./assets/images/arrow_bottom_down.png" alt="drop" class="drop-dw">
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <section class="container">
              <div class="upcoming-projects">
                 <div class="left-section">
@@ -633,68 +664,82 @@
         </section>
         <footer>
                 <div class="footer-section">
-                    <div class="footer-border-wrap">
-                        <div class="container">
-                            <div class="upper-footer-section">
-                                    <div class="left-section">
-                                        <a class="footer-logo" href="#">
-                                            <img src="./assets/images/waslEnglishWhiteLogo1.png" width="114" height="42" alt="logo" />
-                                            <span> WELCOME HOME </span>
-                                        </a>
-                                    
-                                        <p>Customer Care: <a href="tel:8009275">8009275</a></p>
-                                    </div>
-                                    <div class="right-section">
-                                        <div class="form-section">
-                                            <form>
-                                                <input type="text" placeholder="Search for..."  />
-                                                <button type="submit">Submit</button>
-                                            </form>
-                                        </div>  
-                                    </div>
-                            </div>
-                        </div>
-                   </div>
                     <div class="container">
-                    <div class="footer-below-section">
+                    <button- type="button" class="quicklinks" id="quicklinks">
+                        Quick Links (44)
+                        <img src="./assets/images/arrow_bottom_down.png" alt="drop" class="drop-dw">
+                    </button->
+                    <div class="footer-below-section" id="footer-below-section">
                         <div class="footer-menu">
                             <h3> RENTING</h3>
                             <ul>
                                 <li><a href="#">Residential</a></li>
                                 <li><a href="#">Commercial</a></li>
-                                <li><a href="#">Speciality Leasing</a></li>
-                                <li><a href="#">Speciality Leasing</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-menu">
-                            <h3> Media Centre</h3>
-                            <ul>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Press Releases</a></li>
-                                <li><a href="#">Photo Gallery</a></li>
-                                <li><a href="#">Video Gallery</a></li>
+                                <li><a href="#">upcoming Projects</a></li>
                             </ul>
                         </div>
                         <div class="footer-menu">
                             <h3> Buying</h3>
                             <ul>
-                                <li><a href="#">Nad Al Hammar Gardens</a></li>
-                                <li><a href="#">Wasl Gate</a></li>
-                                <li><a href="#">Wasl1</a></li>
+                               
+                                <li><a href="#"> Wasl Gate</a></li>
+                                <li><a href="#"> Wasl 1</a></li>
+                                <li><a href="#">Jumeirah Golf Estates</a></li>
+                                <li><a href="#">  Nad Al Hammar Gardens </a></li>
+                                <li><a href="#">Wasl Community Management</a></li>
+                                <li><a href="#">Upcoming Projects</a></li>
                             </ul>
                         </div>
                         <div class="footer-menu">
-                            <h3> FAQ</h3>
+                            <h3> Land</h3>
                             <ul>
-                                <li><a href="#">General</a></li>
-                                <li><a href="#">Properties and Leasing</a></li>
-                                <li><a href="#">Customer Care</a></li>
-                                <li><a href="#">Value Added Tax(VAT)</a></li>
-                                <li><a href="#">eServices</a></li>
+                                <li><a href="#">Industrial</a></li>
+                                <li><a href="#">Food Tech Velly</a></li>
                             </ul>
                         </div>
                         <div class="footer-menu">
-                            <h3> Owners Services</h3>
+                            <h3> Our Communities</h3>
+                            <ul>
+                                <li><a href="#">Wasl 51</a></li>
+                                <li><a href="#">Wasl Port Views</a></li>
+                                <li><a href="#">Wasl Square</a></li>
+                                <li><a href="#">Dar Wasl</a></li>
+                                <li><a href="#">Wasl Green Park</a></li>
+                                <li><a href="#">Wasl Village</a></li>
+                                <li><a href="#">Explore All</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h3> Hospitality & Leisure</h3>
+                            <ul>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Golf Clubs</a></li>
+                                <li><a href="#">Entertainment</a></li>
+                                <li><a href="#">Upcoming Projects</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu mt-2">
+                            <h3> About Wasl</h3>
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Vision & Mission</a></li>
+                                <li><a href="#">Executive Team</a></li>
+                                <li><a href="#">CSR & Sustainability</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Contact Us</a></li>
+
+                            </ul>
+                        </div>
+                        <div class="footer-menu mt-2">
+                            <h3> E-Services</h3>
+                            <ul>
+                                <li><a href="#">Properties</a></li>
+                                <li><a href="#">Land</a></li>
+                                <li><a href="#">Community Management</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu mt-2">
+                            <h3> Owner Services</h3>
                             <ul>
                                 <li><a href="#">Property Management Services</a></li>
                                 <li><a href="#">Owners Association Management</a></li>
@@ -702,22 +747,65 @@
                                 <li><a href="#">Technical Consultancy Services</a></li>
                             </ul>
                         </div>
-                        <div class="footer-image-section">
-                            <img src="./assets/images/ItemDHDA.webp.jpg" width="80" height="80" alt="logo" />
-                            <img src="./assets/images/ItemDQA.webp.jpg" width="80" height="80" alt="logo" />
+                        <div class="footer-menu mt-2">
+                            <h3> Media Centre</h3>
+                            <ul>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Press Rerents</a></li>
+                                <li><a href="#">Photo Gallery</a></li>
+                                <li><a href="#">Video Gallery</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu mt-2">
+                            <h3> FAQ</h3>
+                            <ul>
+                                <li><a href="#">General</a></li>
+                                <li><a href="#">Properties & Ranting</a></li>
+                                <li><a href="#">Customer Care</a></li>
+                                <li><a href="#">VAT</a></li>
+                                <li><a href="#">E-Services</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="footer-pages-wrap">
                         <ul>
-                            <li><a href="#">Terms & Conditions</a></li>
                             <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
                             <li><a href="#">Information Security</a></li>
-                            <li><a href="#">Lease terms & conditions</a></li>
-                            <li><a href="#">Purchasing Terms & Conditions</a></li>
+                            <li><a href="#">Rental terms & conditions</a></li>
+                            <li><a href="#">Buying terms & conditions</a></li>
                             <li><a href="#">Credit Card Payment Terms & Conditions</a></li>
+                            <li><a href="#">Booking Terms & Conditions</a></li>
                             <li><a href="#">Whistleblowing</a></li>
+                            <li><a href="#">Suppliers Code of Ethics & Conduct</a></li>
                         </ul>    
                     </div>
+                    <div class="sm-section">
+                        <span>Follow us on: </span>
+                        <a href="#" target="_blank">
+                            <img src="./assets/images/facebook.png" alt="fb" />
+
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="./assets/images/X.svg" alt="tw" />
+
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="./assets/images/instagram.png" alt="" />
+
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="./assets/images/youtube.png" alt="" />
+
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="./assets/images/linkedin.png" alt="" />
+
+                        </a>
+                        <a href="#" target="_blank">
+                        <img src="./assets/images/tiktok.png" alt="" />
+                        </a>
+                </div>
                     </div>
                 </div>
             <div class="copyright-section">
