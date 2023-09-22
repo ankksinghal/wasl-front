@@ -13,6 +13,23 @@ $(document).ready(function() {
       animateIn: 'fadeIn',
   });
 
+  $(".show-password, .hide-password").on('click', function() {
+    var passwordId = $(this).parents('div:first').find('input').attr('id');
+    if ($(this).hasClass('show-password')) {
+      $("#" + passwordId).attr("type", "text");
+      $(this).parent().find(".show-password").hide();
+      $(this).parent().find(".hide-password").show();
+    } else {
+      $("#" + passwordId).attr("type", "password");
+      $(this).parent().find(".hide-password").hide();
+      $(this).parent().find(".show-password").show();
+    }
+  });
+
+  // search Click
+  // $(".search-icon").click(function() {
+  //   $(".search-input-section").toggle(); // Toggle the visibility of the section
+  // });
 
   // Search Filter
   $(".search-filter").click(function () {
@@ -24,7 +41,7 @@ $(document).ready(function() {
   });
 
   
-  
+
 
   $('.search-icon').click(function () {
     $(this).hide();
@@ -134,5 +151,13 @@ $(document).ready(function() {
     $('.tab-links li').removeClass('active');
     $(this).parent('li').addClass('active');
   });
+// Modal script
 
-});
+  $("[data-csModal]").on('click', function(){
+    let modalId = $(this).attr('data-csModal'); 
+    $('#'+modalId+'').addClass('show');        
+  });
+  $(".cs_modal_close").on('click', function(){
+    $('.cs_modal').removeClass('show');        
+  });
+}); 
