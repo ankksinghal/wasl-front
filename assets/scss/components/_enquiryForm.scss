@@ -22,7 +22,8 @@
             flex-direction: row;
             gap: 8px;
             #mobile-prefix {
-               width: 34px
+               width: 38px;
+               padding-right: 2px;
             }
             #area-code {
                 width: 119px;
@@ -79,15 +80,20 @@
         select{
             appearance: none;
             background-color: $white;
+            font-weight: $fontweight5;
+            font-size: $font16;
+            line-height: 24px;
+            color: $color11;
+            
             &.select-value{
                 background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
                 background-size: 25px 25px;
                 color: $color3;
             }
             &.select-size{
-                background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right -3px top 10px;
+                background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 5px top 13px;
                 background-size: 25px 25px;
-                padding-left: 10px;
+                padding-left: 12px;
                 color: $color3;
             }
         }
@@ -191,7 +197,6 @@
         font-weight: $fontweight5;
         font-size: $font16;
         line-height: 24px;
-        color: $black;
-        opacity: 70%;
+        color: $color11;
     }
 }

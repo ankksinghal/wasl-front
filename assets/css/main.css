@@ -3817,7 +3817,8 @@ span.tooltip:hover .pop-over {
   gap: 8px;
 }
 .enquiry-form div .mobile-number #mobile-prefix {
-  width: 34px;
+  width: 38px;
+  padding-right: 2px;
 }
 .enquiry-form div .mobile-number #area-code {
   width: 119px;
@@ -3872,6 +3873,10 @@ span.tooltip:hover .pop-over {
 .enquiry-form div select {
   appearance: none;
   background-color: #FFFFFF;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #6b6a69;
 }
 .enquiry-form div select.select-value {
   background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
@@ -3879,9 +3884,9 @@ span.tooltip:hover .pop-over {
   color: #3A3A3C;
 }
 .enquiry-form div select.select-size {
-  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right -3px top 10px;
+  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 5px top 13px;
   background-size: 25px 25px;
-  padding-left: 10px;
+  padding-left: 12px;
   color: #3A3A3C;
 }
 
@@ -3978,6 +3983,5 @@ span.tooltip:hover .pop-over {
   font-weight: 400;
   font-size: 1em;
   line-height: 24px;
-  color: #2B2A28;
-  opacity: 70%;
+  color: #6b6a69;
 }/*# sourceMappingURL=main.css.map */
