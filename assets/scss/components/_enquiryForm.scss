@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 48px;
     margin-top: 34px;
+    @include respond(phone_land) {
+        grid-template-columns: 1fr;
+    } 
     div{
         input, select {
             margin-top: 10px;
@@ -105,7 +108,7 @@
     margin-top: 24px;
     margin-bottom: 237px;
     .captcha{
-        width: 502px;
+        width: 44%;
         height: 88px;
         border: 1px solid $logoName;
         border-radius: 8px;
@@ -113,7 +116,9 @@
         margin-bottom: 24px;
         display: flex;
         justify-content: space-between;
-        position: relative;
+        @include respond(phone_land) {
+            width: 80%;
+        } 
     .inner-captcha{
         display: flex;
         align-items: center;
