@@ -3,7 +3,9 @@
     margin-top: 43px;
     margin-bottom: 92px;
     @include respond(tab) {
+        margin-top: 28px;
         margin-bottom: 40px;
+        min-height: 56vh;
     }
     .main-login{
         display: flex;
@@ -130,8 +132,19 @@
                     display: flex;
                     gap: 20px;
                     flex-wrap: wrap;
+                    @include respond(tab) {
+                        gap: 24px;
+                    }
                     .form-col {
                         flex: 48%;
+                    }
+                    @include respond(tab_land) {
+                        &.no-gap {
+                            gap: unset;
+                        }
+                        .form-col {
+                            flex: 100%;
+                        }
                     }
                 }
             }
@@ -146,6 +159,12 @@
                     &.mb-32 {
                         margin-bottom: 32px;
                     }
+                    @include respond(tab) {
+                        &.mb-32 {
+                            margin-bottom: 20px;
+                        }
+                        font-size: 24px;
+                    }
                 }
                 label {
                     color: #2B2A28;
@@ -157,6 +176,12 @@
                     gap: 5px;
                     span {
                         color: #EF3D3D;
+                    }
+                    small a {
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        color: #A79F92;
                     }
                 }
                 .input-box {
@@ -177,7 +202,7 @@
                         opacity: 0.7; 
                         background-repeat: no-repeat;
                         background-size: 22px auto;  
-                        background-position: top 18px left 12px;
+                        background-position: top 15px left 12px;
                         box-sizing: border-box;
                         padding-right: 15px;
                         font-size: 16px;
@@ -215,8 +240,20 @@
                         }
                         &.error {
                             border-color: #EF3D3D;
-                        }       
-                        
+                        }
+                    }
+                    input:-webkit-autofill, 
+                    input:-webkit-autofill:hover, 
+                    input:-webkit-autofill:focus, 
+                    // textarea:-webkit-autofill, 
+                    // textarea:-webkit-autofill:hover, 
+                    // textarea:-webkit-autofill:focus, 
+                    select:-webkit-autofill, 
+                    select:-webkit-autofill:hover, 
+                    select:-webkit-autofill:focus {
+                        -webkit-text-fill-color: #000;
+                        -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+                        transition: background-color 5000s ease-in-out 0s;
                     }
                     input.otp-input{  
                         width: 51px; 
@@ -241,6 +278,9 @@
                     &.opt_box{ 
                         flex-flow: row;
                         flex-wrap: wrap;
+                        @include respond(tab) {
+                            margin-bottom: 24px;
+                        }
                         label{
                             flex: 0 0 100%;
                         }
@@ -306,8 +346,8 @@
                 .form-btns {
                     display: flex;
                     flex-direction: column;
-                    gap: 30px;
-                }
+                    gap: 18px;
+                } 
                 .button-style {
                     text-decoration: none;
                     border-radius: 8px;
@@ -353,7 +393,7 @@
                 }
                 .otp_timer{
                     padding-top: 0.25rem;
-                    margin-bottom: 2.5rem;
+                    margin-bottom: 30px;
                     span{
                         color: #8D8D87;
                     }
@@ -368,13 +408,16 @@
                 &.otp_form{
                     h2{
                         margin-bottom: 2rem;
+                        @include respond(tab) {
+                            margin-bottom: 0;
+                        }
                     }
                 }
             }
             .or-text{
                 width: 100%;  
                 text-align: center; 
-                border-bottom: 1px solid $color4; 
+                // border-bottom: 1px solid $color4; 
                 line-height: 0.1em;
                 font-family: 'Poppins';
                 font-weight: $fontweight5;
@@ -382,9 +425,22 @@
                 color: $color7;
                 display: inline-block;
                 margin: 20px 0;
+                padding: 10px 0;
+                position: relative;
+                &:before {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    background: $color4;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                }
                 span{
                     background: $white; 
                     padding:0 20px; 
+                    position: relative;
+                    z-index: 1;
                 }
             }
             .last-p{
@@ -452,7 +508,7 @@
         }
     }
     .linking-view {
-        margin:10px 0 35px 0;
+        margin:0px 0 30px 0;
         samp { 
             line-height: 24px;
             a {
@@ -478,7 +534,8 @@
         align-items: center;
         justify-content: center;
         gap: 7.5px;
-        button{
+        border: none;
+        span{
             width: 21.25px;
             height: 22.92px;
             cursor: pointer;
@@ -532,9 +589,15 @@
         line-height: 24px;
         color: #2B2A28;
         margin-bottom: 32px;
+        @include respond(tab) {
+            margin:20px 0;
+        }
       } 
     .m-24 {
         margin: 24px 0;
+        @include respond(tab) {
+            margin:20px 0;
+        }
     }
 }
 
@@ -601,7 +664,7 @@
         border-radius: 16px;
     }
     .modal_body{
-        padding: 3rem;
+        padding: 3rem 2rem;
         h4{
             font-size: 22px; 
             font-weight: 800;
@@ -609,6 +672,7 @@
         }
         p{
             margin-bottom: 1.5rem;
+            line-height: 20px;
         }
     }
     .btn_modal{
@@ -698,4 +762,8 @@ span.tooltip {
     &:hover .pop-over {
         display: flex;
     }
+}
+
+.inputBox {
+    display: none;
 }

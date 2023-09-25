@@ -103,6 +103,10 @@
                 line-height: 17.94px;
                 font-family: 'Roboto';  
                 border: none;
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                    background: rgba($color: #000000, $alpha: 1.0);
+                }
             }
         }
     }

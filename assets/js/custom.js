@@ -40,8 +40,12 @@ $(document).ready(function() {
     $(".left-side-bar-filters, body").removeClass('modal');
   });
 
-  
-
+  $('#radio-switch input[type="radio"]').click(function(){
+    var inputValue = $(this).attr("value");
+    var targetBox = $("." + inputValue);
+    $(".inputBox").not(targetBox).hide();
+    $(targetBox).show();
+  });
 
   $('.search-icon').click(function () {
     $(this).hide();
