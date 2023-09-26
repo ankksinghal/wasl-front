@@ -139,6 +139,15 @@ $(document).ready(function() {
     })
   });
 
+  // Seach filter
+  $('#type .without-label li').on('click', function(e) {
+    var tagValue = $(this).text();
+    $("#type label").text(tagValue);
+  });
+  $('#community .without-label li').on('click', function(e) {
+    var tagValue = $(this).text();
+    $("#community label").text(tagValue);
+  });
   // Search page tab
 
   $('.tab-content').hide(); // Hide all tab content initially
