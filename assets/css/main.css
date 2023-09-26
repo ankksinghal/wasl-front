@@ -124,6 +124,7 @@ button {
   font-size: 22px;
   -webkit-user-select: none;
   -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 .check-box input, .radio input {
@@ -173,6 +174,8 @@ button {
   height: 9px;
   border: solid white;
   border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .check-box .radiomark:after, .radio .radiomark:after {
@@ -527,8 +530,7 @@ body.slide {
 @media screen and (max-width: 991px) {
   .banner-section .banner-img img {
     height: 225px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .banner-section .right-box {
@@ -837,9 +839,7 @@ body.slide {
   font-weight: 500;
   color: #2B2A28;
   padding: 0 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   box-sizing: border-box;
 }
 .search-section .filter-section .form-view .form-cols .form-ctrl.dropdown {
@@ -929,9 +929,7 @@ body.slide {
   border-right: 1px solid #c7c6c2;
   height: 60px;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   color: #4E4E4E;
   font-size: 18px;
   font-weight: 400;
@@ -941,10 +939,6 @@ body.slide {
     border-right: none;
     border-bottom: 1px solid #c7c6c2;
   }
-}
-.form-cols-out .form-control::-moz-placeholder {
-  color: #4E4E4E;
-  opacity: 1;
 }
 .form-cols-out .form-control::placeholder {
   color: #4E4E4E;
@@ -1034,7 +1028,7 @@ body.slide {
   margin: auto;
 }
 .slider-mid .slider {
-  height: 7px;
+  height: 6px;
   position: relative;
   background: #fff;
   border-radius: 40px;
@@ -1062,13 +1056,22 @@ body.slide {
   -moz-appearance: none;
 }
 .slider-mid input[type=range]::-webkit-slider-thumb {
-  height: 20px;
-  width: 20px;
-  border-radius: 6px;
+  height: 16px;
+  width: 16px;
+  border-radius: 4px;
   background: #70beab;
+  border: 2px solid transparent;
   pointer-events: auto;
   -webkit-appearance: none;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+.slider-mid input[type=range]:first-child::-webkit-slider-thumb {
+  background: #fff;
+  border-color: #E4E4DC;
+  height: 18px;
+  width: 18px;
+  margin-left: -5px;
 }
 .slider-mid input[type=range]::-moz-range-thumb {
   height: 17px;
@@ -1159,6 +1162,15 @@ body.slide {
 }
 .custom-dropdown.show ul {
   display: inline;
+}
+
+.left-side-bar-filters input[type=range]::-webkit-slider-thumb {
+  height: 28px;
+  width: 28px;
+}
+.left-side-bar-filters input[type=range]:first-child::-webkit-slider-thumb {
+  height: 32px;
+  width: 32px;
 }
 
 .upcoming-projects {
@@ -2435,8 +2447,7 @@ footer .copyright-section p {
 @media screen and (max-width: 991px) {
   .search-banner-section img {
     height: 75px;
-    -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 .search-banner-section .banner-cont {
@@ -2849,9 +2860,7 @@ footer .copyright-section p {
   font-weight: 400;
   color: #2B2A28;
   padding: 0 10px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   opacity: 70%;
   width: 100%;
 }
@@ -3365,9 +3374,6 @@ body.modal {
 .login-page .main-login .right-section .form .input-box input[type=text].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=email].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=password].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=number].padding15.captcha {
   padding-right: 120px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=email]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=password]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=number]:-moz-read-only {
-  background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
-}
 .login-page .main-login .right-section .form .input-box input[type=text]:read-only, .login-page .main-login .right-section .form .input-box input[type=email]:read-only, .login-page .main-login .right-section .form .input-box input[type=password]:read-only, .login-page .main-login .right-section .form .input-box input[type=number]:read-only {
   background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
 }
@@ -3382,7 +3388,6 @@ body.modal {
 .login-page .main-login .right-section .form .input-box select:-webkit-autofill:focus {
   -webkit-text-fill-color: #000;
   -webkit-box-shadow: 0 0 0px 1000px #fff inset;
-  -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
 .login-page .main-login .right-section .form .input-box input.otp-input {
@@ -3390,12 +3395,6 @@ body.modal {
   height: 51px;
   padding: 0;
   text-align: center;
-}
-.login-page .main-login .right-section .form .input-box input::-moz-placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19.1px;
-  color: #2B2A28;
 }
 .login-page .main-login .right-section .form .input-box input::placeholder {
   font-weight: 400;
@@ -3431,9 +3430,7 @@ body.modal {
   gap: 10px;
 }
 .login-page .main-login .right-section .form .select-box select {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   font-weight: 400;
   font-size: 1em;
   line-height: 19.1px;
@@ -3673,10 +3670,23 @@ body.modal {
   height: auto;
 }
 .login-page .captch-text span.run img {
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 @keyframes spin {
   100% {
+    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
@@ -3964,7 +3974,6 @@ span.tooltip:hover .pop-over {
   }
 }
 .container .village-building .village-banner .left-section ul li {
-  width: -moz-fit-content;
   width: fit-content;
   align-items: center;
   gap: 4px;
@@ -4120,8 +4129,7 @@ span.tooltip:hover .pop-over {
   }
 }
 .container .photos-section .photos-area .right-side div img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .container .photos-section .photos-area .right-side div .grid-box-1 {
   grid-column: 1/3;
