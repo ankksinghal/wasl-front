@@ -17,7 +17,14 @@ a { text-decoration: none;}
 button{    
     cursor: pointer;
 }
-
+.cs_title{
+    font-size: 30px;
+    font-weight: 500;
+    line-height: calc(35/30); 
+    @include respond(phone) {
+        font-size: 24px;
+    }
+}
 .button-section {
     display: flex;
     align-items: center;
