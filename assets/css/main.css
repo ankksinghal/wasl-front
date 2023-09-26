@@ -1107,6 +1107,8 @@ body.slide {
   border: 1px solid #E2E2E2;
   background: #FFF;
   z-index: 2;
+  max-height: 300px;
+  overflow-y: auto;
   display: none;
 }
 .custom-dropdown ul li {
