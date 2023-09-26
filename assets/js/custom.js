@@ -192,7 +192,7 @@ $('#checkall:checkbox').change(function () {
   if ($(this).prop("checked")) {
       $('.custom-dropdown.show input:checkbox').prop('checked', true);
   } else {
-      $('input:checkbox').prop('checked', false);
+      $('.custom-dropdown.show input:checkbox').prop('checked', false);
   }
 });
 
