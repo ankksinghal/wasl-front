@@ -414,6 +414,7 @@
         .all-units-cards {
           display: flex;
           gap: 22px;
+          box-sizing: border-box; 
           margin-bottom: 16px;
           @include respond(tab_land) {
             width: 100%;
@@ -602,4 +603,32 @@ body {
     font-weight: $fontweight3;
     font-size: $font30;
   }
+} 
+// ===========Responsive==============
+@include respond(phone_land) {
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards .card-details-wrap .card-details{
+    width: auto; 
+  } 
+}  
+@include respond(phone) {
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap {
+    .all-units-cards{
+      flex-flow: column;
+      .card-details-wrap .card-details{
+        width: 50%; 
+        padding-right: 20px;
+        margin-right: 0;
+        box-sizing: border-box;
+      } 
+    }
+    .search-image-section .feature-image{
+      width: 100%;
+      height: 150px;
+    } 
+    .search-card .view-details-wrap{
+      text-align: center;
+    }
+  }
 }
+
+ 

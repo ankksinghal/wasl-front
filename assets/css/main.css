@@ -2459,10 +2459,20 @@ footer .copyright-section p {
   flex-direction: column;
   gap: 10px;
 }
+@media screen and (max-width: 991px) {
+  .search-banner-section .banner-cont {
+    padding-top: 5px;
+  }
+}
 .search-banner-section h2 {
   color: #2B2A28;
   font-size: 2em;
   font-weight: 700;
+}
+@media screen and (max-width: 1170px) {
+  .search-banner-section h2 {
+    font-size: 24px;
+  }
 }
 .search-banner-section p {
   color: #2B2A28;
@@ -2929,6 +2939,7 @@ footer .copyright-section p {
 .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards {
   display: flex;
   gap: 22px;
+  box-sizing: border-box;
   margin-bottom: 16px;
 }
 @media screen and (max-width: 1170px) {
@@ -3114,6 +3125,29 @@ body.modal {
   font-size: 1.875em;
 }
 
+@media screen and (max-width: 767px) {
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards .card-details-wrap .card-details {
+    width: auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards {
+    flex-flow: column;
+  }
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards .card-details-wrap .card-details {
+    width: 50%;
+    padding-right: 20px;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .search-image-section .feature-image {
+    width: 100%;
+    height: 150px;
+  }
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .search-card .view-details-wrap {
+    text-align: center;
+  }
+}
 .login-page {
   margin-top: 43px;
   margin-bottom: 92px;
