@@ -1056,14 +1056,12 @@ body.slide {
   -moz-appearance: none;
 }
 .slider-mid input[type=range]::-webkit-slider-thumb {
-  height: 16px;
-  width: 16px;
+  height: 18px;
+  width: 18px;
   border-radius: 4px;
   background: #70beab;
-  border: 2px solid transparent;
   pointer-events: auto;
   -webkit-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
   cursor: pointer;
 }
 .slider-mid input[type=range]:first-child::-webkit-slider-thumb {
@@ -1081,7 +1079,6 @@ body.slide {
   background: #17A2B8;
   pointer-events: auto;
   -moz-appearance: none;
-  box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
 }
 
 .custom-dropdown {
@@ -1169,8 +1166,8 @@ body.slide {
   width: 28px;
 }
 .left-side-bar-filters input[type=range]:first-child::-webkit-slider-thumb {
-  height: 32px;
-  width: 32px;
+  height: 28px;
+  width: 28px;
 }
 
 .upcoming-projects {
