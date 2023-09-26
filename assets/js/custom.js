@@ -199,7 +199,7 @@ $('#checkall:checkbox').change(function () {
 // Search page
 $('.search-content').hide();
 $('.search-content:first').show();
-$('.search-filter-view a:first').addClass('active');
+// $('.search-filter-view a:first').addClass('active');
 $('.search-filter-view a').on('click', function(e) {
   e.preventDefault();
   var target = $(this).attr('href');
