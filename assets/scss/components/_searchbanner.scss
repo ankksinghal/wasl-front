@@ -21,11 +21,18 @@
         justify-content: center;
         flex-direction: column;
         gap: 10px;
+        @include respond(tab) {
+         padding-top: 5px;
+        }
+
      }
      h2{
         color:$black;
         font-size: $font32;
         font-weight: $fontweight3;
+        @include respond(tab_land) {
+         font-size: 24px;
+        }
      }
      p {
         color:$black;
