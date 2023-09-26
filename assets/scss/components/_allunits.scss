@@ -113,7 +113,7 @@
 }
 
 // Section 3
-.all-units-wrapper {
+.all-units-wrapper { 
   display: flex;
   gap: 31px;
   &.buying_section { 
@@ -200,6 +200,51 @@
     }
     .view-details-wrap {
       margin-top: auto;
+    }
+  }
+  .cs_search_card{ 
+    .all-units-cards{  
+      line-height: 1.2;
+      flex: 0 0 calc(50% - 8px); 
+      max-width: calc(50% - 8px);
+      box-sizing: border-box; 
+      h3{ 
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: break-spaces;
+        display: -webkit-box;
+      }
+      *{
+        box-sizing: border-box;
+      }
+      img{
+        max-width: 100%; 
+      }
+    }
+    @include respond(tab_land) {
+      .all-units-cards{   
+        .feature-image{ 
+          height: 144px;
+        }
+      }
+    }
+    @include respond(tab) { 
+      .all-units-cards{   
+        .feature-image{ 
+          height: 110px;
+        }
+      }
+    }
+    @include respond(phone) { 
+      .all-units-cards{   
+        flex: 0 0 100%;
+        max-width: 100%;
+        .feature-image{ 
+          height: 150px; 
+        }
+      }
     }
   }
   .left-side-bar-filters {
