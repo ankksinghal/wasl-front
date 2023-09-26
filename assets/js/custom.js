@@ -176,9 +176,9 @@ $(document).ready(function() {
 // Remove class
 
 $(function() {
-  $(".custom-dropdown").on("click", function(e) {
-    $(".custom-dropdown").removeClass("show");
-    $(this).addClass("show");
+  $(".form-cols-out").on("click", function(e) {
+    $(this).children().toggleClass("show");
+    $(this).siblings().children().removeClass("show");
     e.stopPropagation()
   });
   $(document).on("click", function(e) {
