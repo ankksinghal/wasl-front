@@ -2572,6 +2572,11 @@ footer .copyright-section p {
   text-align: center;
   box-sizing: border-box;
 }
+@media screen and (max-width: 767px) {
+  .all-available-units-section .all-available-units-right a[href$="#grid"] {
+    display: none;
+  }
+}
 .all-available-units-section .all-available-units-right a.search-filter {
   font-size: 0.875em;
   color: #2B2A28;

@@ -43,6 +43,11 @@
       line-height: 34px;
       text-align: center;
       box-sizing: border-box;
+      @include respond(phone_land) {
+          &[href$="#grid"]{
+            display: none;
+          }
+      }
       &.search-filter {
         font-size: $font14;
         color: $black;
