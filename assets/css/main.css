@@ -4268,12 +4268,17 @@ span.tooltip:hover .pop-over {
 .enquiry-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 24px 48px;
   margin-top: 34px;
 }
 @media screen and (max-width: 767px) {
   .enquiry-form {
-    grid-template-columns: 1fr;
+    display: block;
+  }
+}
+@media all and (max-width: 991px) and (min-width: 768px) {
+  .enquiry-form {
+    gap: 24px;
   }
 }
 .enquiry-form div {
@@ -4282,6 +4287,18 @@ span.tooltip:hover .pop-over {
 }
 .enquiry-form div input, .enquiry-form div select {
   margin-top: 10px;
+  font-size: 16px;
+}
+@media screen and (max-width: 575px) {
+  .enquiry-form div input, .enquiry-form div select {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .enquiry-form div select.select-size#area-code {
+    background-position: right 0px top 11px;
+    font-size: 14px;
+  }
 }
 .enquiry-form div input[type=radio] {
   accent-color: #000;
@@ -4296,15 +4313,40 @@ span.tooltip:hover .pop-over {
   flex-direction: row;
   gap: 8px;
 }
+.enquiry-form div .mobile-number input, .enquiry-form div .mobile-number select {
+  box-sizing: border-box;
+  line-height: initial;
+}
 .enquiry-form div .mobile-number #mobile-prefix {
-  width: 38px;
-  padding-right: 2px;
+  width: 60px;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-sizing: border-box;
+  -moz-appearance: textfield;
+}
+.enquiry-form div .mobile-number #mobile-prefix::-webkit-outer-spin-button, .enquiry-form div .mobile-number #mobile-prefix::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .enquiry-form div .mobile-number #area-code {
   width: 119px;
 }
 .enquiry-form div .mobile-number #mobile-number {
   flex: auto;
+  -moz-appearance: textfield;
+}
+.enquiry-form div .mobile-number #mobile-number::-webkit-outer-spin-button, .enquiry-form div .mobile-number #mobile-number::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media all and (max-width: 991px) and (min-width: 768px), (max-width: 575px) {
+  .enquiry-form div .mobile-number #mobile-prefix {
+    width: 45px;
+  }
+  .enquiry-form div .mobile-number #mobile-number {
+    max-width: 177px;
+  }
 }
 .enquiry-form div .form-label {
   font-weight: 400;
@@ -4315,6 +4357,7 @@ span.tooltip:hover .pop-over {
 .enquiry-form div .main-radios {
   display: flex;
   flex-direction: row;
+  padding-top: 15px;
 }
 .enquiry-form div .main-radios .radio-buttons {
   width: 50%;
@@ -4342,13 +4385,25 @@ span.tooltip:hover .pop-over {
   flex-direction: row;
   align-items: center;
   gap: 4px;
+  height: 20px;
+  align-items: center;
+}
+.enquiry-form div .main-radios .radio-buttons .valid-radios .inner-radios input[type=radio] {
+  margin-top: 0;
+  margin-left: 0;
 }
 .enquiry-form div .main-radios .radio-buttons .valid-radios .inner-radios label {
-  margin-top: 10px;
+  margin-top: 2px;
   font-weight: 400;
   font-size: 0.875em;
   color: #1C190E;
   line-height: 16.8px;
+}
+@media screen and (max-width: 767px) {
+  .enquiry-form div .main-radios {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 .enquiry-form div select {
   appearance: none;
@@ -4369,6 +4424,11 @@ span.tooltip:hover .pop-over {
   padding-left: 12px;
   color: #3A3A3C;
 }
+@media screen and (max-width: 767px) {
+  .enquiry-form > div {
+    margin-bottom: 1.5rem;
+  }
+}
 
 .link-section {
   display: flex;
@@ -4377,12 +4437,12 @@ span.tooltip:hover .pop-over {
   margin-bottom: 237px;
 }
 .link-section .captcha {
-  width: 44%;
+  width: 40%;
   height: 88px;
   border: 1px solid #8D8D87;
   border-radius: 8px;
   padding: 0px 16px;
-  margin-bottom: 24px;
+  margin-bottom: 39px;
   display: flex;
   justify-content: space-between;
 }
@@ -4402,12 +4462,18 @@ span.tooltip:hover .pop-over {
   color: #1C190E;
   margin-left: 13px;
 }
+@media screen and (max-width: 575px) {
+  .link-section .captcha .inner-captcha label {
+    font-size: 16px;
+  }
+}
 .link-section .captcha .inner-captcha input[type=checkbox] {
   accent-color: #000;
   border: 1px solid #000;
   cursor: pointer;
   width: 30px;
   height: 30px;
+  border-radius: 8px;
 }
 .link-section .agree-check {
   position: relative;
@@ -4418,12 +4484,18 @@ span.tooltip:hover .pop-over {
   height: 18px;
   border-radius: 2px;
   border: 2px solid #8D8D87;
+  vertical-align: sub;
 }
 .link-section .agree-check label {
   font-weight: 400;
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
+}
+@media screen and (max-width: 575px) {
+  .link-section .agree-check label {
+    font-size: 14px;
+  }
 }
 .link-section .agree-check label a {
   font-weight: 500;
@@ -4434,8 +4506,8 @@ span.tooltip:hover .pop-over {
 }
 .link-section .btns {
   display: flex;
-  margin-top: 24px;
-  gap: 10px;
+  margin-top: 39px;
+  gap: 18px;
 }
 .link-section .btns a {
   padding: 16px 18px;
@@ -4457,15 +4529,34 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   border: 1px solid #2B2A28;
 }
+@media all and (max-width: 991px) {
+  .link-section .btns a {
+    width: 127px;
+    line-height: 1;
+  }
+}
+@media all and (max-width: 991px) {
+  .link-section {
+    margin-bottom: 6rem;
+  }
+}
 
 .form-input {
   border: 1px solid #c6c7c3;
-  padding: 16px 18px;
+  padding: 12px 18px;
   border-radius: 8px;
+  height: 55px;
+  box-sizing: border-box;
 }
 .form-input::placeholder {
   font-weight: 400;
   font-size: 1em;
   line-height: 24px;
   color: #6b6a69;
+}
+@media all and (max-width: 991px) {
+  .form-input {
+    height: 48px;
+    padding: 10px 18px;
+  }
 }/*# sourceMappingURL=main.css.map */

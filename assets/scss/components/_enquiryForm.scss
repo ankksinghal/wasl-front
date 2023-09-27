@@ -1,14 +1,27 @@
 .enquiry-form{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 48px;
+    gap:24px 48px;
     margin-top: 34px;
     @include respond(phone_land) {
-        grid-template-columns: 1fr;
+        display: block;
     } 
+    @media all and (max-width:991px) and (min-width:768px) { 
+        gap: 24px;
+    }
     div{
-        input, select {
-            margin-top: 10px;
+        input, select{
+            margin-top: 10px; 
+            font-size: 16px;
+            @include respond(phone) { 
+                font-size: 14px;
+            } 
+        }
+        @include respond(phone_land) { 
+            select.select-size#area-code {
+                background-position: right 0px top 11px;
+                font-size: 14px;
+            }
         }
         input[type=radio] {
             accent-color: $darkBlack;
@@ -24,15 +37,43 @@
             display: flex;
             flex-direction: row;
             gap: 8px;
+            input,select{
+                
+                box-sizing: border-box;
+                line-height: initial;
+            }
             #mobile-prefix {
-               width: 38px;
-               padding-right: 2px;
+               width: 60px;
+               text-align: center;
+               padding-left: 5px;
+               padding-right: 5px;
+               box-sizing: border-box;
+               -moz-appearance: textfield;
+               &::-webkit-outer-spin-button,
+               &::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
             }
             #area-code {
                 width: 119px;
             }
             #mobile-number {
                 flex: auto;
+                -moz-appearance: textfield;
+                &::-webkit-outer-spin-button,
+                &::-webkit-inner-spin-button {
+                     -webkit-appearance: none;
+                     margin: 0;
+                 }
+            }
+            @media all and (max-width:991px) and (min-width:768px) , (max-width:575px) { 
+                #mobile-prefix {
+                    width: 45px;
+                }
+                #mobile-number{
+                    max-width: 177px;
+                }
             }
         }
         .form-label{
@@ -44,6 +85,7 @@
         .main-radios{
             display: flex;
             flex-direction: row;
+            padding-top: 15px;
             .radio-buttons{
                 width: 50%;
                 .extra-label{
@@ -68,8 +110,14 @@
                         flex-direction: row;
                         align-items: center;
                         gap: 4px;
+                        height: 20px;
+                        align-items: center;
+                        input[type='radio']{
+                            margin-top: 0;
+                            margin-left: 0;
+                        }
                         label{
-                            margin-top: 10px;
+                            margin-top: 2px;
                             font-weight: $fontweight5;
                             font-size: $font14;
                             color: $Primary;
@@ -78,7 +126,10 @@
                     }
                 }
             }
-      
+            @include respond(phone_land){
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
         }
         select{
             appearance: none;
@@ -101,19 +152,25 @@
             }
         }
     }
+    @include respond(phone_land){
+        &>div{
+            margin-bottom: 1.5rem;
+        }
+    }
+
 }
 .link-section{
     display: flex;
     flex-direction: column;
     margin-top: 24px;
-    margin-bottom: 237px;
+    margin-bottom: 237px; 
     .captcha{
-        width: 44%;
+        width: 40%;
         height: 88px;
         border: 1px solid $logoName;
         border-radius: 8px;
         padding: 0px 16px;
-        margin-bottom: 24px;
+        margin-bottom: 39px;
         display: flex;
         justify-content: space-between;
         @include respond(phone_land) {
@@ -128,6 +185,9 @@
             line-height: 28px;
             color: $Primary;
             margin-left: 13px;
+            @include respond (phone){
+                font-size: 16px;
+            }
         }
         input[type="checkbox"] {
             accent-color: $darkBlack;
@@ -135,6 +195,7 @@
             cursor: pointer;
             width: 30px;
             height: 30px;
+            border-radius: 8px;
           }
     }
        
@@ -148,6 +209,7 @@
             height: 18px;
             border-radius: 2px;
             border:2px solid $logoName;
+            vertical-align: sub;
         }
     
         label {
@@ -155,6 +217,9 @@
             font-size: $font16;
             line-height: 19.1px;
             color: $black;
+            @include respond (phone){
+                font-size: 14px;
+            }
             a{
                 font-weight: $fontweight2;
                 font-size: $font16;
@@ -169,8 +234,8 @@
     }
     .btns{
         display: flex;
-        margin-top: 24px;
-        gap: 10px;
+        margin-top: 39px;
+        gap: 18px;
         a{
             padding: 16px 18px;
             width: 170px;
@@ -190,18 +255,31 @@
                 color: $black;
                 border: 1px solid $black;
             }
+            @media all and (max-width:991px) {
+                width: 127px;
+                line-height: 1; 
+            }
         }
+    }
+    @media all and (max-width:991px){
+        margin-bottom: 6rem;
     }
 }
 
 .form-input {
     border: 1px solid $color6;
-    padding: 16px 18px;
+    padding: 12px 18px;
     border-radius: 8px;
+    height: 55px;
+    box-sizing: border-box;
     &::placeholder{
         font-weight: $fontweight5;
         font-size: $font16;
         line-height: 24px;
         color: $color11;
+    }
+    @media all and (max-width:991px)    {
+        height: 48px;
+        padding: 10px 18px; 
     }
 }
