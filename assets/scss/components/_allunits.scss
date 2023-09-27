@@ -1,427 +1,639 @@
-
 // First Section
-.tab-content{
-     margin: 0 0 80px;
-     @include respond(phone_land) {
-        margin: 0 0 40px;
-    }
+.tab-content {
+  margin: 0 0 80px;
+  @include respond(phone_land) {
+    margin: 0 0 40px;
+  }
 }
-.all-available-units-section{
-    padding: 30px 0 34px;
+.all-available-units-section {
+  padding: 30px 0 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include respond(phone_land) {
+    padding: 16px 0;
+  }
+  .all-available-units-left {
+    h3 {
+      color: $darkBlack;
+      margin-bottom: 10px;
+      font-size: $font22;
+      font-weight: $fontweight2;
+      @include respond(phone_land) {
+        font-size: $font16;
+        margin-bottom: 4px;
+      }
+    }
+    span {
+      color: $black;
+      font-size: $font14;
+      font-weight: $fontweight2;
+    }
+  }
+  .all-available-units-right {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include respond(phone_land) {
-        padding: 16px 0;
-    }
-    .all-available-units-left{
-         h3{
-            color: $darkBlack;
-            margin-bottom: 10px;
-            font-size: $font22;
-            font-weight: $fontweight2;
-            @include respond(phone_land) {
-                font-size: $font16;
-                margin-bottom: 4px;
-            }
-         }
-         span{
-            color: $black;
-            font-size: $font14;
-            font-weight: $fontweight2;
-         }
-    }
-    .all-available-units-right{ 
-        display: flex;
-        gap: 8px;
-        a{
-            display: inline-block;
-            height: 40px;
-            width: 40px;
-            border-radius: 10px;
-            border: 1px solid $color1;
-            vertical-align: middle;
-            line-height: 34px;
-            text-align: center;
-            box-sizing: border-box;
-            &.search-filter{
-                font-size: $font14;
-                color: $black;
-                width:75px;
-                display: none;
-                @include respond(phone_land) {
-                   display: block;
-                }
-                img{
-                    margin-right: 3px;
-                }
-            }
-            img{
-                vertical-align: middle;
-            }
-            @include respond(phone_land) {
-                height: 34px;
-                width: 34px;
-                line-height: 30px;
-            }
-            &.active{
-                background-color: $darkBlack;
-            }
+    gap: 8px;
+    a {
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      border-radius: 10px;
+      border: 1px solid $color1;
+      vertical-align: middle;
+      line-height: 34px;
+      text-align: center;
+      box-sizing: border-box;
+      @include respond(phone_land) {
+          &[href$="#grid"]{
+            display: none;
+          }
+      }
+      &.search-filter {
+        font-size: $font14;
+        color: $black;
+        width: 75px;
+        display: none;
+        @include respond(phone_land) {
+          display: block;
         }
+        img {
+          margin-right: 3px;
+        }
+      }
+      img {
+        vertical-align: middle;
+      }
+      @include respond(phone_land) {
+        height: 34px;
+        width: 34px;
+        line-height: 30px;
+      }
+      &.active {
+        background-color: $darkBlack;
+      }
     }
+  }
 }
-
 
 // Second section
-.select-bedroom-section-wrap{
-    border: 1px solid $color1;
-    border-radius: 8px;
-    padding: 15px 16px;
-    margin-bottom: 21px;
+.select-bedroom-section-wrap {
+  border: 1px solid $color1;
+  border-radius: 8px;
+  padding: 15px 16px;
+  margin-bottom: 21px;
+  @include respond(phone_land) {
+    padding: 15px 16px 0;
+  }
+  h3 {
+    color: $darkBlack;
+    margin-bottom: 12px;
+    font-size: $font18;
+    font-weight: $fontweight2;
     @include respond(phone_land) {
-        padding: 15px 16px 0;
+      font-size: $font14;
     }
-    h3{
-        color: $darkBlack;
-        margin-bottom: 12px;
-        font-size: $font18;
-        font-weight: $fontweight2;
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include respond(phone_land) {
+      display: block;
+    }
+    li {
+      @include respond(tab) {
+        display: inline-block;
+        margin: 0 12px 12px 0;
+      }
+      a {
+        color: $black;
+        font-size: $font14;
+        text-decoration: underline;
         @include respond(phone_land) {
-            font-size: $font14;
+          font-size: $font12;
         }
-     }
-     ul{
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         @include respond(phone_land) {
-            display: block;
-        }
-         li{
-            @include respond(tab) {
-                display: inline-block;
-                margin:0 12px 12px 0;
-            }
-            a{
-                color: $black;
-                font-size: $font14;
-                text-decoration: underline;
-                @include respond(phone_land) {
-                    font-size: $font12;
-                }
-            }
-         }
-     }
+      }
+    }
+  }
 }
-
 
 // Section 3
-.all-units-wrapper{
-    display: flex;
-    gap: 31px;
-    .left-side-bar-filters{
-        width: 264px;
-            @include respond(phone_land) {
-                display: none;
-                &.modal{
-                    display: block;
-                    position: fixed;
-                    width: 100%;
-                    height: 100%;
-                    background: rgba(0, 0, 0, 0.5);
-                    top:0;
-                    left:0;
-                }
-        }
-       
-        .upper-filter-section,.bottom-filter-section{
-            background-color: $color1;
-            border-radius: 16px;
-            padding: 16px;
-            margin-bottom: 20px;
-            h3{
-                font-weight: $fontweight2;
-                font-size: $font18;
-                margin-bottom: 15px;
-            }
-        }
-        .upper-filter-section{
-            .filter-title-wrap{
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                .close-icon{
-                     display: none;
-                     margin-top: -10px;
-                     @include respond(phone_land) {
-                        display: block;
-                  }
-                }
-            }
-            @include respond(phone_land) {
-                  width: 264px;
-                  margin:52px auto;
-                  overflow: scroll;
-                  height: 85%;
-            }
-             h3{
-                color:$darkBlack;
-                margin-bottom: 16px;
-             }
-            .form-view{
-                display: flex;
-                flex-direction: column;
-                gap: 16px;
-                .range-slider .price-input{
-                    align-items: center;
-                    span{
-                        color: $logoName;
-                        font-size: $font14;
-                    }
-                    .field{
-                        width: auto;
-                        input{
-                            border-bottom:  0.5px solid $logoName;
-                            ;
-                       }
-                    }
-                } 
-                
-                .slider-mid{
-                    position: static;
-                    width: 100%;
-                    margin: 25px 0 15px;
-                    .slider{
-                         border: none;
-                    }
-                }
-                 .form-cols{
-                    .form-ctrl {
-                        background: $white;
-                        border-radius: 8px;
-                        border: 1px solid #ccc;
-                        height: 48px;
-                        font-size: $font16;
-                        font-weight: 400;
-                        color: $black;
-                        padding: 0 10px;
-                        appearance: none;
-                        opacity: 70%;
-                        width: 100%;
-                        &.dropdown {
-                            background:#fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
-                            background-size: 25px 25px !important;
-                        }
-                    }
-                    label{
-                        display: block;
-                        color: $color2;
-                        font-size: $font16;
-                        margin-bottom: 10px;
-                        font-weight: $fontweight5;
-                    }
-                 }
-                 .submit{
-                    background-color: $black;
-                    border-radius: 8px;
-                    display: block;
-                    width: 100%;
-                    color:$white;
-                    font-weight: $fontweight3;
-                    font-size: $font15;
-                    cursor: pointer;
-                    border: none;
-                    padding:12px 0;
-                    box-sizing: border-box;
-                 }
-            }
-        }
-        .bottom-filter-section{
-            @include respond(phone_land) {
-                  display: none;
-            }
-            
-            h3{
-               color:$color2;
-            }
-            ul{
-                li{
-                    display: flex;
-                    align-items: center;
-                    padding:15px 0;
-                    &:first-child{
-                        border-bottom: 1px solid #EFEFEF;
-                    }
-                    img{
-                        margin-right: 25px;
-                    }
-                    .contact-right-section{
-                        span{
-                            font-size: $font14;
-                            display: block;
-                            &.contact-text{
-                                color: $black;
-                                opacity: 70%;
-                                margin-bottom: 10px;
-                            }
-                            &.contact-text-dark{
-                                color: $color3;
-                                font-weight: $fontweight2;
-                                a {
-                                    color: $color3; 
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-       }
+.all-units-wrapper { 
+  display: flex;
+  gap: 31px;
+  &.buying_section { 
+    display: block;
+    padding: 2rem 0 5rem;
+    .all-units-section .all-units-cards-wrap.cs_row {
+      margin-left: -12px; 
+      margin-right: -12px;
+      gap: 25px 0 !important;
+      & > .cs_col {
+        padding-left: 12px;
+        padding-right: 12px;
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+        box-sizing: border-box;
+      }
     }
-    .all-units-section{
-         h4{
-             font-size: $font18;
-             color:$darkBlack;
-             font-weight: $fontweight2;
-             margin-bottom: 16px;
-         }
-         .all-units-cards-wrap{
+    .cs_title {
+      margin-bottom: 28px;
+    }
+    .all-units-cards {
+      min-width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column;
+      figcaption {
+        padding-top: 16px;
+      }
+    }
+    p {
+      font-size: 16px;
+      opacity: 0.7;
+      line-height: 1.35;
+      margin-bottom: 15px;
+    }
+    .cs_ratio {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      border-radius: 8px;
+      &:before {
+        padding-top: 50%;
+        content: "";
+        display: block;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+    @include respond(tab_land) {
+      .all-units-section .all-units-cards-wrap.cs_row {
+        & > .cs_col {
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+    @include respond(phone_land) {
+      padding: 2rem 0 3rem;
+      .all-units-section .all-units-cards-wrap.cs_row {
+        gap: 15px 0;
+        & > .cs_col {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+    }
+    @include respond(phone) {
+      .all-units-section .all-units-cards-wrap.cs_row {
+        & > .cs_col {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+      }
+    }
+    .view-details-wrap {
+      margin-top: auto;
+    }
+  }
+  .cs_search_card{ 
+    .all-units-cards{  
+      line-height: 1.2;
+      flex: 0 0 calc(50% - 8px); 
+      max-width: calc(50% - 8px);
+      box-sizing: border-box; 
+      h3{ 
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden; 
+        text-overflow: ellipsis;
+        white-space: break-spaces;
+        display: -webkit-box;
+      }
+      *{
+        box-sizing: border-box;
+      }
+      img{
+        max-width: 100%; 
+      }
+    }
+    @include respond(tab_land) {
+      .all-units-cards{   
+        .feature-image{ 
+          height: 144px;
+        }
+      }
+    }
+    @include respond(tab) { 
+      .all-units-cards{   
+        .feature-image{ 
+          height: 110px;
+        }
+      }
+    }
+    @include respond(phone) { 
+      .all-units-cards{   
+        flex: 0 0 100%;
+        max-width: 100%;
+        .feature-image{ 
+          height: 150px; 
+        }
+      }
+    }
+  }
+  .left-side-bar-filters {
+    width: 264px;
+    @include respond(phone_land) {
+      display: none;
+      &.modal {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        top: 0;
+        left: 0;
+      }
+    }
+
+    .upper-filter-section,
+    .bottom-filter-section {
+      background-color: $color1;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 20px;
+      h3 {
+        font-weight: $fontweight2;
+        font-size: $font18;
+        margin-bottom: 15px;
+      }
+    }
+    .upper-filter-section {
+      .filter-title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .close-icon {
+          display: none;
+          margin-top: -10px;
+          @include respond(phone_land) {
+            display: block;
+          }
+        }
+      }
+      @include respond(phone_land) {
+        width: 264px;
+        margin: 52px auto;
+        overflow: scroll;
+        height: 85%;
+      }
+      h3 {
+        color: $darkBlack;
+        margin-bottom: 16px;
+      }
+      .form-view {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .range-slider .price-input {
+          align-items: center;
+          span {
+            color: $logoName;
+            font-size: $font14;
+          }
+          .field {
+            width: auto;
+            input {
+              border-bottom: 0.5px solid $logoName;
+            }
+          }
+        }
+
+        .slider-mid {
+          position: static;
+          width: 100%;
+          margin: 25px 0 15px;
+          .slider {
+            border: none;
+          }
+        }
+        .form-cols {
+          .form-ctrl {
+            background: $white;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            height: 48px;
+            font-size: $font16;
+            font-weight: 400;
+            color: $black;
+            padding: 0 10px;
+            appearance: none;
+            opacity: 70%;
+            width: 100%;
+            &.dropdown {
+              background: #fff url(../images/arrow_bottom_down.png) no-repeat
+                right 10px top 13px;
+              background-size: 25px 25px !important;
+            }
+          }
+          label {
+            display: block;
+            color: $color2;
+            font-size: $font16;
+            margin-bottom: 10px;
+            font-weight: $fontweight5;
+          }
+        }
+        .submit {
+          background-color: $black;
+          border-radius: 8px;
+          display: block;
+          width: 100%;
+          color: $white;
+          font-weight: $fontweight3;
+          font-size: $font15;
+          cursor: pointer;
+          border: none;
+          padding: 12px 0;
+          box-sizing: border-box;
+        }
+      }
+    }
+    .bottom-filter-section {
+      @include respond(phone_land) {
+        display: none;
+      }
+
+      h3 {
+        color: $color2;
+      }
+      ul {
+        li {
+          display: flex;
+          align-items: center;
+          padding: 15px 0;
+          &:first-child {
+            border-bottom: 1px solid #efefef;
+          }
+          img {
+            margin-right: 25px;
+          }
+          .contact-right-section {
+            span {
+              font-size: $font14;
+              display: block;
+              &.contact-text {
+                color: $black;
+                opacity: 70%;
+                margin-bottom: 10px;
+              }
+              &.contact-text-dark {
+                color: $color3;
+                font-weight: $fontweight2;
+                a {
+                  color: $color3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .all-units-section {
+    &.search-list {
+      flex-grow: 1;
+      .all-units-cards-wrap {
+        display: block;
+        .all-units-cards {
+          display: flex;
+          gap: 22px;
+          box-sizing: border-box; 
+          margin-bottom: 16px;
+          @include respond(tab_land) {
+            width: 100%;
+          }
+        }
+        .card-details {
+          margin-right: 35px;
+        }
+        .card-details-wrap {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .search-card {
+          flex-grow: 1;
+          .view-details-wrap {
+            text-align: left;
+          }
+        }
+        .search-image-section {
+          .feature-image {
+            width: 190px;
+            height: 140px;
+            margin: 0;
+          }
+        }
+      }
+    }
+    h4 {
+      font-size: $font18;
+      color: $darkBlack;
+      font-weight: $fontweight2;
+      margin-bottom: 16px;
+    }
+    .search-map-section {
+      img {
+        width: 100%;
+      }
+    }
+    .all-units-cards-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      @include respond(tab_land) {
+        gap: 10px;
+        justify-content: space-between;
+      }
+      .all-units-cards {
+        border: 1px solid $color1;
+        border-radius: 16px;
+        padding: 16px;
+        .card-details-wrap {
+          @include respond(phone_land) {
             display: flex;
             flex-wrap: wrap;
-            gap: 16px;
-            @include respond(tab_land) {
-                gap: 10px;
-                justify-content: space-between;
+            .card-details {
+              width: 50%;
+              position: relative;
+              margin-bottom: 40px;
+              span {
+                i {
+                  position: absolute;
+                  left: 0;
+                  top: 25px;
+                }
+              }
             }
-            .all-units-cards{
-                border: 1px solid $color1;
-                border-radius: 16px;
-                padding:16px;
-                .card-details-wrap{
-                    @include respond(phone_land) {
-                        display: flex;
-                        flex-wrap: wrap;
-                        .card-details{
-                             width: 50%;
-                             position: relative;
-                             margin-bottom: 40px;
-                             span{
-                                 i{
-                                    position: absolute;
-                                    left: 0;
-                                    top:25px;
-                                 }
-                             }
-                        }
-                    }
-                }
-                @include respond(tab_land) {
-                    width: 44%;
-                    padding: 10px;
-                }
-                @include respond(phone) {
-                    width: 100%;
-                    padding: 10px;
-                }
-                img.feature-image{
-                    margin: 0 0 16px;
-                    @include respond(tab_land) {
-                        width: 100%;
-                    }
-                }
-                h3{
-                    font-size: $font18;
-                    color: $black;
-                    font-weight: $fontweight2;
-                    margin-bottom: 10px;
-                    @include respond(tab) {
-                        font-size: $font16;
-                    }
-                }
-                .card-details{
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 16px;
-                    img{
-                         margin-right: 5px;
-                    }
-                    span{
-                        color:rgba(43, 42, 40, 0.7);
-                        font-size: $font16;
-                        i{
-                            font-weight: $fontweight2;
-                            color:$black;
-                            margin-left: 3px;
-                        }
-                    }
-                }
-                .view-details-wrap{
-                     border-top: 1px solid $color1;
-                     padding-top:16px;
-                     text-align: center;
-                     a{
-                        color:$black;
-                        font-size: $font16;
-                        font-weight: $fontweight2;
-                        i{
-                            vertical-align: middle;
-                            margin-left: 4px;
-                        }
-                     }
-                }
+          }
+        }
+        @include respond(tab_land) {
+          width: 44%;
+          padding: 10px;
+        }
+        @include respond(phone) {
+          width: 100%;
+          padding: 10px;
+        }
+        img.feature-image {
+          margin: 0 0 16px;
+          @include respond(tab_land) {
+            width: 100%;
+          }
+        }
+        h3 {
+          font-size: $font18;
+          color: $black;
+          font-weight: $fontweight2;
+          margin-bottom: 10px;
+          @include respond(tab) {
+            font-size: $font16;
+          }
+        }
+        .card-details {
+          display: flex;
+          align-items: center;
+          margin-bottom: 16px;
+          img {
+            margin-right: 5px;
+          }
+          span {
+            color: rgba(43, 42, 40, 0.7);
+            font-size: $font16;
+            i {
+              font-weight: $fontweight2;
+              color: $black;
+              margin-left: 3px;
             }
-         }
+          }
+        }
+        .view-details-wrap {
+          border-top: 1px solid $color1;
+          padding-top: 16px;
+          text-align: center;
+          a {
+            color: $black;
+            font-size: $font16;
+            font-weight: $fontweight2;
+            i {
+              vertical-align: middle;
+              margin-left: 4px;
+            }
+          }
+        }
+      }
     }
+  }
 }
-
 
 // pagination CSS
-.search-result-pagination{
-    margin:16px 0;
-    ul{
+.search-result-pagination {
+  margin: 16px 0;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    li {
+      a {
+        height: 44px;
+        width: 44px;
+        font-size: $font16;
+        font-weight: $fontweight4;
+        line-height: 44px;
+        text-align: center;
+        color: $black;
+        border-radius: 10px;
+        border: 1px solid $color1;
         display: flex;
-        justify-content: center;
         align-items: center;
-        gap: 10px;
-        li{
-             a{
-                 height: 44px;
-                 width: 44px;
-                 font-size: $font16;
-                 font-weight: $fontweight4;
-                 line-height: 44px;
-                 text-align: center;
-                 color: $black;
-                 border-radius: 10px;
-                 border: 1px solid $color1;
-                 display: flex;
-                 align-items: center;
-                 justify-content: center;
-                 box-sizing: border-box;
-                 @include respond(phone_land) {
-                    height: 30px;
-                    width: 30px;
-                }
-                 &:hover {
-                    background: #f8f8f8;
-                 }
-                 &.active{
-                    color: $white;
-                    background-color: $black;
-                 }
-             }
-             &.left-arrow {
-                img {
-                    transform: rotate(180deg);
-                }
-             }
+        justify-content: center;
+        box-sizing: border-box;
+        @include respond(phone_land) {
+          height: 30px;
+          width: 30px;
         }
-     }
+        &:hover {
+          background: #f8f8f8;
+        }
+        &.active {
+          color: $white;
+          background-color: $black;
+        }
+      }
+      &.left-arrow {
+        img {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
 }
-
 
 //  Add Class Body CSS
-body{
-     &.modal{
-        overflow: hidden;
-     }
+body {
+  &.modal {
+    overflow: hidden;
+  }
 }
+
+// No Search Found
+.no-search-found {
+  padding: 45px 0 58px;
+  margin: 0 0 25px;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center;
+  h3 {
+    font-weight: $fontweight3;
+    font-size: $font30;
+  }
+} 
+// ===========Responsive==============
+@include respond(phone_land) {
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards .card-details-wrap .card-details{
+    width: auto; 
+  } 
+}  
+@include respond(phone) {
+  .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap {
+    .all-units-cards{
+      flex-flow: column;
+      .card-details-wrap .card-details{
+        width: 50%; 
+        padding-right: 20px;
+        margin-right: 0;
+        box-sizing: border-box;
+      } 
+    }
+    .search-image-section .feature-image{
+      width: 100%;
+      height: 150px;
+    } 
+    .search-card .view-details-wrap{
+      text-align: center;
+    }
+  }
+}
+
+ 
