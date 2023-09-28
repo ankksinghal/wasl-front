@@ -208,3 +208,15 @@ $('.search-filter-view a').on('click', function(e) {
   $('.search-filter-view a').removeClass('active');
   $(this).addClass('active');
 });
+// =========Input Type File========
+function displayFileName(input) {
+  const fileInput = document.getElementById('fileInput');
+  const uploadedFileName = document.getElementById('uploadedFileName');
+
+  if (fileInput.files.length > 0) {
+      const fileName = fileInput.files[0].name;
+      uploadedFileName.textContent = `Uploaded file: ${fileName}`;
+  } else {
+      uploadedFileName.textContent = '';
+  }
+}
