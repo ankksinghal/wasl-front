@@ -3649,7 +3649,7 @@ body.modal {
 }
 .login-page .main-login .right-section .loginBtns-div .uae-btn {
   border-radius: 8px;
-  border: 1px solid Olive #2B2A28;
+  border: 1px solid #2B2A28;
   background-color: #ffffff;
   padding: 16px 18px;
   display: flex;
@@ -4285,12 +4285,15 @@ span.tooltip:hover .pop-over {
   display: flex;
   flex-direction: column;
 }
-.enquiry-form div input, .enquiry-form div select {
+.enquiry-form div input,
+.enquiry-form div select {
   margin-top: 10px;
   font-size: 16px;
+  color: rgba(43, 40, 42, 0.7);
 }
 @media screen and (max-width: 575px) {
-  .enquiry-form div input, .enquiry-form div select {
+  .enquiry-form div input,
+  .enquiry-form div select {
     font-size: 14px;
   }
 }
@@ -4313,7 +4316,8 @@ span.tooltip:hover .pop-over {
   flex-direction: row;
   gap: 8px;
 }
-.enquiry-form div .mobile-number input, .enquiry-form div .mobile-number select {
+.enquiry-form div .mobile-number input,
+.enquiry-form div .mobile-number select {
   box-sizing: border-box;
   line-height: initial;
 }
@@ -4414,15 +4418,13 @@ span.tooltip:hover .pop-over {
   color: #6b6a69;
 }
 .enquiry-form div select.select-value {
-  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+  background: #ffffff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
   background-size: 25px 25px;
-  color: #3A3A3C;
 }
 .enquiry-form div select.select-size {
-  background: #FFFFFF url(../images/arrow_bottom_down.png) no-repeat right 5px top 13px;
+  background: #ffffff url(../images/arrow_bottom_down.png) no-repeat right 5px top 13px;
   background-size: 25px 25px;
   padding-left: 12px;
-  color: #3A3A3C;
 }
 @media screen and (max-width: 767px) {
   .enquiry-form > div {
