@@ -4603,22 +4603,57 @@ span.tooltip:hover .pop-over {
     padding-bottom: 5px;
   }
 }
-.enquiry-form div select {
-  appearance: none;
-  background-color: #FFFFFF;
-  font-weight: 400;
+.enquiry-form div .enquiry-select {
+  border: 1px solid;
+  border-radius: 8px;
+  margin-top: 10px;
   font-size: 1em;
-  line-height: 24px;
-  color: #6b6a69;
+  color: rgba(43, 40, 42, 0.7);
+  border: 1px solid #c6c7c3;
+  padding: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #ffffff url(../images/down-arrow.svg) no-repeat right 10px top 20px;
+  position: relative;
+  background-size: 12px 12px;
+  height: 55px;
+  box-sizing: border-box;
 }
-.enquiry-form div select.select-value {
-  background: #ffffff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
-  background-size: 25px 25px;
+.enquiry-form div .enquiry-select.area-code {
+  width: 22%;
 }
-.enquiry-form div select.select-size {
-  background: #ffffff url(../images/arrow_bottom_down.png) no-repeat right 5px top 13px;
-  background-size: 25px 25px;
-  padding-left: 12px;
+.enquiry-form div .enquiry-select.show {
+  background: #ffffff url(../images/up-arrow.svg) no-repeat right 10px top 20px;
+  background-size: 12px 12px;
+}
+.enquiry-form div .enquiry-select.show .without-label {
+  display: block;
+}
+.enquiry-form div .enquiry-select label {
+  cursor: pointer;
+}
+.enquiry-form div .enquiry-select .without-label {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-radius: 0px 0px 8px 8px;
+  border: 1px solid #E2E2E2;
+  background: #FFF;
+  z-index: 2;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.enquiry-form div .enquiry-select .without-label li {
+  color: #2B2A28;
+  padding: 15px 16px;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: all 0.4s ease-in-out;
+  text-align: left;
 }
 @media screen and (max-width: 767px) {
   .enquiry-form > div {
