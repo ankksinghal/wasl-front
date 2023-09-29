@@ -124,8 +124,8 @@
 
   <section class="login-page">
     <div class="container">
-      <div class="main-login">
-        <div class="left-section">
+      <div class="main-login project-view">
+        <div class="left-section lease-left land-tab-view">
           <div class="lease-img-box">
             <figure><img src="../assets/images/lease-login.png" alt="" /></figure>
             <div class="card-details-outer">
@@ -146,16 +146,46 @@
               </div>
               <p>**Reservation fees non-refundable</p>
             </div>
+
+            <div class="card-details-outer-mob">
+              <h3>South Heights - RT1-105</h3>
+              <div class="card-details-wrap">
+                <div class="card-details">
+                  <img src="../assets/images/location.png" alt="">
+                  <span>Al Qusais Ind.Fifth</span>
+                </div>
+              </div>
+              <div class="card-details-wrap divider">
+                <div class="card-details">
+                    <img src="../assets/images/apart.svg" alt="">
+                    <span>Apartment</span>
+                </div>
+                <div class="card-details">
+                    <img src="../assets/images/sqf.svg" alt="">
+                    <span>350 Sq. ft</span>
+                </div>
+                <div class="card-details">
+                    <img src="../assets/images/bed.svg" alt="">
+                    <span>3 Beds</span>
+                </div>
+              </div>
+              <div class="card-details-wrap">
+                <div class="card-details">
+                  <strong>AED 60,500 / YEAR</strong>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </div>
         <div class="right-section big-form lease-form">
             <div class="form">
                 <form id="login-form">
                     <ul class="stapper_design">
-                        <li class="current">
+                        <li class="">
                             <span>Details</span>
                         </li>
-                        <li class=""> 
+                        <li class="current"> 
                           <span>Upload<br />
                             Documents  </span>                         
                         </li>
@@ -166,7 +196,12 @@
                           <span>Payment</span>
                         </li>
                     </ul>
-                    <div class="form-row">
+                    <div class="otp-counter top-head">
+                      <label>
+                        RENTING STEPS:<strong>Timeout in 08m 30s</strong>
+                      </label>
+                    </div>
+                    <div class="form-row form-lease">
                         <div class="form-col full-width">
                             <h2 class="mb-0">Terms & Conditions</h2>
                         </div>
@@ -206,42 +241,48 @@
 
                         <div class="form-col full-width">
                             <div class="fieldset-area">
-                                <h3>Points to remember</h3>
-                                <label class="check-box linking-view">
+                                <h3 id="pointsTo">
+                                  <button type="button">
+                                    <img src="../assets/images/material-symbols_arrow-drop-up.svg" alt="drop">
+                                  </button>
+                                  Points to remember</h3> 
+                                <div class="lable-list" id="lable-list">
+                                  <label class="check-box linking-view">
                                     <samp>Family residence for residential usage only</samp>
                                     <input type="checkbox" checked="checked" disabled>
                                     <span class="checkmark"></span>
-                                </label>
-                                <label class="check-box linking-view">
-                                    <samp>Subrenting not allowed</samp>
-                                    <input type="checkbox" checked="checked" disabled>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="check-box linking-view">
-                                    <samp>Pets are not allowed for apartments (Villas are allowed)</samp>
-                                    <input type="checkbox" checked="checked" disabled>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="check-box linking-view">
-                                    <samp>Commission fees non-refundable</samp>
-                                    <input type="checkbox" checked="checked" disabled>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="check-box linking-view">
-                                    <samp>All government fees are non-refundable under any circumstances.</samp>
-                                    <input type="checkbox" checked="checked" disabled>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="check-box linking-view">
-                                    <samp>Valid documents needed (Passport-Visa-Emirates ID)</samp>
-                                    <input type="checkbox" checked="checked" disabled>
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="check-box linking-view">
-                                    <samp>All government fees are non-refundable under any circumstances.</samp>
-                                    <input type="checkbox" checked="checked" disabled>
-                                    <span class="checkmark"></span>
-                                </label>
+                                  </label>
+                                  <label class="check-box linking-view">
+                                      <samp>Subrenting not allowed</samp>
+                                      <input type="checkbox" checked="checked" disabled>
+                                      <span class="checkmark"></span>
+                                  </label>
+                                  <label class="check-box linking-view">
+                                      <samp>Pets are not allowed for apartments (Villas are allowed)</samp>
+                                      <input type="checkbox" checked="checked" disabled>
+                                      <span class="checkmark"></span>
+                                  </label>
+                                  <label class="check-box linking-view">
+                                      <samp>Commission fees non-refundable</samp>
+                                      <input type="checkbox" checked="checked" disabled>
+                                      <span class="checkmark"></span>
+                                  </label>
+                                  <label class="check-box linking-view">
+                                      <samp>All government fees are non-refundable under any circumstances.</samp>
+                                      <input type="checkbox" checked="checked" disabled>
+                                      <span class="checkmark"></span>
+                                  </label>
+                                  <label class="check-box linking-view">
+                                      <samp>Valid documents needed (Passport-Visa-Emirates ID)</samp>
+                                      <input type="checkbox" checked="checked" disabled>
+                                      <span class="checkmark"></span>
+                                  </label>
+                                  <label class="check-box linking-view">
+                                      <samp>All government fees are non-refundable under any circumstances.</samp>
+                                      <input type="checkbox" checked="checked" disabled>
+                                      <span class="checkmark"></span>
+                                  </label>
+                                </div>
                             </div>
                         </div>
                         <label class="check-box linking-view">

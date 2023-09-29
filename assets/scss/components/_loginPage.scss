@@ -18,16 +18,39 @@
             justify-content: center;
         }
         @include respond(desk) {
-            justify-content: space-around;
+            justify-content: space-between;
+        }
+        @media(min-width:991px) and (max-width:1399px) {
+            &.project-view {
+                flex-wrap: nowrap;
+                gap: 30px;
+            }
         }
         @include respond(tab) {
             align-items: center;
+            justify-content: space-around;
         }
         .left-section{
             display: flex;
             flex-direction: column;
+            @include respond(desk) {
+                &.land-tab-view {
+                    max-width: none;
+                }
+            }
             @include respond(tab) {
                 display: none;
+                &.lease-left {
+                    display: block;
+                    margin-bottom: 20px;
+                    width: 100%;
+                    max-width: initial;
+                }
+            }
+            &.lease-left.land-tab-view {
+                @include respond(desk) {
+                    .card-details-outer { padding: 25px 15px; }
+                }
             }
             .img-box {
                 position: relative;
@@ -127,9 +150,15 @@
                 justify-content:flex-start;
                 &.lease-form {
                     max-width: 602px;
+                    @include respond(tab) {
+                        max-width: initial;
+                    }
                 }
                 @include respond(tab_land) {
-                    max-width: 397px;
+                    max-width: 437px;
+                }
+                @media(min-width:768px) and (max-width:991px) {
+                    max-width: 100%;
                 }
                 .form-row {
                     display: flex;
@@ -141,7 +170,7 @@
                     .form-col {
                         flex: 48%;
                         &.full-width {
-                            flex: 100%;
+                            flex: 100% !important;
                         }
                         &.divider-33 {
                             display: flex;
@@ -162,6 +191,13 @@
                         &.no-gap {
                             gap: unset;
                         }
+                        &.form-lease {
+                            .form-col {
+                                flex: 48%;
+                            }
+                        }
+                    }
+                    @include respond(phone_land) {
                         .form-col {
                             flex: 100%;
                         }
@@ -387,6 +423,9 @@
                     gap: 18px;
                     &.half-view {
                         flex-direction: row; 
+                        @include respond(phone_land) {
+                            flex-direction: column; 
+                        }
                     }
                 } 
                 .button-style {
@@ -818,15 +857,28 @@ span.tooltip {
     background: #E4E4DC;
     border-radius: 16px;
     overflow: hidden;
+    @include respond(tab) {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 6px;
+        max-width: initial;
+    }
     figure {
         margin: 0;
         padding: 0;
         img {
             width: 100%;
             height: auto;
+            float: left;
+        }
+        @include respond(tab) {
+            width: 130px;
+            border-radius: 16px;
+            overflow: hidden;
         }
     }
-    .card-details-outer {
+    .card-details-outer, .card-details-outer-mob {
         display: flex;
         flex-direction: column;
         gap: 9px;
@@ -885,6 +937,65 @@ span.tooltip {
             margin-top: 20px;
         }
     }
+
+    .card-details-outer {
+        display: none;
+        @media (min-width:992px) {
+            display: flex;
+        }
+    }
+
+    .card-details-outer-mob {
+        padding: 0px;
+        gap: 5px;
+        min-height: auto;
+        flex: 1;
+        display: none;
+        @include respond(tab) {
+            display: flex;
+        }
+        h3 {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+        }
+        .card-details-wrap {
+            gap: 3px;
+            &.divider {
+                flex-direction: row;
+                gap: 10px;
+            }
+            .card-details {  
+                gap: 4px;
+                align-items: stretch;
+                img {
+                    max-width: 15px;
+                    max-height: 15px;
+                }
+                span {
+                  font-size: 10px;
+                  justify-content: unset;
+                  gap: 4px;
+                  align-items: center;
+                  line-height: 18px;
+                  i {
+                    font-weight: $fontweight2;
+                    color: $black;
+                    margin-left: 3px;
+                  }
+                }
+                strong {
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+        p {
+            font-size: 12px;
+            margin: 0;
+        }
+    }
 }
 
 
@@ -925,6 +1036,44 @@ span.tooltip {
         color: #1C1C1E;
         padding-bottom: 12px;
         border-bottom: 1px solid #EFEFEF;
+        display: flex;
+        align-items: center;
+        @include respond(phone_land) {
+            color: #A85B57;
+        }
+        button {
+            border: none;
+            padding: 0;
+            margin: 0;
+            width: 30px;
+            height: 30px;
+            background: none;
+            display: none;
+            align-items: center;
+            justify-content: flex-start;
+            margin-right: 10px;
+            @include respond(phone_land) {
+                display: flex;
+            }
+            img {
+                width: 100%;
+                height: auto;
+                &.rotate {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    .lable-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @include respond(phone_land) {
+            display: none;
+            &.view {
+                display: flex;
+            }
+        }
     }
     label {
         margin: 0 !important;
@@ -978,6 +1127,15 @@ span.tooltip {
         transition: all 0.4s ease-in-out;
         &:hover {
             background-color: #575757;
+        }
+    }
+    &.top-head {
+        label { 
+            width: 100%;  justify-content: space-between; text-transform: uppercase;
+            strong {
+                font-weight: 400 !important;
+                text-transform: capitalize;
+            }
         }
     }
 }
@@ -1049,12 +1207,19 @@ span.tooltip {
     counter-reset: my-sec-counter;
     gap: 14px;
     margin-bottom: 21px;
+    @include respond(phone_land) {
+        gap: 0px;
+    }
     li {
         flex: 1;
         display: flex;
         align-items: center;
         gap: 8px;
         position: relative;
+        @include respond(phone_land) {
+            flex-direction: column;
+            gap: 10px;
+        }
         span {
             font-size: 16px;
             font-style: normal;
@@ -1062,6 +1227,11 @@ span.tooltip {
             line-height: 24px;
             background: #fff;
             color: #4BB543;
+            @include respond(phone_land) {
+                text-align: center;
+                font-size: 10px;
+                line-height: 12px;
+            }
             &::before {
                 content: "L";
                 width: 34px;
@@ -1081,10 +1251,21 @@ span.tooltip {
                 -ms-transform: scaleX(-1) rotate(-35deg); /* IE 9 */
                 -webkit-transform: scaleX(-1) rotate(-35deg); /* Chrome, Safari, Opera */
                 transform: scaleX(-1) rotate(-35deg);
+                @include respond(phone_land) {
+                    width: 20px;
+                    height: 20px;
+                    bottom: unset;
+                    right: 0;
+                    top: 0;
+                    font-size: 12px;
+                }
             }
         }
         &:not(:last-child) span {
             padding-right: 10px;
+            @include respond(phone_land) {
+                padding: 0;
+            }
         }
         &:before {
             counter-increment: my-sec-counter;
@@ -1102,6 +1283,10 @@ span.tooltip {
             background-color: #4BB543;
             color: #fff;
             border:1px solid #4BB543;
+            @include respond(phone_land) {
+                width: 20px;
+                height: 20px;
+            }
 
         }
         &:not(:last-child):after {
@@ -1112,9 +1297,17 @@ span.tooltip {
             position: absolute;
             right: 0;
             z-index: -1;
+            @include respond(phone_land) {
+                width: 100%;
+                left: 50%;
+                top: 10px;
+            }
         }
         &:last-child {
             flex: inherit;
+            @include respond(phone_land) {
+                flex: 1;
+            }
         }
         &.current {
             span { 
@@ -1128,6 +1321,9 @@ span.tooltip {
                 color: #fff;
                 border-color: #2B2A28;
                 font-size: 16px;
+                @include respond(phone_land) {
+                    font-size: 10px;
+                }
             }
             &::after {
                 background-color: #E4E4DC;
@@ -1144,6 +1340,9 @@ span.tooltip {
                     color: #2B2A28;
                     border-color: #E4E4DC;
                     font-size: 16px;
+                    @include respond(phone_land) {
+                        font-size: 10px;
+                    }
                 }
                 &::after {
                     background-color: #E4E4DC;

@@ -122,6 +122,11 @@ $(document).ready(function() {
     $("#quicklinks").toggleClass("rotate");
   });
 
+  $("#pointsTo").click(function(){
+    $("#lable-list").toggleClass("view");
+    $("#pointsTo img").toggleClass("rotate");
+  });
+
   $(function(){  
     var tab = $('.tab-list .tabButton'),
     content= $('.tabsContent .tabContent');
