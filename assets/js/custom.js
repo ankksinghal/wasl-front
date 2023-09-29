@@ -208,3 +208,49 @@ $('.search-filter-view a').on('click', function(e) {
   $('.search-filter-view a').removeClass('active');
   $(this).addClass('active');
 });
+// =========Input Type File========
+function displayFileName(input) {
+  const fileInput = document.getElementById('fileInput');
+  const uploadedFileName = document.getElementById('uploadedFileName');
+
+  if (fileInput.files.length > 0) {
+      const fileName = fileInput.files[0].name;
+      uploadedFileName.textContent = `Uploaded file: ${fileName}`;
+  } else {
+      uploadedFileName.textContent = '';
+  }
+}
+
+// Enquiry forms
+$(function() {
+  $("#selectHere").on("click", function(e) {
+    $(this).toggleClass("show");
+    e.stopPropagation()
+  });
+  $(document).on("click", function(e) {
+    if ($(e.target).is("#selectHere") === false) {
+      $("#selectHere").removeClass("show");
+    }
+  });
+});
+$('#selectHere .without-label li').on('click', function(e) {
+  var tagValue = $(this).text();
+  $("#selectHere label").text(tagValue);
+});
+
+// Enquiry forms
+$(function() {
+  $("#area-code").on("click", function(e) {
+    $(this).toggleClass("show");
+    e.stopPropagation()
+  });
+  $(document).on("click", function(e) {
+    if ($(e.target).is("#selectHere") === false) {
+      $("#selectHere").removeClass("show");
+    }
+  });
+});
+$('#area-code .without-label li').on('click', function(e) {
+  var tagValue = $(this).text();
+  $("#area-code label").text(tagValue);
+});
