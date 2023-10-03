@@ -139,27 +139,31 @@ footer{
             }
         }
         .sm-section{
-            display: flex;
-            gap: 4px;
             padding-top: 16px;
-            align-items: center;
-            span{
-                font-size: $font16;
-                color: $black;
-                display: inline-block;
-                text-transform: uppercase;
+            display: flex;
+            justify-content: space-between;
+            @include respond(phone) {
+                flex-direction: column;
+                gap: 10px;
             }
-            @include respond(phone_land) {
-                padding:10px 0;
-                justify-content: flex-start;
-            }
-            a {
+            .inner-area {
                 display: flex;
-            }
-            img{
-                width: 25px;
-                height: 25px;
-                float: left;
+                gap: 4px;
+                align-items: center;
+                span{
+                    font-size: $font16;
+                    color: $black;
+                    display: inline-block;
+                    text-transform: uppercase;
+                }
+                a {
+                    display: flex;
+                }
+                img{
+                    width: 25px;
+                    height: 25px;
+                    float: left;
+                }
             }
         }
     }
@@ -194,6 +198,70 @@ footer{
         }
         &.rotate {
             img {transform: rotate(180deg); }
+        }
+    }
+}
+
+.app-status {
+    background: #A79F92;
+    height: 175px;
+    margin-top: 238px;
+    display: flex;
+    @include respond(tab) {
+        height: 275px;
+    }
+    .inner-area-box {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex: 1;
+        @include respond(tab) {
+            flex: unset;
+            align-items: flex-end;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            &.responsive_device {
+                position: absolute;
+                bottom: -48px;
+                @include respond(tab) {
+                    bottom: auto;
+                    top: -160px;
+                    left: 0;
+                    right: 0;
+                }
+            }
+        }
+        .app-detail {
+            margin-left: 40%;
+            flex: 1;
+            @include respond(tab) {
+                margin-left: unset;
+                flex: unset;
+                text-align: center;
+            }
+            h2 {
+                font-size: 34px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 55px;
+                color: #000810;
+                margin-bottom: 10px;
+                @include respond(tab) {
+                    font-size: 30px;
+                    text-align: center;
+                }
+            }
+            a {
+                display: inline-block;
+                margin-right: 20px;
+                @include respond(tab) {
+                    margin: 0 10px
+                }
+            }
         }
     }
 }
