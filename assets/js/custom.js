@@ -122,6 +122,11 @@ $(document).ready(function() {
     $("#quicklinks").toggleClass("rotate");
   });
 
+  $("#pointsTo").click(function(){
+    $("#lable-list").toggleClass("view");
+    $("#pointsTo img").toggleClass("rotate");
+  });
+
   $(function(){  
     var tab = $('.tab-list .tabButton'),
     content= $('.tabsContent .tabContent');
@@ -249,7 +254,6 @@ $('#area-code .without-label li').on('click', function(e) {
 function displayFileName(input) {
   const fileInput = document.getElementById('fileInput');
   const uploadedFileName = document.getElementById('uploadedFileName');
-
   if (fileInput.files.length > 0) {
       const fileName = fileInput.files[0].name;
       uploadedFileName.textContent = `${fileName}`;

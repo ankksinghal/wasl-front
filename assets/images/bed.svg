@@ -1,0 +1,15 @@
+<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Hotel Double Bed 4" clip-path="url(#clip0_4268_28402)">
+<path id="Vector" d="M1.5 5.625V4.5C1.5 4.30109 1.57902 4.11032 1.71967 3.96967C1.86032 3.82902 2.05109 3.75 2.25 3.75H5.25C5.44891 3.75 5.63968 3.82902 5.78033 3.96967C5.92098 4.11032 6 4.30109 6 4.5V5.625" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M6 5.625V4.5C6 4.30109 6.07902 4.11032 6.21967 3.96967C6.36032 3.82902 6.55109 3.75 6.75 3.75H9.75C9.94891 3.75 10.1397 3.82902 10.2803 3.96967C10.421 4.11032 10.5 4.30109 10.5 4.5V5.625" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M1.375 5.625H10.625C10.8902 5.625 11.1446 5.73036 11.3321 5.91789C11.5196 6.10543 11.625 6.35978 11.625 6.625V9H0.375V6.625C0.375 6.35978 0.480357 6.10543 0.667893 5.91789C0.85543 5.73036 1.10978 5.625 1.375 5.625Z" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_4" d="M0.375 9V10.5" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M11.625 9V10.5" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M10.5 5.625V2.25C10.5 2.05109 10.421 1.86032 10.2803 1.71967C10.1397 1.57902 9.94891 1.5 9.75 1.5H2.25C2.05109 1.5 1.86032 1.57902 1.71967 1.71967C1.57902 1.86032 1.5 2.05109 1.5 2.25V5.625" stroke="#666666" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_4268_28402">
+<rect width="12" height="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>
