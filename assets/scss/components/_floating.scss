@@ -10,12 +10,12 @@
         li{
             a{
                  display: block;
-                 height: 52px;
-                 width: 52px;
-                 border-radius: 12px;
+               //   height: 52px;
+               //   width: 52px;
+               //   border-radius: 12px;
                  text-align: center;
-                 line-height: 52px;
-                 box-shadow: 0px 4px 14px 0px #00000021;
+               //   line-height: 52px;
+               //   box-shadow: 0px 4px 14px 0px #00000021;
                  @include respond(phone_land) {
                   height: 35px;
                   width: 35px;
@@ -34,10 +34,10 @@
                 }
                  img{
                      vertical-align: middle;
-                     max-width: 28px;
+                     max-width: 40px;
                      height: auto;
                      @include respond(phone_land) {
-                        max-width: 18px;
+                        max-width: 30px;
                      }
                  }
             }
