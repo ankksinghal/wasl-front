@@ -725,7 +725,34 @@ body {
     }
   }
 }
-
+.cs_upload{
+  .file_lable{
+    line-height: 24px;
+    small{
+      color: $logoName; 
+    }
+  }
+  .file-input-container{
+    margin-top: 10px;
+    height: 55px;
+    align-items: center;
+    justify-content: start;
+    border-color:  $color6;
+    flex-flow: row;
+    .file-input-label{
+      border-radius: 8px;
+      font-size: 16px;
+      color: $color2;
+      background: $bannerBoxColor;
+      padding: 10px 14px;
+      flex: 0 0 110px;     
+      cursor: pointer;
+    }
+    @include respond (tab){
+      height: 48px;
+    }
+  }
+}
 .cs_responsive_vdo {
   position: relative;
   display: block;
