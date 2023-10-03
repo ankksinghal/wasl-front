@@ -3247,6 +3247,34 @@ body.modal {
   font-size: 80%;
 }
 
+.cs_upload .file_lable {
+  line-height: 24px;
+}
+.cs_upload .file_lable small {
+  color: #8D8D87;
+}
+.cs_upload .file-input-container {
+  margin-top: 10px;
+  height: 55px;
+  align-items: center;
+  justify-content: start;
+  border-color: #c6c7c3;
+  flex-flow: row;
+}
+.cs_upload .file-input-container .file-input-label {
+  border-radius: 8px;
+  font-size: 16px;
+  color: #1C1C1E;
+  background: #E4E4DC;
+  padding: 10px 14px;
+  flex: 0 0 110px;
+}
+@media screen and (max-width: 991px) {
+  .cs_upload .file-input-container {
+    height: 48px;
+  }
+}
+
 .cs_responsive_vdo {
   position: relative;
   display: block;
@@ -4480,16 +4508,23 @@ span.tooltip:hover .pop-over {
   flex-direction: column;
 }
 .enquiry-form div input,
-.enquiry-form div select {
+.enquiry-form div select, .enquiry-form div textarea {
   margin-top: 10px;
   font-size: 16px;
   color: rgba(43, 40, 42, 0.7);
 }
 @media screen and (max-width: 575px) {
   .enquiry-form div input,
-  .enquiry-form div select {
+  .enquiry-form div select, .enquiry-form div textarea {
     font-size: 14px;
   }
+}
+.enquiry-form div select.bg_trnsp {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  background: #ffffff url(../images/down-arrow.svg) no-repeat right 10px top 20px/12px;
 }
 @media screen and (max-width: 767px) {
   .enquiry-form div select.select-size#area-code {
@@ -4528,7 +4563,7 @@ span.tooltip:hover .pop-over {
   margin: 0;
 }
 .enquiry-form div .mobile-number #area-code {
-  width: 119px;
+  width: 89px;
 }
 .enquiry-form div .mobile-number #mobile-number {
   flex: auto;
@@ -4541,9 +4576,6 @@ span.tooltip:hover .pop-over {
 @media all and (max-width: 991px) and (min-width: 768px), (max-width: 575px) {
   .enquiry-form div .mobile-number #mobile-prefix {
     width: 45px;
-  }
-  .enquiry-form div .mobile-number #mobile-number {
-    max-width: 177px;
   }
 }
 .enquiry-form div .form-label {
@@ -4670,12 +4702,22 @@ span.tooltip:hover .pop-over {
     margin-bottom: 1.5rem;
   }
 }
+.enquiry-form.fullWidth {
+  display: block;
+  margin-top: 18px;
+}
+.enquiry-form.fullWidth textarea {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  font-family: inherit;
+}
 
 .link-section {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
-  margin-bottom: 237px;
+  margin-bottom: 100px;
 }
 .link-section .captcha {
   width: 40%;
@@ -4750,7 +4792,7 @@ span.tooltip:hover .pop-over {
   margin-top: 39px;
   gap: 18px;
 }
-.link-section .btns a {
+.link-section .btns a, .link-section .btns button {
   padding: 16px 18px;
   width: 170px;
   display: flex;
@@ -4760,18 +4802,28 @@ span.tooltip:hover .pop-over {
   font-weight: 500;
   font-size: 1em;
   line-height: 24px;
+  border: 0 none;
 }
-.link-section .btns a.continue-btn {
+.link-section .btns a.continue-btn, .link-section .btns button.continue-btn {
   background-color: #1C190E;
   color: #FFFFFF;
 }
-.link-section .btns a.cancel-btn {
+.link-section .btns a.long_btn, .link-section .btns button.long_btn {
+  width: 375px;
+  max-width: 100%;
+}
+@media screen and (max-width: 575px) {
+  .link-section .btns a.long_btn, .link-section .btns button.long_btn {
+    width: 100%;
+  }
+}
+.link-section .btns a.cancel-btn, .link-section .btns button.cancel-btn {
   background-color: #FFFFFF;
   color: #2B2A28;
   border: 1px solid #2B2A28;
 }
 @media all and (max-width: 991px) {
-  .link-section .btns a {
+  .link-section .btns a, .link-section .btns button {
     width: 127px;
     line-height: 1;
   }
