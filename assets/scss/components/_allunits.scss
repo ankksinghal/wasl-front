@@ -746,6 +746,7 @@ body {
       background: $bannerBoxColor;
       padding: 10px 14px;
       flex: 0 0 110px;     
+      cursor: pointer;
     }
     @include respond (tab){
       height: 48px;
