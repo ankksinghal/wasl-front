@@ -111,11 +111,15 @@ footer{
             }
             @include respond(phone_land) {
                 border-bottom:none;
+                text-align: center;
             }
             ul{
                 display: flex;
                 gap: 9px;
                 flex-wrap: wrap;
+                @include respond(phone_land) {
+                    justify-content: center;
+                }
                 li{
                      margin:0;
                      display: inline-block;

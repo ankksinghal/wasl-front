@@ -8,10 +8,17 @@
       overflow-y: hidden;
       flex-direction: row;
       display: flex;
+      position: relative;
+      bottom: -6px;
     }
     li {
       display: inline-block;
       border-radius: 8px 8px 0 0;
+      @include respond(phone_land) {
+         display: flex;
+         align-self: center;
+         text-align: center;
+      }
       &.active {
         background-color: $white;
         font-weight: $fontweight2;

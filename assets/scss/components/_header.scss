@@ -16,15 +16,15 @@ header{
                 background: #E4E4DC;
                 box-sizing: border-box;
                 width: 100%;
-                right: -286px;
+                left: -286px;
                 width: 286px;
                 z-index: 99;
                 overflow: scroll;
                 height: 100%;
-                transition: right 0.3s ease-in-out;
-                border-radius: 20px 0 0 20px;
+                transition: left 0.3s ease-in-out;
+                border-radius: 0 20px 20px 0;
                 &.slide{
-                    right: 0;
+                    left: 0;
                     .mobile-search{
                          display: block;
                          border-bottom: 1px solid #A79F92;
@@ -76,6 +76,7 @@ header{
                         @include respond(phone_land) {
                             flex-wrap: wrap;
                             justify-content: end;
+                            display: block;
                          }
                         li{
                             border-left: 1.5px solid $Primary;
@@ -83,6 +84,7 @@ header{
                             @include respond(phone_land) {
                                 padding: 0 12px 0;
                                 margin-bottom: 12px;
+                                border-left:none;
                                 &.test{
                                      display: none;
                                 }
