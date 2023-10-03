@@ -11,13 +11,20 @@
   }
   div {
     input,
-    select {
+    select , textarea{ 
       margin-top: 10px;
       font-size: 16px;
       color: rgba(43, 40, 42, 0.7);
       @include respond(phone) {
         font-size: 14px;
       }
+    }
+    select.bg_trnsp{
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: ''; 
+      background:#ffffff url(../images/down-arrow.svg) no-repeat right 10px top 20px/12px;
     }
     @include respond(phone_land) {
       select.select-size#area-code {
@@ -58,7 +65,7 @@
         }
       }
       #area-code {
-        width: 119px;
+        width: 89px;    
       }
       #mobile-number {
         flex: auto;
@@ -73,9 +80,6 @@
         (max-width: 575px) {
         #mobile-prefix {
           width: 45px;
-        }
-        #mobile-number {
-          max-width: 177px;
         }
       }
     }
@@ -220,12 +224,22 @@
       margin-bottom: 1.5rem;
     }
   }
+  &.fullWidth{ 
+    display: block;
+    margin-top: 18px;
+    textarea{
+      margin-top: 10px;
+      width: 100%;
+     height: auto;
+     font-family: inherit;
+    }
+  }
 }
 .link-section {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
-  margin-bottom: 237px;
+  margin-bottom: 100px;
   .captcha {
     width: 40%;
     height: 88px;
@@ -293,7 +307,7 @@
     display: flex;
     margin-top: 39px;
     gap: 18px;
-    a {
+    a,button {
       padding: 16px 18px;
       width: 170px;
       display: flex;
@@ -303,9 +317,17 @@
       font-weight: $fontweight2;
       font-size: $font16;
       line-height: 24px;
+      border: 0 none;
       &.continue-btn {
         background-color: $Primary;
         color: $white;
+      }
+      &.long_btn{
+        width: 375px;
+        max-width: 100%;
+        @include respond (phone){
+          width: 100%;
+        }
       }
       &.cancel-btn {
         background-color: $white;
