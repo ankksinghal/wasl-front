@@ -100,6 +100,7 @@ $(document).ready(function() {
   });
 
    // Toggle the mobile menu when the menu button is clicked
+  
    $(".mobile-menu").click(function () {
     $("#responsive-nav").addClass('slide');
     $(".overlay").addClass('slide');
@@ -111,6 +112,13 @@ $(document).ready(function() {
       $("body").removeClass('slide');
     });
 
+    $(".overlay").click(function () {
+      $("#responsive-nav").removeClass('slide');
+      $(".overlay").removeClass('slide');
+      $("body").removeClass('slide');
+    });
+
+     
 
   $("#advanced-filters").click(function(){
     $(".advanced-filters-box").toggleClass("view");
