@@ -332,6 +332,8 @@ header .header-section .right-section .right-top-section {
 }
 header .header-section .right-section .right-top-section .top-nav-section ul {
   display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 @media screen and (max-width: 767px) {
   header .header-section .right-section .right-top-section .top-nav-section ul {
