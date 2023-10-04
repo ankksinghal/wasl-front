@@ -99,12 +99,19 @@ $(document).ready(function () {
   });
 
   // Toggle the mobile menu when the menu button is clicked
+
   $(".mobile-menu").click(function () {
     $("#responsive-nav").addClass("slide");
     $(".overlay").addClass("slide");
     $("body").addClass("slide");
   });
   $(".close-nav").click(function () {
+    $("#responsive-nav").removeClass("slide");
+    $(".overlay").removeClass("slide");
+    $("body").removeClass("slide");
+  });
+
+  $(".overlay").click(function () {
     $("#responsive-nav").removeClass("slide");
     $(".overlay").removeClass("slide");
     $("body").removeClass("slide");
@@ -269,14 +276,12 @@ $("#cs_tab_nav li").click(function () {
 
   var activeTab = $(this).find("a").attr("href");
   $(activeTab).fadeIn();
-  $('.about_slider').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false, 
-    items:1,
-  })
+  $(".about_slider").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    items: 1,
+  });
   return false;
 });
 // =========About us===============
- 
-
