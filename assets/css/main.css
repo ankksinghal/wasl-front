@@ -5678,7 +5678,7 @@ ul.breadcrumb li a:hover {
     background: #E4E4DC;
   }
   .tab_layout_block .cs_tab_nav::-webkit-scrollbar-thumb:hover {
-    background: #585754;
+    background: #8E8E93;
   }
 }
 .tab_layout_block .cs_tab_nav li a {
@@ -5711,7 +5711,7 @@ ul.breadcrumb li a:hover {
   opacity: 1;
 }
 .tab_layout_block .cs_tab_nav li a:hover {
-  background: #E4E4DC;
+  background: #f5f5f5;
 }
 .tab_layout_block .cs_tab_nav li a:hover::before {
   background: #A79F92;
