@@ -6,7 +6,7 @@
          width: 100%;
          height: auto;
          @include respond(tab) {
-            height: 75px;
+            height: 81px;
             object-fit: cover;
         }
      }
