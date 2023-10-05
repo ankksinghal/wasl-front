@@ -22,94 +22,7 @@
                 max-width: 70%;
             }
         }
-    }  
-    .subscribeBtn-div{
-        width: 390px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 54.67px;
-        margin-top: 49px;
-        position: relative;
-        @include respond(tab_land) {
-            margin-top: 20px;
-        }
-        @include respond(tab) {
-            margin-top: 25px;
-        }
-        @include respond(phone_land) {
-            margin-top: 5px;
-            width: 100%;
-        }
-        .subscribe-first{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .icon-div{
-                width: 55px;
-                height: 38.85px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #FF0000;
-                border-radius: 10px;
-                img{
-                    width: 14.25px;
-                    height: 16px;
-                }
-            }
-            .sub-text{
-                margin-left: 17.48px;
-                @include respond(phone_land) {
-                    margin-left: 10px;
-                }
-                p{
-                    font-weight: 700;
-                    font-size: 19.68px;
-                    line-height: 23.06px;
-                    margin-bottom: 7px;
-                    color: #4C4C4C;
-                    @include respond(phone_land) {
-                        font-size: 14px;
-                        font-weight: 400;
-                        margin: 0;
-                    }
-                }
-            }
-            .sub-text::after{
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 54px;
-                left: 226px;
-                top:0px;
-                background-color: #2E3238;
-                margin-right: 21px;
-                @include respond(phone) {
-                    right: 43%;
-                    left: auto;
-                }
-            }
-        }
-        .subscribe-btn{
-            a{
-                background-color: #636363;
-                color: #ffffff;
-                padding: 11px 22px;
-                border-radius: 8px;
-                gap: 10.93px;
-                font-size: 15.31px;
-                font-weight: 400;
-                line-height: 17.94px;
-                font-family: 'Roboto';  
-                border: none;
-                transition: all 0.4s ease-in-out;
-                &:hover {
-                    background: rgba($color: #000000, $alpha: 1.0);
-                }
-            }
-        }
-    }
+    } 
     .video-count{
         color: #9CA0AC;
         font-size: 17.49px;
@@ -120,32 +33,132 @@
             font-size: 14px;
         }
     }
-    .content-div{
-        margin-top: 30px;
+}
+.content-div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    @include respond(tab) {
+       margin-top: 0;
+       overflow-y: auto;
+       display: inline-box;
+       display: -webkit-inline-box;
+       width: 100%;
+       padding: 20px 0;
+    }
+    &.content-listing {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .img-div{
+        width: 32%;
+        @include respond(tab) {
+            width: 60%;
+            margin: 0 5px;
+        }
+        @include respond(phone_land) {
+            width: 80%;
+            margin: 0 5px;
+        }
+        iframe{
+            width:100%;
+            height:271px;
+            border-radius: 16px;
+        }
+    }
+}
+ 
+.subscribeBtn-div{
+    width: 390px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 54.67px;
+    margin-top: 49px;
+    position: relative;
+    &.video {
+        width: 313px;
+        margin: 0;
+        .sub-text::after {
+            left: 139px !important;
+        }
+    }
+    @include respond(tab_land) {
+        margin-top: 20px;
+    }
+    @include respond(tab) {
+        margin-top: 25px;
+    }
+    @include respond(phone_land) {
+        margin-top: 5px;
+        width: 100%;
+    }
+    .subscribe-first{
         display: flex;
         justify-content: space-between;
-        @include respond(tab) {
-           margin-top: 0;
-           overflow-y: auto;
-           display: inline-box;
-           display: -webkit-inline-box;
-           width: 100%;
-           padding: 20px 0;
+        align-items: center;
+        .icon-div{
+            width: 55px;
+            height: 38.85px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #FF0000;
+            border-radius: 10px;
+            img{
+                width: 14.25px;
+                height: 16px;
+            }
         }
-        .img-div{
-            width: 32%;
-            @include respond(tab) {
-                width: 60%;
-                margin: 0 5px;
-            }
+        .sub-text{
+            margin-left: 17.48px;
             @include respond(phone_land) {
-                width: 80%;
-                margin: 0 5px;
+                margin-left: 10px;
             }
-            iframe{
-                width:100%;
-                height:271px;
-                border-radius: 16px;
+            p{
+                font-weight: 700;
+                font-size: 19.68px;
+                line-height: 23.06px;
+                margin-bottom: 7px;
+                color: #4C4C4C;
+                @include respond(phone_land) {
+                    font-size: 14px;
+                    font-weight: 400;
+                    margin: 0;
+                }
+            }
+        }
+        .sub-text::after{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 54px;
+            left: 226px;
+            top:0px;
+            background-color: #2E3238;
+            margin-right: 21px;
+            @include respond(phone) {
+                right: 43%;
+                left: auto;
+            }
+        }
+    }
+    .subscribe-btn{
+        a{
+            background-color: #636363;
+            color: #ffffff;
+            padding: 11px 22px;
+            border-radius: 8px;
+            gap: 10.93px;
+            font-size: 15.31px;
+            font-weight: 400;
+            line-height: 17.94px;
+            font-family: 'Roboto';  
+            border: none;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                background: rgba($color: #000000, $alpha: 1.0);
             }
         }
     }
