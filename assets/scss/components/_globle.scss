@@ -193,3 +193,30 @@ button{
         text-decoration: none;
     }
 }
+
+.common-heading {
+    margin: calc(2rem - 2px) 0 0;
+    .cs_title {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        small {
+            color: $black;
+            font-size: $font16;
+            font-style: normal;
+            font-weight: $fontweight2;
+            line-height: normal;
+        }
+        &.mb-0 {
+            margin-bottom: 0;
+        }
+    }
+    p {
+        color: $black;
+        font-size: $font16;
+        font-style: normal;
+        font-weight: $fontweight5;
+        line-height: 24px;
+    }
+}
