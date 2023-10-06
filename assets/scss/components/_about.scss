@@ -1,0 +1,340 @@
+ul.breadcrumb {
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  color: $color3;
+
+  li {
+    display: inline;
+    font-size: 18px;
+    & + li:before {
+      padding: 8px;
+      color: $black;
+      content: ">";
+    }
+    a {
+      color: #61605f;
+      text-decoration: none;
+      opacity: 0.8;
+      &:hover {
+        color: $color2;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.tab_layout_block {
+  * {
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  gap: 25px;
+  display: flex;
+  padding: 34px 0 105px;
+  .cs_tab_nav {
+    flex: 0 0 275px;
+    padding: 0 0.75rem 1rem 3px;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 20px;
+    max-height: calc(100vh - 25px);
+    overflow-x: auto;
+    @media all and (min-width: 1200px) {
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $bannerBoxColor;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background: $color7;
+      }
+    }
+    li {
+      a {
+        display: block;
+        padding: 1.2rem 1rem;
+        line-height: 1.35;
+        border-radius: 16px;
+        border: 1px solid $bannerBoxColor;
+        color: $bannerTextColor;
+        position: relative;
+        transition: 0.35s;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 32px;
+          top: calc(50% - 16px);
+          left: -3px;
+          border-radius: 4px;
+          background: $black;
+          opacity: 0;
+          transition: 0.35s;
+        }
+      }
+      &.active a,
+      &.active a:hover {
+        background: $bannerBoxColor;
+        color: $black;
+
+        &:before {
+          opacity: 1;
+        }
+      }
+      & a:hover { 
+        background: $color12; 
+        &::before {
+          background: $color8;
+          opacity: 1;
+        }
+      }
+      & + li {
+        margin-top: 12px;
+      }
+    }
+  }
+  @include respond(tab) {
+    padding: 87px 5px ;
+    @include respond(phone){
+        padding: 80px 5px;
+    }
+    display: block;
+    .cs_tab_nav {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: $bannerBoxColor;
+      padding: 10px 1rem 0;
+      overflow-y: hidden;
+      overflow-x: auto;
+      ul {
+        white-space: nowrap;
+        li {
+          display: inline-block;
+          & + li {
+            margin-top: 0;
+          }
+          a {
+            display: block;
+            border-radius: 8px 8px 0 0;
+            padding: 12px 23px;
+            white-space: nowrap;
+            position: relative;
+            top: 1px;
+            &:before {
+              content: none;
+            }
+          }
+          &.active {
+            a,
+            a:hover {
+              background: white;
+            }
+          }
+          &:last-child {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+    .cs_tab_content_container {
+      max-width: 100%;
+      .slider_wrapper {
+        .item {
+            padding: 24px 2rem 60px;
+            @include respond(phone){
+                padding: 24px 1.25rem 60px;
+            }
+        }
+        &.type_second {
+            .item{
+                height: 300px;
+                @include respond(phone){
+                    height: 385px;
+                }
+            }
+            
+        }
+      }
+    }
+    
+  }
+ 
+}
+.cs_tab_content_container {
+  flex: 0 0 calc(100% - 300px);
+  max-width: calc(100% - 300px);
+  .tab_card_box {
+    border-radius: 16px;
+    border: 1px solid $bannerBoxColor;
+    padding: 24px;
+    line-height: 1.5;
+    color: $black;
+    .card_header {
+      .card_title {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      border-bottom: 1px solid $color4;
+      padding-bottom: 0.75rem;
+    }
+    .card_body {
+      padding: 1.5rem 0 0;
+      // overflow: auto;
+      @include respond(phone) {
+        padding-top: 1rem;
+      }
+      figure.card_img {
+        padding: 12px;
+        float: right;
+        margin: 0 0 1rem 3rem;
+        max-width: 40%;
+        position: relative;
+        @include respond(phone_land) {
+            margin: 0 0 1rem 2rem;
+        }
+        @include respond(phone) {
+            margin: .5rem 0;
+            float: none;
+            max-width: 100%;
+        }
+        img {
+          position: relative;
+          z-index: 1;
+          border-radius: 16px;
+          overflow: hidden;
+          display: block;
+        }
+        &:before,
+        &:after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 40%;
+          height: 42%;
+          background: $bannerBoxColor;
+          border-radius: 1rem;
+        }
+        &:before {
+          height: 75%;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+    p {
+      margin-bottom: 1rem;
+      a {
+        color: $color8;
+        text-decoration: underline;
+      }
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    strong {
+      font-weight: 600;
+    }
+  }
+}
+.slider_wrapper {
+  clear: both;
+  .title_ceo {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 24px;
+  }
+  .item {
+    padding: 24px 4rem 60px;
+    text-align: center;
+    background: $bannerBoxColor;
+    border-radius: 8px;
+    overflow: hidden;
+    a {
+      color: inherit;
+    }
+    p {
+      font-style: italic;
+    }
+  }
+  .profile_pic {
+    img {
+      width: 156px;
+      height: 156px;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+  }
+  .owl-dots {
+    position: absolute;
+    margin: 0;
+    bottom: 1rem;
+    width: 100%;
+    .owl-dot {
+      span {
+        border-radius: 10px;
+        height: 13px;
+        width: 13px;
+        background: $white;
+        transition: 0.35s;
+      }
+      &.active span {
+        width: 47px;
+        height: 13px;
+        border-radius: 10px;
+        background: $black;
+      }
+    }
+  }
+  &.type_second {
+    .item {
+      img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      height: 390px;
+    }
+    .item_content {
+      position: relative;
+      z-index: 1;
+      color: $bannerBoxColor;
+      height: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+    }
+    .title_slider {
+      font-size: 44px;
+      font-weight: 500;
+      color: $white;
+      @include respond (tab){
+        font-size: 30px;
+      }
+      @include respond (phone){
+        font-size: 20px;
+      }
+    }
+  }
+}

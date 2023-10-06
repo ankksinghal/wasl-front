@@ -185,11 +185,16 @@ button{
         }
     }
 }
-
+.ml-1{
+    margin-left: 4px;
+}
 .link {
     text-decoration: underline;
     color: inherit;
     &:hover {
         text-decoration: none;
     }
+}
+.position-relative{
+    position: relative;
 }
