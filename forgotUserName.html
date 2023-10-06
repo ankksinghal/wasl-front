@@ -139,17 +139,23 @@
                         <form id="login-form">
                             <div class="input-box mb-0">
                                 <label for="userId">Email <span>*</span></label>
-                                <input type="email" id="userId" placeholder="Enter Email" class="email" />
+                                <input type="email" id="userId" placeholder="Enter Email" class="icon-eml" />
                                 <p class="error">
                                     <img src="./assets/images/carbon_warning.svg" alt="">
                                     Please Enter Email Id
                                 </p>
                             </div>
                             <div class="or-text"><span>OR</span></div>
-                            <div class="input-box">
+                            <div class="input-box select-box">
                                 <label for="mobileNumber">Mobile Number <span>*</span></label>
-                                <input id="mobileNumber" type="text" placeholder="Enter Mobile Number"
-                                    class="number-icons" />
+                                <div class="two-field">
+                                    <select>
+                                        <option>+91</option>
+                                    </select>
+                                    <input id="mobileNumber" type="text" placeholder="Enter Mobile Number"
+                                        class="number-icons error" />
+                                        <!-- number-icons  -->
+                                </div>
                                 <p class="error">
                                     <img src="./assets/images/carbon_warning.svg" alt="">
                                     Please Enter Mobile Number
