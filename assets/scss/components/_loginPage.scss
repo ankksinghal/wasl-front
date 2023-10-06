@@ -267,16 +267,24 @@
                     &.mb-12 {
                         margin-bottom: 12px;
                     }
+                    .two-field {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        gap: 8px;
+                        select {
+                            width: 120px;
+                        }
+                    }
                     input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
                         border: 1px solid #c2c2c2;
                         border-radius: 8px;
                         height: 57px;
                         padding-left: 15px;
                         width: 100%; 
-                        opacity: 0.7; 
+                        color: #2B2A28;
                         background-repeat: no-repeat;
                         background-size: 22px auto;  
-                        background-position: top 15px left 12px;
+                        // background-position: top 16px left 12px;
                         box-sizing: border-box;
                         padding-right: 15px;
                         font-size: 16px;
@@ -284,23 +292,33 @@
                             outline: none;
                             box-shadow: none;
                         }
-                        &.email {
+                        &.icon-eml {
                             background-image: url("../images/mail.svg");
                             padding-left: 45px;
+                            background-position: top 16px left 12px;
                         }  
                         &.password {
                             background-image: url("../images/password.svg");
                             padding-left: 45px;
                             padding-right: 45px;
+                            background-position: top 15px left 12px;
                         }     
                         &.number {
                             background-image: url("../images/mob.svg");
                             padding-right: 45px;
                             padding-left: 45px;
+                            background-position: top 15px left 12px;
+                        }     
+                        &.user-icon {
+                            background-image: url("../images/user-icon.svg");
+                            padding-right: 45px;
+                            padding-left: 45px;
+                            background-position: top 16px left 12px;
                         }      
                         &.number-icons {
                             background-image: url("../images/mob.svg");
                             padding-left: 45px;
+                            background-position: top 15px left 12px;
                         }     
                         &.padding15 {
                             padding-left: 15px;
@@ -314,6 +332,14 @@
                         }
                         &.error {
                             border-color: #EF3D3D;
+                        }
+                        &::placeholder {
+                            color: #2B2A28;
+                            opacity: 0.7; 
+                        }
+                          
+                        &::-ms-input-placeholder {
+                            color: #2B2A28;
                         }
                     }
                     input:-webkit-autofill, 
