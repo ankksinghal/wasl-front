@@ -731,6 +731,7 @@ body.slide {
   border: none;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
+  font-family: inherit;
 }
 .search-section .form-section button:hover {
   background: black;
@@ -765,6 +766,7 @@ body.slide {
   align-items: center;
   text-transform: uppercase;
   color: #2B2A28;
+  font-family: inherit;
 }
 @media screen and (max-width: 991px) {
   .search-section .filter-section .advanced-filters {
@@ -829,7 +831,6 @@ body.slide {
 }
 .search-section .filter-section .form-view .form-cols label {
   color: #2B2A28;
-  font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -841,6 +842,10 @@ body.slide {
   align-items: center;
   gap: 10px;
   margin-top: 15px;
+  font-size: 14px;
+}
+.search-section .filter-section .form-view .form-cols label.properties-view .checkmark {
+  margin-top: -4px;
 }
 .search-section .filter-section .form-view .form-cols .form-ctrl {
   background: #fff;
@@ -982,8 +987,9 @@ body.slide {
   width: 100%;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 18px;
   box-sizing: border-box;
+  font-family: inherit;
 }
 .form-cols-out:last-child .form-control.dropdown {
   border-bottom: none;
@@ -1021,6 +1027,7 @@ body.slide {
   border-bottom: 1px solid #999;
   text-align: left;
   -moz-appearance: textfield;
+  font-family: inherit;
 }
 .range-slider .price-input .field input[type=number]::-webkit-outer-spin-button,
 .range-slider .price-input .field input[type=number]::-webkit-inner-spin-button {
@@ -1114,7 +1121,7 @@ body.slide {
   }
 }
 .custom-dropdown label {
-  font-size: 16px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   color: #4E4E4E;
@@ -2091,6 +2098,7 @@ body.slide {
 }
 .youtube-page .subscribeBtn-div .subscribe-first .sub-text {
   margin-left: 17.48px;
+  font-family: "Roboto";
 }
 @media screen and (max-width: 767px) {
   .youtube-page .subscribeBtn-div .subscribe-first .sub-text {
