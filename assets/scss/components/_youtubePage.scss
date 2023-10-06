@@ -60,6 +60,7 @@
             }
             .sub-text{
                 margin-left: 17.48px;
+                font-family: 'Roboto';  
                 @include respond(phone_land) {
                     margin-left: 10px;
                 }
