@@ -2,11 +2,14 @@
      position: relative;
      display: flex;
      overflow: hidden;
+     @include respond(tab) {
+      height: 81px;
+     }
      img{
          width: 100%;
          height: auto;
          @include respond(tab) {
-            height: 75px;
+            height: 100%;
             object-fit: cover;
         }
      }
@@ -23,8 +26,21 @@
         gap: 10px;
         @include respond(tab) {
          padding-top: 5px;
+         gap: 5px;
+         padding-left: 55px;
         }
-
+        .back-btn {
+         width: 29px;
+         height: 29px;
+         border-radius: 10px;
+         position: absolute;
+         left: 16px;
+         top: 20px;
+         display: none;
+         @include respond(tab) {
+            display: block;
+         }
+        }
      }
      h2{
         color:$black;
@@ -32,6 +48,9 @@
         font-weight: $fontweight3;
         @include respond(tab_land) {
          font-size: 24px;
+        }
+        @include respond(tab) {
+         font-size: 20px;
         }
      }
      p {
@@ -73,6 +92,20 @@
                color: $black;
             }
          }
+      }
+      @include respond(tab) {
+         &.ls-bread {
+            display: none;
+         }
+      }
+     }
+     .ls-connect {
+      display: none;
+      }
+     @media(max-width:991px){
+      .ls-connect {
+         display: block;
+         font-size: 14px;
       }
      }
 }

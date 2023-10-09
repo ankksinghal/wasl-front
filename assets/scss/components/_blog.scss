@@ -2,12 +2,21 @@
     display: flex;
     flex-wrap: wrap;
     gap: 27px;
+    @include respond(tab) {
+        flex-direction: column-reverse;
+        padding-top: 24px;
+        gap: 24px;
+    }
     .all-units-section {
         flex: 1;
         .all-units-cards-wrap.cs_row {
             .cs_col {
                 flex: 0 0 50%;
                 max-width: 50%;
+                @include respond(phone) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                }
             }
         }
         .search-result-pagination {
@@ -25,12 +34,22 @@
         border-radius: 16px;
         background: $bannerBoxColor;
         height: max-content;
+        @include respond(tab) {
+         background: transparent;
+         padding: 0 0 15px;
+         width: 100%;
+        flex-direction: row;
+        overflow-x: scroll;
+        }
         h2 {
             color: $color2;
             font-size: $font18;
             font-style: normal;
             font-weight: $fontweight2;
             line-height: normal;
+            @include respond(tab) {
+                display: none;
+            }
         }
         .right-area-box {
             display: flex;
@@ -42,24 +61,48 @@
             border-radius: 16px;
             border: 1px solid $bannerBoxColor;
             background: $white;
+            @include respond(tab) {
+                flex-direction: column;
+                padding: 0;
+                min-width: 172px;
+                border: none;
+                border-radius: 12px;
+                box-shadow: 0px 2px 26px 0px rgba(0, 0, 0, 0.10);
+                gap: 10px;
+            }
             figure {
                 width: 107px;
                 height: 99px;
                 flex-shrink: 0;
+                @include respond(tab) {
+                    width: 100%;
+                    height: auto;
+                }
                 img {
                     width: 100%;
                     max-height: 99px;
+                    @include respond(tab) {
+                        max-height: none;
+                    }
                 }
             }
             .card-details-outer {
                 display: flex;
                 gap: 6px;
                 flex-direction: column;
+                @include respond(tab) {
+                    padding: 0 9px 18px;
+                }
                 h3 {
                     font-size: $font18;
                     font-style: normal;
                     font-weight: $fontweight2;
                     line-height: 25px;
+                    @include respond(tab) {
+                        font-size: $font12;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
                     a {
                         color: $black;
                     }
@@ -71,6 +114,11 @@
                     font-weight: $fontweight5;
                     line-height: normal;
                     margin: 0;
+                    @include respond(tab) {
+                        font-size: 10px;
+                        line-height: normal;
+                        font-weight: 400;
+                    }
                 }
             }
         }
@@ -159,6 +207,29 @@
     }
 }
 
+.mbb-30 { 
+    margin-bottom: 5rem !important;
+    @include respond(tab) {
+        margin-bottom: 3rem !important;
+    }
+}
+
+@include respond(tab) {
+    .all-units-wrapper.buying_section.press-kit {
+        margin-top: 0;
+        border: none;
+        .all-units-cards-wrap.cs_row {
+            flex-wrap: nowrap;
+            flex-direction: column;
+            gap: 32px !important;
+            .cs_col {
+                max-width: 100% !important;
+                flex: 0 0 100% !important;
+            }
+        }
+    }
+}
+
 .fitness-challenge {
     margin-top: 32px;
     position: relative;
@@ -168,6 +239,9 @@
         height: 100%;
         border-radius: 8px;
         max-height: 377px;
+        @include respond(tab) {
+            max-height: fit-content;
+        }
     }
     .sm-section {
         position: absolute;
@@ -185,9 +259,15 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 32px;
+        @include respond(tab) {
+            gap: 16px;
+        }
         .left-img {
             width: 47%;
             overflow: hidden;
+            @include respond(tab) {
+                width: 100%;
+            }
         }
         .right-detail {
             display: flex;
@@ -199,7 +279,14 @@
                 font-style: normal;
                 font-weight: $fontweight2;
                 line-height: 36px;
-                margin-bottom: 5px;
+                margin-bottom: 6px;
+                @include respond(tab) {
+                    font-size: 22px;
+                    line-height: normal;
+                }
+                @include respond(phone) {
+                    font-size: 18px;
+                }
             }
             p {
                 color: $black;
@@ -208,12 +295,29 @@
                 font-weight: $fontweight5;
                 line-height: 25px;
                 opacity: 0.7;
+                @include respond(tab) {
+                    margin-bottom: 15px;
+                }
+                @include respond(phone) {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: break-spaces;
+                    margin-bottom: 16px;
+                }
             }
             .bottom-area {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-top: auto;
+                @include respond(phone) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+                }
                 span {
                     border-radius: 8px;
                     background: $white;
@@ -233,6 +337,11 @@
                     display: flex;
                     gap: 8px;
                     align-items: center;
+                    @include respond(phone) {
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                    }
                 }
             }
         }
@@ -249,17 +358,33 @@
         margin: 0;
         gap: 16px;
         align-items: normal;
+        @include respond(phone) {
+            flex-direction: column;
+        }
         .left-img {
             width: 200px;
             height: auto;
+            @include respond(phone) {
+                width: 100%;
+            }
         }
         .right-detail {
             h2 {
                 font-size: $font18;
                 line-height: 25px;
             }
-            .bottom-area span {
-                background: $bannerBoxColor;
+            p {
+                @include respond(phone) {
+                    -webkit-line-clamp: 3;
+                }
+            }
+            .bottom-area {
+                span {
+                    background: $bannerBoxColor;
+                }
+                @include respond(phone) {
+                    a { border-top: 1px solid #E4E4DC; padding-top: 16px;}
+                }
             }
         }
     }
@@ -272,15 +397,35 @@
     flex-wrap: wrap;
     gap: 16px;
     justify-content: space-between;
+    @include respond(tab) {
+        margin-bottom: 20px;
+    }
     .fitness-challenge {
         margin-top: 0;
+        @include respond(tab) {
+            height: 221px;
+        }
         &.sm-box {
             flex: 49%;
+            @include respond(tab) {
+                flex: 47%;
+                height: auto;
+            }
         }
     }
 }
 
 .common-heading {
+    @include respond(tab) {
+        margin-top: 19px;
+        .cs_title {
+            margin-bottom: 12px;
+        }
+        p {
+            font-size: 14px;
+            line-height: normal;
+        }
+    }
     .sm-section {
         display: flex;
         gap: 4px;
@@ -306,8 +451,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 480px;
+    max-width: 480px;
     margin: auto;
+    @include respond(tab) {
+        height: 42px;
+        font-size: 14px;
+    }
     &:hover {
         background-color: $color13;
         border-color: $color14;
@@ -322,12 +471,20 @@
     margin-top: 32px;
     border-radius: 16px;
     border: 1px solid $bannerBoxColor;
+    @include respond(tab) {
+        margin-top: 24px;
+    }
     .common-heading {
         margin: 0;
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid $bannerBoxColor;
         padding-bottom: 12px;
+        @include respond(tab) {
+            flex-direction: column;
+            gap: 12px;
+            p {font-size: 16px; line-height: 24px;}
+        }
         &.no-padding {
             padding: 0;
             border: none;
@@ -364,10 +521,21 @@
                 background-color: $color13;
                 color: $white;
             }
+            @include respond(tab) {
+                background: $black;
+                color: $white;
+                transition: all 0.4s ease-in-out;
+                &:hover {
+                    background-color: $color13;
+                    border-color: $color14;
+                }
+            }
         }
     }
     .all-units-wrapper {
         padding: 0 0 8px;
+        border: none;
+        margin: 0;
         .cs_col {
             flex: 0 0 25% !important;
             max-width: 25% !important;
@@ -388,6 +556,85 @@
                     transform: rotate(90deg);
                 }
             }
+        }
+    }
+}
+
+.common-heading.news-press {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    @include respond(tab) {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    .form-section {
+        @include respond(tab) {
+            width: 100%;
+        }
+        .form-view {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+            gap: 16px;
+            .form-cols { 
+                flex: 1;
+                display: flex;
+                .form-ctrl {
+                    background: #fff;
+                    border-radius: 8px;
+                    border: 1px solid #ccc;
+                    height: 52px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #2B2A28;
+                    padding: 0 45px 0 18px;
+                    appearance: none;
+                    box-sizing: border-box;
+                    flex: 1;
+                    &.dropdown {
+                        background:#fff url(../images/arrow_bottom_down.png) no-repeat right 10px top 13px;
+                        background-size: 25px 25px;
+                    }
+                    &.search {
+                        padding-left: 45px;
+                        background:#fff url(../images/search_icon.png) no-repeat left 10px top 15px;
+                        background-size: 25px 25px;
+                    }
+                }
+                &.date { min-width: 105px;}
+                &.month { min-width: 114px;}
+                &.year { min-width: 117px;}
+            }
+        }
+    }
+}
+
+@include respond(tab) {
+    .blogs-video-view {
+        .content-div .img-div {
+            width: 48%;
+            margin: 0;
+        }
+    }
+}
+
+@include respond(phone) {
+    .blogs-video-view {
+        .common-heading.video-view .subscribeBtn-div.video {
+            width: auto;
+            .subscribe-first {
+                display: none;
+            }
+            .subscribe-btn a {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+        .content-div .img-div {
+            width: 100%;
+            margin: 0;
         }
     }
 }

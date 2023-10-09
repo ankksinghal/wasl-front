@@ -501,6 +501,7 @@
           margin: 0 0 16px;
           @include respond(tab_land) {
             width: 100%;
+            max-height: fit-content;
           }
         }
         h3 {
@@ -571,10 +572,10 @@
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        @include respond(phone_land) {
-          height: 30px;
-          width: 30px;
-        }
+        // @include respond(phone_land) {
+        //   height: 30px;
+        //   width: 30px;
+        // }
         &:hover {
           background: #f8f8f8;
         }
