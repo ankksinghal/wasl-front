@@ -312,6 +312,27 @@
                                             </div>
                                             <div class="form-cols">
                                                 <label>Area</label>
+                                                <div class="range-slider">
+                                                    <div class="price-input">
+                                                      <div class="field">
+                                                        <span>Min AED</span>
+                                                        <input readonly type="number" class="input-min" value="0">
+                                                      </div>
+                                                      <div class="field">
+                                                        <span>Max AED</span>
+                                                        <input readonly type="number" class="input-max" value="10000">
+                                                      </div>
+                                                    </div>
+                                                    <div class="slider-mid">
+                                                        <div class="slider">
+                                                          <div class="progress"></div>
+                                                        </div>
+                                                        <div class="range-input">
+                                                          <input type="range" class="range-min" min="0" max="10000" value="0" step="100">
+                                                          <input type="range" class="range-max" min="0" max="10000" value="10000" step="100">
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="form-cols">
                                                 <label>Offer</label>
@@ -319,6 +340,17 @@
                                                     <input type="checkbox" checked="checked">
                                                     <span class="checkmark"></span>
                                                 </label>
+
+                                                <!-- <div class="slider-mid">
+                                                    <div class="slider">
+                                                      <div class="progress"></div>
+                                                    </div>
+                                                    <div class="range-input">
+                                                        <input class="range-min" type="range" min="0" max="10000" value="0" step="100" oninput="rangeValue.innerText = this.value"><p id="rangeValue">0</p>
+                                                        <input class="range-max" type="range" min="0" max="10000" value="10000" step="100" oninput="rangeValue1.innerText = this.value"><p id="rangeValue1">10000</p>
+                                                    </div> 
+                                                </div> -->
+   
                                             </div>
                                         </div>
                                     </form>
