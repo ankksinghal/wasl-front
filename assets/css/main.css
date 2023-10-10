@@ -3194,6 +3194,11 @@ footer .copyright-section p {
   flex-direction: column;
   gap: 16px;
 }
+.all-units-wrapper .left-side-bar-filters .upper-filter-section .form-view .inner-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .all-units-wrapper .left-side-bar-filters .upper-filter-section .form-view .range-slider .price-input {
   align-items: center;
 }
@@ -3494,7 +3499,7 @@ body.modal {
   margin-bottom: 47px;
 }
 .buying_detail .mb-4 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .buying_detail .pb-1 {
   padding-bottom: 0.25rem;
@@ -3513,6 +3518,13 @@ body.modal {
   .buying_detail div.all-units-wrapper .property-ul.li_3 > li {
     flex: 0 0 100%;
   }
+}
+.buying_detail div.all-units-wrapper .property-ul.full-width li {
+  flex: 0 0 100%;
+  align-items: flex-start;
+}
+.buying_detail div.all-units-wrapper .property-ul.full-width li img {
+  margin-top: 2px;
 }
 .buying_detail div.all-units-wrapper .property-inner .img-content img {
   object-fit: cover;
@@ -3592,6 +3604,9 @@ body.modal {
 }
 .buying_detail .file_lable small {
   font-size: 80%;
+}
+.buying_detail.mb-4 {
+  padding-bottom: 4rem;
 }
 
 .cs_upload .file_lable {
@@ -3723,6 +3738,36 @@ body.modal {
     text-align: center;
   }
 }
+.upcoming-proj-det {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 575px) {
+  .upcoming-proj-det {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.upcoming-proj-det span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-field-bg select {
+  opacity: 1 !important;
+}
+
+.width-50 {
+  display: flex;
+  gap: 20px;
+}
+.width-50 select {
+  flex: 50%;
+}
+
 .login-page {
   margin-top: 43px;
   margin-bottom: 92px;
