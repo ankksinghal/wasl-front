@@ -307,6 +307,11 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
+        .inner-form-field {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
         .range-slider .price-input {
           align-items: center;
           span {
@@ -626,7 +631,7 @@ body {
     margin-bottom: 47px;
   }
   .mb-4 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   .pb-1 {
     padding-bottom: 0.25rem;
@@ -642,6 +647,15 @@ body {
         }
         @include respond(phone) {
           flex: 0 0 100%;
+        }
+      }
+    }
+    .property-ul.full-width {
+      li {
+        flex: 0 0 100%;
+        align-items: flex-start;
+        img {
+          margin-top: 2px;
         }
       }
     }
@@ -725,6 +739,9 @@ body {
     small {
       font-size: 80%;
     }
+  }
+  &.mb-4 {
+    padding-bottom: 4rem;
   }
 }
 .cs_upload{
@@ -861,5 +878,35 @@ body {
     .search-card .view-details-wrap {
       text-align: center;
     }
+  }
+}
+
+.upcoming-proj-det {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @include respond(phone) {
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+.form-field-bg {
+  select {
+    opacity:1 !important;
+  }
+}
+
+.width-50 {
+  display: flex;
+  gap: 20px;
+  select {
+    flex: 50%;
   }
 }
