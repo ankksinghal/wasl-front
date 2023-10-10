@@ -30,12 +30,12 @@
          padding-left: 55px;
         }
         .back-btn {
-         width: 29px;
+         width: 29px; 
          height: 29px;
          border-radius: 10px;
          position: absolute;
          left: 16px;
-         top: 20px;
+         top: 29px;
          display: none;
          @include respond(tab) {
             display: block;

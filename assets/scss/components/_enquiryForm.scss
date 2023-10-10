@@ -233,6 +233,9 @@
      height: auto;
      font-family: inherit;
     }
+    &+.enquiry-form{
+      margin-top: 18px;
+    }
   }
 }
 .link-section {
@@ -324,7 +327,7 @@
       }
       &.long_btn{
         width: 375px;
-        max-width: 100%;
+        max-width: 100%;  
         @include respond (phone){
           width: 100%;
         }
@@ -339,9 +342,23 @@
         line-height: 1;
       }
     }
-  }
+    @include respond (phone){
+      flex-flow: column;
+      gap: 10px 0;
+      margin-top: 20px;
+      a,button{
+        width: auto;
+      }
+    }
+}
   @media all and (max-width: 991px) {
     margin-bottom: 6rem;
+  }
+  &.fullWidth .captcha{
+    flex: 0 0 100%;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 88px;
   }
 }
 
@@ -360,5 +377,36 @@
   @media all and (max-width: 991px) {
     height: 48px;
     padding: 10px 18px;
+  }
+}
+
+// ===============================
+.cs_radio_wrapper{
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row !important; 
+  &>div{
+    flex: 0 0 50%;  
+  }
+}
+.radio_row{
+  margin-top: 20px;
+  
+  
+  .inline-view{
+    flex-flow: row !important; 
+    .radio{
+      font-size: 14px;
+      .radiomark{
+        border-width: 1px;
+        &:after{
+          left: 3px;
+          top: 3px;
+        }
+      }
+    }
+    *{
+      box-sizing: border-box;
+    }
   }
 }
