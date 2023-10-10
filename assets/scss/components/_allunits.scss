@@ -911,16 +911,32 @@ body {
   }
 }
 
-.village-banner.village-free {
-  margin-top: 0 !important;
+.common-heading.village-free {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  @include respond(phone) {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .upcoming-proj-det {
+    margin-top: 14px;
+  }
   .btn-links {
-    margin-top: 0 !important;
-    .rent-link {
-      margin: 0 !important;
-      @include respond(phone) {
-      width: 100% !important;
-      max-width: 100% !important;
-      }
+    border-radius: 8px;
+    width: 142px;
+    height: 55px;
+    background-color: $black;
+    color: $white;
+    font-size: $font15;
+    font-weight: $fontweight3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    @include respond(phone) {
+      width: 100%;
     }
   }
 }
