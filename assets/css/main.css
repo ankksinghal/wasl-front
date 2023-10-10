@@ -3780,6 +3780,22 @@ body.modal {
   flex: 50%;
 }
 
+.village-banner.village-free {
+  margin-top: 0 !important;
+}
+.village-banner.village-free .btn-links {
+  margin-top: 0 !important;
+}
+.village-banner.village-free .btn-links .rent-link {
+  margin: 0 !important;
+}
+@media screen and (max-width: 575px) {
+  .village-banner.village-free .btn-links .rent-link {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
 .login-page {
   margin-top: 43px;
   margin-bottom: 92px;

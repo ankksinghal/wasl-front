@@ -910,3 +910,17 @@ body {
     flex: 50%;
   }
 }
+
+.village-banner.village-free {
+  margin-top: 0 !important;
+  .btn-links {
+    margin-top: 0 !important;
+    .rent-link {
+      margin: 0 !important;
+      @include respond(phone) {
+      width: 100% !important;
+      max-width: 100% !important;
+      }
+    }
+  }
+}
