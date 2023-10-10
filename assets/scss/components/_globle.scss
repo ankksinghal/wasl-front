@@ -195,6 +195,39 @@ button{
         text-decoration: none;
     }
 }
-.position-relative{
+
+.common-heading {
+    margin: calc(2rem - 2px) 0 0;
+    &.video-view {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .cs_title {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        small {
+            color: $black;
+            font-size: 53.3%;
+            font-style: normal;
+            font-weight: $fontweight2;
+            line-height: normal;
+        }
+        &.mb-0 {
+            margin-bottom: 0;
+        }
+    }
+    p {
+        color: $black;
+        font-size: $font16;
+        font-style: normal;
+        font-weight: $fontweight5;
+        line-height: 24px;
+    }
+}
+
+.position-relative {
     position: relative;
 }

@@ -2,11 +2,14 @@
      position: relative;
      display: flex;
      overflow: hidden;
+     @include respond(tab) {
+      height: 81px;
+     }
      img{
          width: 100%;
          height: auto;
          @include respond(tab) {
-            height: 81px;
+            height: 100%;
             object-fit: cover;
         }
      }
@@ -23,8 +26,21 @@
         gap: 10px;
         @include respond(tab) {
          padding-top: 5px;
+         gap: 5px;
+         padding-left: 55px;
         }
-
+        .back-btn {
+         width: 29px;
+         height: 29px;
+         border-radius: 10px;
+         position: absolute;
+         left: 16px;
+         top: 20px;
+         display: none;
+         @include respond(tab) {
+            display: block;
+         }
+        }
      }
      h2{
         color:$black;
@@ -32,6 +48,9 @@
         font-weight: $fontweight3;
         @include respond(tab_land) {
          font-size: 24px;
+        }
+        @include respond(tab) {
+         font-size: 20px;
         }
      }
      p {
@@ -45,5 +64,49 @@
             width: 20px;
             height: 20px;
         }
+     }
+     ul {
+      display: flex;
+      gap: 20px;
+      li {
+         font-size: $font14;
+         font-style: normal;
+         font-weight: $fontweight5;
+         line-height: 21px;
+         color: $black;
+         position: relative;
+         &:not(:last-child)::after {
+            content: ">";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: -15px;
+            font-size: $font14;
+            color: $black;
+         }
+         a {
+            color: $color12;
+            color: $black;
+            &:hover {
+               text-decoration: underline;
+               color: $black;
+            }
+         }
+      }
+      @include respond(tab) {
+         &.ls-bread {
+            display: none;
+         }
+      }
+     }
+     .ls-connect {
+      display: none;
+      }
+     @media(max-width:991px){
+      .ls-connect {
+         display: block;
+         font-size: 14px;
+      }
      }
 }
