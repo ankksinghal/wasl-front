@@ -7072,12 +7072,14 @@ ul.breadcrumb li a:hover {
 .cs_tab_content_container .contact-us-box ul li {
   display: flex;
   gap: 20px;
-  width: 25%;
+  flex: 1;
   align-items: center;
+  justify-content: center;
 }
 @media screen and (max-width: 767px) {
   .cs_tab_content_container .contact-us-box ul li {
     width: 100%;
+    justify-content: unset;
     margin-bottom: 15px;
   }
 }
