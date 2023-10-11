@@ -23,7 +23,6 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       text-indent: 1px;
-      text-overflow: ''; 
       background:#ffffff url(../images/down-arrow.svg) no-repeat right 10px top 20px/12px;
     }
     @include respond(phone_land) {
@@ -321,6 +320,7 @@
       font-size: $font16;
       line-height: 24px;
       border: 0 none;
+      font-family: inherit;
       &.continue-btn {
         background-color: $Primary;
         color: $white;
@@ -368,6 +368,7 @@
   border-radius: 8px;
   height: 55px;
   box-sizing: border-box;
+  font-family: inherit;
   &::placeholder {
     font-weight: $fontweight5;
     font-size: $font16;
