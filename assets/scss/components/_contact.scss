@@ -1,4 +1,8 @@
 .cs_tab_content_container{
+     &.contact{
+         max-width: none;
+         flex: none;
+     }
      .contact-us-box{
         border-radius: 16px;
         border: 1px solid #E4E4DC;
@@ -61,9 +65,9 @@
 .tab_layout_block{
    &.contact{
      padding:0 0 80px;
+     display: block;
      @include respond(tab){
-        padding: 87px 0px;
-        margin-bottom: -60px;
+        padding: 35px 0px 45px;
     }
    }
 }
@@ -76,6 +80,9 @@
         display: none;
     }
      .left-section-contact{
+        @include respond(tab){
+            width: 55%;
+        }
          h2{
             font-size: $font30;
             line-height: 32.78px;

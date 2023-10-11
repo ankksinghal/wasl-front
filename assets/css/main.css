@@ -7048,6 +7048,10 @@ ul.breadcrumb li a:hover {
   }
 }
 
+.cs_tab_content_container.contact {
+  max-width: none;
+  flex: none;
+}
 .cs_tab_content_container .contact-us-box {
   border-radius: 16px;
   border: 1px solid #E4E4DC;
@@ -7105,11 +7109,11 @@ ul.breadcrumb li a:hover {
 
 .tab_layout_block.contact {
   padding: 0 0 80px;
+  display: block;
 }
 @media screen and (max-width: 991px) {
   .tab_layout_block.contact {
-    padding: 87px 0px;
-    margin-bottom: -60px;
+    padding: 35px 0px 45px;
   }
 }
 
@@ -7122,6 +7126,11 @@ ul.breadcrumb li a:hover {
 @media screen and (max-width: 767px) {
   .contact-us-details-wrap {
     display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact-us-details-wrap .left-section-contact {
+    width: 55%;
   }
 }
 .contact-us-details-wrap .left-section-contact h2 {
