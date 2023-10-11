@@ -4618,7 +4618,7 @@ body.modal {
   padding: 10.5px 2rem;
   text-align: center;
   background: #FFFFFF;
-  transition: 0.25;
+  transition: 0.25s;
   min-width: 115px;
 }
 .cs_modal .btn_modal:hover {
@@ -5626,7 +5626,6 @@ span.tooltip:hover .pop-over {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
-  text-overflow: "";
   background: #ffffff url(../images/down-arrow.svg) no-repeat right 10px top 20px/12px;
 }
 @media screen and (max-width: 767px) {
@@ -5909,6 +5908,7 @@ span.tooltip:hover .pop-over {
   font-size: 1em;
   line-height: 24px;
   border: 0 none;
+  font-family: inherit;
 }
 .link-section .btns a.continue-btn, .link-section .btns button.continue-btn {
   background-color: #1C190E;
@@ -5962,6 +5962,7 @@ span.tooltip:hover .pop-over {
   border-radius: 8px;
   height: 55px;
   box-sizing: border-box;
+  font-family: inherit;
 }
 .form-input::-moz-placeholder {
   font-weight: 400;
