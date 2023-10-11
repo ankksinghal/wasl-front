@@ -1,4 +1,8 @@
 .cs_tab_content_container{
+     &.contact{
+         max-width: none;
+         flex: none;
+     }
      .contact-us-box{
         border-radius: 16px;
         border: 1px solid #E4E4DC;
@@ -10,11 +14,18 @@
              display: flex;
              flex-wrap: wrap;
              gap:20px;
+             @include respond(phone_land){
+                display: block;
+            }
              li{
                  display: flex;
                  width: 45%;
                  gap:20px;
                  align-items: center;
+                 @include respond(phone_land){
+                    width: 100%;
+                    margin-bottom: 15px;
+                }
                  .office-details{
                     .heading{
                         font-size: $font14;
@@ -54,14 +65,24 @@
 .tab_layout_block{
    &.contact{
      padding:0 0 80px;
+     display: block;
+     @include respond(tab){
+        padding: 35px 0px 45px;
+    }
    }
 }
 .contact-us-details-wrap{
-     padding:33px 25px;
+     padding:33px 0;
      display: flex;
      justify-content: space-between;
      align-items: center;
+     @include respond(phone_land){
+        display: none;
+    }
      .left-section-contact{
+        @include respond(tab){
+            width: 55%;
+        }
          h2{
             font-size: $font30;
             line-height: 32.78px;
