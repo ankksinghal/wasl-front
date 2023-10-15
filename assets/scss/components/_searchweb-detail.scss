@@ -31,6 +31,18 @@
                 display: flex;
                 flex-direction: column;
                 gap: 14px;
+                .right-text{
+                    color:#8D8D87;
+                    font-size: $font20;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    strong{
+                        font-weight: $fontweight3;
+                        font-size: $font30;
+                        color:$black;
+                    }
+                }
 
                 @include respond(phone_land) {
                     gap: 8px;
@@ -70,7 +82,7 @@
                     flex-wrap: wrap;
                     gap: 12px;
                     align-items: stretch;
-                    max-width: 620px;
+                    // max-width: 620px;
 
                     @include respond(phone_land) {
                         width: 100%;
@@ -79,7 +91,7 @@
 
                     li {
                         &:nth-last-child(2) {
-                            min-width: 150px;
+                            // min-width: 150px;
 
                             @include respond(phone_land) {
                                 min-width: 133px;
@@ -145,18 +157,21 @@
                     display: flex;
                     min-width: 290px;
                     justify-content: flex-end;
-
                     @include respond(phone_land) {
                         width: 100%;
                     }
-
                     a {
                         padding: 16px 18px;
                         border-radius: 8px;
                         max-width: 115px;
                         width: 100%;
                         text-align: center;
-
+                        &.wishlist-link{
+                            background: #E4E4DC;
+                            border-radius: 8px;
+                            width: auto;
+                            margin-right: 10px;
+                        }
                         @include respond(phone_land) {
                             max-width: 50%;
                         }
@@ -366,4 +381,52 @@
             }
         }
     }
+}
+
+.virtual-tour-wrap{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 15px;
+     @include respond(phone_land) {
+        display: block;
+    }
+     .left-section,.right-section{
+         display: flex;
+         gap:10px;
+         align-items: center;
+         @include respond(phone_land) {
+            justify-content: center;
+            margin-top: 10px;
+        }
+     }
+     a.whats-icon{
+        padding: 0;
+        border: none;
+        img{
+            width: 54px;
+            height: 54px;
+        }
+     }
+     a{
+        border: 1px solid $black;
+        color:$black;
+        font-size: $font16;
+        font-weight: $fontweight2;
+        padding:16px 18px;
+        border-radius: 8px;
+        &.virtual-tour{
+            color:$white;
+            background: $black url(../images/360-icon.png) no-repeat left 10px top 13px;
+            padding-left: 45px;
+        }
+        &.download-doc{
+            background: url(../images/Downlaod.png) no-repeat left 10px top 13px;
+            padding-left: 45px;
+        }
+        &.call-us{
+            background: url(../images/call-search.png) no-repeat left 10px top 17px;
+            padding-left: 40px;
+        }
+     }
 }
