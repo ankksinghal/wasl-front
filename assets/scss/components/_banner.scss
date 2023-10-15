@@ -368,6 +368,10 @@
     }
     flex: 0 0 60%;
     max-width: 60%;
+    @include respond(tab) {
+        max-width: 100%;
+        border-right: none;
+    }
     .fstControls{
         width: 100%;
     }

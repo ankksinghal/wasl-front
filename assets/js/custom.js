@@ -170,7 +170,6 @@ $(document).ready(function () {
     var tagValue = $(this).text();
     $("#prage-min label").text(tagValue);
   }); 
-  
   // $(".customSelectBox .without-label li").on("click", function (e) { 
   //   var tagValue = $(this).text();
   //   $(this).closest('.customSelectBox').find("label").text(tagValue); 
@@ -306,6 +305,4 @@ $("#cs_tab_nav li").click(function () {
   return false;
 });
 // =========About us===============
-
-
 $('.multipleSelect').fastselect();

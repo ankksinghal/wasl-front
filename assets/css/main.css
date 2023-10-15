@@ -988,6 +988,12 @@ body.slide {
   box-sizing: border-box;
   font-family: inherit;
 }
+@media screen and (max-width: 991px) {
+  .cs_search_style {
+    max-width: 100%;
+    border-right: none;
+  }
+}
 .cs_search_style .fstControls {
   width: 100%;
 }
