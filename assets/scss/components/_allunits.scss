@@ -940,3 +940,29 @@ body {
     }
   }
 }
+// ======Chip style========
+.chip_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+  >span{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 11px 14px;
+    border: 1px solid $pastelGreen;
+    border-radius: 8px;
+    color: $color8;
+    font-size: 16px;
+    color:$color16;
+    .cross_chip{
+      width: 18px;
+      height: 18px;
+      border: none;
+      box-shadow: none;
+      background: url(../images/closeN.svg) no-repeat center center/18px;
+    }
+  }
+
+}

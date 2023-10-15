@@ -4178,6 +4178,31 @@ body.modal {
   }
 }
 
+.chip_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.chip_wrapper > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 11px 14px;
+  border: 1px solid #8BB8AA;
+  border-radius: 8px;
+  color: #A79F92;
+  font-size: 16px;
+  color: #4E4E4E;
+}
+.chip_wrapper > span .cross_chip {
+  width: 18px;
+  height: 18px;
+  border: none;
+  box-shadow: none;
+  background: url(../images/closeN.svg) no-repeat center center/18px;
+}
+
 .login-page {
   margin-top: 43px;
   margin-bottom: 92px;
