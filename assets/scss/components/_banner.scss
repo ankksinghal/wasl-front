@@ -104,6 +104,10 @@
     position: absolute;
     left: 0;
     right: 0;
+    &.search-page{
+       margin-top:35px;
+       position: static;
+    }
     @include respond(tab_land) {
         max-width: unset;
         margin-left: 15px;
@@ -145,7 +149,7 @@
             font-style: normal;
             font-weight: 400;
             flex: 1;
-            background: #edede8;
+            background: $white;
             display: flex;
             @include respond(tab) {
                 margin-bottom: 10px;
@@ -191,6 +195,8 @@
         flex-direction: column;
         .advanced-filters {
             display: flex;
+            margin-left: auto;
+            margin-right: 1rem;
             gap: 10px;
             background: none;
             border: none;
@@ -237,7 +243,7 @@
             &.view {
                 height: auto;
                 padding: 20px;
-                padding-top: 35px;
+                padding-top: 20px;
                 overflow: visible;
             }
         }
@@ -298,6 +304,9 @@
                 }
             }
         }
+        .cs_formview2{
+            gap: 12px;
+        }
         @include respond(tab) {
             background: #E4E4DC;
         }
@@ -348,10 +357,314 @@
         padding: 0;
     }
 }
+.cs_search_style{
+    background: $white;
+    border-radius: 8px 0 0 8px;
+    border-right: 1px solid $color15;
+    font-family: "bliss_proregular";
+    *{
+        box-sizing: border-box;
+        font-family: inherit;
+    }
+    flex: 0 0 60%;
+    max-width: 60%;
+    @include respond(tab) {
+        max-width: 100%;
+        border-right: none;
+    }
+    .fstControls{
+        width: 100%;
+    }
+    .fstQueryInput{
+        height: 42px; 
+    }
+    .fstMultipleMode{
+        background: $white;
+        border: 0 none;
+        width: 100%;
+        font-size: 18px;
+        border-radius: 8px 0 0 8px;
+        input{
+            font-size: 18px;
+            padding-left: 0;
+        }
+        .fstElement{
+            border: 0;
+        }
+        .fstChoiceItem{
+            background: transparent;
+            border: 1px solid $pastelGreen;
+            border-radius: 6px;
+            font-size: 18px;
+            color: $Primary;
+            display: flex;
+            align-items: center; 
+            height: 41px;
+            padding:.5rem  3px .5rem 1rem;
+        }
+        .fstChoiceRemove{
+            height: auto;
+            background: transparent;
+            color: $Primary;
+            position: static;
+            margin: 0 0 0 3px;
+            padding: 0;
+            // transform: translateX(10px);
+            &:hover{
+                background: transparent;
+                color: $Primary;
+            }
+        }
+    }
+    .fstGroup{
+        padding-top: 0;
+        &:last-child{
+            .fstResultItem{
+                background-image: url(../images/Building.svg);
+            }
+        }
+    }
+    .fstNoneSelected .fstControls{
+        padding-left: 3.25rem;
+        background: transparent url(../images/Search.svg) no-repeat left 20px center/22px;
+    }
+    .fstResults{
+        margin-top: 0;
+        border: 1px solid $bannerBoxColor;
+        border-radius:  8px 8px; 
+        padding:12px;
+        h3{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .fstResultItem{
+            font-size: 18px;
+            border: 0 none;
+            padding:12px  7px 12px 32px;
+            color: $black;
+            opacity: 0.7;
+            background: url(../images/Pin.svg) no-repeat left 10px center;
+            &:hover{
+                background-color: $color12;
+                
+            }
+        }
+        &::-webkit-scrollbar {
+            width: 7px;
+          }
+    
+          &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+          }
+    
+          &::-webkit-scrollbar-thumb {
+            background: $bannerBoxColor;
+          }
+    
+          &::-webkit-scrollbar-thumb:hover {
+            background: $color7;
+          }
+    }
+    .fstNoResults{
+        font-size: 16px;
+    }
+  
+}
 
+.cstdropdown{
+    .dropbtn {
+        background-color: #04AA6D;
+        color: white; 
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .dropbtn:hover, .dropbtn:focus {
+        background-color: #3e8e41;
+      }
+      
+      #myInput {
+        box-sizing: border-box;
+        background-image: url('searchicon.png');
+        background-position: 14px 12px;
+        background-repeat: no-repeat;
+        font-size: 16px;
+        padding: 14px 20px 12px 45px;
+        border: none;
+        border-bottom: 1px solid #ddd;
+      }
+      
+      #myInput:focus {outline: 3px solid #ddd;}
+      
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f6f6f6;
+        min-width: 230px;
+        overflow: auto;
+        border: 1px solid #ddd;
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown a:hover {background-color: #ddd;}
+      
+      .show {display: block;}
+}
+.cs_formview2{
+    gap: 12px;
+    .form-cols{
+        &:first-child{
+            width: 38%;
+            flex: 0 0 38%;
+            max-width: 38%;
+        }
+    }
+     .cs_search_style .fstMultipleMode{
+        // height: 48px;
+        background-position: right 10px top 20px !important;
+        input{
+            font-size: 16px;
+        }
+        .fstChoiceItem{
+            font-size: 14px;
+            height: 35px;
+            padding: 8px 10px 5px;  
+        }
+        .fstQueryInput{
+            height: 32px;
+        }
+        .fstControls{
+           padding:7px 0.5em 0em 16px;
+           min-height: 48px;
+           height: auto;
+        }
+    }
+     .form-cols-out{
+        flex: 0 0 calc(62% - 12px) ; 
+        max-width: calc(62% - 12px) ; 
+        label{
+            margin-bottom: 5px;
+            line-height: normal; 
+            display: block;
+        }
+    }
+    .fstNoneSelected{
+        .fstControls{
+            padding-left: 20px;
+            background: transparent;
+        }
+    }
+    .cs_search_style{
+        flex: 0 0 100%;
+        max-width: 100%;
+        border:0 none;
+        background: transparent;
+        .fstMultipleMode{
+            border-radius: 8px;
+            border: 1px solid $color1;
+            background: $white url(../images/down-arrow.svg) no-repeat right 10px top 25px;
+        }
+    }
+    .fstResults{
+        
+        .fstResultItem{
+            position: relative;
+            padding-right: 2rem;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                border-radius: 3px;
+                right: 9px;
+                top: 11px;
+                border: 1px solid $black;  
+            }
+            &.fstSelected{
+                &::before{
+                    content: "";
+                    width: 11px;
+                    height: 4px;
+                    border: 1px solid currentColor;
+                    border-width: 1px 1px 0 0;
+                    position: absolute;
+                    transform: rotate(135deg);
+                    right: 0.7rem;
+                    top: 17px;
+                
+                }
+            }
+        }
+    }
+    
+    .custom-dropdown{
+        height: 58px;
+        background: $white url(../images/down-arrow.svg) no-repeat right 10px top 25px;
+
+        border: 1px solid $color1;
+        border-radius: 8px;
+    }
+}
+.search-section .filter-section {
+    .cs_formview3{
+        display: flex;
+        padding-top: 20px;
+        gap:30px; 
+        >div{
+            flex:0 0 calc(25% - 20px);
+            &:last-child{
+                flex: 0 0 calc(50% - 20px);
+            }
+        }
+        .area_row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            >div{
+                flex: 0 0 calc(50% - 5px);
+                max-width: calc(50% - 5px);
+            }
+        }
+    }
+}
+.csdropdown_style {
+    .custom-dropdown{ 
+        
+        label{
+            opacity: .7;
+        }
+    }
+    &.cs_formview3{
+        .custom-dropdown{
+             
+                background: white;
+                padding-left: 10px;
+                padding-right: 10px;
+                 
+             
+        }
+    }
+}
 .form-cols-out {
     width: 20%;
-    &.search {width: 38%;}
+    &.search {
+        width: 38%;
+        flex-grow: 1;
+    }
     @include respond(tab) {
         width: 100%;
         &.search {width: 100%;}
@@ -409,7 +722,119 @@
         border-bottom: none;
     }
 }
+.custom_checkbox{
+    margin-top: 1.2rem;
+    label{
+        padding-left: 2.25rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &:before{
+            content: '';
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            border: 2px solid $color8;
+            left: 0;
+            top: 0;
+            border-radius: 3px;
+        }
+        
+         
+    }
+    input{
+        display: none;
+        &:checked+label{
+            &:before{
+                background: $black;
+                border-color: $black; 
+            }
+            &:after{
+                
+                content: "";
+                position: absolute;
+                width: 4px;
+                height: 13px;
+                border: 2px solid $white;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+                top: 2.5px;
+                left: 8.5px;
 
+            }
+        }
+    }
+}
+.csdropdown_style{  
+    label{
+        margin-bottom: 5px;
+        line-height: normal;
+        display: block;
+    }
+    .cs_search_style{
+        flex: 0 0 100%;
+        max-width: 100%;
+        border:0 none;
+        background: transparent;
+        font-size: 16px;
+        .fstMultipleMode{
+            border-radius: 8px;
+            border: 1px solid $color1;
+            background: $white url(../images/down-arrow.svg) no-repeat right 10px top 25px;
+        }
+        
+    }
+    .customSelectBox{
+        label{
+            font-size: 16px;
+        }
+    }
+    .fstResults{
+        .fstResultItem{
+            position: relative;
+            padding-right: 2rem;
+            &:after{
+                content: '';
+                position: absolute;
+                width: 17px;
+                height: 17px;
+                border-radius: 3px;
+                right: 9px;
+                top: 11px;
+                border: 1px solid $black;  
+            }
+            &.fstSelected{
+                &::before{
+                    content: "";
+                    width: 11px;
+                    height: 4px;
+                    border: 1px solid currentColor;
+                    border-width: 1px 1px 0 0;
+                    position: absolute;
+                    transform: rotate(135deg);
+                    right: 0.7rem;
+                    top: 17px;
+                
+                }
+            }
+        }
+        
+    }
+    
+    .custom-dropdown{
+        height: 48px;
+        background: $white url(../images/down-arrow.svg) no-repeat right 10px top 20px;
+
+        border: 1px solid $color1;
+        border-radius: 8px;
+        padding-right: 1.6rem;
+        label{
+            margin-bottom: 0;
+            padding-left: 8px;
+            font-size: 16px;
+        }
+    }
+}
 
 
 .range-slider{
@@ -590,7 +1015,7 @@
         }
     }
     &.show {
-        background-image: url(../images/up-arrow.svg);
+        // background: $white url(../images/down-arrow.svg) no-repeat right 10px top 25px;
         ul {
             display: inline;
         }

@@ -154,6 +154,26 @@ $(document).ready(function () {
     var tagValue = $(this).text();
     $("#community label").text(tagValue);
   });
+  $("#areaselect .without-label li").on("click", function (e) {
+    var tagValue = $(this).text();
+    $("#areaselect label").text(tagValue);
+  }); 
+  $("#areaselectmax .without-label li").on("click", function (e) {
+    var tagValue = $(this).text();
+    $("#areaselectmax label").text(tagValue);
+  }); 
+  $("#prage-max .without-label li").on("click", function (e) {
+    var tagValue = $(this).text();
+    $("#prage-max label").text(tagValue);
+  }); 
+  $("#prage-min .without-label li").on("click", function (e) {
+    var tagValue = $(this).text();
+    $("#prage-min label").text(tagValue);
+  }); 
+  // $(".customSelectBox .without-label li").on("click", function (e) { 
+  //   var tagValue = $(this).text();
+  //   $(this).closest('.customSelectBox').find("label").text(tagValue); 
+  // });
 
   // Search page tab
   $(".tab-content").hide();
@@ -285,3 +305,4 @@ $("#cs_tab_nav li").click(function () {
   return false;
 });
 // =========About us===============
+$('.multipleSelect').fastselect();
