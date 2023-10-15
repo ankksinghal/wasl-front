@@ -104,6 +104,10 @@
     position: absolute;
     left: 0;
     right: 0;
+    &.search-page{
+       margin-top:35px;
+       position: static;
+    }
     @include respond(tab_land) {
         max-width: unset;
         margin-left: 15px;

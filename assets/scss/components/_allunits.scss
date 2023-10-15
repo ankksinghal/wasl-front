@@ -504,6 +504,7 @@
         }
         img.feature-image {
           margin: 0 0 16px;
+          width: 100%;
           @include respond(tab_land) {
             width: 100%;
             max-height: fit-content;
@@ -536,7 +537,6 @@
           }
         }
         .view-details-wrap {
-          border-top: 1px solid $color1;
           padding-top: 16px;
           text-align: center;
           a {
