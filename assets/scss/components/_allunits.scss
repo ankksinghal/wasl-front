@@ -966,3 +966,131 @@ body {
   }
 
 }
+
+
+// =========Responsive===============
+@include respond(tab){
+  .cs_search_style{
+    margin-bottom: 0px;
+    flex:  0 0 100%;
+  }
+
+  .cs_search_style {
+    .fstMultipleMode{
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 14px;
+      border: 1px solid $color1;
+      input{
+        font-size: 16px;
+      }
+    }
+  }
+  .search-section .form-section {
+    .form-raper{
+      padding: 16px;
+      border: 0 none;
+      box-sizing: border-box;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap:10px;
+      .form-cols-out{
+        flex: 0 0 calc(50% - 5px);
+        box-sizing: border-box;
+      }
+    }
+    .cs_formview2{
+      display: flex;
+    }
+    .cs_formview3{
+      padding-top: 0;
+      gap:10px;
+      >div{
+        flex: 0 0 calc(50% - 5px); 
+        &:last-child{
+          flex: 0 0 100%;
+        }
+      }
+
+    }
+  }
+  .custom-dropdown,.csdropdown_style .custom-dropdown{
+    border: 1px solid $color1;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    height: 48px;
+    background-position: right 10px top 18px;
+    label{
+      font-size: 14px;
+    }
+  }  
+  .search-section .form-section.sec_2  {
+    .form-raper{
+      gap: 10px; 
+      .form-cols-out{
+        flex: 0 0 calc(50% - 5px);
+        @include respond(phone){
+          flex: 0 0 100%;
+          .form-control.dropdown{
+            padding-left: 15px;
+          }
+        }
+      }
+      .form-control.search{
+        margin-bottom: 12px;
+        font-size: 14px;
+        border: 1px solid #E4E4DC;
+        height: 56px;
+        border-radius: 8px;
+        background-position: left 20px top 16px;
+        padding-left: 3.25rem;
+        font-size: 16px;
+        color:$color17 ;
+      }
+      >div:first-child{
+        flex: 0 0 100%; 
+        
+      }
+      
+    } 
+    .form-control.dropdown{
+      border: 1px solid #E4E4DC;
+      border-radius: 8px;
+    }
+    .form-view{
+      display: flex;
+      gap: 10px;
+      >div{
+        flex: 0 0 calc(50% - 5px);
+        @include respond(phone){
+          &:last-child{
+            flex: 0 0 100%;
+          }
+        }
+      }
+    }
+  }
+ 
+}
+@include respond(phone){
+  .custom-dropdown label{
+    padding-left: 5px;
+  }
+  .search-section .filter-section .cs_formview2{
+    gap: 10px;
+  }
+  .search-section .form-section .cs_formview3{
+    display: block;
+  }
+  .cs_formview2{
+    
+    .form-cols-out {
+      flex: 0 0 calc(50% - 5px);
+      max-width: calc(50% - 5px);
+    }
+    .form-cols:first-child{
+      flex: 50%;
+      max-width: calc(50% - 5px);
+    }
+  }
+}
