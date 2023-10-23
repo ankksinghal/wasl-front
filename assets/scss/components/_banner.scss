@@ -1036,3 +1036,54 @@
         width: 28px;
     }
 }
+
+
+
+
+// Buying page CSS
+.right-content-box.buying-listing {
+    padding: 14px 30px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    right: unset;
+    left: 11vw;
+    top: unset;
+    bottom: 15vh;
+    background: #E4E4DC;
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        li {
+            display: flex;
+            gap: 7px;
+            align-items: flex-end;
+            color: #2B2A28;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            img {
+                width: 24px;
+                max-height: 24px;
+            }
+        }
+    }
+    .btn-style {
+        background: #2B2A28;
+        color: #FFFFFF;
+        font-size: 1em;
+        border-radius: 8px;
+        padding: 13px 0;
+        font-weight: 500;
+        display: inline-block;
+        transition: all 0.4s ease-in-out;
+        max-width: 126px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
