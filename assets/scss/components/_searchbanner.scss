@@ -65,41 +65,7 @@
             height: 20px;
         }
      }
-     ul {
-      display: flex;
-      gap: 20px;
-      li {
-         font-size: $font14;
-         font-style: normal;
-         font-weight: $fontweight5;
-         line-height: 21px;
-         color: $black;
-         position: relative;
-         &:not(:last-child)::after {
-            content: ">";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            margin: auto;
-            right: -15px;
-            font-size: $font14;
-            color: $black;
-         }
-         a {
-            color: $color12;
-            color: $black;
-            &:hover {
-               text-decoration: underline;
-               color: $black;
-            }
-         }
-      }
-      @include respond(tab) {
-         &.ls-bread {
-            display: none;
-         }
-      }
-     }
+   
      .ls-connect {
       display: none;
       }
