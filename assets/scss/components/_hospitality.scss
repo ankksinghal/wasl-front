@@ -1,0 +1,125 @@
+.hospitality-page-wrapper{
+     padding: 30px 0 100px;
+     h2{
+        font-weight: $fontweight2;
+        font-size: $font30;
+        color:$black;
+        margin:0 0 22px;
+     }
+     .offered-section-wrap{
+        ul{
+             display: flex;
+             gap:32px;
+             justify-content: space-between;
+             li{
+                position: relative;
+                span{
+                    position: absolute;
+                    left:0;
+                    bottom: 0;
+                    text-align:center;
+                    width: 100%;
+                    background-color: $white;
+                    opacity: 0.75;
+                    padding:15px 15px;
+                    font-weight: $fontweight3;
+                    font-size: $font16;
+                    color:$color3;
+                }
+             }
+        }
+     }
+}
+
+// Pages wrapper
+.all-units-wrapper{
+    .all-units-section{
+        &.hospitality-blocks{
+          padding:30px 0 100px;
+          .all-units-cards-wrap{
+              justify-content: space-between;
+              p{
+                font-size: $font16;
+                line-height:19.1px;
+                color:$black;
+                opacity: 0.7;
+                margin-bottom: 15px;
+            }
+            .view-details-wrap{
+                 border-top: 1px solid #F1F1F1;
+            }
+          }
+          .all-units-cards{
+              width: 29%;
+              h3{
+                 font-size: $font20;
+              }
+              .card-details{
+                span{
+                     color:$black;
+                     strong{
+                        font-weight: $fontweight3;
+                     }
+                }
+              } 
+          }
+      }
+     }
+}
+.container{
+    .village-building{
+        &.hospitality{
+         .village-banner{
+             .left-section{
+                 ul{
+                     li{
+                       span{
+                         font-weight: $fontweight3;
+                       }
+                     }
+                 }
+             }
+         }
+        }
+     }
+}
+
+.ammenties-wrapper-details{
+    margin:0 0 50px;
+    h2{
+         font-weight: $fontweight2;
+         font-size: $font30;
+         text-align: center;
+         margin-bottom: 30px;
+         color:$black;
+    }
+    h4{
+        font-weight: $fontweight2;
+         font-size: $font19;
+         color:$black;
+         margin-bottom: 20px;
+    }
+    p{
+         font-size: $font16;
+         margin-bottom: 20px;
+         color:$black;
+
+    }
+    ul{
+         display: flex;
+         justify-content: space-between;
+         margin-bottom: 30px;
+         li{
+             text-align: center;
+             img{
+                margin-bottom: 12px;
+             }
+             span{
+                display: block;
+                font-size: $font18;
+                font-weight: $fontweight2;
+                line-height: 21px;
+             }
+         }
+    }
+}

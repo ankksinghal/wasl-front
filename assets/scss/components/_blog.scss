@@ -13,6 +13,14 @@
             .cs_col {
                 flex: 0 0 50%;
                 max-width: 50%;
+                &.servies-owner{
+                    flex: 0 0 33.33%;
+                    max-width:33.33%;
+                    @include respond(phone) {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
                 @include respond(phone) {
                     flex: 0 0 100%;
                     max-width: 100%;
