@@ -7,10 +7,16 @@ ul.breadcrumb {
   li {
     display: inline;
     font-size: 18px;
+    @include respond(phone_land) {
+      font-size: $font12;
+  }
     & + li:before {
       padding: 8px;
       color: $black;
       content: ">";
+      @include respond(phone_land) {
+        padding: 1px;
+    }
     }
     a {
       color: #61605f;

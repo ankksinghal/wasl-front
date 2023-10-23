@@ -306,3 +306,11 @@ $("#cs_tab_nav li").click(function () {
 });
 // =========About us===============
 $('.multipleSelect').fastselect();
+
+
+
+ // Faq accordian 
+ $(".accordion-header").click(function () {
+  $(this).toggleClass("active").next(".accordion-content").slideToggle().parent().siblings().
+  find(".accordion-content").slideUp().prev().removeClass("active");
+});
