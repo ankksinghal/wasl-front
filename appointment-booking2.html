@@ -9,6 +9,7 @@
         <!-- Owl Carousel Assets -->
         <link href="./assets/js/owl.theme.css" rel="stylesheet">
         <link href="./assets/js/owl.theme.default.min.css" rel="stylesheet">
+        <link href="./assets/css/mark-your-calendar.css" rel="stylesheet">
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
     <body>
@@ -140,147 +141,12 @@
                 <div class="container">
                     <div class="form_wrapper_card">
                         <div class="form_wrapper_head">
-                            <h2>Contact Details</h2> 
-                            <p>Please enter your details. We will send you a confirmation once your appointment is booked. <span class="inpo_start">*</span>Fields are mandatory</p>
+                            <h2>Select Date and Time</h2> 
+                            <p>Please select a date and a time</p>
                         </div>
-                        <form>
-                            <div class="enquiry-form">
-                                <div>
-                                    <div class="label-astric">
-                                        <label for="fullName" class="form-label">
-                                            Full Name
-                                        </label
-                          >
-                                        <span class="astric">*</span>
-                                    </div>
-                                    <input
-                                        type="text"
-                                        class="form-input"
-                                        id="fullName"
-                                        placeholder="Enter here"
-                                    >
-                                </div>
-                                <div>
-                                    <div class="label-astric">
-                                        <label for="lastName" class="form-label">
-                                            Last Name
-                                        </label
-                          >
-                                        <span class="astric">*</span>
-                                    </div>
-                                    <input
-                                        type="text"
-                                        class="form-input"
-                                        id="lastName"
-                                        placeholder="Enter here"
-                                    >
-                                </div>
-                                <div>
-                                    <div class="label-astric">
-                                        <label for="email" class="form-label">
-                                            Email
-                                        </label
-                          >
-                                        <span class="astric">*</span>
-                                    </div>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        class="form-input"
-                                        placeholder="Enter email here"
-                                    >
-                                </div>
-                                <div>
-                                    <div class="label-astric">
-                                        <label class="form-label">
-                                            Mobile Number
-                                        </label
-                          >
-                                        <span class="astric">*</span>
-                                    </div>
-                                    <div class="mobile-number">
-                                        <div class="enquiry-select area-code" id="area-code">
-                                            <label>+971</label>
-                                            <ul class="without-label">
-                                                <li title="">+91</li>
-                                                <li title="">+914</li>
-                                                <li title="">+718</li>
-                                            </ul>
-                                        </div>
-                                        <input
-                                            type="number"
-                                            id="mobile-number"
-                                            class="form-input num3-size"
-                                            placeholder="Enter here"
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="enquiry-form fullWidth">
-                                <div>
-                                    <label for="message" class="form-label">Notes</label>
-                                    <textarea
-                                        class="form-input"
-                                        id="message"
-                                        rows="5"
-                                        placeholder="Enter here"
-                                    ></textarea>
-                                </div>
-                            </div>
-                            <div class="enquiry-form fullWidth">
-                                <div class="cs_radio_wrapper1">
-                                     
-                                        <div class="label-astric">
-                                            <label class="form-label">
-                                                Notify me by
-                                            </label
-                          >
-                                            <span class="astric">*</span>
-                                        </div>
-                                        <div class="radio_row">
-                                            <div class="inline-view" id="radio-switch">
-                                                <label class="radio sm-radio">
-                                                    <samp>
-                                                        Mobile number
-                                                    </samp>
-                                                    <input
-                                                        type="radio"
-                                                        checked
-                                                        name="type"
-                                                        value="email"
-                                                    >
-                                                    <span class="radiomark"></span>
-                                                </label>
-                                                <label class="radio sm-radio">
-                                                    <samp>
-                                                        Email address
-                                                    </samp>
-                                                    <input type="radio" name="type" value="phone">
-                                                    <span class="radiomark"></span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    
-                                </div>
-                            </div>
-                            
-                                <div class="link-section fullWidth">
-              
-                                    <div class="agree-check">
-                                        <input type="checkbox" id="agree-check" name="agree-check">
-                                        <label for="agree-check" class="checkbox properties-view">
-                                            I have read and agreed with the 
-                                            <a href="#">Terms &amp; Conditions &amp; Privacy Policy</a>
-                                            .
-                                        </label>
-                                    </div>
-                                    
-                                </div>
-                            
-                            <div class="form_btn_wrap">
-                                <button type="submit" class="btn_lg cs_btn">Create Appointment</button>
-                            </div>
-                        </form>
+                        <div id="picker"></div>
+                        <div class="form_btn_wrap"><button type="submit" class="btn_lg cs_btn">Next</button></div>
+                  
                     </div>
                 </div>
             </section>
@@ -533,6 +399,99 @@
         <script src="./assets/js/jquery-1.9.1.min.js"></script>
         <script src="./assets/js/owl.carousel.js"></script>
         <script src="./assets/js/range-slider.js"></script>
+        <script src="./assets/js/mark-your-calendar.js"></script>
         <script src="./assets/js/custom.js"></script>
+        <script type="text/javascript">
+            (function($) {
+              $('#picker').markyourcalendar({
+                availability: [
+                  ['1:00', '2:00', '3:00', '4:00', '5:00'],
+                  ['2:00'],
+                  ['3:00'],
+                  ['4:00'],
+                  ['5:00'],
+                  ['6:00'],
+                  ['7:00']
+                ],
+                startDate: new Date("2020-10-25"),
+                onClick: function(ev, data) {
+                  // data is a list of datetimes
+                  var d = data[0].split(' ')[0];
+                  var t = data[0].split(' ')[1];
+                  $('#selected-date').html(d);
+                  $('#selected-time').html(t);
+                },
+                onClickNavigator: function(ev, instance) {
+                  var arr = [
+                    [
+                      ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                      ['1:00', '5:00'],
+                      ['2:00', '5:00'],
+                      ['3:30'],
+                      ['2:00', '5:00'],
+                      ['2:00', '5:00'],
+                      ['2:00', '5:00']
+                    ],
+                    [
+                      ['2:00', '5:00'],
+                      ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                      ['4:00', '5:00'],
+                      ['2:00', '5:00'],
+                      ['2:00', '5:00'],
+                      ['2:00', '5:00'],
+                      ['2:00', '5:00']
+                    ],
+                    [
+                      ['4:00', '5:00'],
+                      ['4:00', '5:00'],
+                      ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                      ['3:00', '6:00'],
+                      ['3:00', '6:00'],
+                      ['3:00', '6:00'],
+                      ['3:00', '6:00']
+                    ],
+                    [
+                      ['4:00', '5:00'],
+                      ['4:00', '5:00'],
+                      ['4:00', '5:00'],
+                      ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                      ['4:00', '5:00'],
+                      ['4:00', '5:00'],
+                      ['4:00', '5:00']
+                    ],
+                    [
+                      ['4:00', '6:00'],
+                      ['4:00', '6:00'],
+                      ['4:00', '6:00'],
+                      ['4:00', '6:00'],
+                      ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                      ['4:00', '6:00'],
+                      ['4:00', '6:00']
+                    ],
+                    [
+                      ['3:00', '6:00'],
+                      ['3:00', '6:00'],
+                      ['3:00', '6:00'],
+                      ['3:00', '6:00'],
+                      ['3:00', '6:00'],
+                      ['4:00', '5:00', '6:00', '7:00', '8:00'],
+                      ['3:00', '6:00']
+                    ],
+                    [
+                      ['3:00', '4:00'],
+                      ['3:00', '4:00'],
+                      ['3:00', '4:00'],
+                      ['3:00', '4:00'],
+                      ['3:00', '4:00'],
+                      ['3:00', '4:00'],
+                      ['4:00', '5:00', '6:00', '7:00', '8:00']
+                    ]
+                  ]
+                  var rn = Math.floor(Math.random() * 10) % 7;
+                  instance.setAvailability(arr[rn]);
+                }
+              });
+            })(jQuery);
+        </script>
     </body>
 </html>
