@@ -7993,9 +7993,23 @@ figure.card_img:before {
   display: flex;
   gap: 32px;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .hospitality-page-wrapper .offered-section-wrap ul {
+    gap: 15px;
+  }
 }
 .hospitality-page-wrapper .offered-section-wrap ul li {
   position: relative;
+}
+@media screen and (max-width: 767px) {
+  .hospitality-page-wrapper .offered-section-wrap ul li {
+    flex-basis: 46%;
+  }
+}
+.hospitality-page-wrapper .offered-section-wrap ul li img {
+  width: 100%;
 }
 .hospitality-page-wrapper .offered-section-wrap ul li span {
   position: absolute;
@@ -8009,13 +8023,24 @@ figure.card_img:before {
   font-weight: 700;
   font-size: 1em;
   color: #3A3A3C;
+  box-sizing: border-box;
 }
 
+@media screen and (max-width: 767px) {
+  .all-units-wrapper.hospitality-blocks-wrap {
+    display: block;
+  }
+}
 .all-units-wrapper .all-units-section.hospitality-blocks {
   padding: 30px 0 100px;
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards-wrap {
   justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards-wrap {
+    display: block;
+  }
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards-wrap p {
   font-size: 1em;
@@ -8028,10 +8053,25 @@ figure.card_img:before {
   border-top: 1px solid #F1F1F1;
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards {
-  width: 29%;
+  width: 32%;
+  box-sizing: border-box;
+}
+.all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards img.feature-image {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards h3 {
   font-size: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards .card-details-wrap .card-details {
+    width: 100%;
+  }
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards .card-details span {
   color: #2B2A28;
@@ -8075,6 +8115,7 @@ figure.card_img:before {
 }
 .ammenties-wrapper-details ul li img {
   margin-bottom: 12px;
+  width: 100%;
 }
 .ammenties-wrapper-details ul li span {
   display: block;
@@ -8100,12 +8141,19 @@ figure.card_img:before {
 .special-renting-wrapper .special-renting-content {
   display: flex;
   justify-content: space-between;
+  gap: 110px;
+}
+@media screen and (max-width: 767px) {
+  .special-renting-wrapper .special-renting-content {
+    display: block;
+  }
 }
 .special-renting-wrapper .special-renting-content .left-section-rent ul li {
   border: 1px solid #EFEFEF;
   padding: 16px;
   border-radius: 10px;
   font-size: 1em;
+  margin-bottom: 15px;
 }
 .special-renting-wrapper .special-renting-content .left-section-rent ul li span {
   font-weight: 500;
