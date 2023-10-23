@@ -181,7 +181,7 @@
     }
     .myc-available-time{
         border-radius: 8px;
-        background: $color1;
+        background: $color1; 
         padding: 14px 5px; 
         @include respond(tab){
             font-size: 12px;
