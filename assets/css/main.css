@@ -3181,41 +3181,6 @@ footer .copyright-section p {
   width: 20px;
   height: 20px;
 }
-.search-banner-section ul {
-  display: flex;
-  gap: 20px;
-}
-.search-banner-section ul li {
-  font-size: 0.875em;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-  color: #2B2A28;
-  position: relative;
-}
-.search-banner-section ul li:not(:last-child)::after {
-  content: ">";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  right: -15px;
-  font-size: 0.875em;
-  color: #2B2A28;
-}
-.search-banner-section ul li a {
-  color: #f5f5f5;
-  color: #2B2A28;
-}
-.search-banner-section ul li a:hover {
-  text-decoration: underline;
-  color: #2B2A28;
-}
-@media screen and (max-width: 991px) {
-  .search-banner-section ul.ls-bread {
-    display: none;
-  }
-}
 .search-banner-section .ls-connect {
   display: none;
 }
@@ -8436,4 +8401,218 @@ figure.card_img:before {
 }
 .special-renting-wrapper .special-renting-content .left-section-rent ul li p a {
   color: #8BB8AA;
+}
+
+.cs_main {
+  color: #2B2A28;
+}
+.cs_main *, .cs_main *:after, .cs_main *:before {
+  box-sizing: border-box;
+}
+.cs_main img {
+  max-width: 100%;
+  height: auto;
+}
+.cs_main input, .cs_main select, .cs_main textarea, .cs_main button {
+  font-family: "bliss_proregular";
+}
+.cs_main p {
+  line-height: 1.5;
+}
+
+.form_wrapper_card {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid #E4E4DC;
+}
+
+.cs_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-size: 15px;
+  background: #2B2A28;
+  border: 0 none;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+.cs_btn:hover {
+  background: #000;
+  color: #FFFFFF;
+}
+.cs_btn.btn_lg {
+  padding: 19px 35px;
+}
+.cs_btn.btn_trans {
+  background: transparent;
+  border: 1px solid #000;
+  color: #1C190E;
+  transition: 0.25s;
+}
+.cs_btn.btn_trans:hover {
+  background: #2B2A28;
+  color: #FFFFFF;
+}
+
+.appointment_form_section {
+  padding: 30px 0 70px;
+}
+@media screen and (max-width: 991px) {
+  .appointment_form_section {
+    padding: 25px 0 50px;
+  }
+}
+.appointment_form_section h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.appointment_form_section .enquiry-form {
+  margin-top: 10px;
+  gap: 22px;
+}
+.appointment_form_section .form_btn_wrap {
+  padding-top: 10px;
+  text-align: right;
+}
+.appointment_form_section .form_wrapper_head {
+  margin-bottom: 22px;
+}
+.appointment_form_section .enquiry-form + .enquiry-form {
+  padding-top: 11px;
+}
+.appointment_form_section .cs_radio_wrapper {
+  padding: 0;
+}
+.appointment_form_section .link-section {
+  margin-bottom: 2rem;
+}
+.appointment_form_section .inpo_start {
+  color: #F00;
+}
+.appointment_form_section #myc-prev-week, .appointment_form_section #myc-next-week {
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #E4E4DC;
+  font-size: 0;
+  position: relative;
+}
+.appointment_form_section #myc-prev-week:after, .appointment_form_section #myc-next-week:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  display: block;
+  border: 2px solid #2B2A28;
+  border-width: 2px 2px 0 0;
+  transform: rotate(-135deg);
+  left: 10px;
+  position: absolute;
+  top: 7.5px;
+}
+.appointment_form_section #myc-prev-week#myc-next-week:after, .appointment_form_section #myc-next-week#myc-next-week:after {
+  transform: rotate(45deg);
+  left: 7px;
+}
+.appointment_form_section #myc-nav-container #myc-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.appointment_form_section #myc-current-month-year-container {
+  margin: 0 auto;
+  font-size: 18px;
+  color: #777;
+}
+@media screen and (max-width: 991px) {
+  .appointment_form_section #myc-current-month-year-container {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .appointment_form_section #myc-current-month-year-container {
+    font-size: 13px;
+  }
+}
+.appointment_form_section #myc-week-container, .appointment_form_section .myc-date-header, .appointment_form_section #myc-available-time-container {
+  border: 0 none;
+}
+.appointment_form_section #myc-dates-container #myc-dates-container {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .appointment_form_section #myc-dates-container #myc-dates-container {
+    gap: 1px;
+  }
+}
+.appointment_form_section .myc-date-header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid #E4E4DC;
+  border-radius: 16px;
+  flex-direction: column-reverse;
+  font-weight: 500;
+}
+.appointment_form_section .myc-date-header * {
+  color: #8D8D87;
+  line-height: 1.5;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.appointment_form_section .myc-date-header .myc-date-number {
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .appointment_form_section .myc-date-header {
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .appointment_form_section .myc-date-header * {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .appointment_form_section .myc-date-header {
+    padding: 3px;
+    line-height: 1;
+  }
+  .appointment_form_section .myc-date-header * {
+    font-size: 11px;
+  }
+}
+.appointment_form_section #myc-available-time-container {
+  display: flex;
+  justify-content: space-between;
+}
+.appointment_form_section .myc-available-time {
+  border-radius: 8px;
+  background: #E4E4DC;
+  padding: 14px 5px;
+  line-height: 1.1;
+  color: #2B2A28;
+}
+@media screen and (max-width: 991px) {
+  .appointment_form_section .myc-available-time {
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+}
+.appointment_form_section .myc-available-time:hover, .appointment_form_section .myc-available-time.selected {
+  background: #2B2A28;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .appointment_form_section .myc-day-time-container {
+    padding: 10px 0;
+  }
 }/*# sourceMappingURL=main.css.map */
