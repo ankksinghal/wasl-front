@@ -1,0 +1,106 @@
+.top-categories-wrap{
+    margin:150px 0 87px;
+    h2{
+        font-weight: $fontweight2;
+        font-size: $font30;
+        margin-bottom: 40px;
+        color: $black;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        gap: 32px;
+        li{
+            border: 1px solid #E4E4DC;
+            border-radius: 16px;
+            width:282px;
+            height: 142px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+           text-align: center;
+            span{
+                 display: block;
+            }
+        }
+    }
+}
+
+.featured-stores-wrapper{
+    margin:10px 0 45px;
+    h2{
+        font-weight: $fontweight2;
+        font-size: $font30;
+        margin-bottom: 40px;
+        color: $black;
+    }
+    .owl-carousel{
+        .item{
+            figure{
+                figcaption{
+                    position: absolute;
+                    color: $white;
+                    font-size: $font30;
+                    font-weight: $fontweight3;
+                    left:40px;
+                    bottom: 15px;
+                }
+            }
+        }
+        .owl-dots {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 27px;
+            .owl-dot {
+                span {
+                    width: 25px;
+                    height: 15px;
+                    background: #D9D9D9;
+                    opacity: 1;
+                    display: block;
+                    border-radius: 50px;
+                    transition: all 0.4s ease-in-out;
+                }
+                &.active span {
+                    background: #2B2A28;
+                    width: 55px;
+                }
+            }
+        }
+    } 
+}
+
+
+.about-wasl-retail-wrap{
+    margin:68px 0 100px;
+    .about-wasl-retail{
+         display: flex;
+         justify-content: space-between;
+         gap: 58px;
+         h2{
+            font-weight: $fontweight2;
+            font-size: $font30;
+            margin-bottom: 55px;
+            color: $black;
+         }
+         p{
+            font-size: $font16;
+            line-height: 28px;
+            margin-bottom: 55px;
+            color: $black;
+            opacity: 0.8;
+         }
+    }
+    .about-wasl-retail-right{
+         display: flex;
+         gap:15px;
+         align-items: start;
+         justify-content: space-between;
+    }
+    .about-wasl-retail-left{
+        flex:0 0 50%;
+    }
+}

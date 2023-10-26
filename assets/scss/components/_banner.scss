@@ -352,6 +352,9 @@
     background: #F1F1EE;
     padding: 16px;
     padding-bottom: 0;
+    &.retail{
+        padding:0;
+    }
     @include respond(tab) {
         border-radius: 0;
         padding: 0;

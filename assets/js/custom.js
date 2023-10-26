@@ -98,6 +98,17 @@ $(document).ready(function () {
     },
   });
 
+  var owl = $("#featured-stores");
+  owl.owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 39,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  })
+
   // Toggle the mobile menu when the menu button is clicked
 
   $(".mobile-menu").click(function () {
