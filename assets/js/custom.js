@@ -440,8 +440,7 @@ $("#cs_tab_nav li").click(function () {
   //var totalslides = 10;
   var syncedSecondary = true;
 
-  bigimage
-    .owlCarousel({
+  bigimage.owlCarousel({
     items: 1,
     slideSpeed: 2000,
     nav: false,
@@ -464,7 +463,7 @@ $("#cs_tab_nav li").click(function () {
       .addClass("current");
   })
     .owlCarousel({
-    items: 4,
+    items: 5,
     dots: false, 
     nav: true,
     navText: [
