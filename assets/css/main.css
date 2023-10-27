@@ -1700,6 +1700,10 @@ body.slide {
   margin-top: 5rem;
 }
 
+.common-marg99 {
+  margin-top: 99px;
+}
+
 .buying-about {
   display: flex;
   flex-wrap: nowrap;
