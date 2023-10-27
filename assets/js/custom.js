@@ -135,6 +135,29 @@ $(document).ready(function () {
     },
   });
 
+  var owl = $("#owl-near-thumb");
+  owl.owlCarousel({
+    items: 7,
+    loop: false,
+    margin: 39,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots:true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 7,
+      },
+    },
+  });
+
   var owl = $("#owl-prtoj-thumb");
   owl.owlCarousel({
     items: 3,
