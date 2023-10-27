@@ -11,8 +11,18 @@
              display: flex;
              gap:32px;
              justify-content: space-between;
+             flex-wrap: wrap;
+             @include respond(phone_land) {
+                gap:15px;
+            }
              li{
                 position: relative;
+                @include respond(phone_land) {
+                    flex-basis: 46%;
+                }
+                img{
+                     width: 100%;
+                }
                 span{
                     position: absolute;
                     left:0;
@@ -25,6 +35,7 @@
                     font-weight: $fontweight3;
                     font-size: $font16;
                     color:$color3;
+                    box-sizing: border-box;
                 }
              }
         }
@@ -33,11 +44,19 @@
 
 // Pages wrapper
 .all-units-wrapper{
+    &.hospitality-blocks-wrap{
+        @include respond(phone_land) {
+            display: block;
+        }
+    }
     .all-units-section{
         &.hospitality-blocks{
           padding:30px 0 100px;
           .all-units-cards-wrap{
               justify-content: space-between;
+              @include respond(phone_land) {
+                display: block;
+            }
               p{
                 font-size: $font16;
                 line-height:19.1px;
@@ -50,9 +69,24 @@
             }
           }
           .all-units-cards{
-              width: 29%;
+              width: 32%;
+              box-sizing:border-box;
+              img.feature-image{
+                 width: 100%;
+              }
+              @include respond(phone_land) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
               h3{
                  font-size: $font20;
+              }
+              .card-details-wrap{
+                .card-details{
+                    @include respond(phone_land) {
+                        width: 100%;
+                    }
+                }
               }
               .card-details{
                 span{
@@ -113,6 +147,7 @@
              text-align: center;
              img{
                 margin-bottom: 12px;
+                width: 100%;
              }
              span{
                 display: block;
