@@ -1234,6 +1234,9 @@
 .thumbnail {
     display: flex;
     justify-content: space-between;
+    width: calc(100% + 20px);
+    position: relative;
+    left: -20px;
     figure {
         display: flex;
         justify-content: center;
@@ -1257,6 +1260,25 @@
             font-weight: 500;
             margin-bottom: 8px;
             display: block;
+            text-align: center;
+        }
+    }
+    .owl-dots {
+        margin-top: 34px;
+        display: flex;
+        gap: 4px;
+        justify-content: center;
+        button {
+            width: 37px;
+            height: 9px;
+            flex-shrink: 0;
+            border-radius: 100px;
+            opacity: 0.5;
+            background: #E4E4DC;
+            &.active {
+                background: #1C190E;
+                opacity: 1;
+            }
         }
     }
 }
