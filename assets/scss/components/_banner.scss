@@ -1577,7 +1577,7 @@
 }
 
 .plans-buying {
-    margin: 69px 0;
+    margin: 90px  0 69px;
     .header-gallery {
         display: flex;
         justify-content: space-between;
@@ -1897,7 +1897,7 @@
     max-width: calc(100% - 24px);
     margin-left: 24px;
     position: relative;
-    padding-right: 184px;
+    padding-right: 210px;
     margin-top: 57px;
     .outer {
       margin: 0 auto;
@@ -1928,38 +1928,44 @@
       }
     }
     #about_sec_slider_thumb {
-      position: absolute;
-      right: 120px;
-      bottom: 0;
-      width: 100%;
-      height: 120px;
-      transform: rotate(90deg);
-      transform-origin: right bottom;
-      padding: 0 0px 0 60px;
+        position: absolute;
+        right: 120px;
+        bottom: 0;
+        width: 48%;
+        transform: rotate(90deg);
+        transform-origin: right bottom;
+        padding: 0;
+        left: 35%;
+        box-sizing: border-box;
       .owl-stage-outer{
         z-index: 1;
+        left: -16px;
       }
       .owl-item {
         width: 76px;
       }
       .item {
         background: #c9c9c9;
-        line-height: 70px;
         padding: 0px;
-        margin: 2px;
-        color: #fff;
+        margin: 0px;
         border-radius: 3px;
-        text-align: center;
         cursor: pointer;
         border: 1px solid $color1;
         width: 76px;
-        height: 120px;
+        height: 184px;
         border-radius: 16px;
         overflow: hidden;
+        position: relative;
         img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
+            width: 196px;
+            height: 86px;
+            -o-object-fit: cover;
+            object-fit: cover;
+            transform: rotate(-90deg);
+            position: relative;
+            top: 7px;
+            left: -17px;
+            transform-origin: bottom;
         }
       }
     }
@@ -1997,13 +2003,13 @@
       right: 10px;
     }
     .owl-nav {
-      bottom: 32%;
-      position: absolute;
-      width: 102%;
-      display: flex;
-      justify-content: space-between;
-      left: 25px;
-      margin: 0;
+        bottom: 40%;
+        position: absolute;
+        width: 114%;
+        display: flex;
+        justify-content: space-between;
+        left: -64px;
+        margin: 0;
       &.disabled{
         display: none;
       }
@@ -2011,7 +2017,7 @@
         width: 30px;
         height: 30px;
         transform: rotate(-90deg);
-        background: url(../images/up-arrow.svg) no-repeat center center/20px !important;
+        background: url(../images/up-arrow.svg) no-repeat center center/30px !important;
       }
       button.owl-next {
         transform: rotate(90deg);

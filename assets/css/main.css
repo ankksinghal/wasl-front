@@ -2151,7 +2151,7 @@ body.slide {
 }
 
 .plans-buying {
-  margin: 69px 0;
+  margin: 90px 0 69px;
 }
 .plans-buying .header-gallery {
   display: flex;
@@ -2467,7 +2467,7 @@ body.slide {
   max-width: calc(100% - 24px);
   margin-left: 24px;
   position: relative;
-  padding-right: 184px;
+  padding-right: 210px;
   margin-top: 57px;
 }
 .gallery-slider-view .outer {
@@ -2502,38 +2502,43 @@ body.slide {
   position: absolute;
   right: 120px;
   bottom: 0;
-  width: 100%;
-  height: 120px;
+  width: 48%;
   transform: rotate(90deg);
   transform-origin: right bottom;
-  padding: 0 0px 0 60px;
+  padding: 0;
+  left: 35%;
+  box-sizing: border-box;
 }
 .gallery-slider-view #about_sec_slider_thumb .owl-stage-outer {
   z-index: 1;
+  left: -16px;
 }
 .gallery-slider-view #about_sec_slider_thumb .owl-item {
   width: 76px;
 }
 .gallery-slider-view #about_sec_slider_thumb .item {
   background: #c9c9c9;
-  line-height: 70px;
   padding: 0px;
-  margin: 2px;
-  color: #fff;
+  margin: 0px;
   border-radius: 3px;
-  text-align: center;
   cursor: pointer;
   border: 1px solid #E4E4DC;
   width: 76px;
-  height: 120px;
+  height: 184px;
   border-radius: 16px;
   overflow: hidden;
+  position: relative;
 }
 .gallery-slider-view #about_sec_slider_thumb .item img {
-  width: 100%;
-  height: 100%;
+  width: 196px;
+  height: 86px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
+  transform: rotate(-90deg);
+  position: relative;
+  top: 7px;
+  left: -17px;
+  transform-origin: bottom;
 }
 .gallery-slider-view #about_sec_slider_thumb .item h1 {
   font-size: 18px;
@@ -2568,12 +2573,12 @@ body.slide {
   right: 10px;
 }
 .gallery-slider-view .owl-nav {
-  bottom: 32%;
+  bottom: 40%;
   position: absolute;
-  width: 102%;
+  width: 114%;
   display: flex;
   justify-content: space-between;
-  left: 25px;
+  left: -64px;
   margin: 0;
 }
 .gallery-slider-view .owl-nav.disabled {
@@ -2583,7 +2588,7 @@ body.slide {
   width: 30px;
   height: 30px;
   transform: rotate(-90deg);
-  background: url(../images/up-arrow.svg) no-repeat center center/20px !important;
+  background: url(../images/up-arrow.svg) no-repeat center center/30px !important;
 }
 .gallery-slider-view .owl-nav button.owl-next {
   transform: rotate(90deg);
