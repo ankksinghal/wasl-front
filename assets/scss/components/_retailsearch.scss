@@ -1,5 +1,5 @@
 .top-categories-wrap{
-    margin:150px 0 87px;
+    margin:120px 0 87px;
     h2{
         font-weight: $fontweight2;
         font-size: $font30;
@@ -22,6 +22,10 @@
            text-align: center;
             span{
                  display: block;
+                 font-size: $font18;
+                 font-weight: $fontweight2;
+                 margin-top:15px;
+                 color:$darkBlack;
             }
         }
     }
@@ -80,6 +84,7 @@
          display: flex;
          justify-content: space-between;
          gap: 58px;
+         flex-wrap: wrap;
          h2{
             font-weight: $fontweight2;
             font-size: $font30;
@@ -89,7 +94,7 @@
          p{
             font-size: $font16;
             line-height: 28px;
-            margin-bottom: 55px;
+            margin-bottom: 35px;
             color: $black;
             opacity: 0.8;
          }
@@ -101,6 +106,6 @@
          justify-content: space-between;
     }
     .about-wasl-retail-left{
-        flex:0 0 50%;
+        flex:0 0 40%;
     }
 }

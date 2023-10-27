@@ -8780,7 +8780,7 @@ figure.card_img:before {
 }
 
 .top-categories-wrap {
-  margin: 150px 0 87px;
+  margin: 120px 0 87px;
 }
 .top-categories-wrap h2 {
   font-weight: 500;
@@ -8806,6 +8806,10 @@ figure.card_img:before {
 }
 .top-categories-wrap ul li span {
   display: block;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-top: 15px;
+  color: #000;
 }
 
 .featured-stores-wrapper {
@@ -8853,6 +8857,7 @@ figure.card_img:before {
   display: flex;
   justify-content: space-between;
   gap: 58px;
+  flex-wrap: wrap;
 }
 .about-wasl-retail-wrap .about-wasl-retail h2 {
   font-weight: 500;
@@ -8863,7 +8868,7 @@ figure.card_img:before {
 .about-wasl-retail-wrap .about-wasl-retail p {
   font-size: 1em;
   line-height: 28px;
-  margin-bottom: 55px;
+  margin-bottom: 35px;
   color: #2B2A28;
   opacity: 0.8;
 }
@@ -8874,7 +8879,7 @@ figure.card_img:before {
   justify-content: space-between;
 }
 .about-wasl-retail-wrap .about-wasl-retail-left {
-  flex: 0 0 50%;
+  flex: 0 0 40%;
 }
 
 .search-result-retail-wrap .search-result-details {
@@ -8934,7 +8939,7 @@ figure.card_img:before {
 .photos-section-retails h2 {
   font-weight: 500;
   font-size: 1.875em;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #2B2A28;
 }
 .photos-section-retails p {
