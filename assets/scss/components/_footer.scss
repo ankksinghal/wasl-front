@@ -266,6 +266,26 @@ footer{
                     margin: 0 10px
                 }
             }
+            @include respond (phone_land){
+                display: flex;
+                flex-wrap: wrap;
+                gap: 16px;
+                align-items: center;
+                h2{
+                    flex: 0 0 100%;
+                    font-size: 22px;  
+                }
+                a{
+                    max-width: calc(48% - 10px);
+                    box-sizing: border-box; 
+                    margin: 0;
+                }
+            }
         }
+    }
+    @include respond (phone_land){ 
+       .inner-area-box img.responsive_device{ 
+            top: -180px;
+       }
     }
 }

@@ -236,6 +236,14 @@
             position: relative;
         }
     }
+    @include respond(phone_land){
+      .rf_card{
+        padding: 24px 14px;
+        .submit_btn_wrap{
+          padding-top: 0;
+        }
+      }
+    }
 }
 .g_banner_section{
     *{box-sizing: border-box;}
@@ -281,5 +289,24 @@
         padding-left: 3rem;
         padding-right: 3rem;
         font-size: 20px;
+    }
+    @include respond(phone_land){
+      .content_block{
+        padding: 0 15px;
+      }
+      h2{
+        font-size: 24px;
+        margin-bottom: 15px;
+        line-height: normal;
+      } 
+      .box_content_wrapper{ 
+        padding:1rem 0;
+        min-height: 151px;
+        border-radius: 12px; 
+        overflow: hidden;
+      }
+      .cs_btn{
+        font-size: 16px;
+      }
     }
 }
