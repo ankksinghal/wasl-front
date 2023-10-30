@@ -127,7 +127,6 @@ $(document).ready(function () {
 
   var owl = $("#owl-buying-thumb");
   owl.owlCarousel({
-    items: 1,
     loop: true,
     margin: 39,
     nav: false,
@@ -137,42 +136,50 @@ $(document).ready(function () {
     dots: true,
     responsive: { 
       0:{
-        items: 4
+        items: 2,
+        margin: 15,
+      },
+      480:{  
+        items: 3,
+        margin: 15,
       },
       767:{  
-        items: 2, 
-      } ,
+        items: 4,
+        margin: 15,
+      },
       992: { 
-        items: 3,  
+        items: 5,
+        margin: 15, 
       },
       1199: {
-        items: 6,  
+        items: 6,
+        margin: 15, 
       },
     },
   });
 
-  var owl = $("#owl-near-thumb");
-  owl.owlCarousel({
-    items: 7,
-    loop: false,
-    margin: 39,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    dots: true,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      600: {
-        items: 3,
-      },
-      1000: {
-        items: 7,
-      },
-    },
-  });
+  // var owlC = $("#owl-near-thumb");
+  // owlC.owlCarousel({
+  //   items: 7,
+  //   loop: false,
+  //   margin: 39,
+  //   nav: false,
+  //   autoplay: true,
+  //   autoplayTimeout: 3000,
+  //   autoplayHoverPause: true,
+  //   dots: true,
+  //   responsive: {
+  //     0: {
+  //       items: 2,
+  //     },
+  //     600: {
+  //       items: 3,
+  //     },
+  //     1000: {
+  //       items: 7,
+  //     },
+  //   },
+  // });
 
   if ($(window).width() > 767) { 
     var owl = $("#owl-prtoj-thumb");
