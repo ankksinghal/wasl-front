@@ -21,10 +21,33 @@
              }
          }
          .search-result-right{
+            .mobile-buttons{
+                 display: none;
+            }
+            @include respond(phone_land) {
+                .mobile-buttons{
+                    display: block;
+                    a{
+                        border: 1px solid #E4E4DC;
+                        border-radius: 8px;
+                        padding: 8px;
+                        display: inline-block;
+                        font-size: $font14;
+                        color:$black;
+                        &.retail-filter-icon{
+                            padding: 8px 8px 8px 35px;
+                            background: url(../images/filter.svg) no-repeat 10px center;
+                        }
+                    }
+                }
+            } 
             ul{
                 display: flex;
                 justify-content: space-between;
                 gap:8px;
+                @include respond(phone_land) {
+                    display: none;
+                } 
                 li{
                     a{
                         font-size: $font16;
@@ -41,9 +64,15 @@
     display: flex;
     gap:30px;
     flex-wrap: wrap;
+    @include respond(phone_land) {
+        display: block;
+    } 
     .search-retails-grid{
          position: relative;
          flex-basis: 31.5%;
+         @include respond(phone_land) {
+            margin-bottom: 15px;
+        } 
          figure{
             img{
                 width: 100%;

@@ -1,5 +1,8 @@
 .top-categories-wrap{
     margin:90px 0 87px;
+    @include respond(phone_land) {
+        margin:50px 0;
+    }
     h2{
         font-weight: $fontweight2;
         font-size: $font30;
@@ -10,6 +13,10 @@
         display: flex;
         justify-content: space-between;
         gap: 32px;
+        @include respond(phone_land) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         li{
             border: 1px solid #E4E4DC;
             border-radius: 16px;
@@ -19,7 +26,10 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-           text-align: center;
+            text-align: center;
+            @include respond(phone_land) {
+                width: 150px;
+            }
             span{
                  display: block;
                  font-size: $font18;
@@ -85,6 +95,9 @@
          justify-content: space-between;
          gap: 58px;
          flex-wrap: wrap;
+         @include respond(phone_land) {
+            display: block;
+        }
          h2{
             font-weight: $fontweight2;
             font-size: $font30;
@@ -104,6 +117,11 @@
          gap:15px;
          align-items: start;
          justify-content: space-between;
+         img{
+            @include respond(phone_land) {
+                width: 48%;
+            }
+         }
     }
     .about-wasl-retail-left{
         flex:0 0 40%;

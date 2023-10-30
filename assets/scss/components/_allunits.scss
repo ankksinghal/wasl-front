@@ -1094,3 +1094,19 @@ body {
     }
   }
 }
+
+
+
+.search-section{
+  &.retail{
+    .form-section {
+      .form-raper{
+        .form-cols-out{
+          @include respond(phone_land) {
+            flex: 100%;
+        }
+        }
+      }
+    }
+  }
+}

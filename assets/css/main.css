@@ -5719,6 +5719,12 @@ body.modal {
     max-width: calc(50% - 5px);
   }
 }
+@media screen and (max-width: 767px) {
+  .search-section.retail .form-section .form-raper .form-cols-out {
+    flex: 100%;
+  }
+}
+
 .login-page {
   margin-top: 43px;
   margin-bottom: 92px;
@@ -10200,6 +10206,11 @@ figure.card_img:before {
 .top-categories-wrap {
   margin: 90px 0 87px;
 }
+@media screen and (max-width: 767px) {
+  .top-categories-wrap {
+    margin: 50px 0;
+  }
+}
 .top-categories-wrap h2 {
   font-weight: 500;
   font-size: 1.875em;
@@ -10211,6 +10222,12 @@ figure.card_img:before {
   justify-content: space-between;
   gap: 32px;
 }
+@media screen and (max-width: 767px) {
+  .top-categories-wrap ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .top-categories-wrap ul li {
   border: 1px solid #E4E4DC;
   border-radius: 16px;
@@ -10221,6 +10238,11 @@ figure.card_img:before {
   justify-content: center;
   flex-direction: column;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .top-categories-wrap ul li {
+    width: 150px;
+  }
 }
 .top-categories-wrap ul li span {
   display: block;
@@ -10277,6 +10299,11 @@ figure.card_img:before {
   gap: 58px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 767px) {
+  .about-wasl-retail-wrap .about-wasl-retail {
+    display: block;
+  }
+}
 .about-wasl-retail-wrap .about-wasl-retail h2 {
   font-weight: 500;
   font-size: 1.875em;
@@ -10295,6 +10322,11 @@ figure.card_img:before {
   gap: 15px;
   align-items: start;
   justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .about-wasl-retail-wrap .about-wasl-retail-right img {
+    width: 48%;
+  }
 }
 .about-wasl-retail-wrap .about-wasl-retail-left {
   flex: 0 0 40%;
@@ -10320,10 +10352,35 @@ figure.card_img:before {
 .search-result-retail-wrap .search-result-details .search-result-left span strong {
   font-weight: 500;
 }
+.search-result-retail-wrap .search-result-details .search-result-right .mobile-buttons {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .search-result-retail-wrap .search-result-details .search-result-right .mobile-buttons {
+    display: block;
+  }
+  .search-result-retail-wrap .search-result-details .search-result-right .mobile-buttons a {
+    border: 1px solid #E4E4DC;
+    border-radius: 8px;
+    padding: 8px;
+    display: inline-block;
+    font-size: 0.875em;
+    color: #2B2A28;
+  }
+  .search-result-retail-wrap .search-result-details .search-result-right .mobile-buttons a.retail-filter-icon {
+    padding: 8px 8px 8px 35px;
+    background: url(../images/filter.svg) no-repeat 10px center;
+  }
+}
 .search-result-retail-wrap .search-result-details .search-result-right ul {
   display: flex;
   justify-content: space-between;
   gap: 8px;
+}
+@media screen and (max-width: 767px) {
+  .search-result-retail-wrap .search-result-details .search-result-right ul {
+    display: none;
+  }
 }
 .search-result-retail-wrap .search-result-details .search-result-right ul li a {
   font-size: 1em;
@@ -10337,9 +10394,19 @@ figure.card_img:before {
   gap: 30px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 767px) {
+  .search-retails-grid-view {
+    display: block;
+  }
+}
 .search-retails-grid-view .search-retails-grid {
   position: relative;
   flex-basis: 31.5%;
+}
+@media screen and (max-width: 767px) {
+  .search-retails-grid-view .search-retails-grid {
+    margin-bottom: 15px;
+  }
 }
 .search-retails-grid-view .search-retails-grid figure img {
   width: 100%;
@@ -10384,13 +10451,46 @@ figure.card_img:before {
   justify-content: space-between;
   align-items: start;
 }
+@media screen and (max-width: 767px) {
+  .photos-section-retails .photos-area {
+    display: block;
+  }
+}
 .photos-section-retails .photos-area .left-side {
-  flex: 0 0 70%;
+  flex: 0 0 80%;
+}
+@media screen and (max-width: 767px) {
+  .photos-section-retails .photos-area .left-side {
+    margin-bottom: 10px;
+  }
+}
+.photos-section-retails .photos-area .left-side img {
+  width: 100%;
+  height: 448px;
+}
+@media screen and (max-width: 767px) {
+  .photos-section-retails .photos-area .left-side img {
+    height: auto;
+  }
 }
 .photos-section-retails .photos-area .right-side {
+  flex: 0 0 20%;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@media screen and (max-width: 767px) {
+  .photos-section-retails .photos-area .right-side {
+    flex-direction: row;
+  }
+}
+.photos-section-retails .photos-area .right-side img {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .photos-section-retails .photos-area .right-side img {
+    width: 49%;
+  }
 }
 
 .explore-more-stories-wrap {
