@@ -127,23 +127,26 @@ $(document).ready(function () {
 
   var owl = $("#owl-buying-thumb");
   owl.owlCarousel({
-    items: 6,
+    items: 1,
     loop: true,
     margin: 39,
     nav: false,
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    dots:true,
-    responsive: {
-      0: {
-        items: 2,
+    dots: true,
+    responsive: { 
+      0:{
+        items: 4
       },
-      600: {
-        items: 3,
+      767:{  
+        items: 2, 
+      } ,
+      992: { 
+        items: 3,  
       },
-      1000: {
-        items: 6,
+      1199: {
+        items: 6,  
       },
     },
   });
@@ -157,7 +160,7 @@ $(document).ready(function () {
     autoplay: true,
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
-    dots:true,
+    dots: true,
     responsive: {
       0: {
         items: 2,
@@ -171,30 +174,31 @@ $(document).ready(function () {
     },
   });
 
-  var owl = $("#owl-prtoj-thumb");
-  owl.owlCarousel({
-    items: 3,
-    loop: true,
-    margin: 22,
-    center: true,
-    nav: false,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    dots:true,
-    responsive: {
-      0: {
-        items: 2,
+  if ($(window).width() > 767) { 
+    var owl = $("#owl-prtoj-thumb");
+    owl.owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 22,
+      center: true,
+      nav: false,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      autoplayHoverPause: true,
+      dots: true,
+      responsive: {
+        0: {
+          items: 2,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 3,
+        },
       },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 3,
-      },
-    },
-  });
-
+    });
+  }
   // Toggle the mobile menu when the menu button is clicked
 
   $(".mobile-menu").click(function () {
@@ -254,22 +258,22 @@ $(document).ready(function () {
   $("#areaselect .without-label li").on("click", function (e) {
     var tagValue = $(this).text();
     $("#areaselect label").text(tagValue);
-  }); 
+  });
   $("#areaselectmax .without-label li").on("click", function (e) {
     var tagValue = $(this).text();
     $("#areaselectmax label").text(tagValue);
-  }); 
+  });
   $("#prage-max .without-label li").on("click", function (e) {
     var tagValue = $(this).text();
     $("#prage-max label").text(tagValue);
-  }); 
+  });
   $("#prage-min .without-label li").on("click", function (e) {
     var tagValue = $(this).text();
     $("#prage-min label").text(tagValue);
-  }); 
-  // $(".customSelectBox .without-label li").on("click", function (e) { 
+  });
+  // $(".customSelectBox .without-label li").on("click", function (e) {
   //   var tagValue = $(this).text();
-  //   $(this).closest('.customSelectBox').find("label").text(tagValue); 
+  //   $(this).closest('.customSelectBox').find("label").text(tagValue);
   // });
 
   // Search page tab
@@ -288,8 +292,6 @@ $(document).ready(function () {
     $(this).parent("li").addClass("active");
   });
 
-
-
   // Search page tab
   $(".tab-content-plans").hide();
   $(".tab-content-plans:first").show();
@@ -305,7 +307,6 @@ $(document).ready(function () {
     $(".tab-links-plans li").removeClass("active");
     $(this).parent("li").addClass("active");
   });
-
 
   // Search page tab
   $(".tab-content-offering").hide();
@@ -333,15 +334,10 @@ $(document).ready(function () {
     $(".cs_modal").removeClass("show");
   });
 
-
-
   // =========About us===============
-  $('.multipleSelect').fastselect();
-
+  $(".multipleSelect").fastselect();
 });
 // ========About Page Slider==============
- 
-
 
 // Remove class
 
@@ -447,106 +443,112 @@ $("#cs_tab_nav li").click(function () {
   return false;
 });
 // =========About us===============
- 
-  var bigimage = $("#about_sec_slider");
-  var thumbs = $("#about_sec_slider_thumb"); 
-  //var totalslides = 10;
-  var syncedSecondary = true;
 
-  bigimage.owlCarousel({
+var bigimage = $("#about_sec_slider");
+var thumbs = $("#about_sec_slider_thumb");
+//var totalslides = 10;
+var syncedSecondary = true;
+
+bigimage
+  .owlCarousel({
     items: 1,
     slideSpeed: 2000,
     nav: false,
     autoplay: true,
-    dots: false, 
+    dots: false,
     loop: true,
     responsiveRefreshRate: 200,
     navText: [
       '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
-      '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
-    ]
+      '<i class="fa fa-arrow-right" aria-hidden="true"></i>',
+    ],
   })
-    .on("changed.owl.carousel", syncPosition);
+  .on("changed.owl.carousel", syncPosition);
 
-  thumbs
-    .on("initialized.owl.carousel", function() {
-    thumbs
-      .find(".owl-item")
-      .eq(0)
-      .addClass("current");
+thumbs
+  .on("initialized.owl.carousel", function () {
+    thumbs.find(".owl-item").eq(0).addClass("current");
   })
-    .owlCarousel({
+  .owlCarousel({
     items: 5,
-    dots: false, 
+    dots: false,
     nav: true,
     navText: [
       '<i class="fa fa-arrow-left" aria-hidden="true"></i>',
-      '<i class="fa fa-arrow-right" aria-hidden="true"></i>'
+      '<i class="fa fa-arrow-right" aria-hidden="true"></i>',
     ],
     smartSpeed: 200,
     slideSpeed: 500,
     slideBy: 4,
-    responsiveRefreshRate: 100
+    responsiveRefreshRate: 100,
+    responsive: {
+      0: {
+        items: 4,
+      },
+      991: {
+        items: 5,
+      },
+    },
   })
-    .on("changed.owl.carousel", syncPosition2);
+  .on("changed.owl.carousel", syncPosition2);
 
-  function syncPosition(el) {
-    //if loop is set to false, then you have to uncomment the next line
-    //var current = el.item.index;
+function syncPosition(el) {
+  //if loop is set to false, then you have to uncomment the next line
+  //var current = el.item.index;
 
-    //to disable loop, comment this block
-    var count = el.item.count - 1;
-    var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
+  //to disable loop, comment this block
+  var count = el.item.count - 1;
+  var current = Math.round(el.item.index - el.item.count / 2 - 0.5);
 
-    if (current < 0) {
-      current = count;
-    }
-    if (current > count) {
-      current = 0;
-    }
-    //to this
-    thumbs
-      .find(".owl-item")
-      .removeClass("current")
-      .eq(current)
-      .addClass("current");
-    var onscreen = thumbs.find(".owl-item.active").length - 1;
-    var start = thumbs
-    .find(".owl-item.active")
-    .first()
-    .index();
-    var end = thumbs
-    .find(".owl-item.active")
-    .last()
-    .index();
-
-    if (current > end) {
-      thumbs.data("owl.carousel").to(current, 100, true);
-    }
-    if (current < start) {
-      thumbs.data("owl.carousel").to(current - onscreen, 100, true);
-    }
+  if (current < 0) {
+    current = count;
   }
-
-  function syncPosition2(el) {
-    if (syncedSecondary) {
-      var number = el.item.index;
-      bigimage.data("owl.carousel").to(number, 100, true);
-    }
+  if (current > count) {
+    current = 0;
   }
+  //to this
+  thumbs
+    .find(".owl-item")
+    .removeClass("current")
+    .eq(current)
+    .addClass("current");
+  var onscreen = thumbs.find(".owl-item.active").length - 1;
+  var start = thumbs.find(".owl-item.active").first().index();
+  var end = thumbs.find(".owl-item.active").last().index();
 
-  thumbs.on("click", ".owl-item", function(e) {
-    e.preventDefault();
-    var number = $(this).index();
-    bigimage.data("owl.carousel").to(number, 300, true);
-  });
- 
+  if (current > end) {
+    thumbs.data("owl.carousel").to(current, 100, true);
+  }
+  if (current < start) {
+    thumbs.data("owl.carousel").to(current - onscreen, 100, true);
+  }
+}
 
+function syncPosition2(el) {
+  if (syncedSecondary) {
+    var number = el.item.index;
+    bigimage.data("owl.carousel").to(number, 100, true);
+  }
+}
 
- // Faq accordian 
- $(".accordion-header").click(function () {
-  $(this).toggleClass("active").next(".accordion-content").slideToggle().parent().siblings().
-  find(".accordion-content").slideUp().prev().removeClass("active");
+thumbs.on("click", ".owl-item", function (e) {
+  e.preventDefault();
+  var number = $(this).index();
+  bigimage.data("owl.carousel").to(number, 300, true);
+});
+
+// Faq accordian
+$(".accordion-header").click(function () {
+  $(this)
+    .toggleClass("active")
+    .next(".accordion-content")
+    .slideToggle()
+    .parent()
+    .siblings()
+    .find(".accordion-content")
+    .slideUp()
+    .prev()
+    .removeClass("active");
 });
 
 
