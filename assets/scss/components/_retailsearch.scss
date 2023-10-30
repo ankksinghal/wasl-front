@@ -8,6 +8,10 @@
         font-size: $font30;
         margin-bottom: 40px;
         color: $black;
+        @include respond(phone_land) {
+            text-align: center;
+            font-size: $font20;
+        }
     }
     ul{
         display: flex;
@@ -48,6 +52,10 @@
         font-size: $font30;
         margin-bottom: 40px;
         color: $black;
+        @include respond(phone_land) {
+           font-size: $font20;
+           text-align: center;
+        } 
     }
     .owl-carousel{
         .item{
@@ -103,6 +111,10 @@
             font-size: $font30;
             margin-bottom: 55px;
             color: $black;
+            @include respond(phone_land) {
+                text-align: center;
+                font-size: $font20;
+            }
          }
          p{
             font-size: $font16;

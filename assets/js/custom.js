@@ -221,6 +221,9 @@ $(document).ready(function () {
 
   $(".overlay").click(function () {
     $("#responsive-nav").removeClass("slide");
+    $("#responsive-nav").removeClass("slide");
+    $(".search-result-right .alphabet-wrapper").removeClass("modal");
+    $(".search-retails").removeClass("modal");
     $(".overlay").removeClass("slide");
     $("body").removeClass("slide");
   });
@@ -565,7 +568,15 @@ $(".accordion-header").click(function () {
 
 
 // Retail search JS
-
 $(".retail-alphabet-search").click(function () {
-  $(".search-result-right ul, body").addClass("modal");
+  $(".search-result-right .alphabet-wrapper").addClass("modal");
+  $(".overlay").addClass("slide");
 });
+
+$(".retail-filter-icon").click(function () {
+  $(".search-retails").addClass("modal");
+  $(".overlay").addClass("slide");
+});
+
+
+
