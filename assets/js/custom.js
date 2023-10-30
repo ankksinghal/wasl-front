@@ -560,3 +560,12 @@ $(".accordion-header").click(function () {
 
 
 // $('.multipleSelect').fastselect();
+
+
+
+
+// Retail search JS
+
+$(".retail-alphabet-search").click(function () {
+  $(".search-result-right ul, body").addClass("modal");
+});
