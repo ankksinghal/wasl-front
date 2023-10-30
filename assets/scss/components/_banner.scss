@@ -1308,6 +1308,23 @@
   width: calc(100% + 20px);
   position: relative;
   left: -20px;
+  @media (max-width:1279px) {
+    left: 0px;
+    width: 100%;
+  }
+  @include respond(tab) {
+    flex-wrap: wrap;
+    gap: 31px;
+    justify-content: center;
+    .item {
+      flex: 0 0 20%;
+    }
+  }
+  @include respond(phone_land) { 
+    .item {
+      flex: 0 0 45%;
+    }
+  }
   figure {
     display: flex;
     justify-content: center;
