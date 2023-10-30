@@ -112,6 +112,19 @@ $(document).ready(function () {
     },
   });
 
+  var owl = $("#featured-stores");
+  owl.owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 39,
+    nav: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+  });
+
+  
+
   var owl = $("#owl-buying-thumb");
   owl.owlCarousel({
     loop: true,
@@ -544,3 +557,6 @@ $(".accordion-header").click(function () {
     .prev()
     .removeClass("active");
 });
+
+
+// $('.multipleSelect').fastselect();

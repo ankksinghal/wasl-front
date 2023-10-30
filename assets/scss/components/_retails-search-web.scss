@@ -1,0 +1,72 @@
+.search-result-retail-wrap{
+    .search-result-details{
+         margin:32px 0;
+         display: flex;
+         justify-content: space-between;
+         .search-result-left{
+             h3{
+                font-weight: $fontweight2;
+                font-size: $font22;
+                margin-bottom: 10px;
+                line-height: 28px;
+                color:$darkBlack;
+             }
+             span{
+                font-size: $font14;
+                line-height: 16px;
+                color:$black;
+                strong{
+                    font-weight: $fontweight2;
+                }
+             }
+         }
+         .search-result-right{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                gap:8px;
+                li{
+                    a{
+                        font-size: $font16;
+                        line-height: 26px;
+                        font-weight: $fontweight2;
+                        color:$black;
+                    }
+                }
+            }
+         }
+    }
+}
+.search-retails-grid-view{
+    display: flex;
+    gap:30px;
+    flex-wrap: wrap;
+    .search-retails-grid{
+         position: relative;
+         flex-basis: 31.5%;
+         figure{
+            img{
+                width: 100%;
+            }
+         }
+         figcaption{
+            position: absolute;
+            color:#fff;
+            font-family: 'Roboto';  
+            font-weight: 600;
+            font-size:$font18;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            box-sizing: border-box;
+            background: linear-gradient(0deg, #000000 0%, rgba(59, 59, 59, 0.18) 100%);
+            border-radius: 16px 16px;
+            padding:15px 12px;
+         }
+    }
+}
+
+
+.retail-search-wrapper{
+     margin:0 0 75px;
+}

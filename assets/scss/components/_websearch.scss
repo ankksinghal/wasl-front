@@ -3,6 +3,9 @@
     h3,h2{
         line-height: 30px;
         font-size: $font30;
+        @include respond(phone_land) {
+            font-size: $font20;
+        }
     }
     h3{
         color:$color8;
@@ -17,6 +20,9 @@
          align-items: center;
          justify-content: space-between;
          border-bottom: 1px solid #EFEFEF;
+         @include respond(phone_land) {
+            display: block;
+        }
     }
 }
 .web-search-content{
@@ -39,6 +45,9 @@
 }
 .web-search-right-section{
      .search-box{
+        @include respond(phone_land) {
+            width: 348px;
+        }
         form{
             border: 1px solid #BDBDBD;
             border-radius: 8px;
@@ -63,4 +72,10 @@
             }
         }
      }
+}
+
+.web-search-left-section{
+    @include respond(phone_land) {
+        margin-bottom: 30px;
+    }
 }

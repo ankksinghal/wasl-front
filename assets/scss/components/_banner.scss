@@ -104,6 +104,9 @@
   position: absolute;
   left: 0;
   right: 0;
+  &.retail{
+     margin-top: -65px;
+  }
   &.search-page {
     margin-top: 35px;
     position: static;
@@ -356,6 +359,9 @@
   background: #f1f1ee;
   padding: 16px;
   padding-bottom: 0;
+  &.retail{
+    padding:0;
+  }
   @include respond(tab) {
     border-radius: 0;
     padding: 0;

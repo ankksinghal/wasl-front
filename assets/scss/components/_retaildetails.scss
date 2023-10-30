@@ -1,0 +1,137 @@
+.photos-section-retails{
+    margin:30px 0 25px;
+    h2{
+        font-weight: $fontweight2;
+        font-size: $font30;
+        margin-bottom: 20px;
+        color: $black;
+    }
+    p{
+        font-size: $font20;
+        margin-bottom: 30px;
+        color: $black;
+        line-height: 24px;
+    }
+    .photos-area{
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: start;
+        .left-side{
+            flex:0 0 70%;
+        }
+        .right-side{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+}
+
+.explore-more-stories-wrap{
+    margin:80px 0 100px;
+    text-align: center;
+    .owl-carousel {
+        margin: 42px auto 0;
+        width: 91%;
+        @include respond(tab_land) {
+            width: 82%;
+        } 
+        @include respond(phone_land) {
+            margin-top: 0;
+        }
+        .item{
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+            figure{
+                overflow: hidden;
+                position: relative;
+                border-radius: 16px;
+            }
+        }
+        .owl-nav {
+            button {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 64px;
+                height: 64px;
+                background:url(../images/arrow-light.svg) no-repeat center center;
+                padding: 0;
+                border-radius: 0;
+                font-size: 0;
+                &.owl-prev {
+                    left: -73px;
+                    transform: rotate(180deg);
+                }
+                &.owl-next {
+                    right: -73px;
+                }
+                @include respond(tab_land) {
+                    &.owl-prev {
+                        left: -63px;
+                    }
+                    &.owl-next {
+                        right: -63px;
+                    }
+                }
+
+                @include respond(phone) {
+                    &.owl-prev {
+                        left: -53px;
+                    }
+                    &.owl-next {
+                        right: -53px;
+                    }
+                }
+            }
+        }
+        .owl-dots {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 27px;
+            .owl-dot {
+                span {
+                    width: 15px;
+                    height: 15px;
+                    background: #fff;
+                    opacity: 1;
+                    box-shadow: 0 0 5px #bdbdbd;
+                    display: block;
+                    border-radius: 50px;
+                    transition: all 0.4s ease-in-out;
+                }
+                &.active span {
+                    background: #2B2A28;
+                    width: 55px;
+                }
+            }
+        }
+    }
+    h2{
+        font-weight: $fontweight2;
+        font-size: $font34;
+        margin-bottom: 10px;
+        color: $black;   
+    }
+    p{
+        font-size: $font16;
+        margin-bottom: 40px;
+        color: $color3;   
+    }
+    figcaption{
+         position: absolute;
+         left: 14px;
+         bottom: 10px;
+         font-size: $font16;
+         line-height: 21px;
+         color:$white;
+         font-family: "Roboto";
+        }
+}
