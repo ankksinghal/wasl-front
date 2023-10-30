@@ -10238,6 +10238,12 @@ figure.card_img:before {
   margin-bottom: 40px;
   color: #2B2A28;
 }
+@media screen and (max-width: 767px) {
+  .top-categories-wrap h2 {
+    text-align: center;
+    font-size: 1.25em;
+  }
+}
 .top-categories-wrap ul {
   display: flex;
   justify-content: space-between;
@@ -10281,6 +10287,12 @@ figure.card_img:before {
   font-size: 1.875em;
   margin-bottom: 40px;
   color: #2B2A28;
+}
+@media screen and (max-width: 767px) {
+  .featured-stores-wrapper h2 {
+    font-size: 1.25em;
+    text-align: center;
+  }
 }
 .featured-stores-wrapper .owl-carousel .item figure figcaption {
   position: absolute;
@@ -10330,6 +10342,12 @@ figure.card_img:before {
   font-size: 1.875em;
   margin-bottom: 55px;
   color: #2B2A28;
+}
+@media screen and (max-width: 767px) {
+  .about-wasl-retail-wrap .about-wasl-retail h2 {
+    text-align: center;
+    font-size: 1.25em;
+  }
 }
 .about-wasl-retail-wrap .about-wasl-retail p {
   font-size: 1em;
@@ -10393,21 +10411,60 @@ figure.card_img:before {
     background: url(../images/filter.svg) no-repeat 10px center;
   }
 }
-.search-result-retail-wrap .search-result-details .search-result-right ul {
+.search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper h3, .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper button {
+  display: none;
+}
+.search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper ul {
   display: flex;
   justify-content: space-between;
   gap: 8px;
 }
-@media screen and (max-width: 767px) {
-  .search-result-retail-wrap .search-result-details .search-result-right ul {
-    display: none;
-  }
-}
-.search-result-retail-wrap .search-result-details .search-result-right ul li a {
+.search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper ul li a {
   font-size: 1em;
   line-height: 26px;
   font-weight: 500;
   color: #2B2A28;
+}
+@media screen and (max-width: 767px) {
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper {
+    display: none;
+  }
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal {
+    display: block;
+    background: #E4E4DC;
+    padding: 16px;
+    left: 50%;
+    top: 50%;
+    z-index: 11;
+    width: 285px;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    border-radius: 16px;
+  }
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal h3, .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal button {
+    display: block;
+  }
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal h3 {
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 15px;
+  }
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal button {
+    width: 100%;
+    padding: 16px;
+    background: #2B2A28;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 0.938em;
+    margin-top: 15px;
+  }
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .search-retails-grid-view {
@@ -10449,6 +10506,29 @@ figure.card_img:before {
 
 .retail-search-wrapper {
   margin: 0 0 75px;
+}
+
+@media screen and (max-width: 767px) {
+  .global-search.search-retails {
+    display: none;
+  }
+}
+.global-search.search-retails.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  z-index: 11;
+}
+@media screen and (max-width: 767px) {
+  .global-search.search-retails .search-section.search-page {
+    margin-top: 0;
+  }
+  .global-search.search-retails .search-section.search-page .form-section .form-raper .form-cols-out {
+    flex: 100%;
+  }
 }
 
 .photos-section-retails {
