@@ -1,0 +1,20 @@
+.maintenance-wrapper{
+     border-top:1px solid #E4E4DC;
+     padding: 100px 0;
+     text-align: center;
+     img{
+        margin: 0 0 15px;
+     }
+     h2{
+        font-size: $font30;
+        line-height: 32px;
+        color:$black;
+        margin:0 0 15px;
+     }
+     p{
+        font-size: $font20;
+        line-height: 28px;
+        color:$logoName;
+        margin:0 0 15px;
+     }
+}

@@ -113,6 +113,24 @@
                      }
                  }
              }
+             .right-section{
+                @include respond(phone_land) {
+                    display: block;
+                }
+                .btn-links{
+                    @include respond(phone_land) {
+                        display: block;
+                    }
+                    a{
+                        @include respond(phone_land) {
+                            display: block;
+                            width: 100%;
+                            max-width: 100%;
+                            box-sizing: border-box;
+                        }
+                    }
+                }
+             }
          }
         }
      }
@@ -143,11 +161,15 @@
          display: flex;
          justify-content: space-between;
          margin-bottom: 30px;
+         flex-wrap: wrap;
          li{
              text-align: center;
+             @include respond(phone_land) {
+                flex-basis: 48%;
+                margin-bottom: 15px;
+            }
              img{
                 margin-bottom: 12px;
-                width: 100%;
              }
              span{
                 display: block;
