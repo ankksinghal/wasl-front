@@ -162,11 +162,15 @@
                         width: 100%;
                     }
                     a {
-                        padding: 16px 18px;
                         border-radius: 8px;
                         max-width: 115px;
                         width: 100%;
                         text-align: center;
+                        height: 55px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding:0 18px;
                         &.wishlist-link{
                             background: #E4E4DC;
                             border-radius: 8px;
