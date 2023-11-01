@@ -7573,12 +7573,16 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 1em;
   font-weight: 500;
-  padding: 16px 18px;
+  padding: 0px 18px;
   border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
 }
 .virtual-tour-wrap a.virtual-tour {
   color: #FFFFFF;
-  background: #2B2A28 url(../images/360-icon.png) no-repeat left 10px top 13px;
+  background: #2B2A28 url(../images/360-icon.png) no-repeat left 10px top 17px;
   padding-left: 45px;
 }
 .virtual-tour-wrap a.download-doc {
