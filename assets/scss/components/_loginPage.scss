@@ -760,7 +760,7 @@
     z-index: 999;
     display: none;
     .modal_dialog{
-         
+
         max-width: 90%;
         width: 450px;
         height: auto;
@@ -768,6 +768,9 @@
         margin-right: auto;
         background: $white;
         border-radius: 16px;
+        &.home-model {
+            width: 572px; 
+        }
     }
     .modal_body{
         padding: 3rem 2rem;
@@ -875,7 +878,236 @@ span.tooltip {
 }
 
 
+.home-model {
+    overflow: hidden;
+    header {
+        background: #E4E4DC;
+        height: 64px;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        .heading {
+            color: #000;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 24px;
+        }
+        button {
+            background: none;
+            border: none;
+            position: absolute;
+            right: 40px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+        }
+    }
+    .modal_body {
+        padding: 28px 40px 40px 40px;
+        @include respond(tab) {
+            padding: 20px;
+            margin-right: 10px;
+            padding-right: 10px;
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+        }
+        .sub-heading {
+            color: #000;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 28px;
+        }
+    }
+}
 
+.feadback-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    label {
+        width: 112px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid #E4E4DC;
+        background: #FFF;
+        gap: 8px;
+        align-items: center;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        position: relative;
+        cursor: pointer;
+        @include respond(phone) {
+            width: 95px;
+            padding: 20px;
+        }
+        img {
+            max-width: 64px;
+            max-height: 64px;
+            @include respond(phone) {
+                max-width: 42px;
+                max-height: 42px;
+            }
+        }
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid #2B2A28;
+            border-radius: 16px;
+            display: none;
+        }
+        input:checked + span {
+            display: block;
+        }
+        .inn-label {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            position: relative;
+            margin: 0;
+        }
+        &.good {
+            color: #159F1A;            
+        }
+        &.okey {
+            color: #E4CE03;
+        }
+        &.bad {
+            color: #EF3D3D;
+        }
+    }
+}
+
+.d-none-v {
+    display: none;
+}
+
+.enquiry-form.feed-form {
+    flex-direction: column;
+    display: flex;
+    margin-top: 32px;
+    .area-code {
+        text-align: left;
+    }
+    div {
+        text-align: left;
+        @include respond(tab) {
+            margin: 0;
+        }
+    }
+    textarea {
+        height: 96px;
+    }
+}
+
+.listing-fead {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        color: #2B2A28;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid #E4E4DC;
+        @include respond(phone) {
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 16px 0;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .feadback-form {
+            gap: 8px;
+            label {
+                padding:15px 8px;
+                border-radius: 4px;
+                flex-direction: row;
+                display: flex;
+                width: auto;
+                span {
+                    border-radius: 4px;
+                }
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+.button-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 32px;
+    gap: 8px;
+    @include respond(phone) {
+        flex-direction: column;
+    }
+    .btn-d {
+        color: #FFF;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;  
+        border-radius: 8px;
+        background: #2B2A28;
+        height: 42px;
+        padding: 0px 24px;
+        border: 1px solid #2B2A28;
+        transition:all 0.4s ease-in-out;
+        min-width: 82px;
+        @include respond(phone) {
+            width: 100%;
+        }
+        &:hover {
+            background: #000;
+        }
+        &:disabled {
+            background: #959493;
+            border: #959493;
+            cursor: auto;
+        }
+        &.bordered {
+           border-color: #2B2A28; 
+           background: #fff;
+           color: #2B2A28;
+           &:hover {
+            background: #f8f8f8;
+           }
+        }
+        &.back {
+           border-color: #E4E4DC; 
+           background: #E4E4DC;
+           color: #2B2A28;
+           margin-right: auto;
+           &:hover {
+            border-color: #c2c2c2; 
+            background: #c2c2c2;
+           }
+        }
+    }
+}
 // Lease Login CSS
 
 .lease-img-box {
