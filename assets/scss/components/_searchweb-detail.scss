@@ -418,11 +418,15 @@
         color:$black;
         font-size: $font16;
         font-weight: $fontweight2;
-        padding:16px 18px;
+        padding:0px 18px;
         border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 52px;
         &.virtual-tour{
             color:$white;
-            background: $black url(../images/360-icon.png) no-repeat left 10px top 13px;
+            background: $black url(../images/360-icon.png) no-repeat left 10px top 17px;
             padding-left: 45px;
         }
         &.download-doc{
