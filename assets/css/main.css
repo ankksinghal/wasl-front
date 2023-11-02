@@ -6140,7 +6140,7 @@ body.modal {
 .login-page .main-login .right-section .form .input-box select:-webkit-autofill:hover,
 .login-page .main-login .right-section .form .input-box select:-webkit-autofill:focus {
   -webkit-text-fill-color: #000;
-  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  -webkit-box-shadow: 0 0 0px 1000px #FFFFFF inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -6258,7 +6258,7 @@ body.modal {
   font-size: 16px;
   line-height: 19.1px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
   width: 100%;
   display: flex;
   align-items: center;
@@ -6379,12 +6379,12 @@ body.modal {
   font-size: 16px;
   line-height: 19.1px;
   text-align: center;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .login-page .main-login .right-section .loginBtns-div .uae-btn {
   border-radius: 8px;
   border: 1px solid #2B2A28;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 16px 18px;
   display: flex;
   align-items: center;
@@ -6610,7 +6610,7 @@ span.tooltip .pop-over {
   position: absolute;
   border-radius: 8px;
   border: 1px solid #E4E4DC;
-  background: #FFF;
+  background: #FFFFFF;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
   z-index: 99;
   padding: 4px 8px 4px 4px;
@@ -6682,6 +6682,9 @@ span.tooltip:hover .pop-over {
   margin: auto;
   top: 0;
   bottom: 0;
+  padding: 0;
+  height: 24px;
+  width: 24px;
 }
 .home-model .modal_body {
   padding: 28px 40px 40px 40px;
@@ -6717,7 +6720,7 @@ span.tooltip:hover .pop-over {
   padding: 24px;
   border-radius: 16px;
   border: 1px solid #E4E4DC;
-  background: #FFF;
+  background: #FFFFFF;
   gap: 8px;
   align-items: center;
   flex-shrink: 0;
@@ -6763,7 +6766,7 @@ span.tooltip:hover .pop-over {
   margin: 0;
 }
 .feadback-form label.good {
-  color: #159F1A;
+  color: #4BB543;
 }
 .feadback-form label.okey {
   color: #E4CE03;
@@ -6852,7 +6855,7 @@ span.tooltip:hover .pop-over {
   }
 }
 .button-area .btn-d {
-  color: #FFF;
+  color: #FFFFFF;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -6881,7 +6884,7 @@ span.tooltip:hover .pop-over {
 }
 .button-area .btn-d.bordered {
   border-color: #2B2A28;
-  background: #fff;
+  background: #FFFFFF;
   color: #2B2A28;
 }
 .button-area .btn-d.bordered:hover {
@@ -7060,7 +7063,7 @@ span.tooltip:hover .pop-over {
 }
 .math-captcha label strong {
   font-weight: 600;
-  color: #FF2727;
+  color: #EF3D3D;
 }
 .math-captcha + p {
   color: #2B2A28;
@@ -7156,7 +7159,7 @@ span.tooltip:hover .pop-over {
   gap: 20px;
 }
 .otp-counter strong {
-  color: #FF2727;
+  color: #EF3D3D;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -7173,7 +7176,7 @@ span.tooltip:hover .pop-over {
   border-radius: 16px;
   background: #2B2A28;
   border: none;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -7197,20 +7200,20 @@ span.tooltip:hover .pop-over {
   display: flex;
   align-items: center;
   gap: 20px;
-  color: #FF2727;
+  color: #EF3D3D;
   font-size: 16px;
   font-style: normal;
   line-height: normal;
   font-weight: 500;
 }
 .expires-counter strong {
-  color: #fff;
+  color: #FFFFFF;
   font-weight: 400;
   display: flex;
   padding: 5px 10px;
   align-items: flex-start;
   border-radius: 10px;
-  background: #E05050;
+  background: #EF3D3D;
 }
 
 .project-detail {
@@ -7281,7 +7284,7 @@ span.tooltip:hover .pop-over {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  background: #fff;
+  background: #FFFFFF;
   color: #4BB543;
 }
 @media screen and (max-width: 767px) {
@@ -7305,7 +7308,7 @@ span.tooltip:hover .pop-over {
   top: -4px;
   bottom: 0;
   margin: auto;
-  color: #fff;
+  color: #FFFFFF;
   font-size: 20px; /* IE 9 */ /* Chrome, Safari, Opera */
   transform: scaleX(-1) rotate(-35deg);
 }
@@ -7341,7 +7344,7 @@ span.tooltip:hover .pop-over {
   align-items: center;
   justify-content: center;
   background-color: #4BB543;
-  color: #fff;
+  color: #FFFFFF;
   border: 1px solid #4BB543;
 }
 @media screen and (max-width: 767px) {
@@ -7382,7 +7385,7 @@ span.tooltip:hover .pop-over {
 }
 .stapper_design li.current::before {
   background-color: #2B2A28;
-  color: #fff;
+  color: #FFFFFF;
   border-color: #2B2A28;
   font-size: 16px;
 }
@@ -7401,7 +7404,7 @@ span.tooltip:hover .pop-over {
   content: none;
 }
 .stapper_design li.current ~ li::before {
-  background-color: #fff;
+  background-color: #FFFFFF;
   color: #2B2A28;
   border-color: #E4E4DC;
   font-size: 16px;
@@ -7424,7 +7427,7 @@ span.tooltip:hover .pop-over {
   box-sizing: border-box;
   border-radius: 10px;
   border: 1px solid #E5E5EA;
-  background: #FFF;
+  background: #FFFFFF;
 }
 .file-input-field .file-input-label {
   height: 32px;
