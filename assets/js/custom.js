@@ -579,4 +579,7 @@ $(".retail-filter-icon").click(function () {
 });
 
 
-
+$("#chat_boat").click(function () {
+  $("#chat_boat_box").toggleClass("hide");
+  $("#chat_boat").toggleClass("rotate");
+});
