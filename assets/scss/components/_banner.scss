@@ -104,8 +104,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  &.retail{
-     margin-top: -65px;
+  &.retail {
+    margin-top: -65px;
   }
   &.search-page {
     margin-top: 35px;
@@ -359,8 +359,8 @@
   background: #f1f1ee;
   padding: 16px;
   padding-bottom: 0;
-  &.retail{
-    padding:0;
+  &.retail {
+    padding: 0;
   }
   @include respond(tab) {
     border-radius: 0;
@@ -1258,11 +1258,10 @@
     }
   }
   @include respond(phone_land) {
-     padding-top: 2rem;
-     .left-part{
+    padding-top: 2rem;
+    .left-part {
       margin-bottom: 1rem;
-     }
-     
+    }
   }
 }
 
@@ -1314,7 +1313,7 @@
   width: calc(100% + 20px);
   position: relative;
   left: -20px;
-  @media (max-width:1279px) {
+  @media (max-width: 1279px) {
     left: 0px;
     width: 100%;
   }
@@ -1326,7 +1325,7 @@
       flex: 0 0 20%;
     }
   }
-  @include respond(phone_land) { 
+  @include respond(phone_land) {
     .item {
       flex: 0 0 45%;
     }
@@ -1385,8 +1384,8 @@
   h2 {
     letter-spacing: 6.21px;
   }
-  @include respond(phone_land){
-    h2{
+  @include respond(phone_land) {
+    h2 {
       text-align: center;
     }
   }
@@ -1955,7 +1954,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 44px;
-    @include respond(phone_land){
+    @include respond(phone_land) {
       margin-bottom: 12px;
     }
     .heading {
@@ -1965,7 +1964,6 @@
       font-weight: 500;
       line-height: 23px;
       text-transform: uppercase;
-     
     }
   }
   .tab-links-offering {
@@ -2002,13 +2000,13 @@
     background: #e4e4dc;
     display: flex;
     padding: 49px 54px 47px 52px;
-    @include respond(phone_land){
+    @include respond(phone_land) {
       padding: 14px;
-      .more-offring-inn{
+      .more-offring-inn {
         display: block;
-        .left-part h3{
+        .left-part h3 {
           font-size: 14px;
-          line-height:  normal;
+          line-height: normal;
         }
       }
     }
@@ -2154,14 +2152,13 @@
   @include respond(phone_land) {
     display: block;
     text-align: center;
-     .left-part {
-     
-      p{
+    .left-part {
+      p {
         font-size: 14px;
         color: $logoName;
         line-height: normal;
       }
-      a{
+      a {
         margin: 20px auto 0;
       }
     }
@@ -2311,7 +2308,7 @@
         width: 60px;
         height: 140px;
         @include respond(phone_land) {
-        // width: 75px;
+          // width: 75px;
         }
       }
       .owl-nav {
@@ -2387,7 +2384,7 @@
       width: 110%;
       left: -5%;
       bottom: 8px;
-      button{
+      button {
         width: 25px;
       }
     }
@@ -2395,27 +2392,26 @@
   div.gallery-slider-view #about_sec_slider_thumb .owl-nav button {
     background-size: 15px !important;
   }
-  .plans-buying{
+  .plans-buying {
     .header-gallery {
       margin-bottom: 0;
       .heading {
         margin-bottom: 15px;
       }
-      
     }
-    .tab-content-plans.p-28{
+    .tab-content-plans.p-28 {
       padding: 16px 12px;
     }
-     
-    .tab-content-plans { 
+
+    .tab-content-plans {
       border-radius: 0 0 16px 16px;
-      .more-offring-inn{
-        display: block;  
-         .left-part{
+      .more-offring-inn {
+        display: block;
+        .left-part {
           padding-top: 1rem;
-         }
+        }
       }
-      .fieldset-area{
+      .fieldset-area {
         gap: 12px;
       }
       .img {
@@ -2425,4 +2421,28 @@
       }
     }
   }
+}
+
+.cs_styp2input {
+  *{
+    box-sizing: border-box;
+  }
+   select{
+    width: 162px;
+    padding:8px 1.5rem 8px 10px;
+    height: 40px;
+    border-radius: 6px;
+    background: $white;
+    border: 1px solid $color1; 
+    background: url(../images/down-arrow.svg) no-repeat right 8px center /10px;
+    color: rgba(43, 42, 40, .7);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+   }
+   option{
+    padding: 12px !important ;
+    display: block;     
+   }
 }

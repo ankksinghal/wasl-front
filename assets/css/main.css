@@ -3038,6 +3038,28 @@ body.slide {
        object-fit: cover;
   }
 }
+.cs_styp2input * {
+  box-sizing: border-box;
+}
+.cs_styp2input select {
+  width: 162px;
+  padding: 8px 1.5rem 8px 10px;
+  height: 40px;
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4DC;
+  background: url(../images/down-arrow.svg) no-repeat right 8px center/10px;
+  color: rgba(43, 42, 40, 0.7);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.cs_styp2input option {
+  padding: 12px !important;
+  display: block;
+}
+
 .upcoming-projects {
   display: flex;
   margin-top: 189px;
@@ -3881,6 +3903,15 @@ body.slide {
   background: black;
 }
 
+[dir=rtl] .bookNow .right-content {
+  left: 0;
+  right: auto;
+}
+[dir=rtl] .app-status .inner-area-box .app-detail {
+  margin-right: 40%;
+  margin-left: 0;
+}
+
 .youtube-page {
   margin: 109px 0 113px;
 }
@@ -4392,6 +4423,7 @@ footer .copyright-section p {
     align-self: stretch;
     cursor: pointer;
     margin-bottom: 20px;
+    box-sizing: border-box;
     width: 100%;
     font-size: 14px;
   }
