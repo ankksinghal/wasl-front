@@ -208,22 +208,22 @@
                 }
             }
             .heading-top {
-                border: 1px solid #E4E4DC;
+                border: 1px solid $color1;
                 border-left: none;
                 border-right: none;
                 padding: 12px 0px;
                 label {
                     font-style: normal;
-                    font-weight: 500 !important;
+                    font-weight: $fontweight2 !important;
                     line-height: 24px !important;
                 }
             }
             .form {
                 width: 100%;
                 h2{
-                    font-weight: 700;
+                    font-weight: $fontweight3;
                     font-size: 30px;
-                    color:#2B2A28;
+                    color:$black;
                     margin-bottom: 20px;
                     line-height: normal;
                     &.mb-0 {margin-bottom: 0;}
@@ -238,24 +238,24 @@
                     }
                 }
                 label {
-                    color: #2B2A28;
+                    color: $black;
                     font-size: 16px;
                     line-height: normal;
-                    font-weight: 400;
+                    font-weight: $fontweight5;
                     display: flex;
                     align-items: center;
                     gap: 5px;
                     span {
-                        color: #EF3D3D;
+                        color: $orange;
                     }
                     small a {
                         font-size: 12px;
                         font-style: normal;
-                        font-weight: 400;
-                        color: #A79F92;
+                        font-weight: $fontweight5;
+                        color: $color8;
                     }
                     strong {
-                        font-weight: 600;
+                        font-weight: $fontweight4;
                     }
                 }
                 .input-box {
@@ -276,12 +276,12 @@
                         }
                     }
                     input[type="text"], input[type="email"], input[type="password"], input[type="number"]{
-                        border: 1px solid #c2c2c2;
+                        border: 1px solid $color19;
                         border-radius: 8px;
                         height: 57px;
                         padding-left: 15px;
                         width: 100%; 
-                        color: #2B2A28;
+                        color: $black;
                         background-repeat: no-repeat;
                         background-size: 22px auto;  
                         // background-position: top 16px left 12px;
@@ -328,18 +328,18 @@
                             }
                         }  
                         &:read-only {
-                            background: #E4E4DC url('../images/rightSign.svg') right 10px top 20px no-repeat;
+                            background: $color1 url('../images/rightSign.svg') right 10px top 20px no-repeat;
                         }
                         &.error {
-                            border-color: #EF3D3D;
+                            border-color: $orange;
                         }
                         &::placeholder {
-                            color: #2B2A28;
+                            color: $black;
                             opacity: 0.7; 
                         }
                           
                         &::-ms-input-placeholder {
-                            color: #2B2A28;
+                            color: $black;
                         }
                     }
                     input:-webkit-autofill, 
@@ -351,8 +351,8 @@
                     select:-webkit-autofill, 
                     select:-webkit-autofill:hover, 
                     select:-webkit-autofill:focus {
-                        -webkit-text-fill-color: #000;
-                        -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+                        -webkit-text-fill-color: $darkBlack;
+                        -webkit-box-shadow: 0 0 0px 1000px $white inset;
                         transition: background-color 5000s ease-in-out 0s;
                     }
                     input.otp-input{  
@@ -362,10 +362,10 @@
                         text-align: center;
                     }
                     input::placeholder{
-                        font-weight: 400;
+                        font-weight: $fontweight5;
                         font-size: 16px;
                         line-height: 19.1px;
-                        color:#2B2A28;
+                        color:$black;
                     }
                     .otp-wrap {
                         display: flex;
@@ -405,7 +405,7 @@
                         background-size: 25px 25px;
                         padding-left: 15px;
                         padding-right: 15px;    
-                        border: 1px solid #8D8D87;
+                        border: 1px solid $logoName;
                         border-radius: 8px;
                         height: 57px;
                         opacity: 0.7;
@@ -428,15 +428,15 @@
                         gap: 8px;
                         li {
                             a{
-                                font-weight: 400;
+                                font-weight: $fontweight5;
                                 font-size: 16px;
                                 line-height: 19.1px;
-                                color:#2B2A28;
+                                color:$black;
                                 text-align: right;
                             }
                             hr{
                                 border: none;
-                                border-left: 1px solid#8D8D87;
+                                border-left: 1px solid$logoName;
                                 height: 15px;
                                 margin: 3px 0px;
                             }  
@@ -457,13 +457,13 @@
                 .button-style {
                     text-decoration: none;
                     border-radius: 8px;
-                    background-color:#1C190E;
+                    background-color:$Primary;
                     height: 54px;
-                    font-weight: 500;
+                    font-weight: $fontweight2;
                     font-size: 16px;
                     line-height: 19.1px;
                     text-align: center;
-                    color:#ffffff;
+                    color:$white;
                     width: 100%;
                     display: flex;
                     align-items: center;
@@ -475,25 +475,25 @@
                     // margin-top: 30px;
                     transition: all 0.4s ease-in-out;
                     &:hover {
-                        background-color:#575757; 
-                        border-color: #2f2e2e; 
+                        background-color:$color13; 
+                        border-color: $color14; 
                     }
                     &.bg-gray {
-                        background-color: #E4E4DC;
-                        color: #2B2A28;
-                        border: 1px solid #E4E4DC;
+                        background-color: $color1;
+                        color: $black;
+                        border: 1px solid $color1;
                         &:hover {
-                            background-color:#EDEDE8; 
-                            border-color: #EDEDE8; 
+                            background-color:$color10; 
+                            border-color: $color10; 
                         }
                     }
                     &.bg-white {
                         background-color: white;
-                        color: #2B2A28;
-                        border: 1px solid #2B2A28; 
+                        color: $black;
+                        border: 1px solid $black; 
                         &:hover {
-                            background-color:#EDEDE8; 
-                            border-color: #EDEDE8; 
+                            background-color:$color10; 
+                            border-color: $color10; 
                         }
                     }
                 }
@@ -501,12 +501,12 @@
                     padding-top: 0.25rem;
                     margin-bottom: 30px;
                     span{
-                        color: #8D8D87;
+                        color: $logoName;
                     }
                 }
                 .otp_resend{  
                     text-decoration: underline;
-                    font-weight: 700;
+                    font-weight: $fontweight3;
                     background: none;
                     border: none;
                     box-shadow: none;
@@ -552,20 +552,20 @@
             .last-p{
                 margin-top: 18px;
                 text-align: center;
-                font-weight: 400;
+                font-weight: $fontweight5;
                 display: block;
                 font-size: 16px;
                 line-height: 24px;
-                color:#2B2A28;
+                color:$black;
                 strong{
                     margin-left: 5px;
                     a{
-                        font-weight: 700;
+                        font-weight: $fontweight3;
                         font-size: 16px;
                         line-height: 19.1px;   
                         text-decoration: none;
-                        color:#2B2A28;
-                        border-bottom: 1px solid #2B2A28;
+                        color:$black;
+                        border-bottom: 1px solid $black;
                     }
                 }
             }
@@ -583,28 +583,28 @@
                 gap: 10px;
                 .signIn-btn{
                     border-radius: 8px;
-                    background-color:#1C190E;
+                    background-color:$Primary;
                     padding: 16px 18px;
-                    font-weight: 500;
+                    font-weight: $fontweight2;
                     font-size: 16px;
                     line-height: 19.1px;
                     text-align: center;
-                    color:#ffffff;
+                    color:$white;
                 }
                     .uae-btn{
                         border-radius: 8px;
-                        border: 1px solid #2B2A28;
-                        background-color:#ffffff;
+                        border: 1px solid $black;
+                        background-color:$white;
                         padding: 16px 18px;
                         display: flex;
                         align-items: center;
                         justify-content: center;
                         gap: 9px;
                         p{
-                            font-weight: 500;
+                            font-weight: $fontweight2;
                             font-size: 16px;
                             line-height: 19.1px;
-                            color:#2B2A28;
+                            color:$black;
                             font-family: 'Poppins'; 
                         }
                     }
@@ -675,12 +675,12 @@
         }
     }
     p.error {
-        color: #EF3D3D;
+        color: $orange;
         display: flex;
         gap: 5px;
         font-size: 12px;
         font-style: italic;
-        font-weight: 700;
+        font-weight: $fontweight3;
         line-height: 120%;
         img {
             width: 12px;
@@ -691,9 +691,9 @@
     .disc {
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontweight5;
         line-height: 24px;
-        color: #2B2A28;
+        color: $black;
         margin-bottom: 32px;
         @include respond(tab) {
             margin:20px 0;
@@ -760,7 +760,7 @@
     z-index: 999;
     display: none;
     .modal_dialog{
-         
+
         max-width: 90%;
         width: 450px;
         height: auto;
@@ -768,6 +768,9 @@
         margin-right: auto;
         background: $white;
         border-radius: 16px;
+        &.home-model {
+            width: 572px; 
+        }
     }
     .modal_body{
         padding: 3rem 2rem;
@@ -828,8 +831,8 @@ span.tooltip {
     .pop-over {
         position: absolute;
         border-radius: 8px;
-        border: 1px solid #E4E4DC;
-        background: #FFF;
+        border: 1px solid $color1;
+        background: $white;
         box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
         z-index: 99;
         padding: 4px 8px 4px 4px;
@@ -847,9 +850,9 @@ span.tooltip {
             padding-left: 15px;
             font-size: 12px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: $fontweight5;
             line-height: 15px;
-            color: #2B2A28;
+            color: $black;
         }
         &:before {
             content: "";
@@ -857,7 +860,7 @@ span.tooltip {
             height: 0; 
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent; 
-            border-right:15px solid #ccc; 
+            border-right:15px solid $color21; 
             position: absolute;
             left: -15px;
             top: 0;
@@ -875,12 +878,244 @@ span.tooltip {
 }
 
 
+.home-model {
+    overflow: hidden;
+    header {
+        background: $color1;
+        height: 64px;
+        padding: 0 40px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        .heading {
+            color: $darkBlack;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 24px;
+        }
+        button {
+            background: none;
+            border: none;
+            position: absolute;
+            right: 40px;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            padding: 0;
+            height: 24px;
+            width: 24px;
+        }
+    }
+    .modal_body {
+        padding: 28px 40px 40px 40px;
+        @include respond(tab) {
+            padding: 20px;
+            margin-right: 10px;
+            padding-right: 10px;
+            max-height: calc(100vh - 200px);
+            overflow-y: auto;
+        }
+        .sub-heading {
+            color: $darkBlack ;
+            text-align: center;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: $fontweight5;
+            line-height: 24px;
+            margin-bottom: 28px;
+        }
+    }
+}
 
+.feadback-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    label {
+        width: 112px;
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        border-radius: 16px;
+        border: 1px solid $color1;
+        background: $white;
+        gap: 8px;
+        align-items: center;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        position: relative;
+        cursor: pointer;
+        @include respond(phone) {
+            width: 95px;
+            padding: 20px;
+        }
+        img {
+            max-width: 64px;
+            max-height: 64px;
+            @include respond(phone) {
+                max-width: 42px;
+                max-height: 42px;
+            }
+        }
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 1px solid $black;
+            border-radius: 16px;
+            display: none;
+        }
+        input:checked + span {
+            display: block;
+        }
+        .inn-label {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: $fontweight2;
+            line-height: 24px;
+            position: relative;
+            margin: 0;
+        }
+        &.good {
+            color: $green1;            
+        }
+        &.okey {
+            color: $yellow;
+        }
+        &.bad {
+            color: $orange;
+        }
+    }
+}
+
+.d-none-v {
+    display: none;
+}
+
+.enquiry-form.feed-form {
+    flex-direction: column;
+    display: flex;
+    margin-top: 32px;
+    .area-code {
+        text-align: left;
+    }
+    div {
+        text-align: left;
+        @include respond(tab) {
+            margin: 0;
+        }
+    }
+    textarea {
+        height: 96px;
+    }
+}
+
+.listing-fead {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        color: $black;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $fontweight5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px 0;
+        border-bottom: 1px solid $color1;
+        @include respond(phone) {
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 16px 0;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .feadback-form {
+            gap: 8px;
+            label {
+                padding:15px 8px;
+                border-radius: 4px;
+                flex-direction: row;
+                display: flex;
+                width: auto;
+                span {
+                    border-radius: 4px;
+                }
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
+
+
+.button-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 32px;
+    gap: 8px;
+    @include respond(phone) {
+        flex-direction: column;
+    }
+    .btn-d {
+        color: $white;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: $fontweight2;
+        line-height: normal;  
+        border-radius: 8px;
+        background: $black;
+        height: 42px;
+        padding: 0px 24px;
+        border: 1px solid $black;
+        transition:all 0.4s ease-in-out;
+        min-width: 82px;
+        @include respond(phone) {
+            width: 100%;
+        }
+        &:hover {
+            background: $darkBlack;
+        }
+        &:disabled {
+            background: $color22;
+            border: $color22;
+            cursor: auto;
+        }
+        &.bordered {
+           border-color: $black; 
+           background: $white;
+           color: $black;
+           &:hover {
+            background: $color18;
+           }
+        }
+        &.back {
+           border-color: $color1; 
+           background: $color1;
+           color: $black;
+           margin-right: auto;
+           &:hover {
+            border-color: $color19; 
+            background: $color19;
+           }
+        }
+    }
+}
 // Lease Login CSS
 
 .lease-img-box {
     max-width: 493px;
-    background: #E4E4DC;
+    background: $color1;
     border-radius: 16px;
     overflow: hidden;
     @include respond(tab) {
@@ -920,7 +1155,7 @@ span.tooltip {
             display: -webkit-box;
             font-size: 22px;
             font-style: normal;
-            font-weight: 500;
+            font-weight: $fontweight2;
             line-height: normal;
         }
         .card-details-wrap {
@@ -949,17 +1184,17 @@ span.tooltip {
                   }
                 }
                 strong {
-                    font-weight: 600;
-                    color: #2B2A28;
+                    font-weight: $fontweight4;
+                    color: $black;
                 }
             }
         }
         p {
             font-size: 16px;
             font-style: italic;
-            font-weight: 400;
+            font-weight: $fontweight5;
             line-height: 24px;
-            color: #3A3A3C;
+            color: $color3;
             margin-top: 20px;
         }
     }
@@ -983,7 +1218,7 @@ span.tooltip {
         h3 {
             font-size: 12px;
             font-style: normal;
-            font-weight: 700;
+            font-weight: $fontweight3;
         }
         .card-details-wrap {
             gap: 3px;
@@ -1013,7 +1248,7 @@ span.tooltip {
                 strong {
                     font-size: 12px;
                     font-style: normal;
-                    font-weight: 400;
+                    font-weight: $fontweight5;
                 }
             }
         }
@@ -1032,15 +1267,15 @@ span.tooltip {
         flex-direction: column;
         min-width: 120px;
         strong {
-            font-weight: 600;
-            color: #FF2727;
+            font-weight: $fontweight4;
+            color: $orange;
         }
     } 
     & + p {
-        color: #2B2A28;
+        color: $black;
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontweight5;
         line-height: normal;
         opacity: 0.5;
         margin: 10px 0;
@@ -1053,19 +1288,19 @@ span.tooltip {
     flex-direction: column;
     gap: 16px;
     border-radius: 16px;
-    border: 1px solid #E4E4DC;
+    border: 1px solid $color1;
     h3 {
         font-size: 20px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: $fontweight2;
         line-height: normal;
-        color: #1C1C1E;
+        color: $color2;
         padding-bottom: 12px;
-        border-bottom: 1px solid #EFEFEF;
+        border-bottom: 1px solid $color4;
         display: flex;
         align-items: center;
         @include respond(phone_land) {
-            color: #A85B57;
+            color: $color5;
         }
         button {
             border: none;
@@ -1104,7 +1339,7 @@ span.tooltip {
     label {
         margin: 0 !important;
         samp {
-            color: #3A3A3C;
+            color: $color3;
         }
         span {
             zoom: 93%;
@@ -1115,8 +1350,8 @@ span.tooltip {
         input[type="checkbox"]:disabled {
             & + span {
                 &.checkmark {
-                    background: #E4E4DC !important;
-                    border-color: #E4E4DC !important;
+                    background: $color1 !important;
+                    border-color: $color1 !important;
                 }
             }
         }
@@ -1129,10 +1364,10 @@ span.tooltip {
     align-items: center;
     gap: 20px;
     strong {
-        color: #FF2727;
+        color: $orange;
         font-size: 16px;
         font-style: normal;
-        font-weight: 700;
+        font-weight: $fontweight3;
         line-height: normal;
     }
     button, a {
@@ -1144,22 +1379,22 @@ span.tooltip {
         align-items: center;
         gap: 10px;
         border-radius: 16px;
-        background: #2B2A28;
+        background: $black;
         border: none;
-        color: #fff;
+        color: $white;
         font-size: 14px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontweight5;
         transition: all 0.4s ease-in-out;
         &:hover {
-            background-color: #575757;
+            background-color: $color13;
         }
     }
     &.top-head {
         label { 
             width: 100%;  justify-content: space-between; text-transform: uppercase;
             strong {
-                font-weight: 400 !important;
+                font-weight: $fontweight5 !important;
                 text-transform: capitalize;
             }
         }
@@ -1171,19 +1406,19 @@ span.tooltip {
     display: flex;
     align-items: center;
     gap: 20px;
-    color: #FF2727;
+    color: $orange;
     font-size: 16px;
     font-style: normal;
     line-height: normal;
-    font-weight: 500;
+    font-weight: $fontweight2;
     strong {
-        color: #fff;
-        font-weight: 400;
+        color: $white;
+        font-weight: $fontweight5;
         display: flex;
         padding: 5px 10px;
         align-items: flex-start;
         border-radius: 10px;
-        background: #E05050;
+        background: $orange;
     }
 }
 
@@ -1192,16 +1427,16 @@ span.tooltip {
     flex-direction: column;
     gap: 19px;
     li {
-        color: #3A3A3C;
+        color: $color3;
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontweight5;
         line-height: 24px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         strong {
-            font-weight: 500;
+            font-weight: $fontweight2;
         }
     }
 }
@@ -1210,14 +1445,14 @@ span.tooltip {
     padding: 16px;
     gap: 19px;
     border-radius: 8px;
-    background: #E4E4DC;
+    background: $color1;
     margin-top: 19px;
     justify-content: space-between;
     align-items: center;
-    color: #3A3A3C;
+    color: $color3;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $fontweight5;
     line-height: 24px;
     strong {
         font-weight: $fontweight3;
@@ -1249,10 +1484,10 @@ span.tooltip {
         span {
             font-size: 16px;
             font-style: normal;
-            font-weight: 400;
+            font-weight: $fontweight5;
             line-height: 24px;
-            background: #fff;
-            color: #4BB543;
+            background: $white;
+            color: $green;
             @include respond(phone_land) {
                 text-align: center;
                 font-size: 10px;
@@ -1272,7 +1507,7 @@ span.tooltip {
                 top: -4px;
                 bottom: 0;
                 margin: auto;
-                color: #fff;
+                color: $white;
                 font-size: 20px;
                 -ms-transform: scaleX(-1) rotate(-35deg); /* IE 9 */
                 -webkit-transform: scaleX(-1) rotate(-35deg); /* Chrome, Safari, Opera */
@@ -1301,14 +1536,14 @@ span.tooltip {
             border-radius: 32px;
             font-size: 0;
             font-style: normal;
-            font-weight: 400;
+            font-weight: $fontweight5;
             line-height: 24px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #4BB543;
-            color: #fff;
-            border:1px solid #4BB543;
+            background-color: $green;
+            color: $white;
+            border:1px solid $green;
             @include respond(phone_land) {
                 width: 20px;
                 height: 20px;
@@ -1318,7 +1553,7 @@ span.tooltip {
         &:not(:last-child):after {
             width: 70%;
             height: 2px;
-            background-color: #4BB543;
+            background-color: $green;
             content: "";
             position: absolute;
             right: 0;
@@ -1337,41 +1572,41 @@ span.tooltip {
         }
         &.current {
             span { 
-                color: #2B2A28; 
+                color: $black; 
                 &::before {
                     content: none;
                 }
             }
             &::before {
-                background-color: #2B2A28;
-                color: #fff;
-                border-color: #2B2A28;
+                background-color: $black;
+                color: $white;
+                border-color: $black;
                 font-size: 16px;
                 @include respond(phone_land) {
                     font-size: 10px;
                 }
             }
             &::after {
-                background-color: #E4E4DC;
+                background-color: $color1;
             }
             & ~ li {
                 span { 
-                    color: #2B2A28; 
+                    color: $black; 
                     &::before {
                         content: none;
                     }
                 }
                 &::before {
-                    background-color: #fff;
-                    color: #2B2A28;
-                    border-color: #E4E4DC;
+                    background-color: $white;
+                    color: $black;
+                    border-color: $color1;
                     font-size: 16px;
                     @include respond(phone_land) {
                         font-size: 10px;
                     }
                 }
                 &::after {
-                    background-color: #E4E4DC;
+                    background-color: $color1;
                 } 
             }
         }
@@ -1387,15 +1622,15 @@ span.tooltip {
     gap: 16px;
     box-sizing: border-box;
     border-radius: 10px;
-    border: 1px solid #E5E5EA;
-    background: #FFF;
+    border: 1px solid $color20;
+    background: $white;
     .file-input-label {
         height: 32px;
         padding:0 18px;
         justify-content: center;
         box-sizing: border-box;
         border-radius: 8px;
-        background: #E4E4DC;
+        background: $color1;
         cursor: pointer;
     }
     span {
