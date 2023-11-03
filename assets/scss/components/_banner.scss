@@ -2431,6 +2431,9 @@
     position: relative;
     margin: 0 auto;
     width: 190px;
+    @include respond (phone_land){
+      width: 150px;
+    }
   }
 
   .select__container .select {
@@ -2483,7 +2486,7 @@
     color: $black;
     top: 100%;
     border:1px solid  $color1;
-    border-width: 0 1px 0; 
+    border-width: 0 1px 0;  
     
   }
 
@@ -2541,5 +2544,16 @@
 
   .select__container .option-container .option label {
      cursor: pointer;
+  }
+}
+
+@include respond (phone_land){
+  .csstyp2input_wrapper{
+    flex-direction: column;
+    .search-filter-view{
+      display: flex;
+      gap:8px;
+      justify-content: flex-end;
+    }
   }
 }

@@ -3046,6 +3046,11 @@ body.slide {
   margin: 0 auto;
   width: 190px;
 }
+@media screen and (max-width: 767px) {
+  .cs_styp2input .select__container {
+    width: 150px;
+  }
+}
 .cs_styp2input .select__container .select {
   position: relative;
   background: #FFFFFF;
@@ -3138,6 +3143,16 @@ body.slide {
   cursor: pointer;
 }
 
+@media screen and (max-width: 767px) {
+  .csstyp2input_wrapper {
+    flex-direction: column;
+  }
+  .csstyp2input_wrapper .search-filter-view {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+  }
+}
 .upcoming-projects {
   display: flex;
   margin-top: 189px;
