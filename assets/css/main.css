@@ -3981,6 +3981,15 @@ body.slide {
   background: black;
 }
 
+[dir=rtl] .bookNow .right-content {
+  left: 0;
+  right: auto;
+}
+[dir=rtl] .app-status .inner-area-box .app-detail {
+  margin-right: 40%;
+  margin-left: 0;
+}
+
 .youtube-page {
   margin: 109px 0 113px;
 }
@@ -4492,6 +4501,7 @@ footer .copyright-section p {
     align-self: stretch;
     cursor: pointer;
     margin-bottom: 20px;
+    box-sizing: border-box;
     width: 100%;
     font-size: 14px;
   }
