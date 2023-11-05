@@ -1,0 +1,310 @@
+// ======Image group=====
+.img_gell{
+    position: relative;
+    margin-left: -5px;
+    margin-right: -5px;
+    img{
+      border-radius: 12px;
+      object-fit: cover;
+      position: absolute;
+      border: 5px solid $white; 
+      box-sizing: border-box;
+      &:first-child{
+        width: 50%;
+        position: static;
+        display: block; 
+        min-height: 350px; 
+        @include respond (phone_land){
+          min-height: 250px;
+        }
+      }
+      &:nth-child(2){
+        height: 50%;
+        width: 50%;
+        top: 0;
+        right: 0;
+      }
+      &:nth-child(3),&:nth-child(4){
+        bottom: 0;
+        right: 25%;
+        width: 25%;
+        height: 50%;
+      }
+      &:nth-child(4){
+        right: 0;
+        &~img{ 
+          display: none;
+        }
+      }
+  
+    }
+    @include respond (phone){
+      height: 85vw;
+      margin-left: -2.5px;
+      margin-right: -2.5px;
+      img{
+        border-width: 2.5px;
+        border-radius: 8px;
+        &:first-child{
+          height: 66.6%;
+          width: 100%;
+          min-height:auto;
+        }
+        &:nth-child(2),&:nth-child(3),&:nth-child(4){
+          width: 33.3%;
+          bottom: 0;
+          top: auto;
+          height: 33.3%;
+          left: 0;
+        }
+        &:nth-child(3){
+          margin-left: auto;
+          margin-right: auto;
+          right: 0;
+        }
+        &:nth-child(4){
+          right: 0;
+          left: auto;
+        }
+      }
+    }
+  }
+.indus_head_section {
+    padding: 20px 0;
+    border-top: 1px solid $color1;
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    .sec_head {
+      display: flex;
+      gap:12px;
+      justify-content: space-between;
+      > div:last-child {
+        text-align: right;
+        @include respond(phone_land){
+          padding-top: 22px;
+          display: flex;
+          gap: 20px;
+          flex-flow: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+          flex-wrap: wrap;
+        }
+      }
+      .btn_cta03{
+        display: flex;
+        align-items: center;
+        gap:8px 0;
+        @include respond(phone_land){
+          flex: 0 0 100%;
+          justify-content: flex-end;
+        }
+      }
+    }
+    .head_detail_row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      > span {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        img{
+          max-width: 16px;
+        }
+      }
+    }
+    .year_text {
+      padding-top: 15px;
+      font-size: 30px;
+      font-weight: 500;
+      display: block;
+    }
+    @include respond(tab){ 
+      h2{
+        font-size: 25px;
+      }
+      .year_text { 
+        font-size: 20px;
+      }
+    }
+    @include respond(phone_land){ 
+      .sec_head{
+        display: block; 
+      }
+      h2{
+        font-size: 20px;
+        margin-bottom: 16px;
+      }
+      .year_text { 
+       padding: 0;
+      }
+      .head_detail_row{
+        gap: 5px 12px;
+      }
+    }
+  
+  }
+  .unit_content_section {   
+    padding-bottom: 3rem;  
+    @media all and (min-width:1200px) {  
+      &.pb_sec{
+        padding-bottom: 8rem; 
+      }
+    }
+    .cs_card {
+      margin-bottom: 20px;
+    }
+  
+    .img_gell {
+      margin-bottom: 20px;
+    }
+    .unit_map_flex {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      
+      ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        > li {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+          span {
+            display: block;
+            opacity: 0.7;
+            &:last-child {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    .google_map {
+      flex: 0 0 150px;
+      height: 84px;
+      max-width: 150px;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    @media all and (min-width:768px) {
+      .listing.li_4 .flex_50p {
+        flex: 0 0 50%;
+        @include respond(tab){
+          flex: 0 0 66.6%;
+        }
+         
+      }
+    }
+    
+    .payment_list {
+      .icon_setting {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+      li {
+        display: flex;
+        flex-flow: column;
+        gap:12px;
+        color: $darkBlack;
+        span {
+          opacity: 0.7;
+        }
+        strong {
+          font-weight: 500;
+        }
+      }
+      @include respond(tab){
+        li {
+          gap: 8px;
+        }
+      }
+      @include respond(phone){
+        li {
+          flex: 0 0 calc(50% - 7.5px);
+          max-width: calc(50% - 7.5px);
+        }
+      }
+    }
+    @include respond(phone_land){
+      .google_map{
+        border-radius: 8px;
+        height: 111px;
+      }
+      .unit_map_flex ul li{
+        flex: 0 0 calc(50% - 10px);
+        gap: 8px;
+      }
+    }
+    @include respond(phone){
+      .unit_map_flex{
+        display: block;
+      }
+      .google_map{
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        
+      }
+    }
+  }
+  .checkbox_table {
+      border:1px solid $color6;
+      overflow-y: hidden;
+      overflow-x: auto;
+      border-radius: 12px;
+      .custom_checkbox{
+          margin: 0;
+          align-items: center;
+          label{
+              padding-top: 1.5px;
+          }
+      }
+    table {
+      width: 100%;
+    }
+    th,
+    td {
+      width: 50%;
+      padding: 16px;
+      text-align: left;
+      border-right: 1px solid $color6;
+      border-bottom: 1px solid $color6;
+      &:last-child{
+          border-right: 0;
+      }
+    }
+     
+    thead {
+      th {
+        background: $Primary;
+        color:rgba(228,228,226,.7);
+      //   opacity: 0.7;
+      }
+    }
+    tbody{
+      tr:last-child{
+          td{
+              border-bottom: 0;
+          }
+      }
+    } 
+    @include respond(phone_land){
+      border-radius: 8px; 
+       table{
+        min-width: 450px;
+      }
+    }
+  }
+  
