@@ -4616,6 +4616,7 @@ footer .copyright-section p {
 }
 @media screen and (max-width: 991px) {
   .quicklinks {
+    box-sizing: border-box;
     border-radius: 8px;
     border: 1px solid rgba(43, 42, 40, 0.2);
     background: #EDEDE8;
@@ -4674,10 +4675,12 @@ footer .copyright-section p {
 }
 @media screen and (max-width: 991px) {
   .app-status .inner-area-box img.responsive_device {
-    bottom: auto;
-    top: -160px;
+    bottom: 100px;
+    top: auto;
     left: 0;
     right: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .app-status .inner-area-box .app-detail {
@@ -4731,12 +4734,6 @@ footer .copyright-section p {
     margin: 0;
   }
 }
-@media screen and (max-width: 767px) {
-  .app-status .inner-area-box img.responsive_device {
-    top: -180px;
-  }
-}
-
 .floating-button-wrap {
   position: fixed;
   right: 5vw;

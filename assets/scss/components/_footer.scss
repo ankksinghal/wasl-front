@@ -184,6 +184,7 @@ footer{
 .quicklinks {
     display: none;
     @include respond(tab) {
+        box-sizing: border-box;
         border-radius: 8px;
         border: 1px solid rgba(43, 42, 40, 0.20);
         background: #EDEDE8;
@@ -233,10 +234,12 @@ footer{
                 position: absolute;
                 bottom: -48px;
                 @include respond(tab) {
-                    bottom: auto;
-                    top: -160px;
+                    bottom: 100px;
+                    top: auto;
                     left: 0;
                     right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
@@ -286,7 +289,7 @@ footer{
     }
     @include respond (phone_land){ 
        .inner-area-box img.responsive_device{ 
-            top: -180px;
+            // top: -180px;
        }
     }
 }
