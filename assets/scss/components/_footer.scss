@@ -233,10 +233,12 @@ footer{
                 position: absolute;
                 bottom: -48px;
                 @include respond(tab) {
-                    bottom: auto;
-                    top: -160px;
+                     top: auto;
                     left: 0;
                     right: 0;
+                    bottom: 100px;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
         }
@@ -279,14 +281,9 @@ footer{
                 a{
                     max-width: calc(48% - 10px);
                     box-sizing: border-box; 
-                    margin: 0;
+                    margin: 0; 
                 }
             }
         }
-    }
-    @include respond (phone_land){ 
-       .inner-area-box img.responsive_device{ 
-            top: -180px;
-       }
     }
 }
