@@ -8,6 +8,11 @@
         height: 225px;
         object-fit: cover;
       }
+      @media all and (min-width:1200px) {
+        height: calc(100vh - 175px);
+        object-fit: cover; 
+        min-height: 35vw; 
+      }
     }
   }
   .right-box {

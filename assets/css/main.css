@@ -843,6 +843,14 @@ body.slide {
        object-fit: cover;
   }
 }
+@media all and (min-width: 1200px) {
+  .banner-section .banner-img img {
+    height: calc(100vh - 175px);
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 35vw;
+  }
+}
 .banner-section .right-box {
   width: 88px;
   height: 88px;
