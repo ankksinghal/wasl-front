@@ -29,9 +29,9 @@
    display: flex;
    justify-content: center; 
    flex-direction: column;
-   min-height: calc(100vh - 56px);   
+   min-height: calc(100vh - 73px);   
    box-sizing: border-box;  
-   background: url(../images/bg_trns.svg) no-repeat center bottom/ contain;
+   background: url(../images/bg_trns.svg) no-repeat center bottom -30px / contain;
    .danger{ 
       color: rgba(168, 91, 87, 1);  
    }
