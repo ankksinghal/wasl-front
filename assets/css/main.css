@@ -56,6 +56,12 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "bliss_medium";
+  src: url("../blisspro-fonts/BlissPro-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -704,7 +710,7 @@ header .header-section .right-bottom-section nav ul li a {
   text-align: center;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-family: bliss_medium;
   line-height: 20px;
   text-transform: capitalize;
   padding: 10px 15px;
