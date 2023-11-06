@@ -1,0 +1,544 @@
+.cs_inner_hero {
+  height: 131px;
+  position: relative;
+  color: $white;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  * {
+    box-sizing: border-box;
+  }
+  .inner_hero_content {
+    padding: 0.85rem 0;
+  }
+  p {
+    line-height: calc(24 / 16);
+  }
+  .inner_hero_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .inner_hero_title {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 0.75rem;
+    &.text_dark {
+      color: $black;
+    }
+  }
+  .container {
+    position: relative;
+  }
+  @include respond(phone_land) {
+    height: auto;
+    min-height: 69px;
+    .inner_hero_title {
+      font-size: 20px;
+      margin-bottom: 0;
+    }
+    p {
+      font-size: 10px;
+      padding-top: 4px;
+    }
+  }
+}
+
+// ===================
+.inner_bnr_alignment {
+  .arr_back {
+    display: none;
+    background: $white;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+}
+@include respond(phone_land) {
+  .inner_bnr_alignment {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .arr_back {
+      display: flex;
+    }
+  }
+}
+.g_search_section {
+  padding: 34px 0 0;
+  .search-section {
+    margin-top: 0;
+    top: 0;
+    position: relative;
+  }
+}
+
+//   ========================================
+
+.indus_hero_slider {
+  @include respond(tab_land) {
+    .owl-dots {
+      bottom: 4rem;
+    }
+  }
+}
+.cs_inner_hero {
+  &.type2 {
+    height: 30vw;
+    min-height: 175px;
+  }
+}
+.cs_ratio {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  &:before {
+    padding-top: 50%;
+    content: "";
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &.ratio_eq:before {
+    padding-top: 100%;
+  }
+  &.ratio_contain {
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+.cat_chip_card {
+  padding: 24px;
+  border: 1px solid $color1;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  img {
+    flex: 0 0 56px;
+    height: 56px;
+    object-fit: contain;
+  }
+  .img_wrap {
+    flex: 0 0 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(220, 204, 192, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  figcation {
+    font-size: 18px;
+  }
+  @include respond(tab) {
+    padding: 16px;
+    img {
+      flex: 0 0 45px;
+      height: 45px;
+    }
+  }
+}
+
+.gap_32 {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  .cat_chip_card {
+    flex: 0 0 calc(33.3% - 21.3px);
+  }
+  @include respond(tab) {
+    gap: 15px;
+  }
+  @include respond(phone_land) {
+    gap: 11px 8px;
+    .cat_chip_card {
+      flex: 0 0 calc(50% - 4px);
+    }
+  }
+}
+.abt_industrial {
+  padding: 115px 0;
+  background: $bannerBoxColor;
+  h2 {
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+  .cs_btn {
+    margin-top: 30px;
+  }
+  font-size: 18px;
+  line-height: calc(26 / 18);
+  .sec_row {
+    display: flex;
+    gap: 72px;
+    .col_content {
+      flex: 0 0 40%;
+    }
+  }
+  .img_2_figure {
+    margin-right: 1rem;
+    position: relative;
+    gap: 32px;
+    display: flex;
+    > img {
+      flex: 0 0 calc(50% - 16px);
+      object-fit: cover;
+      position: relative;
+      border-radius: 16px;
+      max-width: calc(50% - 16px);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 55%;
+      border-radius: 16px;
+      right: -20px;
+      top: -18px;
+      background: $color8;
+    }
+  }
+  @include respond(tab_land) {
+    padding: 65px 0;
+    h2 {
+      font-size: 25px;
+    }
+  }
+  @include respond(phone_land) {
+    font-size: 14px;
+    padding: 42px 0;
+    text-align: center;
+    h2 {
+      margin-bottom: 14px;
+      font-size: 20px;
+    }
+    .sec_row {
+      display: block;
+    }
+    .cs_btn {
+      margin-top: 20px;
+    }
+    .col_content {
+      margin-bottom: 2rem;
+    }
+    .img_2_figure {
+      margin-right: 0;
+      gap: 18px;
+      > img {
+        flex: 0 0 calc(50% - 9px);
+        max-width: calc(50% - 9px);
+      }
+      &::before {
+        content: none;
+      }
+    }
+  }
+}
+.all_btn_wrapper {
+  padding-top: 50px;
+  text-align: center;
+  .cs_btn {
+    font-size: 18px;
+    padding: 15px 60px;
+    border-radius: 4px;
+  }
+  @include respond(phone) {
+    padding-top: 15px;
+  }
+}
+.f_warehouses {
+  padding: 90px 0;
+  h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  @include respond(tab_land) {
+    padding: 65px 0;
+    h2 {
+      font-size: 25px;
+      margin-bottom: 40px;
+    }
+  }
+  @include respond(phone_land) {
+    padding: 56px 0 40px;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .all_btn_wrapper {
+      .cs_btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.item_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+
+  * {
+    box-sizing: border-box;
+  }
+  > div {
+    flex: calc(33.3% - 20px);
+    max-width: calc(33.3% - 20px);
+  }
+
+  .item_card {
+    background-color: $white;
+    box-shadow: 0px 4px 26px 0px rgba(66, 71, 76, 0.08);
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 16px;
+    color: rgba(43, 42, 40, 0.7);
+    display: flex;
+    flex-flow: column;
+    .item_card_img::before {
+      padding-top: 68%;
+    }
+    .item_card_content {
+      padding: 18px 0;
+      .title {
+        display: flex;
+        gap: 8px;
+        color: $black;
+        font-weight: 500;
+        font-size: 18px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      p {
+        line-height: calc(19 / 16);
+      }
+    }
+    .item_card_list_detail {
+      padding-top: 15px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      > li {
+        flex: 0 0 calc(50% - 5px);
+        display: flex;
+        gap: 10px;
+        align-items: flex-start;
+        strong {
+          display: block;
+          font-weight: 700;
+          line-height: 1.45;
+        }
+      }
+    }
+    .item_card_footer {
+      padding-top: 16px;
+      margin-top: auto;
+      text-align: center;
+      border-top: 1px solid $color18;
+      margin-top: auto;
+      a,
+      button {
+        border: none;
+        text-decoration: none;
+        line-height: 1.5;
+        color: $black;
+      }
+      img {
+        margin-left: 8px;
+      }
+    }
+  }
+  @include respond(tab) {
+    @media all and (min-width: 768px) {
+      gap: 30px 15px;
+      > .item_card {
+        font-size: 13px;
+        flex: 0 0 calc(33.3% - 10px);
+        max-width: calc(33.3% - 10px);
+        .item_card_content .title {
+          font-size: 16px;
+        }
+      }
+      .cs_badge {
+        font-size: 14px;
+      }
+    }
+  }
+  @include respond(phone_land) {
+    gap: 30px 20px;
+    > .item_card {
+      font-size: 14px;
+      flex: 0 0 calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+  }
+  @include respond(phone) {
+    gap: 12px;
+    > .item_card {
+      font-size: 16px;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+// ================Industrial Resuls All Page=================
+.all_units_section {
+  padding-top: 30px;
+  padding-bottom: 100px;
+  .item_row {
+    
+    .item_card {
+      border: 1px solid $color18;
+      box-shadow: none;
+    }
+    @media all and (min-width:1200px){
+        gap: 20px;
+        .item_card{
+            flex: calc(33.3% - 13.3px);
+            max-width: calc(33.3% - 13.3px);
+        
+        }
+    }
+  }
+  .sec_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    h3 {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: $darkBlack;
+    }
+    .sort_by {
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      #datepicker {
+        padding: 16px 14px 12px;
+        width: 232px;
+        border-radius: 8px;
+        border: 1px solid $color1;
+        color: $black;
+        opacity: 0.8;
+      }
+    }
+
+    @include respond(phone_land) {
+      .sort_by {
+        display: none;
+        label {
+          display: none;
+        }
+        #datepicker {
+          width: 52px;
+          color: $white;
+          opacity: 0;
+        }
+      }
+    }
+  }
+  .sec_content {
+    padding-top: 2rem;
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+  @include respond(phone_land) {
+    padding-bottom: 45px;
+    .sec_head {
+      h3 {
+        font-size: 18px;
+        padding-right: 12px;
+      }
+    }
+  }
+}
+
+
+// ================Responsive=================
+@include respond(phone_land){
+    .g_search_section .search-section .filter-section .advanced-filters-box.view{
+        padding: 20px 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// =========Delete=============
+.mob-code .iti__flag-container  .iti__selected-flag{
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 15px;
+        padding-right: 11px;
+        width: 58px;
+        flex-direction: row;
+}
+.mob-code .iti.iti--allow-dropdown{
+    margin-top: 10px;
+}
+.mob-code .iti__flag-container{
+   flex-direction: row;
+}
+.mob-code .iti__flag-container:before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 60%;
+    top: 20%;
+    background: #cbcbcb;
+    right: 0;
+    z-index: 1;
+    right: 1px;
+}
+.mob-code .iti.iti--allow-dropdown   input.form-input{ 
+    padding-left: 70px; 
+}
+.mob-code .iti__country{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+    transition: .15s;
+}
+.mob-code .iti__country:hover{
+    background: #ddd; 
+}
