@@ -10813,15 +10813,16 @@ figure.card_img:before {
 }
 
 .payment_processing_section {
-  padding: 5rem 0;
+  padding: 2rem 0 10rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 56px);
   box-sizing: border-box;
+  background: url(../images/bg_trns.svg) no-repeat center bottom/contain;
 }
 .payment_processing_section .danger {
-  color: #F00;
+  color: rgb(168, 91, 87);
 }
 .payment_processing_section .icon_textwrap {
   display: flex;
