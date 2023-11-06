@@ -577,3 +577,9 @@ $(".retail-filter-icon").click(function () {
   $(".search-retails").addClass("modal");
   $(".overlay").addClass("slide");
 });
+
+
+$("#chat_boat").click(function () {
+  $("#chat_boat_box").toggleClass("hide");
+  $("#chat_boat").toggleClass("rotate");
+});
