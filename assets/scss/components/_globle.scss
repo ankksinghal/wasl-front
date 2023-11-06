@@ -413,3 +413,59 @@ button {
     }
   }
    
+
+
+  // =========Basic Form row===========
+.form_row {
+  display: flex;
+  gap: 25px 48px;
+  flex-wrap: wrap;
+  > .form_item {
+    flex: 0 0 calc(50% - 24px);
+    max-width: calc(50% - 24px);
+    label {
+      margin-bottom: 10px;
+      line-height: 1.2;
+      display: block;
+      > .required {
+        color: $color5;
+      }
+    }
+    &.label_false {
+      padding-top: 30px;
+      @include respond(phone_land) {
+        padding-top: 27px;
+      }
+    }
+  }
+  @include respond(tab_land) {
+    gap: 25px 20px;
+    > .form_item {
+      flex: 0 0 calc(50% - 10px);
+      max-width: calc(50% - 10px);
+    }
+  }
+  &.gap_10 {
+    gap: 10px;
+    > .form_item {
+      flex: 0 0 calc(50% - 5px);
+      max-width: calc(50% - 5px);
+    }
+  }
+  &.till_lg {
+    // gap: 24px;
+    @include respond(phone_land) {
+      > .form_item {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+  }
+  @include respond(phone_land) {
+    gap: 24px 0;
+    > .form_item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}

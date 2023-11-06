@@ -430,6 +430,18 @@ function displayFileName(input) {
     uploadedFileName.textContent = "";
   }
 }
+
+// =============File Upload=============
+// File upload Convert
+$("#fileInput").on('change',function () { 
+  var file = $(this)[0].files[0];  
+  $("#uploadedFileName").text(file.name);
+});
+$("#fileInput1").on('change',function () {
+  var file = $(this)[0].files[0]; 
+  $("#uploadedFileName1").text(file.name);
+});
+
 // =========About Us tabbing=============
 // Show the first tab and hide the rest
 $("#cs_tab_nav li:first-child").addClass("active");
@@ -451,6 +463,15 @@ $("#cs_tab_nav li").click(function () {
     items: 1,
   });
   return false;
+});
+// ==========Added attechment button===========
+$('.add_attechment .add_btn').on('click',function(){
+  $('.added_item_card').slideDown();
+  $(this).closest('.add_attechment').slideUp();
+});
+// ===========Trash Added item============
+$('.added_item_card .trash_btn').on('click',function(){
+  $(this).closest('.cs_card').remove();
 });
 // =========About us===============
 
@@ -576,4 +597,10 @@ $(".retail-alphabet-search").click(function () {
 $(".retail-filter-icon").click(function () {
   $(".search-retails").addClass("modal");
   $(".overlay").addClass("slide");
+});
+
+
+$("#chat_boat").click(function () {
+  $("#chat_boat_box").toggleClass("hide");
+  $("#chat_boat").toggleClass("rotate");
 });
