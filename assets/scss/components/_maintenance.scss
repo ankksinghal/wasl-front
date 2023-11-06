@@ -18,3 +18,34 @@
         margin:0 0 15px;
      }
 }
+
+// ======================
+.logo__wrapper{
+   display: block;
+   padding-bottom: 1rem;
+}
+.payment_processing_section{
+   padding: 5rem 0;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   min-height: calc(100vh - 200px); 
+   box-sizing: border-box;  
+}
+.loder_spin{
+   width: 100px;
+   height: 100px;
+   margin-bottom: 2rem;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 50%;
+   display: block;
+   border: 3px solid $black;
+   border-width: 0 0 3px 0;
+   animation:loder_spin 1s infinite linear;
+ }
+@keyframes loder_spin {
+   100%{
+      transform: rotate(360deg);
+   }
+}
