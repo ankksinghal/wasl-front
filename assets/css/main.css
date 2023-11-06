@@ -10820,6 +10820,18 @@ figure.card_img:before {
   min-height: calc(100vh - 200px);
   box-sizing: border-box;
 }
+.payment_processing_section .danger {
+  color: #F00;
+}
+.payment_processing_section .icon_textwrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.payment_processing_section .icon_textwrap img {
+  margin: 0;
+}
 
 .loder_spin {
   width: 100px;
