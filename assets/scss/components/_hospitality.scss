@@ -1,182 +1,185 @@
-.hospitality-page-wrapper{
-     padding: 30px 0 100px;
-     h2{
-        font-weight: $fontweight2;
-        font-size: $font30;
-        color:$black;
-        margin:0 0 22px;
-     }
-     .offered-section-wrap{
-        ul{
-             display: flex;
-             gap:32px;
-             justify-content: space-between;
-             flex-wrap: wrap;
-             @include respond(phone_land) {
-                gap:15px;
-            }
-             li{
-                position: relative;
-                @include respond(phone_land) {
-                    flex-basis: 46%;
-                }
-                img{
-                     width: 100%;
-                }
-                span{
-                    position: absolute;
-                    left:0;
-                    bottom: 0;
-                    text-align:center;
-                    width: 100%;
-                    background-color: $white;
-                    opacity: 0.75;
-                    padding:15px 15px;
-                    font-weight: $fontweight3;
-                    font-size: $font16;
-                    color:$color3;
-                    box-sizing: border-box;
-                }
-             }
+.hospitality-page-wrapper {
+  padding: 30px 0 100px;
+  h2 {
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    font-size: $font30;
+    color: $black;
+    margin: 0 0 22px;
+  }
+  .offered-section-wrap {
+    ul {
+      display: flex;
+      gap: 32px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      @include respond(phone_land) {
+        gap: 15px;
+      }
+      li {
+        position: relative;
+        @include respond(phone_land) {
+          flex-basis: 46%;
         }
-     }
+        img {
+          width: 100%;
+        }
+        span {
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          text-align: center;
+          width: 100%;
+          background-color: $white;
+          opacity: 0.75;
+          padding: 15px 15px;
+          font-weight: $fontweight3;
+          font-size: $font16;
+          color: $color3;
+          box-sizing: border-box;
+        }
+      }
+    }
+  }
 }
 
 // Pages wrapper
-.all-units-wrapper{
-    &.hospitality-blocks-wrap{
+.all-units-wrapper {
+  &.hospitality-blocks-wrap {
+    @include respond(phone_land) {
+      display: block;
+    }
+  }
+  .all-units-section {
+    &.hospitality-blocks {
+      padding: 30px 0 100px;
+      .all-units-cards-wrap {
+        justify-content: space-between;
         @include respond(phone_land) {
-            display: block;
+          display: block;
         }
-    }
-    .all-units-section{
-        &.hospitality-blocks{
-          padding:30px 0 100px;
-          .all-units-cards-wrap{
-              justify-content: space-between;
-              @include respond(phone_land) {
-                display: block;
-            }
-              p{
-                font-size: $font16;
-                line-height:19.1px;
-                color:$black;
-                opacity: 0.7;
-                margin-bottom: 15px;
-            }
-            .view-details-wrap{
-                 border-top: 1px solid #F1F1F1;
-            }
-          }
-          .all-units-cards{
-              width: 32%;
-              box-sizing:border-box;
-              img.feature-image{
-                 width: 100%;
-              }
-              @include respond(phone_land) {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-              h3{
-                 font-size: $font20;
-              }
-              .card-details-wrap{
-                .card-details{
-                    @include respond(phone_land) {
-                        width: 100%;
-                    }
-                }
-              }
-              .card-details{
-                span{
-                     color:$black;
-                     strong{
-                        font-weight: $fontweight3;
-                     }
-                }
-              } 
-          }
+        p {
+          font-size: $font16;
+          line-height: 19.1px;
+          color: $black;
+          opacity: 0.7;
+          margin-bottom: 15px;
+        }
+        .view-details-wrap {
+          border-top: 1px solid #f1f1f1;
+        }
       }
-     }
-}
-.container{
-    .village-building{
-        &.hospitality{
-         .village-banner{
-             .left-section{
-                 ul{
-                     li{
-                       span{
-                         font-weight: $fontweight3;
-                       }
-                     }
-                 }
-             }
-             .right-section{
-                @include respond(phone_land) {
-                    display: block;
-                }
-                .btn-links{
-                    @include respond(phone_land) {
-                        display: block;
-                    }
-                    a{
-                        @include respond(phone_land) {
-                            display: block;
-                            width: 100%;
-                            max-width: 100%;
-                            box-sizing: border-box;
-                        }
-                    }
-                }
-             }
-         }
+      .all-units-cards {
+        width: 32%;
+        box-sizing: border-box;
+        img.feature-image {
+          width: 100%;
         }
-     }
+        @include respond(phone_land) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        h3 {
+          font-size: $font20;
+        }
+        .card-details-wrap {
+          .card-details {
+            @include respond(phone_land) {
+              width: 100%;
+            }
+          }
+        }
+        .card-details {
+          span {
+            color: $black;
+            strong {
+              font-weight: $fontweight3;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.container {
+  .village-building {
+    &.hospitality {
+      .village-banner {
+        .left-section {
+          ul {
+            li {
+              span {
+                font-weight: $fontweight3;
+              }
+            }
+          }
+        }
+        .right-section {
+          @include respond(phone_land) {
+            display: block;
+          }
+          .btn-links {
+            @include respond(phone_land) {
+              display: block;
+            }
+            a {
+              @include respond(phone_land) {
+                display: block;
+                width: 100%;
+                max-width: 100%;
+                box-sizing: border-box;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.ammenties-wrapper-details{
-    margin:0 0 50px;
-    h2{
-         font-weight: $fontweight2;
-         font-size: $font30;
-         text-align: center;
-         margin-bottom: 30px;
-         color:$black;
-    }
-    h4{
+.ammenties-wrapper-details {
+  margin: 0 0 50px;
+  h2 {
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    font-size: $font30;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $black;
+  }
+  h4 {
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    font-size: $font19;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: $font16;
+    margin-bottom: 20px;
+    color: $black;
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    li {
+      text-align: center;
+      @include respond(phone_land) {
+        flex-basis: 48%;
+        margin-bottom: 15px;
+      }
+      img {
+        margin-bottom: 12px;
+      }
+      span {
+        display: block;
+        font-size: $font18;
         font-weight: $fontweight2;
-         font-size: $font19;
-         color:$black;
-         margin-bottom: 20px;
+        font-family: $fontmedium;
+        line-height: 21px;
+      }
     }
-    p{
-         font-size: $font16;
-         margin-bottom: 20px;
-         color:$black;
-
-    }
-    ul{
-         display: flex;
-         justify-content: space-between;
-         margin-bottom: 30px;
-         flex-wrap: wrap;
-         li{
-             text-align: center;
-             @include respond(phone_land) {
-                flex-basis: 48%;
-                margin-bottom: 15px;
-            }
-             img{
-                margin-bottom: 12px;
-             }
-             span{
-                display: block;
-                font-size: $font18;
-                font-weight: $fontweight2;
-                line-height: 21px;
-             }
-         }
-    }
+  }
 }

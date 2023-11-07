@@ -1,107 +1,110 @@
-.owner-services-wrapper{
-     padding:30px 0 100px;
-     h2{
-         font-size: $font30;
-         margin-bottom: 20px;
-         font-weight: $fontweight2;
-         color:$black;
-         @include respond(phone_land) {
-          font-size: $font20;
-      }
-     }
-     p{
-      font-size: $font16;
-      color:$black;
-      line-height: 24px;
-      margin-bottom: 30px;
-      a{
-         color: $black;
-         text-decoration: underline;
-      }
-      &.strong{
-          font-weight: $fontweight2;
-      }
-   }
-   ul{
+.owner-services-wrapper {
+  padding: 30px 0 100px;
+  h2 {
+    font-size: $font30;
+    margin-bottom: 20px;
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    color: $black;
+    @include respond(phone_land) {
+      font-size: $font20;
+    }
+  }
+  p {
+    font-size: $font16;
+    color: $black;
+    line-height: 24px;
+    margin-bottom: 30px;
+    a {
+      color: $black;
+      text-decoration: underline;
+    }
+    &.strong {
+      font-weight: $fontweight2;
+      font-family: $fontmedium;
+    }
+  }
+  ul {
     margin-bottom: 25px;
-    &.property-ul{
+    &.property-ul {
       display: flex;
       flex-wrap: wrap;
-      li{
-        width:50%;
+      li {
+        width: 50%;
         @include respond(phone_land) {
           width: 100%;
-      }
+        }
       }
     }
-     li{
-         display: flex;
-         align-items: center;
-         margin:0 0 10px;
-         line-height: 24px;
-         font-size: $font16;
-         color:$color3;
-         img{
-             margin-right: 20px;
-         }
-     }
+    li {
+      display: flex;
+      align-items: center;
+      margin: 0 0 10px;
+      line-height: 24px;
+      font-size: $font16;
+      color: $color3;
+      img {
+        margin-right: 20px;
+      }
+    }
   }
 }
-.owner-services-inner-wrapper{
-     display: flex;
-     justify-content: space-between;
-     gap:40px;
-     @include respond(phone_land) {
-      display: block;
-     }
-     h3{
-        font-weight: $fontweight3;
-        font-size: $font18;
-        color:$black;
-        margin-bottom: 10px;
-     }
-     h4{
-        font-size: $font16;
-        font-weight: $fontweight2;
-        margin-bottom: 15px;
-     }
+.owner-services-inner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  @include respond(phone_land) {
+    display: block;
+  }
+  h3 {
+    font-weight: $fontweight3;
+    font-size: $font18;
+    color: $black;
+    margin-bottom: 10px;
+  }
+  h4 {
+    font-size: $font16;
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    margin-bottom: 15px;
+  }
 }
 
 figure.card_img {
-    padding: 12px;
+  padding: 12px;
+  position: relative;
+  @include respond(phone_land) {
+    margin: 0;
+  }
+  @include respond(phone) {
+    margin: 0.5rem 0;
+    float: none;
+    max-width: 100%;
+  }
+  img {
     position: relative;
+    z-index: 1;
+    border-radius: 16px;
+    overflow: hidden;
+    display: block;
     @include respond(phone_land) {
-        margin: 0;
-    }
-    @include respond(phone) {
-        margin: .5rem 0;
-        float: none;
-        max-width: 100%;
-    }
-    img {
-      position: relative;
-      z-index: 1;
-      border-radius: 16px;
-      overflow: hidden;
-      display: block;
-      @include respond(phone_land) {
-        width: 100%;
-    }
-    }
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 40%;
-      height: 42%;
-      background: $bannerBoxColor;
-      border-radius: 1rem;
-    }
-    &:before {
-      height: 75%;
-      left: 0;
-      top: 0;
+      width: 100%;
     }
   }
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40%;
+    height: 42%;
+    background: $bannerBoxColor;
+    border-radius: 1rem;
+  }
+  &:before {
+    height: 75%;
+    left: 0;
+    top: 0;
+  }
+}

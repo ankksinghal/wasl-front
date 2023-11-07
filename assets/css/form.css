@@ -67,6 +67,7 @@
   background-color: #1C190E;
   height: 54px;
   font-weight: 500;
+font-family: $fontmedium;
   font-size: 16px;
   line-height: 19.1px;
   text-align: center;

@@ -1,46 +1,49 @@
-.special-renting-wrapper{
-    padding:30px 0 ;
-    h2{
-        font-size: $font30;
-        font-weight: $fontweight2;
-        color:$black;
-        margin-bottom: 20px;
+.special-renting-wrapper {
+  padding: 30px 0;
+  h2 {
+    font-size: $font30;
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    color: $black;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: $font16;
+    color: $black;
+    margin-bottom: 15px;
+  }
+  .special-renting-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 110px;
+    @include respond(phone_land) {
+      display: block;
     }
-    p{
-        font-size: $font16;
-        color:$black;
-        margin-bottom: 15px;
-    }
-    .special-renting-content{
-        display: flex;
-        justify-content: space-between;
-        gap:110px;
-        @include respond(phone_land) {
+    .left-section-rent {
+      ul {
+        li {
+          border: 1px solid #efefef;
+          padding: 16px;
+          border-radius: 10px;
+          font-size: $font16;
+          margin-bottom: 15px;
+          span {
+            font-weight: $fontweight2;
+            font-family: $fontmedium;
+            color: $black;
+            opacity: 0.7;
+            margin-bottom: 15px;
             display: block;
-        }
-        .left-section-rent{
-            ul{
-                li{
-                    border: 1px solid #EFEFEF;
-                    padding:16px;
-                    border-radius: 10px;
-                    font-size: $font16;
-                    margin-bottom: 15px;
-                    span{
-                        font-weight: $fontweight2;
-                        color:$black;
-                        opacity: 0.7;
-                        margin-bottom: 15px;
-                        display: block;                    }
-                    p{
-                        color:$black;
-                        line-height: 24px;
-                        a{
-                            color:$pastelGreen;
-                        }
-                    }
-                }
+          }
+          p {
+            color: $black;
+            line-height: 24px;
+            a {
+              color: $pastelGreen;
             }
+          }
         }
+      }
     }
+  }
 }

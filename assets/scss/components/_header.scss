@@ -1,270 +1,273 @@
-header{
-    padding: 10px 0px 5px;
-    @include respond(phone_land) {
-        padding: 10px 0px;
-    }
-    .header-section{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        .right-section{
-            @include respond(phone_land) {
-                position: fixed;
-                top: 0;
-                padding:30px 20px;
-                background: #E4E4DC;
-                box-sizing: border-box;
+header {
+  padding: 10px 0px 5px;
+  @include respond(phone_land) {
+    padding: 10px 0px;
+  }
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    .right-section {
+      @include respond(phone_land) {
+        position: fixed;
+        top: 0;
+        padding: 30px 20px;
+        background: #e4e4dc;
+        box-sizing: border-box;
+        width: 100%;
+        left: -286px;
+        width: 286px;
+        z-index: 99;
+        overflow: scroll;
+        height: 100%;
+        transition: left 0.3s ease-in-out;
+        border-radius: 0 20px 20px 0;
+        &.slide {
+          left: 0;
+          .mobile-search {
+            display: block;
+            border-bottom: 1px solid #a79f92;
+            padding-bottom: 20px;
+            span {
+              font-size: $font14;
+              color: $Primary;
+              font-weight: $fontweight2;
+              font-family: $fontmedium;
+            }
+            form {
+              position: relative;
+              padding-top: 20px;
+              input {
+                height: 38px;
+                border: 1px solid #e4e4dc;
+                padding: 0 15px;
                 width: 100%;
-                left: -286px;
-                width: 286px;
-                z-index: 99;
-                overflow: scroll;
-                height: 100%;
-                transition: left 0.3s ease-in-out;
-                border-radius: 0 20px 20px 0;
-                &.slide{
-                    left: 0;
-                    .mobile-search{
-                         display: block;
-                         border-bottom: 1px solid #A79F92;
-                         padding-bottom: 20px;
-                         span{
-                            font-size: $font14;
-                            color:$Primary;
-                            font-weight: $fontweight2;
-                         }
-                         form{
-                            position: relative;
-                            padding-top:20px;
-                            input{
-                                height: 38px;
-                                border: 1px solid #E4E4DC;
-                                padding: 0 15px;
-                                width: 100%;
-                                box-sizing: border-box;
-                                border-radius: 8px;
-                            }
-                            button{
-                                 position: absolute;
-                                 right: 4px;
-                                 top: 25px;
-                                 background: none;
-                                 border: none;
-                            }
-                         }
-                    }
-                }
+                box-sizing: border-box;
+                border-radius: 8px;
+              }
+              button {
+                position: absolute;
+                right: 4px;
+                top: 25px;
+                background: none;
+                border: none;
+              }
             }
-           
-            .right-top-section{
-                display: flex;
-                position: relative;
-                gap: 3px;
-                align-items: center;
-                justify-content: end;
-                padding-bottom: 4px;
-                @include respond(phone_land) {
-                   display: block;
-                }
-                .top-nav-section{
-                    @include respond(phone_land) {
-                        padding-top: 20px;
-                     }
-                    ul{
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 5px;
-                        @include respond(phone_land) {
-                            flex-wrap: wrap;
-                            justify-content: end;
-                            display: block;
-                         }
-                        li{
-                            border-left: 1.5px solid $Primary;
-                            padding: 0 12px;
-                            @include respond(phone_land) {
-                                padding: 0 12px 0;
-                                margin-bottom: 12px;
-                                border-left:none;
-                                &.test{
-                                     display: none;
-                                }
-                             }
-                            a{
-                                color: #1C190E;
-                                font-size: 14px;
-                                font-weight: 400;
-                                line-height: 20px;
-                                font-style: normal;
-                                @include respond(phone_land) {
-                                    &.search-icon{
-                                        display: none !important;
-                                    }
-                                 }
-                            }
-                            &.wasl {
-                                a {
-                                    span {font-weight: 700;}
-                                }
-                            }
-                            &.language {
-                                display: flex;
-                                gap: 10px;
-                                align-items: center;
-                                border-left: none;
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                }
-            }
+          }
         }
-        .right-bottom-section{
-            @include respond(phone_land) {
-                margin:10px 0 0;
-             }
-            nav{
-                ul{
-                    display: flex;
-                    border-top: 2px solid $headerBorder;
-                    justify-content: flex-end;
-                    @include respond(phone_land) {
-                       display: block;
-                       border-color: #A79F92;
-                    }
-                    li{
-                        padding: 16px 0;
-                        @include respond(phone_land) {
-                           padding: 10px 10px;
-                         }
-                        a{
-                            color: #1C190E;
-                            text-align: center;
-                            font-size: 14px;
-                            font-style: normal;
-                            // font-weight: 500;
-                            font-family: bliss_medium;
-                            line-height: 20px;
-                            text-transform: capitalize;
-                            padding: 10px 15px;
-                            @include respond(tab_land) {
-                                padding: 10px 8px;
-                            }
-                        }
-                        &:last-child a { padding-right: 0;}
-                    }
-                }
-            }
+      }
+
+      .right-top-section {
+        display: flex;
+        position: relative;
+        gap: 3px;
+        align-items: center;
+        justify-content: end;
+        padding-bottom: 4px;
+        @include respond(phone_land) {
+          display: block;
         }
-    }
-    @include respond(phone_land) {
-        #responsive-nav {
-            flex-direction: column-reverse;
-        }
-    }
-    .left-section {
-        a {
+        .top-nav-section {
+          @include respond(phone_land) {
+            padding-top: 20px;
+          }
+          ul {
             display: flex;
-            flex-direction: column;
-            gap: 5px;
-            img {
-                width: 114px;
-                height: 42px;
-                @include respond(tab_land) {
-                    width:70px;
-                    height: auto;
+            align-items: center;
+            margin-bottom: 5px;
+            @include respond(phone_land) {
+              flex-wrap: wrap;
+              justify-content: end;
+              display: block;
+            }
+            li {
+              border-left: 1.5px solid $Primary;
+              padding: 0 12px;
+              @include respond(phone_land) {
+                padding: 0 12px 0;
+                margin-bottom: 12px;
+                border-left: none;
+                &.test {
+                  display: none;
                 }
+              }
+              a {
+                color: #1c190e;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 20px;
+                font-style: normal;
+                @include respond(phone_land) {
+                  &.search-icon {
+                    display: none !important;
+                  }
+                }
+              }
+              &.wasl {
+                a {
+                  span {
+                    font-weight: 700;
+                  }
+                }
+              }
+              &.language {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                border-left: none;
+                cursor: pointer;
+              }
             }
-            @include respond(tab_land) {
-                gap: 0px;
-            }
+          }
         }
-        .logo-name{
-            color: $logoName;
-            font-size: $font15;
-            display: inline-block;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 22.841px;
-            @include respond(tab_land) {
-               font-size: 0.6em;
-               line-height: normal;
-            }
-        }
+      }
     }
-   
+    .right-bottom-section {
+      @include respond(phone_land) {
+        margin: 10px 0 0;
+      }
+      nav {
+        ul {
+          display: flex;
+          border-top: 2px solid $headerBorder;
+          justify-content: flex-end;
+          @include respond(phone_land) {
+            display: block;
+            border-color: #a79f92;
+          }
+          li {
+            padding: 16px 0;
+            @include respond(phone_land) {
+              padding: 10px 10px;
+            }
+            a {
+              color: #1c190e;
+              text-align: center;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 500;
+              font-family: $fontmedium;
+              line-height: 20px;
+              text-transform: capitalize;
+              padding: 10px 15px;
+              @include respond(tab_land) {
+                padding: 10px 8px;
+              }
+            }
+            &:last-child a {
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include respond(phone_land) {
+    #responsive-nav {
+      flex-direction: column-reverse;
+    }
+  }
+  .left-section {
+    a {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      img {
+        width: 114px;
+        height: 42px;
+        @include respond(tab_land) {
+          width: 70px;
+          height: auto;
+        }
+      }
+      @include respond(tab_land) {
+        gap: 0px;
+      }
+    }
+    .logo-name {
+      color: $logoName;
+      font-size: $font15;
+      display: inline-block;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22.841px;
+      @include respond(tab_land) {
+        font-size: 0.6em;
+        line-height: normal;
+      }
+    }
+  }
 }
 @include respond(phone_land) {
-    .mobile-menu{
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        span{
-            display: block;
-            background-color:#2B2A28;
-            width: 30px;
-            height: 3px;
-            border-radius: 40px;
-        }
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    span {
+      display: block;
+      background-color: #2b2a28;
+      width: 30px;
+      height: 3px;
+      border-radius: 40px;
     }
+  }
 }
 
-.search-input-section{
-     display: none;
-     position: relative;
-     transition: opacity 0.5s ease-in-out;
-     input{
-        border-radius: 4px;
-        border: 1px solid #E4E4DC;
-        height: 21px;
-        &:focus:focus-visible{
-            outline: none;
-        }
-        @include respond(tab) {
-            width: 100%;
-        }
-     }
-     &.active{
-         display: block;
-     }
-    .search-input{
-         position: absolute;
-         right: 0px;
-         background-color: transparent;
-         top: 1px;
-         padding:0 10px;
-         border: none;
+.search-input-section {
+  display: none;
+  position: relative;
+  transition: opacity 0.5s ease-in-out;
+  input {
+    border-radius: 4px;
+    border: 1px solid #e4e4dc;
+    height: 21px;
+    &:focus:focus-visible {
+      outline: none;
     }
+    @include respond(tab) {
+      width: 100%;
+    }
+  }
+  &.active {
+    display: block;
+  }
+  .search-input {
+    position: absolute;
+    right: 0px;
+    background-color: transparent;
+    top: 1px;
+    padding: 0 10px;
+    border: none;
+  }
 }
 
 .search-icon {
-    &.active{
-       display: none;
-    }
+  &.active {
+    display: none;
+  }
 }
 
-.mobile-search{
-     display: none;
-     .close-nav{
-         display: inline-block;
-         vertical-align: middle;
-     }
+.mobile-search {
+  display: none;
+  .close-nav {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 body.slide {
-    overflow: hidden;
+  overflow: hidden;
 }
 
-.overlay{
-    position: fixed;
-    background:rgba(28, 25, 14, 0.5);
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-    display: none;
-    &.slide{
-        display: block;
-    }
+.overlay {
+  position: fixed;
+  background: rgba(28, 25, 14, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: none;
+  &.slide {
+    display: block;
+  }
 }
-

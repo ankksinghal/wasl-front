@@ -1,50 +1,52 @@
-.faq-title{
-    font-size: $font30;
-    color:$black;
-    margin:30px 0 0;
-    font-weight: $fontweight2;
-    @include respond(phone_land) {
-       font-size: $font20;
-       margin-bottom: 20px;
-    } 
+.faq-title {
+  font-size: $font30;
+  color: $black;
+  margin: 30px 0 0;
+  font-weight: $fontweight2;
+  font-family: $fontmedium;
+  @include respond(phone_land) {
+    font-size: $font20;
+    margin-bottom: 20px;
+  }
 }
-.faq-page-wrapper{
-    padding:0 0 100px;
-    .accordion-content {
-        display: none;
-        padding: 20px 10px 10px 35px;
-        transition: left 0.3s ease-in-out;
-        p{
-            font-weight: $fontweight2;
-            font-size: $font16;
-            color:$black;
-            line-height: 24px;
-            a{
-                color:$black;
-                text-decoration: underline;
-            }
-        }
-        &.active{
-            display: block;
-        }
-
+.faq-page-wrapper {
+  padding: 0 0 100px;
+  .accordion-content {
+    display: none;
+    padding: 20px 10px 10px 35px;
+    transition: left 0.3s ease-in-out;
+    p {
+      font-weight: $fontweight2;
+      font-family: $fontmedium;
+      font-size: $font16;
+      color: $black;
+      line-height: 24px;
+      a {
+        color: $black;
+        text-decoration: underline;
+      }
     }
-    .accordion-item{
-        padding: 16px;
-        cursor: pointer;
-        border: 1px solid #EFEFEF;
-        border-radius: 10px;
-        margin-bottom: 15px;
-        h4{
-            color:$black;
-            opacity: 0.7;
-            font-size: $font16;
-            padding-left: 35px;
-            background: url(../../../assets/images/icon-plus.svg) no-repeat left center;
-            &.active{
-                background: url(../../../assets/images/icon-minus.svg) no-repeat left center;
-
-            }
-        }
+    &.active {
+      display: block;
     }
+  }
+  .accordion-item {
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    h4 {
+      color: $black;
+      opacity: 0.7;
+      font-size: $font16;
+      padding-left: 35px;
+      background: url(../../../assets/images/icon-plus.svg) no-repeat left
+        center;
+      &.active {
+        background: url(../../../assets/images/icon-minus.svg) no-repeat left
+          center;
+      }
+    }
+  }
 }

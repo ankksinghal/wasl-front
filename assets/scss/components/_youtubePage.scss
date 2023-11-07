@@ -1,163 +1,30 @@
-.youtube-page{
-    margin: 109px 0 113px; 
-    @include respond(tab_land) {
-        margin: 80px 0;
-    } 
-    @include respond(tab) {
-        margin: 50px 0;
-    } 
-    @include respond(phone_land) {
-        margin: 30px 0;
-    } 
-    .main-heading{
-        h2{
-            font-size: 34px;
-            color: #1C190E;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 33px;
-            @include respond(phone_land) {
-                font-size: 20px;
-                line-height: 30px;
-                max-width: 70%;
-            }
-        }
-    }  
-    .subscribeBtn-div{
-        width: 390px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 54.67px;
-        margin-top: 49px;
-        position: relative;
-        @include respond(tab_land) {
-            margin-top: 20px;
-        }
-        @include respond(tab) {
-            margin-top: 25px;
-        }
-        @include respond(phone_land) {
-            margin-top: 5px;
-            width: 100%;
-        }
-        .subscribe-first{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .icon-div{
-                width: 55px;
-                height: 38.85px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                background-color: #FF0000;
-                border-radius: 10px;
-                img{
-                    width: 14.25px;
-                    height: 16px;
-                }
-            }
-            .sub-text{
-                margin-left: 17.48px;
-                font-family: 'Roboto';  
-                @include respond(phone_land) {
-                    margin-left: 10px;
-                }
-                p{
-                    font-weight: 700;
-                    font-size: 19.68px;
-                    line-height: 23.06px;
-                    margin-bottom: 7px;
-                    color: #4C4C4C;
-                    @include respond(phone_land) {
-                        font-size: 14px;
-                        font-weight: 400;
-                        margin: 0;
-                    }
-                }
-            }
-            .sub-text::after{
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 54px;
-                left: 226px;
-                top:0px;
-                background-color: #2E3238;
-                margin-right: 21px;
-                @include respond(phone) {
-                    right: 43%;
-                    left: auto;
-                }
-            }
-        }
-        .subscribe-btn{
-            a{
-                background-color: #636363;
-                color: #ffffff;
-                padding: 11px 22px;
-                border-radius: 8px;
-                gap: 10.93px;
-                font-size: 15.31px;
-                font-weight: 400;
-                line-height: 17.94px;
-                font-family: 'Roboto';  
-                border: none;
-                transition: all 0.4s ease-in-out;
-                &:hover {
-                    background: rgba($color: #000000, $alpha: 1.0);
-                }
-            }
-        }
+.youtube-page {
+  margin: 109px 0 113px;
+  @include respond(tab_land) {
+    margin: 80px 0;
+  }
+  @include respond(tab) {
+    margin: 50px 0;
+  }
+  @include respond(phone_land) {
+    margin: 30px 0;
+  }
+  .main-heading {
+    h2 {
+      font-size: 34px;
+      color: #1c190e;
+      font-style: normal;
+      font-weight: 500;
+      font-family: $fontmedium;
+      line-height: 33px;
+      @include respond(phone_land) {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 70%;
+      }
     }
-    .video-count{
-        color: #9CA0AC;
-        font-size: 17.49px;
-        line-height: 20.5px;
-        font-weight: 400;
-        font-family: 'Roboto';
-        @include respond(phone_land) {
-            font-size: 14px;
-        }
-    }
-}
-.content-div{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    @include respond(tab) {
-       margin-top: 0;
-       overflow-y: auto;
-       display: inline-box;
-       display: -webkit-inline-box;
-       width: 100%;
-       padding: 20px 0;
-    }
-    &.content-listing {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 16px;
-    }
-    .img-div{
-        width: 32%;
-        @include respond(tab) {
-            width: 60%;
-            margin: 0 5px;
-        }
-        @include respond(phone_land) {
-            width: 80%;
-            margin: 0 5px;
-        }
-        iframe{
-            width:100%;
-            height:271px;
-            border-radius: 16px;
-        }
-    }
-}
- 
-.subscribeBtn-div{
+  }
+  .subscribeBtn-div {
     width: 390px;
     display: flex;
     justify-content: space-between;
@@ -165,90 +32,224 @@
     height: 54.67px;
     margin-top: 49px;
     position: relative;
-    &.video {
-        width: 313px;
-        margin: 0;
-        .sub-text::after {
-            left: 139px !important;
-        }
-    }
     @include respond(tab_land) {
-        margin-top: 20px;
+      margin-top: 20px;
     }
     @include respond(tab) {
-        margin-top: 25px;
+      margin-top: 25px;
     }
     @include respond(phone_land) {
-        margin-top: 5px;
-        width: 100%;
+      margin-top: 5px;
+      width: 100%;
     }
-    .subscribe-first{
+    .subscribe-first {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .icon-div {
+        width: 55px;
+        height: 38.85px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        .icon-div{
-            width: 55px;
-            height: 38.85px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #FF0000;
-            border-radius: 10px;
-            img{
-                width: 14.25px;
-                height: 16px;
-            }
+        background-color: #ff0000;
+        border-radius: 10px;
+        img {
+          width: 14.25px;
+          height: 16px;
         }
-        .sub-text{
-            margin-left: 17.48px;
-            @include respond(phone_land) {
-                margin-left: 10px;
-            }
-            p{
-                font-weight: 700;
-                font-size: 19.68px;
-                line-height: 23.06px;
-                margin-bottom: 7px;
-                color: #4C4C4C;
-                @include respond(phone_land) {
-                    font-size: 14px;
-                    font-weight: 400;
-                    margin: 0;
-                }
-            }
+      }
+      .sub-text {
+        margin-left: 17.48px;
+        font-family: "Roboto";
+        @include respond(phone_land) {
+          margin-left: 10px;
         }
-        .sub-text::after{
-            content: "";
-            position: absolute;
-            width: 1px;
-            height: 54px;
-            left: 226px;
-            top:0px;
-            background-color: #2E3238;
-            margin-right: 21px;
-            @include respond(phone) {
-                right: 43%;
-                left: auto;
-            }
-        }
-    }
-    .subscribe-btn{
-        a{
-            background-color: #636363;
-            color: #ffffff;
-            padding: 11px 22px;
-            border-radius: 8px;
-            gap: 10.93px;
-            font-size: 15.31px;
+        p {
+          font-weight: 700;
+          font-size: 19.68px;
+          line-height: 23.06px;
+          margin-bottom: 7px;
+          color: #4c4c4c;
+          @include respond(phone_land) {
+            font-size: 14px;
             font-weight: 400;
-            line-height: 17.94px;
-            font-family: 'Roboto';  
-            border: none;
-            transition: all 0.4s ease-in-out;
-            white-space: nowrap;
-            &:hover {
-                background: rgba($color: #000000, $alpha: 1.0);
-            }
+            margin: 0;
+          }
         }
+      }
+      .sub-text::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 54px;
+        left: 226px;
+        top: 0px;
+        background-color: #2e3238;
+        margin-right: 21px;
+        @include respond(phone) {
+          right: 43%;
+          left: auto;
+        }
+      }
     }
+    .subscribe-btn {
+      a {
+        background-color: #636363;
+        color: #ffffff;
+        padding: 11px 22px;
+        border-radius: 8px;
+        gap: 10.93px;
+        font-size: 15.31px;
+        font-weight: 400;
+        line-height: 17.94px;
+        font-family: "Roboto";
+        border: none;
+        transition: all 0.4s ease-in-out;
+        &:hover {
+          background: rgba($color: #000000, $alpha: 1);
+        }
+      }
+    }
+  }
+  .video-count {
+    color: #9ca0ac;
+    font-size: 17.49px;
+    line-height: 20.5px;
+    font-weight: 400;
+    font-family: "Roboto";
+    @include respond(phone_land) {
+      font-size: 14px;
+    }
+  }
+}
+.content-div {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  @include respond(tab) {
+    margin-top: 0;
+    overflow-y: auto;
+    display: inline-box;
+    display: -webkit-inline-box;
+    width: 100%;
+    padding: 20px 0;
+  }
+  &.content-listing {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .img-div {
+    width: 32%;
+    @include respond(tab) {
+      width: 60%;
+      margin: 0 5px;
+    }
+    @include respond(phone_land) {
+      width: 80%;
+      margin: 0 5px;
+    }
+    iframe {
+      width: 100%;
+      height: 271px;
+      border-radius: 16px;
+    }
+  }
+}
+
+.subscribeBtn-div {
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 54.67px;
+  margin-top: 49px;
+  position: relative;
+  &.video {
+    width: 313px;
+    margin: 0;
+    .sub-text::after {
+      left: 139px !important;
+    }
+  }
+  @include respond(tab_land) {
+    margin-top: 20px;
+  }
+  @include respond(tab) {
+    margin-top: 25px;
+  }
+  @include respond(phone_land) {
+    margin-top: 5px;
+    width: 100%;
+  }
+  .subscribe-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon-div {
+      width: 55px;
+      height: 38.85px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ff0000;
+      border-radius: 10px;
+      img {
+        width: 14.25px;
+        height: 16px;
+      }
+    }
+    .sub-text {
+      margin-left: 17.48px;
+      @include respond(phone_land) {
+        margin-left: 10px;
+      }
+      p {
+        font-weight: 700;
+        font-size: 19.68px;
+        line-height: 23.06px;
+        margin-bottom: 7px;
+        color: #4c4c4c;
+        @include respond(phone_land) {
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0;
+        }
+      }
+    }
+    .sub-text::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 54px;
+      left: 226px;
+      top: 0px;
+      background-color: #2e3238;
+      margin-right: 21px;
+      @include respond(phone) {
+        right: 43%;
+        left: auto;
+      }
+    }
+  }
+  .subscribe-btn {
+    a {
+      background-color: #636363;
+      color: #ffffff;
+      padding: 11px 22px;
+      border-radius: 8px;
+      gap: 10.93px;
+      font-size: 15.31px;
+      font-weight: 400;
+      line-height: 17.94px;
+      font-family: "Roboto";
+      border: none;
+      transition: all 0.4s ease-in-out;
+      white-space: nowrap;
+      &:hover {
+        background: rgba($color: #000000, $alpha: 1);
+      }
+    }
+  }
 }
