@@ -465,14 +465,21 @@ $("#cs_tab_nav li").click(function () {
   return false;
 });
 // ==========Added attechment button===========
-$('.add_attechment .add_btn').on('click',function(){
-  $('.added_item_card').slideDown();
-  $(this).closest('.add_attechment').slideUp();
-});
+$(document).ready(function() {
+  $(".add_attechment .add_btn").on("click", function () {
+    $(".added_item_card").slideDown();
+    $(this).closest(".add_attechment").slideUp();
+  }); 
 // ===========Trash Added item============
-$('.added_item_card .trash_btn').on('click',function(){
-  $(this).closest('.cs_card').remove();
-});
+  var xitem = $('.added_item_card').html();  
+  $(".added_item_card").on("click", ".trash_btn", function () {
+    $(this).closest(".cs_card").remove();
+    if($(".added_item_card .cs_card").length == 0){
+      $('.add_attechment').slideDown(0);    
+      $(".added_item_card").html(xitem).slideUp(0);    
+    }
+  });
+})
 // =========About us===============
 
 var bigimage = $("#about_sec_slider");
