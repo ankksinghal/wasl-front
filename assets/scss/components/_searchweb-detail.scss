@@ -441,4 +441,16 @@
   .modal__content{
     padding: 0;
   }
+  .modal__close{
+    filter: invert(1);
+  }
+  .modal__content{
+    border: 0 none;
+  }
+  .figure360{
+    img{
+      display: block;
+
+    }
+  }
 }

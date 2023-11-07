@@ -695,6 +695,9 @@ body.modal__active, body.modal_active {
   .cs__modal .fz_lg {
     font-size: 18px;
   }
+  .cs__modal .fz_lg {
+    font-size: 18px;
+  }
 }
 .cs__modal .modal__header {
   padding-top: 1rem;
@@ -8515,6 +8518,15 @@ span.tooltip:hover .pop-over {
 #modal360 .modal__content {
   padding: 0;
 }
+#modal360 .modal__close {
+  filter: invert(1);
+}
+#modal360 .modal__content {
+  border: 0 none;
+}
+#modal360 .figure360 img {
+  display: block;
+}
 
 .enquiry-form {
   display: grid;
@@ -12299,9 +12311,9 @@ figure.card_img:before {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  left: 50% !important;
-  top: 50%!important;
-  transform: translate(-50%, -50%)!important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .cs_ratio.ratio_eq:before {
   padding-top: 100%;

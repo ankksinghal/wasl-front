@@ -373,7 +373,7 @@ $(document).ready(function () {
       $("body").removeClass("modal__active");
     }
   });
-  $(".modal__close").on("click", function () {
+  $(".modal__close").on("click", function () { 
     $(".cs__modal").removeClass("show");
     $("body").removeClass("modal__active");
   });
