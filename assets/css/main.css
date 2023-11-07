@@ -12299,9 +12299,9 @@ figure.card_img:before {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50% !important;
+  top: 50%!important;
+  transform: translate(-50%, -50%)!important;
 }
 .cs_ratio.ratio_eq:before {
   padding-top: 100%;
