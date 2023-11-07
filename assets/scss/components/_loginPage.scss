@@ -1687,3 +1687,21 @@ span.tooltip {
     }
   }
 }
+
+.cs_columnset{
+  .divider{
+    &:first-child{
+      flex: 0 0 80px;
+      max-width: 80px;
+    }
+    &:nth-child(2){
+      flex: 0 0 45%; 
+      min-width: 45%;
+      max-width: 45%;
+    }
+    &:last-child{
+      flex: 0 0 70px; 
+      max-width: 70px;
+    }
+  }
+}

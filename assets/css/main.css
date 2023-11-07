@@ -8094,6 +8094,20 @@ span.tooltip:hover .pop-over {
   min-width: 80px;
 }
 
+.cs_columnset .divider:first-child {
+  flex: 0 0 80px;
+  max-width: 80px;
+}
+.cs_columnset .divider:nth-child(2) {
+  flex: 0 0 45%;
+  min-width: 45%;
+  max-width: 45%;
+}
+.cs_columnset .divider:last-child {
+  flex: 0 0 70px;
+  max-width: 70px;
+}
+
 @media only screen and (max-width: 1144px) {
   .search-banner-section .wasl-text {
     padding: 0px;
