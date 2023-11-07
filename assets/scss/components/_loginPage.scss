@@ -1660,3 +1660,30 @@ span.tooltip {
     display: none;
   }
 }
+
+
+#paymentNote{
+  .icon_img{
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    
+  }
+  h5{
+    font-family: $fontmedium;
+    font-size: 18px;
+    margin-bottom: .6rem;
+  }
+  .checkbox_condition{
+    margin-bottom: 1.25rem;
+  }
+  .mdl_btn_wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+    .cs_btn{
+      min-width: 80px;
+    }
+  }
+}

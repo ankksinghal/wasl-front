@@ -567,6 +567,185 @@ button {
   }
 }
 
+body.modal__active, body.modal_active {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.cs__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1060;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cs__modal *,
+.cs__modal *::after,
+.cs__modal *::before {
+  box-sizing: border-box;
+}
+.cs__modal img {
+  max-width: 100%;
+}
+.cs__modal > .modal__dialog {
+  position: relative;
+  width: auto;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 1.75rem auto;
+  min-height: calc(100% - 3.5rem);
+  transform: translate(0, -50px);
+  transition: transform 0.3s ease-out;
+  max-width: 95%;
+  padding: 0;
+}
+.cs__modal .modal__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #FFFFFF;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  padding: 3rem 2.5rem;
+  border-radius: 16px;
+  position: relative;
+  background: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .cs__modal .modal__content {
+    border-radius: 12px;
+  }
+}
+.cs__modal.modal_lg .modal__dialog {
+  width: 666px;
+}
+.cs__modal.modal_xl .modal__dialog {
+  width: 1120px;
+}
+.cs__modal.modal_xl .modal__dialog .modal_content {
+  padding: 40px;
+}
+.cs__modal .modal__body {
+  position: relative;
+  padding: 0;
+}
+.cs__modal .modal__body h4 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+.cs__modal .modal__body p {
+  margin: 0 auto 1.5rem;
+  line-height: 20px;
+}
+.cs__modal .text-center {
+  text-align: center;
+}
+.cs__modal .mb-3 {
+  margin-bottom: 1rem;
+}
+.cs__modal.show {
+  display: block;
+}
+.cs__modal.show .modal__dialog {
+  transform: translate(0, 0);
+}
+.cs__modal .modal__header {
+  position: relative;
+  padding: 1.25rem 0 1rem;
+  margin-bottom: 1rem;
+}
+.cs__modal .modal__close {
+  background: transparent;
+  border: 0 none;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  display: flex;
+  align-content: center;
+  z-index: 1;
+  background: url(../images/close_btn.svg) no-repeat center center/24px;
+}
+@media screen and (max-width: 767px) {
+  .cs__modal .modal__close {
+    right: 12px;
+    top: 12px;
+  }
+}
+.cs__modal .modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+@media all and (min-width: 992px) {
+  .cs__modal .fz_lg {
+    font-size: 18px;
+  }
+}
+.cs__modal .modal__header {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cs__modal .modal__header h2 {
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "bliss_medium";
+}
+@media screen and (max-width: 767px) {
+  .cs__modal .modal__header h2 {
+    font-size: 22px;
+  }
+}
+
+.checkbox_condition label {
+  position: relative;
+  padding-left: 2rem;
+}
+.checkbox_condition label:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  border: 2px solid #8D8D87;
+  left: 0;
+  top: 0px;
+  border-radius: 2px;
+}
+.checkbox_condition input {
+  display: none;
+}
+.checkbox_condition input:checked + label:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  width: 5px;
+  height: 12px;
+  border: 2px solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.checkbox_condition input:checked + label::before {
+  background: #2B2A28;
+  border-color: #2B2A28;
+}
+
 header {
   padding: 10px 0px 5px;
 }
@@ -7889,6 +8068,29 @@ span.tooltip:hover .pop-over {
   display: none;
 }
 
+#paymentNote .icon_img {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#paymentNote h5 {
+  font-family: "bliss_medium";
+  font-size: 18px;
+  margin-bottom: 0.6rem;
+}
+#paymentNote .checkbox_condition {
+  margin-bottom: 1.25rem;
+}
+#paymentNote .mdl_btn_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+#paymentNote .mdl_btn_wrap .cs_btn {
+  min-width: 80px;
+}
+
 @media only screen and (max-width: 1144px) {
   .search-banner-section .wasl-text {
     padding: 0px;
@@ -8308,6 +8510,10 @@ span.tooltip:hover .pop-over {
 .virtual-tour-wrap a.call-us {
   background: url(../images/call-search.png) no-repeat left 10px top 17px;
   padding-left: 40px;
+}
+
+#modal360 .modal__content {
+  padding: 0;
 }
 
 .enquiry-form {

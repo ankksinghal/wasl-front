@@ -123,8 +123,6 @@ $(document).ready(function () {
     autoplayHoverPause: true,
   });
 
-  
-
   var owl = $("#owl-buying-thumb");
   owl.owlCarousel({
     loop: true,
@@ -134,26 +132,26 @@ $(document).ready(function () {
     autoplayTimeout: 3000,
     autoplayHoverPause: true,
     dots: true,
-    responsive: { 
-      0:{
+    responsive: {
+      0: {
         items: 2,
         margin: 15,
       },
-      480:{  
+      480: {
         items: 3,
         margin: 15,
       },
-      767:{  
+      767: {
         items: 4,
         margin: 15,
       },
-      992: { 
+      992: {
         items: 5,
-        margin: 15, 
+        margin: 15,
       },
       1199: {
         items: 6,
-        margin: 15, 
+        margin: 15,
       },
     },
   });
@@ -181,7 +179,7 @@ $(document).ready(function () {
   //   },
   // });
 
-  if ($(window).width() > 767) { 
+  if ($(window).width() > 767) {
     var owl = $("#owl-prtoj-thumb");
     owl.owlCarousel({
       items: 3,
@@ -339,11 +337,49 @@ $(document).ready(function () {
   $("[data-csModal]").on("click", function () {
     let modalId = $(this).attr("data-csModal");
     $("#" + modalId + "").addClass("show");
+    $("body").addClass("modal__active");
   });
   $(".cs_modal_close").on("click", function () {
     $(".cs_modal").removeClass("show");
+    $("body").removeClass("modal__active");
   });
 
+  $(".cs_modal").click(function (event) {
+    if (
+      !$(event.target).closest(".cs_modal .modal_dialog").length &&
+      !$(event.target).is(".cs_modal .modal_dialog")
+    ) {
+      $(this).removeClass("show");
+      $("body").removeClass("modal__active"); 
+    }
+  });
+
+  $(".cs__modal .modal__content").click(function (event) {
+    event.stopPropagation();
+  });
+  // ==========Closing Modal 2=========
+  // Modal script 
+  $("[data-csModal]").on("click", function () {
+    let modalId = $(this).attr("data-csModal"); 
+    $("#" + modalId + "").addClass("show");
+    $("body").toggleClass("modal__active"); 
+  });
+  $(".cs__modal").click(function (event) {
+    if (
+      !$(event.target).closest(".cs__modal .modal__content").length &&
+      !$(event.target).is(".cs__modal .modal__content")
+    ) {
+      $(this).removeClass("show");
+      $("body").removeClass("modal__active");
+    }
+  });
+  $(".modal__close").on("click", function () {
+    $(".cs__modal").removeClass("show");
+    $("body").removeClass("modal__active");
+  });
+  $(".cs__modal .modal__content").click(function (event) {
+    event.stopPropagation();
+  });
   // =========About us===============
   $(".multipleSelect").fastselect();
 });
@@ -433,12 +469,12 @@ function displayFileName(input) {
 
 // =============File Upload=============
 // File upload Convert
-$("#fileInput").on('change',function () { 
-  var file = $(this)[0].files[0];  
+$("#fileInput").on("change", function () {
+  var file = $(this)[0].files[0];
   $("#uploadedFileName").text(file.name);
 });
-$("#fileInput1").on('change',function () {
-  var file = $(this)[0].files[0]; 
+$("#fileInput1").on("change", function () {
+  var file = $(this)[0].files[0];
   $("#uploadedFileName1").text(file.name);
 });
 
@@ -465,21 +501,21 @@ $("#cs_tab_nav li").click(function () {
   return false;
 });
 // ==========Added attechment button===========
-$(document).ready(function() {
+$(document).ready(function () {
   $(".add_attechment .add_btn").on("click", function () {
     $(".added_item_card").slideDown();
     $(this).closest(".add_attechment").slideUp();
-  }); 
-// ===========Trash Added item============
-  var xitem = $('.added_item_card').html();  
+  });
+  // ===========Trash Added item============
+  var xitem = $(".added_item_card").html();
   $(".added_item_card").on("click", ".trash_btn", function () {
     $(this).closest(".cs_card").remove();
-    if($(".added_item_card .cs_card").length == 0){
-      $('.add_attechment').slideDown(0);    
-      $(".added_item_card").html(xitem).slideUp(0);    
+    if ($(".added_item_card .cs_card").length == 0) {
+      $(".add_attechment").slideDown(0);
+      $(".added_item_card").html(xitem).slideUp(0);
     }
   });
-})
+});
 // =========About us===============
 
 var bigimage = $("#about_sec_slider");
@@ -589,11 +625,7 @@ $(".accordion-header").click(function () {
     .removeClass("active");
 });
 
-
 // $('.multipleSelect').fastselect();
-
-
-
 
 // Retail search JS
 $(".retail-alphabet-search").click(function () {
@@ -605,7 +637,6 @@ $(".retail-filter-icon").click(function () {
   $(".search-retails").addClass("modal");
   $(".overlay").addClass("slide");
 });
-
 
 $("#chat_boat").click(function () {
   $("#chat_boat_box").toggleClass("hide");
