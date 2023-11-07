@@ -1,86 +1,90 @@
-.web-search-result{
-    padding:50px 0 100px;
-    h3,h2{
-        line-height: 30px;
-        font-size: $font30;
-        @include respond(phone_land) {
-            font-size: $font20;
-        }
-    }
-    h3{
-        color:$color8;
-        margin-bottom: 5px;
-    }
-    h2{
-        font-weight: $fontweight2;
-        color:$black;
-    }
-    .web-search-result-wrap{
-         padding-bottom: 35px;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         border-bottom: 1px solid #EFEFEF;
-         @include respond(phone_land) {
-            display: block;
-        }
-    }
-}
-.web-search-content{
-    padding: 30px 0;
-    p{
-         font-size: $font16;
-         margin-bottom: 15px;
-         line-height: 24px;
-         color:$black;
-    }
-    h4{
-        font-weight: $fontweight2;
-        margin-bottom: 15px;
-    }
-}
-
-.no-result-found{
-   padding: 40px 0 0;
-   text-align: center;
-}
-.web-search-right-section{
-      flex:0 0 50%;
-      position: relative;
-     .search-box{
-        form{
-            border: 1px solid #BDBDBD;
-            border-radius: 8px;
-            input[type="search"]{
-                border:none;
-                border-radius: 8px;
-                padding:15px;
-                font-size: $font16;
-                color: $black;
-                border-radius: 8px 0px 0px 8px;
-                margin-right: -6px;
-                width: 100%;
-            }
-            input[type="submit"]{
-                border:none;
-                border-radius: 0px 8px 8px 0px;
-                padding:15px 30px;
-                background-color: $black;
-                color: $white;
-                height: 50px;
-                font-size: $font16;
-                cursor: pointer;
-                position: absolute;
-                right: 0;
-                top: 0;
-                font-weight: $fontweight2;
-            }
-        }
-     }
-}
-
-.web-search-left-section{
+.web-search-result {
+  padding: 50px 0 100px;
+  h3,
+  h2 {
+    line-height: 30px;
+    font-size: $font30;
     @include respond(phone_land) {
-        margin-bottom: 30px;
+      font-size: $font20;
     }
+  }
+  h3 {
+    color: $color8;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    color: $black;
+  }
+  .web-search-result-wrap {
+    padding-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #efefef;
+    @include respond(phone_land) {
+      display: block;
+    }
+  }
+}
+.web-search-content {
+  padding: 30px 0;
+  p {
+    font-size: $font16;
+    margin-bottom: 15px;
+    line-height: 24px;
+    color: $black;
+  }
+  h4 {
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    margin-bottom: 15px;
+  }
+}
+
+.no-result-found {
+  padding: 40px 0 0;
+  text-align: center;
+}
+.web-search-right-section {
+  flex: 0 0 50%;
+  position: relative;
+  .search-box {
+    form {
+      border: 1px solid #bdbdbd;
+      border-radius: 8px;
+      input[type="search"] {
+        border: none;
+        border-radius: 8px;
+        padding: 15px;
+        font-size: $font16;
+        color: $black;
+        border-radius: 8px 0px 0px 8px;
+        margin-right: -6px;
+        width: 100%;
+      }
+      input[type="submit"] {
+        border: none;
+        border-radius: 0px 8px 8px 0px;
+        padding: 15px 30px;
+        background-color: $black;
+        color: $white;
+        height: 50px;
+        font-size: $font16;
+        cursor: pointer;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-weight: $fontweight2;
+        font-family: $fontmedium;
+      }
+    }
+  }
+}
+
+.web-search-left-section {
+  @include respond(phone_land) {
+    margin-bottom: 30px;
+  }
 }

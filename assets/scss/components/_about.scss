@@ -9,14 +9,14 @@ ul.breadcrumb {
     font-size: 18px;
     @include respond(phone_land) {
       font-size: $font12;
-  }
+    }
     & + li:before {
       padding: 8px;
       color: $black;
       content: ">";
       @include respond(phone_land) {
         padding: 1px;
-    }
+      }
     }
     a {
       color: #61605f;
@@ -97,8 +97,8 @@ ul.breadcrumb {
           opacity: 1;
         }
       }
-      & a:hover { 
-        background: $color12; 
+      & a:hover {
+        background: $color12;
         &::before {
           background: $color8;
           opacity: 1;
@@ -110,9 +110,9 @@ ul.breadcrumb {
     }
   }
   @include respond(tab) {
-    padding: 87px 5px ;
-    @include respond(phone){
-        padding: 80px 5px;
+    padding: 87px 5px;
+    @include respond(phone) {
+      padding: 80px 5px;
     }
     display: block;
     .cs_tab_nav {
@@ -158,25 +158,22 @@ ul.breadcrumb {
       max-width: 100%;
       .slider_wrapper {
         .item {
-            padding: 24px 2rem 60px;
-            @include respond(phone){
-                padding: 24px 1.25rem 60px;
-            }
+          padding: 24px 2rem 60px;
+          @include respond(phone) {
+            padding: 24px 1.25rem 60px;
+          }
         }
         &.type_second {
-            .item{
-                height: 300px;
-                @include respond(phone){
-                    height: 385px;
-                }
+          .item {
+            height: 300px;
+            @include respond(phone) {
+              height: 385px;
             }
-            
+          }
         }
       }
     }
-    
   }
- 
 }
 .cs_tab_content_container {
   flex: 0 0 calc(100% - 300px);
@@ -191,6 +188,7 @@ ul.breadcrumb {
       .card_title {
         font-size: 20px;
         font-weight: 500;
+        font-family: $fontmedium;
       }
       border-bottom: 1px solid $color4;
       padding-bottom: 0.75rem;
@@ -208,12 +206,12 @@ ul.breadcrumb {
         max-width: 40%;
         position: relative;
         @include respond(phone_land) {
-            margin: 0 0 1rem 2rem;
+          margin: 0 0 1rem 2rem;
         }
         @include respond(phone) {
-            margin: .5rem 0;
-            float: none;
-            max-width: 100%;
+          margin: 0.5rem 0;
+          float: none;
+          max-width: 100%;
         }
         img {
           position: relative;
@@ -262,6 +260,7 @@ ul.breadcrumb {
   .title_ceo {
     font-size: 20px;
     font-weight: 500;
+    font-family: $fontmedium;
     margin-bottom: 24px;
   }
   .item {
@@ -334,11 +333,12 @@ ul.breadcrumb {
     .title_slider {
       font-size: 44px;
       font-weight: 500;
+      font-family: $fontmedium;
       color: $white;
-      @include respond (tab){
+      @include respond(tab) {
         font-size: 30px;
       }
-      @include respond (phone){
+      @include respond(phone) {
         font-size: 20px;
       }
     }

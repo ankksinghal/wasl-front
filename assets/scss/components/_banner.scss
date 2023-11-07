@@ -8,10 +8,10 @@
         height: 225px;
         object-fit: cover;
       }
-      @media all and (min-width:1200px) {
+      @media all and (min-width: 1200px) {
         height: calc(100vh - 175px);
-        object-fit: cover; 
-        min-height: 35vw; 
+        object-fit: cover;
+        min-height: 35vw;
       }
     }
   }
@@ -73,6 +73,7 @@
       color: $bannerTextColor;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: normal;
       @include respond(tab_land) {
         font-size: calc($font24 - 5px);
@@ -131,6 +132,7 @@
   h3 {
     font-size: $font22;
     font-weight: 500;
+    font-family: $fontmedium;
     line-height: 33px;
     color: #1c190e;
     @include respond(tab) {
@@ -176,11 +178,11 @@
       background: $black;
       font-size: $font18;
       font-weight: 500;
+      font-family: $fontmedium;
       border-radius: 0px 8px 8px 0px;
       border: none;
       text-transform: uppercase;
       transition: all 0.4s ease-in-out;
-      font-family: inherit;
       &:hover {
         background: rgba($color: #000000, $alpha: 1);
       }
@@ -212,10 +214,10 @@
       position: relative;
       font-size: 18px;
       font-weight: 500;
+      font-family: $fontmedium;
       align-items: center;
       text-transform: uppercase;
       color: #2b2a28;
-      font-family: inherit;
       @include respond(tab) {
         font-size: 14px;
         width: 100%;
@@ -275,6 +277,7 @@
 
           font-style: normal;
           font-weight: 500;
+          font-family: $fontmedium;
           line-height: normal;
           margin-top: 0px;
           margin-bottom: 5px;
@@ -296,6 +299,7 @@
           height: 52px;
           font-size: 14px;
           font-weight: 500;
+          font-family: $fontmedium;
           color: #2b2a28;
           padding: 0 10px;
           appearance: none;
@@ -338,6 +342,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    font-family: $fontmedium;
     line-height: 20px;
     border-radius: 8px 8px 0px 0px;
     align-items: center;
@@ -454,6 +459,7 @@
     h3 {
       font-size: 16px;
       font-weight: 500;
+      font-family: $fontmedium;
       text-align: left;
     }
     .fstResultItem {
@@ -1116,6 +1122,7 @@
     border-radius: 8px;
     padding: 13px 0;
     font-weight: 500;
+    font-family: $fontmedium;
     display: inline-block;
     transition: all 0.4s ease-in-out;
     max-width: 126px;
@@ -1168,6 +1175,7 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 23px;
       text-transform: uppercase;
       margin-bottom: 22px;
@@ -1177,6 +1185,7 @@
       font-size: 44px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 55px;
       margin-bottom: 45px;
     }
@@ -1288,6 +1297,7 @@
       color: #000;
       font-size: 18px;
       font-weight: 500;
+      font-family: $fontmedium;
       margin-bottom: 8px;
       display: block;
     }
@@ -1356,6 +1366,7 @@
       color: #000;
       font-size: 18px;
       font-weight: 500;
+      font-family: $fontmedium;
       margin-bottom: 8px;
       display: block;
       text-align: center;
@@ -1417,6 +1428,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
+        font-family: $fontmedium;
         line-height: normal;
         padding: 20px 18px 30px;
       }
@@ -1440,6 +1452,7 @@
       font-size: 30px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: normal;
     }
     ul.listing {
@@ -1637,6 +1650,7 @@
       font-size: 32px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 38px;
       margin-bottom: 12px;
     }
@@ -1672,6 +1686,7 @@
             color: #1c1c1e;
             font-size: 16px;
             font-weight: 500;
+            font-family: $fontmedium;
             display: block;
           }
         }
@@ -1745,6 +1760,7 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 23px;
       text-transform: uppercase;
       @include respond(phone_land) {
@@ -1764,6 +1780,7 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 26px;
     }
   }
@@ -1799,6 +1816,7 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 23px;
       text-transform: uppercase;
     }
@@ -1821,12 +1839,14 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
+        font-family: $fontmedium;
         line-height: normal;
         padding: 20px 18px;
       }
       &.active {
         background: #e4e4dc;
         font-weight: 500;
+        font-family: $fontmedium;
         color: #2b2a28;
       }
     }
@@ -1884,6 +1904,7 @@
           font-size: 20px;
           font-style: normal;
           font-weight: 500;
+          font-family: $fontmedium;
           line-height: 23px;
           text-transform: uppercase;
         }
@@ -1892,6 +1913,7 @@
           font-size: 36px;
           font-style: normal;
           font-weight: 500;
+          font-family: $fontmedium;
           line-height: normal;
           @include respond(tab) {
             font-size: 22px;
@@ -1917,6 +1939,7 @@
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
+          font-family: $fontmedium;
           line-height: 26px;
           flex-shrink: 0;
           justify-content: center;
@@ -1967,6 +1990,7 @@
       font-size: 20px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 23px;
       text-transform: uppercase;
     }
@@ -1989,12 +2013,14 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
+        font-family: $fontmedium;
         line-height: normal;
         padding: 20px 18px;
       }
       &.active {
         background: #e4e4dc;
         font-weight: 500;
+        font-family: $fontmedium;
         color: #2b2a28;
       }
     }
@@ -2031,6 +2057,7 @@
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
+        font-family: $fontmedium;
         line-height: 23px;
         text-transform: uppercase;
       }
@@ -2039,6 +2066,7 @@
         font-size: 36px;
         font-style: normal;
         font-weight: 500;
+        font-family: $fontmedium;
         line-height: 55px;
         @include respond(tab) {
           font-size: 24px;
@@ -2060,6 +2088,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 500;
+        font-family: $fontmedium;
         line-height: normal;
         border-radius: 8px;
         background: #2b2a28;
@@ -2095,6 +2124,7 @@
       font-size: 30px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: 55px;
       margin-bottom: 32px;
     }
@@ -2115,6 +2145,7 @@
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
+      font-family: $fontmedium;
       line-height: normal;
       border-radius: 8px;
       background: #2b2a28;
@@ -2429,25 +2460,25 @@
 }
 
 .cs_styp2input {
-  *{
+  * {
     box-sizing: border-box;
   }
-   select{
+  select {
     width: 162px;
-    padding:8px 1.5rem 8px 10px;
+    padding: 8px 1.5rem 8px 10px;
     height: 40px;
     border-radius: 6px;
     background: $white;
-    border: 1px solid $color1; 
-    background: url(../images/down-arrow.svg) no-repeat right 8px center /10px;
-    color: rgba(43, 42, 40, .7);
+    border: 1px solid $color1;
+    background: url(../images/down-arrow.svg) no-repeat right 8px center / 10px;
+    color: rgba(43, 42, 40, 0.7);
     -webkit-appearance: none;
     -moz-appearance: none;
     text-indent: 1px;
-    text-overflow: '';
-   }
-   option{
+    text-overflow: "";
+  }
+  option {
     padding: 12px !important ;
-    display: block;     
-   }
+    display: block;
+  }
 }

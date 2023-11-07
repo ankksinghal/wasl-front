@@ -1,141 +1,144 @@
-.top-categories-wrap{
-    margin:90px 0 87px;
+.top-categories-wrap {
+  margin: 90px 0 87px;
+  @include respond(phone_land) {
+    margin: 50px 0;
+  }
+  h2 {
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    font-size: $font30;
+    margin-bottom: 40px;
+    color: $black;
     @include respond(phone_land) {
-        margin:50px 0;
+      text-align: center;
+      font-size: $font20;
     }
-    h2{
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    @include respond(phone_land) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    li {
+      border: 1px solid #e4e4dc;
+      border-radius: 16px;
+      width: 282px;
+      height: 142px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      @include respond(phone_land) {
+        width: 150px;
+      }
+      span {
+        display: block;
+        font-size: $font18;
         font-weight: $fontweight2;
-        font-size: $font30;
-        margin-bottom: 40px;
-        color: $black;
-        @include respond(phone_land) {
-            text-align: center;
-            font-size: $font20;
-        }
+        font-family: $fontmedium;
+        margin-top: 15px;
+        color: $darkBlack;
+      }
     }
-    ul{
-        display: flex;
-        justify-content: space-between;
-        gap: 32px;
-        @include respond(phone_land) {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        li{
-            border: 1px solid #E4E4DC;
-            border-radius: 16px;
-            width:282px;
-            height: 142px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            @include respond(phone_land) {
-                width: 150px;
-            }
-            span{
-                 display: block;
-                 font-size: $font18;
-                 font-weight: $fontweight2;
-                 margin-top:15px;
-                 color:$darkBlack;
-            }
-        }
-    }
+  }
 }
 
-.featured-stores-wrapper{
-    margin:10px 0 45px;
-    h2{
-        font-weight: $fontweight2;
-        font-size: $font30;
-        margin-bottom: 40px;
-        color: $black;
-        @include respond(phone_land) {
-           font-size: $font20;
-           text-align: center;
-        } 
+.featured-stores-wrapper {
+  margin: 10px 0 45px;
+  h2 {
+    font-weight: $fontweight2;
+    font-family: $fontmedium;
+    font-size: $font30;
+    margin-bottom: 40px;
+    color: $black;
+    @include respond(phone_land) {
+      font-size: $font20;
+      text-align: center;
     }
-    .owl-carousel{
-        .item{
-            figure{
-                figcaption{
-                    position: absolute;
-                    color: $white;
-                    font-size: $font30;
-                    font-weight: $fontweight3;
-                    left:40px;
-                    bottom: 15px;
-                }
-            }
+  }
+  .owl-carousel {
+    .item {
+      figure {
+        figcaption {
+          position: absolute;
+          color: $white;
+          font-size: $font30;
+          font-weight: $fontweight3;
+          left: 40px;
+          bottom: 15px;
         }
-        .owl-dots {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 27px;
-            .owl-dot {
-                span {
-                    width: 25px;
-                    height: 15px;
-                    background: #D9D9D9;
-                    opacity: 1;
-                    display: block;
-                    border-radius: 50px;
-                    transition: all 0.4s ease-in-out;
-                }
-                &.active span {
-                    background: #2B2A28;
-                    width: 55px;
-                }
-            }
+      }
+    }
+    .owl-dots {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 27px;
+      .owl-dot {
+        span {
+          width: 25px;
+          height: 15px;
+          background: #d9d9d9;
+          opacity: 1;
+          display: block;
+          border-radius: 50px;
+          transition: all 0.4s ease-in-out;
         }
-    } 
+        &.active span {
+          background: #2b2a28;
+          width: 55px;
+        }
+      }
+    }
+  }
 }
 
-
-.about-wasl-retail-wrap{
-    margin:68px 0 100px;
-    .about-wasl-retail{
-         display: flex;
-         justify-content: space-between;
-         gap: 58px;
-         flex-wrap: wrap;
-         @include respond(phone_land) {
-            display: block;
-        }
-         h2{
-            font-weight: $fontweight2;
-            font-size: $font30;
-            margin-bottom: 55px;
-            color: $black;
-            @include respond(phone_land) {
-                text-align: center;
-                font-size: $font20;
-            }
-         }
-         p{
-            font-size: $font16;
-            line-height: 28px;
-            margin-bottom: 35px;
-            color: $black;
-            opacity: 0.8;
-         }
+.about-wasl-retail-wrap {
+  margin: 68px 0 100px;
+  .about-wasl-retail {
+    display: flex;
+    justify-content: space-between;
+    gap: 58px;
+    flex-wrap: wrap;
+    @include respond(phone_land) {
+      display: block;
     }
-    .about-wasl-retail-right{
-         display: flex;
-         gap:15px;
-         align-items: start;
-         justify-content: space-between;
-         img{
-            @include respond(phone_land) {
-                width: 48%;
-            }
-         }
+    h2 {
+      font-weight: $fontweight2;
+      font-family: $fontmedium;
+      font-size: $font30;
+      margin-bottom: 55px;
+      color: $black;
+      @include respond(phone_land) {
+        text-align: center;
+        font-size: $font20;
+      }
     }
-    .about-wasl-retail-left{
-        flex:0 0 40%;
+    p {
+      font-size: $font16;
+      line-height: 28px;
+      margin-bottom: 35px;
+      color: $black;
+      opacity: 0.8;
     }
+  }
+  .about-wasl-retail-right {
+    display: flex;
+    gap: 15px;
+    align-items: start;
+    justify-content: space-between;
+    img {
+      @include respond(phone_land) {
+        width: 48%;
+      }
+    }
+  }
+  .about-wasl-retail-left {
+    flex: 0 0 40%;
+  }
 }

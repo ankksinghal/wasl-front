@@ -1,3 +1,5 @@
+$fontmedium: "bliss_medium";
+$fontregular: "bliss_proregular";
 @font-face {
   font-family: "bliss_proregular";
   src: url("../blisspro-fonts/blisspro-webfont.woff2") format("woff2"),
@@ -7,10 +9,11 @@
 }
 @font-face {
   font-family: "bliss_medium";
-  src: url("../blisspro-fonts/BlissPro-Medium.woff") format("woff") ;
-  font-weight: normal;
+  src: url("../blisspro-fonts/BlissPro-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -28,6 +31,7 @@ button {
 .cs_title {
   font-size: 30px;
   font-weight: 500;
+  font-family: $fontmedium;
   line-height: calc(35 / 30);
   @include respond(phone) {
     font-size: 24px;
@@ -46,6 +50,7 @@ button {
     padding: 13px 35px;
     text-decoration: none;
     font-weight: 500;
+    font-family: $fontmedium;
     transition: all 0.4s ease-in-out;
     &:hover {
       background: rgba($color: #000000, $alpha: 1);
@@ -164,6 +169,7 @@ button {
       line-height: 24px;
       strong {
         font-weight: 500;
+        font-family: $fontmedium;
         display: block;
         color: #1c190e;
       }
@@ -225,6 +231,7 @@ button {
       font-size: 53.3%;
       font-style: normal;
       font-weight: $fontweight2;
+      font-family: $fontmedium;
       line-height: normal;
     }
     &.mb-0 {
@@ -243,7 +250,7 @@ button {
 .position-relative {
   position: relative;
 }
- 
+
 // ========Card Style=========
 .cs_card {
   padding: 24px;
@@ -257,6 +264,7 @@ button {
   }
   .card_title {
     font-weight: 500;
+    font-family: $fontmedium;
     font-size: 24px;
     line-height: normal;
     color: $color27;
@@ -281,147 +289,155 @@ button {
 }
 
 .box_style_type {
-    color: $color3;
-    p {
-      line-height: calc(26 / 16);
+  color: $color3;
+  p {
+    line-height: calc(26 / 16);
+    margin-bottom: 16px;
+    & + p {
       margin-bottom: 16px;
-      & + p {
-        margin-bottom: 16px;
-      }
-    }
-    * {
-      box-sizing: border-box;
-    }
-    padding: 24px;
-    border: 1px solid $bannerBoxColor;
-    border-radius: 16px;
-    margin-bottom: 20px;
-    .box_title {
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 23.88px;
-      color: $color2;
-      padding-bottom: 12px;
-      border-bottom: 1px solid $color4;
-    }
-    .box_body {
-      padding-top: 16px;
-    }
-    .listing {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px 0;
-      margin: 0 -10px;
-      list-style-type: none;
-      padding: 0;
-      line-height: calc(24 / 16);
-      li {
-        flex: 0 0 25%;
-        padding: 0 10px;
-        display: flex;
-        align-items: center;
-        img {
-          margin-right: 10px;
-        }
-      }
-      &.li_4 {
-        li {
-          flex: 0 0 25%;
-        }
-        &.c_3 {
-          li:nth-child(3n + 3) {
-            flex: 0 0 30%;
-          }
-        }
-      }
-      &.li_3 {
-        li {
-          flex: 0 0 33.3%;
-          padding: 0 10px;
-        }
-      }
-      @include respond (tab){
-        &,&.li_4,&.c_3.li_4{
-          li ,li:nth-child(3n+3){
-            flex: 0 0 33.3%;
-          }
-        }
-      }
-      @include respond (phone_land){
-        &,&.li_4,&.c_3.li_4{ 
-          li ,li:nth-child(3n+3){
-            flex: 0 0 50%;
-          }
-        }
-      }
-      @include respond (phone){
-        &,&.li_4,&.c_3.li_4{
-          li ,li:nth-child(3n+3){
-            flex: 0 0 100%;
-          }
-        }
-      }
-    }
-    &.only_img {
-      padding: 16px;
-      img {
-        border-radius: 8px;
-      }
-    }
-    @include respond(phone){
-      padding: 16px;
-      border-radius: 8px;
-      font-size: 14px;
-      .box_title{
-        font-size: 14px;
-        padding-bottom: 10px;
-      }
-      .listing{
-        line-height: 1.1;
-        gap:10px 0;
-      }
     }
   }
-  .flex_row {
+  * {
+    box-sizing: border-box;
+  }
+  padding: 24px;
+  border: 1px solid $bannerBoxColor;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  .box_title {
+    font-weight: 500;
+    font-family: $fontmedium;
+    font-size: 20px;
+    line-height: 23.88px;
+    color: $color2;
+    padding-bottom: 12px;
+    border-bottom: 1px solid $color4;
+  }
+  .box_body {
+    padding-top: 16px;
+  }
+  .listing {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px 0;
+    margin: 0 -10px;
     list-style-type: none;
     padding: 0;
-    > div,
-    > li {
-      flex: 0 0 calc(25% - 15px);
-      max-width: calc(25% - 15px);
+    line-height: calc(24 / 16);
+    li {
+      flex: 0 0 25%;
+      padding: 0 10px;
+      display: flex;
+      align-items: center;
+      img {
+        margin-right: 10px;
+      }
+    }
+    &.li_4 {
+      li {
+        flex: 0 0 25%;
+      }
+      &.c_3 {
+        li:nth-child(3n + 3) {
+          flex: 0 0 30%;
+        }
+      }
+    }
+    &.li_3 {
+      li {
+        flex: 0 0 33.3%;
+        padding: 0 10px;
+      }
     }
     @include respond(tab) {
-      gap: 20px 15px;
-      > div,
-      > li {
-        flex: 0 0 calc(33.3% - 10px);
-        max-width: calc(33.3% - 10px);
+      &,
+      &.li_4,
+      &.c_3.li_4 {
+        li,
+        li:nth-child(3n + 3) {
+          flex: 0 0 33.3%;
+        }
       }
     }
     @include respond(phone_land) {
-      gap: 20px 15px;
-      > div,
-      > li {
-        flex: 0 0 calc(50% - 7.5px);
-        max-width: calc(50% - 7.5px);
+      &,
+      &.li_4,
+      &.c_3.li_4 {
+        li,
+        li:nth-child(3n + 3) {
+          flex: 0 0 50%;
+        }
       }
     }
     @include respond(phone) {
-      gap: 15px;
-      > div,
-      > li {
-        flex: 0 0 100%;
-        max-width: 100%;
+      &,
+      &.li_4,
+      &.c_3.li_4 {
+        li,
+        li:nth-child(3n + 3) {
+          flex: 0 0 100%;
+        }
       }
     }
   }
-   
+  &.only_img {
+    padding: 16px;
+    img {
+      border-radius: 8px;
+    }
+  }
+  @include respond(phone) {
+    padding: 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    .box_title {
+      font-size: 14px;
+      padding-bottom: 10px;
+    }
+    .listing {
+      line-height: 1.1;
+      gap: 10px 0;
+    }
+  }
+}
+.flex_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  > div,
+  > li {
+    flex: 0 0 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+  }
+  @include respond(tab) {
+    gap: 20px 15px;
+    > div,
+    > li {
+      flex: 0 0 calc(33.3% - 10px);
+      max-width: calc(33.3% - 10px);
+    }
+  }
+  @include respond(phone_land) {
+    gap: 20px 15px;
+    > div,
+    > li {
+      flex: 0 0 calc(50% - 7.5px);
+      max-width: calc(50% - 7.5px);
+    }
+  }
+  @include respond(phone) {
+    gap: 15px;
+    > div,
+    > li {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+  }
+}
 
-
-  // =========Basic Form row===========
+// =========Basic Form row===========
 .form_row {
   display: flex;
   gap: 25px 48px;

@@ -1,141 +1,142 @@
-.commercial{
-    margin: 36px 0 0;
+.commercial {
+  margin: 36px 0 0;
+  @include respond(tab_land) {
+    overflow: hidden;
+    margin: 27px 0 0;
+  }
+  & > .container {
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 36px;
+  }
+  h2 {
+    font-size: $font34;
+    text-align: center;
+    font-weight: 500;
+    font-family: $fontmedium;
+    line-height: 33px;
+    font-style: normal;
+    color: #1c190e;
+    @include respond(phone_land) {
+      font-size: $font20;
+    }
+  }
+  p {
+    font-size: $font18;
+    text-align: center;
+    color: $logoName;
+    margin: 10px 0px;
+    line-height: 27px;
+    font-weight: 400;
+    @include respond(phone_land) {
+      font-size: $font14;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      margin: 0 0 21px;
+    }
+  }
+  .owl-carousel {
+    margin: 42px auto 0;
+    width: 91%;
     @include respond(tab_land) {
-        overflow: hidden;
-        margin: 27px 0 0;
-    }       
-    & > .container {
-        border-bottom: 1px solid #E8E8E8;
-        padding-bottom: 36px;
-    }
-    h2{
-        font-size: $font34;
-        text-align: center;
-        font-weight: 500;
-        line-height: 33px;
-        font-style: normal;
-        color: #1C190E;
-        @include respond(phone_land) {
-            font-size: $font20;
-        }
-    }
-    p{
-        font-size: $font18;
-        text-align: center;
-        color: $logoName;
-        margin: 10px 0px;
-        line-height: 27px;
-        font-weight: 400;
-        @include respond(phone_land) {
-            font-size: $font14;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 16px;
-            margin: 0 0 21px;
-        }
-    }
-    .owl-carousel {
-        margin: 42px auto 0;
-        width: 91%;
-        @include respond(tab_land) {
-            width: 82%;
-        } 
-        @include respond(phone_land) {
-            margin-top: 0;
-        }
-        .item{
-            img{
-                display: block;
-                width: 100%;
-                height: auto;
-            }
-            figure{
-                overflow: hidden;
-                position: relative;
-                border-radius: 16px;
-                figcaption {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    background: rgba(255, 255, 255, 0.75);
-                    color: #3C3C3C;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 700;
-                    text-align: center;
-                    line-height: 25px;
-                    padding: 14px 0;
-                }
-            }
-        }
-        .owl-nav {
-            button {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-                width: 64px;
-                height: 64px;
-                background:url(../images/arrow-light.svg) no-repeat center center;
-                padding: 0;
-                border-radius: 0;
-                font-size: 0;
-                &.owl-prev {
-                    left: -73px;
-                    transform: rotate(180deg);
-                }
-                &.owl-next {
-                    right: -73px;
-                }
-                @include respond(tab_land) {
-                    &.owl-prev {
-                        left: -63px;
-                    }
-                    &.owl-next {
-                        right: -63px;
-                    }
-                }
-                @include respond(phone) {
-                    &.owl-prev {
-                        left: -53px;
-                    }
-                    &.owl-next {
-                        right: -53px;
-                    }
-                }
-            }
-        }
-        .owl-dots {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-            margin-top: 27px;
-            .owl-dot {
-                span {
-                    width: 15px;
-                    height: 15px;
-                    background: #fff;
-                    opacity: 1;
-                    box-shadow: 0 0 5px #bdbdbd;
-                    display: block;
-                    border-radius: 50px;
-                    transition: all 0.4s ease-in-out;
-                }
-                &.active span {
-                    background: #2B2A28;
-                    width: 55px;
-                }
-            }
-        }
+      width: 82%;
     }
     @include respond(phone_land) {
-        .button-section {
-            padding-bottom: 0;
-        }
-        & > .container {
-            padding-bottom: 31px;
-        }
+      margin-top: 0;
     }
+    .item {
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      figure {
+        overflow: hidden;
+        position: relative;
+        border-radius: 16px;
+        figcaption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(255, 255, 255, 0.75);
+          color: #3c3c3c;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 700;
+          text-align: center;
+          line-height: 25px;
+          padding: 14px 0;
+        }
+      }
+    }
+    .owl-nav {
+      button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 64px;
+        height: 64px;
+        background: url(../images/arrow-light.svg) no-repeat center center;
+        padding: 0;
+        border-radius: 0;
+        font-size: 0;
+        &.owl-prev {
+          left: -73px;
+          transform: rotate(180deg);
+        }
+        &.owl-next {
+          right: -73px;
+        }
+        @include respond(tab_land) {
+          &.owl-prev {
+            left: -63px;
+          }
+          &.owl-next {
+            right: -63px;
+          }
+        }
+        @include respond(phone) {
+          &.owl-prev {
+            left: -53px;
+          }
+          &.owl-next {
+            right: -53px;
+          }
+        }
+      }
+    }
+    .owl-dots {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 27px;
+      .owl-dot {
+        span {
+          width: 15px;
+          height: 15px;
+          background: #fff;
+          opacity: 1;
+          box-shadow: 0 0 5px #bdbdbd;
+          display: block;
+          border-radius: 50px;
+          transition: all 0.4s ease-in-out;
+        }
+        &.active span {
+          background: #2b2a28;
+          width: 55px;
+        }
+      }
+    }
+  }
+  @include respond(phone_land) {
+    .button-section {
+      padding-bottom: 0;
+    }
+    & > .container {
+      padding-bottom: 31px;
+    }
+  }
 }

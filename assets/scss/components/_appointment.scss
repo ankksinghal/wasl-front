@@ -1,204 +1,209 @@
-.cs_main{
-    color: $black;
-    *,*:after,*:before{
-        box-sizing: border-box;
-    }
-    img{
-        max-width: 100%;
-        height: auto;
-    }
-    input,select,textarea,button{
-        font-family: "bliss_proregular"; 
-    }
-    p{
-        line-height: 1.5;
-    }
+.cs_main {
+  color: $black;
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  input,
+  select,
+  textarea,
+  button {
+    font-family: "bliss_proregular";
+  }
+  p {
+    line-height: 1.5;
+  }
 }
-.form_wrapper_card{
-    padding:16px;
-    border-radius: 16px;
-    border: 1px solid $color1;
+.form_wrapper_card {
+  padding: 16px;
+  border-radius: 16px;
+  border: 1px solid $color1;
 }
 .cs_btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  font-size: 15px;
+  background: $black;
+  border: 0 none;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 8px;
+  line-height: 1.1;
+  white-space: nowrap;
+  &:hover {
+    background: $darkBlack;
+    color: $white;
+  }
+  &.btn_lg {
+    padding: 19px 35px;
+  }
+  &.btn_trans {
+    background: transparent;
+    border: 1px solid $darkBlack;
+    color: $Primary;
+    transition: 0.25s;
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+}
+.appointment_form_section {
+  padding: 30px 0 70px;
+  @include respond(tab) {
+    padding: 25px 0 50px;
+  }
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .enquiry-form {
+    margin-top: 10px;
+    gap: 22px;
+  }
+  .form_btn_wrap {
+    padding-top: 10px;
+    text-align: right;
+  }
+  .form_wrapper_head {
+    margin-bottom: 22px;
+  }
+  .enquiry-form + .enquiry-form {
+    padding-top: 11px;
+  }
+  .cs_radio_wrapper {
+    padding: 0;
+  }
+  .link-section {
+    margin-bottom: 2rem;
+  }
+  .inpo_start {
+    color: $red;
+  }
+  #myc-prev-week,
+  #myc-next-week {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    border: 1px solid $color1;
+    font-size: 0;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 7px;
+      height: 7px;
+      display: block;
+      border: 2px solid #2b2a28;
+      border-width: 2px 2px 0 0;
+      transform: rotate(-135deg);
+      left: 10px;
+      position: absolute;
+      top: 7.5px;
+    }
+    &#myc-next-week:after {
+      transform: rotate(45deg);
+      left: 7px;
+    }
+  }
+  #myc-nav-container {
+    #myc-nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  #myc-current-month-year-container {
+    margin: 0 auto;
+    font-size: 18px;
+    color: $color777;
+    @include respond(tab) {
+      font-size: 15px;
+    }
+    @include respond(phone_land) {
+      font-size: 13px;
+    }
+  }
+  #myc-week-container,
+  .myc-date-header,
+  #myc-available-time-container {
+    border: 0 none;
+  }
+  #myc-dates-container #myc-dates-container {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    @include respond(phone_land) {
+      gap: 1px;
+    }
+  }
+  .myc-date-header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    color: $white;
-    font-size: 15px;
-    background: $black;
-    border: 0 none;
-    text-decoration: none;
-    padding: 14px 20px;
-    border-radius: 8px;
-    line-height: 1.1;
-    white-space: nowrap;
-    &:hover {
-      background: $darkBlack;
-      color: $white;
+    padding: 12px 24px;
+    border: 1px solid $color1;
+    border-radius: 16px;
+    flex-direction: column-reverse;
+    font-weight: 500;
+    font-family: $fontmedium;
+    * {
+      color: $logoName;
+      line-height: calc(24 / 16);
+      font-size: 16px;
+      text-transform: uppercase;
     }
-    &.btn_lg {
-      padding: 19px 35px;
+    .myc-date-number {
+      font-weight: 700;
     }
-    &.btn_trans{
-      background: transparent;
-      border:1px solid $darkBlack;
-      color: $Primary;
-      transition: .25s;
-      &:hover{
-        background: $black;
-        color: $white;
+    @include respond(tab) {
+      font-size: 14px;
+      padding: 10px;
+      border-radius: 8px;
+      * {
+        font-size: 12px;
+      }
+    }
+    @include respond(phone_land) {
+      padding: 3px;
+      line-height: 1;
+      * {
+        font-size: 11px;
       }
     }
   }
-.appointment_form_section{
-    padding:30px 0 70px;
-    @include respond(tab){
-        padding: 25px 0 50px;  
+  #myc-available-time-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .myc-available-time {
+    border-radius: 8px;
+    background: $color1;
+    padding: 14px 5px;
+    @include respond(tab) {
+      font-size: 12px;
+      border-radius: 4px;
+      margin-bottom: 5px;
     }
-    h2{
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 1.5;
-
+    line-height: 1.1;
+    color: $black;
+    &:hover,
+    &.selected {
+      background: $black;
+      color: $white;
     }
-    .enquiry-form{
-        margin-top: 10px;
-        gap: 22px;
+  }
+  @include respond(phone_land) {
+    .myc-day-time-container {
+      padding: 10px 0;
     }
-    .form_btn_wrap{
-        padding-top: 10px;
-        text-align: right;
-         
-    }
-    .form_wrapper_head{
-        margin-bottom: 22px;
-    }
-    .enquiry-form+.enquiry-form{
-        padding-top: 11px;
-    }
-    .cs_radio_wrapper{
-        padding: 0;
-    }
-    .link-section{
-        margin-bottom: 2rem;
-    }
-    .inpo_start{
-        color: $red;
-    }
-    #myc-prev-week,#myc-next-week{
-        width: 24px;
-        height: 24px;
-        border-radius: 3px;
-        border: 1px solid $color1;
-        font-size: 0;
-        position: relative;
-      
-        &:after{
-            content: "";
-            width: 7px;
-            height: 7px;
-            display: block;
-            border: 2px solid #2B2A28;
-            border-width: 2px 2px 0 0;
-            transform: rotate(-135deg);
-            left: 10px;
-            position: absolute;
-            top: 7.5px;
-        
-        }
-        &#myc-next-week:after{ 
-            transform: rotate(45deg); 
-            left: 7px; 
-        }
-    }
-    #myc-nav-container{
-        
-        #myc-nav-container{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-    }
-    #myc-current-month-year-container{
-        margin: 0 auto;
-        font-size: 18px;
-        color: $color777;
-        @include respond(tab){
-            font-size: 15px;
-        }
-        @include respond(phone_land){
-            font-size: 13px;
-        }
-    }
-    #myc-week-container,.myc-date-header,#myc-available-time-container{
-        border: 0 none;
-    }
-    #myc-dates-container #myc-dates-container{
-        display: flex;
-        gap: 16px;
-        justify-content: space-between;
-        @include respond(phone_land){
-           gap: 1px;
-        }
-    }
-    .myc-date-header{
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 12px 24px;
-        border: 1px solid $color1;
-        border-radius: 16px;
-        flex-direction: column-reverse;
-        font-weight: 500;
-        *{
-            color: $logoName;
-            line-height: calc(24/16);
-            font-size: 16px;
-            text-transform: uppercase;
-        }
-        .myc-date-number{
-            font-weight: 700;
-        }
-        @include respond(tab){
-            font-size: 14px;
-            padding: 10px ;
-            border-radius: 8px;
-            *{ 
-                font-size: 12px;
-             }
-        }
-        @include respond(phone_land){
-            padding: 3px;
-            line-height: 1;
-            *{ 
-                font-size: 11px;
-             }
-        }
-    }
-    #myc-available-time-container{
-        display: flex;
-        justify-content: space-between;
-    }
-    .myc-available-time{
-        border-radius: 8px;
-        background: $color1; 
-        padding: 14px 5px; 
-        @include respond(tab){
-            font-size: 12px;
-            border-radius: 4px;
-            margin-bottom: 5px;
-        }
-        line-height: 1.1;
-        color: $black;
-        &:hover,&.selected{
-            background: $black;
-            color: $white;
-        }
-    }
-    @include respond(phone_land){
-        .myc-day-time-container{
-            padding:10px 0;
-        }
-    }
+  }
 }
-

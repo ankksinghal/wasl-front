@@ -19,6 +19,7 @@
       margin-bottom: 10px;
       font-size: $font22;
       font-weight: $fontweight2;
+      font-family: $fontmedium;
       @include respond(phone_land) {
         font-size: $font16;
         margin-bottom: 4px;
@@ -28,6 +29,7 @@
       color: $black;
       font-size: $font14;
       font-weight: $fontweight2;
+      font-family: $fontmedium;
     }
   }
   .all-available-units-right {
@@ -89,6 +91,7 @@
     margin-bottom: 12px;
     font-size: $font18;
     font-weight: $fontweight2;
+    font-family: $fontmedium;
     @include respond(phone_land) {
       font-size: $font14;
     }
@@ -276,6 +279,7 @@
       margin-bottom: 20px;
       h3 {
         font-weight: $fontweight2;
+        font-family: $fontmedium;
         font-size: $font18;
         margin-bottom: 15px;
       }
@@ -407,6 +411,7 @@
               &.contact-text-dark {
                 color: $color3;
                 font-weight: $fontweight2;
+                font-family: $fontmedium;
                 a {
                   color: $color3;
                 }
@@ -457,6 +462,7 @@
       font-size: $font18;
       color: $darkBlack;
       font-weight: $fontweight2;
+      font-family: $fontmedium;
       margin-bottom: 16px;
     }
     .search-map-section {
@@ -514,6 +520,7 @@
           font-size: $font18;
           color: $black;
           font-weight: $fontweight2;
+          font-family: $fontmedium;
           margin-bottom: 10px;
           @include respond(tab) {
             font-size: $font16;
@@ -531,6 +538,7 @@
             font-size: $font16;
             i {
               font-weight: $fontweight2;
+              font-family: $fontmedium;
               color: $black;
               margin-left: 3px;
             }
@@ -543,6 +551,7 @@
             color: $black;
             font-size: $font16;
             font-weight: $fontweight2;
+            font-family: $fontmedium;
             i {
               vertical-align: middle;
               margin-left: 4px;
@@ -620,7 +629,7 @@ body {
 .buying_detail {
   padding-top: 30px;
   padding-bottom: 8rem;
-  @include respond (phone_land){
+  @include respond(phone_land) {
     padding-bottom: 1rem;
   }
   .cs_title {
@@ -663,7 +672,7 @@ body {
       .img-content img {
         object-fit: cover;
       }
-      @include respond (tab){
+      @include respond(tab) {
         padding: 15px;
         border-radius: 12px;
         .img-content img {
@@ -744,30 +753,30 @@ body {
     padding-bottom: 4rem;
   }
 }
-.cs_upload{
-  .file_lable{
+.cs_upload {
+  .file_lable {
     line-height: 24px;
-    small{
-      color: $logoName; 
+    small {
+      color: $logoName;
     }
   }
-  .file-input-container{
+  .file-input-container {
     margin-top: 10px;
     height: 55px;
     align-items: center;
     justify-content: start;
-    border-color:  $color6;
+    border-color: $color6;
     flex-flow: row;
-    .file-input-label{
+    .file-input-label {
       border-radius: 8px;
       font-size: 16px;
       color: $color2;
       background: $bannerBoxColor;
       padding: 10px 14px;
-      flex: 0 0 110px;     
+      flex: 0 0 110px;
       cursor: pointer;
     }
-    @include respond (tab){
+    @include respond(tab) {
       height: 48px;
     }
   }
@@ -844,16 +853,16 @@ body {
     .card-details {
     width: auto;
   }
-  .buying_detail{
-    div.all-units-wrapper{
+  .buying_detail {
+    div.all-units-wrapper {
       display: block;
-      .left-side-bar-filters{
+      .left-side-bar-filters {
         display: block;
         flex: 0 0 100%;
         width: 100%;
         margin: 0;
         height: auto;
-        .upper-filter-section{
+        .upper-filter-section {
           width: auto;
         }
       }
@@ -899,7 +908,7 @@ body {
 
 .form-field-bg {
   select {
-    opacity:1 !important;
+    opacity: 1 !important;
   }
 }
 
@@ -941,12 +950,12 @@ body {
   }
 }
 // ======Chip style========
-.chip_wrapper{
+.chip_wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 15px;
-  >span{
+  > span {
     display: inline-flex;
     align-items: center;
     gap: 5px;
@@ -955,8 +964,8 @@ body {
     border-radius: 8px;
     color: $color8;
     font-size: 16px;
-    color:$color16;
-    .cross_chip{
+    color: $color16;
+    .cross_chip {
       width: 18px;
       height: 18px;
       border: none;
@@ -964,147 +973,139 @@ body {
       background: url(../images/closeN.svg) no-repeat center center/18px;
     }
   }
-
 }
 
-
 // =========Responsive===============
-@include respond(tab){
-  .cs_search_style{
+@include respond(tab) {
+  .cs_search_style {
     margin-bottom: 0px;
-    flex:  0 0 100%;
+    flex: 0 0 100%;
   }
 
   .cs_search_style {
-    .fstMultipleMode{
+    .fstMultipleMode {
       border-radius: 8px;
       margin-bottom: 12px;
       font-size: 14px;
       border: 1px solid $color1;
-      input{
+      input {
         font-size: 16px;
       }
     }
   }
   .search-section .form-section {
-    .form-raper{
+    .form-raper {
       padding: 16px;
       border: 0 none;
       box-sizing: border-box;
       flex-direction: row;
       flex-wrap: wrap;
-      gap:10px;
-      .form-cols-out{
+      gap: 10px;
+      .form-cols-out {
         flex: 0 0 calc(50% - 5px);
         box-sizing: border-box;
       }
     }
-    .cs_formview2{
+    .cs_formview2 {
       display: flex;
     }
-    .cs_formview3{
+    .cs_formview3 {
       padding-top: 0;
-      gap:10px;
-      >div{
-        flex: 0 0 calc(50% - 5px); 
-        &:last-child{
+      gap: 10px;
+      > div {
+        flex: 0 0 calc(50% - 5px);
+        &:last-child {
           flex: 0 0 100%;
         }
       }
-
     }
   }
-  .custom-dropdown,.csdropdown_style .custom-dropdown{
+  .custom-dropdown,
+  .csdropdown_style .custom-dropdown {
     border: 1px solid $color1;
     border-radius: 6px;
     margin-bottom: 12px;
     height: 48px;
     background-position: right 10px top 18px;
-    label{
+    label {
       font-size: 14px;
     }
-  }  
-  .search-section .form-section.sec_2  {
-    .form-raper{
-      gap: 10px; 
-      .form-cols-out{
+  }
+  .search-section .form-section.sec_2 {
+    .form-raper {
+      gap: 10px;
+      .form-cols-out {
         flex: 0 0 calc(50% - 5px);
-        @include respond(phone){
+        @include respond(phone) {
           flex: 0 0 100%;
-          .form-control.dropdown{
+          .form-control.dropdown {
             padding-left: 15px;
           }
         }
       }
-      .form-control.search{
+      .form-control.search {
         margin-bottom: 12px;
         font-size: 14px;
-        border: 1px solid #E4E4DC;
+        border: 1px solid #e4e4dc;
         height: 56px;
         border-radius: 8px;
         background-position: left 20px top 16px;
         padding-left: 3.25rem;
         font-size: 16px;
-        color:$color17 ;
+        color: $color17;
       }
-      >div:first-child{
-        flex: 0 0 100%; 
-        
+      > div:first-child {
+        flex: 0 0 100%;
       }
-      
-    } 
-    .form-control.dropdown{
-      border: 1px solid #E4E4DC;
+    }
+    .form-control.dropdown {
+      border: 1px solid #e4e4dc;
       border-radius: 8px;
     }
-    .form-view{
+    .form-view {
       display: flex;
       gap: 10px;
-      >div{
+      > div {
         flex: 0 0 calc(50% - 5px);
-        @include respond(phone){
-          &:last-child{
+        @include respond(phone) {
+          &:last-child {
             flex: 0 0 100%;
           }
         }
       }
     }
   }
- 
 }
-@include respond(phone){
-  .custom-dropdown label{
+@include respond(phone) {
+  .custom-dropdown label {
     padding-left: 5px;
   }
-  .search-section .filter-section .cs_formview2{
+  .search-section .filter-section .cs_formview2 {
     gap: 10px;
   }
-  .search-section .form-section .cs_formview3{
+  .search-section .form-section .cs_formview3 {
     display: block;
   }
-  .cs_formview2{
-    
+  .cs_formview2 {
     .form-cols-out {
       flex: 0 0 calc(50% - 5px);
       max-width: calc(50% - 5px);
     }
-    .form-cols:first-child{
+    .form-cols:first-child {
       flex: 50%;
       max-width: calc(50% - 5px);
     }
   }
 }
 
-
-
-.search-section{
-  &.retail{
+.search-section {
+  &.retail {
     .form-section {
-      .form-raper{
-        .form-cols-out{
+      .form-raper {
+        .form-cols-out {
           @include respond(phone_land) {
             flex: 100%;
-        }
+          }
         }
       }
     }

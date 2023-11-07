@@ -59,7 +59,7 @@ table {
 @font-face {
   font-family: "bliss_medium";
   src: url("../blisspro-fonts/BlissPro-Medium.woff") format("woff");
-  font-weight: normal;
+  font-weight: 500;
   font-style: normal;
 }
 .container {
@@ -83,6 +83,7 @@ button {
 .cs_title {
   font-size: 30px;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 1.1666666667;
 }
 @media screen and (max-width: 575px) {
@@ -105,6 +106,7 @@ button {
   padding: 13px 35px;
   text-decoration: none;
   font-weight: 500;
+  font-family: "bliss_medium";
   transition: all 0.4s ease-in-out;
 }
 .button-section a:hover {
@@ -238,6 +240,7 @@ button {
 .check-box.new-checkbox samp strong,
 .radio.new-checkbox samp strong {
   font-weight: 500;
+  font-family: "bliss_medium";
   display: block;
   color: #1c190e;
 }
@@ -305,6 +308,7 @@ button {
   font-size: 53.3%;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
 }
 .common-heading .cs_title.mb-0 {
@@ -335,6 +339,7 @@ button {
 }
 .cs_card .card_title {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 24px;
   line-height: normal;
   color: #1c1c1e;
@@ -378,6 +383,7 @@ button {
 }
 .box_style_type .box_title {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 20px;
   line-height: 23.88px;
   color: #1C1C1E;
@@ -416,17 +422,26 @@ button {
   padding: 0 10px;
 }
 @media screen and (max-width: 991px) {
-  .box_style_type .listing li, .box_style_type .listing li:nth-child(3n+3), .box_style_type .listing.li_4 li, .box_style_type .listing.li_4 li:nth-child(3n+3), .box_style_type .listing.c_3.li_4 li, .box_style_type .listing.c_3.li_4 li:nth-child(3n+3) {
+  .box_style_type .listing li,
+  .box_style_type .listing li:nth-child(3n+3), .box_style_type .listing.li_4 li,
+  .box_style_type .listing.li_4 li:nth-child(3n+3), .box_style_type .listing.c_3.li_4 li,
+  .box_style_type .listing.c_3.li_4 li:nth-child(3n+3) {
     flex: 0 0 33.3%;
   }
 }
 @media screen and (max-width: 767px) {
-  .box_style_type .listing li, .box_style_type .listing li:nth-child(3n+3), .box_style_type .listing.li_4 li, .box_style_type .listing.li_4 li:nth-child(3n+3), .box_style_type .listing.c_3.li_4 li, .box_style_type .listing.c_3.li_4 li:nth-child(3n+3) {
+  .box_style_type .listing li,
+  .box_style_type .listing li:nth-child(3n+3), .box_style_type .listing.li_4 li,
+  .box_style_type .listing.li_4 li:nth-child(3n+3), .box_style_type .listing.c_3.li_4 li,
+  .box_style_type .listing.c_3.li_4 li:nth-child(3n+3) {
     flex: 0 0 50%;
   }
 }
 @media screen and (max-width: 575px) {
-  .box_style_type .listing li, .box_style_type .listing li:nth-child(3n+3), .box_style_type .listing.li_4 li, .box_style_type .listing.li_4 li:nth-child(3n+3), .box_style_type .listing.c_3.li_4 li, .box_style_type .listing.c_3.li_4 li:nth-child(3n+3) {
+  .box_style_type .listing li,
+  .box_style_type .listing li:nth-child(3n+3), .box_style_type .listing.li_4 li,
+  .box_style_type .listing.li_4 li:nth-child(3n+3), .box_style_type .listing.c_3.li_4 li,
+  .box_style_type .listing.c_3.li_4 li:nth-child(3n+3) {
     flex: 0 0 100%;
   }
 }
@@ -571,7 +586,7 @@ header .header-section {
     position: fixed;
     top: 0;
     padding: 30px 20px;
-    background: #E4E4DC;
+    background: #e4e4dc;
     box-sizing: border-box;
     width: 100%;
     left: -286px;
@@ -587,13 +602,14 @@ header .header-section {
   }
   header .header-section .right-section.slide .mobile-search {
     display: block;
-    border-bottom: 1px solid #A79F92;
+    border-bottom: 1px solid #a79f92;
     padding-bottom: 20px;
   }
   header .header-section .right-section.slide .mobile-search span {
     font-size: 0.875em;
     color: #1C190E;
     font-weight: 500;
+    font-family: "bliss_medium";
   }
   header .header-section .right-section.slide .mobile-search form {
     position: relative;
@@ -601,7 +617,7 @@ header .header-section {
   }
   header .header-section .right-section.slide .mobile-search form input {
     height: 38px;
-    border: 1px solid #E4E4DC;
+    border: 1px solid #e4e4dc;
     padding: 0 15px;
     width: 100%;
     box-sizing: border-box;
@@ -660,7 +676,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
   }
 }
 header .header-section .right-section .right-top-section .top-nav-section ul li a {
-  color: #1C190E;
+  color: #1c190e;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -694,7 +710,7 @@ header .header-section .right-bottom-section nav ul {
 @media screen and (max-width: 767px) {
   header .header-section .right-bottom-section nav ul {
     display: block;
-    border-color: #A79F92;
+    border-color: #a79f92;
   }
 }
 header .header-section .right-bottom-section nav ul li {
@@ -706,11 +722,12 @@ header .header-section .right-bottom-section nav ul li {
   }
 }
 header .header-section .right-bottom-section nav ul li a {
-  color: #1C190E;
+  color: #1c190e;
   text-align: center;
   font-size: 14px;
   font-style: normal;
-  font-family: bliss_medium;
+  font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 20px;
   text-transform: capitalize;
   padding: 10px 15px;
@@ -771,7 +788,7 @@ header .left-section .logo-name {
   }
   .mobile-menu span {
     display: block;
-    background-color: #2B2A28;
+    background-color: #2b2a28;
     width: 30px;
     height: 3px;
     border-radius: 40px;
@@ -784,7 +801,7 @@ header .left-section .logo-name {
 }
 .search-input-section input {
   border-radius: 4px;
-  border: 1px solid #E4E4DC;
+  border: 1px solid #e4e4dc;
   height: 21px;
 }
 .search-input-section input:focus:focus-visible {
@@ -931,6 +948,7 @@ body.slide {
   color: #585754;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
 }
 @media screen and (max-width: 1170px) {
@@ -996,6 +1014,7 @@ body.slide {
 .search-section h3 {
   font-size: 1.375em;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 33px;
   color: #1c190e;
 }
@@ -1046,11 +1065,11 @@ body.slide {
   background: #2B2A28;
   font-size: 1.125em;
   font-weight: 500;
+  font-family: "bliss_medium";
   border-radius: 0px 8px 8px 0px;
   border: none;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
-  font-family: inherit;
 }
 .search-section .form-section button:hover {
   background: black;
@@ -1084,10 +1103,10 @@ body.slide {
   position: relative;
   font-size: 18px;
   font-weight: 500;
+  font-family: "bliss_medium";
   align-items: center;
   text-transform: uppercase;
   color: #2b2a28;
-  font-family: inherit;
 }
 @media screen and (max-width: 991px) {
   .search-section .filter-section .advanced-filters {
@@ -1154,6 +1173,7 @@ body.slide {
   color: #2b2a28;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -1175,6 +1195,7 @@ body.slide {
   height: 52px;
   font-size: 14px;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2b2a28;
   padding: 0 10px;
   -webkit-appearance: none;
@@ -1218,6 +1239,7 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 20px;
   border-radius: 8px 8px 0px 0px;
   align-items: center;
@@ -1338,6 +1360,7 @@ body.slide {
 .cs_search_style .fstResults h3 {
   font-size: 16px;
   font-weight: 500;
+  font-family: "bliss_medium";
   text-align: left;
 }
 .cs_search_style .fstResults .fstResultItem {
@@ -1962,6 +1985,7 @@ body.slide {
   border-radius: 8px;
   padding: 13px 0;
   font-weight: 500;
+  font-family: "bliss_medium";
   display: inline-block;
   transition: all 0.4s ease-in-out;
   max-width: 126px;
@@ -2023,6 +2047,7 @@ body.slide {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
   margin-bottom: 22px;
@@ -2032,6 +2057,7 @@ body.slide {
   font-size: 44px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 55px;
   margin-bottom: 45px;
 }
@@ -2144,6 +2170,7 @@ body.slide {
   color: #000;
   font-size: 18px;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 8px;
   display: block;
 }
@@ -2216,6 +2243,7 @@ body.slide {
   color: #000;
   font-size: 18px;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 8px;
   display: block;
   text-align: center;
@@ -2278,6 +2306,7 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   padding: 20px 18px 30px;
 }
@@ -2300,6 +2329,7 @@ body.slide {
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
 }
 .buying-pricing .tab-content ul.listing {
@@ -2513,6 +2543,7 @@ body.slide {
   font-size: 32px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 38px;
   margin-bottom: 12px;
 }
@@ -2549,6 +2580,7 @@ body.slide {
   color: #1c1c1e;
   font-size: 16px;
   font-weight: 500;
+  font-family: "bliss_medium";
   display: block;
 }
 .buying-proj-slider .right-proj .owl-prtoj-thumb .owl-dots {
@@ -2621,6 +2653,7 @@ body.slide {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -2642,6 +2675,7 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 26px;
 }
 @media screen and (max-width: 767px) {
@@ -2679,6 +2713,7 @@ body.slide {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -2702,12 +2737,14 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   padding: 20px 18px;
 }
 .plans-buying .tab-links-plans li.active {
   background: #e4e4dc;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2b2a28;
 }
 .plans-buying .tab-content-plans {
@@ -2766,6 +2803,7 @@ body.slide {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -2774,6 +2812,7 @@ body.slide {
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
 }
 @media screen and (max-width: 991px) {
@@ -2801,6 +2840,7 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 26px;
   flex-shrink: 0;
   justify-content: center;
@@ -2855,6 +2895,7 @@ body.slide {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -2878,12 +2919,14 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   padding: 20px 18px;
 }
 .more-offring .tab-links-offering li.active {
   background: #e4e4dc;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2b2a28;
 }
 .more-offring .tab-content-offering {
@@ -2922,6 +2965,7 @@ body.slide {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
 }
@@ -2930,6 +2974,7 @@ body.slide {
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 55px;
 }
 @media screen and (max-width: 991px) {
@@ -2953,6 +2998,7 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
   background: #2b2a28;
@@ -2989,6 +3035,7 @@ body.slide {
   font-size: 30px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 55px;
   margin-bottom: 32px;
 }
@@ -3009,6 +3056,7 @@ body.slide {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
   background: #2b2a28;
@@ -3397,7 +3445,7 @@ body.slide {
   content: "";
   height: 241px;
   width: 241px;
-  background-color: #EDEDE8;
+  background-color: #edede8;
   border-radius: 16px;
   z-index: -1;
 }
@@ -3487,9 +3535,9 @@ body.slide {
 .upcoming-projects .right-section .content-section h2 {
   font-size: 2.75em;
   font-weight: 500;
-  color: #1C190E;
+  font-family: "bliss_medium";
+  color: #1c190e;
   font-style: normal;
-  font-weight: 500;
   line-height: 33px;
 }
 @media screen and (max-width: 767px) {
@@ -3516,21 +3564,25 @@ body.slide {
     line-height: normal;
   }
 }
-.upcoming-projects .right-section .content-section a, .upcoming-projects .right-section .content-section .link {
+.upcoming-projects .right-section .content-section a,
+.upcoming-projects .right-section .content-section .link {
   background: #2B2A28;
   color: #FFFFFF;
   font-size: 1em;
   border-radius: 8px;
   padding: 13px 35px;
   font-weight: 500;
+  font-family: "bliss_medium";
   display: inline-block;
   transition: all 0.4s ease-in-out;
 }
-.upcoming-projects .right-section .content-section a:hover, .upcoming-projects .right-section .content-section .link:hover {
+.upcoming-projects .right-section .content-section a:hover,
+.upcoming-projects .right-section .content-section .link:hover {
   background: black;
 }
 @media screen and (max-width: 991px) {
-  .upcoming-projects .right-section .content-section a, .upcoming-projects .right-section .content-section .link {
+  .upcoming-projects .right-section .content-section a,
+  .upcoming-projects .right-section .content-section .link {
     display: none;
   }
 }
@@ -3560,9 +3612,10 @@ body.slide {
   font-size: 2.125em;
   text-align: center;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 33px;
   font-style: normal;
-  color: #1C190E;
+  color: #1c190e;
 }
 @media screen and (max-width: 767px) {
   .residential h2 {
@@ -3616,7 +3669,7 @@ body.slide {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.75);
-  color: #3C3C3C;
+  color: #3c3c3c;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3677,7 +3730,7 @@ body.slide {
   transition: all 0.4s ease-in-out;
 }
 .residential .owl-carousel .owl-dots .owl-dot.active span {
-  background: #2B2A28;
+  background: #2b2a28;
   width: 55px;
 }
 
@@ -3691,16 +3744,17 @@ body.slide {
   }
 }
 .commercial > .container {
-  border-bottom: 1px solid #E8E8E8;
+  border-bottom: 1px solid #e8e8e8;
   padding-bottom: 36px;
 }
 .commercial h2 {
   font-size: 2.125em;
   text-align: center;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 33px;
   font-style: normal;
-  color: #1C190E;
+  color: #1c190e;
 }
 @media screen and (max-width: 767px) {
   .commercial h2 {
@@ -3754,7 +3808,7 @@ body.slide {
   left: 0;
   right: 0;
   background: rgba(255, 255, 255, 0.75);
-  color: #3C3C3C;
+  color: #3c3c3c;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -3815,7 +3869,7 @@ body.slide {
   transition: all 0.4s ease-in-out;
 }
 .commercial .owl-carousel .owl-dots .owl-dot.active span {
-  background: #2B2A28;
+  background: #2b2a28;
   width: 55px;
 }
 @media screen and (max-width: 767px) {
@@ -3868,9 +3922,10 @@ body.slide {
   font-size: 2.125em;
   margin-bottom: 15px;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 33px;
   font-style: normal;
-  color: #1C190E;
+  color: #1c190e;
 }
 @media screen and (max-width: 767px) {
   .freehold .content-box .left-section h2 {
@@ -3910,6 +3965,7 @@ body.slide {
   padding: 11px 34px;
   border-radius: 8px;
   font-weight: 500;
+  font-family: "bliss_medium";
   transition: all 0.4s ease-in-out;
 }
 .freehold .content-box .right-section a:hover {
@@ -3938,7 +3994,7 @@ body.slide {
   width: 50%;
   background: #FFFFFF;
   border-radius: 8px;
-  border: 1px dashed #F6F6F6;
+  border: 1px dashed #f6f6f6;
   box-shadow: 10px 32px 72px 0px rgba(51, 51, 51, 0.08);
   padding: 16px;
 }
@@ -3981,10 +4037,11 @@ body.slide {
   }
 }
 .freehold .freehold-card-section .card .card-title {
-  color: #2B2A28;
+  color: #2b2a28;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -4021,10 +4078,11 @@ body.slide {
   }
 }
 .freehold .freehold-card-section .card .link-type {
-  color: #2B2A28;
+  color: #2b2a28;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 24px;
   text-decoration: none;
   display: flex;
@@ -4107,7 +4165,7 @@ body.slide {
   box-sizing: border-box;
 }
 .bookNow .left-content {
-  background: #E4E4DC;
+  background: #e4e4dc;
   width: 60%;
   height: 70%;
   padding-left: calc((100vw - 1170px) / 2);
@@ -4124,9 +4182,10 @@ body.slide {
   font-size: 1.938em;
   text-align: left;
   max-width: 600px;
-  color: #2B2A28;
+  color: #2b2a28;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 120%;
 }
 @media screen and (max-width: 1170px) {
@@ -4145,7 +4204,7 @@ body.slide {
   }
 }
 .bookNow .right-content {
-  background: #2B2A28;
+  background: #2b2a28;
   right: 0;
   bottom: 0;
   width: 40%;
@@ -4164,6 +4223,7 @@ body.slide {
   font-size: 1.25em;
   text-align: center;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #FFFFFF;
   cursor: pointer;
   height: 100%;
@@ -4206,9 +4266,10 @@ body.slide {
 }
 .youtube-page .main-heading h2 {
   font-size: 34px;
-  color: #1C190E;
+  color: #1c190e;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 33px;
 }
 @media screen and (max-width: 767px) {
@@ -4254,7 +4315,7 @@ body.slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FF0000;
+  background-color: #ff0000;
   border-radius: 10px;
 }
 .youtube-page .subscribeBtn-div .subscribe-first .icon-div img {
@@ -4275,7 +4336,7 @@ body.slide {
   font-size: 19.68px;
   line-height: 23.06px;
   margin-bottom: 7px;
-  color: #4C4C4C;
+  color: #4c4c4c;
 }
 @media screen and (max-width: 767px) {
   .youtube-page .subscribeBtn-div .subscribe-first .sub-text p {
@@ -4291,7 +4352,7 @@ body.slide {
   height: 54px;
   left: 226px;
   top: 0px;
-  background-color: #2E3238;
+  background-color: #2e3238;
   margin-right: 21px;
 }
 @media screen and (max-width: 575px) {
@@ -4317,7 +4378,7 @@ body.slide {
   background: black;
 }
 .youtube-page .video-count {
-  color: #9CA0AC;
+  color: #9ca0ac;
   font-size: 17.49px;
   line-height: 20.5px;
   font-weight: 400;
@@ -4413,7 +4474,7 @@ body.slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FF0000;
+  background-color: #ff0000;
   border-radius: 10px;
 }
 .subscribeBtn-div .subscribe-first .icon-div img {
@@ -4433,7 +4494,7 @@ body.slide {
   font-size: 19.68px;
   line-height: 23.06px;
   margin-bottom: 7px;
-  color: #4C4C4C;
+  color: #4c4c4c;
 }
 @media screen and (max-width: 767px) {
   .subscribeBtn-div .subscribe-first .sub-text p {
@@ -4449,7 +4510,7 @@ body.slide {
   height: 54px;
   left: 226px;
   top: 0px;
-  background-color: #2E3238;
+  background-color: #2e3238;
   margin-right: 21px;
 }
 @media screen and (max-width: 575px) {
@@ -4477,7 +4538,7 @@ body.slide {
 }
 
 footer {
-  background: #E4E4DC;
+  background: #e4e4dc;
 }
 footer .footer-section {
   padding: 18px 0px 16px;
@@ -4513,7 +4574,7 @@ footer .footer-section .right-section .form-section input {
   }
 }
 footer .footer-section .right-section .form-section button {
-  background: #2B2A28;
+  background: #2b2a28;
   height: 37px;
   font-size: 12px;
   font-weight: 400;
@@ -4566,7 +4627,8 @@ footer .footer-section .footer-below-section .footer-menu h3 {
   margin-bottom: 25px;
   font-size: 18px;
   font-weight: 500;
-  color: #2B2A28;
+  font-family: "bliss_medium";
+  color: #2b2a28;
 }
 footer .footer-section .footer-below-section .footer-menu ul {
   display: flex;
@@ -4576,7 +4638,7 @@ footer .footer-section .footer-below-section .footer-menu ul {
 footer .footer-section .footer-below-section .footer-menu ul li a {
   font-size: 16px;
   line-height: 20px;
-  color: #2B2A28;
+  color: #2b2a28;
   font-weight: 400;
 }
 footer .footer-section .footer-below-section .footer-menu ul li a:hover {
@@ -4632,9 +4694,9 @@ footer .footer-section .footer-pages-wrap ul li {
 footer .footer-section .footer-pages-wrap ul li a {
   font-size: 14px;
   line-height: 16.72px;
-  color: #2B2A28;
+  color: #2b2a28;
   padding-right: 9px;
-  border-right: 1px solid #2B2A28;
+  border-right: 1px solid #2b2a28;
 }
 footer .footer-section .footer-pages-wrap ul li a:hover {
   text-decoration: underline;
@@ -4689,7 +4751,7 @@ footer .copyright-section p {
   .quicklinks {
     border-radius: 8px;
     border: 1px solid rgba(43, 42, 40, 0.2);
-    background: #EDEDE8;
+    background: #edede8;
     display: flex;
     padding: 15px 20px 15px 24px;
     justify-content: space-between;
@@ -4711,7 +4773,7 @@ footer .copyright-section p {
 }
 
 .app-status {
-  background: #A79F92;
+  background: #a79f92;
   height: 175px;
   margin-top: 238px;
   display: flex;
@@ -4768,6 +4830,7 @@ footer .copyright-section p {
   font-size: 34px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 55px;
   color: #000810;
   margin-bottom: 10px;
@@ -4968,6 +5031,7 @@ footer .copyright-section p {
 .search-tab-section .tab-links li.active {
   background-color: #FFFFFF;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .search-tab-section .tab-links li a {
   color: #2B2A28;
@@ -5007,6 +5071,7 @@ footer .copyright-section p {
   margin-bottom: 10px;
   font-size: 1.375em;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
   .all-available-units-section .all-available-units-left h3 {
@@ -5018,6 +5083,7 @@ footer .copyright-section p {
   color: #2B2A28;
   font-size: 0.875em;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .all-available-units-section .all-available-units-right {
   display: flex;
@@ -5083,6 +5149,7 @@ footer .copyright-section p {
   margin-bottom: 12px;
   font-size: 1.125em;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
   .select-bedroom-section-wrap h3 {
@@ -5272,6 +5339,7 @@ footer .copyright-section p {
 .all-units-wrapper .left-side-bar-filters .upper-filter-section h3,
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section h3 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.125em;
   margin-bottom: 15px;
 }
@@ -5402,6 +5470,7 @@ footer .copyright-section p {
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section ul li .contact-right-section span.contact-text-dark {
   color: #3A3A3C;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section ul li .contact-right-section span.contact-text-dark a {
   color: #3A3A3C;
@@ -5445,6 +5514,7 @@ footer .copyright-section p {
   font-size: 1.125em;
   color: #000;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 16px;
 }
 .all-units-wrapper .all-units-section .search-map-section img {
@@ -5509,6 +5579,7 @@ footer .copyright-section p {
   font-size: 1.125em;
   color: #2B2A28;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 10px;
 }
 @media screen and (max-width: 991px) {
@@ -5530,6 +5601,7 @@ footer .copyright-section p {
 }
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .card-details span i {
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
   margin-left: 3px;
 }
@@ -5541,6 +5613,7 @@ footer .copyright-section p {
   color: #2B2A28;
   font-size: 1em;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .view-details-wrap a i {
   vertical-align: middle;
@@ -5982,14 +6055,16 @@ body.modal {
   .search-section .form-section .cs_formview3 > div:last-child {
     flex: 0 0 100%;
   }
-  .custom-dropdown, .csdropdown_style .custom-dropdown {
+  .custom-dropdown,
+  .csdropdown_style .custom-dropdown {
     border: 1px solid #E4E4DC;
     border-radius: 6px;
     margin-bottom: 12px;
     height: 48px;
     background-position: right 10px top 18px;
   }
-  .custom-dropdown label, .csdropdown_style .custom-dropdown label {
+  .custom-dropdown label,
+  .csdropdown_style .custom-dropdown label {
     font-size: 14px;
   }
   .search-section .form-section.sec_2 .form-raper {
@@ -6011,7 +6086,7 @@ body.modal {
   .search-section .form-section.sec_2 .form-raper .form-control.search {
     margin-bottom: 12px;
     font-size: 14px;
-    border: 1px solid #E4E4DC;
+    border: 1px solid #e4e4dc;
     height: 56px;
     border-radius: 8px;
     background-position: left 20px top 16px;
@@ -6023,7 +6098,7 @@ body.modal {
     flex: 0 0 100%;
   }
   .search-section .form-section.sec_2 .form-control.dropdown {
-    border: 1px solid #E4E4DC;
+    border: 1px solid #e4e4dc;
     border-radius: 8px;
   }
   .search-section .form-section.sec_2 .form-view {
@@ -6364,7 +6439,10 @@ body.modal {
 .login-page .main-login .right-section .form .input-box .two-field select {
   width: 120px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text], .login-page .main-login .right-section .form .input-box input[type=email], .login-page .main-login .right-section .form .input-box input[type=password], .login-page .main-login .right-section .form .input-box input[type=number] {
+.login-page .main-login .right-section .form .input-box input[type=text],
+.login-page .main-login .right-section .form .input-box input[type=email],
+.login-page .main-login .right-section .form .input-box input[type=password],
+.login-page .main-login .right-section .form .input-box input[type=number] {
   border: 1px solid #c2c2c2;
   border-radius: 8px;
   height: 57px;
@@ -6377,63 +6455,99 @@ body.modal {
   padding-right: 15px;
   font-size: 16px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text]:focus, .login-page .main-login .right-section .form .input-box input[type=email]:focus, .login-page .main-login .right-section .form .input-box input[type=password]:focus, .login-page .main-login .right-section .form .input-box input[type=number]:focus {
+.login-page .main-login .right-section .form .input-box input[type=text]:focus,
+.login-page .main-login .right-section .form .input-box input[type=email]:focus,
+.login-page .main-login .right-section .form .input-box input[type=password]:focus,
+.login-page .main-login .right-section .form .input-box input[type=number]:focus {
   outline: none;
   box-shadow: none;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].icon-eml, .login-page .main-login .right-section .form .input-box input[type=email].icon-eml, .login-page .main-login .right-section .form .input-box input[type=password].icon-eml, .login-page .main-login .right-section .form .input-box input[type=number].icon-eml {
+.login-page .main-login .right-section .form .input-box input[type=text].icon-eml,
+.login-page .main-login .right-section .form .input-box input[type=email].icon-eml,
+.login-page .main-login .right-section .form .input-box input[type=password].icon-eml,
+.login-page .main-login .right-section .form .input-box input[type=number].icon-eml {
   background-image: url("../images/mail.svg");
   padding-left: 45px;
   background-position: top 16px left 12px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].password, .login-page .main-login .right-section .form .input-box input[type=email].password, .login-page .main-login .right-section .form .input-box input[type=password].password, .login-page .main-login .right-section .form .input-box input[type=number].password {
+.login-page .main-login .right-section .form .input-box input[type=text].password,
+.login-page .main-login .right-section .form .input-box input[type=email].password,
+.login-page .main-login .right-section .form .input-box input[type=password].password,
+.login-page .main-login .right-section .form .input-box input[type=number].password {
   background-image: url("../images/password.svg");
   padding-left: 45px;
   padding-right: 45px;
   background-position: top 15px left 12px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].number, .login-page .main-login .right-section .form .input-box input[type=email].number, .login-page .main-login .right-section .form .input-box input[type=password].number, .login-page .main-login .right-section .form .input-box input[type=number].number {
+.login-page .main-login .right-section .form .input-box input[type=text].number,
+.login-page .main-login .right-section .form .input-box input[type=email].number,
+.login-page .main-login .right-section .form .input-box input[type=password].number,
+.login-page .main-login .right-section .form .input-box input[type=number].number {
   background-image: url("../images/mob.svg");
   padding-right: 45px;
   padding-left: 45px;
   background-position: top 15px left 12px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].user-icon, .login-page .main-login .right-section .form .input-box input[type=email].user-icon, .login-page .main-login .right-section .form .input-box input[type=password].user-icon, .login-page .main-login .right-section .form .input-box input[type=number].user-icon {
+.login-page .main-login .right-section .form .input-box input[type=text].user-icon,
+.login-page .main-login .right-section .form .input-box input[type=email].user-icon,
+.login-page .main-login .right-section .form .input-box input[type=password].user-icon,
+.login-page .main-login .right-section .form .input-box input[type=number].user-icon {
   background-image: url("../images/user-icon.svg");
   padding-right: 45px;
   padding-left: 45px;
   background-position: top 16px left 12px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].number-icons, .login-page .main-login .right-section .form .input-box input[type=email].number-icons, .login-page .main-login .right-section .form .input-box input[type=password].number-icons, .login-page .main-login .right-section .form .input-box input[type=number].number-icons {
+.login-page .main-login .right-section .form .input-box input[type=text].number-icons,
+.login-page .main-login .right-section .form .input-box input[type=email].number-icons,
+.login-page .main-login .right-section .form .input-box input[type=password].number-icons,
+.login-page .main-login .right-section .form .input-box input[type=number].number-icons {
   background-image: url("../images/mob.svg");
   padding-left: 45px;
   background-position: top 15px left 12px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].padding15, .login-page .main-login .right-section .form .input-box input[type=email].padding15, .login-page .main-login .right-section .form .input-box input[type=password].padding15, .login-page .main-login .right-section .form .input-box input[type=number].padding15 {
+.login-page .main-login .right-section .form .input-box input[type=text].padding15,
+.login-page .main-login .right-section .form .input-box input[type=email].padding15,
+.login-page .main-login .right-section .form .input-box input[type=password].padding15,
+.login-page .main-login .right-section .form .input-box input[type=number].padding15 {
   padding-left: 15px;
   padding-right: 15px;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=email].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=password].padding15.captcha, .login-page .main-login .right-section .form .input-box input[type=number].padding15.captcha {
+.login-page .main-login .right-section .form .input-box input[type=text].padding15.captcha,
+.login-page .main-login .right-section .form .input-box input[type=email].padding15.captcha,
+.login-page .main-login .right-section .form .input-box input[type=password].padding15.captcha,
+.login-page .main-login .right-section .form .input-box input[type=number].padding15.captcha {
   padding-right: 120px;
 }
 .login-page .main-login .right-section .form .input-box input[type=text]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=email]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=password]:-moz-read-only, .login-page .main-login .right-section .form .input-box input[type=number]:-moz-read-only {
   background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
 }
-.login-page .main-login .right-section .form .input-box input[type=text]:read-only, .login-page .main-login .right-section .form .input-box input[type=email]:read-only, .login-page .main-login .right-section .form .input-box input[type=password]:read-only, .login-page .main-login .right-section .form .input-box input[type=number]:read-only {
+.login-page .main-login .right-section .form .input-box input[type=text]:read-only,
+.login-page .main-login .right-section .form .input-box input[type=email]:read-only,
+.login-page .main-login .right-section .form .input-box input[type=password]:read-only,
+.login-page .main-login .right-section .form .input-box input[type=number]:read-only {
   background: #E4E4DC url("../images/rightSign.svg") right 10px top 20px no-repeat;
 }
-.login-page .main-login .right-section .form .input-box input[type=text].error, .login-page .main-login .right-section .form .input-box input[type=email].error, .login-page .main-login .right-section .form .input-box input[type=password].error, .login-page .main-login .right-section .form .input-box input[type=number].error {
+.login-page .main-login .right-section .form .input-box input[type=text].error,
+.login-page .main-login .right-section .form .input-box input[type=email].error,
+.login-page .main-login .right-section .form .input-box input[type=password].error,
+.login-page .main-login .right-section .form .input-box input[type=number].error {
   border-color: #EF3D3D;
 }
 .login-page .main-login .right-section .form .input-box input[type=text]::-moz-placeholder, .login-page .main-login .right-section .form .input-box input[type=email]::-moz-placeholder, .login-page .main-login .right-section .form .input-box input[type=password]::-moz-placeholder, .login-page .main-login .right-section .form .input-box input[type=number]::-moz-placeholder {
   color: #2B2A28;
   opacity: 0.7;
 }
-.login-page .main-login .right-section .form .input-box input[type=text]::placeholder, .login-page .main-login .right-section .form .input-box input[type=email]::placeholder, .login-page .main-login .right-section .form .input-box input[type=password]::placeholder, .login-page .main-login .right-section .form .input-box input[type=number]::placeholder {
+.login-page .main-login .right-section .form .input-box input[type=text]::placeholder,
+.login-page .main-login .right-section .form .input-box input[type=email]::placeholder,
+.login-page .main-login .right-section .form .input-box input[type=password]::placeholder,
+.login-page .main-login .right-section .form .input-box input[type=number]::placeholder {
   color: #2B2A28;
   opacity: 0.7;
 }
-.login-page .main-login .right-section .form .input-box input[type=text]::-ms-input-placeholder, .login-page .main-login .right-section .form .input-box input[type=email]::-ms-input-placeholder, .login-page .main-login .right-section .form .input-box input[type=password]::-ms-input-placeholder, .login-page .main-login .right-section .form .input-box input[type=number]::-ms-input-placeholder {
+.login-page .main-login .right-section .form .input-box input[type=text]::-ms-input-placeholder,
+.login-page .main-login .right-section .form .input-box input[type=email]::-ms-input-placeholder,
+.login-page .main-login .right-section .form .input-box input[type=password]::-ms-input-placeholder,
+.login-page .main-login .right-section .form .input-box input[type=number]::-ms-input-placeholder {
   color: #2B2A28;
 }
 .login-page .main-login .right-section .form .input-box input:-webkit-autofill,
@@ -6558,6 +6672,7 @@ body.modal {
   background-color: #1C190E;
   height: 54px;
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 16px;
   line-height: 19.1px;
   text-align: center;
@@ -6679,6 +6794,7 @@ body.modal {
   background-color: #1C190E;
   padding: 16px 18px;
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 16px;
   line-height: 19.1px;
   text-align: center;
@@ -6804,7 +6920,8 @@ body.modal {
   justify-content: center;
   background: none;
 }
-.confirm-password-showhide .show-password, .confirm-password-showhide .hide-password,
+.confirm-password-showhide .show-password,
+.confirm-password-showhide .hide-password,
 .password-showhide .show-password,
 .password-showhide .hide-password {
   width: 30px;
@@ -7064,6 +7181,7 @@ span.tooltip:hover .pop-over {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 24px;
   position: relative;
   margin: 0;
@@ -7163,6 +7281,7 @@ span.tooltip:hover .pop-over {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
   background: #2B2A28;
@@ -7235,7 +7354,8 @@ span.tooltip:hover .pop-over {
     overflow: hidden;
   }
 }
-.lease-img-box .card-details-outer, .lease-img-box .card-details-outer-mob {
+.lease-img-box .card-details-outer,
+.lease-img-box .card-details-outer-mob {
   display: flex;
   flex-direction: column;
   gap: 9px;
@@ -7243,7 +7363,8 @@ span.tooltip:hover .pop-over {
   box-sizing: border-box;
   min-height: 340px;
 }
-.lease-img-box .card-details-outer h3, .lease-img-box .card-details-outer-mob h3 {
+.lease-img-box .card-details-outer h3,
+.lease-img-box .card-details-outer-mob h3 {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
@@ -7253,40 +7374,49 @@ span.tooltip:hover .pop-over {
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
 }
-.lease-img-box .card-details-outer .card-details-wrap, .lease-img-box .card-details-outer-mob .card-details-wrap {
+.lease-img-box .card-details-outer .card-details-wrap,
+.lease-img-box .card-details-outer-mob .card-details-wrap {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 18px;
 }
-.lease-img-box .card-details-outer .card-details-wrap .card-details, .lease-img-box .card-details-outer-mob .card-details-wrap .card-details {
+.lease-img-box .card-details-outer .card-details-wrap .card-details,
+.lease-img-box .card-details-outer-mob .card-details-wrap .card-details {
   display: flex;
   align-items: center;
   gap: 5px;
 }
-.lease-img-box .card-details-outer .card-details-wrap .card-details img, .lease-img-box .card-details-outer-mob .card-details-wrap .card-details img {
+.lease-img-box .card-details-outer .card-details-wrap .card-details img,
+.lease-img-box .card-details-outer-mob .card-details-wrap .card-details img {
   max-width: 20px;
   max-height: 20px;
 }
-.lease-img-box .card-details-outer .card-details-wrap .card-details span, .lease-img-box .card-details-outer-mob .card-details-wrap .card-details span {
+.lease-img-box .card-details-outer .card-details-wrap .card-details span,
+.lease-img-box .card-details-outer-mob .card-details-wrap .card-details span {
   color: rgba(43, 42, 40, 0.7);
   font-size: 1em;
   display: flex;
   justify-content: space-between;
   flex: 1;
 }
-.lease-img-box .card-details-outer .card-details-wrap .card-details span i, .lease-img-box .card-details-outer-mob .card-details-wrap .card-details span i {
+.lease-img-box .card-details-outer .card-details-wrap .card-details span i,
+.lease-img-box .card-details-outer-mob .card-details-wrap .card-details span i {
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
   margin-left: 3px;
 }
-.lease-img-box .card-details-outer .card-details-wrap .card-details strong, .lease-img-box .card-details-outer-mob .card-details-wrap .card-details strong {
+.lease-img-box .card-details-outer .card-details-wrap .card-details strong,
+.lease-img-box .card-details-outer-mob .card-details-wrap .card-details strong {
   font-weight: 600;
   color: #2B2A28;
 }
-.lease-img-box .card-details-outer p, .lease-img-box .card-details-outer-mob p {
+.lease-img-box .card-details-outer p,
+.lease-img-box .card-details-outer-mob p {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
@@ -7343,6 +7473,7 @@ span.tooltip:hover .pop-over {
 }
 .lease-img-box .card-details-outer-mob .card-details-wrap .card-details span i {
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
   margin-left: 3px;
 }
@@ -7390,6 +7521,7 @@ span.tooltip:hover .pop-over {
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   color: #1C1C1E;
   padding-bottom: 12px;
@@ -7468,7 +7600,8 @@ span.tooltip:hover .pop-over {
   font-weight: 700;
   line-height: normal;
 }
-.otp-counter button, .otp-counter a {
+.otp-counter button,
+.otp-counter a {
   display: flex;
   width: 76px;
   height: 24px;
@@ -7485,7 +7618,8 @@ span.tooltip:hover .pop-over {
   font-weight: 400;
   transition: all 0.4s ease-in-out;
 }
-.otp-counter button:hover, .otp-counter a:hover {
+.otp-counter button:hover,
+.otp-counter a:hover {
   background-color: #575757;
 }
 .otp-counter.top-head label {
@@ -7508,6 +7642,7 @@ span.tooltip:hover .pop-over {
   font-style: normal;
   line-height: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .expires-counter strong {
   color: #FFFFFF;
@@ -7536,6 +7671,7 @@ span.tooltip:hover .pop-over {
 }
 .project-detail li strong {
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 
 .total-view {
@@ -7787,7 +7923,7 @@ span.tooltip:hover .pop-over {
   gap: 14px;
 }
 .container .village-building .village-banner .left-section .right-text {
-  color: #8D8D87;
+  color: #8d8d87;
   font-size: 1.25em;
   display: flex;
   align-items: center;
@@ -7806,6 +7942,7 @@ span.tooltip:hover .pop-over {
 }
 .container .village-building .village-banner .left-section .village-heading {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   line-height: 35.82px;
   color: #2B2A28;
@@ -7813,6 +7950,7 @@ span.tooltip:hover .pop-over {
 @media screen and (max-width: 767px) {
   .container .village-building .village-banner .left-section .village-heading {
     font-weight: 500;
+    font-family: "bliss_medium";
     font-size: 1.125em;
     line-height: 21.49px;
     color: #2B2A28;
@@ -7880,12 +8018,14 @@ span.tooltip:hover .pop-over {
 }
 .container .village-building .village-banner .left-section ul li .span-text {
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
 }
 @media screen and (max-width: 767px) {
   .container .village-building .village-banner .left-section ul li .span-text {
     font-size: 0.875em;
     font-weight: 500;
+    font-family: "bliss_medium";
     line-height: 21px;
     color: #2B2A28;
   }
@@ -7924,7 +8064,7 @@ span.tooltip:hover .pop-over {
   padding: 0 18px;
 }
 .container .village-building .village-banner .right-section .btn-links a.wishlist-link {
-  background: #E4E4DC;
+  background: #e4e4dc;
   border-radius: 8px;
   width: auto;
   margin-right: 10px;
@@ -7950,6 +8090,7 @@ span.tooltip:hover .pop-over {
 }
 .container .village-building .village-banner .right-section .right-text {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   line-height: 35.82px;
   color: #2B2A28;
@@ -8035,6 +8176,7 @@ span.tooltip:hover .pop-over {
 }
 .container .property-details .property-inner .property-heading {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.25em;
   line-height: 23.88px;
   color: #1C1C1E;
@@ -8120,13 +8262,15 @@ span.tooltip:hover .pop-over {
     display: block;
   }
 }
-.virtual-tour-wrap .left-section, .virtual-tour-wrap .right-section {
+.virtual-tour-wrap .left-section,
+.virtual-tour-wrap .right-section {
   display: flex;
   gap: 10px;
   align-items: center;
 }
 @media screen and (max-width: 767px) {
-  .virtual-tour-wrap .left-section, .virtual-tour-wrap .right-section {
+  .virtual-tour-wrap .left-section,
+  .virtual-tour-wrap .right-section {
     justify-content: center;
     margin-top: 10px;
   }
@@ -8144,6 +8288,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 1em;
   font-weight: 500;
+  font-family: "bliss_medium";
   padding: 0px 18px;
   border-radius: 8px;
   display: flex;
@@ -8186,14 +8331,16 @@ span.tooltip:hover .pop-over {
   flex-direction: column;
 }
 .enquiry-form div input,
-.enquiry-form div select, .enquiry-form div textarea {
+.enquiry-form div select,
+.enquiry-form div textarea {
   margin-top: 10px;
   font-size: 16px;
   color: rgba(43, 40, 42, 0.7);
 }
 @media screen and (max-width: 575px) {
   .enquiry-form div input,
-  .enquiry-form div select, .enquiry-form div textarea {
+  .enquiry-form div select,
+  .enquiry-form div textarea {
     font-size: 14px;
   }
 }
@@ -8348,8 +8495,8 @@ span.tooltip:hover .pop-over {
   right: 0;
   top: 100%;
   border-radius: 0px 0px 8px 8px;
-  border: 1px solid #E2E2E2;
-  background: #FFF;
+  border: 1px solid #e2e2e2;
+  background: #fff;
   z-index: 2;
   max-height: 300px;
   overflow-y: auto;
@@ -8462,6 +8609,7 @@ span.tooltip:hover .pop-over {
 }
 .link-section .agree-check label a {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
@@ -8472,7 +8620,8 @@ span.tooltip:hover .pop-over {
   margin-top: 39px;
   gap: 18px;
 }
-.link-section .btns a, .link-section .btns button {
+.link-section .btns a,
+.link-section .btns button {
   padding: 16px 18px;
   width: 170px;
   display: flex;
@@ -8480,31 +8629,36 @@ span.tooltip:hover .pop-over {
   align-items: center;
   border-radius: 8px;
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1em;
   line-height: 24px;
   border: 0 none;
-  font-family: inherit;
 }
-.link-section .btns a.continue-btn, .link-section .btns button.continue-btn {
+.link-section .btns a.continue-btn,
+.link-section .btns button.continue-btn {
   background-color: #1C190E;
   color: #FFFFFF;
 }
-.link-section .btns a.long_btn, .link-section .btns button.long_btn {
+.link-section .btns a.long_btn,
+.link-section .btns button.long_btn {
   width: 375px;
   max-width: 100%;
 }
 @media screen and (max-width: 575px) {
-  .link-section .btns a.long_btn, .link-section .btns button.long_btn {
+  .link-section .btns a.long_btn,
+  .link-section .btns button.long_btn {
     width: 100%;
   }
 }
-.link-section .btns a.cancel-btn, .link-section .btns button.cancel-btn {
+.link-section .btns a.cancel-btn,
+.link-section .btns button.cancel-btn {
   background-color: #FFFFFF;
   color: #2B2A28;
   border: 1px solid #2B2A28;
 }
 @media all and (max-width: 991px) {
-  .link-section .btns a, .link-section .btns button {
+  .link-section .btns a,
+  .link-section .btns button {
     width: 127px;
     line-height: 1;
   }
@@ -8515,7 +8669,8 @@ span.tooltip:hover .pop-over {
     gap: 10px 0;
     margin-top: 20px;
   }
-  .link-section .btns a, .link-section .btns button {
+  .link-section .btns a,
+  .link-section .btns button {
     width: auto;
   }
 }
@@ -8652,6 +8807,7 @@ span.tooltip:hover .pop-over {
   font-size: 1.125em;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
 }
 @media screen and (max-width: 991px) {
@@ -8715,6 +8871,7 @@ span.tooltip:hover .pop-over {
   font-size: 1.125em;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 25px;
 }
 @media screen and (max-width: 991px) {
@@ -8796,6 +8953,7 @@ span.tooltip:hover .pop-over {
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .right-section figure figcaption h2 strong {
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .right-section figure figcaption p {
   color: #000;
@@ -8807,6 +8965,7 @@ span.tooltip:hover .pop-over {
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .right-section figure figcaption p strong {
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .all-units-section p {
   color: #2B2A28;
@@ -8928,6 +9087,7 @@ span.tooltip:hover .pop-over {
   font-size: calc(2rem - 4px);
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 36px;
   margin-bottom: 6px;
 }
@@ -8987,6 +9147,7 @@ span.tooltip:hover .pop-over {
   font-size: 1em;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
 }
 .fitness-challenge.d-flex-box .right-detail .bottom-area a {
@@ -8994,6 +9155,7 @@ span.tooltip:hover .pop-over {
   font-size: 1em;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 24px;
   display: flex;
   gap: 8px;
@@ -9047,7 +9209,7 @@ span.tooltip:hover .pop-over {
 }
 @media screen and (max-width: 575px) {
   .sm-list-view .fitness-challenge.outer-area .right-detail .bottom-area a {
-    border-top: 1px solid #E4E4DC;
+    border-top: 1px solid #e4e4dc;
     padding-top: 16px;
   }
 }
@@ -9109,6 +9271,7 @@ span.tooltip:hover .pop-over {
   border-radius: 8px;
   background-color: #1C190E;
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.25em;
   text-align: center;
   color: #FFFFFF;
@@ -9193,6 +9356,7 @@ span.tooltip:hover .pop-over {
   font-size: 1em;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   transition: all 0.4s ease-in-out;
 }
@@ -9268,7 +9432,8 @@ span.tooltip:hover .pop-over {
   height: 52px;
   font-size: 14px;
   font-weight: 500;
-  color: #2B2A28;
+  font-family: "bliss_medium";
+  color: #2b2a28;
   padding: 0 45px 0 18px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -9515,6 +9680,7 @@ ul.breadcrumb li a:hover {
 .cs_tab_content_container .tab_card_box .card_header .card_title {
   font-size: 20px;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .cs_tab_content_container .tab_card_box .card_body {
   padding: 1.5rem 0 0;
@@ -9587,6 +9753,7 @@ ul.breadcrumb li a:hover {
 .slider_wrapper .title_ceo {
   font-size: 20px;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 24px;
 }
 .slider_wrapper .item {
@@ -9656,6 +9823,7 @@ ul.breadcrumb li a:hover {
 .slider_wrapper.type_second .title_slider {
   font-size: 44px;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #FFFFFF;
 }
 @media screen and (max-width: 991px) {
@@ -9675,10 +9843,10 @@ ul.breadcrumb li a:hover {
 }
 .cs_tab_content_container .contact-us-box {
   border-radius: 16px;
-  border: 1px solid #E4E4DC;
+  border: 1px solid #e4e4dc;
   padding: 24px;
   line-height: 1.5;
-  color: #2B2A28;
+  color: #2b2a28;
   margin-bottom: 14px;
 }
 .cs_tab_content_container .contact-us-box ul {
@@ -9716,12 +9884,14 @@ ul.breadcrumb li a:hover {
   line-height: 24px;
   color: #2B2A28;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .cs_tab_content_container .contact-us-box ul li .office-details .description.telephone a {
   font-size: 1.5em;
   line-height: 28.66px;
   color: #2B2A28;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .cs_tab_content_container .contact-us-box.map img {
   width: 100%;
@@ -9764,6 +9934,7 @@ ul.breadcrumb li a:hover {
   line-height: 32.78px;
   color: #2B2A28;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 8px;
 }
 @media screen and (max-width: 767px) {
@@ -9776,6 +9947,7 @@ ul.breadcrumb li a:hover {
   line-height: 24px;
   color: #2B2A28;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
   .contact-us-details-wrap .left-section-contact p {
@@ -9865,8 +10037,9 @@ ul.breadcrumb li a:hover {
 }
 .contact-form-section .form h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 30px;
-  color: #2B2A28;
+  color: #2b2a28;
   margin-bottom: 5px;
   line-height: normal;
 }
@@ -9876,15 +10049,16 @@ ul.breadcrumb li a:hover {
   }
 }
 .contact-form-section .form p {
-  color: #1C190E;
+  color: #1c190e;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 24px;
   margin: 0;
 }
 .contact-form-section .form label {
-  color: #2B2A28;
+  color: #2b2a28;
   font-size: 16px;
   line-height: normal;
   font-weight: 400;
@@ -9893,13 +10067,13 @@ ul.breadcrumb li a:hover {
   gap: 5px;
 }
 .contact-form-section .form label span {
-  color: #EF3D3D;
+  color: #ef3d3d;
 }
 .contact-form-section .form label small a {
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  color: #A79F92;
+  color: #a79f92;
 }
 .contact-form-section .form label strong {
   font-weight: 600;
@@ -9922,43 +10096,64 @@ ul.breadcrumb li a:hover {
 .contact-form-section .form .input-box .two-field select {
   width: 120px;
 }
-.contact-form-section .form .input-box input[type=text], .contact-form-section .form .input-box input[type=email], .contact-form-section .form .input-box input[type=password], .contact-form-section .form .input-box input[type=number] {
+.contact-form-section .form .input-box input[type=text],
+.contact-form-section .form .input-box input[type=email],
+.contact-form-section .form .input-box input[type=password],
+.contact-form-section .form .input-box input[type=number] {
   border: 1px solid #c2c2c2;
   border-radius: 8px;
   height: 57px;
   padding-left: 15px;
   width: 100%;
-  color: #2B2A28;
+  color: #2b2a28;
   background-repeat: no-repeat;
   background-size: 22px auto;
   box-sizing: border-box;
   padding-right: 15px;
   font-size: 16px;
 }
-.contact-form-section .form .input-box input[type=text]:focus, .contact-form-section .form .input-box input[type=email]:focus, .contact-form-section .form .input-box input[type=password]:focus, .contact-form-section .form .input-box input[type=number]:focus {
+.contact-form-section .form .input-box input[type=text]:focus,
+.contact-form-section .form .input-box input[type=email]:focus,
+.contact-form-section .form .input-box input[type=password]:focus,
+.contact-form-section .form .input-box input[type=number]:focus {
   outline: none;
   box-shadow: none;
 }
-.contact-form-section .form .input-box input[type=text].padding15, .contact-form-section .form .input-box input[type=email].padding15, .contact-form-section .form .input-box input[type=password].padding15, .contact-form-section .form .input-box input[type=number].padding15 {
+.contact-form-section .form .input-box input[type=text].padding15,
+.contact-form-section .form .input-box input[type=email].padding15,
+.contact-form-section .form .input-box input[type=password].padding15,
+.contact-form-section .form .input-box input[type=number].padding15 {
   padding-left: 15px;
   padding-right: 15px;
 }
-.contact-form-section .form .input-box input[type=text].padding15.captcha, .contact-form-section .form .input-box input[type=email].padding15.captcha, .contact-form-section .form .input-box input[type=password].padding15.captcha, .contact-form-section .form .input-box input[type=number].padding15.captcha {
+.contact-form-section .form .input-box input[type=text].padding15.captcha,
+.contact-form-section .form .input-box input[type=email].padding15.captcha,
+.contact-form-section .form .input-box input[type=password].padding15.captcha,
+.contact-form-section .form .input-box input[type=number].padding15.captcha {
   padding-right: 120px;
 }
-.contact-form-section .form .input-box input[type=text].error, .contact-form-section .form .input-box input[type=email].error, .contact-form-section .form .input-box input[type=password].error, .contact-form-section .form .input-box input[type=number].error {
-  border-color: #EF3D3D;
+.contact-form-section .form .input-box input[type=text].error,
+.contact-form-section .form .input-box input[type=email].error,
+.contact-form-section .form .input-box input[type=password].error,
+.contact-form-section .form .input-box input[type=number].error {
+  border-color: #ef3d3d;
 }
 .contact-form-section .form .input-box input[type=text]::-moz-placeholder, .contact-form-section .form .input-box input[type=email]::-moz-placeholder, .contact-form-section .form .input-box input[type=password]::-moz-placeholder, .contact-form-section .form .input-box input[type=number]::-moz-placeholder {
-  color: #2B2A28;
+  color: #2b2a28;
   opacity: 0.7;
 }
-.contact-form-section .form .input-box input[type=text]::placeholder, .contact-form-section .form .input-box input[type=email]::placeholder, .contact-form-section .form .input-box input[type=password]::placeholder, .contact-form-section .form .input-box input[type=number]::placeholder {
-  color: #2B2A28;
+.contact-form-section .form .input-box input[type=text]::placeholder,
+.contact-form-section .form .input-box input[type=email]::placeholder,
+.contact-form-section .form .input-box input[type=password]::placeholder,
+.contact-form-section .form .input-box input[type=number]::placeholder {
+  color: #2b2a28;
   opacity: 0.7;
 }
-.contact-form-section .form .input-box input[type=text]::-ms-input-placeholder, .contact-form-section .form .input-box input[type=email]::-ms-input-placeholder, .contact-form-section .form .input-box input[type=password]::-ms-input-placeholder, .contact-form-section .form .input-box input[type=number]::-ms-input-placeholder {
-  color: #2B2A28;
+.contact-form-section .form .input-box input[type=text]::-ms-input-placeholder,
+.contact-form-section .form .input-box input[type=email]::-ms-input-placeholder,
+.contact-form-section .form .input-box input[type=password]::-ms-input-placeholder,
+.contact-form-section .form .input-box input[type=number]::-ms-input-placeholder {
+  color: #2b2a28;
 }
 .contact-form-section .form .input-box input:-webkit-autofill,
 .contact-form-section .form .input-box input:-webkit-autofill:hover,
@@ -9991,7 +10186,7 @@ ul.breadcrumb li a:hover {
   background-size: 25px 25px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 1px solid #8D8D87;
+  border: 1px solid #8d8d87;
   border-radius: 8px;
   height: 57px;
   opacity: 0.7;
@@ -10006,7 +10201,7 @@ ul.breadcrumb li a:hover {
 .contact-form-section .form .button-style {
   text-decoration: none;
   border-radius: 8px;
-  background-color: #1C190E;
+  background-color: #1c190e;
   height: 54px;
   font-weight: 700;
   font-size: 15px;
@@ -10037,7 +10232,7 @@ ul.breadcrumb li a:hover {
   border-color: #2f2e2e;
 }
 .contact-form-section .form .linking-view a {
-  color: #2B2A28;
+  color: #2b2a28;
   text-decoration: underline;
 }
 .contact-form-section .form .linking-view a:hover {
@@ -10055,11 +10250,15 @@ ul.breadcrumb li a:hover {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-.contact-form-section .form .check-box .checkmark, .contact-form-section .form .check-box .radiomark, .contact-form-section .form .radio .checkmark, .contact-form-section .form .radio .radiomark {
-  border: 2px solid #8D8D87;
+.contact-form-section .form .check-box .checkmark,
+.contact-form-section .form .check-box .radiomark,
+.contact-form-section .form .radio .checkmark,
+.contact-form-section .form .radio .radiomark {
+  border: 2px solid #8d8d87;
 }
-.contact-form-section .form .check-box input:checked ~ .checkmark, .contact-form-section .form .radio input:checked ~ .checkmark {
-  background-color: #8D8D87;
+.contact-form-section .form .check-box input:checked ~ .checkmark,
+.contact-form-section .form .radio input:checked ~ .checkmark {
+  background-color: #8d8d87;
 }
 .contact-form-section .captch-text {
   position: absolute;
@@ -10106,6 +10305,7 @@ ul.breadcrumb li a:hover {
   color: #2B2A28;
   margin: 30px 0 0;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
   .faq-title {
@@ -10124,6 +10324,7 @@ ul.breadcrumb li a:hover {
 }
 .faq-page-wrapper .accordion-content p {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1em;
   color: #2B2A28;
   line-height: 24px;
@@ -10138,7 +10339,7 @@ ul.breadcrumb li a:hover {
 .faq-page-wrapper .accordion-item {
   padding: 16px;
   cursor: pointer;
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -10160,6 +10361,7 @@ ul.breadcrumb li a:hover {
   font-size: 1.875em;
   margin-bottom: 20px;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
 }
 @media screen and (max-width: 767px) {
@@ -10179,6 +10381,7 @@ ul.breadcrumb li a:hover {
 }
 .owner-services-wrapper p.strong {
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .owner-services-wrapper ul {
   margin-bottom: 25px;
@@ -10226,6 +10429,7 @@ ul.breadcrumb li a:hover {
 .owner-services-inner-wrapper h4 {
   font-size: 1em;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 15px;
 }
 
@@ -10278,6 +10482,7 @@ figure.card_img:before {
 }
 .hospitality-page-wrapper h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   color: #2B2A28;
   margin: 0 0 22px;
@@ -10343,7 +10548,7 @@ figure.card_img:before {
   margin-bottom: 15px;
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards-wrap .view-details-wrap {
-  border-top: 1px solid #F1F1F1;
+  border-top: 1px solid #f1f1f1;
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards {
   width: 32%;
@@ -10400,6 +10605,7 @@ figure.card_img:before {
 }
 .ammenties-wrapper-details h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   text-align: center;
   margin-bottom: 30px;
@@ -10407,6 +10613,7 @@ figure.card_img:before {
 }
 .ammenties-wrapper-details h4 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.188em;
   color: #2B2A28;
   margin-bottom: 20px;
@@ -10438,6 +10645,7 @@ figure.card_img:before {
   display: block;
   font-size: 1.125em;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 21px;
 }
 
@@ -10447,6 +10655,7 @@ figure.card_img:before {
 .special-renting-wrapper h2 {
   font-size: 1.875em;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
   margin-bottom: 20px;
 }
@@ -10466,7 +10675,7 @@ figure.card_img:before {
   }
 }
 .special-renting-wrapper .special-renting-content .left-section-rent ul li {
-  border: 1px solid #EFEFEF;
+  border: 1px solid #efefef;
   padding: 16px;
   border-radius: 10px;
   font-size: 1em;
@@ -10474,6 +10683,7 @@ figure.card_img:before {
 }
 .special-renting-wrapper .special-renting-content .left-section-rent ul li span {
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
   opacity: 0.7;
   margin-bottom: 15px;
@@ -10490,12 +10700,14 @@ figure.card_img:before {
 .web-search-result {
   padding: 50px 0 100px;
 }
-.web-search-result h3, .web-search-result h2 {
+.web-search-result h3,
+.web-search-result h2 {
   line-height: 30px;
   font-size: 1.875em;
 }
 @media screen and (max-width: 767px) {
-  .web-search-result h3, .web-search-result h2 {
+  .web-search-result h3,
+  .web-search-result h2 {
     font-size: 1.25em;
   }
 }
@@ -10505,6 +10717,7 @@ figure.card_img:before {
 }
 .web-search-result h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
 }
 .web-search-result .web-search-result-wrap {
@@ -10512,7 +10725,7 @@ figure.card_img:before {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid #EFEFEF;
+  border-bottom: 1px solid #efefef;
 }
 @media screen and (max-width: 767px) {
   .web-search-result .web-search-result-wrap {
@@ -10531,6 +10744,7 @@ figure.card_img:before {
 }
 .web-search-content h4 {
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 15px;
 }
 
@@ -10544,7 +10758,7 @@ figure.card_img:before {
   position: relative;
 }
 .web-search-right-section .search-box form {
-  border: 1px solid #BDBDBD;
+  border: 1px solid #bdbdbd;
   border-radius: 8px;
 }
 .web-search-right-section .search-box form input[type=search] {
@@ -10570,6 +10784,7 @@ figure.card_img:before {
   right: 0;
   top: 0;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 
 @media screen and (max-width: 767px) {
@@ -10581,14 +10796,19 @@ figure.card_img:before {
 .cs_main {
   color: #2B2A28;
 }
-.cs_main *, .cs_main *:after, .cs_main *:before {
+.cs_main *,
+.cs_main *:after,
+.cs_main *:before {
   box-sizing: border-box;
 }
 .cs_main img {
   max-width: 100%;
   height: auto;
 }
-.cs_main input, .cs_main select, .cs_main textarea, .cs_main button {
+.cs_main input,
+.cs_main select,
+.cs_main textarea,
+.cs_main button {
   font-family: "bliss_proregular";
 }
 .cs_main p {
@@ -10669,7 +10889,8 @@ figure.card_img:before {
 .appointment_form_section .inpo_start {
   color: #F00;
 }
-.appointment_form_section #myc-prev-week, .appointment_form_section #myc-next-week {
+.appointment_form_section #myc-prev-week,
+.appointment_form_section #myc-next-week {
   width: 24px;
   height: 24px;
   border-radius: 3px;
@@ -10677,19 +10898,21 @@ figure.card_img:before {
   font-size: 0;
   position: relative;
 }
-.appointment_form_section #myc-prev-week:after, .appointment_form_section #myc-next-week:after {
+.appointment_form_section #myc-prev-week:after,
+.appointment_form_section #myc-next-week:after {
   content: "";
   width: 7px;
   height: 7px;
   display: block;
-  border: 2px solid #2B2A28;
+  border: 2px solid #2b2a28;
   border-width: 2px 2px 0 0;
   transform: rotate(-135deg);
   left: 10px;
   position: absolute;
   top: 7.5px;
 }
-.appointment_form_section #myc-prev-week#myc-next-week:after, .appointment_form_section #myc-next-week#myc-next-week:after {
+.appointment_form_section #myc-prev-week#myc-next-week:after,
+.appointment_form_section #myc-next-week#myc-next-week:after {
   transform: rotate(45deg);
   left: 7px;
 }
@@ -10713,7 +10936,9 @@ figure.card_img:before {
     font-size: 13px;
   }
 }
-.appointment_form_section #myc-week-container, .appointment_form_section .myc-date-header, .appointment_form_section #myc-available-time-container {
+.appointment_form_section #myc-week-container,
+.appointment_form_section .myc-date-header,
+.appointment_form_section #myc-available-time-container {
   border: 0 none;
 }
 .appointment_form_section #myc-dates-container #myc-dates-container {
@@ -10735,6 +10960,7 @@ figure.card_img:before {
   border-radius: 16px;
   flex-direction: column-reverse;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .appointment_form_section .myc-date-header * {
   color: #8D8D87;
@@ -10868,6 +11094,7 @@ figure.card_img:before {
 }
 .top-categories-wrap h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 40px;
   color: #2B2A28;
@@ -10890,7 +11117,7 @@ figure.card_img:before {
   }
 }
 .top-categories-wrap ul li {
-  border: 1px solid #E4E4DC;
+  border: 1px solid #e4e4dc;
   border-radius: 16px;
   width: 282px;
   height: 142px;
@@ -10909,6 +11136,7 @@ figure.card_img:before {
   display: block;
   font-size: 1.125em;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-top: 15px;
   color: #000;
 }
@@ -10918,6 +11146,7 @@ figure.card_img:before {
 }
 .featured-stores-wrapper h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 40px;
   color: #2B2A28;
@@ -10946,14 +11175,14 @@ figure.card_img:before {
 .featured-stores-wrapper .owl-carousel .owl-dots .owl-dot span {
   width: 25px;
   height: 15px;
-  background: #D9D9D9;
+  background: #d9d9d9;
   opacity: 1;
   display: block;
   border-radius: 50px;
   transition: all 0.4s ease-in-out;
 }
 .featured-stores-wrapper .owl-carousel .owl-dots .owl-dot.active span {
-  background: #2B2A28;
+  background: #2b2a28;
   width: 55px;
 }
 
@@ -10973,6 +11202,7 @@ figure.card_img:before {
 }
 .about-wasl-retail-wrap .about-wasl-retail h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 55px;
   color: #2B2A28;
@@ -11012,6 +11242,7 @@ figure.card_img:before {
 }
 .search-result-retail-wrap .search-result-details .search-result-left h3 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.375em;
   margin-bottom: 10px;
   line-height: 28px;
@@ -11024,6 +11255,7 @@ figure.card_img:before {
 }
 .search-result-retail-wrap .search-result-details .search-result-left span strong {
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .search-result-retail-wrap .search-result-details .search-result-right .mobile-buttons {
   display: none;
@@ -11033,7 +11265,7 @@ figure.card_img:before {
     display: block;
   }
   .search-result-retail-wrap .search-result-details .search-result-right .mobile-buttons a {
-    border: 1px solid #E4E4DC;
+    border: 1px solid #e4e4dc;
     border-radius: 8px;
     padding: 8px;
     display: inline-block;
@@ -11045,7 +11277,8 @@ figure.card_img:before {
     background: url(../images/filter.svg) no-repeat 10px center;
   }
 }
-.search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper h3, .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper button {
+.search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper h3,
+.search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper button {
   display: none;
 }
 .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper ul {
@@ -11057,6 +11290,7 @@ figure.card_img:before {
   font-size: 1em;
   line-height: 26px;
   font-weight: 500;
+  font-family: "bliss_medium";
   color: #2B2A28;
 }
 @media screen and (max-width: 767px) {
@@ -11075,12 +11309,14 @@ figure.card_img:before {
     position: fixed;
     border-radius: 16px;
   }
-  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal h3, .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal button {
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal h3,
+  .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal button {
     display: block;
   }
   .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal h3 {
     font-size: 1.125em;
     font-weight: 500;
+    font-family: "bliss_medium";
     color: #000;
     margin-bottom: 15px;
   }
@@ -11170,6 +11406,7 @@ figure.card_img:before {
 }
 .photos-section-retails h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 20px;
   color: #2B2A28;
@@ -11309,11 +11546,12 @@ figure.card_img:before {
   transition: all 0.4s ease-in-out;
 }
 .explore-more-stories-wrap .owl-carousel .owl-dots .owl-dot.active span {
-  background: #2B2A28;
+  background: #2b2a28;
   width: 55px;
 }
 .explore-more-stories-wrap h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 2.125em;
   margin-bottom: 10px;
   color: #2B2A28;
@@ -11526,6 +11764,7 @@ figure.card_img:before {
 .register_now_section .rf_card h2 {
   font-size: 30px;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 .register_now_section .rf_card .cs_radio_wrapper {
   margin-bottom: 30px;
@@ -11608,6 +11847,7 @@ figure.card_img:before {
 }
 .g_banner_section h2 {
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 32px;
   color: #FFFFFF;
   margin-bottom: 2rem;
@@ -11932,6 +12172,7 @@ figure.card_img:before {
 .abt_industrial h2 {
   font-size: 44px;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 18px;
 }
 .abt_industrial .cs_btn {
@@ -12088,6 +12329,7 @@ figure.card_img:before {
   gap: 8px;
   color: #2B2A28;
   font-weight: 500;
+  font-family: "bliss_medium";
   font-size: 18px;
   align-items: center;
   margin-bottom: 10px;
@@ -12193,6 +12435,7 @@ figure.card_img:before {
 .all_units_section .sec_head h3 {
   font-size: 22px;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 8px;
   color: #000;
 }
@@ -12229,6 +12472,7 @@ figure.card_img:before {
 .all_units_section .sec_content h3 {
   font-size: 18px;
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
   .all_units_section {
@@ -12374,6 +12618,7 @@ figure.card_img:before {
 .indus_head_section h2 {
   font-size: 30px;
   font-weight: 500;
+  font-family: "bliss_medium";
   margin-bottom: 20px;
 }
 .indus_head_section .sec_head {
@@ -12424,6 +12669,7 @@ figure.card_img:before {
   padding-top: 15px;
   font-size: 30px;
   font-weight: 500;
+  font-family: "bliss_medium";
   display: block;
 }
 @media screen and (max-width: 991px) {
@@ -12525,6 +12771,7 @@ figure.card_img:before {
 }
 .unit_content_section .payment_list li strong {
   font-weight: 500;
+  font-family: "bliss_medium";
 }
 @media screen and (max-width: 991px) {
   .unit_content_section .payment_list li {
@@ -12940,7 +13187,7 @@ figure.card_img:before {
   right: 30px;
   bottom: 10vh;
   z-index: 5;
-  background: #E4E4DC;
+  background: #e4e4dc;
   border: 1px solid #d8d8d8;
 }
 .chat_boat .chat_button img {
@@ -12954,7 +13201,7 @@ figure.card_img:before {
   flex-shrink: 0;
   border-radius: 16px;
   border: 1px solid #d8d8d8;
-  background: #E4E4DC;
+  background: #e4e4dc;
   box-shadow: -2px 4px 25px 0px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   display: flex;
@@ -12998,7 +13245,7 @@ figure.card_img:before {
   text-align: center;
 }
 .chat_boat .chat_boat_box .inner-box .welcome_screen .top_heading span {
-  color: #2B2A28;
+  color: #2b2a28;
   font-size: 1em;
   font-style: normal;
   font-weight: 300;
@@ -13014,7 +13261,7 @@ figure.card_img:before {
   width: 82px;
   height: 82px;
   flex-shrink: 0;
-  background: #E4E4DC;
+  background: #e4e4dc;
   border-radius: 100%;
   padding: 4px;
   box-sizing: border-box;
@@ -13044,7 +13291,7 @@ figure.card_img:before {
   gap: 16px;
 }
 .chat_boat .chat_boat_box .inner-box .welcome_screen .footer p {
-  color: #8D8D87;
+  color: #8d8d87;
   text-align: center;
   font-size: 0.875em;
   font-style: normal;
@@ -13142,7 +13389,7 @@ figure.card_img:before {
   border-radius: 10px;
 }
 .chat_boat .chat_boat_box .screen_view .wraper_chat::-webkit-scrollbar-thumb {
-  background: #E4E4DC;
+  background: #e4e4dc;
   border-radius: 10px;
 }
 .chat_boat .chat_boat_box .screen_view .wraper_chat::-webkit-scrollbar-thumb:hover {
@@ -13152,7 +13399,7 @@ figure.card_img:before {
   position: sticky;
   text-align: center;
   display: block;
-  color: #2B2A28;
+  color: #2b2a28;
   font-size: 0.875em;
   font-style: normal;
   font-weight: 600;
@@ -13174,7 +13421,7 @@ figure.card_img:before {
   padding: 0;
   flex-shrink: 0;
   margin: 0;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-radius: 100px;
 }
 .chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn figure img {
@@ -13206,32 +13453,34 @@ figure.card_img:before {
   flex-direction: column;
   gap: 7px;
 }
-.chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp button, .chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp .button {
+.chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp button,
+.chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp .button {
   display: flex;
   width: 100%;
   height: 38px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  color: #2B2A28;
+  color: #2b2a28;
   text-align: center;
   font-size: 0.875em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   border-radius: 8px;
-  background: #E4E4DC;
+  background: #e4e4dc;
   transition: all 0.4s ease-in-out;
   border: none;
 }
-.chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp button:hover, .chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp .button:hover {
-  background: #D9D9D9;
+.chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp button:hover,
+.chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .btn_grp .button:hover {
+  background: #d9d9d9;
 }
 .chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn section .time {
   position: absolute;
   bottom: -22px;
   left: 0;
-  color: #8D8D87;
+  color: #8d8d87;
   font-size: 0.75em;
   font-style: normal;
   font-weight: 400;
@@ -13278,14 +13527,15 @@ figure.card_img:before {
 }
 .chat_boat .chat_boat_box .screen_view .footer_control .input_box ::placeholder,
 .chat_boat .chat_boat_box .screen_view .footer_control .input_box ::-ms-input-placeholder {
-  color: #8D8D87;
+  color: #8d8d87;
   font-size: 1em;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   opacity: 0.7;
 }
-.chat_boat .chat_boat_box .screen_view .footer_control button, .chat_boat .chat_boat_box .screen_view .footer_control .cs_bt {
+.chat_boat .chat_boat_box .screen_view .footer_control button,
+.chat_boat .chat_boat_box .screen_view .footer_control .cs_bt {
   padding: 0;
   margin: 0;
   background: none;
@@ -13327,7 +13577,7 @@ figure.card_img:before {
   line-height: 24px;
 }
 .chat_boat .chat_boat_box .start_chat section p {
-  color: #8D8D87;
+  color: #8d8d87;
   font-size: 0.875em;
   font-style: normal;
   font-weight: 300;
@@ -13344,9 +13594,10 @@ figure.card_img:before {
   font-size: 1em;
   font-style: normal;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
-  background: #2B2A28;
+  background: #2b2a28;
   border: none;
   transition: all 0.4s ease-in-out;
 }

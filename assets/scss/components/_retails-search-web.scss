@@ -1,168 +1,176 @@
-.search-result-retail-wrap{
-    .search-result-details{
-         margin:32px 0;
-         display: flex;
-         justify-content: space-between;
-         .search-result-left{
-             h3{
-                font-weight: $fontweight2;
-                font-size: $font22;
-                margin-bottom: 10px;
-                line-height: 28px;
-                color:$darkBlack;
-             }
-             span{
-                font-size: $font14;
-                line-height: 16px;
-                color:$black;
-                strong{
-                    font-weight: $fontweight2;
-                }
-             }
-         }
-         .search-result-right{
-            .mobile-buttons{
-                 display: none;
-            }
-            @include respond(phone_land) {
-                .mobile-buttons{
-                    display: block;
-                    a{
-                        border: 1px solid #E4E4DC;
-                        border-radius: 8px;
-                        padding: 8px;
-                        display: inline-block;
-                        font-size: $font14;
-                        color:$black;
-                        &.retail-filter-icon{
-                            padding: 8px 8px 8px 35px;
-                            background: url(../images/filter.svg) no-repeat 10px center;
-                        }
-                    }
-                }
-            } 
-            .alphabet-wrapper{
-                h3,button{
-                  display: none;
-                }
-                ul{
-                    display: flex;
-                    justify-content: space-between;
-                    gap:8px;
-                    li{
-                        a{
-                            font-size: $font16;
-                            line-height: 26px;
-                            font-weight: $fontweight2;
-                            color:$black;
-                        }
-                    }
-                }
-                @include respond(phone_land) {
-                    display: none;
-                    &.modal{
-                        display: block;
-                        background: $bannerBoxColor;
-                        padding: 16px;
-                        left: 50%;
-                        top: 50%;
-                        z-index: 11;
-                        width:285px;
-                        transform: translate(-50%,-50%);
-                        position: fixed;
-                        border-radius: 16px;
-                        h3,button{
-                            display: block;
-                        }
-                        h3{
-                            font-size: $font18;
-                            font-weight: $fontweight2;
-                            color:$darkBlack;
-                            margin-bottom: 15px;
-                        }
-                        button{
-                            width: 100%;
-                            padding: 16px;
-                            background: $black;
-                            border: none;
-                            border-radius: 8px;
-                            font-weight: $fontweight3;
-                            color:$white;
-                            font-size: $font15;
-                            margin-top: 15px;
-                        }
-                        ul{
-                             flex-wrap: wrap;
-                             justify-content: center;
-                        }
-                    }
-                } 
-            }
-         }
-    }
-}
-.search-retails-grid-view{
+.search-result-retail-wrap {
+  .search-result-details {
+    margin: 32px 0;
     display: flex;
-    gap:30px;
-    flex-wrap: wrap;
-    @include respond(phone_land) {
-        display: block;
-    } 
-    .search-retails-grid{
-         position: relative;
-         flex-basis: 31.5%;
-         @include respond(phone_land) {
-            margin-bottom: 15px;
-        } 
-         figure{
-            img{
-                width: 100%;
-            }
-         }
-         figcaption{
-            position: absolute;
-            color:#fff;
-            font-family: 'Roboto';  
-            font-weight: 600;
-            font-size:$font18;
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            box-sizing: border-box;
-            background: linear-gradient(0deg, #000000 0%, rgba(59, 59, 59, 0.18) 100%);
-            border-radius: 16px 16px;
-            padding:15px 12px;
-         }
-    }
-}
-
-
-.retail-search-wrapper{
-     margin:0 0 75px;
-}
-
-
-.global-search{
-        &.search-retails{
-             @include respond(phone_land) {
-                display: none;
-            } 
-             &.modal{
-                 display: block;
-                 position: fixed;
-                 top:50%;
-                 left: 50%;
-                 transform: translate(-50%,-50%);
-                 width: 400px;
-                 z-index: 11;
-             }
-             .search-section.search-page{
-                @include respond(phone_land) {
-                    margin-top: 0;
-                    .form-section .form-raper .form-cols-out{
-                         flex: 100%;
-                    }
-                } 
-             }
+    justify-content: space-between;
+    .search-result-left {
+      h3 {
+        font-weight: $fontweight2;
+        font-family: $fontmedium;
+        font-size: $font22;
+        margin-bottom: 10px;
+        line-height: 28px;
+        color: $darkBlack;
+      }
+      span {
+        font-size: $font14;
+        line-height: 16px;
+        color: $black;
+        strong {
+          font-weight: $fontweight2;
+          font-family: $fontmedium;
         }
-}  
+      }
+    }
+    .search-result-right {
+      .mobile-buttons {
+        display: none;
+      }
+      @include respond(phone_land) {
+        .mobile-buttons {
+          display: block;
+          a {
+            border: 1px solid #e4e4dc;
+            border-radius: 8px;
+            padding: 8px;
+            display: inline-block;
+            font-size: $font14;
+            color: $black;
+            &.retail-filter-icon {
+              padding: 8px 8px 8px 35px;
+              background: url(../images/filter.svg) no-repeat 10px center;
+            }
+          }
+        }
+      }
+      .alphabet-wrapper {
+        h3,
+        button {
+          display: none;
+        }
+        ul {
+          display: flex;
+          justify-content: space-between;
+          gap: 8px;
+          li {
+            a {
+              font-size: $font16;
+              line-height: 26px;
+              font-weight: $fontweight2;
+              font-family: $fontmedium;
+              color: $black;
+            }
+          }
+        }
+        @include respond(phone_land) {
+          display: none;
+          &.modal {
+            display: block;
+            background: $bannerBoxColor;
+            padding: 16px;
+            left: 50%;
+            top: 50%;
+            z-index: 11;
+            width: 285px;
+            transform: translate(-50%, -50%);
+            position: fixed;
+            border-radius: 16px;
+            h3,
+            button {
+              display: block;
+            }
+            h3 {
+              font-size: $font18;
+              font-weight: $fontweight2;
+              font-family: $fontmedium;
+              color: $darkBlack;
+              margin-bottom: 15px;
+            }
+            button {
+              width: 100%;
+              padding: 16px;
+              background: $black;
+              border: none;
+              border-radius: 8px;
+              font-weight: $fontweight3;
+              color: $white;
+              font-size: $font15;
+              margin-top: 15px;
+            }
+            ul {
+              flex-wrap: wrap;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.search-retails-grid-view {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  @include respond(phone_land) {
+    display: block;
+  }
+  .search-retails-grid {
+    position: relative;
+    flex-basis: 31.5%;
+    @include respond(phone_land) {
+      margin-bottom: 15px;
+    }
+    figure {
+      img {
+        width: 100%;
+      }
+    }
+    figcaption {
+      position: absolute;
+      color: #fff;
+      font-family: "Roboto";
+      font-weight: 600;
+      font-size: $font18;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      box-sizing: border-box;
+      background: linear-gradient(
+        0deg,
+        #000000 0%,
+        rgba(59, 59, 59, 0.18) 100%
+      );
+      border-radius: 16px 16px;
+      padding: 15px 12px;
+    }
+  }
+}
+
+.retail-search-wrapper {
+  margin: 0 0 75px;
+}
+
+.global-search {
+  &.search-retails {
+    @include respond(phone_land) {
+      display: none;
+    }
+    &.modal {
+      display: block;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      z-index: 11;
+    }
+    .search-section.search-page {
+      @include respond(phone_land) {
+        margin-top: 0;
+        .form-section .form-raper .form-cols-out {
+          flex: 100%;
+        }
+      }
+    }
+  }
+}
