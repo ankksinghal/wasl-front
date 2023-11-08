@@ -1,0 +1,93 @@
+.login-page{
+    &.top-border{
+        border-top: 1px solid #E4E4DC;
+        margin-top: 15px;
+        padding:100px 0 0;
+        @include respond(phone_land) {
+            padding:50px 0 0;
+        }
+        .main-login{
+           &.project-view{
+            .left-section {
+               flex: 0 0 38%;
+            }
+           }
+        }
+    }
+}
+.appointment-page-wrapper{
+    flex: 0 0 55%;
+    @include respond(tab) {
+        flex: inherit;
+      }
+     h3{
+        font-size:$font39;
+        font-weight: 300;
+        font-family: $fontlight;
+        color: $black;
+        margin-bottom: 15px;
+        @include respond(phone_land) {
+            font-size:$font24;
+        }
+     }
+     h2{
+        font-size:$font39;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 90px;
+        @include respond(phone_land) {
+            font-size:$font24;
+            margin-bottom: 35px;
+        }
+     }
+     p{
+        font-size:$font22;
+        font-weight: 300;
+        font-family: $fontlight;
+        color: $black;
+        margin-bottom: 23px;
+        @include respond(phone_land) {
+            font-size:$font18;
+        }
+     }
+}
+
+.appointment-page-box-wrap{ 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     @include respond(phone_land) {
+       display: block;
+       width: 250px;
+       margin: 0 auto 15px;
+    }
+     .virtual-appointment{
+        border-radius: 16px;
+        background-color: $bannerBoxColor;
+        padding:30px;
+        text-align: center;
+        @include respond(phone_land) {
+            margin-bottom: 15px;
+        }
+        img{
+            margin-bottom: 10px;
+        }
+        h3{
+            color:$darkBlack;
+            font-size: $font24;
+            margin-bottom: 10px;
+            @include respond(phone_land) {
+                font-size:$font18;
+            }
+        }
+        span{
+            color:$black;
+            font-size: $font16;
+            font-weight: 300;
+            font-family: $fontlight;
+            @include respond(phone_land) {
+                font-size:$font14;
+            }
+        }
+     }
+}
