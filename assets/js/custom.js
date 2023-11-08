@@ -362,7 +362,7 @@ $(document).ready(function () {
   $("[data-csModal]").on("click", function () {
     let modalId = $(this).attr("data-csModal"); 
     $("#" + modalId + "").addClass("show");
-    $("body").toggleClass("modal__active"); 
+    // $("body").toggleClass("modal__active"); 
   });
   $(".cs__modal").click(function (event) {
     if (

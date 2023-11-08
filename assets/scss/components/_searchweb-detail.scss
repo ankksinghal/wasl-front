@@ -437,9 +437,10 @@
 }
 
 // =================
-#modal360{
+#modal360{ 
   .modal__content{
     padding: 0;
+
   }
   .modal__close{
     filter: invert(1);
@@ -447,10 +448,10 @@
   .modal__content{
     border: 0 none;
   }
-  .figure360{
+  .figure360{ 
     img{
-      display: block;
-
+      display: block; 
+      max-width: 100%;
     }
   }
 }

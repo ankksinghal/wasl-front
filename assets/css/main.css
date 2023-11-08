@@ -8555,6 +8555,7 @@ span.tooltip:hover .pop-over {
 }
 #modal360 .figure360 img {
   display: block;
+  max-width: 100%;
 }
 
 .enquiry-form {
