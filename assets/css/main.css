@@ -8094,6 +8094,21 @@ span.tooltip:hover .pop-over {
   min-width: 80px;
 }
 
+.cs_columnset .cs_columnset_wrapper {
+  flex: 0 0 100%;
+  overflow-x: auto;
+}
+@media screen and (max-width: 767px) {
+  .cs_columnset .cs_columnset_wrapper {
+    padding-bottom: 10px;
+  }
+}
+.cs_columnset .cs_columnset_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 600px;
+}
 .cs_columnset .divider:first-child {
   flex: 0 0 80px;
   max-width: 80px;
