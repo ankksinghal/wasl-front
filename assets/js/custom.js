@@ -216,7 +216,14 @@ $(document).ready(function () {
     $(".overlay").removeClass("slide");
     $("body").removeClass("slide");
   });
-
+// =============Mobile Sub menu===============
+if ($(window).width() < 767) {
+  $(".header-section .has_menu").on("click", function () {
+    $(".header-section .has_menu").not(this).find(".cs_submenu").slideUp(500);
+    $(this).find(".cs_submenu").slideToggle(500);
+  });
+}
+// ===================
   $(".overlay").click(function () {
     $("#responsive-nav").removeClass("slide");
     $("#responsive-nav").removeClass("slide");
