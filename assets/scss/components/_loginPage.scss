@@ -1689,6 +1689,19 @@ span.tooltip {
 }
 
 .cs_columnset{
+  .cs_columnset_wrapper{
+    flex: 0 0 100%;
+    overflow-x: auto;
+    @include respond(phone_land){
+      padding-bottom: 10px;
+    }
+  }
+  .cs_columnset_list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 600px;
+  }
   .divider{
     &:first-child{
       flex: 0 0 80px;
