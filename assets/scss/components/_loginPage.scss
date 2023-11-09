@@ -258,7 +258,7 @@
             color: $color8;
           }
           strong {
-            font-weight: $fontweight4;
+             font-family: $fontmedium;
           }
         }
         .input-box {
@@ -1282,7 +1282,7 @@ span.tooltip {
     flex-direction: column;
     min-width: 120px;
     strong {
-      font-weight: $fontweight4;
+      font-family: $fontmedium;
       color: $orange;
     }
   }

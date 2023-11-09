@@ -165,7 +165,7 @@ header {
               @include respond(tab_land){
                 padding-right: 1.2rem;
                 &:after{
-                  right: 6px; 
+                  right: 6px;
                 }
               }
               @media all and (min-width:768px) {
