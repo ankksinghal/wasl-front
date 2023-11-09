@@ -2513,19 +2513,24 @@
   }
 }
 // ==========Fixes css===========
-body .master-container  {
-  .select2-container--default .select2-selection--single .select2-selection__rendered{
-    color: $black;
-    opacity: 0.7;
-  }
-  .wasl-search-form .advanced-filters-box{
-     .select2-container--default .select2-selection--single{
-        line-height: 48;
-        height: 48px;
-        border-radius: 8px;
-     }
-  }
-  .advanced-filters-box .select2-container--default .select2-selection--single .select2-selection__rendered{
-    line-height: 48px;
+body {
+  .master-container  {
+    .select2-container--default .select2-selection--single .select2-selection__rendered{
+      color: $black;
+      opacity: 0.7;
+    }
+    .wasl-search-form .advanced-filters-box{
+      .select2-container--default .select2-selection--single{
+          line-height: 48;
+          height: 48px;
+          border-radius: 8px;
+      }
+    }
+    .advanced-filters-box .select2-container--default .select2-selection--single .select2-selection__rendered{
+      line-height: 48px;
+    }
+    .select2-container--default .select2-selection--single .select2-selection__arrow{
+      height: 40px;
+    }
   }
 }

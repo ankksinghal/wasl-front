@@ -251,7 +251,8 @@ ul.breadcrumb {
       margin-bottom: 1rem;
     }
     strong {
-      font-weight: 600;
+      // font-weight: 600;
+      font-family: $fontmedium;
     }
   }
 }
