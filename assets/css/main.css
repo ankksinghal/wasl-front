@@ -14077,4 +14077,29 @@ figure.card_img:before {
   .appointment-page-box-wrap .virtual-appointment span {
     font-size: 0.875em;
   }
+}
+
+.error-page-wrapper {
+  padding: 100px 0;
+  text-align: center;
+}
+.error-page-wrapper img {
+  margin: 0 auto 10px;
+  width: 175px;
+}
+.error-page-wrapper h2 {
+  color: #1C190E;
+  font-size: 1.875em;
+  margin-bottom: 15px;
+}
+.error-page-wrapper span {
+  color: #8D8D87;
+  font-size: 1.25em;
+  margin-bottom: 30px;
+  display: block;
+}
+.error-page-wrapper .cs_btn {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 14px 40px;
 }/*# sourceMappingURL=main.css.map */
