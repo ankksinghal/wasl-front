@@ -1,0 +1,24 @@
+.error-page-wrapper{
+    padding:100px 0;
+    text-align: center;
+    img{
+         margin: 0 auto 10px;
+         width: 175px;
+    }
+    h2{
+        color:$Primary;
+        font-size: $font30;
+        margin-bottom: 15px;
+    }
+    span{
+        color:$logoName;
+        font-size: $font20;
+        margin-bottom: 30px;
+        display: block;
+    }
+    .cs_btn{
+         font-weight: $fontweight2;
+         font-size: $font16;
+         padding: 14px 40px;
+    }
+}
