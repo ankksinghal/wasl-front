@@ -229,7 +229,8 @@
         color: #a79f92;
       }
       strong {
-        font-weight: 600;
+        // font-weight: 600;
+        font-family: $fontmedium;
       }
     }
     .input-box {
