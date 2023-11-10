@@ -123,6 +123,7 @@
                 color: $black;
                 font-size: $font30;
                 font-style: normal;
+                font-family: $fontlight;
                 font-weight: $fontweight1;
                 line-height: 45px;
                 @include respond(phone_land) {
@@ -136,6 +137,7 @@
                 left: 0px;
                 top: 0;
                 display: flex;
+                font-family: $fontlight;
                 align-items: center;
                 justify-content: center;
                 border-radius: 11px 0px 0px 0;
