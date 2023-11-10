@@ -10796,32 +10796,32 @@ ul.breadcrumb li a:hover {
   background: url(../../../assets/images/icon-minus.svg) no-repeat left center;
 }
 
-.faqstyle_ad .accordion-item .accordion-content p {
+.faq-page-wrapper .accordion-item .accordion-content p {
   line-height: 1.6;
   margin-bottom: 1rem;
 }
-.faqstyle_ad .accordion-item .accordion-content h2, .faqstyle_ad .accordion-item .accordion-content h3 {
+.faq-page-wrapper .accordion-item .accordion-content h2, .faq-page-wrapper .accordion-item .accordion-content h3 {
   font-size: 22px;
   font-family: "bliss_medium";
 }
-.faqstyle_ad .accordion-item .accordion-content h4, .faqstyle_ad .accordion-item .accordion-content h5 {
+.faq-page-wrapper .accordion-item .accordion-content h4, .faq-page-wrapper .accordion-item .accordion-content h5 {
   font-size: 18px;
   font-family: "bliss_medium";
 }
-.faqstyle_ad .accordion-item .accordion-content a {
+.faq-page-wrapper .accordion-item .accordion-content a {
   color: #DCCCC0;
   text-decoration: underline;
 }
-.faqstyle_ad .accordion-item .accordion-content ul, .faqstyle_ad .accordion-item .accordion-content ol {
+.faq-page-wrapper .accordion-item .accordion-content ul, .faq-page-wrapper .accordion-item .accordion-content ol {
   padding-left: 1.5rem;
   list-style-type: disc;
   margin-bottom: 1rem;
 }
-.faqstyle_ad .accordion-item .accordion-content ul li, .faqstyle_ad .accordion-item .accordion-content ol li {
+.faq-page-wrapper .accordion-item .accordion-content ul li, .faq-page-wrapper .accordion-item .accordion-content ol li {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
-.faqstyle_ad .accordion-item .accordion-content ol {
+.faq-page-wrapper .accordion-item .accordion-content ol {
   list-style-type: decimal;
 }
 
