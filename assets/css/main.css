@@ -5993,6 +5993,7 @@ footer .copyright-section p {
   width: 44px;
   font-size: 1em;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 44px;
   text-align: center;
   color: #2B2A28;
@@ -10803,10 +10804,14 @@ ul.breadcrumb li a:hover {
 .faq-page-wrapper .accordion-item .accordion-content h2, .faq-page-wrapper .accordion-item .accordion-content h3 {
   font-size: 22px;
   font-family: "bliss_medium";
+  margin-bottom: 0.75rem;
 }
 .faq-page-wrapper .accordion-item .accordion-content h4, .faq-page-wrapper .accordion-item .accordion-content h5 {
   font-size: 18px;
   font-family: "bliss_medium";
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0.75rem;
 }
 .faq-page-wrapper .accordion-item .accordion-content a {
   color: #DCCCC0;
@@ -10816,6 +10821,7 @@ ul.breadcrumb li a:hover {
   padding-left: 1.5rem;
   list-style-type: disc;
   margin-bottom: 1rem;
+  background: #111111;
 }
 .faq-page-wrapper .accordion-item .accordion-content ul li, .faq-page-wrapper .accordion-item .accordion-content ol li {
   margin-bottom: 0.5rem;

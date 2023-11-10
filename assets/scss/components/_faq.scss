@@ -63,17 +63,21 @@
 .faq-page-wrapper{
   .accordion-item{
     .accordion-content { 
-      p{
+      p{ 
         line-height: 1.6;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem;  
       }
       h2,h3{
         font-size: 22px; 
         font-family:$fontmedium;
+        margin-bottom: 0.75rem; 
       }
       h4,h5{
         font-size: 18px; 
         font-family: $fontmedium;
+        background: transparent;
+        padding: 0;  
+        margin-bottom: 0.75rem;  
       }
       a{
         color: $headerBorder ;  
@@ -83,6 +87,7 @@
         padding-left: 1.5rem;
         list-style-type: disc;  
         margin-bottom: 1rem; 
+        background: #111111;
         li{
           margin-bottom: 0.5rem;  
           line-height: 1.5;
