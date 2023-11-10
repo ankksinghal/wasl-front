@@ -3736,6 +3736,22 @@ body .master-container .advanced-filters-box .select2-container--default .select
 body .master-container .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 40px;
 }
+body .master-container .custom-dropdown-multi > .ms-options-wrap > button {
+  height: 48px;
+}
+body .master-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 15px;
+}
+body .master-container .select2-container--default .select2-selection--single .select2-selection__arrow b {
+  margin-top: -6px;
+  width: 7px;
+  right: 15px;
+  height: 7px;
+  border: 1px solid currentColor;
+  transform: rotate(45deg);
+  border-width: 0 1px 1px 0;
+  margin-left: 10px;
+}
 body .master-container .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .view-details-wrap, body .master-container .search-map-section .all-units-cards .view-details-wrap {
   padding-top: 16px;
 }
