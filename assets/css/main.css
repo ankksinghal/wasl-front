@@ -14160,7 +14160,7 @@ figure.card_img:before {
 .appointment_page {
   border-top: 1px solid #E4E4DC;
   margin: 30px 0 0;
-  padding-top: 30px;
+  padding-top: 0px;
   margin-bottom: 50px;
 }
 
@@ -14168,11 +14168,12 @@ figure.card_img:before {
   display: flex;
   gap: 18px;
   flex-direction: column;
+  margin-top: 30px;
 }
 .appointment_accordain .accordion-tab {
   border-radius: 12px;
   border: 1px solid #CFCFCF;
-  background: #FFF;
+  background: #FFFFFF;
   overflow: hidden;
 }
 .appointment_accordain .accordion-tab header {
@@ -14183,12 +14184,22 @@ figure.card_img:before {
   justify-content: space-between;
   cursor: pointer;
 }
+@media screen and (max-width: 767px) {
+  .appointment_accordain .accordion-tab header {
+    padding: 0px 18px 0px 62px;
+  }
+}
 .appointment_accordain .accordion-tab header h2 {
-  color: #2B2A28;
-  font-size: 30px;
+  color: #000;
+  font-size: 1.875em;
   font-style: normal;
   font-weight: 300;
   line-height: 45px;
+}
+@media screen and (max-width: 767px) {
+  .appointment_accordain .accordion-tab header h2 {
+    font-size: 1em;
+  }
 }
 .appointment_accordain .accordion-tab header .counter {
   position: absolute;
@@ -14202,10 +14213,17 @@ figure.card_img:before {
   border-radius: 11px 0px 0px 0;
   border-right: 0.5px solid #B4B4B4;
   background: #E4E4DC;
-  color: #2B2A28;
-  font-size: 30px;
+  color: #000;
+  font-size: 1.875em;
   font-style: normal;
   font-weight: 300;
+}
+@media screen and (max-width: 767px) {
+  .appointment_accordain .accordion-tab header .counter {
+    font-size: 1em;
+    width: 45px;
+    height: 45px;
+  }
 }
 .appointment_accordain .accordion-tab header .arrow {
   position: absolute;
@@ -14218,13 +14236,25 @@ figure.card_img:before {
   justify-content: center;
   transition: all 0.4s ease-in-out;
 }
+@media screen and (max-width: 767px) {
+  .appointment_accordain .accordion-tab header .arrow {
+    font-size: 1em;
+    width: 45px;
+    height: 45px;
+  }
+}
 .appointment_accordain .accordion-tab header .arrow img {
   width: 48px;
+}
+@media screen and (max-width: 767px) {
+  .appointment_accordain .accordion-tab header .arrow img {
+    width: 30px;
+  }
 }
 .appointment_accordain .accordion-tab.active {
   border-radius: 12px;
   border: 0.5px solid #1C190E;
-  background: #FFF;
+  background: #FFFFFF;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
 }
 .appointment_accordain .accordion-tab.active .arrow img {
@@ -14234,10 +14264,26 @@ figure.card_img:before {
   display: none;
   padding: 0 95px 22px 122px;
 }
+@media screen and (max-width: 991px) {
+  .appointment_accordain .accordion-tab .accordion_body {
+    padding-right: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .appointment_accordain .accordion-tab .accordion_body {
+    padding: 0 15px 22px 62px;
+  }
+  .appointment_accordain .accordion-tab .accordion_body.calendar_sec {
+    padding: 0 15px 22px 15px;
+  }
+  .appointment_accordain .accordion-tab .accordion_body.calendar_sec .calendar-wrapper {
+    left: -15px;
+  }
+}
 .appointment_accordain .accordion-tab .accordion_body h2 {
   margin: 6px 0;
-  color: #2b2a28;
-  font-size: 14px;
+  color: #000;
+  font-size: 0.875em;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
@@ -14258,8 +14304,8 @@ figure.card_img:before {
 }
 .inner_accordion .inner_accord_box .inner_accord_header {
   height: 49px;
-  color: #2B2A28;
-  font-size: 18px;
+  color: #000;
+  font-size: 1.125em;
   font-style: normal;
   font-weight: 500;
   line-height: 27px;
@@ -14268,6 +14314,11 @@ figure.card_img:before {
   gap: 8px;
   padding: 0 15px;
   cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .inner_accordion .inner_accord_box .inner_accord_header {
+    font-size: 0.875em;
+  }
 }
 .inner_accordion .inner_accord_box .inner_accord_header .arrow-inn {
   height: 20px;
@@ -14296,7 +14347,7 @@ figure.card_img:before {
 }
 .radio_listing label {
   color: #3A3A3C;
-  font-size: 14px;
+  font-size: 0.875em;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
@@ -14316,8 +14367,18 @@ figure.card_img:before {
 .time_picker {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  max-width: 135px;
+  gap: 32px;
+  width: 135px;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 767px) {
+  .time_picker {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+  }
 }
 .time_picker label {
   width: 100%;
@@ -14332,13 +14393,21 @@ figure.card_img:before {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 767px) {
+  .time_picker label {
+    width: 105px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+}
 .time_picker label input[type=radio] {
   display: none;
 }
 .time_picker label span {
-  color: #2B2A28;
+  color: #000;
   text-align: center;
-  font-size: 16px;
+  font-size: 1em;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
@@ -14349,11 +14418,36 @@ figure.card_img:before {
   top: 0;
   left: 0;
   content: " ";
-  background: #2B2A28;
+  background: #000;
   right: 0;
   bottom: 0;
-  color: #fff;
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.error-page-wrapper {
+  padding: 100px 0;
+  text-align: center;
+}
+.error-page-wrapper img {
+  margin: 0 auto 10px;
+  width: 175px;
+}
+.error-page-wrapper h2 {
+  color: #1C190E;
+  font-size: 1.875em;
+  margin-bottom: 15px;
+}
+.error-page-wrapper span {
+  color: #8D8D87;
+  font-size: 1.25em;
+  margin-bottom: 30px;
+  display: block;
+}
+.error-page-wrapper .cs_btn {
+  font-weight: 500;
+  font-size: 1em;
+  padding: 14px 40px;
 }/*# sourceMappingURL=main.css.map */
