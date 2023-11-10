@@ -10801,6 +10801,10 @@ ul.breadcrumb li a:hover {
   line-height: 1.6;
   margin-bottom: 1rem;
 }
+.faq-page-wrapper .accordion-item .accordion-content h1 {
+  font-size: 26px;
+  margin-bottom: 0.1rem;
+}
 .faq-page-wrapper .accordion-item .accordion-content h2, .faq-page-wrapper .accordion-item .accordion-content h3 {
   font-size: 22px;
   font-family: "bliss_medium";
