@@ -93,7 +93,7 @@
     min-height: 175px;
   }
 }
-.cs_ratio {
+.cs_ratio { 
   position: relative;
   display: block;
   overflow: hidden;
@@ -108,9 +108,10 @@
     height: 100%;
     object-fit: cover;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: 50% !important;
+    top: 50%!important;
+    max-height: none !important;
+    transform: translate(-50%, -50%)!important;
   }
   &.ratio_eq:before {
     padding-top: 100%;
