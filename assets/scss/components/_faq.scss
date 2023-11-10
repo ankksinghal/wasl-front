@@ -21,9 +21,13 @@
       font-size: $font16;
       color: $black;
       line-height: 24px;
+      margin-bottom: 16px;
+      p:last-child{
+        margin: 0;
+      }
       a {
         color: $black;
-        text-decoration: underline;
+        text-decoration: underline;  
       }
     }
     &.active {
@@ -36,6 +40,9 @@
     border: 1px solid #efefef;
     border-radius: 10px;
     margin-bottom: 15px;
+    .accordion-header {
+      margin: 0;
+    }
     h4 {
       color: $black;
       opacity: 0.7;
@@ -46,6 +53,43 @@
       &.active {
         background: url(../../../assets/images/icon-minus.svg) no-repeat left
           center;
+      }
+    }
+  }
+}
+
+
+
+body .faqstyle_ad{
+  .accordion-item{
+    .accordion-content {
+      p{
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+      h2,h3{
+        font-size: 22px; 
+        font-family:$fontmedium;
+      }
+      h4,h5{
+        font-size: 18px; 
+        font-family: $fontmedium;
+      }
+      a{
+        color: $headerBorder ;  
+        text-decoration: underline;
+      }
+      ul,ol{
+        padding-left: 1.5rem;
+        list-style-type: disc;  
+        margin-bottom: 1rem; 
+        li{
+          margin-bottom: 0.5rem;  
+          line-height: 1.5;
+        }
+      }
+      ol{
+        list-style-type:decimal; 
       }
     }
   }

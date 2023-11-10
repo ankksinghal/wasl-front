@@ -3736,6 +3736,9 @@ body .master-container .advanced-filters-box .select2-container--default .select
 body .master-container .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: 40px;
 }
+body .master-container .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .view-details-wrap, body .master-container .search-map-section .all-units-cards .view-details-wrap {
+  padding-top: 16px;
+}
 
 .upcoming-projects {
   display: flex;
@@ -5989,7 +5992,7 @@ footer .copyright-section p {
   height: 44px;
   width: 44px;
   font-size: 1em;
-  font-family: "bliss_medium";
+  font-weight: 500;
   line-height: 44px;
   text-align: center;
   color: #2B2A28;
@@ -10760,6 +10763,10 @@ ul.breadcrumb li a:hover {
   font-size: 1em;
   color: #2B2A28;
   line-height: 24px;
+  margin-bottom: 16px;
+}
+.faq-page-wrapper .accordion-content p p:last-child {
+  margin: 0;
 }
 .faq-page-wrapper .accordion-content p a {
   color: #2B2A28;
@@ -10775,6 +10782,9 @@ ul.breadcrumb li a:hover {
   border-radius: 10px;
   margin-bottom: 15px;
 }
+.faq-page-wrapper .accordion-item .accordion-header {
+  margin: 0;
+}
 .faq-page-wrapper .accordion-item h4 {
   color: #2B2A28;
   opacity: 0.7;
@@ -10784,6 +10794,35 @@ ul.breadcrumb li a:hover {
 }
 .faq-page-wrapper .accordion-item h4.active {
   background: url(../../../assets/images/icon-minus.svg) no-repeat left center;
+}
+
+body .faqstyle_ad .accordion-item .accordion-content p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+body .faqstyle_ad .accordion-item .accordion-content h2, body .faqstyle_ad .accordion-item .accordion-content h3 {
+  font-size: 22px;
+  font-family: "bliss_medium";
+}
+body .faqstyle_ad .accordion-item .accordion-content h4, body .faqstyle_ad .accordion-item .accordion-content h5 {
+  font-size: 18px;
+  font-family: "bliss_medium";
+}
+body .faqstyle_ad .accordion-item .accordion-content a {
+  color: #DCCCC0;
+  text-decoration: underline;
+}
+body .faqstyle_ad .accordion-item .accordion-content ul, body .faqstyle_ad .accordion-item .accordion-content ol {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+body .faqstyle_ad .accordion-item .accordion-content ul li, body .faqstyle_ad .accordion-item .accordion-content ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+body .faqstyle_ad .accordion-item .accordion-content ol {
+  list-style-type: decimal;
 }
 
 .owner-services-wrapper {
@@ -12525,9 +12564,10 @@ figure.card_img:before {
   -o-object-fit: cover;
      object-fit: cover;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50% !important;
+  top: 50% !important;
+  max-height: none !important;
+  transform: translate(-50%, -50%) !important;
 }
 .cs_ratio.ratio_eq:before {
   padding-top: 100%;
