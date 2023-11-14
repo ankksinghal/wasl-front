@@ -10823,11 +10823,11 @@ ul.breadcrumb li a:hover {
 }
 
 .faq-page-wrapper {
-  padding: 0 0 100px;
+  padding: 0;
 }
 .faq-page-wrapper .accordion-content {
   display: none;
-  padding: 20px 10px 10px 35px;
+  padding: 20px 10px 0px 35px;
   transition: left 0.3s ease-in-out;
 }
 .faq-page-wrapper .accordion-content p {
@@ -10869,9 +10869,14 @@ ul.breadcrumb li a:hover {
   background: url(../../../assets/images/icon-minus.svg) no-repeat left center;
 }
 
+.faq-page-wrapper.mt-33 {
+  margin-top: 33px;
+}
 .faq-page-wrapper .accordion-item .accordion-content p {
   line-height: 1.6;
-  margin-bottom: 1rem;
+}
+.faq-page-wrapper .accordion-item .accordion-content p:last-child {
+  margin-bottom: 0;
 }
 .faq-page-wrapper .accordion-item .accordion-content h1 {
   font-size: 26px;
@@ -10890,7 +10895,7 @@ ul.breadcrumb li a:hover {
   margin-bottom: 0.75rem;
 }
 .faq-page-wrapper .accordion-item .accordion-content a {
-  color: #DCCCC0;
+  color: #BC8A55;
   text-decoration: underline;
 }
 .faq-page-wrapper .accordion-item .accordion-content ul, .faq-page-wrapper .accordion-item .accordion-content ol {
@@ -10902,11 +10907,107 @@ ul.breadcrumb li a:hover {
   margin-bottom: 0.5rem;
   line-height: 1.5;
 }
+.faq-page-wrapper .accordion-item .accordion-content ul.no-style, .faq-page-wrapper .accordion-item .accordion-content ol.no-style {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
 .faq-page-wrapper .accordion-item .accordion-content ol {
   list-style-type: decimal;
 }
 .faq-page-wrapper .accordion-item .accordion-content strong {
   font-weight: 700;
+}
+
+#modal360 .modal__content.faq_model {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+}
+#modal360 .modal__content.faq_model header {
+  background: #E4E4DC;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 36px;
+}
+#modal360 .modal__content.faq_model header h2 {
+  margin: 0;
+  color: #000;
+  font-size: 1.375em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+}
+#modal360 .modal__content.faq_model header .modal__close {
+  font-size: 0;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  filter: none;
+  position: unset;
+}
+#modal360 .modal__content.faq_model header .modal__close img {
+  width: 100%;
+  height: auto;
+}
+#modal360 .modal__content.faq_model main {
+  padding-right: 18px;
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: 16px 18px 40px 36px;
+}
+@media screen and (max-width: 767px) {
+  #modal360 .modal__content.faq_model main {
+    max-height: 75vh;
+  }
+}
+#modal360 .modal__content.faq_model main::-webkit-scrollbar {
+  width: 6px;
+}
+#modal360 .modal__content.faq_model main::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px #FFFFFF;
+  border-radius: 10px;
+}
+#modal360 .modal__content.faq_model main::-webkit-scrollbar-thumb {
+  background: #E4E4DC;
+  border-radius: 10px;
+}
+#modal360 .modal__content.faq_model main::-webkit-scrollbar-thumb:hover {
+  background: #2B2A28;
+}
+#modal360 .modal__content.faq_model main p {
+  color: #2B2A28;
+  font-size: 1.125em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 16px;
+}
+#modal360 .modal__content.faq_model main p.mb-11 {
+  margin-bottom: 11px;
+}
+#modal360 .modal__content.faq_model main ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+}
+#modal360 .modal__content.faq_model main ul li {
+  color: #2B2A28;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.9;
+}
+#modal360 .modal__content.faq_model main hr {
+  background: #E4E4DC;
+  border: none;
+  height: 1px;
+  margin: 16px 0;
 }
 
 .owner-services-wrapper {
