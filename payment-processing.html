@@ -1,41 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wasl - Welcome Home</title>
-    <link rel="icon" href="./assets/images/waslEnglishWhiteLogo1.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Owl Carousel Assets -->
-    <link href="./assets/js/owl.theme.css" rel="stylesheet" />
-    <link href="./assets/js/owl.theme.default.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./assets/css/main.css" />
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="header-section">
-          <div class="left-section">
-            <a href="#"  class="logo__wrapper">
-              <img src="./assets/images/waslEnglishWhiteLogo1.png" alt="logo" />
-             </a>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="maintenance-wrapper payment_processing_section">
-        <div class="container">
-            <span class="loder_spin"></span>
-            <h2>Please wait while we are processing your payment.</h2>
-           <p class="danger icon_textwrap"><img src="./assets/images/warning.svg" style="width: 18px;" alt="icon"> Do not Click back or refesh this page</p> 
-        </div>
-    </section> 
-    <script src="./assets/js/jquery-1.9.1.min.js"></script>
-    <script src="./assets/js/owl.carousel.js"></script>
-    <script src="./assets/js/range-slider.js"></script>
-    <script src="./assets/js/custom.js"></script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Wasl - Welcome Home</title>
+        <link rel="icon" href="./assets/images/waslEnglishWhiteLogo1.png">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+        <style>
+          *{
+            box-sizing: border-box;
+          }
+          body{
+            margin: 0;
+             font-family: 'Roboto', sans-serif;
+          }
+      header {
+          padding: 10px 15px 5px;
+      }
+      .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    header .header-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+    .logo__wrapper {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  a {
+      text-decoration: none;
+  }
+      header .left-section a {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+  }
+  header .left-section a img {
+    width: 114px;
+    height: 42px;
+}
+.maintenance-wrapper {
+    border-top: 1px solid #E4E4DC;
+    padding: 100px 0;
+    text-align: center;
+}
+.payment_processing_section {
+    padding: 2rem 0 10rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 73px);
+    box-sizing: border-box;
+    background: url(../images/bg_trns.svg) no-repeat center bottom -30px/contain;
+}
+.maintenance-wrapper {
+  border-top: 1px solid #E4E4DC;
+  padding: 100px 0;
+  text-align: center;
+}
+.maintenance-wrapper img {
+  margin: 0 0 15px;
+}
+.maintenance-wrapper h2 {
+  font-size: 1.875em;
+  line-height: 32px;
+  color: #2B2A28;
+  margin: 0 0 15px;
+}
+.maintenance-wrapper p {
+  font-size: 1.25rem;
+  line-height: 28px;
+  color: #8D8D87;
+  margin: 0 0 15px;
+}
+@media all and (max-width:767px) {
+  .maintenance-wrapper h2 {
+    font-size: 26px;
+  }
+  .maintenance-wrapper p {
+    font-size: 14px;
+  }
+}
+
+.logo__wrapper {
+  display: block;
+  padding-bottom: 1rem;
+}
+
+.payment_processing_section {
+  padding: 2rem 0 10rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: calc(100vh - 73px);
+  box-sizing: border-box;
+  background: url(./assets/images/bg_trns.svg) no-repeat center bottom -30px/contain;
+}
+.payment_processing_section .danger {
+  color: rgb(168, 91, 87);
+}
+.payment_processing_section .icon_textwrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.payment_processing_section .icon_textwrap img {
+  margin: 0;
+}
+
+.loder_spin {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  display: block;
+  border: 3px solid #2B2A28;
+  border-width: 0 0 3px 0;
+  animation: loder_spin 1s infinite linear;
+}
+
+@keyframes loder_spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="header-section">
+                    <div class="left-section">
+                        <a href="#" class="logo__wrapper">
+                            <img src="./assets/images/waslEnglishWhiteLogo1.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="maintenance-wrapper payment_processing_section">
+            <div class="container">
+                <span class="loder_spin"></span>
+                <h2>Please wait while we are processing your payment.</h2>
+                <p class="danger icon_textwrap">
+                    <img src="./assets/images/warning.svg" style="width: 18px;" alt="icon">
+                    Do not Click back or refesh this page
+                </p>
+            </div>
+        </section> 
+   </body>
 </html>
