@@ -70,6 +70,9 @@
       border-radius: 16px;
       border: 1px solid $bannerBoxColor;
       background: $white;
+      .card-details-outer h3{
+        margin: 0;
+      }
       @include respond(tab) {
         flex-direction: column;
         padding: 0;

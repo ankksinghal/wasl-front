@@ -9280,6 +9280,9 @@ span.tooltip:hover .pop-over {
   border: 1px solid #E4E4DC;
   background: #FFFFFF;
 }
+.all-units-wrapper.buying_section.two-column .right-section .right-area-box .card-details-outer h3 {
+  margin: 0;
+}
 @media screen and (max-width: 991px) {
   .all-units-wrapper.buying_section.two-column .right-section .right-area-box {
     flex-direction: column;
