@@ -5246,9 +5246,14 @@ footer .copyright-section p {
 
 .floating-button-wrap {
   position: fixed;
-  right: 5vw;
-  bottom: 5vh;
+  right: 100px;
+  bottom: 31px;
   z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .floating-button-wrap {
+    right: 90px;
+  }
 }
 .floating-button-wrap ul {
   display: flex;
