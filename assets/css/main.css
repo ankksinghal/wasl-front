@@ -5603,6 +5603,11 @@ footer .copyright-section p {
   opacity: 0.7;
   line-height: 1.35;
   margin-bottom: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 .all-units-wrapper.buying_section .cs_ratio {
   position: relative;
@@ -14824,6 +14829,11 @@ figure.card_img:before {
 
 .master-container .search-banner-section ul li {
   font-size: inherit;
+}
+
+.sec_about_project div.slider_box #about_sec_slider_thumb div.item img {
+  width: 125%;
+  transform: rotate(-90deg);
 }
 
 .faq-details-wrapper {
