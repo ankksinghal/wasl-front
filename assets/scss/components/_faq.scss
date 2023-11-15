@@ -40,6 +40,7 @@
     border: 1px solid #efefef;
     border-radius: 10px;
     margin-bottom: 15px;
+    background: url(../../../assets/images/ArrowLeft.svg) no-repeat right 20px center;
     .accordion-header {
       margin: 0;
     }
@@ -47,13 +48,13 @@
       color: $black;
       opacity: 0.7;
       font-size: $font16;
-      padding-left: 35px;
-      background: url(../../../assets/images/icon-plus.svg) no-repeat left
-        center;
-      &.active {
-        background: url(../../../assets/images/icon-minus.svg) no-repeat left
-          center;
-      }
+      //padding-left: 35px;
+      // background: url(../../../assets/images/icon-plus.svg) no-repeat left
+      //   center;
+      // &.active {
+      //   background: url(../../../assets/images/icon-minus.svg) no-repeat left
+      //     center;
+      // }
     }
   }
 }
