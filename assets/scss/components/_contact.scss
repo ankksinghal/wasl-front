@@ -455,6 +455,14 @@
       }
     }
   }
+  .form div.form-wrapper .button-style{
+    width:auto;
+    padding:8px 35px 8px 70px;
+    background:  $black url(/themes/custom/wasltheme/css/../images/send-icon.svg) no-repeat  left 30px top 18px;
+    &:hover{
+      background-color: $darkBlack;  
+    }
+  }
 }
 
 
