@@ -5236,9 +5236,14 @@ footer .copyright-section p {
 
 .floating-button-wrap {
   position: fixed;
-  right: 5vw;
-  bottom: 5vh;
+  right: 100px;
+  bottom: 31px;
   z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .floating-button-wrap {
+    right: 90px;
+  }
 }
 .floating-button-wrap ul {
   display: flex;
@@ -10870,7 +10875,7 @@ ul.breadcrumb li a:hover {
   margin-bottom: 0.75rem;
 }
 .faq-page-wrapper .accordion-item .accordion-content a {
-  color: #BC8A55;
+  color: #5872A7;
   text-decoration: underline;
 }
 .faq-page-wrapper .accordion-item .accordion-content ul, .faq-page-wrapper .accordion-item .accordion-content ol {
