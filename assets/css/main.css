@@ -14868,12 +14868,59 @@ figure.card_img:before {
   border-radius: 8px;
   margin-bottom: 20px;
 }
-.faq-details-listing ul {
+.faq-details-listing .faq-descrition-wrap {
   padding: 16px;
 }
-.faq-details-listing ul li {
+.faq-details-listing .faq-descrition-wrap ul li {
   font-size: 16px;
   line-height: 19px;
   color: #000;
   margin-bottom: 8px;
+}
+
+.faq-details-wrapper p {
+  line-height: 1.6;
+}
+.faq-details-wrapper p:last-child {
+  margin-bottom: 0;
+}
+.faq-details-wrapper h1 {
+  font-size: 26px;
+  margin-bottom: 0.1rem;
+}
+.faq-details-wrapper h2, .faq-details-wrapper h3 {
+  font-size: 22px;
+  font-family: "bliss_medium";
+  margin-bottom: 0.75rem;
+}
+.faq-details-wrapper h4, .faq-details-wrapper h5 {
+  font-size: 18px;
+  font-family: "bliss_medium";
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0.75rem;
+}
+.faq-details-wrapper a {
+  color: #5872A7;
+  text-decoration: underline;
+}
+.faq-details-wrapper ul, .faq-details-wrapper ol {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+.faq-details-wrapper ul li, .faq-details-wrapper ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.faq-details-wrapper ul.no-style, .faq-details-wrapper ol.no-style {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.faq-details-wrapper ol {
+  list-style-type: decimal;
+}
+.faq-details-wrapper strong {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

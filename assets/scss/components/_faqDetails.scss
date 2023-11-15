@@ -38,13 +38,64 @@
     border: 1px solid #E4E4DC;
     border-radius: 8px;
     margin-bottom: 20px;
-    ul{
+    .faq-descrition-wrap{
         padding: 16px;
-        li{
-            font-size: 16px;
-            line-height: 19px;
-            color:$black;
-            margin-bottom: 8px;
+        ul{
+            li{
+                font-size: 16px;
+                line-height: 19px;
+                color:$black;
+                margin-bottom: 8px;
+            }
         }
     }
 }
+
+.faq-details-wrapper{
+    p{ 
+        line-height: 1.6;
+        &:last-child {
+        margin-bottom: 0;
+        }
+    }
+    h1{
+        font-size: 26px;
+        margin-bottom: 0.1rem;
+    }
+    h2,h3{
+        font-size: 22px; 
+        font-family:$fontmedium;
+        margin-bottom: 0.75rem; 
+    }
+    h4,h5{
+        font-size: 18px; 
+        font-family: $fontmedium;
+        background: transparent;
+        padding: 0;  
+        margin-bottom: 0.75rem;  
+    }
+    a{
+        color: $steelBlue ;  
+        text-decoration: underline;
+    }
+    ul,ol{
+        padding-left: 1.5rem;
+        list-style-type: disc;  
+        margin-bottom: 1rem; 
+        li{
+        margin-bottom: 0.5rem;  
+        line-height: 1.5;
+        }
+        &.no-style {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 25px;
+        }
+    }
+    ol{
+        list-style-type:decimal; 
+    }
+    strong{
+        font-weight: 700;
+    }
+  }
