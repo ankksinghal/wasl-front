@@ -9206,6 +9206,108 @@ span.tooltip:hover .pop-over {
   box-sizing: border-box;
 }
 
+.captcha_box {
+  position: relative;
+}
+.captcha_box .form-input {
+  padding-right: 115px;
+}
+
+.captcha-text {
+  position: absolute;
+  right: 0px !important;
+  top: 34px;
+  background-color: #1C190E;
+  color: #FFFFFF;
+  border-radius: 0px 13px 13px 0px;
+  font-weight: 400;
+  font-size: 0.875em;
+  line-height: 16.8px;
+  height: 55px;
+  min-width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5px;
+  border: none;
+}
+@media all and (max-width: 991px) {
+  .captcha-text {
+    height: 48px;
+  }
+}
+.captcha-text span {
+  width: 21.25px;
+  height: 22.92px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+.captcha-text span img {
+  width: 100%;
+  height: auto;
+}
+.captcha-text span.run img {
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.file_input {
+  /* file upload button */
+  /* file upload button hover state */
+  /* file upload button active state */
+}
+.file_input input[type=file] {
+  border: 1px solid #c6c7c3;
+  padding: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.file_input input[type=file]::-moz-placeholder {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #6b6a69;
+}
+.file_input input[type=file]::placeholder {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 24px;
+  color: #6b6a69;
+}
+.file_input input[type=file]::file-selector-button {
+  color: #1C1C1E;
+  text-align: center;
+  font-size: 1em;
+  font-style: normal;
+  font-weight: 500;
+  height: 32px;
+  width: 118px;
+  border-radius: 8px;
+  background: #E4E4DC;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 1170px) {
+  .file_input input[type=file]::file-selector-button {
+    width: 140px;
+    font-size: 16px;
+  }
+}
+.file_input input[type=file]::file-selector-button:hover {
+  background-color: #E4E4DC;
+}
+.file_input input[type=file]::file-selector-button:active {
+  background-color: #E4E4DC;
+}
+
 .all-units-wrapper.buying_section.two-column {
   display: flex;
   flex-wrap: wrap;
@@ -11512,10 +11614,16 @@ figure.card_img:before {
   border: 1px solid #000;
   color: #1C190E;
   transition: 0.25s;
+  height: 54.5px;
 }
 .cs_btn.btn_trans:hover {
   background: #2B2A28;
   color: #FFFFFF;
+}
+@media screen and (max-width: 575px) {
+  .cs_btn {
+    width: 100%;
+  }
 }
 
 .appointment_form_section {
@@ -11538,6 +11646,19 @@ figure.card_img:before {
 .appointment_form_section .form_btn_wrap {
   padding-top: 10px;
   text-align: right;
+}
+.appointment_form_section .form_btn_wrap.justify-content-space {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+@media screen and (max-width: 575px) {
+  .appointment_form_section .form_btn_wrap.justify-content-space {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 0;
+  }
 }
 .appointment_form_section .form_wrapper_head {
   margin-bottom: 22px;
@@ -14757,12 +14878,59 @@ figure.card_img:before {
   border-radius: 8px;
   margin-bottom: 20px;
 }
-.faq-details-listing ul {
+.faq-details-listing .faq-descrition-wrap {
   padding: 16px;
 }
-.faq-details-listing ul li {
+.faq-details-listing .faq-descrition-wrap ul li {
   font-size: 16px;
   line-height: 19px;
   color: #000;
   margin-bottom: 8px;
+}
+
+.faq-details-wrapper p {
+  line-height: 1.6;
+}
+.faq-details-wrapper p:last-child {
+  margin-bottom: 0;
+}
+.faq-details-wrapper h1 {
+  font-size: 26px;
+  margin-bottom: 0.1rem;
+}
+.faq-details-wrapper h2, .faq-details-wrapper h3 {
+  font-size: 22px;
+  font-family: "bliss_medium";
+  margin-bottom: 0.75rem;
+}
+.faq-details-wrapper h4, .faq-details-wrapper h5 {
+  font-size: 18px;
+  font-family: "bliss_medium";
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0.75rem;
+}
+.faq-details-wrapper a {
+  color: #5872A7;
+  text-decoration: underline;
+}
+.faq-details-wrapper ul, .faq-details-wrapper ol {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+.faq-details-wrapper ul li, .faq-details-wrapper ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+.faq-details-wrapper ul.no-style, .faq-details-wrapper ol.no-style {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.faq-details-wrapper ol {
+  list-style-type: decimal;
+}
+.faq-details-wrapper strong {
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

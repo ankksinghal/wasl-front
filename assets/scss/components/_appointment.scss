@@ -49,10 +49,14 @@
     border: 1px solid $darkBlack;
     color: $Primary;
     transition: 0.25s;
+    height: 54.5px;
     &:hover {
       background: $black;
       color: $white;
     }
+  }
+  @include respond(phone) {
+    width: 100%;
   }
 }
 .appointment_form_section {
@@ -72,6 +76,17 @@
   .form_btn_wrap {
     padding-top: 10px;
     text-align: right;
+    &.justify-content-space {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      margin-top: 22px;
+      @include respond(phone) {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0;
+      }
+    }
   }
   .form_wrapper_head {
     margin-bottom: 22px;
