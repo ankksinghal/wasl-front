@@ -6285,7 +6285,6 @@ body.modal {
 }
 @media screen and (max-width: 575px) {
   .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards {
-    position: relative;
     flex-flow: column;
   }
   .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap .all-units-cards .card-details-wrap .card-details {
