@@ -2753,6 +2753,7 @@ body.slide {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
   gap: 32px;
 }
@@ -9394,6 +9395,18 @@ span.tooltip:hover .pop-over {
 }
 .all-units-wrapper.buying_section.two-column .right-section .right-area-box .card-details-outer h3 {
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.all-units-wrapper.buying_section.two-column .right-section .right-area-box p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 @media screen and (max-width: 991px) {
   .all-units-wrapper.buying_section.two-column .right-section .right-area-box {
@@ -9424,6 +9437,17 @@ span.tooltip:hover .pop-over {
 @media screen and (max-width: 991px) {
   .all-units-wrapper.buying_section.two-column .right-section .right-area-box figure img {
     max-height: none;
+  }
+}
+.all-units-wrapper.buying_section.two-column .right-section .right-area-box figure a {
+  display: block;
+}
+@media all and (min-width: 1200px) {
+  .all-units-wrapper.buying_section.two-column .right-section .right-area-box figure a img {
+    height: 99px;
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .all-units-wrapper.buying_section.two-column .right-section .right-area-box .card-details-outer {
@@ -10870,6 +10894,14 @@ ul.breadcrumb li a:hover {
   100% {
     transform: rotate(360deg);
   }
+}
+.contact-form-section .form div.form-wrapper .button-style {
+  width: auto;
+  padding: 8px 35px 8px 70px;
+  background: #2B2A28 url(/themes/custom/wasltheme/css/../images/send-icon.svg) no-repeat left 30px top 18px;
+}
+.contact-form-section .form div.form-wrapper .button-style:hover {
+  background-color: #000;
 }
 
 .webform-section-wrapper .form-wrapper {
