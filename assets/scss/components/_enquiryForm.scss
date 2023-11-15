@@ -417,3 +417,111 @@
     }
   }
 }
+.captcha_box {
+  position: relative;
+  .form-input {
+    padding-right: 115px;
+  }
+}
+.captcha-text { 
+  position: absolute;
+  right: 0px !important;
+  top: 34px;
+  background-color: $Primary;
+  color: $white;
+  border-radius: 0px 13px 13px 0px;
+  font-weight: $fontweight5;
+  font-size: $font14;
+  line-height: 16.8px;
+  height: 55px;
+  min-width: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5px;
+  border: none;
+  @media all and (max-width: 991px) {
+    height: 48px;
+  }
+  span {
+    width: 21.25px;
+    height: 22.92px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    &.run {
+      img {
+        -webkit-animation: spin 2s linear infinite;
+        -moz-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+      }
+      @-moz-keyframes spin {
+        100% {
+          -moz-transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+      @keyframes spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    }
+  }
+}
+
+.file_input {
+  /* file upload button */
+  input[type="file"] {
+    border: 1px solid $color6;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-family: inherit;
+    &::placeholder {
+      font-weight: $fontweight5;
+      font-size: $font16;
+      line-height: 24px;
+      color: $color11;
+    }
+  }
+  input[type="file"]::file-selector-button {
+      color: $color2;
+      text-align: center;
+      font-size: $font16;
+      font-style: normal;
+      font-weight: $fontweight2;
+      height: 32px;
+      width: 118px;
+      border-radius: 8px;
+      background: $color1;
+      border: none;
+      cursor: pointer;
+      @include respond(tab_land) {
+          width: 140px;
+          font-size: 16px;
+      }
+  }
+
+  /* file upload button hover state */
+  input[type="file"]::file-selector-button:hover {
+      background-color: $color1;
+  }
+
+  /* file upload button active state */
+  input[type="file"]::file-selector-button:active {
+      background-color: $color1;
+  }
+}
