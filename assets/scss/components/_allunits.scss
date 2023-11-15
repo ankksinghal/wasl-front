@@ -487,6 +487,7 @@
         border: 1px solid $color1;
         border-radius: 16px;
         padding: 16px;
+        position: relative;
         .card-details-wrap {
           @include respond(phone_land) {
             display: flex;
@@ -878,6 +879,7 @@ body {
 @include respond(phone) {
   .all-units-wrapper .all-units-section.search-list .all-units-cards-wrap {
     .all-units-cards {
+      position: relative;
       flex-flow: column;
       .card-details-wrap .card-details {
         width: 50%;
@@ -1116,4 +1118,29 @@ body {
       }
     }
   }
+}
+
+.discount-section{
+   position: absolute;
+   right: 30px;
+   top: 25px;
+   background: #1C190E;
+   height: 44px;
+   width: 44px;
+   color:$white;
+   font-size: $font16;
+   font-weight: $fontweight3;
+   text-align: center;
+   border-radius: 25px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+   strong{
+    display: block;
+    font-size: $font14;
+    font-weight: 400;
+   }
+
 }
