@@ -65,7 +65,7 @@
       }
       @include respond(tab) {
         font-size: 21px;
-        max-width: 200px;
+        // max-width: 200px;
       }
     }
     p {
@@ -1123,6 +1123,10 @@
   top: unset;
   bottom: 15vh;
   background: #e4e4dc;
+  max-width: 800px;
+  @include respond (tab_land) {
+    max-width: 70%;   
+  }
   ul {
     list-style: none;
     margin: 0;
@@ -1166,6 +1170,7 @@
     bottom: 39px;
     padding: 16px;
     width: 226px;
+    max-width: 80%;
     ul {
       display: block;
       li {
