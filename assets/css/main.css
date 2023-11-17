@@ -2293,12 +2293,7 @@ body.slide {
   top: unset;
   bottom: 15vh;
   background: #e4e4dc;
-  max-width: 800px;
-}
-@media screen and (max-width: 1170px) {
-  .right-content-box.buying-listing {
-    max-width: 70%;
-  }
+  max-width: 70%;
 }
 .right-content-box.buying-listing ul {
   list-style: none;
