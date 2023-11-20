@@ -6398,6 +6398,8 @@ body.modal {
   color: #A79F92;
   font-size: 16px;
   color: #4E4E4E;
+  min-height: 42px;
+  box-sizing: border-box;
 }
 .chip_wrapper > span .cross_chip {
   width: 18px;
@@ -6405,6 +6407,16 @@ body.modal {
   border: none;
   box-shadow: none;
   background: url(../images/closeN.svg) no-repeat center center/18px;
+}
+
+div.master-container .chip_wrapper > span {
+  padding: 5px 10px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+.master-container .search-section .form-section #ms-list-6 button {
+  border-right: 0 none !important;
 }
 
 @media screen and (max-width: 991px) {
@@ -8466,9 +8478,9 @@ span.tooltip:hover .pop-over {
   display: inline-flex;
   align-items: center;
   justify-content: left;
-  font-size: 1em;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   color: #2B2A28;
 }
 @media screen and (max-width: 767px) {
@@ -14888,7 +14900,7 @@ figure.card_img:before {
      object-fit: cover;
 }
 
-.master-container .search-banner-section ul li {
+div.master-container .search-banner-section ul li {
   font-size: inherit;
 }
 

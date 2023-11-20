@@ -105,9 +105,9 @@
             display: inline-flex;
             align-items: center;
             justify-content: left;
-            font-size: $font16;
+            font-size: 14px; 
             font-weight: $fontweight5;
-            line-height: 24px;
+            line-height: 1.5;
             color: $black;
 
             @include respond(phone_land) {
