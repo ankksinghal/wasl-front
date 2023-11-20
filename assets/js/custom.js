@@ -26,6 +26,33 @@ $(document).ready(function () {
     animateIn: "fadeIn",
   });
 
+  $('.accordion-list > .accordion-tab > .accordion_body').hide();
+  $('.accordion-list > .accordion-tab header').click(function() {
+    if ($(this).parent().hasClass("active")) {
+      $(this).parent().removeClass("active").find(".accordion_body").slideUp();
+    } else {
+      $(".accordion-list > .accordion-tab.active .accordion_body").slideUp();
+      $(".accordion-list > .accordion-tab.active").removeClass("active");
+      $(this).parent().addClass("active").find(".accordion_body").slideDown();
+    }
+    return false;
+  });
+
+  // $('.accordion-list_inner > .inner_accord_box > .inner_acord_body').hide();
+  $('.accordion-list_inner > .inner_accord_box .inner_accord_header').click(function() {
+    if ($(this).parent().hasClass("active")) {
+      $(this).parent().removeClass("active").find(".inner_acord_body").slideUp();
+      $(this).parent().removeClass("active-inn")
+    } else {
+      $(".accordion-list_inner > .inner_accord_box.active .inner_acord_body").slideUp();
+      $(".accordion-list_inner > .inner_accord_box.active").removeClass("active");
+      $(".accordion-list_inner > .inner_accord_box.active-inn").removeClass("active-inn");
+      $(this).parent().addClass("active").find(".inner_acord_body").slideDown();
+      $(this).parent().addClass("active-inn")
+    }
+    return false;
+  });
+
   $(".show-password, .hide-password").on("click", function () {
     var passwordId = $(this).parents("div:first").find("input").attr("id");
     if ($(this).hasClass("show-password")) {
@@ -216,7 +243,14 @@ $(document).ready(function () {
     $(".overlay").removeClass("slide");
     $("body").removeClass("slide");
   });
-
+// =============Mobile Sub menu===============
+if ($(window).width() < 767) {
+  $(".header-section .has_menu").on("click", function () {
+    $(".header-section .has_menu").not(this).find(".cs_submenu").slideUp(500);
+    $(this).find(".cs_submenu").slideToggle(500);
+  });
+}
+// ===================
   $(".overlay").click(function () {
     $("#responsive-nav").removeClass("slide");
     $("#responsive-nav").removeClass("slide");
@@ -642,3 +676,5 @@ $("#chat_boat").click(function () {
   $("#chat_boat_box").toggleClass("hide");
   $("#chat_boat").toggleClass("rotate");
 });
+
+

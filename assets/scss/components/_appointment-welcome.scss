@@ -1,0 +1,349 @@
+.login-page{
+    &.top-border{
+        border-top: 1px solid #E4E4DC;
+        margin-top: 15px;
+        padding:100px 0 0;
+        @include respond(phone_land) {
+            padding:50px 0 0;
+        }
+        .main-login{
+           &.project-view{
+            .left-section {
+               flex: 0 0 38%;
+            }
+           }
+        }
+    }
+}
+.appointment-page-wrapper{
+    flex: 0 0 55%;
+    @include respond(tab) {
+        flex: inherit;
+      }
+     h3{
+        font-size:$font39;
+        font-weight: 300;
+        font-family: $fontlight;
+        color: $black;
+        margin-bottom: 15px;
+        @include respond(phone_land) {
+            font-size:$font24;
+        }
+     }
+     h2{
+        font-size:$font39;
+        font-weight: 700;
+        color: $black;
+        margin-bottom: 90px;
+        @include respond(phone_land) {
+            font-size:$font24;
+            margin-bottom: 35px;
+        }
+     }
+     p{
+        font-size:$font22;
+        font-weight: 300;
+        font-family: $fontlight;
+        color: $black;
+        margin-bottom: 23px;
+        @include respond(phone_land) {
+            font-size:$font18;
+        }
+     }
+}
+
+.appointment-page-box-wrap{ 
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     @include respond(phone_land) {
+       display: block;
+       width: 250px;
+       margin: 0 auto 15px;
+    }
+     .virtual-appointment{
+        border-radius: 16px;
+        background-color: $bannerBoxColor;
+        padding:30px;
+        text-align: center;
+        @include respond(phone_land) {
+            margin-bottom: 15px;
+        }
+        img{
+            margin-bottom: 10px;
+        }
+        h3{
+            color:$darkBlack;
+            font-size: $font24;
+            margin-bottom: 10px;
+            @include respond(phone_land) {
+                font-size:$font18;
+            }
+        }
+        span{
+            color:$black;
+            font-size: $font16;
+            font-weight: 300;
+            font-family: $fontlight;
+            @include respond(phone_land) {
+                font-size:$font14;
+            }
+        }
+     }
+}
+
+.appointment_page {
+    border-top:1px solid $color1;
+    margin: 30px 0 0;
+    padding-top: 0px;
+    margin-bottom: 50px;
+}
+
+.appointment_accordain {
+    display: flex;
+    gap: 18px;
+    flex-direction: column;
+    margin-top: 30px;
+    .accordion-tab {
+        border-radius: 12px;
+        border: 1px solid $color28;
+        background: $white;
+        overflow: hidden;
+        header {
+            padding: 18px 18px 18px 122px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            @include respond(phone_land) {
+                padding: 0px 18px 0px 62px;
+            }
+            h2 {
+                color: $black;
+                font-size: $font30;
+                font-style: normal;
+                font-family: $fontlight;
+                font-weight: $fontweight1;
+                line-height: 45px;
+                @include respond(phone_land) {
+                    font-size: $font16;    
+                }
+            }
+            .counter {
+                position: absolute;
+                width: 92px;
+                height: 81px;
+                left: 0px;
+                top: 0;
+                display: flex;
+                font-family: $fontlight;
+                align-items: center;
+                justify-content: center;
+                border-radius: 11px 0px 0px 0;
+                border-right: 0.5px solid $color29;
+                background: $color1;
+                color: $black;
+                font-size: $font30;
+                font-style: normal;
+                font-weight: $fontweight1;
+                @include respond(phone_land) {
+                    font-size: $font16; 
+                    width: 45px;  
+                    height: 45px; 
+                }
+            }
+            .arrow {
+                position: absolute;
+                width: 92px;
+                height: 81px;
+                right: 0px;
+                top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s ease-in-out;
+                @include respond(phone_land) {
+                    font-size: $font16; 
+                    width: 45px;  
+                    height: 45px; 
+                }
+                img {
+                    width: 48px;
+                    @include respond(phone_land) {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        &.active {
+            border-radius: 12px;
+            border: 0.5px solid $Primary;
+            background: $white;
+            box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+            .arrow img {
+                transform: rotate(180deg);
+            }
+        }
+        .accordion_body {
+            display: none;
+            padding: 0 95px 22px 122px;
+            @include respond(tab) {
+                padding-right: 15px;
+            }
+            @include respond(phone_land) {
+                padding: 0 15px 22px 62px;
+                &.calendar_sec {
+                    padding: 0 15px 22px 15px;
+                    .calendar-wrapper {
+                        left: -15px;
+                    }
+                }
+            }
+            h2 {
+                margin: 6px 0;
+                color: $black;
+                font-size: $font14;
+                font-style: normal;
+                font-weight: $fontweight5;
+                line-height: 21px;
+            }
+        }
+    }
+}
+
+.flex_gap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inner_accordion {
+    .inner_accord_box {
+        border-radius: 8px;
+        border: 1px solid $color1;
+        &.active-inn {
+            background: rgba(228, 228, 220, 0.30);
+        }
+        .inner_accord_header {
+            height: 49px;
+            color: $black;
+            font-size: $font18;
+            font-style: normal;
+            font-weight: $fontweight2;
+            line-height: 27px;
+            align-items: center;
+            display: flex;
+            gap: 8px;
+            padding: 0 15px;
+            cursor: pointer;
+            @include respond(phone_land) {
+                font-size: $font14;
+            }
+            .arrow-inn {
+                height: 20px;
+                width: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    max-width: 20px;
+                    height: auto;
+                }
+            }
+        }
+        &.active {
+            .arrow-inn img {
+                transform: rotate(180deg);
+            }
+        }
+        .inner_acord_body {
+            margin: 10px 10px 21px 43px;
+            display: none;
+        }
+    }
+}
+
+.radio_listing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    label {
+        color: $color3;
+        font-size: $font14;
+        font-style: normal;
+        font-weight: $fontweight5;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        input[type="radio"] {
+            margin: 0;
+            padding: 0;
+            accent-color: $darkBlack;
+            width: 18px;
+            height: 18px;
+            vertical-align: sub;
+        }
+    }
+}
+
+.time_picker {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 135px;
+    flex-shrink: 0;
+    @include respond(phone_land) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    label {
+        width: 100%;
+        box-sizing: border-box;
+        height: 42px;
+        padding: 6px 0px;
+        border-radius: 8px;
+        background: $color1;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include respond(phone_land) {
+            width: 105px;
+            padding-left: 20px;
+            padding-right: 20px;
+            box-sizing: border-box;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        span {
+            color: $black;
+            text-align: center;
+            font-size: $font16;
+            font-style: normal;
+            font-weight: $fontweight2;
+            line-height: 24px;            
+        }
+        input[type="radio"]:checked + span {
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: " ";
+            background: $black;
+            right: 0;
+            bottom: 0;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

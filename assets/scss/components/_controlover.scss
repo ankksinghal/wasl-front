@@ -1,0 +1,27 @@
+#about_sec_slider{
+    .owl-stage{
+        .item{
+            position: relative;
+            &::before{
+                content: '';
+                padding-top: 70%;
+                display: block;
+            }
+            img{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                object-fit: cover;
+            }
+        }
+    }
+}
+.master-container .search-banner-section ul li{
+    font-size: inherit;
+}
+.sec_about_project div.slider_box #about_sec_slider_thumb div.item img{
+    width: 125%;
+    transform: rotate(-90deg);
+}     

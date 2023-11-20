@@ -10,10 +10,10 @@
   }
 }
 .faq-page-wrapper {
-  padding: 0 0 100px;
+  padding: 0;
   .accordion-content {
     display: none;
-    padding: 20px 10px 10px 35px;
+    padding: 20px 10px 0px 35px;
     transition: left 0.3s ease-in-out;
     p {
       font-weight: $fontweight2;
@@ -21,9 +21,13 @@
       font-size: $font16;
       color: $black;
       line-height: 24px;
+      margin-bottom: 16px;
+      p:last-child{
+        margin: 0;
+      }
       a {
         color: $black;
-        text-decoration: underline;
+        text-decoration: underline;  
       }
     }
     &.active {
@@ -36,17 +40,170 @@
     border: 1px solid #efefef;
     border-radius: 10px;
     margin-bottom: 15px;
+    background: url(../../../assets/images/ArrowLeft.svg) no-repeat right 20px center;
+    .accordion-header {
+      margin: 0;
+    }
     h4 {
       color: $black;
       opacity: 0.7;
       font-size: $font16;
-      padding-left: 35px;
-      background: url(../../../assets/images/icon-plus.svg) no-repeat left
-        center;
-      &.active {
-        background: url(../../../assets/images/icon-minus.svg) no-repeat left
-          center;
+      //padding-left: 35px;
+      // background: url(../../../assets/images/icon-plus.svg) no-repeat left
+      //   center;
+      // &.active {
+      //   background: url(../../../assets/images/icon-minus.svg) no-repeat left
+      //     center;
+      // }
+    }
+  }
+}
+
+
+
+.faq-page-wrapper{
+  &.mt-33 {
+    margin-top: 33px;
+  }
+  .accordion-item{
+    .accordion-content { 
+      p{ 
+        line-height: 1.6;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
+      h1{
+        font-size: 26px;
+        margin-bottom: 0.1rem;
+      }
+      h2,h3{
+        font-size: 22px; 
+        font-family:$fontmedium;
+        margin-bottom: 0.75rem; 
+      }
+      h4,h5{
+        font-size: 18px; 
+        font-family: $fontmedium;
+        background: transparent;
+        padding: 0;  
+        margin-bottom: 0.75rem;  
+      }
+      a{
+        color: $steelBlue ;  
+        text-decoration: underline;
+      }
+      ul,ol{
+        padding-left: 1.5rem;
+        list-style-type: disc;  
+        margin-bottom: 1rem; 
+        li{
+          margin-bottom: 0.5rem;  
+          line-height: 1.5;
+        }
+        &.no-style {
+          list-style: none;
+          padding: 0;
+          margin-bottom: 25px;
+        }
+      }
+      ol{
+        list-style-type:decimal; 
+      }
+      strong{
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+#modal360 .modal__content.faq_model {
+  background: $white;
+  border-radius: 16px;
+  overflow: hidden;
+  header {
+    background: $bannerBoxColor;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px;
+    h2 {
+      margin: 0;
+      color: $darkBlack;
+      font-size: $font22;
+      font-style: normal;
+      font-weight: $fontweight3;
+      line-height: 24px;
+    }
+    .modal__close {
+      font-size: 0;
+      padding: 0;
+      margin: 0;
+      width: 24px;
+      height: 24px;
+      filter: none;
+      position: unset;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  main {
+    padding-right: 18px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin: 16px 18px 40px 36px;
+    @include respond(phone_land) {
+      max-height: 75vh;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 2px $white;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: $color1;
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background: $black;
+    }
+
+
+    p {
+      color: $black;
+      font-size: $font18;
+      font-style: normal;
+      font-weight: $fontweight4;
+      line-height: 27px;
+      margin-bottom: 16px;
+      &.mb-11 {
+        margin-bottom: 11px;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 0;
+      li {
+        color: $black;
+        font-size: $font16;
+        font-style: normal;
+        font-weight: $fontweight5;
+        line-height: normal;
+        opacity: 0.9;
+      }
+    }
+    hr {
+      background: $color1;
+      border: none;
+      height: 1px;
+      margin: 16px 0;
     }
   }
 }

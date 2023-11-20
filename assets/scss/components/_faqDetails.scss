@@ -1,0 +1,101 @@
+.faq-details-wrapper{
+    padding:25px 0 50px;
+    h2{
+        font-weight: $fontweight3;
+        color:$darkBlack;
+        line-height: 24px;
+        margin-bottom: 15px;
+        font-size: $font22;
+    }
+    h3{
+        font-weight: $fontweight2;
+        color:$black;
+        line-height: 33px;
+        margin:24px 0 10px;
+        font-size: $font22;
+    }
+}
+.faq-details-box{
+    background: $bannerBoxColor;
+    border-radius: 8px;
+    padding: 16px;
+    &.inner{
+        border-radius: 8px 8px 0 0 ;
+    }
+    span{
+        font-weight: $fontweight2;
+        font-size: $font18;
+        line-height: 27px;
+    }
+    p,ul li{
+        color:$black;
+        line-height: 26px;
+        font-size: $font16;
+    }
+}
+
+.faq-details-listing{
+    border: 1px solid #E4E4DC;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    .faq-descrition-wrap{
+        padding: 16px;
+        ul{
+            li{
+                font-size: 16px;
+                line-height: 19px;
+                color:$black;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+.faq-details-wrapper{
+    p{ 
+        line-height: 1.6;
+        &:last-child {
+        margin-bottom: 0;
+        }
+    }
+    h1{
+        font-size: 26px;
+        margin-bottom: 0.1rem;
+    }
+    h2,h3{
+        font-size: 22px; 
+        font-family:$fontmedium;
+        margin-bottom: 0.75rem; 
+    }
+    h4,h5{
+        font-size: 18px; 
+        font-family: $fontmedium;
+        background: transparent;
+        padding: 0;  
+        margin-bottom: 0.75rem;  
+    }
+    a{
+        color: $steelBlue ;  
+        text-decoration: underline;
+    }
+    ul,ol{
+        padding-left: 1.5rem;
+        list-style-type: disc;  
+        margin-bottom: 1rem; 
+        li{
+        margin-bottom: 0.5rem;  
+        line-height: 1.5;
+        }
+        &.no-style {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 25px;
+        }
+    }
+    ol{
+        list-style-type:decimal; 
+    }
+    strong{
+        font-weight: 700;
+    }
+  }

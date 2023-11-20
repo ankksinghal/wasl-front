@@ -1,5 +1,6 @@
 $fontmedium: "bliss_medium";
 $fontregular: "bliss_proregular";
+$fontlight: "bliss_light";
 @font-face {
   font-family: "bliss_proregular";
   src: url("../blisspro-fonts/blisspro-webfont.woff2") format("woff2"),
@@ -11,6 +12,12 @@ $fontregular: "bliss_proregular";
   font-family: "bliss_medium";
   src: url("../blisspro-fonts/BlissPro-Medium.woff") format("woff");
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "bliss_light";
+  src: url("../blisspro-fonts/BlissPro-Light.woff") format("woff");
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -192,6 +199,7 @@ button {
         color: #1c190e !important;
         strong {
           font-weight: 600;
+          font-family: $fontmedium;
         }
       }
     }

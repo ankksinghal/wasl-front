@@ -70,6 +70,21 @@
       border-radius: 16px;
       border: 1px solid $bannerBoxColor;
       background: $white;
+      .card-details-outer h3{
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
+      p{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+      }
       @include respond(tab) {
         flex-direction: column;
         padding: 0;
@@ -92,6 +107,16 @@
           max-height: 99px;
           @include respond(tab) {
             max-height: none;
+          }
+        }
+        a{
+          display: block;
+          @media  all and (min-width:1200px) {
+            img{
+              height: 99px;
+              display: block;
+              object-fit: cover;
+            }
           }
         }
       }
