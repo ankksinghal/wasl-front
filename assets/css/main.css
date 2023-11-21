@@ -13352,14 +13352,14 @@ figure.card_img:before {
 .mob-code .iti__flag-container .iti__selected-flag {
   margin-top: 0;
   margin-left: 0;
-  padding-left: 15px;
+  padding-left: 11px;
   padding-right: 11px;
-  width: 58px;
+  width: 88px;
   flex-direction: row;
 }
 
-.mob-code .iti.iti--allow-dropdown {
-  margin-top: 10px;
+div.mob-code .iti.iti--allow-dropdown {
+  margin-top: 0;
 }
 
 .mob-code .iti__flag-container {
@@ -13379,7 +13379,11 @@ figure.card_img:before {
 }
 
 .mob-code .iti.iti--allow-dropdown input.form-input {
-  padding-left: 70px;
+  padding-left: 98px !important;
+}
+
+.mob-code .iti__selected-flag div.iti__flag {
+  min-width: 20px;
 }
 
 .mob-code .iti__country {
