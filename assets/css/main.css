@@ -14917,6 +14917,59 @@ body div.master-container .select2-container--default .select2-selection--single
   margin-left: -4px;
 }
 
+.cs_offerBadge {
+  display: flex;
+  position: absolute;
+  right: 22px;
+  top: 22px;
+  background: #A85B57;
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-height: 34px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #FFFFFF;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+.cs_offerBadge img {
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 767px) {
+  .cs_offerBadge {
+    right: 16px;
+    top: 16px;
+    font-size: 14px;
+    min-height: 28px;
+  }
+  .cs_offerBadge img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+@media all and (min-width: 576px) {
+  .all-units-cards .search-image-section {
+    position: relative;
+  }
+  .all-units-cards .search-image-section .cs_offerBadge {
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "bliss_medium";
+    min-height: 24px;
+    right: 4px;
+    top: 4px;
+    gap: 4px;
+    padding: 2px 6px;
+  }
+  .all-units-cards .search-image-section .cs_offerBadge img {
+    width: 14px;
+    height: 14px;
+  }
+}
 .faq-details-wrapper {
   padding: 25px 0 50px;
 }
