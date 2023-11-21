@@ -175,7 +175,7 @@ ul.breadcrumb {
     }
   }
 }
-.cs_tab_content_container {
+.tab_layout_block .cs_tab_content_container{
   flex: 0 0 calc(100% - 300px);
   max-width: calc(100% - 300px);
   .tab_card_box {
@@ -189,6 +189,7 @@ ul.breadcrumb {
         font-size: 20px;
         font-weight: 500;
         font-family: $fontmedium;
+        margin: 0;
       }
       border-bottom: 1px solid $color4;
       padding-bottom: 0.75rem;
@@ -299,6 +300,8 @@ ul.breadcrumb {
         width: 13px;
         background: $white;
         transition: 0.35s;
+        display: block;
+        margin: 5px 7px;
       }
       &.active span {
         width: 47px;

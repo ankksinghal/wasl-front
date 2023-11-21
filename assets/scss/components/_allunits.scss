@@ -972,6 +972,8 @@ body {
     color: $color8;
     font-size: 16px;
     color: $color16;
+    min-height: 42px;
+    box-sizing: border-box;
     .cross_chip {
       width: 18px;
       height: 18px;
@@ -981,7 +983,14 @@ body {
     }
   }
 }
-
+div.master-container .chip_wrapper>span{
+  padding: 5px 10px; 
+  background: $white;
+  border-radius: 6px;
+}
+.master-container .search-section .form-section #ms-list-6 button{
+  border-right: 0 none !important;
+}
 // =========Responsive===============
 @include respond(tab) {
   .cs_search_style {
