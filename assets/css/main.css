@@ -11719,6 +11719,7 @@ figure.card_img:before {
 }
 .cs_btn.btn_xlg {
   padding: 19px 60px;
+  box-sizing: border-box;
 }
 .cs_btn.btn_trans {
   background: transparent;
@@ -14926,6 +14927,68 @@ textarea.form_control {
   font-weight: 500;
   font-size: 1em;
   padding: 14px 40px;
+}
+
+.commingsoon_inner_hero {
+  padding-top: 2rem;
+}
+.commingsoon_inner_hero img {
+  height: 266px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+}
+@media screen and (max-width: 1170px) {
+  .commingsoon_inner_hero img {
+    height: 22vw;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .commingsoon_inner_hero {
+    padding-top: 0;
+  }
+  .commingsoon_inner_hero .container {
+    padding: 0;
+  }
+}
+
+.comming_soon_section {
+  padding: 3rem 0 5rem;
+  text-align: center;
+}
+.comming_soon_section .icon_img_warpper img {
+  max-width: 85px;
+  margin-bottom: 1.25rem;
+}
+.comming_soon_section .icon_img_warpper figcaption h3 {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 1170px) {
+  .comming_soon_section .icon_img_warpper figcaption h3 {
+    font-size: 20px;
+  }
+}
+.comming_soon_section .icon_img_warpper figcaption p {
+  font-size: 18px;
+  color: #8D8D87;
+  line-height: 1.5;
+}
+@media screen and (max-width: 1170px) {
+  .comming_soon_section .icon_img_warpper figcaption p {
+    font-size: 16px;
+  }
+}
+.comming_soon_section .icon_img_warpper .back_btnwrapper {
+  padding-top: 4rem;
+}
+@media screen and (max-width: 1170px) {
+  .comming_soon_section .icon_img_warpper .back_btnwrapper {
+    padding-top: 2rem;
+  }
 }
 
 #about_sec_slider .owl-stage .item {

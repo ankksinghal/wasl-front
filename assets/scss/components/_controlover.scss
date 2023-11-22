@@ -1,152 +1,209 @@
-#about_sec_slider{
-    .owl-stage{
-        .item{
-            position: relative;
-            &::before{
-                content: '';
-                padding-top: 70%;
-                display: block;
-            }
-            img{
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                left: 0;
-                top: 0;
-                object-fit: cover;
-            }
-        }
-    }
-}
-div.master-container .search-banner-section ul li{
-    font-size: inherit;
-}
-.sec_about_project div.slider_box #about_sec_slider_thumb div.item img{
-    width: 125%;
-    transform: rotate(-90deg);
-}
-body div.master-container .select2-container--default .select2-selection--single .select2-selection__arrow b{
-    margin-left:-4px;
-}
-
-
-.cs_offerBadge{
-    display: flex;
-    background: $color5;
-    border-radius: 6px;
-    padding: 4px 8px;
-    min-height: 34px;
-    font-size: 16px;
-    font-weight: 700;
-    color: $white;
-    gap: 6px;
-    align-items: center;
-    justify-content: center; 
-    line-height: 1;
-    box-sizing: border-box;
-    white-space: nowrap;
-    img{
-        width: 20px;
-        height: 20px;
-        
-    }
-    @include respond (phone_land) {
-        font-size: 14px;
-        min-height: 30px;
-        img{
-            width: 18px;
-            height: 18px;
-        }
-    }
-    &.badge_success{
-        background: $green3;
-    }
-} 
-.all-units-cards{
-    .cs_offerBadge{
-        position: absolute;
-        right:22px;
-        top:22px;
-        @include respond (phone_land) {
-            right: 16px;
-            top: 16px;
-        }
-    }
-}
-@media all and (min-width:576px){ 
-.all-units-cards .search-image-section{
-    position: relative;
-    .cs_offerBadge{
-        
-            font-size: 12px;
-            font-weight: 500;
-            font-family: $fontmedium; 
-            min-height: 24px;
-            right: 4px;
-            top: 4px;
-            gap: 4px;
-            padding: 2px 6px;
-            img{
-                width: 14px;
-                height: 14px;
-            }
-        }
-    }
-}
-
-
-
-@include respond (phone_land) {
-    .cookiesjsr--app .cookiesjsr-banner.active{
-         display: block;
-         .cookiesjsr-banner--info{
-             margin-bottom: 10px;
-             font-size: 12px;
-             line-height: 1.3;
-             padding: 0;
-             *{
-                 font-size: 100%;
-             }
-         }
-         .cookiesjsr-banner--action{
-             padding:0;
-             display: flex;
-             flex-direction: row; 
-             gap:6px;
-             button.cookiesjsr-btn{
-                 font-size: 13px;
-                 padding: 0px 11px 0px 38px;
-                 min-height: 36px;
-                 background-size: 15px;
-                 width: auto;
-                 margin: 0;
-             }
-         }
-         .cookiesjsr-links{
-             margin-left: 0;
-             margin-right: 0;
+.commingsoon_inner_hero{
+    padding-top: 2rem;
+     img{
+         height: 266px;
+         width: 100%;
+         object-fit: cover;
+         border-radius: 16px;
+         @include respond (tab_land){
+            height: 22vw;
+            border-radius: 0;
          }
      }
- }
- .cs_offerdetailrow{
-    display: flex;
-    padding: 12px;
-    background: rgba(228, 228, 220, .5);
-    align-items: center;
-    gap:24px;
-    border-radius: 8px;
-    color:$color5;
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: 700;
-    @include respond (phone) {
-        flex-direction: column;
-        gap: 6px;
-        align-items: self-start;
+     @include respond (tab_land){
+        padding-top: 0;
+        .container{
+            padding: 0;
+        }
+     }
+}
+.comming_soon_section{
+    padding: 3rem 0  5rem;
+    text-align: center;
+    .icon_img_warpper{
+       
+        img{
+            max-width: 85px;
+            margin-bottom: 1.25rem;
+        }
+        figcaption{
+            h3{
+                font-size: 27px;
+                font-weight: 700;
+                margin-bottom: 12px;
+                @include respond (tab_land){
+                    font-size: 20px;
+                }
+            }
+            p{
+                font-size: 18px;
+                color: $logoName;
+                line-height: 1.5;
+                @include respond (tab_land){
+                    font-size: 16px;
+                }
+            }
+        }
+        .back_btnwrapper{
+            padding-top: 4rem;
+            @include respond (tab_land){
+                padding-top: 2rem;
+            }
+        }
     }
- }
- .village-building{
-    .cs_offerdetailrow{
-        margin-top: 1rem;
+}
+
+
+
+#about_sec_slider {
+  .owl-stage {
+    .item {
+      position: relative;
+      &::before {
+        content: "";
+        padding-top: 70%;
+        display: block;
+      }
+      img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+      }
     }
- }
+  }
+}
+div.master-container .search-banner-section ul li {
+  font-size: inherit;
+}
+.sec_about_project div.slider_box #about_sec_slider_thumb div.item img {
+  width: 125%;
+  transform: rotate(-90deg);
+}
+body
+  div.master-container
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  margin-left: -4px;
+}
+
+.cs_offerBadge {
+  display: flex;
+  background: $color5;
+  border-radius: 6px;
+  padding: 4px 8px;
+  min-height: 34px;
+  font-size: 16px;
+  font-weight: 700;
+  color: $white;
+  gap: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  box-sizing: border-box;
+  white-space: nowrap;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  @include respond(phone_land) {
+    font-size: 14px;
+    min-height: 30px;
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &.badge_success {
+    background: $green3;
+  }
+}
+.all-units-cards {
+  .cs_offerBadge {
+    position: absolute;
+    right: 22px;
+    top: 22px;
+    @include respond(phone_land) {
+      right: 16px;
+      top: 16px;
+    }
+  }
+}
+@media all and (min-width: 576px) {
+  .all-units-cards .search-image-section {
+    position: relative;
+    .cs_offerBadge {
+      font-size: 12px;
+      font-weight: 500;
+      font-family: $fontmedium;
+      min-height: 24px;
+      right: 4px;
+      top: 4px;
+      gap: 4px;
+      padding: 2px 6px;
+      img {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+}
+
+@include respond(phone_land) {
+  .cookiesjsr--app .cookiesjsr-banner.active {
+    display: block;
+    .cookiesjsr-banner--info {
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 1.3;
+      padding: 0;
+      * {
+        font-size: 100%;
+      }
+    }
+    .cookiesjsr-banner--action {
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      button.cookiesjsr-btn {
+        font-size: 13px;
+        padding: 0px 11px 0px 38px;
+        min-height: 36px;
+        background-size: 15px;
+        width: auto;
+        margin: 0;
+      }
+    }
+    .cookiesjsr-links {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+.cs_offerdetailrow {
+  display: flex;
+  padding: 12px;
+  background: rgba(228, 228, 220, 0.5);
+  align-items: center;
+  gap: 24px;
+  border-radius: 8px;
+  color: $color5;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 700;
+  @include respond(phone) {
+    flex-direction: column;
+    gap: 6px;
+    align-items: self-start;
+  }
+}
+.village-building {
+  .cs_offerdetailrow {
+    margin-top: 1rem;
+  }
+}
