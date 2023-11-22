@@ -8423,6 +8423,9 @@ span.tooltip:hover .pop-over {
   font-size: 1.875em;
   color: #2B2A28;
 }
+.container .village-building .village-banner .left-section .right-text .cs_offerBadge {
+  margin-left: 1rem;
+}
 @media screen and (max-width: 767px) {
   .container .village-building .village-banner .left-section {
     gap: 8px;
@@ -14946,6 +14949,9 @@ body div.master-container .select2-container--default .select2-selection--single
     width: 18px;
     height: 18px;
   }
+}
+.cs_offerBadge.badge_success {
+  background: #6FA66F;
 }
 
 .all-units-cards .cs_offerBadge {
