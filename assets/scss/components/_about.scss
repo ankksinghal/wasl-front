@@ -6,7 +6,7 @@ ul.breadcrumb {
 
   li {
     display: inline;
-    font-size: 18px;
+    font-size: 14px;
     @include respond(phone_land) {
       font-size: $font12;
     }

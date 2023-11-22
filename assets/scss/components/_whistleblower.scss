@@ -1,0 +1,128 @@
+.sec_whistleblower {
+  padding: 3rem 0;
+  color: $color3;
+  p {
+    line-height: 1.5;
+    
+  }
+  .content_container {
+    p {
+      margin-bottom: 1.5rem;
+      @include respond (phone_land){
+         margin-bottom: 10px;
+      }
+    }
+  }
+  .form_wrapper {
+    padding-top: 1.5rem;
+    margin-top: 1.75rem;
+    border-top: 1px solid $color4;
+    h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+  }
+  span.required {
+    color: $color5;
+  }
+  .title_label {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .card_bg {
+    background: rgba(228, 228, 220, 0.5);
+  }
+  .pt-4 {
+    padding-top: 1.5rem;
+  }
+  label {
+    margin-bottom: 12px;
+    display: block;
+  }
+  .cs_upload .file-input-container {
+    border: 1px solid $color20;
+    border-radius: 8px;
+    .file-input-label {
+      background: $color1;
+      padding: 5px 30px;
+      flex: 0 0 auto;
+      max-width: none;
+      white-space: nowrap;
+      height: auto;
+    }
+    .uploaded-file-name{
+        top: 0;
+        font-size: 14px;
+        text-align: left;
+        margin-left: .5rem;
+    }
+  }
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.checkbox_lists_row {
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  > div {
+    flex: 0 0 calc(25% - 7.5px);
+    max-width: calc(25% - 7.5px);
+    @include respond(tab_land){
+        flex: 0 0 calc(33.3% - 10px);
+        max-width: calc(33.3% - 10px); 
+    }
+    @include respond(phone_land){
+        flex: 0 0 calc(50% - 5px);
+        max-width: calc(50% - 5px); 
+    }
+    @include respond(phone){
+        flex: 100%;
+        max-width: 100%; 
+    }
+    input {
+      display: none;
+      + label {
+        padding-left: 2rem;
+        position: relative;
+        display: block;
+        &:before {
+          content: "";
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          border: 2px solid #a79f92;
+          left: 0;
+          top: 0;
+          border-radius: 3px;
+          box-sizing: border-box;
+        }
+      }
+      &:checked + label {
+        &:before {
+          background: #2b2a28;
+          border-color: #2b2a28;
+        }
+        &:after {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 12px;
+          border: 2px solid #ffffff;
+          border-width: 0 2px 2px 0;
+          transform: rotate(45deg);
+          top: 2.25px;
+          box-sizing: border-box;
+          left: 7px;
+        }
+      }
+    }
+  }
+}

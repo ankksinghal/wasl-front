@@ -162,6 +162,10 @@
   @include respond (phone_land){
       height: 51px; 
   }
+
+}
+textarea.form_control{
+  height: auto;
 }
 .mobile_noBox {
   display: flex;
