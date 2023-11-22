@@ -10124,7 +10124,7 @@ ul.breadcrumb {
 }
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 14px;
 }
 @media screen and (max-width: 767px) {
   ul.breadcrumb li {
@@ -11689,6 +11689,9 @@ figure.card_img:before {
 }
 .cs_btn.btn_lg {
   padding: 19px 35px;
+}
+.cs_btn.btn_xlg {
+  padding: 19px 60px;
 }
 .cs_btn.btn_trans {
   background: transparent;
@@ -13876,6 +13879,10 @@ div.mob-code .iti.iti--allow-dropdown {
   }
 }
 
+textarea.form_control {
+  height: auto;
+}
+
 .mobile_noBox {
   display: flex;
   flex-direction: row;
@@ -15142,4 +15149,138 @@ div .faq-details-wrapper strong {
 div .faq-details-wrapper .faq-details-box-outer a {
   color: #000;
   text-decoration: underline;
+}
+
+.sec_whistleblower {
+  padding: 3rem 0;
+  color: #3A3A3C;
+}
+.sec_whistleblower p {
+  line-height: 1.5;
+}
+.sec_whistleblower .content_container p {
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 767px) {
+  .sec_whistleblower .content_container p {
+    margin-bottom: 10px;
+  }
+}
+.sec_whistleblower .form_wrapper {
+  padding-top: 1.5rem;
+  margin-top: 1.75rem;
+  border-top: 1px solid #EFEFEF;
+}
+.sec_whistleblower .form_wrapper h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.sec_whistleblower span.required {
+  color: #A85B57;
+}
+.sec_whistleblower .title_label {
+  font-size: 20px;
+  font-weight: 700;
+}
+.sec_whistleblower .card_bg {
+  background: rgba(228, 228, 220, 0.5);
+}
+.sec_whistleblower .pt-4 {
+  padding-top: 1.5rem;
+}
+.sec_whistleblower label {
+  margin-bottom: 12px;
+  display: block;
+}
+.sec_whistleblower .cs_upload .file-input-container {
+  border: 1px solid #E5E5EA;
+  border-radius: 8px;
+}
+.sec_whistleblower .cs_upload .file-input-container .file-input-label {
+  background: #E4E4DC;
+  padding: 5px 30px;
+  flex: 0 0 auto;
+  max-width: none;
+  white-space: nowrap;
+  height: auto;
+}
+.sec_whistleblower .cs_upload .file-input-container .uploaded-file-name {
+  top: 0;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 0.5rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.checkbox_lists_row {
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.checkbox_lists_row > div {
+  flex: 0 0 calc(25% - 7.5px);
+  max-width: calc(25% - 7.5px);
+}
+@media screen and (max-width: 1170px) {
+  .checkbox_lists_row > div {
+    flex: 0 0 calc(33.3% - 10px);
+    max-width: calc(33.3% - 10px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .checkbox_lists_row > div {
+    flex: 0 0 calc(50% - 5px);
+    max-width: calc(50% - 5px);
+  }
+}
+@media screen and (max-width: 575px) {
+  .checkbox_lists_row > div {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.checkbox_lists_row > div input {
+  display: none;
+}
+.checkbox_lists_row > div input + label {
+  padding-left: 2rem;
+  position: relative;
+  display: block;
+}
+.checkbox_lists_row > div input + label:before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  border: 2px solid #a79f92;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+.checkbox_lists_row > div input:checked + label:before {
+  background: #2b2a28;
+  border-color: #2b2a28;
+}
+.checkbox_lists_row > div input:checked + label:after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 12px;
+  border: 2px solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 2.25px;
+  box-sizing: border-box;
+  left: 7px;
 }/*# sourceMappingURL=main.css.map */
