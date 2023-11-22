@@ -58,6 +58,9 @@ body div.master-container .select2-container--default .select2-selection--single
             height: 18px;
         }
     }
+    &.badge_success{
+        background: $green3;
+    }
 } 
 .all-units-cards{
     .cs_offerBadge{
