@@ -109,4 +109,27 @@
     margin-right: 40%;
     margin-left: 0;
   }
+  .search-section .form-section .search-button{
+    border-radius: 8px 0 0 8px;
+  }
+  .master-container .search-section .form-section #ms-list-6 button, .master-container .search-section .form-section button{
+    text-align: right;
+  }
+  .search-section .ms-options-wrap>button:after{
+    left: 15px;
+    right: unset;
+  }
+  .tab-list{
+     margin-right: 16px;
+     margin-left: 0;
+  }
+  .search-section .form-section .form-raper{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  body .master-container .select2-container--default .select2-selection--single .select2-selection__arrow b{
+    right:0;
+  }
 }
