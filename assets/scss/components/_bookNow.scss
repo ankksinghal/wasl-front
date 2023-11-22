@@ -101,11 +101,20 @@
 }
 
 [dir="rtl"] {
+  header .header-section .right-bottom-section nav ul li a,
+  footer .footer-section .footer-below-section .footer-menu h3{
+    font-weight: 700;
+  }
+  .master-container .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .card-details img,
+   .master-container .search-map-section .all-units-cards .card-details img{
+    margin-right: 0;
+    margin-left: 10px;
+   }
   .bookNow .right-content {
     left: 0;
     right: auto;
   }
-  .app-status .inner-area-box .app-detail {
+  .app-status .inner-area-box .app-detail { 
     margin-right: 40%;
     margin-left: 0;
   }
