@@ -76,7 +76,7 @@
   border-top: 1px solid $color1;
   h2 {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     margin-bottom: 20px;
   }
@@ -123,7 +123,7 @@
   .year_text {
     padding-top: 15px;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     display: block;
   }
@@ -224,7 +224,7 @@
         opacity: 0.7;
       }
       strong {
-        font-weight: 500;
+        font-weight: $fontweight4;
         font-family: $fontmedium;
       }
     }

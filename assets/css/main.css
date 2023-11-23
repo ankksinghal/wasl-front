@@ -59,7 +59,7 @@ table {
 @font-face {
   font-family: "bliss_medium";
   src: url("../blisspro-fonts/BlissPro-Medium.woff") format("woff");
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-style: normal;
 }
 @font-face {
@@ -88,7 +88,7 @@ button {
 
 .cs_title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 1.1666666667;
 }
@@ -111,7 +111,7 @@ button {
   border-radius: 8px;
   padding: 13px 35px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   transition: all 0.4s ease-in-out;
 }
@@ -245,7 +245,7 @@ button {
 }
 .check-box.new-checkbox samp strong,
 .radio.new-checkbox samp strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   display: block;
   color: #1c190e;
@@ -268,7 +268,7 @@ button {
 .radio.radio-box-view samp span {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #1c190e !important;
 }
 .check-box.radio-box-view samp span strong,
@@ -314,7 +314,7 @@ button {
   color: #2B2A28;
   font-size: 53.3%;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
 }
@@ -325,7 +325,7 @@ button {
   color: #2B2A28;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
 }
 
@@ -345,7 +345,7 @@ button {
   background: #E4E4DC;
 }
 .cs_card .card_title {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 24px;
   line-height: normal;
@@ -389,7 +389,7 @@ button {
   box-sizing: border-box;
 }
 .box_style_type .box_title {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 20px;
   line-height: 23.88px;
@@ -714,7 +714,7 @@ body.modal__active, body.modal_active {
 }
 .cs__modal .modal__header h2 {
   font-size: 28px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
@@ -797,7 +797,7 @@ header .header-section {
   header .header-section .right-section.slide .mobile-search span {
     font-size: 0.875em;
     color: #1C190E;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: "bliss_medium";
   }
   header .header-section .right-section.slide .mobile-search form {
@@ -867,7 +867,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
 header .header-section .right-section .right-top-section .top-nav-section ul li a {
   color: #1c190e;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 20px;
   font-style: normal;
 }
@@ -877,7 +877,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
   }
 }
 header .header-section .right-section .right-top-section .top-nav-section ul li.wasl a span {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 header .header-section .right-section .right-top-section .top-nav-section ul li.language {
   display: flex;
@@ -1037,7 +1037,7 @@ header .header-section .right-bottom-section nav ul li a {
   text-align: center;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 20px;
   text-transform: capitalize;
@@ -1081,7 +1081,7 @@ header .left-section .logo-name {
   font-size: 0.938em;
   display: inline-block;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 22.841px;
 }
 @media screen and (max-width: 1170px) {
@@ -1240,7 +1240,7 @@ body.slide {
   font-size: 2.563em;
   color: #2b2a28;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: normal;
 }
 @media screen and (max-width: 1170px) {
@@ -1257,7 +1257,7 @@ body.slide {
   font-size: 1.5em;
   color: #585754;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
 }
@@ -1338,7 +1338,7 @@ body.slide {
 }
 .search-section h3 {
   font-size: 1.375em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 33px;
   color: #1c190e;
@@ -1367,7 +1367,7 @@ body.slide {
   padding: 0;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   flex: 1;
   display: flex;
 }
@@ -1388,7 +1388,7 @@ body.slide {
   color: #FFFFFF;
   background: #2B2A28;
   font-size: 1.125em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   border-radius: 0px 8px 8px 0px;
   border: none;
@@ -1426,7 +1426,7 @@ body.slide {
   cursor: pointer;
   position: relative;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   align-items: center;
   text-transform: uppercase;
@@ -1502,7 +1502,7 @@ body.slide {
 .search-section .filter-section .form-view .form-cols label {
   color: #2b2a28;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   margin-top: 0px;
@@ -1524,7 +1524,7 @@ body.slide {
   border: 1px solid #ccc;
   height: 52px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2b2a28;
   padding: 0 10px;
@@ -1575,7 +1575,7 @@ body.slide {
   color: #1c190e;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 20px;
   border-radius: 8px 8px 0px 0px;
@@ -1696,7 +1696,7 @@ body.slide {
 }
 .cs_search_style .fstResults h3 {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   text-align: left;
 }
@@ -1919,7 +1919,7 @@ body.slide {
           appearance: none;
   color: #4e4e4e;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 @media screen and (max-width: 991px) {
   .form-cols-out .form-control {
@@ -2193,7 +2193,7 @@ body.slide {
 .custom-dropdown label {
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #4e4e4e;
   padding-left: 10px;
   cursor: pointer;
@@ -2216,7 +2216,7 @@ body.slide {
   color: #2b2a28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
   transition: all 0.4s ease-in-out;
   text-align: left;
@@ -2323,7 +2323,7 @@ body.slide {
   font-size: 1em;
   border-radius: 8px;
   padding: 13px 0;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   display: inline-block;
   transition: all 0.4s ease-in-out;
@@ -2386,7 +2386,7 @@ body.slide {
   color: #000810;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
@@ -2396,7 +2396,7 @@ body.slide {
   color: #000810;
   font-size: 44px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 55px;
   margin-bottom: 45px;
@@ -2405,7 +2405,7 @@ body.slide {
   color: #162739;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 1.625;
 }
 .buying-about figure {
@@ -2509,7 +2509,7 @@ body.slide {
 .buying-thumb-slider figcaption strong {
   color: #000;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 8px;
   display: block;
@@ -2582,7 +2582,7 @@ body.slide {
 .thumbnail figcaption strong {
   color: #000;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 8px;
   display: block;
@@ -2645,7 +2645,7 @@ body.slide {
   color: #2b2a28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   padding: 20px 18px 30px;
@@ -2668,7 +2668,7 @@ body.slide {
   color: #2b2a28;
   font-size: 30px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
 }
@@ -2715,7 +2715,7 @@ body.slide {
 .buying-pricing .tab-content ul.listing li span.bottom {
   color: rgba(43, 42, 40, 0.5);
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -2725,7 +2725,7 @@ body.slide {
 .buying-pricing .tab-content ul.listing li span.bottom strong {
   color: #284047;
   font-size: 50px;
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 .buying-pricing .tab-content ul.listing li span.bottom strong small {
   font-size: 24px;
@@ -2787,7 +2787,7 @@ body.slide {
   color: #1c190e;
   font-size: 24px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: normal;
 }
 @media screen and (max-width: 1170px) {
@@ -2801,7 +2801,7 @@ body.slide {
   color: #2b2a28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
 }
 .buying-pricing .tab-content ul.cardview li h3 {
@@ -2809,7 +2809,7 @@ body.slide {
   color: #2b2a28;
   font-size: 48px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: normal;
   padding: 18px 24px;
 }
@@ -2821,7 +2821,7 @@ body.slide {
 .buying-pricing .tab-content ul.cardview li h3 small {
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 @media screen and (max-width: 1170px) {
   .buying-pricing {
@@ -2883,7 +2883,7 @@ body.slide {
   color: #1c1c1e;
   font-size: 32px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 38px;
   margin-bottom: 12px;
@@ -2892,7 +2892,7 @@ body.slide {
   color: #3a3a3c;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
 }
 .buying-proj-slider .right-proj .owl-prtoj-thumb figure {
@@ -2914,13 +2914,13 @@ body.slide {
   color: #767677;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 18px;
 }
 .buying-proj-slider .right-proj .owl-prtoj-thumb figure figcaption strong {
   color: #1c1c1e;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   display: block;
 }
@@ -2993,7 +2993,7 @@ body.slide {
   color: #000810;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
@@ -3015,7 +3015,7 @@ body.slide {
   text-align: justify;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 26px;
 }
@@ -3053,7 +3053,7 @@ body.slide {
   color: #000810;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
@@ -3077,14 +3077,14 @@ body.slide {
   color: #2b2a28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   padding: 20px 18px;
 }
 .plans-buying .tab-links-plans li.active {
   background: #e4e4dc;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2b2a28;
 }
@@ -3114,7 +3114,7 @@ body.slide {
   color: #1c190e;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 20px;
 }
 .plans-buying .tab-content-plans .fieldset-area label input[type=radio] {
@@ -3143,7 +3143,7 @@ body.slide {
   color: #000810;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
@@ -3152,7 +3152,7 @@ body.slide {
   color: #000810;
   font-size: 36px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
 }
@@ -3165,7 +3165,7 @@ body.slide {
   color: #162739;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 25px;
 }
 .plans-buying .tab-content-plans .more-offring-inn .left-part a,
@@ -3180,7 +3180,7 @@ body.slide {
   text-align: justify;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 26px;
   flex-shrink: 0;
@@ -3235,7 +3235,7 @@ body.slide {
   color: #000810;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
@@ -3259,14 +3259,14 @@ body.slide {
   color: #2b2a28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   padding: 20px 18px;
 }
 .more-offring .tab-links-offering li.active {
   background: #e4e4dc;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2b2a28;
 }
@@ -3305,7 +3305,7 @@ body.slide {
   color: #000810;
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 23px;
   text-transform: uppercase;
@@ -3314,7 +3314,7 @@ body.slide {
   color: #000810;
   font-size: 36px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 55px;
 }
@@ -3327,7 +3327,7 @@ body.slide {
   color: #162739;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 25px;
 }
 .more-offring .more-offring-inn .left-part a {
@@ -3338,7 +3338,7 @@ body.slide {
   text-align: center;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
@@ -3375,7 +3375,7 @@ body.slide {
   color: #000810;
   font-size: 30px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 55px;
   margin-bottom: 32px;
@@ -3384,7 +3384,7 @@ body.slide {
   color: #162739;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 26px;
   margin-bottom: 30px;
 }
@@ -3396,7 +3396,7 @@ body.slide {
   text-align: center;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
@@ -3911,7 +3911,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 }
 .upcoming-projects .right-section .content-section h2 {
   font-size: 2.75em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #1c190e;
   font-style: normal;
@@ -3930,7 +3930,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #8D8D87;
   letter-spacing: 1px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 @media screen and (max-width: 767px) {
   .upcoming-projects .right-section .content-section p {
@@ -3948,7 +3948,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   font-size: 1em;
   border-radius: 8px;
   padding: 13px 35px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   display: inline-block;
   transition: all 0.4s ease-in-out;
@@ -3989,7 +3989,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 .residential h2 {
   font-size: 2.125em;
   text-align: center;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 33px;
   font-style: normal;
@@ -4006,13 +4006,13 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #8D8D87;
   margin: 10px 0px;
   line-height: 27px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 @media screen and (max-width: 767px) {
   .residential p {
     font-size: 0.875em;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $fontweight5;
     line-height: 16px;
     margin: 0 0 21px;
   }
@@ -4050,7 +4050,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #3c3c3c;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   text-align: center;
   line-height: 25px;
   padding: 14px 0;
@@ -4128,7 +4128,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 .commercial h2 {
   font-size: 2.125em;
   text-align: center;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 33px;
   font-style: normal;
@@ -4145,13 +4145,13 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #8D8D87;
   margin: 10px 0px;
   line-height: 27px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 @media screen and (max-width: 767px) {
   .commercial p {
     font-size: 0.875em;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $fontweight5;
     line-height: 16px;
     margin: 0 0 21px;
   }
@@ -4189,7 +4189,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #3c3c3c;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   text-align: center;
   line-height: 25px;
   padding: 14px 0;
@@ -4299,7 +4299,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 .freehold .content-box .left-section h2 {
   font-size: 2.125em;
   margin-bottom: 15px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 33px;
   font-style: normal;
@@ -4318,14 +4318,14 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   margin: 0;
   text-align: justify;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 26.857px;
 }
 @media screen and (max-width: 767px) {
   .freehold .content-box .left-section p {
     font-size: 0.875em;
     font-style: normal;
-    font-weight: 400;
+    font-weight: $fontweight5;
     line-height: 16px;
     text-align: center;
   }
@@ -4342,7 +4342,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   font-size: 1em;
   padding: 11px 34px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   transition: all 0.4s ease-in-out;
 }
@@ -4418,7 +4418,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #2b2a28;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   margin-top: 10px;
@@ -4459,7 +4459,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #2b2a28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 24px;
   text-decoration: none;
@@ -4562,7 +4562,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   max-width: 600px;
   color: #2b2a28;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 120%;
 }
@@ -4600,7 +4600,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 .bookNow .right-content a {
   font-size: 1.25em;
   text-align: center;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #FFFFFF;
   cursor: pointer;
@@ -4617,7 +4617,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 
 [dir=rtl] header .header-section .right-bottom-section nav ul li a,
 [dir=rtl] footer .footer-section .footer-below-section .footer-menu h3 {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 [dir=rtl] .master-container .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .card-details img,
 [dir=rtl] .master-container .search-map-section .all-units-cards .card-details img {
@@ -4678,7 +4678,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   font-size: 34px;
   color: #1c190e;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 33px;
 }
@@ -4742,7 +4742,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   }
 }
 .youtube-page .subscribeBtn-div .subscribe-first .sub-text p {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 19.68px;
   line-height: 23.06px;
   margin-bottom: 7px;
@@ -4751,7 +4751,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 @media screen and (max-width: 767px) {
   .youtube-page .subscribeBtn-div .subscribe-first .sub-text p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $fontweight5;
     margin: 0;
   }
 }
@@ -4778,7 +4778,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   border-radius: 8px;
   gap: 10.93px;
   font-size: 15.31px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 17.94px;
   font-family: "Roboto";
   border: none;
@@ -4791,7 +4791,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   color: #9ca0ac;
   font-size: 17.49px;
   line-height: 20.5px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-family: "Roboto";
 }
 @media screen and (max-width: 767px) {
@@ -4900,7 +4900,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   }
 }
 .subscribeBtn-div .subscribe-first .sub-text p {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 19.68px;
   line-height: 23.06px;
   margin-bottom: 7px;
@@ -4909,7 +4909,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 @media screen and (max-width: 767px) {
   .subscribeBtn-div .subscribe-first .sub-text p {
     font-size: 14px;
-    font-weight: 400;
+    font-weight: $fontweight5;
     margin: 0;
   }
 }
@@ -4936,7 +4936,7 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
   border-radius: 8px;
   gap: 10.93px;
   font-size: 15.31px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 17.94px;
   font-family: "Roboto";
   border: none;
@@ -4987,7 +4987,7 @@ footer .footer-section .right-section .form-section button {
   background: #2b2a28;
   height: 37px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #fff;
   border-radius: 0px 4px 4px 0px;
   text-transform: uppercase;
@@ -5036,7 +5036,7 @@ footer .footer-section .footer-below-section .footer-menu h3 {
   text-transform: uppercase;
   margin-bottom: 25px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2b2a28;
 }
@@ -5049,7 +5049,7 @@ footer .footer-section .footer-below-section .footer-menu ul li a {
   font-size: 16px;
   line-height: 20px;
   color: #2b2a28;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 footer .footer-section .footer-below-section .footer-menu ul li a:hover {
   text-decoration: underline;
@@ -5239,7 +5239,7 @@ footer .copyright-section p {
 .app-status .inner-area-box .app-detail h2 {
   font-size: 34px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 55px;
   color: #000810;
@@ -5383,7 +5383,7 @@ footer .copyright-section p {
 .search-banner-section h2 {
   color: #2B2A28;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: $fontweight3;
   margin: 0;
 }
 @media screen and (max-width: 1170px) {
@@ -5399,7 +5399,7 @@ footer .copyright-section p {
 .search-banner-section p {
   color: #2B2A28;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -5446,7 +5446,7 @@ footer .copyright-section p {
 }
 .search-tab-section .tab-links li.active {
   background-color: #FFFFFF;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .search-tab-section .tab-links li a {
@@ -5486,7 +5486,7 @@ footer .copyright-section p {
   color: #000;
   margin-bottom: 10px;
   font-size: 1.375em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
@@ -5498,7 +5498,7 @@ footer .copyright-section p {
 .all-available-units-section .all-available-units-left span {
   color: #2B2A28;
   font-size: 0.875em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .all-available-units-section .all-available-units-right {
@@ -5564,7 +5564,7 @@ footer .copyright-section p {
   color: #000;
   margin-bottom: 12px;
   font-size: 1.125em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
@@ -5759,7 +5759,7 @@ footer .copyright-section p {
 }
 .all-units-wrapper .left-side-bar-filters .upper-filter-section h3,
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section h3 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.125em;
   margin-bottom: 15px;
@@ -5827,7 +5827,7 @@ footer .copyright-section p {
   border: 1px solid #ccc;
   height: 48px;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #2B2A28;
   padding: 0 10px;
   -webkit-appearance: none;
@@ -5845,7 +5845,7 @@ footer .copyright-section p {
   color: #1C1C1E;
   font-size: 1em;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 .all-units-wrapper .left-side-bar-filters .upper-filter-section .form-view .submit {
   background-color: #2B2A28;
@@ -5853,7 +5853,7 @@ footer .copyright-section p {
   display: block;
   width: 100%;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 0.938em;
   cursor: pointer;
   border: none;
@@ -5890,7 +5890,7 @@ footer .copyright-section p {
 }
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section ul li .contact-right-section span.contact-text-dark {
   color: #3A3A3C;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section ul li .contact-right-section span.contact-text-dark a {
@@ -5934,7 +5934,7 @@ footer .copyright-section p {
 .all-units-wrapper .all-units-section h4 {
   font-size: 1.125em;
   color: #000;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 16px;
 }
@@ -6000,7 +6000,7 @@ footer .copyright-section p {
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards h3 {
   font-size: 1.125em;
   color: #2B2A28;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 10px;
 }
@@ -6022,7 +6022,7 @@ footer .copyright-section p {
   font-size: 1em;
 }
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .card-details span i {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
   margin-left: 3px;
@@ -6034,7 +6034,7 @@ footer .copyright-section p {
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .view-details-wrap a {
   color: #2B2A28;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .view-details-wrap a i {
@@ -6055,7 +6055,7 @@ footer .copyright-section p {
   height: 44px;
   width: 44px;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 44px;
   text-align: center;
@@ -6089,7 +6089,7 @@ body.modal {
   text-align: center;
 }
 .no-search-found h3 {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 1.875em;
 }
 
@@ -6402,7 +6402,7 @@ body.modal {
   background-color: #2B2A28;
   color: #FFFFFF;
   font-size: 0.938em;
-  font-weight: 700;
+  font-weight: $fontweight3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6583,7 +6583,7 @@ div.master-container .chip_wrapper > span {
   width: 44px;
   color: #FFFFFF;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: $fontweight3;
   text-align: center;
   border-radius: 25px;
   display: flex;
@@ -6595,7 +6595,7 @@ div.master-container .chip_wrapper > span {
 .discount-section strong {
   display: block;
   font-size: 0.875em;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 
 .login-page {
@@ -6839,7 +6839,7 @@ div.master-container .chip_wrapper > span {
   width: 100%;
 }
 .login-page .main-login .right-section .form h2 {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 30px;
   color: #2B2A28;
   margin-bottom: 20px;
@@ -6863,7 +6863,7 @@ div.master-container .chip_wrapper > span {
   color: #2B2A28;
   font-size: 16px;
   line-height: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -6874,7 +6874,7 @@ div.master-container .chip_wrapper > span {
 .login-page .main-login .right-section .form label small a {
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #A79F92;
 }
 .login-page .main-login .right-section .form label strong {
@@ -7027,13 +7027,13 @@ div.master-container .chip_wrapper > span {
   text-align: center;
 }
 .login-page .main-login .right-section .form .input-box input::-moz-placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
 }
 .login-page .main-login .right-section .form .input-box input::placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -7069,7 +7069,7 @@ div.master-container .chip_wrapper > span {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
@@ -7100,7 +7100,7 @@ div.master-container .chip_wrapper > span {
   gap: 8px;
 }
 .login-page .main-login .right-section .form .fp-box ul li a {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -7130,7 +7130,7 @@ div.master-container .chip_wrapper > span {
   border-radius: 8px;
   background-color: #1C190E;
   height: 54px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 16px;
   line-height: 19.1px;
@@ -7177,7 +7177,7 @@ div.master-container .chip_wrapper > span {
 }
 .login-page .main-login .right-section .form .otp_resend {
   text-decoration: underline;
-  font-weight: 700;
+  font-weight: $fontweight3;
   background: none;
   border: none;
   box-shadow: none;
@@ -7195,7 +7195,7 @@ div.master-container .chip_wrapper > span {
   text-align: center;
   line-height: 0.1em;
   font-family: "Poppins";
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 0.8125em;
   color: #8E8E93;
   display: inline-block;
@@ -7221,7 +7221,7 @@ div.master-container .chip_wrapper > span {
 .login-page .main-login .right-section .last-p {
   margin-top: 18px;
   text-align: center;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: block;
   font-size: 16px;
   line-height: 24px;
@@ -7231,7 +7231,7 @@ div.master-container .chip_wrapper > span {
   margin-left: 5px;
 }
 .login-page .main-login .right-section .last-p strong a {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 16px;
   line-height: 19.1px;
   text-decoration: none;
@@ -7252,7 +7252,7 @@ div.master-container .chip_wrapper > span {
   border-radius: 8px;
   background-color: #1C190E;
   padding: 16px 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 16px;
   line-height: 19.1px;
@@ -7270,7 +7270,7 @@ div.master-container .chip_wrapper > span {
   gap: 9px;
 }
 .login-page .main-login .right-section .loginBtns-div .uae-btn p {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -7293,7 +7293,7 @@ div.master-container .chip_wrapper > span {
   background-color: #1C190E;
   color: #FFFFFF;
   border-radius: 0px 13px 13px 0px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 0.875em;
   line-height: 16.8px;
   height: 57px;
@@ -7331,7 +7331,7 @@ div.master-container .chip_wrapper > span {
   gap: 5px;
   font-size: 12px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 120%;
 }
 .login-page p.error img {
@@ -7341,7 +7341,7 @@ div.master-container .chip_wrapper > span {
 .login-page .disc {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   color: #2B2A28;
   margin-bottom: 32px;
@@ -7508,7 +7508,7 @@ span.tooltip .pop-over li {
   padding-left: 15px;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 15px;
   color: #2B2A28;
 }
@@ -7582,7 +7582,7 @@ span.tooltip:hover .pop-over {
   text-align: center;
   font-size: 22px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   margin-bottom: 28px;
 }
@@ -7639,7 +7639,7 @@ span.tooltip:hover .pop-over {
 .feadback-form label .inn-label {
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 24px;
   position: relative;
@@ -7688,7 +7688,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7739,7 +7739,7 @@ span.tooltip:hover .pop-over {
   text-align: center;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
@@ -7832,7 +7832,7 @@ span.tooltip:hover .pop-over {
   display: -webkit-box;
   font-size: 22px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
 }
@@ -7864,21 +7864,21 @@ span.tooltip:hover .pop-over {
 }
 .lease-img-box .card-details-outer .card-details-wrap .card-details span i,
 .lease-img-box .card-details-outer-mob .card-details-wrap .card-details span i {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
   margin-left: 3px;
 }
 .lease-img-box .card-details-outer .card-details-wrap .card-details strong,
 .lease-img-box .card-details-outer-mob .card-details-wrap .card-details strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   color: #2B2A28;
 }
 .lease-img-box .card-details-outer p,
 .lease-img-box .card-details-outer-mob p {
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   color: #3A3A3C;
   margin-top: 20px;
@@ -7906,7 +7906,7 @@ span.tooltip:hover .pop-over {
 .lease-img-box .card-details-outer-mob h3 {
   font-size: 12px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 .lease-img-box .card-details-outer-mob .card-details-wrap {
   gap: 3px;
@@ -7931,7 +7931,7 @@ span.tooltip:hover .pop-over {
   line-height: 18px;
 }
 .lease-img-box .card-details-outer-mob .card-details-wrap .card-details span i {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
   margin-left: 3px;
@@ -7939,7 +7939,7 @@ span.tooltip:hover .pop-over {
 .lease-img-box .card-details-outer-mob .card-details-wrap .card-details strong {
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 .lease-img-box .card-details-outer-mob p {
   font-size: 12px;
@@ -7962,7 +7962,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
   opacity: 0.5;
   margin: 10px 0;
@@ -7979,7 +7979,7 @@ span.tooltip:hover .pop-over {
 .fieldset-area h3 {
   font-size: 20px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   color: #1C1C1E;
@@ -8056,7 +8056,7 @@ span.tooltip:hover .pop-over {
   color: #EF3D3D;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: normal;
 }
 .otp-counter button,
@@ -8074,7 +8074,7 @@ span.tooltip:hover .pop-over {
   color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   transition: all 0.4s ease-in-out;
 }
 .otp-counter button:hover,
@@ -8100,12 +8100,12 @@ span.tooltip:hover .pop-over {
   font-size: 16px;
   font-style: normal;
   line-height: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .expires-counter strong {
   color: #FFFFFF;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: flex;
   padding: 5px 10px;
   align-items: flex-start;
@@ -8122,14 +8122,14 @@ span.tooltip:hover .pop-over {
   color: #3A3A3C;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .project-detail li strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 
@@ -8145,11 +8145,11 @@ span.tooltip:hover .pop-over {
   color: #3A3A3C;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
 }
 .total-view strong {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 
 /*invoice steper*/
@@ -8180,7 +8180,7 @@ span.tooltip:hover .pop-over {
 .stapper_design li span {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   background: #FFFFFF;
   color: #4BB543;
@@ -8236,7 +8236,7 @@ span.tooltip:hover .pop-over {
   border-radius: 32px;
   font-size: 0;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   display: flex;
   align-items: center;
@@ -8451,7 +8451,7 @@ span.tooltip:hover .pop-over {
   gap: 8px;
 }
 .container .village-building .village-banner .left-section .right-text strong {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 1.875em;
   color: #2B2A28;
 }
@@ -8465,7 +8465,7 @@ span.tooltip:hover .pop-over {
   }
 }
 .container .village-building .village-banner .left-section .village-heading {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   line-height: 35.82px;
@@ -8473,7 +8473,7 @@ span.tooltip:hover .pop-over {
 }
 @media screen and (max-width: 767px) {
   .container .village-building .village-banner .left-section .village-heading {
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: "bliss_medium";
     font-size: 1.125em;
     line-height: 21.49px;
@@ -8486,7 +8486,7 @@ span.tooltip:hover .pop-over {
 @media screen and (max-width: 767px) {
   .container .village-building .village-banner .left-section .village-subheading {
     display: block;
-    font-weight: 700;
+    font-weight: $fontweight3;
     font-size: 1.125em;
     line-height: 21.49px;
     color: #2B2A28;
@@ -8514,7 +8514,7 @@ span.tooltip:hover .pop-over {
   align-items: center;
   justify-content: left;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 1.5;
   color: #2B2A28;
 }
@@ -8525,7 +8525,7 @@ span.tooltip:hover .pop-over {
 }
 @media screen and (max-width: 767px) {
   .container .village-building .village-banner .left-section ul li {
-    font-weight: 400;
+    font-weight: $fontweight5;
     font-size: 0.875em;
     line-height: 21px;
   }
@@ -8541,14 +8541,14 @@ span.tooltip:hover .pop-over {
   }
 }
 .container .village-building .village-banner .left-section ul li .span-text {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
 }
 @media screen and (max-width: 767px) {
   .container .village-building .village-banner .left-section ul li .span-text {
     font-size: 0.875em;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: "bliss_medium";
     line-height: 21px;
     color: #2B2A28;
@@ -8602,18 +8602,18 @@ span.tooltip:hover .pop-over {
   background-color: #2B2A28;
   color: #FFFFFF;
   font-size: 0.938em;
-  font-weight: 700;
+  font-weight: $fontweight3;
   margin-right: 8px;
 }
 .container .village-building .village-banner .right-section .btn-links a.enquire-link {
   border: 1px solid #2B2A28;
   color: #2B2A28;
   background-color: #FFFFFF;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 0.938em;
 }
 .container .village-building .village-banner .right-section .right-text {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   line-height: 35.82px;
@@ -8699,7 +8699,7 @@ span.tooltip:hover .pop-over {
   margin-bottom: 20px;
 }
 .container .property-details .property-inner .property-heading {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.25em;
   line-height: 23.88px;
@@ -8717,7 +8717,7 @@ span.tooltip:hover .pop-over {
   width: 25%;
   margin-bottom: 20px;
   gap: 10px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 24px;
   color: #3A3A3C;
@@ -8732,7 +8732,7 @@ span.tooltip:hover .pop-over {
 @media screen and (max-width: 767px) {
   .container .property-details .property-inner .property-ul li {
     width: 100%;
-    font-weight: 400;
+    font-weight: $fontweight5;
     font-size: 0.875em;
     line-height: 21px;
     color: #3A3A3C;
@@ -8753,7 +8753,7 @@ span.tooltip:hover .pop-over {
   margin-top: 16px;
 }
 .container .property-details .property-inner .property-info p {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 26px;
   color: #2B2A28;
@@ -8761,7 +8761,7 @@ span.tooltip:hover .pop-over {
 }
 @media screen and (max-width: 767px) {
   .container .property-details .property-inner .property-info p {
-    font-weight: 400;
+    font-weight: $fontweight5;
     font-size: 0.875em;
     line-height: 22px;
     color: #2B2A28;
@@ -8811,7 +8811,7 @@ span.tooltip:hover .pop-over {
   border: 1px solid #2B2A28;
   color: #2B2A28;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   padding: 0px 18px;
   border-radius: 8px;
@@ -8941,7 +8941,7 @@ span.tooltip:hover .pop-over {
   }
 }
 .enquiry-form div .form-label {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 24px;
   color: #2B2A28;
@@ -8957,7 +8957,7 @@ span.tooltip:hover .pop-over {
 .enquiry-form div .main-radios .radio-buttons .extra-label {
   display: flex;
   flex-direction: row;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 19.2px;
   color: #1C190E;
@@ -8986,7 +8986,7 @@ span.tooltip:hover .pop-over {
 }
 .enquiry-form div .main-radios .radio-buttons .valid-radios .inner-radios label {
   margin-top: 2px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 0.875em;
   color: #1C190E;
   line-height: 16.8px;
@@ -9044,7 +9044,7 @@ span.tooltip:hover .pop-over {
   padding: 15px 16px;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
   transition: all 0.4s ease-in-out;
   text-align: left;
@@ -9104,7 +9104,7 @@ span.tooltip:hover .pop-over {
   align-items: center;
 }
 .link-section .captcha .inner-captcha label {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1.25em;
   line-height: 28px;
   color: #1C190E;
@@ -9135,7 +9135,7 @@ span.tooltip:hover .pop-over {
   vertical-align: sub;
 }
 .link-section .agree-check label {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
@@ -9146,7 +9146,7 @@ span.tooltip:hover .pop-over {
   }
 }
 .link-section .agree-check label a {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1em;
   line-height: 19.1px;
@@ -9166,7 +9166,7 @@ span.tooltip:hover .pop-over {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1em;
   line-height: 24px;
@@ -9233,13 +9233,13 @@ span.tooltip:hover .pop-over {
   font-family: inherit;
 }
 .form-input::-moz-placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 24px;
   color: #6b6a69;
 }
 .form-input::placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 24px;
   color: #6b6a69;
@@ -9294,7 +9294,7 @@ span.tooltip:hover .pop-over {
   background-color: #1C190E;
   color: #FFFFFF;
   border-radius: 0px 13px 13px 0px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 0.875em;
   line-height: 16.8px;
   height: 55px;
@@ -9345,13 +9345,13 @@ span.tooltip:hover .pop-over {
   font-family: inherit;
 }
 .file_input input[type=file]::-moz-placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 24px;
   color: #6b6a69;
 }
 .file_input input[type=file]::placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 24px;
   color: #6b6a69;
@@ -9361,7 +9361,7 @@ span.tooltip:hover .pop-over {
   text-align: center;
   font-size: 1em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   height: 32px;
   width: 118px;
   border-radius: 8px;
@@ -9446,7 +9446,7 @@ span.tooltip:hover .pop-over {
   color: #1C1C1E;
   font-size: 1.125em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
 }
@@ -9536,14 +9536,14 @@ span.tooltip:hover .pop-over {
 .all-units-wrapper.buying_section.two-column .right-section .right-area-box .card-details-outer h3 {
   font-size: 1.125em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 25px;
 }
 @media screen and (max-width: 991px) {
   .all-units-wrapper.buying_section.two-column .right-section .right-area-box .card-details-outer h3 {
     font-size: 0.75em;
-    font-weight: 700;
+    font-weight: $fontweight3;
     line-height: normal;
   }
 }
@@ -9554,7 +9554,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
   margin: 0;
 }
@@ -9562,7 +9562,7 @@ span.tooltip:hover .pop-over {
   .all-units-wrapper.buying_section.two-column .right-section .right-area-box .card-details-outer p {
     font-size: 10px;
     line-height: normal;
-    font-weight: 400;
+    font-weight: $fontweight5;
   }
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .right-section {
@@ -9612,13 +9612,13 @@ span.tooltip:hover .pop-over {
   text-align: left;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   border-bottom: 2px solid #1C190E;
   padding-bottom: 2px;
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .right-section figure figcaption h2 strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .right-section figure figcaption p {
@@ -9626,18 +9626,18 @@ span.tooltip:hover .pop-over {
   text-align: left;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .right-section figure figcaption p strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .all-units-wrapper.buying_section.two-column.inner-blog .all-units-section p {
   color: #2B2A28;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 25px;
   opacity: 0.7;
   margin: 0;
@@ -9752,7 +9752,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: calc(2rem - 4px);
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 36px;
   margin-bottom: 6px;
@@ -9772,7 +9772,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 25px;
   opacity: 0.7;
 }
@@ -9812,7 +9812,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 1em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
 }
@@ -9820,7 +9820,7 @@ span.tooltip:hover .pop-over {
   color: #2B2A28;
   font-size: 1em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 24px;
   display: flex;
@@ -9936,7 +9936,7 @@ span.tooltip:hover .pop-over {
   text-decoration: none;
   border-radius: 8px;
   background-color: #1C190E;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.25em;
   text-align: center;
@@ -10021,7 +10021,7 @@ span.tooltip:hover .pop-over {
   text-align: center;
   font-size: 1em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   transition: all 0.4s ease-in-out;
@@ -10097,7 +10097,7 @@ span.tooltip:hover .pop-over {
   border: 1px solid #ccc;
   height: 52px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2b2a28;
   padding: 0 45px 0 18px;
@@ -10345,7 +10345,7 @@ ul.breadcrumb li a:hover {
 }
 .tab_layout_block .cs_tab_content_container .tab_card_box .card_header .card_title {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin: 0;
 }
@@ -10419,7 +10419,7 @@ ul.breadcrumb li a:hover {
 }
 .slider_wrapper .title_ceo {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 24px;
 }
@@ -10491,7 +10491,7 @@ ul.breadcrumb li a:hover {
 }
 .slider_wrapper.type_second .title_slider {
   font-size: 44px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #FFFFFF;
 }
@@ -10552,14 +10552,14 @@ ul.breadcrumb li a:hover {
   font-size: 1em;
   line-height: 24px;
   color: #2B2A28;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .cs_tab_content_container .contact-us-box ul li .office-details .description.telephone a {
   font-size: 1.5em;
   line-height: 28.66px;
   color: #2B2A28;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .cs_tab_content_container .contact-us-box.map img {
@@ -10605,7 +10605,7 @@ ul.breadcrumb li a:hover {
   font-size: 1.875em;
   line-height: 32.78px;
   color: #2B2A28;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 8px;
 }
@@ -10618,7 +10618,7 @@ ul.breadcrumb li a:hover {
   font-size: 1em;
   line-height: 24px;
   color: #2B2A28;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
@@ -10636,7 +10636,7 @@ ul.breadcrumb li a:hover {
   font-size: 0.938em;
   line-height: 22.5px;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: $fontweight3;
   margin-bottom: 8px;
   background-color: #2B2A28;
   padding: 16px 18px;
@@ -10708,7 +10708,7 @@ ul.breadcrumb li a:hover {
   width: 100%;
 }
 .contact-form-section .form h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 30px;
   color: #2b2a28;
@@ -10724,7 +10724,7 @@ ul.breadcrumb li a:hover {
   color: #1c190e;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 24px;
   margin: 0;
@@ -10733,7 +10733,7 @@ ul.breadcrumb li a:hover {
   color: #2b2a28;
   font-size: 16px;
   line-height: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -10744,7 +10744,7 @@ ul.breadcrumb li a:hover {
 .contact-form-section .form label small a {
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #a79f92;
 }
 .contact-form-section .form label strong {
@@ -10849,7 +10849,7 @@ ul.breadcrumb li a:hover {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
@@ -10875,7 +10875,7 @@ ul.breadcrumb li a:hover {
   border-radius: 8px;
   background-color: #1c190e;
   height: 54px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 15px;
   line-height: 19.1px;
   text-align: center;
@@ -10939,7 +10939,7 @@ ul.breadcrumb li a:hover {
   background-color: #1C190E;
   color: #FFFFFF;
   border-radius: 0px 13px 13px 0px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 0.875em;
   line-height: 16.8px;
   height: 57px;
@@ -11035,7 +11035,7 @@ ul.breadcrumb li a:hover {
   font-size: 1.875em;
   color: #2B2A28;
   margin: 30px 0 0;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
@@ -11054,7 +11054,7 @@ ul.breadcrumb li a:hover {
   transition: left 0.3s ease-in-out;
 }
 .faq-page-wrapper .accordion-content p {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1em;
   color: #2B2A28;
@@ -11135,7 +11135,7 @@ ul.breadcrumb li a:hover {
   list-style-type: decimal;
 }
 .faq-page-wrapper .accordion-item .accordion-content strong {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 
 #modal360 .modal__content.faq_model {
@@ -11156,7 +11156,7 @@ ul.breadcrumb li a:hover {
   color: #000;
   font-size: 1.375em;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 24px;
 }
 #modal360 .modal__content.faq_model header .modal__close {
@@ -11201,7 +11201,7 @@ ul.breadcrumb li a:hover {
   color: #2B2A28;
   font-size: 1.125em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   line-height: 27px;
   margin-bottom: 16px;
 }
@@ -11218,7 +11218,7 @@ ul.breadcrumb li a:hover {
   color: #2B2A28;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
   opacity: 0.9;
 }
@@ -11235,7 +11235,7 @@ ul.breadcrumb li a:hover {
 .owner-services-wrapper h2 {
   font-size: 1.875em;
   margin-bottom: 20px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
 }
@@ -11255,7 +11255,7 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 .owner-services-wrapper p.strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .owner-services-wrapper ul {
@@ -11296,14 +11296,14 @@ ul.breadcrumb li a:hover {
   }
 }
 .owner-services-inner-wrapper h3 {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 1.125em;
   color: #2B2A28;
   margin-bottom: 10px;
 }
 .owner-services-inner-wrapper h4 {
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 15px;
 }
@@ -11356,7 +11356,7 @@ figure.card_img:before {
   padding: 30px 0 100px;
 }
 .hospitality-page-wrapper h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   color: #2B2A28;
@@ -11393,7 +11393,7 @@ figure.card_img:before {
   background-color: #FFFFFF;
   opacity: 0.75;
   padding: 15px 15px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 1em;
   color: #3A3A3C;
   box-sizing: border-box;
@@ -11450,11 +11450,11 @@ figure.card_img:before {
   color: #2B2A28;
 }
 .all-units-wrapper .all-units-section.hospitality-blocks .all-units-cards .card-details span strong {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 
 .container .village-building.hospitality .village-banner .left-section ul li span {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 @media screen and (max-width: 767px) {
   .container .village-building.hospitality .village-banner .right-section {
@@ -11479,7 +11479,7 @@ figure.card_img:before {
   margin: 0 0 50px;
 }
 .ammenties-wrapper-details h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   text-align: center;
@@ -11487,7 +11487,7 @@ figure.card_img:before {
   color: #2B2A28;
 }
 .ammenties-wrapper-details h4 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.188em;
   color: #2B2A28;
@@ -11519,7 +11519,7 @@ figure.card_img:before {
 .ammenties-wrapper-details ul li span {
   display: block;
   font-size: 1.125em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: 21px;
 }
@@ -11529,7 +11529,7 @@ figure.card_img:before {
 }
 .special-renting-wrapper h2 {
   font-size: 1.875em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
   margin-bottom: 20px;
@@ -11557,7 +11557,7 @@ figure.card_img:before {
   margin-bottom: 15px;
 }
 .special-renting-wrapper .special-renting-content .left-section-rent ul li span {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
   opacity: 0.7;
@@ -11591,7 +11591,7 @@ figure.card_img:before {
   margin-bottom: 5px;
 }
 .web-search-result h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
 }
@@ -11618,7 +11618,7 @@ figure.card_img:before {
   color: #2B2A28;
 }
 .web-search-content h4 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 15px;
 }
@@ -11658,7 +11658,7 @@ figure.card_img:before {
   position: absolute;
   right: 0;
   top: 0;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 
@@ -11748,7 +11748,7 @@ figure.card_img:before {
 }
 .appointment_form_section h2 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 1.5;
 }
 .appointment_form_section .enquiry-form {
@@ -11857,7 +11857,7 @@ figure.card_img:before {
   border: 1px solid #E4E4DC;
   border-radius: 16px;
   flex-direction: column-reverse;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .appointment_form_section .myc-date-header * {
@@ -11867,7 +11867,7 @@ figure.card_img:before {
   text-transform: uppercase;
 }
 .appointment_form_section .myc-date-header .myc-date-number {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 @media screen and (max-width: 991px) {
   .appointment_form_section .myc-date-header {
@@ -11991,7 +11991,7 @@ figure.card_img:before {
   }
 }
 .top-categories-wrap h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 40px;
@@ -12033,7 +12033,7 @@ figure.card_img:before {
 .top-categories-wrap ul li span {
   display: block;
   font-size: 1.125em;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-top: 15px;
   color: #000;
@@ -12043,7 +12043,7 @@ figure.card_img:before {
   margin: 10px 0 45px;
 }
 .featured-stores-wrapper h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 40px;
@@ -12059,7 +12059,7 @@ figure.card_img:before {
   position: absolute;
   color: #FFFFFF;
   font-size: 1.875em;
-  font-weight: 700;
+  font-weight: $fontweight3;
   left: 40px;
   bottom: 15px;
 }
@@ -12099,7 +12099,7 @@ figure.card_img:before {
   }
 }
 .about-wasl-retail-wrap .about-wasl-retail h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 55px;
@@ -12139,7 +12139,7 @@ figure.card_img:before {
   justify-content: space-between;
 }
 .search-result-retail-wrap .search-result-details .search-result-left h3 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.375em;
   margin-bottom: 10px;
@@ -12152,7 +12152,7 @@ figure.card_img:before {
   color: #2B2A28;
 }
 .search-result-retail-wrap .search-result-details .search-result-left span strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .search-result-retail-wrap .search-result-details .search-result-right .mobile-buttons {
@@ -12187,7 +12187,7 @@ figure.card_img:before {
 .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper ul li a {
   font-size: 1em;
   line-height: 26px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   color: #2B2A28;
 }
@@ -12213,7 +12213,7 @@ figure.card_img:before {
   }
   .search-result-retail-wrap .search-result-details .search-result-right .alphabet-wrapper.modal h3 {
     font-size: 1.125em;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: "bliss_medium";
     color: #000;
     margin-bottom: 15px;
@@ -12224,7 +12224,7 @@ figure.card_img:before {
     background: #2B2A28;
     border: none;
     border-radius: 8px;
-    font-weight: 700;
+    font-weight: $fontweight3;
     color: #FFFFFF;
     font-size: 0.938em;
     margin-top: 15px;
@@ -12303,7 +12303,7 @@ figure.card_img:before {
   margin: 30px 0 25px;
 }
 .photos-section-retails h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 1.875em;
   margin-bottom: 20px;
@@ -12448,7 +12448,7 @@ figure.card_img:before {
   width: 55px;
 }
 .explore-more-stories-wrap h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 2.125em;
   margin-bottom: 10px;
@@ -12492,7 +12492,7 @@ figure.card_img:before {
 }
 .sec_about_project h2 {
   font-size: 41px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   margin-bottom: 2rem;
   line-height: normal;
 }
@@ -12661,7 +12661,7 @@ figure.card_img:before {
 }
 .register_now_section .rf_card h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 .register_now_section .rf_card .cs_radio_wrapper {
@@ -12744,7 +12744,7 @@ figure.card_img:before {
   position: relative;
 }
 .g_banner_section h2 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 32px;
   color: #FFFFFF;
@@ -12793,7 +12793,7 @@ figure.card_img:before {
 }
 .login-page .right-section.corporate h2 {
   color: #2B2A28;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 1.875em;
   padding-bottom: 15px;
   margin-bottom: 15px;
@@ -12846,7 +12846,7 @@ figure.card_img:before {
   font-size: 12px;
   line-height: 1.2;
   color: #8c8d87;
-  font-weight: 400;
+  font-weight: $fontweight5;
   box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
   opacity: 0;
   pointer-events: none;
@@ -12909,7 +12909,7 @@ figure.card_img:before {
      object-fit: cover;
 }
 .cs_inner_hero .inner_hero_title {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 32px;
   margin-bottom: 0.75rem;
 }
@@ -13070,7 +13070,7 @@ figure.card_img:before {
 }
 .abt_industrial h2 {
   font-size: 44px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 18px;
 }
@@ -13169,7 +13169,7 @@ figure.card_img:before {
 .f_warehouses h2 {
   text-align: center;
   margin-bottom: 60px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 32px;
   line-height: 1.2;
 }
@@ -13227,7 +13227,7 @@ figure.card_img:before {
   display: flex;
   gap: 8px;
   color: #2B2A28;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   font-size: 18px;
   align-items: center;
@@ -13251,7 +13251,7 @@ figure.card_img:before {
 }
 .item_row .item_card .item_card_list_detail > li strong {
   display: block;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 1.45;
 }
 .item_row .item_card .item_card_footer {
@@ -13333,7 +13333,7 @@ figure.card_img:before {
 }
 .all_units_section .sec_head h3 {
   font-size: 22px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 8px;
   color: #000;
@@ -13370,7 +13370,7 @@ figure.card_img:before {
 }
 .all_units_section .sec_content h3 {
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 @media screen and (max-width: 767px) {
@@ -13520,7 +13520,7 @@ div.mob-code .iti.iti--allow-dropdown {
 }
 .indus_head_section h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   margin-bottom: 20px;
 }
@@ -13571,7 +13571,7 @@ div.mob-code .iti.iti--allow-dropdown {
 .indus_head_section .year_text {
   padding-top: 15px;
   font-size: 30px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   display: block;
 }
@@ -13673,7 +13673,7 @@ div.mob-code .iti.iti--allow-dropdown {
   opacity: 0.7;
 }
 .unit_content_section .payment_list li strong {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
 }
 @media screen and (max-width: 991px) {
@@ -14003,7 +14003,7 @@ textarea.form_control {
   padding: 15px 16px;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
   transition: all 0.4s ease-in-out;
   text-align: left;
@@ -14148,7 +14148,7 @@ textarea.form_control {
   color: #000;
   font-size: 1.5em;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 36px;
   text-align: center;
 }
@@ -14182,7 +14182,7 @@ textarea.form_control {
   color: #000;
   font-size: calc(1.5em + 2px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 39px;
   margin-top: 5px;
 }
@@ -14244,7 +14244,7 @@ textarea.form_control {
   color: #000;
   font-size: 1.125em;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 27px;
   flex-shrink: 0;
 }
@@ -14349,7 +14349,7 @@ textarea.form_control {
   color: #000;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 19px;
   margin-bottom: 25px;
 }
@@ -14373,7 +14373,7 @@ textarea.form_control {
   text-align: center;
   font-size: 0.875em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
   border-radius: 8px;
   background: #e4e4dc;
@@ -14391,7 +14391,7 @@ textarea.form_control {
   color: #8d8d87;
   font-size: 0.75em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: normal;
 }
 .chat_boat .chat_boat_box .screen_view .wraper_chat .chat_inn.reverse {
@@ -14426,7 +14426,7 @@ textarea.form_control {
   flex: 1;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
 }
 .chat_boat .chat_boat_box .screen_view .footer_control .input_box:focus {
@@ -14438,7 +14438,7 @@ textarea.form_control {
   color: #8d8d87;
   font-size: 1em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   opacity: 0.7;
 }
@@ -14473,7 +14473,7 @@ textarea.form_control {
   color: #000;
   font-size: calc(1.5em + 2px);
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 39px;
   margin: 0;
 }
@@ -14501,7 +14501,7 @@ textarea.form_control {
   color: #FFFFFF;
   font-size: 1em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: "bliss_medium";
   line-height: normal;
   border-radius: 8px;
@@ -14561,7 +14561,7 @@ textarea.form_control {
 }
 .appointment-page-wrapper h2 {
   font-size: 2.4375em;
-  font-weight: 700;
+  font-weight: $fontweight3;
   color: #000;
   margin-bottom: 90px;
 }
@@ -14762,7 +14762,7 @@ textarea.form_control {
   color: #000;
   font-size: 0.875em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 21px;
 }
 
@@ -14784,7 +14784,7 @@ textarea.form_control {
   color: #000;
   font-size: 1.125em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   line-height: 27px;
   align-items: center;
   display: flex;
@@ -14826,7 +14826,7 @@ textarea.form_control {
   color: #3A3A3C;
   font-size: 0.875em;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 21px;
   display: flex;
   align-items: center;
@@ -14886,7 +14886,7 @@ textarea.form_control {
   text-align: center;
   font-size: 1em;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
   line-height: 24px;
 }
 .time_picker label input[type=radio]:checked + span {
@@ -14924,7 +14924,7 @@ textarea.form_control {
   display: block;
 }
 .error-page-wrapper .cs_btn {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-size: 1em;
   padding: 14px 40px;
 }
@@ -14964,7 +14964,7 @@ textarea.form_control {
 }
 .comming_soon_section .icon_img_warpper figcaption h3 {
   font-size: 27px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   margin-bottom: 12px;
 }
 @media screen and (max-width: 1170px) {
@@ -15029,7 +15029,7 @@ body div.master-container .select2-container--default .select2-selection--single
   padding: 4px 8px;
   min-height: 34px;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   color: #FFFFFF;
   gap: 6px;
   align-items: center;
@@ -15074,7 +15074,7 @@ body div.master-container .select2-container--default .select2-selection--single
   }
   .all-units-cards .search-image-section .cs_offerBadge {
     font-size: 12px;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: "bliss_medium";
     min-height: 24px;
     right: 4px;
@@ -15129,7 +15129,7 @@ body div.master-container .select2-container--default .select2-selection--single
   color: #A85B57;
   font-size: 16px;
   line-height: 1.5;
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 @media screen and (max-width: 575px) {
   .cs_offerdetailrow {
@@ -15147,14 +15147,14 @@ body div.master-container .select2-container--default .select2-selection--single
   padding: 25px 0 50px;
 }
 .faq-details-wrapper h2 {
-  font-weight: 700;
+  font-weight: $fontweight3;
   color: #000;
   line-height: 24px;
   margin-bottom: 15px;
   font-size: 1.375em;
 }
 .faq-details-wrapper h3 {
-  font-weight: 500;
+  font-weight: $fontweight4;
   color: #000;
   line-height: 33px;
   margin: 24px 0 10px;
@@ -15170,7 +15170,7 @@ body div.master-container .select2-container--default .select2-selection--single
   border-radius: 8px 8px 0 0;
 }
 .faq-details-box span {
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-size: 1.125em;
   line-height: 27px;
 }
@@ -15196,7 +15196,7 @@ body div.master-container .select2-container--default .select2-selection--single
 }
 
 div .faq-details-wrapper .faq-details-box.inner span {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 div .faq-details-wrapper p {
   line-height: 1.6;
@@ -15242,7 +15242,7 @@ div .faq-details-wrapper ol {
   list-style-type: decimal;
 }
 div .faq-details-wrapper strong {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 div .faq-details-wrapper .faq-details-box-outer a {
   color: #000;
@@ -15271,7 +15271,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 .sec_whistleblower .form_wrapper h4 {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: $fontweight3;
   margin-bottom: 8px;
 }
 .sec_whistleblower span.required {
@@ -15279,7 +15279,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 .sec_whistleblower .title_label {
   font-size: 20px;
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 .sec_whistleblower .card_bg {
   background: rgba(228, 228, 220, 0.5);

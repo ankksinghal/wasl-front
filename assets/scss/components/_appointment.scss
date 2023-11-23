@@ -70,7 +70,7 @@
   }
   h2 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: $fontweight3;
     line-height: 1.5;
   }
   .enquiry-form {
@@ -172,7 +172,7 @@
     border: 1px solid $color1;
     border-radius: 16px;
     flex-direction: column-reverse;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     * {
       color: $logoName;
@@ -181,7 +181,7 @@
       text-transform: uppercase;
     }
     .myc-date-number {
-      font-weight: 700;
+      font-weight: $fontweight3;
     }
     @include respond(tab) {
       font-size: 14px;

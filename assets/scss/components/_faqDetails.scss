@@ -53,7 +53,7 @@
 
 div .faq-details-wrapper{
     .faq-details-box.inner span{
-        font-weight: 700;  
+        font-weight: $fontweight3;  
     }
     p{ 
         line-height: 1.6;
@@ -99,7 +99,7 @@ div .faq-details-wrapper{
         list-style-type:decimal; 
     }
     strong{
-        font-weight: 700;
+        font-weight: $fontweight3;
     }
     .faq-details-box-outer{
         a{

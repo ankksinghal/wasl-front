@@ -187,7 +187,7 @@ ul.breadcrumb {
     .card_header {
       .card_title {
         font-size: 20px;
-        font-weight: 500;
+        font-weight: $fontweight4;
         font-family: $fontmedium;
         margin: 0;
       }
@@ -261,7 +261,7 @@ ul.breadcrumb {
   clear: both;
   .title_ceo {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     margin-bottom: 24px;
   }
@@ -336,7 +336,7 @@ ul.breadcrumb {
     }
     .title_slider {
       font-size: 44px;
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
       color: $white;
       @include respond(tab) {
