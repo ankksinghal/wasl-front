@@ -14,7 +14,7 @@
       font-size: 34px;
       color: #1c190e;
       font-style: normal;
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
       line-height: 33px;
       @include respond(phone_land) {
@@ -66,14 +66,14 @@
           margin-left: 10px;
         }
         p {
-          font-weight: 700;
+          font-weight: $fontweight3;
           font-size: 19.68px;
           line-height: 23.06px;
           margin-bottom: 7px;
           color: #4c4c4c;
           @include respond(phone_land) {
             font-size: 14px;
-            font-weight: 400;
+            font-weight: $fontweight5;
             margin: 0;
           }
         }
@@ -101,7 +101,7 @@
         border-radius: 8px;
         gap: 10.93px;
         font-size: 15.31px;
-        font-weight: 400;
+        font-weight: $fontweight5;
         line-height: 17.94px;
         font-family: "Roboto";
         border: none;
@@ -116,7 +116,7 @@
     color: #9ca0ac;
     font-size: 17.49px;
     line-height: 20.5px;
-    font-weight: 400;
+    font-weight: $fontweight5;
     font-family: "Roboto";
     @include respond(phone_land) {
       font-size: 14px;
@@ -206,14 +206,14 @@
         margin-left: 10px;
       }
       p {
-        font-weight: 700;
+        font-weight: $fontweight3;
         font-size: 19.68px;
         line-height: 23.06px;
         margin-bottom: 7px;
         color: #4c4c4c;
         @include respond(phone_land) {
           font-size: 14px;
-          font-weight: 400;
+          font-weight: $fontweight5;
           margin: 0;
         }
       }
@@ -241,7 +241,7 @@
       border-radius: 8px;
       gap: 10.93px;
       font-size: 15.31px;
-      font-weight: 400;
+      font-weight: $fontweight5;
       line-height: 17.94px;
       font-family: "Roboto";
       border: none;

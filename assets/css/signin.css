@@ -33,7 +33,7 @@
   width: 100%;
 }
 .sign-in-section .container .signin-panel .right .signin-form form h2 {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 30px;
   line-height: 35.82px;
   color: #2B2A28;
@@ -58,7 +58,7 @@
   opacity: 50%;
 }
 .sign-in-section .container .signin-panel .right .signin-form form .input-box input::placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -75,7 +75,7 @@
   gap: 8px;
 }
 .sign-in-section .container .signin-panel .right .signin-form form ul li a {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;

@@ -95,7 +95,7 @@ header {
               a {
                 color: #1c190e;
                 font-size: 14px;
-                font-weight: 400;
+                font-weight: $fontweight5;
                 line-height: 20px;
                 font-style: normal;
                 @include respond(phone_land) {
@@ -107,7 +107,7 @@ header {
               &.wasl {
                 a {
                   span {
-                    font-weight: 700;
+                    font-weight: $fontweight3;
                   }
                 }
               }
@@ -265,7 +265,7 @@ header {
               text-align: center;
               font-size: 14px;
               font-style: normal;
-              font-weight: 500;
+              font-weight: $fontweight4;
               font-family: $fontmedium;
               line-height: 20px;
               text-transform: capitalize;
@@ -309,7 +309,7 @@ header {
       font-size: $font15;
       display: inline-block;
       font-style: normal;
-      font-weight: 700;
+      font-weight: $fontweight3;
       line-height: 22.841px;
       @include respond(tab_land) {
         font-size: 0.6em;

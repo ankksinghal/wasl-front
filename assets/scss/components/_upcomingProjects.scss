@@ -118,7 +118,7 @@
       }
       h2 {
         font-size: $font44;
-        font-weight: 500;
+        font-weight: $fontweight4;
         font-family: $fontmedium;
         color: #1c190e;
         font-style: normal;
@@ -135,7 +135,7 @@
         color: $logoName;
         letter-spacing: 1px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontweight5;
         @include respond(phone_land) {
           text-align: center;
           padding-top: 9px;
@@ -151,7 +151,7 @@
         font-size: $font16;
         border-radius: 8px;
         padding: 13px 35px;
-        font-weight: 500;
+        font-weight: $fontweight4;
         font-family: $fontmedium;
         display: inline-block;
         transition: all 0.4s ease-in-out;

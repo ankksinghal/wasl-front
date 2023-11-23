@@ -88,7 +88,7 @@ button {
   border-radius: 8px;
   padding: 13px 35px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 
@@ -253,7 +253,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
 header .header-section .right-section .right-top-section .top-nav-section ul li a {
   color: #1C190E;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 20px;
   font-style: normal;
 }
@@ -266,7 +266,7 @@ header .header-section .right-section .right-top-section .top-nav-section ul li 
   }
 }
 header .header-section .right-section .right-top-section .top-nav-section ul li.wasl a span {
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 header .header-section .right-section .right-top-section .top-nav-section ul li.language {
   display: flex;
@@ -303,7 +303,7 @@ header .header-section .right-bottom-section nav ul li a {
   text-align: center;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 20px;
   text-transform: capitalize;
@@ -347,7 +347,7 @@ header .left-section .logo-name {
   font-size: 0.938em;
   display: inline-block;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 22.841px;
 }
 @media screen and (max-width: 1170px) {
@@ -425,7 +425,7 @@ header .left-section .logo-name {
   font-size: 2.563em;
   color: #2B2A28;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: normal;
 }
 @media screen and (max-width: 1170px) {
@@ -443,7 +443,7 @@ header .left-section .logo-name {
   color: #585754;
   padding-top: 13px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: normal;
 }
@@ -495,7 +495,7 @@ font-family: $fontmedium;
 }
 .search-section h3 {
   font-size: 1.375em;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 33px;
   color: #1C190E;
@@ -524,7 +524,7 @@ font-family: $fontmedium;
   padding: 0;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   flex: 1;
   background: #edede8;
   display: flex;
@@ -549,7 +549,7 @@ font-family: $fontmedium;
   color: #FFFFFF;
   background: #2B2A28;
   font-size: 1.125em;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   border-radius: 0px 8px 8px 0px;
   border: none;
@@ -583,7 +583,7 @@ font-family: $fontmedium;
   cursor: pointer;
   position: relative;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   align-items: center;
   text-transform: uppercase;
@@ -645,7 +645,7 @@ font-family: $fontmedium;
   color: #2B2A28;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: normal;
   margin-top: 0px;
@@ -663,7 +663,7 @@ font-family: $fontmedium;
   border: 1px solid #ccc;
   height: 52px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   color: #2B2A28;
   padding: 0 10px;
@@ -693,7 +693,7 @@ font-family: $fontmedium;
   color: #1C190E;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 20px;
   border-radius: 8px 8px 0px 0px;
@@ -732,7 +732,7 @@ font-family: $fontmedium;
           appearance: none;
   color: #4E4E4E;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 .form-cols-out .form-control::-moz-placeholder {
   color: #4E4E4E;
@@ -999,11 +999,11 @@ font-family: $fontmedium;
 }
 .upcoming-projects .right-section .content-section h2 {
   font-size: 2.75em;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   color: #1C190E;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 33px;
 }
@@ -1019,7 +1019,7 @@ font-family: $fontmedium;
   color: #8D8D87;
   letter-spacing: 1px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 .upcoming-projects .right-section .content-section a, .upcoming-projects .right-section .content-section .link {
   background: #2B2A28;
@@ -1027,7 +1027,7 @@ font-family: $fontmedium;
   font-size: 1em;
   border-radius: 8px;
   padding: 13px 35px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   display: inline-block;
 }
@@ -1061,7 +1061,7 @@ font-family: $fontmedium;
 .residential h2 {
   font-size: 2.125em;
   text-align: center;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 33px;
   font-style: normal;
@@ -1073,7 +1073,7 @@ font-family: $fontmedium;
   color: #8D8D87;
   margin: 10px 0px;
   line-height: 27px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 .residential .owl-carousel {
   margin: 42px auto 0;
@@ -1103,7 +1103,7 @@ font-family: $fontmedium;
   color: #3C3C3C;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   text-align: center;
   line-height: 25px;
   padding: 14px 0;
@@ -1181,7 +1181,7 @@ font-family: $fontmedium;
 .commercial h2 {
   font-size: 2.125em;
   text-align: center;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 33px;
   font-style: normal;
@@ -1193,7 +1193,7 @@ font-family: $fontmedium;
   color: #8D8D87;
   margin: 10px 0px;
   line-height: 27px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 .commercial .owl-carousel {
   margin: 42px auto 0;
@@ -1223,7 +1223,7 @@ font-family: $fontmedium;
   color: #3C3C3C;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   text-align: center;
   line-height: 25px;
   padding: 14px 0;
@@ -1320,7 +1320,7 @@ font-family: $fontmedium;
 .freehold .content-box .left-section h2 {
   font-size: 2.125em;
   margin-bottom: 15px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 33px;
   font-style: normal;
@@ -1332,7 +1332,7 @@ font-family: $fontmedium;
   margin: 0;
   text-align: justify;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 26.857px;
 }
 @media screen and (max-width: 991px) {
@@ -1347,7 +1347,7 @@ font-family: $fontmedium;
   font-size: 1em;
   padding: 11px 34px;
   border-radius: 8px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 @media screen and (max-width: 991px) {
@@ -1414,7 +1414,7 @@ font-family: $fontmedium;
   color: #2B2A28;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: normal;
   margin-top: 10px;
@@ -1435,7 +1435,7 @@ font-family: $fontmedium;
   color: #2B2A28;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 24px;
   text-decoration: none;
@@ -1507,7 +1507,7 @@ font-family: $fontmedium;
   max-width: 600px;
   color: #2B2A28;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 120%;
 }
@@ -1535,7 +1535,7 @@ font-family: $fontmedium;
 .bookNow .right-content a {
   font-size: 1.25em;
   text-align: center;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   color: #FFFFFF;
   cursor: pointer;
@@ -1568,7 +1568,7 @@ font-family: $fontmedium;
   font-size: 34px;
   color: #1C190E;
   font-style: normal;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   line-height: 33px;
 }
@@ -1624,7 +1624,7 @@ font-family: $fontmedium;
   margin-left: 17.48px;
 }
 .youtube-page .subscribeBtn-div .subscribe-first .sub-text p {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 19.68px;
   line-height: 23.06px;
   margin-bottom: 7px;
@@ -1652,7 +1652,7 @@ font-family: $fontmedium;
   border-radius: 8px;
   gap: 10.93px;
   font-size: 15.31px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 17.94px;
   font-family: "Roboto";
   border: none;
@@ -1666,7 +1666,7 @@ font-family: $fontmedium;
   color: #9CA0AC;
   font-size: 17.49px;
   line-height: 20.5px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-family: "Roboto";
 }
 .youtube-page .content-div {
@@ -1734,7 +1734,7 @@ footer .footer-section .right-section .form-section button {
   background: #2B2A28;
   height: 37px;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #fff;
   border-radius: 0px 4px 4px 0px;
   text-transform: uppercase;
@@ -1788,7 +1788,7 @@ footer .footer-section .footer-below-section .footer-menu h3 {
   text-transform: uppercase;
   margin-bottom: 25px;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   color: #2B2A28;
 }
@@ -1806,7 +1806,7 @@ footer .footer-section .footer-below-section .footer-menu ul li a {
   font-size: 16px;
   line-height: 20px;
   color: #2B2A28;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 @media screen and (max-width: 1170px) {
   footer .footer-section .footer-below-section .footer-menu ul li a {
@@ -1960,12 +1960,12 @@ footer .copyright-section p {
 .search-banner-section h2 {
   color: #2B2A28;
   font-size: 2em;
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 .search-banner-section p {
   color: #2B2A28;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1985,7 +1985,7 @@ footer .copyright-section p {
 }
 .search-tab-section .tab-links li.active {
   background-color: #FFFFFF;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 .search-tab-section .tab-links li a {
@@ -2009,13 +2009,13 @@ font-family: $fontmedium;
   color: #000;
   margin-bottom: 10px;
   font-size: 1.375em;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 .all-available-units-section .all-available-units-left span {
   color: #2B2A28;
   font-size: 0.875em;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 .all-available-units-section .all-available-units-right {
@@ -2047,7 +2047,7 @@ font-family: $fontmedium;
   color: #000;
   margin-bottom: 12px;
   font-size: 1.125em;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 .select-bedroom-section-wrap ul {
@@ -2075,7 +2075,7 @@ font-family: $fontmedium;
   margin-bottom: 20px;
 }
 .all-units-wrapper .left-side-bar-filters .upper-filter-section h3, .all-units-wrapper .left-side-bar-filters .bottom-filter-section h3 {
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 1.125em;
   margin-bottom: 15px;
@@ -2116,7 +2116,7 @@ font-family: $fontmedium;
   border: 1px solid #ccc;
   height: 48px;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: $fontweight5;
   color: #2B2A28;
   padding: 0 10px;
   -webkit-appearance: none;
@@ -2134,7 +2134,7 @@ font-family: $fontmedium;
   color: #1C1C1E;
   font-size: 1em;
   margin-bottom: 10px;
-  font-weight: 400;
+  font-weight: $fontweight5;
 }
 .all-units-wrapper .left-side-bar-filters .upper-filter-section .form-view .submit {
   background-color: #2B2A28;
@@ -2142,7 +2142,7 @@ font-family: $fontmedium;
   display: block;
   width: 100%;
   color: #FFFFFF;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 0.938em;
   cursor: pointer;
   border: none;
@@ -2174,7 +2174,7 @@ font-family: $fontmedium;
 }
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section ul li .contact-right-section span.contact-text-dark {
   color: #3A3A3C;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 .all-units-wrapper .left-side-bar-filters .bottom-filter-section ul li .contact-right-section span.contact-text-dark a {
@@ -2183,7 +2183,7 @@ font-family: $fontmedium;
 .all-units-wrapper .all-units-section h4 {
   font-size: 1.125em;
   color: #000;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   margin-bottom: 16px;
 }
@@ -2203,7 +2203,7 @@ font-family: $fontmedium;
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards h3 {
   font-size: 1.125em;
   color: #2B2A28;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   margin-bottom: 10px;
 }
@@ -2220,7 +2220,7 @@ font-family: $fontmedium;
   font-size: 1em;
 }
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .card-details span i {
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   color: #2B2A28;
   margin-left: 3px;
@@ -2233,7 +2233,7 @@ font-family: $fontmedium;
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .view-details-wrap a {
   color: #2B2A28;
   font-size: 1em;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 .all-units-wrapper .all-units-section .all-units-cards-wrap .all-units-cards .view-details-wrap a i {
@@ -2409,7 +2409,7 @@ font-family: $fontmedium;
   width: 100%;
 }
 .login-page .main-login .right-section .form h2 {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 30px;
   color: #2B2A28;
   margin-bottom: 20px;
@@ -2422,7 +2422,7 @@ font-family: $fontmedium;
   color: #2B2A28;
   font-size: 16px;
   line-height: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -2492,13 +2492,13 @@ font-family: $fontmedium;
   margin-left: 16px;
 }
 .login-page .main-login .right-section .form .input-box input::-moz-placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
 }
 .login-page .main-login .right-section .form .input-box input::placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -2517,7 +2517,7 @@ font-family: $fontmedium;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 19.1px;
   color: #2B2A28;
@@ -2540,7 +2540,7 @@ font-family: $fontmedium;
   gap: 8px;
 }
 .login-page .main-login .right-section .form .fp-box ul li a {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -2562,7 +2562,7 @@ font-family: $fontmedium;
   border-radius: 8px;
   background-color: #1C190E;
   height: 54px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 16px;
   line-height: 19.1px;
@@ -2606,7 +2606,7 @@ font-family: $fontmedium;
   border-bottom: 1px solid #EFEFEF;
   line-height: 0.1em;
   font-family: "Poppins";
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 0.8125em;
   color: #8E8E93;
   display: inline-block;
@@ -2619,7 +2619,7 @@ font-family: $fontmedium;
 .login-page .main-login .right-section .last-p {
   margin-top: 18px;
   text-align: center;
-  font-weight: 400;
+  font-weight: $fontweight5;
   display: block;
   font-size: 16px;
   line-height: 24px;
@@ -2629,7 +2629,7 @@ font-family: $fontmedium;
   margin-left: 5px;
 }
 .login-page .main-login .right-section .last-p strong a {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 16px;
   line-height: 19.1px;
   text-decoration: none;
@@ -2645,7 +2645,7 @@ font-family: $fontmedium;
 .login-page .main-login .right-section.forgot .disc {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   color: #2B2A28;
   margin-bottom: 32px;
@@ -2661,7 +2661,7 @@ font-family: $fontmedium;
   border-radius: 8px;
   background-color: #1C190E;
   padding: 16px 18px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 16px;
   line-height: 19.1px;
@@ -2679,7 +2679,7 @@ font-family: $fontmedium;
   gap: 9px;
 }
 .login-page .main-login .right-section .loginBtns-div .uae-btn p {
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 16px;
   line-height: 19.1px;
@@ -2703,7 +2703,7 @@ font-family: $fontmedium;
   background-color: #1C190E;
   color: #FFFFFF;
   border-radius: 0px 13px 13px 0px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 0.875em;
   line-height: 16.8px;
   height: 57px;
@@ -2740,7 +2740,7 @@ font-family: $fontmedium;
   gap: 5px;
   font-size: 12px;
   font-style: italic;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 120%;
 }
 .login-page .error img {
@@ -2760,7 +2760,7 @@ font-family: $fontmedium;
   gap: 14px;
 }
 .village-building .village-banner .left-section .village-heading {
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 1.875em;
   line-height: 35.82px;
@@ -2775,7 +2775,7 @@ font-family: $fontmedium;
   align-items: center;
   gap: 4px;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   color: #2B2A28;
 }
@@ -2784,7 +2784,7 @@ font-family: $fontmedium;
   width: 100%;
 }
 .village-building .village-banner .left-section ul li .span-text {
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
 }
 .village-building .village-banner .left-section .sqft {
@@ -2797,7 +2797,7 @@ font-family: $fontmedium;
 }
 .village-building .village-banner .left-section .sqft p {
   font-size: 1em;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 24px;
   color: #2B2A28;
   gap: 4px;
@@ -2823,18 +2823,18 @@ font-family: $fontmedium;
   background-color: #2B2A28;
   color: #FFFFFF;
   font-size: 0.938em;
-  font-weight: 700;
+  font-weight: $fontweight3;
   margin-right: 8px;
 }
 .village-building .village-banner .right-section .btn-links a.enquire-link {
   border: 1px solid #2B2A28;
   color: #2B2A28;
   background-color: #FFFFFF;
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 0.938em;
 }
 .village-building .village-banner .right-section .right-text {
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 1.875em;
   line-height: 35.82px;
@@ -2885,7 +2885,7 @@ font-family: $fontmedium;
   margin-bottom: 20px;
 }
 .property-details .property-inner .property-heading {
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 1.25em;
   line-height: 23.88px;
@@ -2903,7 +2903,7 @@ font-family: $fontmedium;
   width: 25%;
   margin-bottom: 20px;
   gap: 10px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 24px;
   color: #3A3A3C;
@@ -2925,7 +2925,7 @@ font-family: $fontmedium;
   margin-top: 16px;
 }
 .property-details .property-inner .property-info p {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 1em;
   line-height: 26px;
   color: #2B2A28;

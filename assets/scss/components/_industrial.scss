@@ -23,7 +23,7 @@
     object-fit: cover;
   }
   .inner_hero_title {
-    font-weight: 700;
+    font-weight: $fontweight3;
     font-size: 32px;
     margin-bottom: 0.75rem;
     &.text_dark {
@@ -178,7 +178,7 @@
   background: $bannerBoxColor;
   h2 {
     font-size: 44px;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     margin-bottom: 18px;
   }
@@ -270,7 +270,7 @@
   h2 {
     text-align: center;
     margin-bottom: 60px;
-    font-weight: 700;
+    font-weight: $fontweight3;
     font-size: 32px;
     line-height: 1.2;
   }
@@ -326,7 +326,7 @@
         display: flex;
         gap: 8px;
         color: $black;
-        font-weight: 500;
+        font-weight: $fontweight4;
         font-family: $fontmedium;
         font-size: 18px;
         align-items: center;
@@ -349,7 +349,7 @@
         align-items: flex-start;
         strong {
           display: block;
-          font-weight: 700;
+          font-weight: $fontweight3;
           line-height: 1.45;
         }
       }
@@ -430,7 +430,7 @@
     font-size: 14px;
     h3 {
       font-size: 22px;
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
       margin-bottom: 8px;
       color: $darkBlack;
@@ -468,7 +468,7 @@
     padding-top: 2rem;
     h3 {
       font-size: 18px;
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
     }
   }

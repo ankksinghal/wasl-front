@@ -135,7 +135,7 @@
           line-height: 25px;
           @include respond(tab) {
             font-size: $font12;
-            font-weight: 700;
+            font-weight: $fontweight3;
             line-height: normal;
           }
           a {
@@ -152,7 +152,7 @@
           @include respond(tab) {
             font-size: 10px;
             line-height: normal;
-            font-weight: 400;
+            font-weight: $fontweight5;
           }
         }
       }
@@ -655,7 +655,7 @@
           border: 1px solid #ccc;
           height: 52px;
           font-size: 14px;
-          font-weight: 500;
+          font-weight: $fontweight4;
           font-family: $fontmedium;
           color: #2b2a28;
           padding: 0 45px 0 18px;

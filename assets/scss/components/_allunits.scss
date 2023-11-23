@@ -350,7 +350,7 @@
             border: 1px solid #ccc;
             height: 48px;
             font-size: $font16;
-            font-weight: 400;
+            font-weight: $fontweight5;
             color: $black;
             padding: 0 10px;
             appearance: none;
@@ -1148,7 +1148,7 @@ div.master-container .chip_wrapper>span{
    strong{
     display: block;
     font-size: $font14;
-    font-weight: 400;
+    font-weight: $fontweight5;
    }
 
 }

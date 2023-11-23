@@ -103,7 +103,7 @@
 .week .day.selected span {
   /* background: #1565c0; */
   color: #FF1515;
-  font-weight: 700;
+  font-weight: $fontweight3;
 }
 .week .day[disabled="disabled"] span {
   color: #aaa;
@@ -136,7 +136,7 @@
   color: #2B2A28;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 32px;
   position: absolute;
   top: 48px;
@@ -148,7 +148,7 @@
   color: #03101C;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: $fontweight3;
   line-height: 38px;
   display: flex;
   justify-content: space-between;

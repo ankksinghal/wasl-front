@@ -195,7 +195,7 @@
   .form {
     width: 100%;
     h2 {
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
       font-size: 30px;
       color: #2b2a28;
@@ -209,7 +209,7 @@
       color: #1c190e;
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
       line-height: 24px;
       margin: 0;
@@ -218,7 +218,7 @@
       color: #2b2a28;
       font-size: 16px;
       line-height: normal;
-      font-weight: 400;
+      font-weight: $fontweight5;
       display: flex;
       align-items: center;
       gap: 5px;
@@ -228,7 +228,7 @@
       small a {
         font-size: 12px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontweight5;
         color: #a79f92;
       }
       strong {
@@ -342,7 +342,7 @@
       border-radius: 8px;
       background-color: #1c190e;
       height: 54px;
-      font-weight: 700;
+      font-weight: $fontweight3;
       font-size: 15px;
       line-height: 19.1px;
       text-align: center;
