@@ -15164,6 +15164,10 @@ div .search-section .form-section .form-raper {
   border: 0 none;
 }
 
+.cs_typesearchmb {
+  display: none;
+}
+
 @media screen and (max-width: 575px) {
   div.master-container .all-available-units-section .all-available-units-right {
     justify-content: center;
@@ -15244,6 +15248,13 @@ div .search-section .form-section .form-raper {
   }
   div.faq-question a {
     padding-right: 1.75rem;
+  }
+  .cs_typesearchlg.hide {
+    display: none;
+  }
+  .cs_typesearchmb {
+    display: block;
+    margin-top: 1.25rem;
   }
 }
 .faq-details-wrapper {
