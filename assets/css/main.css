@@ -5471,6 +5471,11 @@ footer .copyright-section p {
 @media screen and (max-width: 767px) {
   .all-available-units-section {
     padding: 16px 0;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .all-available-units-section .all-available-units-left {
+    margin-bottom: 1.5rem;
   }
 }
 .all-available-units-section .all-available-units-left h3 {
@@ -5508,6 +5513,9 @@ footer .copyright-section p {
   box-sizing: border-box;
 }
 @media screen and (max-width: 767px) {
+  .all-available-units-section .all-available-units-right a {
+    border-radius: 6px;
+  }
   .all-available-units-section .all-available-units-right a[href$="#grid"] {
     display: none;
   }
@@ -5531,9 +5539,9 @@ footer .copyright-section p {
 }
 @media screen and (max-width: 767px) {
   .all-available-units-section .all-available-units-right a {
-    height: 34px;
+    height: 40px;
     width: 34px;
-    line-height: 30px;
+    line-height: 37px;
   }
 }
 .all-available-units-section .all-available-units-right a.active {
@@ -6459,6 +6467,13 @@ div.master-container .chip_wrapper > span {
     flex-wrap: wrap;
     gap: 10px;
   }
+}
+@media screen and (max-width: 991px) and (max-width: 575px) {
+  .search-section .form-section .form-raper {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 991px) {
   .search-section .form-section .form-raper .form-cols-out {
     flex: 0 0 calc(50% - 5px);
     box-sizing: border-box;
@@ -15118,6 +15133,82 @@ body div.master-container .select2-container--default .select2-selection--single
   margin-top: 1rem;
 }
 
+div .search-section .form-section .form-raper {
+  border: 0 none;
+}
+
+@media screen and (max-width: 575px) {
+  div.master-container .all-available-units-section .all-available-units-right {
+    justify-content: center;
+  }
+  .master-container .search-section .filter-section .advanced-filters {
+    padding-bottom: 8px;
+  }
+  .all-units-wrapper.buying_section.two-column .right-section .right-area-box {
+    overflow: hidden;
+  }
+  div.link-section {
+    margin-bottom: 1rem;
+  }
+  #owl-prtoj-thumb .owl-stage {
+    display: flex;
+  }
+  #owl-prtoj-thumb .owl-stage .item {
+    height: 100%;
+  }
+  .buying-about .figured-map .iframe {
+    width: 100%;
+  }
+  .wasl-about figure {
+    justify-content: space-between;
+    gap: 5px;
+  }
+  .container .wasl-about {
+    margin-bottom: 2rem;
+  }
+  div.master-container .tab_layout_block .cs_tab_nav {
+    padding-bottom: 0;
+  }
+  div .all-units-wrapper.buying_section.two-column .right-section {
+    border-radius: 0;
+  }
+  div .all-units-wrapper.buying_section.two-column .right-section .right-area-box {
+    overflow: hidden;
+    justify-content: flex-start;
+    border-radius: 12px;
+  }
+  div .all-units-wrapper.buying_section.two-column .right-section {
+    border-radius: 0px;
+  }
+  div .all-units-wrapper.buying_section.two-column .right-section .right-area-box a img {
+    width: 100%;
+    height: 24vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .all-units-wrapper .views-element-container {
+    max-width: 100%;
+  }
+  .gallery-section {
+    display: block;
+  }
+  .gallery-section .fitness-challenge {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .contact-us-box map {
+    padding: 12px;
+  }
+  .contact-us-box map iframe {
+    width: 100%;
+  }
+  #home-slider .banner-img img {
+    height: 60vw;
+  }
+  .search-section .ms-options-wrap, .search-section .ms-options-wrap {
+    background: #FFFFFF;
+  }
+}
 .faq-details-wrapper {
   padding: 25px 0 50px;
 }

@@ -12,6 +12,11 @@
   align-items: center;
   @include respond(phone_land) {
     padding: 16px 0;
+    flex-direction: column;
+    align-items: stretch;
+    .all-available-units-left{
+      margin-bottom: 1.5rem;
+    }
   }
   .all-available-units-left {
     h3 {
@@ -49,6 +54,7 @@
         &[href$="#grid"] {
           display: none;
         }
+        border-radius: 6px;
       }
       &.search-filter {
         font-size: $font14;
@@ -66,9 +72,9 @@
         vertical-align: middle;
       }
       @include respond(phone_land) {
-        height: 34px;
+        height: 40px;
         width: 34px;
-        line-height: 30px;
+        line-height: 37px;
       }
       &.active {
         background-color: $darkBlack;
@@ -1012,6 +1018,9 @@ div.master-container .chip_wrapper>span{
   .search-section .form-section {
     .form-raper {
       padding: 16px;
+      @include respond (phone){
+        padding: 0;
+      }
       border: 0 none;
       box-sizing: border-box;
       flex-direction: row;
