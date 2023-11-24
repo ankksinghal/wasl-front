@@ -282,7 +282,17 @@ div .search-section .form-section .form-raper{
   #home-slider .banner-img img{
     height: 60vw;
   }
-  .search-section .ms-options-wrap , .search-section .ms-options-wrap{
+  div.search-section .ms-options-wrap{
     background: $white; 
+  }
+  div.faq-question{
+    box-sizing: border-box;
+    min-height: 56px;
+    height: auto;
+    padding: 8px 14px;
+    a{
+      padding-right: 1.75rem;
+    }
+    width: 100%;
   }
 }
