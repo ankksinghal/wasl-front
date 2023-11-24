@@ -22,7 +22,7 @@
   }
   h2 {
     font-size: 41px;
-    font-weight: 700;
+    font-weight: $fontweight3;
     margin-bottom: 2rem;
     line-height: normal;
   }
@@ -197,7 +197,7 @@
     border: 1px solid $color1;
     h2 {
       font-size: 30px;
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
     }
     .cs_radio_wrapper {
@@ -280,7 +280,7 @@
     position: relative;
   }
   h2 {
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     font-size: 32px;
     color: $white;

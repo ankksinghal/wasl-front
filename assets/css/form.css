@@ -2,7 +2,7 @@
   width: 100%;
 }
 .form h2 {
-  font-weight: 700;
+  font-weight: $fontweight3;
   font-size: 30px;
   line-height: 35.82px;
   color: #2B2A28;
@@ -11,7 +11,7 @@
 .form label {
   color: #2B2A28;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fontweight5;
   line-height: 19.1px;
 }
 .form .input-box {
@@ -28,7 +28,7 @@
   opacity: 50%;
 }
 .form .input-box input::placeholder {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -49,7 +49,7 @@
   gap: 8px;
 }
 .form .fp-box ul li a {
-  font-weight: 400;
+  font-weight: $fontweight5;
   font-size: 16px;
   line-height: 19.1px;
   color: #2B2A28;
@@ -66,7 +66,7 @@
   border-radius: 8px;
   background-color: #1C190E;
   height: 54px;
-  font-weight: 500;
+  font-weight: $fontweight4;
 font-family: $fontmedium;
   font-size: 16px;
   line-height: 19.1px;

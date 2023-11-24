@@ -11,7 +11,7 @@ $fontlight: "bliss_light";
 @font-face {
   font-family: "bliss_medium";
   src: url("../blisspro-fonts/BlissPro-Medium.woff") format("woff");
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-style: normal;
 }
 @font-face {
@@ -37,7 +37,7 @@ button {
 }
 .cs_title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: $fontweight4;
   font-family: $fontmedium;
   line-height: calc(35 / 30);
   @include respond(phone) {
@@ -56,7 +56,7 @@ button {
     border-radius: 8px;
     padding: 13px 35px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     transition: all 0.4s ease-in-out;
     &:hover {
@@ -175,7 +175,7 @@ button {
       color: #8d8d87;
       line-height: 24px;
       strong {
-        font-weight: 500;
+        font-weight: $fontweight4;
         font-family: $fontmedium;
         display: block;
         color: #1c190e;
@@ -195,7 +195,7 @@ button {
       span {
         font-size: 16px;
         font-style: normal;
-        font-weight: 400;
+        font-weight: $fontweight5;
         color: #1c190e !important;
         strong {
           font-weight: 600;
@@ -271,7 +271,7 @@ button {
     background: $color1;
   }
   .card_title {
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     font-size: 24px;
     line-height: normal;
@@ -313,7 +313,7 @@ button {
   border-radius: 16px;
   margin-bottom: 20px;
   .box_title {
-    font-weight: 500;
+    font-weight: $fontweight4;
     font-family: $fontmedium;
     font-size: 20px;
     line-height: 23.88px;
@@ -662,7 +662,7 @@ body.modal__active,body.modal_active {
     justify-content: space-between;
     h2 {
       font-size: 28px;
-      font-weight: 500;
+      font-weight: $fontweight4;
       font-family: $fontmedium;
       @include respond(phone_land) {
         font-size: 22px;

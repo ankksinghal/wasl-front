@@ -32,7 +32,7 @@ footer {
           background: #2b2a28;
           height: 37px;
           font-size: 12px;
-          font-weight: 400;
+          font-weight: $fontweight5;
           color: #fff;
           border-radius: 0px 4px 4px 0px;
           text-transform: uppercase;
@@ -75,7 +75,7 @@ footer {
           text-transform: uppercase;
           margin-bottom: 25px;
           font-size: 18px;
-          font-weight: 500;
+          font-weight: $fontweight4;
           font-family: $fontmedium;
           color: #2b2a28;
         }
@@ -88,7 +88,7 @@ footer {
               font-size: 16px;
               line-height: 20px;
               color: #2b2a28;
-              font-weight: 400;
+              font-weight: $fontweight5;
               &:hover {
                 text-decoration: underline;
               }
@@ -258,7 +258,7 @@ footer {
       h2 {
         font-size: 34px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: $fontweight4;
         font-family: $fontmedium;
         line-height: 55px;
         color: #000810;

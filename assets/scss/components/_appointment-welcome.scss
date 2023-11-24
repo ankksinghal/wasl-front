@@ -32,7 +32,7 @@
      }
      h2{
         font-size:$font39;
-        font-weight: 700;
+        font-weight: $fontweight3;
         color: $black;
         margin-bottom: 90px;
         @include respond(phone_land) {
