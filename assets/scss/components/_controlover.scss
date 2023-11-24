@@ -214,7 +214,9 @@ div .search-section .form-section .form-raper{
   // padding-left: 0;
   // padding-right: 0;
 }
-
+.cs_typesearchmb{
+  display: none;
+}
 @include respond(phone) { 
   div.master-container .all-available-units-section .all-available-units-right{
     justify-content: center;
@@ -294,5 +296,12 @@ div .search-section .form-section .form-raper{
       padding-right: 1.75rem;
     }
     width: 100%;
+  }
+  .cs_typesearchlg.hide{
+    display: none;
+  }
+  .cs_typesearchmb{ 
+    display: block;
+    margin-top: 1.25rem;
   }
 }

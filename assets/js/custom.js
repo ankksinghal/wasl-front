@@ -262,7 +262,10 @@ if ($(window).width() < 767) {
 
   $("#advanced-filters").click(function () {
     $(".advanced-filters-box").toggleClass("view");
+    $(".cs_typesearchlg").toggleClass("hide");
+
     $("#advanced-filters").toggleClass("rotate");
+
   });
 
   $("#quicklinks").click(function () {
