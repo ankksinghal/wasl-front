@@ -1,5 +1,8 @@
 .sec_about_project {
   padding: 80px 0;
+  @include respond (phone_land){
+    padding: 30px 0; 
+  }
   *,
   *:after,
   *:before {
@@ -12,11 +15,21 @@
     display: flex;
     align-items: center;
     gap: 60px;
+    @include respond (tab_land){
+      gap: 30px;
+    }
+    @include respond (phone_land){
+      display: block;
+    }
     > div {
       &:first-child {
         flex: 0 0 calc(45% - 30px);
         max-width: calc(45% - 30px);
-        text-align: justify;
+        p{text-align: justify;}
+        @include respond (phone_land){
+          width: 100%;
+          max-width: 100%;
+        }
       }
     }
   }
@@ -48,8 +61,17 @@
   .title_warp {
     display: flex;
     align-items: start;
-    gap: 30px;
+    gap: 15px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    .cs_btn{
+      margin-bottom: 1rem;
+    }
+    @include respond(tab_land){
+     h2{ font-size: 22px; 
+      margin-bottom:.5rem;
+     }
+    }
   }
 
   // ===============================
@@ -58,6 +80,12 @@
     max-width: calc(55% - 30px);
     position: relative;
     padding-right: 140px;
+    @include respond(tab_land){
+      padding-right: 70px;
+    }
+    @include respond(phone_land){
+      padding-top: 70px;
+    }
     .outer {
       margin: 0 auto;
       max-width: 800px;
@@ -73,6 +101,11 @@
         left: -30px;
         top: -30px;
         position: absolute;
+        @include respond(tab_land){
+          top: -10px;
+          left: -10px;
+        }
+        
       }
       .item {
         padding: 0px;
@@ -99,6 +132,11 @@
       border: 1px solid $color1;
       width: 100px;
       height: 120px;
+      @include respond (tab_land){
+        width: 50px; 
+        height: 60px;
+        border-radius: 6px;
+      }
       border-radius: 16px;
       overflow: hidden;
       img {
@@ -118,6 +156,9 @@
       padding: 0 0px 0 60px;
       .owl-stage-outer {
         z-index: 1;
+      }
+      @include respond (tab_land){
+        width: 75%;
       }
     }
     #about_sec_slider_thumb .item h1 {
@@ -162,6 +203,9 @@
       justify-content: space-between;
       left: 25px;
       margin: 0;
+      @include respond (tab_land){
+        bottom: 57%;
+      }
       &.disabled {
         display: none;
       }
@@ -174,6 +218,9 @@
       button.owl-next {
         transform: rotate(90deg);
       }
+    }
+    @include respond(phone_land){
+      max-width: 100%;
     }
   }
 }
