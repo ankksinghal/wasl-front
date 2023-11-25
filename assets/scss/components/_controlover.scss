@@ -275,11 +275,16 @@ div .search-section .form-section .form-raper{
      width: 100%;
    }
   }
-  .contact-us-box map {
+  .cs_tab_content_container .contact-us-box.map,.figured-map {   
     padding: 12px; 
-      iframe{
-      width: 100%;
+    p{
+      margin: 0;
     }
+      iframe{ 
+        height: 60vw;
+        width: 100%;
+        display: block;
+     }
   }
   #home-slider .banner-img img{
     height: 60vw;
