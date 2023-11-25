@@ -2371,6 +2371,7 @@ body.slide {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  margin-bottom: 35px;
 }
 .buying-about .left-part {
   flex: 0 0 48%;
@@ -4654,6 +4655,12 @@ body .master-container .all-units-wrapper .all-units-section .all-units-cards-wr
 [dir=rtl] .youtube-page .subscribeBtn-div .subscribe-first .sub-text {
   margin-left: 0;
   margin-right: 17.48px;
+}
+[dir=rtl] .search-banner-section .banner-cont {
+  justify-content: flex-start;
+}
+[dir=rtl] .search-banner-section h2 {
+  margin-top: 10px;
 }
 
 .youtube-page {
@@ -15302,6 +15309,11 @@ body div.master-container .select2-container--default .select2-selection--single
   .cs_typesearchmb {
     display: block;
     margin-top: 1.25rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .search-section .ms-options-wrap {
+    background-color: #ffffff;
   }
 }
 .faq-details-wrapper {

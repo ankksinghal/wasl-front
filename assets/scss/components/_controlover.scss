@@ -305,3 +305,9 @@ div .search-section .form-section .form-raper{
     margin-top: 1.25rem;
   }
 }
+
+@media screen and (max-width: 575px) {
+  .search-section .ms-options-wrap {
+    background-color: #ffffff;
+  }
+}
