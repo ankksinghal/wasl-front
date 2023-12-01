@@ -1,0 +1,155 @@
+.cs_g_banner{
+    height: calc(100vh - 103px);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    min-height: 30vw;
+    padding-bottom: 8vw;
+    @include respond(tab_land) {
+        height: auto;
+        min-height: 50vw;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 8vw;
+        height: 8vw;
+        background: $color1;
+        z-index: 1;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+       
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .cs_b_content_wrapper{
+        display: flex;
+
+    }
+    .cs_b_content{
+        min-width: 500px;
+        padding:71px 40px;
+        position: relative;
+        margin: 8vw 0 0 8vw;
+        font-size: 24px;
+        color: $bannerTextColor;
+        line-height: normal;
+        background: $color1;
+         
+        p{
+            margin: 0;
+        }
+        @include respond(phone_land){
+            min-width:auto;
+            padding: 25px;
+            font-size: 14px;
+            max-width: calc(100vw - 10vw);
+            .cs_b_title{
+                font-size: 22px;
+                margin: 5px;
+            }
+        }
+    }
+    
+    .cs_b_title{
+        font-size: 41px;
+        color: $black;
+        margin-bottom: 10px;
+        font-weight: 700;
+        letter-spacing: .75px;
+    }
+
+}
+.brokers_kit_sec{
+    padding: 5rem 0;
+    .section_title,h2{
+        font-size: 30px;
+        font-family: $fontmedium;
+        margin-bottom: 35px;
+    }
+    .kt_row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        >figure{
+            flex:  0 0 calc(25% - 23px);
+            max-width: calc(25% - 23px);
+            padding: 2rem;
+            border: 1px solid $color1;
+            border-radius: 16px;
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            // min-height: 140px;
+            gap: 15px;
+            figcaption{
+                font-size: 22px;
+                font-family: $fontmedium;
+               
+                a{ color: inherit;
+                    display: flex;
+                     gap: 8px;
+                     align-items: center;
+                }
+            }
+        }
+        .kit_img{
+            height: 33px;
+            width: 33px;
+            object-fit: scale-down;
+        }
+        @include respond(tab_land) {
+            gap: 10px;
+            >figure{
+                flex:  0 0 calc(25% - 7.5px);
+                max-width: calc(25% - 7.5px);
+                padding: 1.5rem 1rem;
+                figcaption{
+                    font-size: 18px;
+                }
+            }
+        }
+        @include respond(phone_land) {
+            >figure{
+                flex:  0 0 calc(50% - 5px);
+                max-width: calc(50% - 5px);
+                padding: 1.5rem 1rem;
+                figcaption{
+                    font-size: 16px;
+                    img{
+                        max-width: 15px;
+                    }
+                }
+           }
+        }
+    }
+    .kit_fullImg{
+        margin: 0;
+        padding-top: 40px;
+        border-radius: 16px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: auto;
+            max-height: 30vw;
+            object-fit: cover;
+        }
+        @include respond (phone_land){
+            border-radius: 8px;
+        }
+
+    }
+    @include respond (phone_land){
+        padding: 2.5rem 0 3.5rem; 
+        h2,.section_title{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+}
