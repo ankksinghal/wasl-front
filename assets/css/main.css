@@ -15596,7 +15596,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 
 .cs_g_banner {
-  height: calc(100vh - 103px);
+  height: calc(84vh - 103px);
   display: flex;
   position: relative;
   flex-direction: column;
@@ -15658,10 +15658,10 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 .cs_g_banner .cs_b_title {
   font-size: 41px;
-  color: #000;
   margin-bottom: 10px;
   font-weight: 700;
   letter-spacing: 0.75px;
+  color: #2B2A28;
 }
 
 .brokers_kit_sec {
@@ -15671,6 +15671,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
   font-size: 30px;
   font-family: "bliss_medium";
   margin-bottom: 35px;
+  color: #2B2A28;
 }
 .brokers_kit_sec .kt_row {
   display: flex;
@@ -15691,6 +15692,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
 .brokers_kit_sec .kt_row > figure figcaption {
   font-size: 22px;
   font-family: "bliss_medium";
+  color: #000;
 }
 .brokers_kit_sec .kt_row > figure figcaption a {
   color: inherit;
