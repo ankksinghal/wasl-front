@@ -1,5 +1,5 @@
 .cs_g_banner{
-    height: calc(100vh - 103px);
+    height: calc(84vh - 103px); 
     display: flex;
     position: relative;
     flex-direction: column;
@@ -59,10 +59,11 @@
     
     .cs_b_title{
         font-size: 41px;
-        color: $black;
+         
         margin-bottom: 10px;
         font-weight: 700;
         letter-spacing: .75px;
+        color: $black1;
     }
 
 }
@@ -72,6 +73,7 @@
         font-size: 30px;
         font-family: $fontmedium;
         margin-bottom: 35px;
+        color: $black1;
     }
     .kt_row{
         display: flex;
@@ -91,7 +93,7 @@
             figcaption{
                 font-size: 22px;
                 font-family: $fontmedium;
-               
+                color: $darkBlack; 
                 a{ color: inherit;
                     display: flex;
                      gap: 8px;
