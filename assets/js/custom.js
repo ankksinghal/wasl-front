@@ -119,7 +119,7 @@ $(document).ready(function () {
   });
   $('.stories_slider').owlCarousel({
     items: 3,
-    loop: true,
+    loop: false,
     margin: 24,
     nav: true,
     autoplay: true,

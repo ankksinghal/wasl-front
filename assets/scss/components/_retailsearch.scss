@@ -454,24 +454,50 @@
 
 .featured_stores {
   padding: 90px 0;
-  // .owl-nav.disabled{
-  //   display: block;
-  //   button{
-  //     width: 50px;
-  //     height: 50px;
-  //     border-radius: 8px;
-  //     background: $bannerBoxColor;
+  .owl-nav{
+    display: flex;
+    position: absolute;
+    top: -80px;
+    gap: 20px;
+    right: 0;
+    button[type="button"]{ 
+      width: 50px;
+      height: 50px;
+      border-radius: 12px; 
+      background: $bannerBoxColor url(../images/sl_right.svg) no-repeat center center/10px;  
+      &.owl-prev{
+        background-image: url(../images/sl_left.svg); 
+      }
+      span{
+        display: none;
+      }
+      &.disabled{
+        opacity: .35;
+      }
+    }
+    @include respond (phone_land) {
+      top: 100%;
+      width: 100%;
+      justify-content: center;
+      button[type="button"]{ 
+        width: 42px;
+        height: 42px;
+        background-size: 8px;
+        border-radius: 8px;
+      }
+    }
 
-  //   }
-  // }
+  }
   @include respond (phone_land) {
-    padding: 50px 0;
+    padding: 50px 0 65px;
   }
 
   .sec_titlevbar {
     max-width: 70%;
     margin-bottom: 2rem;
-
+    @include respond (phone_land) {
+      max-width: 100%;
+    }
   }
 
   h2 {
