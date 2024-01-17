@@ -404,6 +404,25 @@
     .enquiry-form{
          margin:0 0 25px; 
     }
+    .enquiry-form div .form-label{
+         display: flex;
+         gap: 5px;
+         .tooltip{
+             img{
+                vertical-align: middle;
+             }
+         }
+    }
+    p.error {
+        color: #EF3D3D;
+        display: flex;
+        gap: 5px;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 120%;
+        margin-top: 5px;
+    }
 }
 
 .web-profile-right-section{

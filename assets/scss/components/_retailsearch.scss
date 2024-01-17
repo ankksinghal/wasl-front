@@ -1,27 +1,33 @@
 .top-categories-wrap {
   margin: 90px 0 87px;
+
   @include respond(phone_land) {
     margin: 50px 0;
   }
+
   h2 {
     font-weight: $fontweight2;
     font-family: $fontmedium;
     font-size: $font30;
     margin-bottom: 40px;
     color: $black;
+
     @include respond(phone_land) {
       text-align: center;
       font-size: $font20;
     }
   }
+
   ul {
     display: flex;
     justify-content: space-between;
     gap: 32px;
+
     @include respond(phone_land) {
       flex-wrap: wrap;
       justify-content: center;
     }
+
     li {
       border: 1px solid #e4e4dc;
       border-radius: 16px;
@@ -32,9 +38,11 @@
       justify-content: center;
       flex-direction: column;
       text-align: center;
+
       @include respond(phone_land) {
         width: 150px;
       }
+
       span {
         display: block;
         font-size: $font18;
@@ -49,17 +57,20 @@
 
 .featured-stores-wrapper {
   margin: 10px 0 45px;
+
   h2 {
     font-weight: $fontweight2;
     font-family: $fontmedium;
     font-size: $font30;
     margin-bottom: 40px;
     color: $black;
+
     @include respond(phone_land) {
       font-size: $font20;
       text-align: center;
     }
   }
+
   .owl-carousel {
     .item {
       figure {
@@ -73,12 +84,14 @@
         }
       }
     }
+
     .owl-dots {
       display: flex;
       gap: 10px;
       align-items: center;
       justify-content: center;
       margin-top: 27px;
+
       .owl-dot {
         span {
           width: 25px;
@@ -89,6 +102,7 @@
           border-radius: 50px;
           transition: all 0.4s ease-in-out;
         }
+
         &.active span {
           background: #2b2a28;
           width: 55px;
@@ -100,25 +114,30 @@
 
 .about-wasl-retail-wrap {
   margin: 68px 0 100px;
+
   .about-wasl-retail {
     display: flex;
     justify-content: space-between;
     gap: 58px;
     flex-wrap: wrap;
+
     @include respond(phone_land) {
       display: block;
     }
+
     h2 {
       font-weight: $fontweight2;
       font-family: $fontmedium;
       font-size: $font30;
       margin-bottom: 55px;
       color: $black;
+
       @include respond(phone_land) {
         text-align: center;
         font-size: $font20;
       }
     }
+
     p {
       font-size: $font16;
       line-height: 28px;
@@ -127,18 +146,407 @@
       opacity: 0.8;
     }
   }
+
   .about-wasl-retail-right {
     display: flex;
     gap: 15px;
     align-items: start;
     justify-content: space-between;
+
     img {
       @include respond(phone_land) {
         width: 48%;
       }
     }
   }
+
   .about-wasl-retail-left {
     flex: 0 0 40%;
+  }
+}
+
+
+// ===============================
+.stretched_link {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.search_hero_section {
+
+  min-height: 400px;
+  position: relative;
+
+  .banner_img {
+    width: 100%;
+    height: 28vw;
+    object-fit: cover;
+
+    // position: absolute;
+    @include respond (tab_land) {
+      height: 125px;
+      min-height: auto;
+
+    }
+  }
+
+  .banner_content {
+    position: relative;
+    color: $white;
+    transform: translateY(-40%);
+    margin-top: -75px;
+
+    h1 {
+      font-size: 24px;
+      font-family: $fontmedium;
+      text-transform: uppercase;
+    }
+
+    @include respond (tab_land) {
+      transform: none;
+      margin-top: 2rem;
+      padding-bottom: 3rem;
+
+      h1 {
+        color: $black;
+      }
+    }
+
+    .banner_content_title_row {
+      display: flex;
+      // flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+
+      .cs_btn {
+        gap: 8px;
+        text-transform: uppercase;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        img {
+          filter: brightness(0) invert(1);
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+
+  .img_item_row {
+    display: flex;
+    margin-left: -5px;
+    margin-right: -5px;
+    flex-wrap: wrap;
+
+    >div {
+      flex: 0 0 auto;
+      width: 14.28%;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      @include respond (tab) {
+        width: 25%;
+        margin-bottom: 1.5rem;
+      }
+
+      @include respond (phone_land) {
+        width: 33.3%;
+        margin-bottom: 10px;
+        padding-left: 3px;
+        padding-right: 3px;
+      }
+    }
+
+    figure {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+
+      @include respond (tab) {
+        border-radius: 8px;
+      }
+    }
+
+    .cs_ratio::before {
+      padding-top: 200%;
+
+      @include respond (tab) {
+        padding-top: 150%;
+      }
+
+    }
+
+    figcaption {
+      font-size: 20px;
+      line-height: calc(23/20);
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 1rem .85rem;
+      letter-spacing: .75px;
+
+      @include respond (tab_land) {
+        font-size: 16px;
+      }
+
+      @include respond (phone_land) {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.community_z_section {
+  padding: 58px 0;
+  background: $bannerBoxColor;
+
+  @include respond (phone_land) {
+    padding: 40px 0;
+  }
+
+  .s_header_row {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .link_style {
+      color: #BC8A55;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 18px;
+      font-weight: $fontmedium;
+    }
+
+    @include respond (tab) {
+      flex-direction: column;
+    }
+  }
+
+  h2 {
+    font-size: 25px;
+    font-family: $fontmedium;
+    margin-bottom: 0.5rem;
+
+  }
+
+  .row_sec {
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    gap: 24px 0;
+
+    >div {
+      flex: 0 0 auto;
+      width: 33.3%;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      @include respond (phone_land) {
+        width: 50%;
+      }
+
+      @include respond (phone) {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .box_style {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: $white;
+    height: 100%;
+
+    .cs_ratio:before {
+      padding-top: 58%;
+    }
+
+    figcaption {
+      padding: 1.5rem 0 1rem;
+      color: rgba(43, 42, 40, .7);
+
+      h4 {
+        font-size: 18px;
+        color: #2B2A28;
+        font-family: $fontmedium;
+        margin-bottom: 14px;
+
+        @include respond(tab) {
+          font-size: 16px;
+        }
+      }
+
+      @include respond(tab) {
+        font-size: 14px;
+      }
+    }
+
+    .box_footer {
+      margin-top: .5rem;
+      border-top: 1px solid rgba(43, 42, 40, .1);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: auto;
+
+      .read_more {
+        padding: 1.25rem 1rem 0.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: #2B2A28;
+        font-family: $fontmedium;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 100%;
+          width: 100%;
+        }
+
+        img {
+          width: 14px;
+        }
+      }
+    }
+  }
+
+  .cs_badge_row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .cs_badge {
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    border-radius: 18px;
+    padding: 5px 15px;
+    min-height: 32px;
+    justify-content: center;
+    background: #E4E4DC;
+    color: #696D54;
+  }
+}
+
+.featured_stores {
+  padding: 90px 0;
+  .owl-nav{
+    display: flex;
+    position: absolute;
+    top: -80px;
+    gap: 20px;
+    right: 0;
+    button[type="button"]{ 
+      width: 50px;
+      height: 50px;
+      border-radius: 12px; 
+      background: $bannerBoxColor url(../images/sl_right.svg) no-repeat center center/10px;  
+      &.owl-prev{
+        background-image: url(../images/sl_left.svg); 
+      }
+      span{
+        display: none;
+      }
+      &.disabled{
+        opacity: .35;
+      }
+    }
+    @include respond (phone_land) {
+      top: 100%;
+      width: 100%;
+      justify-content: center;
+      button[type="button"]{ 
+        width: 42px;
+        height: 42px;
+        background-size: 8px;
+        border-radius: 8px;
+      }
+    }
+
+  }
+  @include respond (phone_land) {
+    padding: 50px 0 65px;
+  }
+
+  .sec_titlevbar {
+    max-width: 70%;
+    margin-bottom: 2rem;
+    @include respond (phone_land) {
+      max-width: 100%;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-family: $fontmedium;
+    margin-bottom: 12px;
+  }
+
+  .stories_item {
+    position: relative;
+
+    figcaption {
+      position: absolute;
+      color: $white;
+      bottom: 0;
+      left: 0;
+      padding: 1rem 1rem .7rem;
+      letter-spacing: .5px;
+      width: 100%;
+
+      h4 {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .icon_text {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+          filter: brightness(0) invert(1);
+          width: 18px;
+        }
+      }
+
+      z-index: 1;
+    }
+
+    .cs_ratio {
+      &::before {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,0.5+100 */
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        z-index: 1;
+        position: relative;
+        padding-top: 60%;
+      }
+    }
   }
 }
