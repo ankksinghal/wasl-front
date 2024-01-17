@@ -16052,12 +16052,14 @@ div .faq-details-wrapper .faq-details-box-outer a {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  justify-content: space-between;
 }
 .exclusive-opportunity-section .exclusive-opportunity-listing ul li {
   padding: 16px 16px 0;
   border: 1px solid #E4E4DC;
   border-radius: 16px;
-  flex: 0 0 33.33%;
+  width: 31.33%;
+  box-sizing: border-box;
   position: relative;
 }
 .exclusive-opportunity-section .exclusive-opportunity-listing ul li .profile-offers {
