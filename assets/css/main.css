@@ -16540,4 +16540,41 @@ div .faq-details-wrapper .faq-details-box-outer a {
   color: #2B2A28;
   display: inline-block;
   background: url(../images/arrr_prev.svg) no-repeat left center;
+}
+
+.search-section.retail.search {
+  position: static;
+  margin-top: 35px;
+  background: #F1F1EE;
+  border: none;
+}
+.search-section.retail.search .custom-dropdown {
+  background: #fff;
+}
+.search-section.retail.search .form-section .form-raper {
+  border-radius: 10px;
+}
+.search-section.retail.search .form-section .form-raper .form-cols-out:nth-child(3) .custom-dropdown {
+  border-right: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.search-retails-grid-view.new .search-retails-grid figure img {
+  border-radius: 10px;
+  filter: brightness(0.5);
+}
+.search-retails-grid-view.new .search-retails-grid figcaption {
+  background: transparent;
+  bottom: 30px;
+}
+.search-retails-grid-view.new .search-retails-grid span {
+  font-size: 16px;
+  color: #fff;
+  position: absolute;
+  display: block;
+  background: url(../images/location-n.svg) no-repeat left center;
+  bottom: 15px;
+  left: 15px;
+  padding-left: 25px;
 }/*# sourceMappingURL=main.css.map */
