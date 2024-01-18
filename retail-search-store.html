@@ -53,7 +53,7 @@
                                         <li>
                                             <a href="#">Get in Touch</a>
                                         </li>
-                                        <li>
+                                        <li class="login">
                                             <a href="#"> Login </a>
                                         </li>
                                        
@@ -98,6 +98,41 @@
                                         </li>
                                     </ul>
                                 </nav>
+                            </div>
+                            <div class="user-profile-dropdown-wrapper hide">
+                                <div class="user-profile-dropdown-wrapper-top">
+                                    <div class="user-profile-dropdown-wrapper-top-header">
+                                    <img src="./assets//images/loggedUser.svg" alt="" />
+                                    <div class="user-profile-dropdown-wrapper-top-header-user-desc">
+                                        <h3>Mr. Aminjaz</h3>
+                                        <p>Customer ID: <span>0019763</span></p>
+                                        <p class="swipe" onclick="handleToggleOpen()"><img src="./assets/images/swipeIcon.svg" alt="" /> Switch Account</p>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="user-profile-dropdown-wrapper-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><img src="./assets/images/userIcon.svg" />View profile</a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./assets/images/heart.svg" />Favourites</a>
+                                        </li>
+                                        <li class="user-switch-tab">
+                                            <a href="#"> <img src="./assets/images/Bell.svg" />Allow Notification</a>
+                                            <label class="switch">
+                                                <input type="checkbox" checked>
+                                                <span class="slider round"></span>
+                                              </label>
+                                        </li>
+                                        <li>
+                                            <a href="#"><img src="./assets//images/servicesIcon.svg" />E-Service</a>
+                                        </li>
+                                        <li class="logout">
+                                            <a href="#"><img src="./assets//images/logout.svg" />logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                     </div>
                 </div>
@@ -304,6 +339,54 @@
             <p>© 2023 Wasl All Right Reserved</p>
         </div>
     </footer>
+
+    <div id="overlay" onclick="handleToggleClose()">
+        <div class="switch-profile-wrapper">
+            <div class="switch-profile-wrapper-header">
+                <h3>Switch profile</h3>
+            </div>
+            <div class="switch-profile-wrapper-middle">
+                <div class="switch-profile-wrapper-middle-personal">
+                    <h4>Personal</h4>
+                    <div class="switch-profile-wrapper-middle-personal-radiowrapper active">
+                        <input type="radio" id="html" name="switch-account" value="personal">
+                        <div>
+                        <h4>
+                            User Name : <span>Aminjaz</span>
+                        </h4>
+                        <h4>
+                            Full Name : <span>Mr. Aminjaz Aljazari</span>
+                        </h4>
+                        </div>
+                        <span class="chip-default">Default</span>
+                    </div>
+                </div>
+                <div class="switch-profile-wrapper-middle-personal">
+                    <h4>Corporate</h4>
+                    <div class="switch-profile-wrapper-middle-personal-radiowrapper">
+                        <input type="radio" id="html" name="switch-account" value="corporate">
+                        <div>
+                        <h4>
+                            User Name : <span>Aminjaz</span>
+                        </h4>
+                        <h4>
+                            Full Name : <span>Mr. Aminjaz Aljazari</span>
+                        </h4>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="selected-tenant" name="selected-tenant" value="selected-tenant">
+                <label for="selected-tenant"> Make selected Tenant No. as my default account</label>
+            </div>
+            <div class="switch-profile-wrapper-footer">
+                
+                <button>Switch</button>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="./assets/js/jquery-1.9.1.min.js"></script> 
     <script src="./assets/js/owl.carousel.js"></script>
     <script src="./assets/js/range-slider.js"></script>
