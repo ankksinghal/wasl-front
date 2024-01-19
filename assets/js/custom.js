@@ -720,3 +720,10 @@ function handleToggleClose() {
 }
 
 
+$(".retail-search-button").click(function () {
+  $(".search-section.retail-search-n").fadeToggle(2000); 
+  $(this).fadeOut();
+  // $("#chat_boat").toggleClass("rotate");
+});
+
+
