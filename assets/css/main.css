@@ -16679,6 +16679,13 @@ div .faq-details-wrapper .faq-details-box-outer a {
   border-bottom-right-radius: 10px;
 }
 
+.search-details-list-updated, .search-retails-list-view, .search-retails-list-map {
+  margin: 0 0 55px;
+}
+
+.search-retails-grid-view.new {
+  margin: 0 0 15px;
+}
 .search-retails-grid-view.new .search-retails-grid figure img {
   border-radius: 10px;
   filter: brightness(0.5);
@@ -16717,6 +16724,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
 .search-section.retail-search-n .form-section button {
   margin-left: 10px;
   border-radius: 8px;
+  width: 150px;
 }
 .search-section.retail-search-n .form-section .form-raper {
   border: none;
@@ -17006,12 +17014,43 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 
 .no-search-wrapper {
-  margin: 25px 0 20px;
+  padding: 35px 0 20px;
   display: flex;
+  margin: 0 0 20px;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 1px solid #EDEDED;
   align-items: center;
 }
-.no-search-wrapper img {
+.no-search-wrapper span {
+  margin: 0 0 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #E4E4DC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-search-wrapper span img {
   width: 40px;
+}
+.no-search-wrapper p {
+  font-family: "bliss_medium";
+  font-size: 16px;
+  color: #000;
+}
+
+.no-search-found-wrap {
+  margin: 0 0 100px;
+}
+.no-search-found-wrap h3 {
+  font-family: "bliss_medium";
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 20px;
+}
+
+.img-content.map {
+  margin-top: 16px;
 }/*# sourceMappingURL=main.css.map */
