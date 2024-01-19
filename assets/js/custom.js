@@ -702,6 +702,23 @@ $("#chat_boat").click(function () {
   $("#chat_boat").toggleClass("rotate");
 });
 
+// user profile toggle dropdown
+
+$(".login").click(function(){
+  $(".user-profile-dropdown-wrapper").toggleClass("hide")
+})
+
+// overlay hide show
+
+function handleToggleOpen() {
+  document.getElementById("overlay").style.display = "block";
+}
+
+
+function handleToggleClose() {
+  document.getElementById("overlay").style.display = "none";
+}
+
 
 $(".retail-search-button").click(function () {
   $(".search-section.retail-search-n").fadeToggle(2000); 
