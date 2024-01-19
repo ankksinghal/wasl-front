@@ -18,8 +18,11 @@
      }
 }
 
-
+.search-details-list-updated,.search-retails-list-view,.search-retails-list-map{
+    margin:0 0 55px;
+}
 .search-retails-grid-view.new{
+    margin:0 0 15px;
     .search-retails-grid{
         figure{
             img{
@@ -63,6 +66,7 @@
         button{
             margin-left: 10px;
             border-radius: 8px;
+            width: 150px;
         }
         .form-raper{
             border: none;

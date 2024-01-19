@@ -103,23 +103,18 @@
 }
 
 .furniture-banner{
-  margin: 0 auto;
-  width: 1140px;
-  height: 600px;
+  margin:35px 0;
   &-image{
-    width:1140px;
-    height:429px;
     position: relative;
     img{
       width:100%;
       object-fit: cover;
     }
     &-overlay{
-      width:1024px;
       padding:24px 24px 0 24px;
       background: rgba(228, 228, 220, 1);
       border-radius: 16px;
-      margin: -7% auto 0;
+      margin: -7% 28px 0;
       position: relative;
       &-right{
         display: flex;
@@ -167,4 +162,24 @@
      
     }
   }
+}
+
+.featured_stores-slider-details{
+  background: rgba(228, 228, 220, 0.2);
+  .featured_stores{
+     padding: 50px 0;
+  }
+}
+.photos-section-retails h2.retail-search{
+  font-size: 24px;
+}
+.container .property-details.retail-search .property-inner .property-ul li{
+    width: 33.33%;
+    color: #2B2A28;
+}
+.container .property-details.retail-search .property-inner .property-ul li span{
+  opacity: 0.7;
+}
+.container .property-details.retail-search .property-inner .property-ul li img{
+   border-radius: 0;
 }

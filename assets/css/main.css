@@ -12576,6 +12576,9 @@ figure.card_img:before {
 .featured_stores {
   padding: 90px 0;
 }
+.featured_stores.details {
+  padding: 25px 0 15px;
+}
 .featured_stores .owl-nav {
   display: flex;
   position: absolute;
@@ -16707,6 +16710,13 @@ div .faq-details-wrapper .faq-details-box-outer a {
   border-bottom-right-radius: 10px;
 }
 
+.search-details-list-updated, .search-retails-list-view, .search-retails-list-map {
+  margin: 0 0 55px;
+}
+
+.search-retails-grid-view.new {
+  margin: 0 0 15px;
+}
 .search-retails-grid-view.new .search-retails-grid figure img {
   border-radius: 10px;
   filter: brightness(0.5);
@@ -16745,6 +16755,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
 .search-section.retail-search-n .form-section button {
   margin-left: 10px;
   border-radius: 8px;
+  width: 150px;
 }
 .search-section.retail-search-n .form-section .form-raper {
   border: none;
@@ -17034,14 +17045,45 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 
 .no-search-wrapper {
-  margin: 25px 0 20px;
+  padding: 35px 0 20px;
   display: flex;
+  margin: 0 0 20px;
   justify-content: center;
   flex-direction: column;
+  border-bottom: 1px solid #EDEDED;
   align-items: center;
 }
-.no-search-wrapper img {
+.no-search-wrapper span {
+  margin: 0 0 20px;
+  width: 80px;
+  height: 80px;
+  background-color: #E4E4DC;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.no-search-wrapper span img {
   width: 40px;
+}
+.no-search-wrapper p {
+  font-family: "bliss_medium";
+  font-size: 16px;
+  color: #000;
+}
+
+.no-search-found-wrap {
+  margin: 0 0 100px;
+}
+.no-search-found-wrap h3 {
+  font-family: "bliss_medium";
+  font-size: 16px;
+  color: #000;
+  margin: 0 0 20px;
+}
+
+.img-content.map {
+  margin-top: 16px;
 }
 
 .section-household-furniture {
@@ -17152,13 +17194,9 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 
 .furniture-banner {
-  margin: 0 auto;
-  width: 1140px;
-  height: 600px;
+  margin: 35px 0;
 }
 .furniture-banner-image {
-  width: 1140px;
-  height: 429px;
   position: relative;
 }
 .furniture-banner-image img {
@@ -17167,11 +17205,10 @@ div .faq-details-wrapper .faq-details-box-outer a {
      object-fit: cover;
 }
 .furniture-banner-image-overlay {
-  width: 1024px;
   padding: 24px 24px 0 24px;
   background: rgb(228, 228, 220);
   border-radius: 16px;
-  margin: -7% auto 0;
+  margin: -7% 28px 0;
   position: relative;
 }
 .furniture-banner-image-overlay-right {
@@ -17214,4 +17251,28 @@ div .faq-details-wrapper .faq-details-box-outer a {
   line-height: 23px;
   font-weight: 400;
   margin: 10px 0;
+}
+
+.featured_stores-slider-details {
+  background: rgba(228, 228, 220, 0.2);
+}
+.featured_stores-slider-details .featured_stores {
+  padding: 50px 0;
+}
+
+.photos-section-retails h2.retail-search {
+  font-size: 24px;
+}
+
+.container .property-details.retail-search .property-inner .property-ul li {
+  width: 33.33%;
+  color: #2B2A28;
+}
+
+.container .property-details.retail-search .property-inner .property-ul li span {
+  opacity: 0.7;
+}
+
+.container .property-details.retail-search .property-inner .property-ul li img {
+  border-radius: 0;
 }/*# sourceMappingURL=main.css.map */
