@@ -715,9 +715,32 @@ function handleToggleOpen() {
 }
 
 
-function handleToggleClose() {
-  document.getElementById("overlay").style.display = "none";
-}
+// function handleToggleClose() {
+//   document.getElementById("overlay").style.display = "none";
+// }
+$(document).ready(function() {
+  // Function to handle the click event on the overlay
+  function handleToggleClose(event) {
+      var overlay = $("#overlay");
+      if (!overlay.is(event.target) && overlay.has(event.target).length === 0) {
+          // If the click is outside the overlay, close the modal
+          overlay.hide();
+      }
+  }
+
+  // Attach the click event to the overlay
+  $("#overlay").on("click", handleToggleClose);
+
+  // Function to handle the switch button click
+  function handleSwitchButtonClick() {
+      // Add logic here to handle switching profiles
+      console.log("Switching profiles");
+  }
+
+  // Attach the click event to the switch button
+  $(".switch-profile-wrapper-footer button").on("click", handleSwitchButtonClick);
+});
+
 
 
 $(".retail-search-button").click(function () {

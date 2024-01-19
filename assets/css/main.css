@@ -1229,6 +1229,34 @@ body.slide {
   padding: 24px;
   justify-content: space-between;
 }
+#overlay .switch-profile-wrapper-middle-personal-radiowrapper input[type=radio] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 23.33px;
+  height: 23.33px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 50%;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+#overlay .switch-profile-wrapper-middle-personal-radiowrapper input[type=radio]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em rgb(0, 0, 0);
+}
+#overlay .switch-profile-wrapper-middle-personal-radiowrapper input[type=radio]:checked::before {
+  transform: scale(0.3);
+}
 #overlay .switch-profile-wrapper-middle-personal-radiowrapper h4 {
   font-size: 16px;
   font-weight: 400;
@@ -12548,6 +12576,9 @@ figure.card_img:before {
 .featured_stores {
   padding: 90px 0;
 }
+.featured_stores.details {
+  padding: 25px 0 15px;
+}
 .featured_stores .owl-nav {
   display: flex;
   position: absolute;
@@ -17053,4 +17084,195 @@ div .faq-details-wrapper .faq-details-box-outer a {
 
 .img-content.map {
   margin-top: 16px;
+}
+
+.section-household-furniture {
+  max-width: 1140px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 20px 0;
+  margin: 20px auto;
+  background: rgb(228, 228, 220);
+}
+.section-household-furniture-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+.section-household-furniture-header h1 {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+  .section-household-furniture-header h1 {
+    margin-bottom: 10px;
+  }
+}
+.section-household-furniture-header h1 p {
+  width: 182px;
+  height: 30px;
+  border-radius: 20px;
+  margin-left: 15px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.section-household-furniture-header-socialmediaicons {
+  display: flex;
+  align-items: center;
+}
+.section-household-furniture-header-socialmediaicons p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.section-household-furniture-header-socialmediaicons img {
+  margin: 0 2px;
+}
+.section-household-furniture-desc {
+  margin: 10px 0;
+  max-width: 730px;
+  padding: 0 20px;
+}
+.section-household-furniture-desc p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(43, 42, 40);
+}
+.section-household-furniture-footer {
+  background: rgb(255, 255, 255);
+  padding: 20px 170px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  margin: 0 20px;
+}
+@media screen and (max-width: 1170px) {
+  .section-household-furniture-footer {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section-household-furniture-footer {
+    padding: 20px;
+  }
+}
+.section-household-furniture-footer-timing, .section-household-furniture-footer-address, .section-household-furniture-footer-email, .section-household-furniture-footer-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-household-furniture-footer-timing p, .section-household-furniture-footer-address p, .section-household-furniture-footer-email p, .section-household-furniture-footer-contact p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(43, 42, 40, 0.7);
+  display: flex;
+  align-items: center;
+}
+.section-household-furniture-footer-timing p span, .section-household-furniture-footer-address p span, .section-household-furniture-footer-email p span, .section-household-furniture-footer-contact p span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(43, 42, 40);
+  margin-left: 3px;
+}
+.section-household-furniture-footer-timing p img, .section-household-furniture-footer-address p img, .section-household-furniture-footer-email p img, .section-household-furniture-footer-contact p img {
+  margin-right: 8px;
+}
+
+.furniture-banner {
+  margin: 35px 0;
+}
+.furniture-banner-image {
+  position: relative;
+}
+.furniture-banner-image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.furniture-banner-image-overlay {
+  padding: 24px 24px 0 24px;
+  background: rgb(228, 228, 220);
+  border-radius: 16px;
+  margin: -7% 28px 0;
+  position: relative;
+}
+.furniture-banner-image-overlay-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.furniture-banner-image-overlay-right-imgWrapper {
+  width: 138px;
+  height: 138px;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+.furniture-banner-image-overlay-right-imgWrapper img {
+  width: 100%;
+}
+.furniture-banner-image-overlay-right-desc h1 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  color: rgb(43, 42, 40);
+  display: flex;
+  align-items: center;
+}
+.furniture-banner-image-overlay-right-desc h1 p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 186px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+.furniture-banner-image-overlay-right-desc-text {
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.featured_stores-slider-details {
+  background: rgba(228, 228, 220, 0.2);
+}
+.featured_stores-slider-details .featured_stores {
+  padding: 50px 0;
+}
+
+.photos-section-retails h2.retail-search {
+  font-size: 24px;
+}
+
+.container .property-details.retail-search .property-inner .property-ul li {
+  width: 33.33%;
+  color: #2B2A28;
+}
+
+.container .property-details.retail-search .property-inner .property-ul li span {
+  opacity: 0.7;
+}
+
+.container .property-details.retail-search .property-inner .property-ul li img {
+  border-radius: 0;
 }/*# sourceMappingURL=main.css.map */

@@ -454,6 +454,9 @@
 
 .featured_stores {
   padding: 90px 0;
+  &.details{
+    padding:25px 0 15px;
+  }
   .owl-nav{
     display: flex;
     position: absolute;
