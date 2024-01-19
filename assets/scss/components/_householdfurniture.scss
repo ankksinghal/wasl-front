@@ -1,0 +1,170 @@
+.section-household-furniture{
+  max-width: 1140px;
+  width: 100%;
+  border-radius :16px;
+  padding:20px 0;
+  margin:20px auto;
+  background: rgba(228, 228, 220, 1);
+  &-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    h1{
+      display: flex;
+      align-items: center;
+      font-size: 30px;
+      line-height: 35px;
+      font-weight: 500;
+      @include respond(phone_land) {
+        margin-bottom: 10px;
+      }
+      p{
+        width:182px;
+        height: 30px;
+        border-radius: 20px;
+        margin-left: 15px;
+        background: rgba(255, 255, 255, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+    &-socialmediaicons{
+      display: flex;
+      align-items: center;
+      p{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+      img{
+        margin:-0 2px;
+      }
+    }
+  }
+  &-desc{
+    margin:10px 0;
+    max-width: 730px;
+    padding: 0 20px;
+    p{
+      font-size: 16px;
+      line-height: 26px;
+      font-weight: 400;
+      color:rgba(43, 42, 40, 1);
+    }
+  }
+  &-footer{
+    background: rgba(255, 255, 255, 1);
+    padding:20px 170px 20px 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    margin:0 20px;
+    @include respond(tab_land) {
+      padding: 20px;
+    }
+    @include respond(phone_land) {
+      padding: 20px;
+    }
+    &-timing,
+    &-address,
+    &-email,
+    &-contact{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      p{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        color:rgba(43, 42, 40, 0.7);
+        display: flex;
+        align-items: center;
+        span{
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 24px;
+          color:rgba(43, 42, 40, 1);
+          margin-left:3px;
+        }
+        img{
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}
+
+.furniture-banner{
+  margin: 0 auto;
+  width: 1140px;
+  height: 600px;
+  &-image{
+    width:1140px;
+    height:429px;
+    position: relative;
+    img{
+      width:100%;
+      object-fit: cover;
+    }
+    &-overlay{
+      width:1024px;
+      padding:24px 24px 0 24px;
+      background: rgba(228, 228, 220, 1);
+      border-radius: 16px;
+      margin: -7% auto 0;
+      position: relative;
+      &-right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        &-imgWrapper{
+          width:138px;
+          height: 138px;
+          border-radius: 16px;
+          margin-right: 20px;
+          img{
+            width: 100%;
+          }
+        }
+        &-desc{
+          h1{
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color:rgba(43, 42, 40, 1);
+            display: flex;
+            align-items: center;
+            p{
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 24px;
+              width:186px;
+              height: 30px;
+              background: rgba(255, 255, 255, 1);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin-left: 10px;
+              border-radius: 20px;
+            }
+          }
+          &-text{
+            font-size: 20px;
+            line-height: 23px;
+            font-weight: 400;
+            margin:10px 0;
+          }
+        }
+      }
+     
+    }
+  }
+}
