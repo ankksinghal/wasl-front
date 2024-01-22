@@ -16710,7 +16710,9 @@ div .faq-details-wrapper .faq-details-box-outer a {
   border-bottom-right-radius: 10px;
 }
 
-.search-details-list-updated, .search-retails-list-view, .search-retails-list-map {
+.search-details-list-updated,
+.search-retails-list-view,
+.search-retails-list-map {
   margin: 0 0 55px;
 }
 
@@ -16765,6 +16767,18 @@ div .faq-details-wrapper .faq-details-box-outer a {
   background-color: #fff;
   border-radius: 8px;
 }
+@media screen and (max-width: 1170px) {
+  .search-section.retail-search-n {
+    top: 0;
+    position: relative;
+  }
+  .search-section.retail-search-n .custom-dropdown {
+    border: 1px solid #e5e5e5;
+  }
+  .search-section.retail-search-n .cs_search_style {
+    border: 1px solid #e5e5e5;
+  }
+}
 
 .search-map-section {
   border: 1px solid #E4E4DC;
@@ -16775,6 +16789,102 @@ div .faq-details-wrapper .faq-details-box-outer a {
   width: 100%;
 }
 
+@media screen and (max-width: 1170px) {
+  .search_hero_section .banner_content .banner_content_title_row {
+    min-height: 50px;
+  }
+  .search-retails-grid-view .search-retails-grid {
+    width: 31.2%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (max-width: 991px) {
+  .search_hero_section .search-section.retail-search-n .cs_search_style .fstMultipleMode {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .search_hero_section .search-section.retail-search-n .form-section .form-raper {
+    padding: 10px 10px 0;
+    margin-bottom: 0;
+  }
+  .search_hero_section .search-section .form-section .form-sec {
+    border-radius: 8px;
+  }
+  .cs_search_style .fstMultipleMode {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  .sph_page .cs_search_style, .search-section .cs_search_style {
+    border-radius: 8px;
+  }
+  .sph_page.search-section .form-section .form-sec, .search-section .form-section .form-sec {
+    border-radius: 8px;
+  }
+  .sph_page.search-section.retail.search .form-section .form-raper, .search-section.retail.search .form-section .form-raper {
+    padding: 10px;
+  }
+  .sph_page .custom-dropdown {
+    margin: 0;
+  }
+  .search-section .sph_page {
+    box-shadow: none;
+  }
+  .no-search-found-wrap .store-wrapper .store-wrapper-right, .search-retails-list-view .store-wrapper .store-wrapper-right {
+    width: 69%;
+    float: 0 0 auto;
+  }
+  .search-retails-grid-view .search-retails-grid {
+    width: 30.55%;
+    flex: 0 0 auto;
+  }
+  .search-content .store-wrapper .store-wrapper-right p {
+    margin-bottom: 10px;
+  }
+  div.container .property-details.retail-search .property-inner .property-ul li {
+    width: 50%;
+    flex: 0 0 auto;
+  }
+}
+@media screen and (max-width: 575px) {
+  .search-retails-grid-view .search-retails-grid {
+    width: 100%;
+  }
+  .search-section.retail .custom-dropdown {
+    margin-bottom: 0;
+  }
+  div.furniture-banner-image-overlay {
+    margin: -7% 5px 0;
+    padding: 10px;
+  }
+  div.furniture-banner-image-overlay-right {
+    flex-direction: column;
+    gap: 12px;
+  }
+  div.furniture-banner-image-overlay-right-imgWrapper {
+    max-width: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  div.furniture-banner-image-overlay-right-desc h1, div.section-household-furniture-header h1 {
+    line-height: 1.1;
+    font-size: 22px;
+  }
+  .furniture-banner .furniture-banner-image-overlay-right-desc-text {
+    font-size: 14px;
+  }
+  div.container .property-details.retail-search .property-inner .property-ul li {
+    width: 100%;
+  }
+  .section-household-furniture-header-socialmediaicons {
+    margin-top: 12px;
+  }
+  .section-household-furniture-header-socialmediaicons p {
+    margin-right: 10px;
+  }
+  .container .property-details .property-inner {
+    padding: 16px;
+  }
+}
 .store-wrapper {
   border: 1px solid #E4E4DC;
   border-radius: 16px;
