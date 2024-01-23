@@ -753,9 +753,7 @@ $(".retail-search-button").click(function () {
 document.addEventListener(
 	"click",
 	function (event) {
-    console.log(event.target.classList.contains("overlay"),event.target.id === "overlay", event.target.style.display === "block",  "outside click available ")
     if(event.target.classList.contains("swipe")){
-      console.log(event.target.classList.contains("swipe"), "event value data setfield")
       openModal()
     } 
     else if (
@@ -768,11 +766,8 @@ document.addEventListener(
 );
 
 function closeModal() {
-  console.log("inside close functiion")
 	document.querySelector("#overlay").style.display = "none";
 }
 function openModal(){
-  console.log("2");
   document.querySelector("#overlay").style.display = "block";
-  console.log( document.querySelector("#overlay").style.display,"3")
 }
