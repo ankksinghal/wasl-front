@@ -710,36 +710,36 @@ $(".login").click(function(){
 
 // overlay hide show
 
-function handleToggleOpen() {
-  document.getElementById("overlay").style.display = "block";
-}
+// function handleToggleOpen() {
+//   document.getElementById("overlay").style.display = "block";
+// }
 
 
 // function handleToggleClose() {
 //   document.getElementById("overlay").style.display = "none";
 // }
-$(document).ready(function() {
-  // Function to handle the click event on the overlay
-  function handleToggleClose(event) {
-      var overlay = $("#overlay");
-      if (!overlay.is(event.target) && overlay.has(event.target).length === 0) {
-          // If the click is outside the overlay, close the modal
-          overlay.hide();
-      }
-  }
+// $(document).ready(function() {
+//   // Function to handle the click event on the overlay
+//   function handleToggleClose(event) {
+//       var overlay = $("#overlay");
+//       if (!overlay.is(event.target) && overlay.has(event.target).length === 0) {
+//           // If the click is outside the overlay, close the modal
+//           overlay.hide();
+//       }
+//   }
 
-  // Attach the click event to the overlay
-  $("#overlay").on("click", handleToggleClose);
+//   // Attach the click event to the overlay
+//   $("#overlay").on("click", handleToggleClose);
 
-  // Function to handle the switch button click
-  function handleSwitchButtonClick() {
-      // Add logic here to handle switching profiles
-      console.log("Switching profiles");
-  }
+//   // Function to handle the switch button click
+//   function handleSwitchButtonClick() {
+//       // Add logic here to handle switching profiles
+//       console.log("Switching profiles");
+//   }
 
-  // Attach the click event to the switch button
-  $(".switch-profile-wrapper-footer button").on("click", handleSwitchButtonClick);
-});
+//   // Attach the click event to the switch button
+//   $(".switch-profile-wrapper-footer button").on("click", handleSwitchButtonClick);
+// });
 
 
 
@@ -750,3 +750,24 @@ $(".retail-search-button").click(function () {
 });
 
 
+document.addEventListener(
+	"click",
+	function (event) {
+    if(event.target.classList.contains("swipe")){
+      openModal()
+    } 
+    else if (
+			event.target.id === "overlay" && event.target.style.display === "block"
+		) {
+			closeModal();
+		}
+	},
+	false
+);
+
+function closeModal() {
+	document.querySelector("#overlay").style.display = "none";
+}
+function openModal(){
+  document.querySelector("#overlay").style.display = "block";
+}
