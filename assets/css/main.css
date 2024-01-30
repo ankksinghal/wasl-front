@@ -16957,6 +16957,13 @@ div .faq-details-wrapper .faq-details-box-outer a {
     width: 69%;
     float: 0 0 auto;
   }
+}
+@media screen and (max-width: 991px) and (max-width: 767px) {
+  .no-search-found-wrap .store-wrapper .store-wrapper-right, .search-retails-list-view .store-wrapper .store-wrapper-right {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
   .search-retails-grid-view .search-retails-grid {
     width: 30.55%;
     flex: 0 0 auto;
