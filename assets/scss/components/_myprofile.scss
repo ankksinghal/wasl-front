@@ -1,3 +1,5 @@
+
+// My Profile css
 .my-profile-wrapper{
     padding: 30px 0 70px;
 }
@@ -5,36 +7,35 @@
      display: flex;
      justify-content: space-between;
      gap:24px;
-     &.edit{
-        display: block;
-     }
 }
+.web-profile-wrap.edit{
+    display: block;
+ }
 .web-profile-sidebar{
      flex: 0 0 30%;
      border: 1px solid #E4E4DC;
      border-radius: 25px;
 }
-
 .web-profile-section{
     background: url(../images/Frame.jpg) no-repeat center center;
     padding:27px 0 58px;
     text-align: center;
     background-size: cover;
     border-radius: 25px;
-    h3{
-        font-weight: 700;
-        font-size: 20px;
-        color:#2B2A28;
-        margin-bottom: 5px;
-        line-height: 23.88px;
-    }
-    span{
-        font-size: 16px;
-        color: #BC8A55;
-        strong{
-            font-weight: 700;
-        }
-    }
+}
+.web-profile-section h3{
+    font-weight: 700;
+    font-size: 20px;
+    color:#2B2A28;
+    margin-bottom: 5px;
+    line-height: 23.88px;
+}
+.web-profile-section span{
+    font-size: 16px;
+    color: #BC8A55;
+}
+.web-profile-section span strong{
+    font-weight: 700;
 }
 .web-profile-details-section{
      padding: 25px 25px 0;
@@ -131,11 +132,17 @@
         height: 40px;
         width: 200px;
         border-radius: 10px;
-        background-color: #fff;
         font-size: 16px;
         color: #2B2A28;
         padding: 0 15px;
         border: 1px solid #E4E4DC;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background:#fff url("../images/down-arrow.svg") no-repeat right 10px center;
+        option{
+             font-size: 14px;
+             padding:8px;
+        }
     }
 }
 
@@ -162,6 +169,11 @@
              font-weight: 700;
              opacity: 1;
          }
+         &.e-service{
+            color: #BC8A55;
+            background: url("../images/eservice-Icon.svg") no-repeat right 1px;
+            padding-right: 20px;
+         }
     }
     .unit-text{
         font-size: 12px;
@@ -187,9 +199,17 @@
     ul{
         display: flex;
         flex-wrap: wrap;
+        &.list-view{
+            li{
+                flex:0 0 100%;
+            }
+        }
         li{
             flex: 0 0 50%;
             font-size: 16px;
+            display: flex;
+            gap: 4px;
+            align-items: center;
             margin-bottom: 18px;
         }
     }
@@ -200,7 +220,7 @@
     padding-top: 10px;
     display: flex;
     border-top: 1px solid #F1F1F1;
-    gap:10px;
+    justify-content: space-between;
     align-items: center;
     .status{
         font-size: 14px;
@@ -419,7 +439,6 @@
         gap: 5px;
         font-size: 12px;
         font-style: italic;
-        font-weight: 700;
         line-height: 120%;
         margin-top: 5px;
     }
@@ -444,3 +463,92 @@
     display: inline-block;
     background: url(../images/arrr_prev.svg) no-repeat left center;
 }
+
+.profile-status-left-section{
+     display: flex;
+     align-items: center;
+     gap: 2px;
+}
+
+.price-tag-profile-wrap span.e-service{
+    display: flex;
+    justify-content: end;
+}
+.web-profile-notes{
+     display: flex;
+     align-items: center;
+     gap: 5px;
+     margin:0 0 16px;
+}
+.web-profile-notes .note-text{
+    background: #2B2A28;
+    padding: 6px 10px;
+    color:#fff;
+    font-family: $fontmedium;
+    font-size: 16px;
+    border-radius: 6px;
+}
+.web-profile-notes .note-desc{
+    color: #2B2A28;
+    font-family: $fontmedium;
+    font-size: 16px;
+}
+.web-profile-notes .note-desc a{
+    color: #BC8A55;
+    text-decoration: underline;
+}
+.search-section.search-page.owned-units{
+    margin: 35px 0;
+}
+.search-section.search-page.owned-units .advance-search{
+   background: transparent;
+   padding: 0;
+}
+.search-section.search-page.owned-units .tab-list a{
+    padding: 0 15px 0 30px;
+    position: relative;
+}
+.search-section.search-page.owned-units .tab-list a::before{
+       position: absolute;
+       left: 0;
+       top:13px;
+       height: 18px;
+       width: 18px;
+       border-radius: 25px;
+       border: 1px solid #000;
+       content: '';
+}
+.search-section.search-page.owned-units .tab-list{
+    margin-left: 0;
+}
+.search-section.search-page.owned-units .tab-list a.active{
+  background: transparent;
+}
+.search-section.search-page.owned-units .tab-list a.active::after{
+    content: '';
+    left: 5px;
+    top: 18px;
+    height: 10px;
+    width: 10px;
+    background-color: #000;
+    position: absolute;
+    border-radius: 25px;
+}
+.exclusive-opportunity-listing{
+     margin:0 0 16px;
+}
+.update-profile-right-section .enquiry-select.area-code.phone-code{
+   background: none;
+   width: 70px !important;
+}
+.update-profile-right-section .enquiry-form div .mobile-number #area-code{
+     width: 120px;
+}
+.web-profile-right-section span.tooltip{
+     display: flex;
+     align-items: center;
+}
+.web-profile-right-section .form-input.error{
+   border-color: red;
+}
+// ==========================

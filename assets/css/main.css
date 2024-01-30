@@ -16276,6 +16276,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
   justify-content: space-between;
   gap: 24px;
 }
+
 .web-profile-wrap.edit {
   display: block;
 }
@@ -16293,6 +16294,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
   background-size: cover;
   border-radius: 25px;
 }
+
 .web-profile-section h3 {
   font-weight: 700;
   font-size: 20px;
@@ -16300,10 +16302,12 @@ div .faq-details-wrapper .faq-details-box-outer a {
   margin-bottom: 5px;
   line-height: 23.88px;
 }
+
 .web-profile-section span {
   font-size: 16px;
   color: #BC8A55;
 }
+
 .web-profile-section span strong {
   font-weight: 700;
 }
@@ -16397,11 +16401,17 @@ div .faq-details-wrapper .faq-details-box-outer a {
   height: 40px;
   width: 200px;
   border-radius: 10px;
-  background-color: #fff;
   font-size: 16px;
   color: #2B2A28;
   padding: 0 15px;
   border: 1px solid #E4E4DC;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: #fff url("../images/down-arrow.svg") no-repeat right 10px center;
+}
+.Profile-title-section select option {
+  font-size: 14px;
+  padding: 8px;
 }
 
 .cards-pfofile > li {
@@ -16428,6 +16438,11 @@ div .faq-details-wrapper .faq-details-box-outer a {
   font-weight: 700;
   opacity: 1;
 }
+.cards-pfofile > li span.e-service {
+  color: #BC8A55;
+  background: url("../images/eservice-Icon.svg") no-repeat right 1px;
+  padding-right: 20px;
+}
 .cards-pfofile > li .unit-text {
   font-size: 12px;
   color: #fff;
@@ -16453,9 +16468,15 @@ div .faq-details-wrapper .faq-details-box-outer a {
   display: flex;
   flex-wrap: wrap;
 }
+.cards-pfofile > li ul.list-view li {
+  flex: 0 0 100%;
+}
 .cards-pfofile > li ul li {
   flex: 0 0 50%;
   font-size: 16px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
   margin-bottom: 18px;
 }
 
@@ -16463,7 +16484,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
   padding-top: 10px;
   display: flex;
   border-top: 1px solid #F1F1F1;
-  gap: 10px;
+  justify-content: space-between;
   align-items: center;
 }
 .profile-status .status {
@@ -16669,7 +16690,6 @@ div .faq-details-wrapper .faq-details-box-outer a {
   gap: 5px;
   font-size: 12px;
   font-style: italic;
-  font-weight: 700;
   line-height: 120%;
   margin-top: 5px;
 }
@@ -16690,6 +16710,110 @@ div .faq-details-wrapper .faq-details-box-outer a {
   color: #2B2A28;
   display: inline-block;
   background: url(../images/arrr_prev.svg) no-repeat left center;
+}
+
+.profile-status-left-section {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.price-tag-profile-wrap span.e-service {
+  display: flex;
+  justify-content: end;
+}
+
+.web-profile-notes {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0 0 16px;
+}
+
+.web-profile-notes .note-text {
+  background: #2B2A28;
+  padding: 6px 10px;
+  color: #fff;
+  font-family: "bliss_medium";
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.web-profile-notes .note-desc {
+  color: #2B2A28;
+  font-family: "bliss_medium";
+  font-size: 16px;
+}
+
+.web-profile-notes .note-desc a {
+  color: #BC8A55;
+  text-decoration: underline;
+}
+
+.search-section.search-page.owned-units {
+  margin: 35px 0;
+}
+
+.search-section.search-page.owned-units .advance-search {
+  background: transparent;
+  padding: 0;
+}
+
+.search-section.search-page.owned-units .tab-list a {
+  padding: 0 15px 0 30px;
+  position: relative;
+}
+
+.search-section.search-page.owned-units .tab-list a::before {
+  position: absolute;
+  left: 0;
+  top: 13px;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  content: "";
+}
+
+.search-section.search-page.owned-units .tab-list {
+  margin-left: 0;
+}
+
+.search-section.search-page.owned-units .tab-list a.active {
+  background: transparent;
+}
+
+.search-section.search-page.owned-units .tab-list a.active::after {
+  content: "";
+  left: 5px;
+  top: 18px;
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  position: absolute;
+  border-radius: 25px;
+}
+
+.exclusive-opportunity-listing {
+  margin: 0 0 16px;
+}
+
+.update-profile-right-section .enquiry-select.area-code.phone-code {
+  background: none;
+  width: 70px !important;
+}
+
+.update-profile-right-section .enquiry-form div .mobile-number #area-code {
+  width: 120px;
+}
+
+.web-profile-right-section span.tooltip {
+  display: flex;
+  align-items: center;
+}
+
+.web-profile-right-section .form-input.error {
+  border-color: red;
 }
 
 .search-section.retail.search {
@@ -17023,11 +17147,10 @@ div .faq-details-wrapper .faq-details-box-outer a {
   width: 264px;
   height: 400px;
   position: absolute;
-  z-index: 9999;
+  z-index: 1;
   right: 0;
   background: #fff;
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-radius: 16px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
 }
 .user-profile-dropdown-wrapper-top {
@@ -17087,10 +17210,12 @@ div .faq-details-wrapper .faq-details-box-outer a {
 .user-profile-dropdown-wrapper-menu li a {
   font-size: 14px;
   font-weight: 500;
+  font-family: "bliss_medium";
   line-height: 16px;
   padding: 16px 0;
   border-bottom: 1px solid rgba(220, 204, 192, 0.3);
   display: flex;
+  color: #2B2A28;
   align-items: center;
 }
 .user-profile-dropdown-wrapper-menu li a img {
@@ -17152,6 +17277,16 @@ div .faq-details-wrapper .faq-details-box-outer a {
 }
 .user-profile-dropdown-wrapper.hide {
   display: none;
+}
+
+.switch-profile-wrapper .link-section {
+  margin: 0;
+}
+
+.switch-profile-wrapper .link-section .agree-check {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .no-search-wrapper {

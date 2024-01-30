@@ -1,4 +1,4 @@
-
+// Retail-search-store====================
 .store-wrapper {
   border:1px solid #E4E4DC;
   border-radius: 16px;
@@ -123,11 +123,10 @@
   width:264px;
   height: 400px;
   position: absolute;
-  z-index: 9999;
+  z-index: 1;
   right:0;
   background: #fff;
-  border-bottom-left-radius:16px;
-  border-bottom-right-radius:16px;
+  border-radius:16px;
   box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
   &-top{
     height:185px;
@@ -184,10 +183,12 @@
       a{
         font-size: 14px;
         font-weight: 500;
+        font-family: $fontmedium;
         line-height: 16px;
         padding:16px 0; 
         border-bottom:1px solid rgba(220, 204, 192, 0.3);
         display: flex;
+        color:#2B2A28;
         align-items: center;
         img{
           margin-right:10px;
@@ -271,3 +272,15 @@
     display: none;
   }
  }
+
+ .switch-profile-wrapper .link-section{
+     margin:0;
+ }
+ 
+ .switch-profile-wrapper .link-section .agree-check{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+
+//  ======================================
