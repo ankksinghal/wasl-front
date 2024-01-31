@@ -17342,11 +17342,6 @@ div .faq-details-wrapper .faq-details-box-outer a {
   .my-profile-wrapper .search-section.search-page.owned-units .tab-list a::after {
     top: 5px;
   }
-  .my-profile-wrapper .custom-dropdown, .my-profile-wrapper .csdropdown_style .custom-dropdown, .my-profile-wrapper .form-cols-out .form-control.search, .my-profile-wrapper .form-cols-out .form-control.dropdown {
-    background-color: #fff;
-    border-radius: 8px;
-    border-bottom: 0;
-  }
 }
 @media all and (max-width: 1199px) and (min-width: 768px) {
   .web-profile-wrap {
@@ -17403,6 +17398,13 @@ div .faq-details-wrapper .faq-details-box-outer a {
   }
   .update-your-profile-wrap .form-input {
     width: 100%;
+  }
+}
+@media all and (max-width: 1023px) {
+  .custom-dropdown, .csdropdown_style .custom-dropdown, .form-cols-out .form-control.search, .form-cols-out .form-control.dropdown {
+    background-color: #fff;
+    border-radius: 8px;
+    border-bottom: 0;
   }
 }
 @media all and (max-width: 767px) {

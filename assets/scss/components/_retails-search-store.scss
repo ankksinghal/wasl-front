@@ -310,7 +310,6 @@
 
       .slider.round {
         border-radius: 34px;
-
         &:before {
           border-radius: 50%;
         }
@@ -379,11 +378,7 @@
       }
       
     }
-    .custom-dropdown, .csdropdown_style .custom-dropdown,.form-cols-out .form-control.search,.form-cols-out .form-control.dropdown{
-      background-color: #fff;
-      border-radius: 8px;
-      border-bottom: 0;
-    }
+    
    
   }
 }
@@ -444,6 +439,13 @@
     }
   }
 
+}
+@media all and (max-width:1023px) {
+  .custom-dropdown, .csdropdown_style .custom-dropdown,.form-cols-out .form-control.search,.form-cols-out .form-control.dropdown{
+      background-color: #fff;
+      border-radius: 8px;
+      border-bottom: 0;
+    }
 }
 
 @media all and (max-width:767px) {
