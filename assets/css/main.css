@@ -17286,6 +17286,26 @@ div .faq-details-wrapper .faq-details-box-outer a {
 .user-profile-dropdown-wrapper.hide {
   display: none;
 }
+@media screen and (max-width: 767px) {
+  .user-profile-dropdown-wrapper {
+    border: 1px solid white;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(227, 229, 220, 0);
+    top: -10px;
+  }
+  .user-profile-dropdown-wrapper::before {
+    content: "";
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom-color: white;
+    bottom: 100%;
+    left: 10%;
+  }
+  .user-profile-dropdown-wrapper .user-profile-dropdown-wrapper-top {
+    background: white;
+  }
+}
 
 .switch-profile-wrapper .link-section {
   margin: 0;
@@ -17297,6 +17317,162 @@ div .faq-details-wrapper .faq-details-box-outer a {
   gap: 10px;
 }
 
+#overlay .switch-profile-wrapper {
+  max-width: 92%;
+}
+
+@media screen and (max-width: 1170px) {
+  .web-profile-right-section {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: calc(70% - 24px);
+  }
+  .edit .web-profile-right-section {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .my-profile-wrapper .search-section.search-page.owned-units .tab-list a {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .my-profile-wrapper .search-section.search-page.owned-units .tab-list a::before {
+    top: 0;
+  }
+  .my-profile-wrapper .search-section.search-page.owned-units .tab-list a::after {
+    top: 5px;
+  }
+}
+@media all and (max-width: 1199px) and (min-width: 768px) {
+  .web-profile-wrap {
+    flex-direction: column;
+  }
+  .web-profile-wrap .web-profile-sidebar {
+    display: flex;
+    align-items: start;
+    padding: 12px;
+  }
+  .web-profile-wrap .web-profile-section {
+    flex: 0 0 auto;
+    width: 205px;
+    padding-bottom: 30px;
+  }
+  .web-profile-wrap .image-wrap {
+    width: 100%;
+  }
+  .web-profile-wrap .web-profile-details-section .edit-profile, .web-profile-wrap .web-profile-details-section .go-services {
+    padding: 12px 25px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .web-profile-wrap .web-profile-details-section .go-services {
+    background-position: right 22px center;
+    padding-left: 32px;
+    padding-right: 45px;
+  }
+  .web-profile-wrap .web-profile-details-section {
+    flex-grow: 1;
+    margin-top: 0;
+    top: 0;
+    padding: 10px 15px;
+  }
+  .web-profile-wrap .web-profile-details-section ul {
+    display: flex;
+    gap: 10px 15px;
+    flex-wrap: wrap;
+  }
+  .web-profile-wrap .web-profile-details-section ul li {
+    flex: 0 0 auto;
+    width: 48%;
+  }
+  .web-profile-wrap .web-profile-right-section {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .update-your-profile-wrap {
+    flex-direction: column;
+  }
+  .update-your-profile-wrap .update-profile-left-section {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+  }
+  .update-your-profile-wrap .form-input {
+    width: 100%;
+  }
+}
+@media all and (max-width: 1023px) {
+  .custom-dropdown, .csdropdown_style .custom-dropdown, .form-cols-out .form-control.search, .form-cols-out .form-control.dropdown {
+    background-color: #fff;
+    border-radius: 8px;
+    border-bottom: 0;
+  }
+}
+@media all and (max-width: 767px) {
+  .web-profile-wrap {
+    flex-direction: column;
+  }
+  .web-profile-right-section {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+  .web-profile-right-section .cards-pfofile > li {
+    flex-direction: column;
+  }
+  .web-profile-right-section .profile-image-section img {
+    width: 100%;
+  }
+  .web-profile-right-section .cards-pfofile > li h2 {
+    font-size: 14px;
+  }
+  .web-profile-right-section .cards-pfofile > li h3 {
+    font-size: 16px;
+  }
+  .web-profile-right-section .cards-pfofile > li ul li, .web-profile-right-section .price-tag-profile span, .web-profile-right-section .profile-status .status-update {
+    font-size: 13px;
+  }
+  .web-profile-right-section .price-tag-profile span strong {
+    font-size: 14px;
+  }
+  .web-profile-right-section .price-tag-profile {
+    margin-bottom: 12px;
+  }
+  .web-profile-right-section .web-profile-notes .note-desc {
+    font-size: 12px;
+  }
+  .web-profile-right-section .price-tag-profile {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .update-your-profile-wrap {
+    flex-direction: column;
+  }
+  .update-your-profile-wrap .update-profile-left-section {
+    align-self: flex-start;
+    margin-bottom: 2rem;
+  }
+  .update-your-profile-wrap .form-input {
+    width: 100%;
+  }
+  .web-profile-wrap.edit .btns .cancel-btn {
+    margin-right: auto;
+  }
+  .my-profile-wrapper.owned_unit_section .web-profile-right-section {
+    padding: 0;
+    border: 0;
+  }
+  .my-profile-wrapper.owned_unit_section .container.global-search {
+    padding: 0;
+  }
+  .exclusive-opportunity-section .exclusive-opportunity-listing ul li {
+    flex: 0 0 auto;
+    width: 48%;
+  }
+}
+@media all and (max-width: 767px) and (max-width: 575px) {
+  .exclusive-opportunity-section .exclusive-opportunity-listing ul li {
+    width: 100%;
+  }
+}
 .no-search-wrapper {
   padding: 35px 0 20px;
   display: flex;
