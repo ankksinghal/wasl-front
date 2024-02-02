@@ -17452,6 +17452,7 @@ div .faq-details-wrapper .faq-details-box-outer a {
   justify-content: center;
   font-size: inherit;
   color: white;
+  padding: 1px;
 }
 .pf_name_box.box_block {
   width: 100%;
