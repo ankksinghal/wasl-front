@@ -440,6 +440,21 @@
   }
 
 }
+ 
+.cs_profile_btn{
+  display: flex;
+  align-items : center;
+  color: #BC8A54 !important;
+  gap: 8px;
+  font-size: 16px;
+  img{
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
 @media all and (max-width:1023px) {
   .custom-dropdown, .csdropdown_style .custom-dropdown,.form-cols-out .form-control.search,.form-cols-out .form-control.dropdown{
       background-color: #fff;

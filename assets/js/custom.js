@@ -704,7 +704,7 @@ $("#chat_boat").click(function () {
 
 // user profile toggle dropdown
 
-$(".login").click(function(){
+$(".cs_profile_btn").click(function(){
   $(".user-profile-dropdown-wrapper").toggleClass("hide")
 })
 
