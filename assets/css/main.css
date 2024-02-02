@@ -17407,13 +17407,64 @@ div .faq-details-wrapper .faq-details-box-outer a {
   gap: 8px;
   font-size: 16px;
 }
-.cs_profile_btn img {
+
+.pf_name_box {
   flex: 0 0 auto;
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  position: relative;
+  line-height: 1;
+  border-radius: 50%;
+  background: #abaaa4;
+  overflow: hidden;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.pf_name_box:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.pf_name_box img {
+  width: 100%;
+  display: block;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 50%;
+}
+.pf_name_box.box_xl {
+  width: 75px;
+  height: 75px;
+  font-size: 32px;
+}
+.pf_name_box span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  color: white;
+}
+.pf_name_box.box_block {
+  width: 100%;
+  font-size: 45px;
+}
+
+.pf_name_box.box_block {
+  margin-bottom: 10px;
+}
+
+.update-profile-left-section div.profile-icon .update-profile-link {
+  top: 85%;
+  left: 85%;
 }
 
 @media all and (max-width: 1023px) {
