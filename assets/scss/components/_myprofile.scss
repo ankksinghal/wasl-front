@@ -552,3 +552,22 @@
    border-color: red;
 }
 // ==========================
+
+
+// css
+.form-input.disabled-box{
+    margin-top: 10px;
+    border: 1px solid #8D8D8780;
+    background: linear-gradient(0deg, #E4E4DC, #E4E4DC),
+    linear-gradient(0deg, rgba(141, 141, 135, 0.5), rgba(141, 141, 135, 0.5));
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(43, 40, 42, 0.7);
+}
+#overlay .switch-profile-wrapper-middle-personal-radiowrapper{
+    margin-bottom: 15px;
+}
+#overlay .switch-profile-wrapper-middle{
+    max-height: 50vh;
+    overflow-y: scroll;
+}
